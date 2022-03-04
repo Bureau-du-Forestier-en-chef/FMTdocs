@@ -18,7 +18,7 @@ fr:
   menu:
     main:
       - name: Accueil
-        url: /
+        url: ../
         weight: 10
       - name: Documentation
         url: docs/
