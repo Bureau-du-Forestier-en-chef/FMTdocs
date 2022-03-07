@@ -11,8 +11,6 @@ Avant de commencer à lire, sachez que **vous pouvez modifier l'apparence de la 
 {{% /callout %}}
 
 {{% callout warning %}}
-FMT utilise une structure de modèle et des entrées très similaires au logiciel Woodstock de Remsoft.
-
 **Si vous ne connaissez rien aux modèles Woodstock**, vous devriez prendre le temps de lire à leur propos avant de lire cette documentation. Vous vous sentirez un peu perdu si vous ne le faites pas.
 {{% /callout %}}
 

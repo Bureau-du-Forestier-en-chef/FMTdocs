@@ -75,8 +75,6 @@ From 2019 to today, many features were made to improve the performance of FMT, a
 Now that you know so much about FMT, you'll have no trouble understanding how it works, and how to use it.
 
 {{% callout warning %}}
-FMT uses a model structure and inputs that are very similar to the Woodstock software by Remsoft.
-
 **If you don't know anything about Woodstock models**, you should take some time to read about them before reading this documentation. You'll feel a bit lost if you don't.
 {{% /callout %}}
 
