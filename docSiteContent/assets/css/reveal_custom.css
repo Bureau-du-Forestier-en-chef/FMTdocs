@@ -1,0 +1,38 @@
+.reveal {
+  background-image: url("../uploads/backgroundPresBFEC.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.reveal section p,
+.reveal section li {
+	font-size: 22pt;
+}
+.reveal section pre {
+	font-size: 11pt;
+}
+.reveal section h1 {
+	font-size: 180%;
+}
+.reveal section h2 {
+	font-size: 130%;
+}
+.reveal section h3 {
+	font-size: 120%;
+}
+.reveal .slide-menu-button {
+	position: fixed;
+	left: 49.45% !important;
+	top: 5.2% !important;
+}
+.reveal .slide-number
+{
+	position: fixed !important;
+	bottom: 5.2% !important;
+	left: 0% !important;
+	width: 99.37%;
+	background-color: transparent ;
+	color: black;
+	text-align: center;
+}

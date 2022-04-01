@@ -47,7 +47,7 @@
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si vous regardez l&amp;rsquo;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
+    Si vous regardez l&#39;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;classes-importantes-de-lespace-de-noms-parser&#34;&gt;Classes importantes de l&amp;rsquo;espace de noms &lt;code&gt;Parser&lt;/code&gt;&lt;/h2&gt;
@@ -383,7 +383,7 @@ _DEATH
 &lt;p&gt;Il peut résoudre un modèle de planification forestière de type III, et obtenir un calendrier de récolte optimal en utilisant les contraintes et les objectifs définis par l&amp;rsquo;utilisateur.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cet article&lt;/a&gt;.
+    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34;&gt;cet article&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Le &lt;code&gt;FMTlpmodel&lt;/code&gt; contient un objet appelé &lt;code&gt;FMTgraph&lt;/code&gt;, qui contient le &lt;em&gt;graphe&lt;/em&gt; du modèle. Le graphe est un ensemble de noeuds reliés entre eux par des liens. Chaque noeud correspond à un état possible pour une strate particulière (qui sont des groupes de peuplements forestiers référencés dans l&amp;rsquo;espace avec les mêmes caractéristiques), et chaque lien représente une façon particulière dont elle peut évoluer vers un autre état dans la même période de temps et entre les périodes.&lt;/p&gt;
@@ -825,7 +825,7 @@ Solution set at period   20
 &lt;p&gt;Cette fonction retourne un modèle avec moins de thèmes, d&amp;rsquo;actions, de transitions, de sorties et de contraintes que le modèle original, mais avec la même quantité d&amp;rsquo;informations. Cela le rend plus facile à résoudre, tout en donnant la même réponse à la fin.&lt;/p&gt;
 &lt;p&gt;Dans certaines situations, FMT pré-solutionerra le modèle automatiquement.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Maintenant que vous savez tout ce qu&amp;rsquo;il y a à savoir sur l&amp;rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&amp;rsquo;essayer l&amp;rsquo;&lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt; pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.&lt;/p&gt;
+&lt;p&gt;Maintenant que vous savez tout ce qu&amp;rsquo;il y a à savoir sur l&amp;rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&amp;rsquo;essayer l&#39;&lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt; pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.&lt;/p&gt;
 </description>
     </item>
     
@@ -1023,7 +1023,7 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;h2 id=&#34;la-classe-fmtspatialschedule&#34;&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt;.&lt;/h2&gt;
 &lt;p&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution spatialement explicite sous la forme d&amp;rsquo;un &lt;code&gt;FMTlayer&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Elle contient une fonction importante, &lt;code&gt;FMTspatialschedule.getsolutionstatus()&lt;/code&gt;, qui imprime des informations importantes sur la façon dont la solution contenue dans le &lt;code&gt;FMTspatialschedule&lt;/code&gt; atteint l&amp;rsquo;objectif du modèle.&lt;/p&gt;
-&lt;p&gt;Cette fonction donne également une valeur de l&amp;rsquo;&lt;em&gt;infaisabilité primaire&lt;/em&gt;, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.&lt;/p&gt;
+&lt;p&gt;Cette fonction donne également une valeur de l&#39;&lt;em&gt;infaisabilité primaire&lt;/em&gt;, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.&lt;/p&gt;
 &lt;p&gt;Notez que contrairement à l&amp;rsquo;objet &lt;code&gt;FMTschedule&lt;/code&gt; qui ne concerne qu&amp;rsquo;une seule période de temps (c&amp;rsquo;est pourquoi le code montré dans la section sur &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;l&amp;rsquo;optimisation spatialement référencée&lt;/a&gt; contenait une boucle &lt;code&gt;for&lt;/code&gt; autour du nombre de périodes d&amp;rsquo;intérêt lorsqu&amp;rsquo;il s&amp;rsquo;agissait de la classe &lt;code&gt;FMTschedule&lt;/code&gt;), &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution pour plusieurs périodes de temps à la fois.&lt;/p&gt;
 &lt;h2 id=&#34;le-fmtlinegraph&#34;&gt;Le &lt;code&gt;FMTlinegraph&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Comme dit précédemment, la structure spatiale d&amp;rsquo;un &lt;code&gt;FMTsesmodel&lt;/code&gt; est comme une carte raster faite de pixels, chaque pixel étant un &lt;code&gt;FMTlinegraph&lt;/code&gt;.&lt;/p&gt;

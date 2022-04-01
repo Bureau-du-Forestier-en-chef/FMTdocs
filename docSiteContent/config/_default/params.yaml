@@ -90,3 +90,6 @@ cms:
 icon:
   pack:
     ai: false
+slides:
+  theme: "white"  # Reveal JS theme name
+  highlight_style: "github"  # Highlight JS theme name

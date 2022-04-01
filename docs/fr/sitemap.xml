@@ -80,6 +80,8 @@
                 href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/download_install/downloading_libraries/"
                 />
   </url><url>
+    <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/slides_links/</loc>
+  </url><url>
     <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/download_install/compiling/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <xhtml:link
@@ -181,6 +183,10 @@
                 hreflang="fr"
                 href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/categories/"
                 />
+  </url><url>
+    <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_bases_intro/</loc>
+  </url><url>
+    <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/</loc>
   </url><url>
     <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tags/</loc>
     <xhtml:link

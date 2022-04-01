@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.2.0 for Hugo">
+
+  
+    <link rel="manifest" href="/FMTdocs/fr/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_bases_intro/">
+
+  <title>Les bases de FMT | Documentation de FMT</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/theme/white.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/obsidian.min.css" crossorigin="anonymous" id="highlight-theme">
+
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/reveal_custom.min.css">
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h1 id="les-bases-de-fmt">Les bases de FMT</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png"
+               width="40%"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/gcyr/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="controles">Controles</h2>
+<ul>
+<li>Suivant: <code>Right Arrow</code> ou <code>Space</code></li>
+<li>Précédent: <code>Left Arrow</code></li>
+<li>Début: <code>Home</code></li>
+<li>Fin: <code>End</code></li>
+<li>Vue globale: <code>Esc</code></li>
+<li>Notes de présentateur: <code>S</code></li>
+<li>Plein écran: <code>F</code></li>
+<li>Zoom: <code>Alt + Click</code></li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="quest-ce-que-fmt-">Qu&rsquo;est-ce que FMT ?</h2>
+<ul>
+<li>librairie open source</li>
+<li>objets et fonctions</li>
+<li>en C++, R ou Python</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="a-quoi-sert-fmt-">A quoi sert FMT ?</h2>
+<ul>
+<li>planification forestière
+<ul>
+<li>comment récolter des forêts pour maximiser des objectifs (e.g. rendement) ?</li>
+<li>sous certaines contraintes (e.g. legislation, technologie, etc.)</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="en-pratique-a-quoi-ca-sert-">En pratique, a quoi ca sert ?</h2>
+<ul>
+<li>Lecture de modèles Woodstock</li>
+<li>Simulation de paysages forestiers</li>
+<li>Optimisation / Ré-optimisation de modèles</li>
+<li>Planification (en utilisant des événements stochastiques)</li>
+<li>Résolution des heuristiques d&rsquo;agrégation</li>
+<li>Planification des blocs de récolte</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="comment-est-ce-que-ça-marche-">Comment est-ce que ça marche ?</h2>
+<ul>
+<li>code source en c++</li>
+<li>compilation en Python et R</li>
+</ul>
+<span class="fragment " >
+<!-- svg diagram created with draw.io using file > embed > svg for the html code. -->
+<p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="611px" viewBox="-0.5 -0.5 611 151" style="max-width:100%;max-height:151px;"><defs/><g><rect x="210" y="0" width="180" height="40" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 20px; margin-left: 211px;"><div style="box-sizing: border-box; font-size: 0px; text-align: center;" data-drawio-colors="color: rgb(0, 0, 0); "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><div style="display: inline-block"><span id="L-L-1-2" class="edgeLabel L-LS-1' L-LE-2"></span></div><div style="display: inline-block"><span id="L-L-1-3" class="edgeLabel L-LS-1' L-LE-3"></span></div><div style="display: inline-block"><span id="L-L-1-4" class="edgeLabel L-LS-1' L-LE-4"></span></div><div style="display: inline-block">Interface de programmation (C++)</div></div></div></div></foreignObject><text x="300" y="24" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Interface de programmation (C+&hellip;</text></switch></g><rect x="0" y="110" width="180" height="40" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 1px;"><div style="box-sizing: border-box; font-size: 0px; text-align: center;" data-drawio-colors="color: rgb(0, 0, 0); "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">R</div></div></div></foreignObject><text x="90" y="134" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">R</text></switch></g><rect x="210" y="110" width="180" height="40" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 211px;"><div style="box-sizing: border-box; font-size: 0px; text-align: center;" data-drawio-colors="color: rgb(0, 0, 0); "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Python 2</div></div></div></foreignObject><text x="300" y="134" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Python 2</text></switch></g><rect x="430" y="110" width="180" height="40" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 431px;"><div style="box-sizing: border-box; font-size: 0px; text-align: center;" data-drawio-colors="color: rgb(0, 0, 0); "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Python 3</div></div></div></foreignObject><text x="520" y="134" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Python 3</text></switch></g><path d="M 90 110 L 300 40" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 300 110 L 300 40" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 520 110 L 300 40" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg></p>
+</span>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="pourquoi-fmt-">Pourquoi FMT ?</h2>
+<span class="fragment " >
+<p>Projet du Bureau du Forestier en Chec du Québec.</p>
+</span>
+<ul>
+<li>2017 : Besoin d&rsquo;automatiser l&rsquo;utilisation de modèles Woodstocks</li>
+<li>2018 : Besoin de relier Woodstock à GCBM pour estimations de carbone</li>
+<li>2019 à aujourd&rsquo;hui : Augmentation des performances et fonctionalités</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="le-futur">Le futur</h2>
+<ul>
+<li>Interface utilisateurice (GUI)</li>
+<li>Optimisation spatialement explicite</li>
+<li>Meilleus <em>outputs</em> (sorties)</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="un-test-de-code-">Un test de code !</h2>
+<p>Highlight.js rend ca tout beau tout propre et interactif !</p>
+<pre><code class="R">
+library(FMT) # Charge FMT dans R
+if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
+{
+  # Créer un objet parser pour lire les fichiers du modèle
+  newmodelparser <- new(FMTmodelparser)
+  # Lit le projet avec le parser en spécifiant que l'on veut lire le scénario "LP" (il peut y avoir différents scénarios dans un seul modèle)
+  modelslist <- newmodelparser$readproject("Models/TWD_land/TWD_land.pri", c("LP"), TRUE, TRUE, TRUE)
+  model_scenario_lp <- modelslist[[1]]
+  # On récupère le nom du modèle
+  print(model_scen_lp$getname())
+} else { # Si le modèle n'as pas été compilé avec OSI, on affiche une erreur
+  print("FMT needs to be compiled with OSI")
+}
+</code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="comment-ca-du-code-interactif-">Comment ca, du code interactif ?</h2>
+<p>Reveal.js permet de mettre en valeur des lignes par intermitence. Ici, la 2, puis la 8, puis la 13. Fantastique pour parler du code au fur et à mesure.</p>
+<pre><code class="R" data-line-numbers="2|8|13">
+library(FMT) # Charge FMT dans R
+if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
+{
+  # Créer un objet parser pour lire les fichiers du modèle
+  newmodelparser <- new(FMTmodelparser)
+  # Lit le projet avec le parser en spécifiant que l'on veut lire le scénario "LP" (il peut y avoir différents scénarios dans un seul modèle)
+  modelslist <- newmodelparser$readproject("Models/TWD_land/TWD_land.pri", c("LP"), TRUE, TRUE, TRUE)
+  model_scenario_lp <- modelslist[[1]]
+  # On récupère le nom du modèle
+  print(model_scen_lp$getname())
+} else { # Si le modèle n'as pas été compilé avec OSI, on affiche une erreur
+  print("FMT needs to be compiled with OSI")
+}
+</code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="la-suite">La suite</h2>
+<p><a href="../objets_parsing_interrogation">Objets, parsing et interrogation</a></p>
+<p>^ Lien vers la présentation suivante, si besoin.</p>
+<!-- CODE SUPLEMENTAIRE DE CLEMENT -->
+<!-- Ce code permet de automatiquement
+  faire en sorte que toutes les listes
+  dans la présentation aient la classe "fragment"
+  de reveal.js, ce qui les fait apparaitre petit à petit.
+  Bien plus rapide que de mettre le code <span class="fragment " >
+  
+  pour chacune d'entre elle. 
+  D'autres classes peuvent être rajoutées. -->
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+$( "li" ).addClass( "fragment" );
+// $( "p" ).addClass( "fragment" );
+</script>
+</span>
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/highlight/highlight.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+  
+
+  
+  
+  
+  <script>
+    Reveal.initialize({
+      plugins: [ RevealMarkdown, RevealZoom, RevealSearch, RevealNotes, RevealMath, RevealHighlight ],
+      slideNumber: true,
+      controlsLayout: 'edges'
+    });
+</script>
+
+</body>
+</html>

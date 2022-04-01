@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides | Documentation de FMT</title>
+    <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/</link>
+      <atom:link href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/index.xml" rel="self" type="application/rss+xml" />
+    <description>Slides</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-ca</language><copyright>© 2022 Bureau du Forestier en Chef du Québec</copyright>
+    <item>
+      <title>Les bases de FMT</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_bases_intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_bases_intro/</guid>
+      <description>&lt;h1 id=&#34;les-bases-de-fmt&#34;&gt;Les bases de FMT&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gcyr/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controles&#34;&gt;Controles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Suivant: &lt;code&gt;Right Arrow&lt;/code&gt; ou &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Précédent: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Début: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fin: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Vue globale: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Notes de présentateur: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plein écran: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;quest-ce-que-fmt-&#34;&gt;Qu&amp;rsquo;est-ce que FMT ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;librairie open source&lt;/li&gt;
+&lt;li&gt;objets et fonctions&lt;/li&gt;
+&lt;li&gt;en C++, R ou Python&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;a-quoi-sert-fmt-&#34;&gt;A quoi sert FMT ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;planification forestière
+&lt;ul&gt;
+&lt;li&gt;comment récolter des forêts pour maximiser des objectifs (e.g. rendement) ?&lt;/li&gt;
+&lt;li&gt;sous certaines contraintes (e.g. legislation, technologie, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;en-pratique-a-quoi-ca-sert-&#34;&gt;En pratique, a quoi ca sert ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lecture de modèles Woodstock&lt;/li&gt;
+&lt;li&gt;Simulation de paysages forestiers&lt;/li&gt;
+&lt;li&gt;Optimisation / Ré-optimisation de modèles&lt;/li&gt;
+&lt;li&gt;Planification (en utilisant des événements stochastiques)&lt;/li&gt;
+&lt;li&gt;Résolution des heuristiques d&amp;rsquo;agrégation&lt;/li&gt;
+&lt;li&gt;Planification des blocs de récolte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;comment-est-ce-que-ça-marche-&#34;&gt;Comment est-ce que ça marche ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;code source en c++&lt;/li&gt;
+&lt;li&gt;compilation en Python et R&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;!-- svg diagram created with draw.io using file &gt; embed &gt; svg for the html code. --&gt;
+&lt;p&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; version=&#34;1.1&#34; width=&#34;611px&#34; viewBox=&#34;-0.5 -0.5 611 151&#34; style=&#34;max-width:100%;max-height:151px;&#34;&gt;&lt;defs/&gt;&lt;g&gt;&lt;rect x=&#34;210&#34; y=&#34;0&#34; width=&#34;180&#34; height=&#34;40&#34; fill=&#34;rgb(255, 255, 255)&#34; stroke=&#34;rgb(0, 0, 0)&#34; pointer-events=&#34;all&#34;/&gt;&lt;g transform=&#34;translate(-0.5 -0.5)&#34;&gt;&lt;switch&gt;&lt;foreignObject style=&#34;overflow: visible; text-align: left;&#34; pointer-events=&#34;none&#34; width=&#34;100%&#34; height=&#34;100%&#34; requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34; style=&#34;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 20px; margin-left: 211px;&#34;&gt;&lt;div style=&#34;box-sizing: border-box; font-size: 0px; text-align: center;&#34; data-drawio-colors=&#34;color: rgb(0, 0, 0); &#34;&gt;&lt;div style=&#34;display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;&#34;&gt;&lt;div style=&#34;display: inline-block&#34;&gt;&lt;span id=&#34;L-L-1-2&#34; class=&#34;edgeLabel L-LS-1&#39; L-LE-2&#34;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&#34;display: inline-block&#34;&gt;&lt;span id=&#34;L-L-1-3&#34; class=&#34;edgeLabel L-LS-1&#39; L-LE-3&#34;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&#34;display: inline-block&#34;&gt;&lt;span id=&#34;L-L-1-4&#34; class=&#34;edgeLabel L-LS-1&#39; L-LE-4&#34;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&#34;display: inline-block&#34;&gt;Interface de programmation (C++)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/foreignObject&gt;&lt;text x=&#34;300&#34; y=&#34;24&#34; fill=&#34;rgb(0, 0, 0)&#34; font-family=&#34;Helvetica&#34; font-size=&#34;12px&#34; text-anchor=&#34;middle&#34;&gt;Interface de programmation (C+&amp;hellip;&lt;/text&gt;&lt;/switch&gt;&lt;/g&gt;&lt;rect x=&#34;0&#34; y=&#34;110&#34; width=&#34;180&#34; height=&#34;40&#34; fill=&#34;rgb(255, 255, 255)&#34; stroke=&#34;rgb(0, 0, 0)&#34; pointer-events=&#34;all&#34;/&gt;&lt;g transform=&#34;translate(-0.5 -0.5)&#34;&gt;&lt;switch&gt;&lt;foreignObject style=&#34;overflow: visible; text-align: left;&#34; pointer-events=&#34;none&#34; width=&#34;100%&#34; height=&#34;100%&#34; requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34; style=&#34;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 1px;&#34;&gt;&lt;div style=&#34;box-sizing: border-box; font-size: 0px; text-align: center;&#34; data-drawio-colors=&#34;color: rgb(0, 0, 0); &#34;&gt;&lt;div style=&#34;display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;&#34;&gt;R&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/foreignObject&gt;&lt;text x=&#34;90&#34; y=&#34;134&#34; fill=&#34;rgb(0, 0, 0)&#34; font-family=&#34;Helvetica&#34; font-size=&#34;12px&#34; text-anchor=&#34;middle&#34;&gt;R&lt;/text&gt;&lt;/switch&gt;&lt;/g&gt;&lt;rect x=&#34;210&#34; y=&#34;110&#34; width=&#34;180&#34; height=&#34;40&#34; fill=&#34;rgb(255, 255, 255)&#34; stroke=&#34;rgb(0, 0, 0)&#34; pointer-events=&#34;all&#34;/&gt;&lt;g transform=&#34;translate(-0.5 -0.5)&#34;&gt;&lt;switch&gt;&lt;foreignObject style=&#34;overflow: visible; text-align: left;&#34; pointer-events=&#34;none&#34; width=&#34;100%&#34; height=&#34;100%&#34; requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34; style=&#34;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 211px;&#34;&gt;&lt;div style=&#34;box-sizing: border-box; font-size: 0px; text-align: center;&#34; data-drawio-colors=&#34;color: rgb(0, 0, 0); &#34;&gt;&lt;div style=&#34;display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;&#34;&gt;Python 2&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/foreignObject&gt;&lt;text x=&#34;300&#34; y=&#34;134&#34; fill=&#34;rgb(0, 0, 0)&#34; font-family=&#34;Helvetica&#34; font-size=&#34;12px&#34; text-anchor=&#34;middle&#34;&gt;Python 2&lt;/text&gt;&lt;/switch&gt;&lt;/g&gt;&lt;rect x=&#34;430&#34; y=&#34;110&#34; width=&#34;180&#34; height=&#34;40&#34; fill=&#34;rgb(255, 255, 255)&#34; stroke=&#34;rgb(0, 0, 0)&#34; pointer-events=&#34;all&#34;/&gt;&lt;g transform=&#34;translate(-0.5 -0.5)&#34;&gt;&lt;switch&gt;&lt;foreignObject style=&#34;overflow: visible; text-align: left;&#34; pointer-events=&#34;none&#34; width=&#34;100%&#34; height=&#34;100%&#34; requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34; style=&#34;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 431px;&#34;&gt;&lt;div style=&#34;box-sizing: border-box; font-size: 0px; text-align: center;&#34; data-drawio-colors=&#34;color: rgb(0, 0, 0); &#34;&gt;&lt;div style=&#34;display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;&#34;&gt;Python 3&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/foreignObject&gt;&lt;text x=&#34;520&#34; y=&#34;134&#34; fill=&#34;rgb(0, 0, 0)&#34; font-family=&#34;Helvetica&#34; font-size=&#34;12px&#34; text-anchor=&#34;middle&#34;&gt;Python 3&lt;/text&gt;&lt;/switch&gt;&lt;/g&gt;&lt;path d=&#34;M 90 110 L 300 40&#34; fill=&#34;none&#34; stroke=&#34;rgb(0, 0, 0)&#34; stroke-miterlimit=&#34;10&#34; pointer-events=&#34;stroke&#34;/&gt;&lt;path d=&#34;M 300 110 L 300 40&#34; fill=&#34;none&#34; stroke=&#34;rgb(0, 0, 0)&#34; stroke-miterlimit=&#34;10&#34; pointer-events=&#34;stroke&#34;/&gt;&lt;path d=&#34;M 520 110 L 300 40&#34; fill=&#34;none&#34; stroke=&#34;rgb(0, 0, 0)&#34; stroke-miterlimit=&#34;10&#34; pointer-events=&#34;stroke&#34;/&gt;&lt;/g&gt;&lt;switch&gt;&lt;g requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;/&gt;&lt;a transform=&#34;translate(0,-5)&#34; xlink:href=&#34;https://www.diagrams.net/doc/faq/svg-export-text-problems&#34; target=&#34;_blank&#34;&gt;&lt;text text-anchor=&#34;middle&#34; font-size=&#34;10px&#34; x=&#34;50%&#34; y=&#34;100%&#34;&gt;Text is not SVG - cannot display&lt;/text&gt;&lt;/a&gt;&lt;/switch&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;pourquoi-fmt-&#34;&gt;Pourquoi FMT ?&lt;/h2&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;p&gt;Projet du Bureau du Forestier en Chec du Québec.&lt;/p&gt;
+&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;2017 : Besoin d&amp;rsquo;automatiser l&amp;rsquo;utilisation de modèles Woodstocks&lt;/li&gt;
+&lt;li&gt;2018 : Besoin de relier Woodstock à GCBM pour estimations de carbone&lt;/li&gt;
+&lt;li&gt;2019 à aujourd&amp;rsquo;hui : Augmentation des performances et fonctionalités&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;le-futur&#34;&gt;Le futur&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Interface utilisateurice (GUI)&lt;/li&gt;
+&lt;li&gt;Optimisation spatialement explicite&lt;/li&gt;
+&lt;li&gt;Meilleus &lt;em&gt;outputs&lt;/em&gt; (sorties)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;un-test-de-code-&#34;&gt;Un test de code !&lt;/h2&gt;
+&lt;p&gt;Highlight.js rend ca tout beau tout propre et interactif !&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;R&#34;&gt;
+library(FMT) # Charge FMT dans R
+if (new(FMTversion)$hasfeature(&#34;OSI&#34;)) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
+{
+  # Créer un objet parser pour lire les fichiers du modèle
+  newmodelparser &lt;- new(FMTmodelparser)
+  # Lit le projet avec le parser en spécifiant que l&#39;on veut lire le scénario &#34;LP&#34; (il peut y avoir différents scénarios dans un seul modèle)
+  modelslist &lt;- newmodelparser$readproject(&#34;Models/TWD_land/TWD_land.pri&#34;, c(&#34;LP&#34;), TRUE, TRUE, TRUE)
+  model_scenario_lp &lt;- modelslist[[1]]
+  # On récupère le nom du modèle
+  print(model_scen_lp$getname())
+} else { # Si le modèle n&#39;as pas été compilé avec OSI, on affiche une erreur
+  print(&#34;FMT needs to be compiled with OSI&#34;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;comment-ca-du-code-interactif-&#34;&gt;Comment ca, du code interactif ?&lt;/h2&gt;
+&lt;p&gt;Reveal.js permet de mettre en valeur des lignes par intermitence. Ici, la 2, puis la 8, puis la 13. Fantastique pour parler du code au fur et à mesure.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;R&#34; data-line-numbers=&#34;2|8|13&#34;&gt;
+library(FMT) # Charge FMT dans R
+if (new(FMTversion)$hasfeature(&#34;OSI&#34;)) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
+{
+  # Créer un objet parser pour lire les fichiers du modèle
+  newmodelparser &lt;- new(FMTmodelparser)
+  # Lit le projet avec le parser en spécifiant que l&#39;on veut lire le scénario &#34;LP&#34; (il peut y avoir différents scénarios dans un seul modèle)
+  modelslist &lt;- newmodelparser$readproject(&#34;Models/TWD_land/TWD_land.pri&#34;, c(&#34;LP&#34;), TRUE, TRUE, TRUE)
+  model_scenario_lp &lt;- modelslist[[1]]
+  # On récupère le nom du modèle
+  print(model_scen_lp$getname())
+} else { # Si le modèle n&#39;as pas été compilé avec OSI, on affiche une erreur
+  print(&#34;FMT needs to be compiled with OSI&#34;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;la-suite&#34;&gt;La suite&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;../objets_parsing_interrogation&#34;&gt;Objets, parsing et interrogation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;^ Lien vers la présentation suivante, si besoin.&lt;/p&gt;
+&lt;!-- CODE SUPLEMENTAIRE DE CLEMENT --&gt;
+&lt;!-- Ce code permet de automatiquement
+  faire en sorte que toutes les listes
+  dans la présentation aient la classe &#34;fragment&#34;
+  de reveal.js, ce qui les fait apparaitre petit à petit.
+  Bien plus rapide que de mettre le code &lt;span class=&#34;fragment &#34; &gt;
+  
+  pour chacune d&#39;entre elle. 
+  D&#39;autres classes peuvent être rajoutées. --&gt;
+&lt;script src=&#34;https://code.jquery.com/jquery-3.5.0.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+$( &#34;li&#34; ).addClass( &#34;fragment&#34; );
+// $( &#34;p&#34; ).addClass( &#34;fragment&#34; );
+&lt;/script&gt;
+&lt;/span&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

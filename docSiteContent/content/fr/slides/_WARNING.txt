@@ -1,0 +1,3 @@
+Si les dossiers ici sont nommés avec une majuscule dedand, le path vers le dossier ne marche plus.
+
+Impossible de savoir pourquoi. Fait qu'il faut garder des minuscules !
