@@ -16,3 +16,4 @@ Les présentations seront déformées si vous les regardez sur mobiles. Il est r
 {{% /callout %}}
 
 - [Présentation sur les bases de FMT](../../slides/fmt_bases_intro)
+- [Présentation sur le carbone avec machine learning](../../slides/fmt_carbone)
