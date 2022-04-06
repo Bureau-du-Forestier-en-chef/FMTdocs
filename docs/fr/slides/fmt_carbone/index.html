@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.2.0 for Hugo">
+
+  
+    <link rel="manifest" href="/FMTdocs/fr/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone/">
+
+  <title>Planification forestière à l’aide du Machine Learning | Documentation de FMT</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/theme/white.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/obsidian.min.css" crossorigin="anonymous" id="highlight-theme">
+
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/reveal_custom.min.css">
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h1 id="planification-forestière-à-laide-du-machine-learning">Planification forestière à l’aide du Machine Learning</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png"
+               width="40%"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/Bureau-du-Forestier-en-chef/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="problématique">Problématique</h1>
+<ul>
+<li>Notre bilan carbone est difficile à obtenir rapidement:
+<ul>
+<li>Pour tous les réservoirs de l&rsquo;écosystème:
+<ul>
+<li>Carbone du sol</li>
+<li>Biomasse souterraine</li>
+<li>Litière</li>
+<li>Bois mort</li>
+<li>Biomasse aérienne</li>
+</ul>
+</li>
+<li>La productivité nette de l&rsquo;écosystème</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="problématique-1">Problématique</h1>
+<ul>
+<li>La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeux complexe:
+<ul>
+<li>Le calcul du bilan de carbone forestier pour un modèle de planification est complexe</li>
+<li>L’optimisation spatialement explicit de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="productivité-nette-de-lécosystème">Productivité nette de l’écosystème</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_3e2f13d9abf88e0b128425374fafb022.jpg 400w,
+               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_aef9af3570f698f2c7593e9b162be91a.jpg 760w,
+               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_3e2f13d9abf88e0b128425374fafb022.jpg"
+               width="30%"
+               height="30%"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="productivité-nette-de-lécosystème-1">Productivité nette de l’écosystème</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_4dae00f9f0f49467f8ff27cef7012c9d.jpg 400w,
+               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_f7f6646cae196dd008d471e60246feb1.jpg 760w,
+               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_4dae00f9f0f49467f8ff27cef7012c9d.jpg"
+               width="30%"
+               height="30%"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique-productivité-nette-de-lécosystème-">Problématique: Productivité nette de l’écosystème ?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1701541e4dddfe927aebd272ef312f16.jpg 400w,
+               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_97e97022a2744b6bedc9539b4616f09d.jpg 760w,
+               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1701541e4dddfe927aebd272ef312f16.jpg"
+               width="30%"
+               height="30%"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique-états-des-réservoirs-">Problématique: États des réservoirs ?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_ded7a18421b10e73ed78d2dcae3c5255.jpg 400w,
+               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_11890410cf0b1b28dc8f22f873ef0c02.jpg 760w,
+               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_ded7a18421b10e73ed78d2dcae3c5255.jpg"
+               width="30%"
+               height="30%"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique-états-des-réservoirs--1">Problématique: États des réservoirs ?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_adab33c79f78275d1c0e42c17069d607.jpg 400w,
+               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_84cc08cee2b241c6db91a1f00d0b5be7.jpg 760w,
+               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_adab33c79f78275d1c0e42c17069d607.jpg"
+               width="30%"
+               height="30%"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique-états-des-réservoirs--2">Problématique: États des réservoirs ?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_f77d977dce1725671d25a52873d31e12.jpg 400w,
+               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_422058d29a1cfce89b064ca1d2337d3b.jpg 760w,
+               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_f77d977dce1725671d25a52873d31e12.jpg"
+               width="30%"
+               height="30%"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématiquepour-chaque-période">Problématique:…Pour chaque période</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_c02d6cfa30ce0d51e4a0f0e6553bbeb9.jpg 400w,
+               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_0e76b3767bd177ca3aa31e52fe8b2294.jpg 760w,
+               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_c02d6cfa30ce0d51e4a0f0e6553bbeb9.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif">Objectif</h2>
+<ul>
+<li>Obtention du bilan de carbone rapidement:
+<ul>
+<li>Tous les réservoirs de l’écosystème:
+<ul>
+<li>Carbone du sol</li>
+<li>Biomasse sous-terraine</li>
+<li>Litière</li>
+<li>Bois mort</li>
+<li>Biomasse aérienne</li>
+</ul>
+</li>
+<li>La productivité nette de l’écosystème</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="données-dapprentissage">Données d&rsquo;apprentissage</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_383b65639894a45d2218431f70422cfc.jpg 400w,
+               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_d0d792e27682672d00d8b2525e1f5d4b.jpg 760w,
+               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_383b65639894a45d2218431f70422cfc.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="apprentissage-réalisé">Apprentissage réalisé</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_17c89c59b70bc89674b0868ddc81acbd.jpg 400w,
+               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_bca3b17e4e6177b1ee59e011f1b5dfd1.jpg 760w,
+               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_17c89c59b70bc89674b0868ddc81acbd.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="utilisation-de-la-méthode">Utilisation de la méthode</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_842949383e8f56b7c8f2b6ab99f4af86.jpg 400w,
+               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_27e8c7f5d1a79702312651af363a9d9b.jpg 760w,
+               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_842949383e8f56b7c8f2b6ab99f4af86.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="utilisation-de-la-méthode-1">Utilisation de la méthode</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_d48135e1ef1a1ba76c6abfd448db416c.jpg 400w,
+               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_aef2db820e84dd7d8eecf9b21baae274.jpg 760w,
+               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_d48135e1ef1a1ba76c6abfd448db416c.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="concrètement">Concrètement</h2>
+<ul>
+<li>Nouvelle syntaxe pour la section yield</li>
+<li>Voir dans examples/Models/TWD_land/Scenarios/Predictors</li>
+<li>Développement d&rsquo;un nouveau type de yield &ldquo;*YM&rdquo;</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="modèle-pour-les-réservoirs">Modèle pour les réservoirs</h2>
+  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17">
+  {
+  Intrants:
+    - GFI = Volume de feuillu intolérant
+    - GFT = Volume de feuillu tolérant
+    - GF = Volume feuillu total
+    - GR = Volume résineu total
+  }
+  *YM ? ? ?
+  AG_Biomass_C,BG_Biomass_C,Deadwood_C,Litter_C,Soil_C _PRED(pools_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+
+  </code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="modèle-pour-la-productivité-nette-de-lécosystème">Modèle pour la productivité nette de l&rsquo;écosystème</h2>
+  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17">
+  {
+  Intrants:
+    - GFI = Volume de feuillu intolérant
+    - GFT = Volume de feuillu tolérant
+    - GF = Volume feuillu total
+    - GR = Volume résineu total
+  }
+  *YM ? ? ?
+  NEP _PRED(nep_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+  </code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="suivi-des-variables">Suivi des variables</h2>
+  <pre><code class="fmt" data-line-numbers="4|5|8|9|12|13">
+
+  ;Inventaire de la productivité nette de l'écosystème en (c)
+  *OUTPUT NEP_Total
+  *SOURCE ? ? ? _INVENT NEP
+
+  ;Inventaire de la biomasse anérienne et souterraine en (c)
+  *OUTPUT Biomasse_Total
+  *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
+
+  ;Inventaire du carbone du sols en (c)
+  *OUTPUT Sols_Total
+  *SOURCE ? ? ? _INVENT Soil_C
+
+  </code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique--optimisation-spatialement-explicit">Problématique : Optimisation spatialement explicit</h2>
+<ul>
+<li>Pratiquement impossible avec nos modèles</li>
+<li>Utilisations d’un heuristique pour placer la récolte</li>
+<li>Difficile à obtenir à moins d’implémenter une heuristique:
+<ul>
+<li>Simulated Annealing</li>
+<li>Tabou Search</li>
+</ul>
+</li>
+<li>Utilisation de la programmation mixte intégrale</li>
+<li>On peut donc difficilement répondre à la question du ou doit t’on faire t&rsquo;elle ou t&rsquo;elle traitement pour améliorer notre bilan de carbone</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif--meilleur-bilan">Objectif : Meilleur bilan</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_07acc442700004552a6f361aa7016565.jpg 400w,
+               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_a670cf9689e8759e821b7d8c4d22d386.jpg 760w,
+               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_07acc442700004552a6f361aa7016565.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif--meilleur-bilan-1">Objectif : Meilleur bilan</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_51a18e3cb2dcd2d9958cb4c82e4be6e4.jpg 400w,
+               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_a19231ab76a43a2463cf8aad608be1e5.jpg 760w,
+               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_51a18e3cb2dcd2d9958cb4c82e4be6e4.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif--meilleur-bilan-et-respect-des-contraintes">Objectif : Meilleur bilan et respect des contraintes</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_b6e07c5560226bf0c5c5febd530bc5b4.jpg 400w,
+               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_7c7ff0bee997a5cd7d825805c0c1db7e.jpg 760w,
+               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_b6e07c5560226bf0c5c5febd530bc5b4.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif--meilleur-bilan-et-respect-des-contraintes-1">Objectif : Meilleur bilan et respect des contraintes</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_f76e8c24d120e93415be0dbd709e2c62.jpg 400w,
+               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_cd469254f6f042a166b7fbc0ebfaac3f.jpg 760w,
+               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_f76e8c24d120e93415be0dbd709e2c62.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="apprentissage">Apprentissage</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_4a2e89ffded06b32bf819a16d1cbbd71.jpg 400w,
+               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_42884f76c9c3c5e5bd137a04116470bd.jpg 760w,
+               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_4a2e89ffded06b32bf819a16d1cbbd71.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="apprentissage-1">Apprentissage</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_f06be374581069e1d1a1b007a80ab8f7.jpg 400w,
+               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_33254aae54858e1c6cff2c26a91662df.jpg 760w,
+               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_f06be374581069e1d1a1b007a80ab8f7.jpg"
+               width="auto"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="des-questions">Des Questions?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png"
+               width="40%"
+               height="auto"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/Bureau-du-Forestier-en-chef/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+$( "li" ).addClass( "fragment" );
+// $( "p" ).addClass( "fragment" );
+</script>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/highlight/highlight.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+  
+
+  
+  
+  
+  <script>
+    Reveal.initialize({
+      highlight: {
+        beforeHighlight: hljs => hljs.registerLanguage("fmt",function(hljs){
+	return 	{
+    case_insensitive: false,
+    contains: [
+      {
+        className: "string",
+        begin: /\?/, end: /[\s\t]/,
+        relevance: 0
+      },
+      hljs.COMMENT(
+        '{', 
+        '}', 
+        {
+          contains: [
+            {
+              scope: 'doc', begin: '@\\w+'
+            }
+          ]
+        }
+      ),
+      hljs.COMMENT(
+        ';', 
+        '\n', 
+        {
+          contains: [
+            {
+              scope: 'doc', begin: '@\\w+'
+            }
+          ]
+        }
+      ),
+      {
+        className: "number",
+        begin: String.raw`\b(\d*\.?\d+)\b`,
+        relevance: 0
+      },
+      {
+        className: 'number',
+        begin: String.raw`(#[\w]*)`,
+        relevance: 0
+      },
+      {
+        className: 'string',
+        begin: String.raw`(>=|<=|<|>|\+|\/)`,
+        relevance: 0
+      }
+    ],
+    keywords: {
+        $pattern: /\*\w+|_\w+/, 
+      keyword: ["*A", "*AA", "_LOCK",
+        "*THEME", "*AGGREGATE",
+        "*ACTION", "*OPERABLE", "_LOCKEXEMPT","_MAXAGE","_AGE",
+        "*CASE", "*SOURCE", "*TARGET", "_REPLACE", "_DEATH",
+        "*OUTPUT","@AGE","@YLD","_AREA","_INVENT",
+        "*Y", "*YC", "*YM", "_PRED", "_EQUATION", "_SUM", "_RANGE",
+        "_MAX", "_MIN", "_MAXMIN", "_MINMAX", "_EVEN", "_SEQ", "_NDY",
+        "_AVG", "*OBJECTIVE", "*EXCLUDE", "*CONSTRAINTS", "_LENGTH", "_TH",
+        "_SETFROMLOCAL", "_SETFROMGLOBAL", "_REIGNORE", "_RANDOM", "_SIZE", "_REPLICATE",
+        "_PENALTY", "_GOAL", "*FORMAT", "_SETGLOBALSCHEDULE","_ADJACENCY"]
+    },
+	}})
+      },
+      plugins: [ RevealMarkdown, RevealZoom, RevealSearch, RevealNotes, RevealMath, RevealHighlight ],
+      slideNumber: true,
+      controlsLayout: 'edges'
+    });
+</script>
+
+</body>
+</html>

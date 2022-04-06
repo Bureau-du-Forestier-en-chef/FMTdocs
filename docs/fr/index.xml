@@ -47,7 +47,7 @@
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si vous regardez l&#39;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
+    Si vous regardez l&amp;rsquo;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;classes-importantes-de-lespace-de-noms-parser&#34;&gt;Classes importantes de l&amp;rsquo;espace de noms &lt;code&gt;Parser&lt;/code&gt;&lt;/h2&gt;
@@ -431,7 +431,7 @@ _DEATH
 &lt;p&gt;Il peut résoudre un modèle de planification forestière de type III, et obtenir un calendrier de récolte optimal en utilisant les contraintes et les objectifs définis par l&amp;rsquo;utilisateur.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34;&gt;cet article&lt;/a&gt;.
+    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cet article&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Le &lt;code&gt;FMTlpmodel&lt;/code&gt; contient un objet appelé &lt;code&gt;FMTgraph&lt;/code&gt;, qui contient le &lt;em&gt;graphe&lt;/em&gt; du modèle. Le graphe est un ensemble de noeuds reliés entre eux par des liens. Chaque noeud correspond à un état possible pour une strate particulière (qui sont des groupes de peuplements forestiers référencés dans l&amp;rsquo;espace avec les mêmes caractéristiques), et chaque lien représente une façon particulière dont elle peut évoluer vers un autre état dans la même période de temps et entre les périodes.&lt;/p&gt;
@@ -873,7 +873,7 @@ Solution set at period   20
 &lt;p&gt;Cette fonction retourne un modèle avec moins de thèmes, d&amp;rsquo;actions, de transitions, de sorties et de contraintes que le modèle original, mais avec la même quantité d&amp;rsquo;informations. Cela le rend plus facile à résoudre, tout en donnant la même réponse à la fin.&lt;/p&gt;
 &lt;p&gt;Dans certaines situations, FMT pré-solutionerra le modèle automatiquement.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Maintenant que vous savez tout ce qu&amp;rsquo;il y a à savoir sur l&amp;rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&amp;rsquo;essayer l&#39;&lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt; pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.&lt;/p&gt;
+&lt;p&gt;Maintenant que vous savez tout ce qu&amp;rsquo;il y a à savoir sur l&amp;rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&amp;rsquo;essayer l&amp;rsquo;&lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt; pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.&lt;/p&gt;
 </description>
     </item>
     
@@ -963,7 +963,7 @@ cmake --install build/release --config Release
 &lt;/div&gt;
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
-    Si la compilation se termine par des messages d&amp;rsquo;erreur en rouge, vous pouvez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34;&gt;poster un problème sur la page des problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
+    Si la compilation se termine par des messages d&amp;rsquo;erreur en rouge, vous pouvez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poster un problème sur la page des problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -1139,7 +1139,7 @@ scheduleParser.write(modelSolution, r&amp;quot;D:/TempCode/FMT/FMT/Examples/prog
       <description>&lt;p&gt;Pour importer FMT que vous venez de compiler dans Python, vous devez avoir installé &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt; et &lt;a href=&#34;https://packaging.python.org/en/latest/tutorials/installing-packages/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pip&lt;/a&gt; sur votre ordinateur.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si Python n&amp;rsquo;est pas installé sur votre ordinateur, nous vous recommandons d&amp;rsquo;installer &lt;a href=&#34;https://docs.conda.io/en/latest/miniconda.html&#34;&gt;Miniconda&lt;/a&gt;, la version &amp;ldquo;légère&amp;rdquo; de la célèbre distribution Python &lt;a href=&#34;https://www.anaconda.com/&#34;&gt;Anaconda&lt;/a&gt;. Miniconda contient Python, pip et de nombreux autres modules qui sont utiles pour utiliser FMT.
+    Si Python n&amp;rsquo;est pas installé sur votre ordinateur, nous vous recommandons d&amp;rsquo;installer &lt;a href=&#34;https://docs.conda.io/en/latest/miniconda.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Miniconda&lt;/a&gt;, la version &amp;ldquo;légère&amp;rdquo; de la célèbre distribution Python &lt;a href=&#34;https://www.anaconda.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anaconda&lt;/a&gt;. Miniconda contient Python, pip et de nombreux autres modules qui sont utiles pour utiliser FMT.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Il existe deux façons d&amp;rsquo;importer FMT dans Python :&lt;/p&gt;
@@ -1175,7 +1175,7 @@ from FMT import Version
 &lt;p&gt;Et &lt;strong&gt;c&amp;rsquo;est tout, vous avez terminé 🎊🎉!&lt;/strong&gt; Maintenant, vous pouvez commencer à utiliser FMT !&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si vous avez eu des problèmes pendant le processus de téléchargement et d&amp;rsquo;installation de FMT, veuillez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34;&gt;poster un problème sur la page de problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
+    Si vous avez eu des problèmes pendant le processus de téléchargement et d&amp;rsquo;installation de FMT, veuillez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poster un problème sur la page de problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1215,7 +1215,7 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;h2 id=&#34;la-classe-fmtspatialschedule&#34;&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt;.&lt;/h2&gt;
 &lt;p&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution spatialement explicite sous la forme d&amp;rsquo;un &lt;code&gt;FMTlayer&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Elle contient une fonction importante, &lt;code&gt;FMTspatialschedule.getsolutionstatus()&lt;/code&gt;, qui imprime des informations importantes sur la façon dont la solution contenue dans le &lt;code&gt;FMTspatialschedule&lt;/code&gt; atteint l&amp;rsquo;objectif du modèle.&lt;/p&gt;
-&lt;p&gt;Cette fonction donne également une valeur de l&#39;&lt;em&gt;infaisabilité primaire&lt;/em&gt;, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.&lt;/p&gt;
+&lt;p&gt;Cette fonction donne également une valeur de l&amp;rsquo;&lt;em&gt;infaisabilité primaire&lt;/em&gt;, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.&lt;/p&gt;
 &lt;p&gt;Notez que contrairement à l&amp;rsquo;objet &lt;code&gt;FMTschedule&lt;/code&gt; qui ne concerne qu&amp;rsquo;une seule période de temps (c&amp;rsquo;est pourquoi le code montré dans la section sur &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;l&amp;rsquo;optimisation spatialement référencée&lt;/a&gt; contenait une boucle &lt;code&gt;for&lt;/code&gt; autour du nombre de périodes d&amp;rsquo;intérêt lorsqu&amp;rsquo;il s&amp;rsquo;agissait de la classe &lt;code&gt;FMTschedule&lt;/code&gt;), &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution pour plusieurs périodes de temps à la fois.&lt;/p&gt;
 &lt;h2 id=&#34;le-fmtlinegraph&#34;&gt;Le &lt;code&gt;FMTlinegraph&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Comme dit précédemment, la structure spatiale d&amp;rsquo;un &lt;code&gt;FMTsesmodel&lt;/code&gt; est comme une carte raster faite de pixels, chaque pixel étant un &lt;code&gt;FMTlinegraph&lt;/code&gt;.&lt;/p&gt;
@@ -1983,6 +1983,681 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 // $( &#34;p&#34; ).addClass( &#34;fragment&#34; );
 &lt;/script&gt;
 &lt;/span&gt;</description>
+    </item>
+    
+    <item>
+      <title>Planification forestière à l’aide du Machine Learning</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone/</guid>
+      <description>&lt;h1 id=&#34;planification-forestière-à-laide-du-machine-learning&#34;&gt;Planification forestière à l’aide du Machine Learning&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;problématique&#34;&gt;Problématique&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Notre bilan carbone est difficile à obtenir rapidement:
+&lt;ul&gt;
+&lt;li&gt;Pour tous les réservoirs de l&amp;rsquo;écosystème:
+&lt;ul&gt;
+&lt;li&gt;Carbone du sol&lt;/li&gt;
+&lt;li&gt;Biomasse souterraine&lt;/li&gt;
+&lt;li&gt;Litière&lt;/li&gt;
+&lt;li&gt;Bois mort&lt;/li&gt;
+&lt;li&gt;Biomasse aérienne&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;problématique-1&#34;&gt;Problématique&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeux complexe:
+&lt;ul&gt;
+&lt;li&gt;Le calcul du bilan de carbone forestier pour un modèle de planification est complexe&lt;/li&gt;
+&lt;li&gt;L’optimisation spatialement explicit de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;productivité-nette-de-lécosystème&#34;&gt;Productivité nette de l’écosystème&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_3e2f13d9abf88e0b128425374fafb022.jpg 400w,
+               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_aef9af3570f698f2c7593e9b162be91a.jpg 760w,
+               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_3e2f13d9abf88e0b128425374fafb022.jpg&#34;
+               width=&#34;30%&#34;
+               height=&#34;30%&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;productivité-nette-de-lécosystème-1&#34;&gt;Productivité nette de l’écosystème&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_4dae00f9f0f49467f8ff27cef7012c9d.jpg 400w,
+               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_f7f6646cae196dd008d471e60246feb1.jpg 760w,
+               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_4dae00f9f0f49467f8ff27cef7012c9d.jpg&#34;
+               width=&#34;30%&#34;
+               height=&#34;30%&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique-productivité-nette-de-lécosystème-&#34;&gt;Problématique: Productivité nette de l’écosystème ?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1701541e4dddfe927aebd272ef312f16.jpg 400w,
+               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_97e97022a2744b6bedc9539b4616f09d.jpg 760w,
+               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1701541e4dddfe927aebd272ef312f16.jpg&#34;
+               width=&#34;30%&#34;
+               height=&#34;30%&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique-états-des-réservoirs-&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_ded7a18421b10e73ed78d2dcae3c5255.jpg 400w,
+               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_11890410cf0b1b28dc8f22f873ef0c02.jpg 760w,
+               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_ded7a18421b10e73ed78d2dcae3c5255.jpg&#34;
+               width=&#34;30%&#34;
+               height=&#34;30%&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique-états-des-réservoirs--1&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_adab33c79f78275d1c0e42c17069d607.jpg 400w,
+               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_84cc08cee2b241c6db91a1f00d0b5be7.jpg 760w,
+               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_adab33c79f78275d1c0e42c17069d607.jpg&#34;
+               width=&#34;30%&#34;
+               height=&#34;30%&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique-états-des-réservoirs--2&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_f77d977dce1725671d25a52873d31e12.jpg 400w,
+               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_422058d29a1cfce89b064ca1d2337d3b.jpg 760w,
+               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_f77d977dce1725671d25a52873d31e12.jpg&#34;
+               width=&#34;30%&#34;
+               height=&#34;30%&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématiquepour-chaque-période&#34;&gt;Problématique:…Pour chaque période&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_c02d6cfa30ce0d51e4a0f0e6553bbeb9.jpg 400w,
+               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_0e76b3767bd177ca3aa31e52fe8b2294.jpg 760w,
+               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_c02d6cfa30ce0d51e4a0f0e6553bbeb9.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif&#34;&gt;Objectif&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Obtention du bilan de carbone rapidement:
+&lt;ul&gt;
+&lt;li&gt;Tous les réservoirs de l’écosystème:
+&lt;ul&gt;
+&lt;li&gt;Carbone du sol&lt;/li&gt;
+&lt;li&gt;Biomasse sous-terraine&lt;/li&gt;
+&lt;li&gt;Litière&lt;/li&gt;
+&lt;li&gt;Bois mort&lt;/li&gt;
+&lt;li&gt;Biomasse aérienne&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La productivité nette de l’écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;données-dapprentissage&#34;&gt;Données d&amp;rsquo;apprentissage&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_383b65639894a45d2218431f70422cfc.jpg 400w,
+               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_d0d792e27682672d00d8b2525e1f5d4b.jpg 760w,
+               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_383b65639894a45d2218431f70422cfc.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;apprentissage-réalisé&#34;&gt;Apprentissage réalisé&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_17c89c59b70bc89674b0868ddc81acbd.jpg 400w,
+               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_bca3b17e4e6177b1ee59e011f1b5dfd1.jpg 760w,
+               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_17c89c59b70bc89674b0868ddc81acbd.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;utilisation-de-la-méthode&#34;&gt;Utilisation de la méthode&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_842949383e8f56b7c8f2b6ab99f4af86.jpg 400w,
+               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_27e8c7f5d1a79702312651af363a9d9b.jpg 760w,
+               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_842949383e8f56b7c8f2b6ab99f4af86.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;utilisation-de-la-méthode-1&#34;&gt;Utilisation de la méthode&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_d48135e1ef1a1ba76c6abfd448db416c.jpg 400w,
+               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_aef2db820e84dd7d8eecf9b21baae274.jpg 760w,
+               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_d48135e1ef1a1ba76c6abfd448db416c.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;concrètement&#34;&gt;Concrètement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nouvelle syntaxe pour la section yield&lt;/li&gt;
+&lt;li&gt;Voir dans examples/Models/TWD_land/Scenarios/Predictors&lt;/li&gt;
+&lt;li&gt;Développement d&amp;rsquo;un nouveau type de yield &amp;ldquo;*YM&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;modèle-pour-les-réservoirs&#34;&gt;Modèle pour les réservoirs&lt;/h2&gt;
+  &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;3|4|5|6|7|9|10|13|14|15|16|17&#34;&gt;
+  {
+  Intrants:
+    - GFI = Volume de feuillu intolérant
+    - GFT = Volume de feuillu tolérant
+    - GF = Volume feuillu total
+    - GR = Volume résineu total
+  }
+  *YM ? ? ?
+  AG_Biomass_C,BG_Biomass_C,Deadwood_C,Litter_C,Soil_C _PRED(pools_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;modèle-pour-la-productivité-nette-de-lécosystème&#34;&gt;Modèle pour la productivité nette de l&amp;rsquo;écosystème&lt;/h2&gt;
+  &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;3|4|5|6|7|9|10|13|14|15|16|17&#34;&gt;
+  {
+  Intrants:
+    - GFI = Volume de feuillu intolérant
+    - GFT = Volume de feuillu tolérant
+    - GF = Volume feuillu total
+    - GR = Volume résineu total
+  }
+  *YM ? ? ?
+  NEP _PRED(nep_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;suivi-des-variables&#34;&gt;Suivi des variables&lt;/h2&gt;
+  &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;4|5|8|9|12|13&#34;&gt;
+
+  ;Inventaire de la productivité nette de l&#39;écosystème en (c)
+  *OUTPUT NEP_Total
+  *SOURCE ? ? ? _INVENT NEP
+
+  ;Inventaire de la biomasse anérienne et souterraine en (c)
+  *OUTPUT Biomasse_Total
+  *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
+
+  ;Inventaire du carbone du sols en (c)
+  *OUTPUT Sols_Total
+  *SOURCE ? ? ? _INVENT Soil_C
+
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique--optimisation-spatialement-explicit&#34;&gt;Problématique : Optimisation spatialement explicit&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pratiquement impossible avec nos modèles&lt;/li&gt;
+&lt;li&gt;Utilisations d’un heuristique pour placer la récolte&lt;/li&gt;
+&lt;li&gt;Difficile à obtenir à moins d’implémenter une heuristique:
+&lt;ul&gt;
+&lt;li&gt;Simulated Annealing&lt;/li&gt;
+&lt;li&gt;Tabou Search&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Utilisation de la programmation mixte intégrale&lt;/li&gt;
+&lt;li&gt;On peut donc difficilement répondre à la question du ou doit t’on faire t&amp;rsquo;elle ou t&amp;rsquo;elle traitement pour améliorer notre bilan de carbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif--meilleur-bilan&#34;&gt;Objectif : Meilleur bilan&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_07acc442700004552a6f361aa7016565.jpg 400w,
+               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_a670cf9689e8759e821b7d8c4d22d386.jpg 760w,
+               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_07acc442700004552a6f361aa7016565.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif--meilleur-bilan-1&#34;&gt;Objectif : Meilleur bilan&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_51a18e3cb2dcd2d9958cb4c82e4be6e4.jpg 400w,
+               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_a19231ab76a43a2463cf8aad608be1e5.jpg 760w,
+               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_51a18e3cb2dcd2d9958cb4c82e4be6e4.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif--meilleur-bilan-et-respect-des-contraintes&#34;&gt;Objectif : Meilleur bilan et respect des contraintes&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_b6e07c5560226bf0c5c5febd530bc5b4.jpg 400w,
+               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_7c7ff0bee997a5cd7d825805c0c1db7e.jpg 760w,
+               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_b6e07c5560226bf0c5c5febd530bc5b4.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif--meilleur-bilan-et-respect-des-contraintes-1&#34;&gt;Objectif : Meilleur bilan et respect des contraintes&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_f76e8c24d120e93415be0dbd709e2c62.jpg 400w,
+               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_cd469254f6f042a166b7fbc0ebfaac3f.jpg 760w,
+               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_f76e8c24d120e93415be0dbd709e2c62.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;apprentissage&#34;&gt;Apprentissage&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_4a2e89ffded06b32bf819a16d1cbbd71.jpg 400w,
+               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_42884f76c9c3c5e5bd137a04116470bd.jpg 760w,
+               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_4a2e89ffded06b32bf819a16d1cbbd71.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;apprentissage-1&#34;&gt;Apprentissage&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_f06be374581069e1d1a1b007a80ab8f7.jpg 400w,
+               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_33254aae54858e1c6cff2c26a91662df.jpg 760w,
+               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_f06be374581069e1d1a1b007a80ab8f7.jpg&#34;
+               width=&#34;auto&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;des-questions&#34;&gt;Des Questions?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&#34;https://code.jquery.com/jquery-3.5.0.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+$( &#34;li&#34; ).addClass( &#34;fragment&#34; );
+// $( &#34;p&#34; ).addClass( &#34;fragment&#34; );
+&lt;/script&gt;
+</description>
     </item>
     
   </channel>
