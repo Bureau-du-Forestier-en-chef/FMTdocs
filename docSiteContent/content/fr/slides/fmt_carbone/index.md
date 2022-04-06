@@ -16,6 +16,8 @@ slides:
 
 {{< figure src="LogoFMT.png" width="40%" height="auto" >}}
 
+[Github](https://github.com/Bureau-du-Forestier-en-chef/FMT) | [Documentation](https://bureau-du-forestier-en-chef.github.io/FMTdocs/)
+
 ---
 
 # Problématique
@@ -270,6 +272,8 @@ slides:
 ## Des Questions?
 
 {{< figure src="LogoFMT.png" width="40%" height="auto" >}}
+
+[Github](https://github.com/Bureau-du-Forestier-en-chef/FMT) | [Documentation](https://bureau-du-forestier-en-chef.github.io/FMTdocs/)
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
