@@ -13,13 +13,13 @@
 	font-size: 11pt;
 }
 .reveal section h1 {
-	font-size: 180%;
+	font-size: 40pt !important;
 }
 .reveal section h2 {
-	font-size: 130%;
+	font-size: 30pt !important;
 }
 .reveal section h3 {
-	font-size: 120%;
+	font-size: 25pt !important;
 }
 .reveal .slide-menu-button {
 	position: fixed;
