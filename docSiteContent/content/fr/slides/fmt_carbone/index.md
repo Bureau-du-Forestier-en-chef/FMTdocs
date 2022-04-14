@@ -20,7 +20,7 @@ slides:
 
 ---
 
-# Problématique
+## Problématique
 
 - Notre bilan carbone est difficile à obtenir rapidement:
   - Pour tous les réservoirs de l'écosystème:
@@ -34,7 +34,7 @@ slides:
 
 ---
 
-# Problématique
+## Problématique
 
 - La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeux complexe:
   - Le calcul du bilan de carbone forestier pour un modèle de planification est complexe
