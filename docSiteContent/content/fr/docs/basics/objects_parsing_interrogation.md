@@ -44,9 +44,9 @@ Les différentes classes d'objets dans FMT sont regroupées en *espaces de noms*
 Dans FMT, les différents *espaces de noms* sont :
 
 - **`Parser`** : Contient des classes utilisées pour lire ou éditer les fichiers des modèles au format Woodstock
-- **`Modèles`**: Contient des classes utilisées pour manipuler et résoudre les modèles
-- **`Spatial`**: Contient des classes utilisées pour pour travailler sur des données spatialement explicites
-- **`Heuristique`** : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps
+- **`Models`**: Contient des classes utilisées pour manipuler et résoudre les modèles
+- **`Spatial`**: Contient des classes utilisées pour travailler sur des données spatialement explicites
+- **`Heuristics`** : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps
 - **`Version`**: Contient des informations sur la version actuelle de FMT, et les fonctions qu'elle contient (ce qui dépend de la façon dont il a été compilée)
 
 {{% callout note %}}
