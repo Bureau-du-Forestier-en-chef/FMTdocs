@@ -25,7 +25,7 @@ Maintenant, imaginez que chaque fonction que vous utilisez est associée à un o
 
 À son tour, l'objet peut avoir des "propriétés", qui sont exactement ce à quoi cela ressemble. Par exemple, disons que notre classe `chat` a trois propriétés : `nom` (qui peut être une chaîne de caractères), `age` (qui peut être un nombre) et `effrayé` (qui est un booléen, `true` ou `false`).
 
-Dans notre exemple précédent, avant d'utiliser `pluto.abboyer_sur(felix)`, la propriété `felix.peur` pouvait être `false`. Mais maintenant que nous avons utilisé `pluto.abboyer_sur(felix)`, `felix.effrayé` s'est surement changé en `true`.
+Dans notre exemple précédent, avant d'utiliser `pluto.abboyer_sur(felix)`, la propriété `felix.peur` pouvait être `false`. Mais maintenant que nous avons utilisé `pluto.abboyer_sur(felix)`, `felix.peur` s'est surement changé en `true`.
 
 Enfin, une *classe parent* en programmation orientée objet signifie que la *classe enfant* *héritera* automatiquement de toutes les fonctions et propriétés de la fonction parent.
 
