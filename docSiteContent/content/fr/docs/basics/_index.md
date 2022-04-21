@@ -21,7 +21,7 @@ Les fonctions et les objets de FMT sont utilisés pour faire de la **planificati
 Concrètement, FMT vous permet de :
 
 - **Lire les modèles de planification forestière** basés sur le format de fichiers Woodstock (qui sont des [modèles de programmation linéaire de type III](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf) référencés spatialement)
-- **Modifier et modifier ces modèles de planification forestière**
+- **Modifier ces modèles de planification forestière**
 - **Résoudre ces modèles de planification forestière** (c'est-à-dire générer un calendrier d'actions qui maximisent les objectifs et respectent les contraintes)
 - **Rendre les variables de peuplements et le calendrier optimisé *spatialement explicites*** (c'est-à-dire cartographier les opérations forestières)
 
