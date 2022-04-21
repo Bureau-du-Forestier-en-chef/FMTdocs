@@ -268,6 +268,18 @@ slides:
 
 ---
 
+## Conclusion
+
+- On peut maintenant obtenir un bilan de carbone facilement pour:
+  - Une solution spatiale explicite et spatialement référencée
+  - Les cinqs principaux réservoirs de l'écosystème
+  - Le flux de productivitée nette de l'écosystème
+- On peut maintenant utiliser le Machine Learning pour:
+  - Générer des solutions spatialement explicite plausible
+  - Améliorer notre planification en fonction de notre bilan de carbone
+
+  ---
+
 ## Des Questions?
 
 {{< figure src="LogoFMT.png" width="40%" height="auto" >}}
