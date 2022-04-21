@@ -11,7 +11,7 @@ weight: 2
 
 FMT est fabriqué avec une structure particulière appelée *Programmation orientée objet* (POO). Si vous n'en avez jamais entendu parler, en voici un résumé très rapide pour mieux comprendre comment utiliser FMT.
 
-Dans l'approche OOP, le programme utilise différents "objets" qui ont une certaine "classe" et qui peuvent avoir différentes "fonctions".
+Dans l'approche POO ou Object oriented programming en anglais (OOP), le programme utilise différents "objets" qui ont une certaine "classe" et qui peuvent avoir différentes "fonctions".
 
 Vous connaissez et utilisez peut-être déjà des fonctions dans des logiciels tels que "R". Par exemple, dans R, `plot()` est une fonction.
 
