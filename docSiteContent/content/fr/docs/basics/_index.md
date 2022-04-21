@@ -30,7 +30,7 @@ Concrètement, FMT vous permet de :
 - Lecture de modèles Woodstock
 - Simulation de paysages forestiers
 - Optimisation / Ré-optimisation de modèles
-- Planification (en utilisant des événements stochastiques)
+- Re-planification (en utilisant des événements stochastiques)
 - Résolution des heuristiques d'agrégation
 - Planification des blocs de récolte
 
