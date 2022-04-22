@@ -29,6 +29,10 @@ Par défaut, Mosek est installé dans votre dossier `C:/Program Files` sous Wind
 Ainsi, si vous avez installé Mosek dans `C:\Program Files\Mosek`, vous pouvez conserver `C:/PROGRA~1/Mosek/` dans ces commandes.
 {{% /callout %}}
 
+{{% callout note %}}
+Si vous avez installé une version antérieure de Visual Studio à celle de 2019, il vous faudra changer la partie indiquant la version de Visual Studio.
+{{% /callout %}}
+
 5. Copiez/collez toutes les commandes qui sont prêtes dans le bloc-notes vers l'invite de commande pour lancer la compilation. Appuyez sur la touche Entrée pour les activer.
 
 {{% callout warning %}}
