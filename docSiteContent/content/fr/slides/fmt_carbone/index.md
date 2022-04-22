@@ -146,7 +146,7 @@ slides:
 
 ## Modèle pour les réservoirs
 
-  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17">
+  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
   {
   Intrants:
     - GFI = Volume de feuillu intolérant
@@ -172,7 +172,7 @@ slides:
 
 ## Modèle pour la productivité nette de l'écosystème
 
-  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17">
+  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
   {
   Intrants:
     - GFI = Volume de feuillu intolérant
@@ -197,7 +197,7 @@ slides:
 
 ## Suivi des variables
 
-  <pre><code class="fmt" data-line-numbers="4|5|8|9|12|13">
+  <pre><code class="fmt" data-line-numbers="4|5|8|9|12|13" style="font-size:120%">
 
   ;Inventaire de la productivité nette de l'écosystème en (c)
   *OUTPUT NEP_Total
