@@ -95,8 +95,8 @@ Inheritance diagram for Models::FMTsrmodel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a00faee18e7450737f3fb59a42dde662f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a00faee18e7450737f3fb59a42dde662f">postsolve</a> (const <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &amp;originalbasemodel)</td></tr>
-<tr class="separator:a00faee18e7450737f3fb59a42dde662f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d22fcab4719d02d810a714bd4362d9e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a6d22fcab4719d02d810a714bd4362d9e">postsolve</a> (const <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &amp;originalbasemodel)</td></tr>
+<tr class="separator:a6d22fcab4719d02d810a714bd4362d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa856c2952c533427bfdbb3aa40915227"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#aa856c2952c533427bfdbb3aa40915227">setparallellogger</a> (<a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &amp;logger) override</td></tr>
 <tr class="separator:aa856c2952c533427bfdbb3aa40915227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd334b33e104f04c7a593ad5d90bbf79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#abd334b33e104f04c7a593ad5d90bbf79">FMTsrmodel</a> (const <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &amp;base, <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">FMTsolverinterface</a> lsolvertype)</td></tr>
@@ -131,28 +131,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af2b39c92f48474f4f09bc4c94c99b35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004ecc2f1ac97a31d1c50897a9e9a095"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a004ecc2f1ac97a31d1c50897a9e9a095">setsolutionbylp</a> (int period, const <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &amp;schedule, double tolerance=<a class="el" href="FMTutility_8hpp.html#ad2850622a76ace795b2447524059f37f">FMT_DBL_TOLERANCE</a>)</td></tr>
 <tr class="separator:a004ecc2f1ac97a31d1c50897a9e9a095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8a14ef82f1ba3ec33e270baaae9166"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#aef8a14ef82f1ba3ec33e270baaae9166">forcesolution</a> (int period, const <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &amp;proportionschedulewithlock)</td></tr>
+<tr class="separator:aef8a14ef82f1ba3ec33e270baaae9166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbc17dcfb9f2af4fc8aa000de96f71ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#afbc17dcfb9f2af4fc8aa000de96f71ac">getsolution</a> (int period, bool withlock=false) const final</td></tr>
 <tr class="separator:afbc17dcfb9f2af4fc8aa000de96f71ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1b3e8126738798d70f998c2803d41b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a8f1b3e8126738798d70f998c2803d41b">getscheduleproportions</a> (int period, bool withlock) const</td></tr>
+<tr class="separator:a8f1b3e8126738798d70f998c2803d41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c7c2b976f14e032739692419b39b098"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraph_1_1FMTgraphstats.html">Graph::FMTgraphstats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a1c7c2b976f14e032739692419b39b098">getstats</a> () const</td></tr>
 <tr class="separator:a1c7c2b976f14e032739692419b39b098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1549ab6d521e065f1e38482b56d15f7f"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a1549ab6d521e065f1e38482b56d15f7f">getoutput</a> (const <a class="el" href="classCore_1_1FMToutput.html">Core::FMToutput</a> &amp;output, int period, <a class="el" href="namespaceCore.html#aea115282aa76a2c0ed357bd8a352e3c2">Core::FMToutputlevel</a> level=Core::FMToutputlevel::standard) const final</td></tr>
-<tr class="separator:a1549ab6d521e065f1e38482b56d15f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53cdba3451e1a2453db199e864568e3"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#ab53cdba3451e1a2453db199e864568e3">getoutput</a> (const <a class="el" href="classCore_1_1FMToutput.html">Core::FMToutput</a> &amp;output, int period, <a class="el" href="namespaceCore.html#aea115282aa76a2c0ed357bd8a352e3c2">Core::FMToutputlevel</a> level=Core::FMToutputlevel::standard) const final</td></tr>
+<tr class="separator:ab53cdba3451e1a2453db199e864568e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1931d5db29f364d3d48c887873be04fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraph_1_1FMTgraphstats.html">Graph::FMTgraphstats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a1931d5db29f364d3d48c887873be04fa">buildperiod</a> (<a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> schedule=<a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a>(), bool forcepartialbuild=false, int compressageclassoperability=1)</td></tr>
 <tr class="separator:a1931d5db29f364d3d48c887873be04fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b6c9cc70c0820e8a07f8d54a6cb651"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a30b6c9cc70c0820e8a07f8d54a6cb651">getfirstactiveperiod</a> () const</td></tr>
 <tr class="separator:a30b6c9cc70c0820e8a07f8d54a6cb651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08ee01cf179e379f9bb1094e66f6e05d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a08ee01cf179e379f9bb1094e66f6e05d">getarea</a> (int period=0, bool beforegrowanddeath=false) const override</td></tr>
-<tr class="separator:a08ee01cf179e379f9bb1094e66f6e05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b9caa90f816df179ac51ad6850d4b5"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#aa4b9caa90f816df179ac51ad6850d4b5">getarea</a> (int period=0, bool beforegrowanddeath=false) const override</td></tr>
+<tr class="separator:aa4b9caa90f816df179ac51ad6850d4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a254498a84251cec3c062c9f3f0bf380a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTlpsolver.html">FMTlpsolver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a254498a84251cec3c062c9f3f0bf380a">getsolverptr</a> ()</td></tr>
 <tr class="separator:a254498a84251cec3c062c9f3f0bf380a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff07dc08c8bc3a2ad56ae3bb37ff7eea"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classModels_1_1FMTlpsolver.html">FMTlpsolver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#aff07dc08c8bc3a2ad56ae3bb37ff7eea">getconstsolverptr</a> () const</td></tr>
 <tr class="separator:aff07dc08c8bc3a2ad56ae3bb37ff7eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36d55a2a878864067f27cf313c34e444"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a36d55a2a878864067f27cf313c34e444">clone</a> () const override</td></tr>
-<tr class="separator:a36d55a2a878864067f27cf313c34e444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317113bb155e6babc4e77d4aa5eeaa94"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a317113bb155e6babc4e77d4aa5eeaa94">clone</a> () const override</td></tr>
+<tr class="separator:a317113bb155e6babc4e77d4aa5eeaa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e380e034a938b0b6993b742ed29540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#aa6e380e034a938b0b6993b742ed29540">passinlogger</a> (const std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt; &amp;logger) override</td></tr>
 <tr class="separator:aa6e380e034a938b0b6993b742ed29540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09b36c08e36243a975ebc0aa84da7be5"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a09b36c08e36243a975ebc0aa84da7be5">presolve</a> (int presolvepass=10, std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; optionaldevelopments=std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt;()) const override</td></tr>
-<tr class="separator:a09b36c08e36243a975ebc0aa84da7be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cfe7507d41c6c9a5131ff8f51e98e2"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a55cfe7507d41c6c9a5131ff8f51e98e2">presolve</a> (std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; optionaldevelopments=std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt;()) const override</td></tr>
+<tr class="separator:a55cfe7507d41c6c9a5131ff8f51e98e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585af7bd6021aafb48cb8911e48030de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a585af7bd6021aafb48cb8911e48030de">boundsolution</a> (int period, double tolerance=<a class="el" href="FMTutility_8hpp.html#ad2850622a76ace795b2447524059f37f">FMT_DBL_TOLERANCE</a>)</td></tr>
 <tr class="separator:a585af7bd6021aafb48cb8911e48030de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cb3f757d3bcb609e336967a19aa3105"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a1cb3f757d3bcb609e336967a19aa3105">setparameter</a> (const <a class="el" href="namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045f">FMTintmodelparameters</a> &amp;key, const int &amp;value) override</td></tr>
@@ -160,8 +164,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7aeaf2e7f8c9f85c1c9d4121c9fbd612"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a7aeaf2e7f8c9f85c1c9d4121c9fbd612">setparameter</a> (const <a class="el" href="namespaceModels.html#ae1d396c28f4bac89b223ca90afd49a1f">FMTboolmodelparameters</a> &amp;key, const bool &amp;value) override</td></tr>
 <tr class="separator:a7aeaf2e7f8c9f85c1c9d4121c9fbd612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classModels_1_1FMTmodel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classModels_1_1FMTmodel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classModels_1_1FMTmodel.html">Models::FMTmodel</a></td></tr>
-<tr class="memitem:a5746a23dfdedd80c1c1647e40ff765e6 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a5746a23dfdedd80c1c1647e40ff765e6">clearcache</a> ()</td></tr>
-<tr class="separator:a5746a23dfdedd80c1c1647e40ff765e6 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f94ecd3d433d2ad528ad69ac4bd7b0 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a08f94ecd3d433d2ad528ad69ac4bd7b0">clearcache</a> ()</td></tr>
+<tr class="separator:a08f94ecd3d433d2ad528ad69ac4bd7b0 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a06435aa40db6ea373adc6b039af972 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a1a06435aa40db6ea373adc6b039af972">FMTmodel</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; &amp;larea, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;lthemes, const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;lactions, const std::vector&lt; <a class="el" href="classCore_1_1FMTtransition.html">Core::FMTtransition</a> &gt; &amp;ltransitions, const <a class="el" href="classCore_1_1FMTyields.html">Core::FMTyields</a> &amp;lyields, const <a class="el" href="classCore_1_1FMTlifespans.html">Core::FMTlifespans</a> &amp;llifespan, const std::string &amp;lname, const std::vector&lt; <a class="el" href="classCore_1_1FMToutput.html">Core::FMToutput</a> &gt; &amp;loutputs, std::vector&lt; <a class="el" href="classCore_1_1FMTconstraint.html">Core::FMTconstraint</a> &gt; lconstraints=std::vector&lt; <a class="el" href="classCore_1_1FMTconstraint.html">Core::FMTconstraint</a> &gt;(), <a class="el" href="classModels_1_1FMTmodelparameters.html">FMTmodelparameters</a> lparameters=<a class="el" href="classModels_1_1FMTmodelparameters.html">FMTmodelparameters</a>())</td></tr>
 <tr class="separator:a1a06435aa40db6ea373adc6b039af972 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2396a3124afcf0bbbcec72a08284fea9 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a2396a3124afcf0bbbcec72a08284fea9">FMTmodel</a> ()</td></tr>
@@ -172,10 +176,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4360fc24d86d944ed5b7bd876aed98eb inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eacd1c19c3fce9798009a13a7bce39c inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a3eacd1c19c3fce9798009a13a7bce39c">operator=</a> (<a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &amp;&amp;rhs)=default</td></tr>
 <tr class="separator:a3eacd1c19c3fce9798009a13a7bce39c inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0138b78a2fbdbb87eb6b465838c6ce07 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a0138b78a2fbdbb87eb6b465838c6ce07">getcopy</a> (int period=0) const</td></tr>
-<tr class="separator:a0138b78a2fbdbb87eb6b465838c6ce07 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf421079bbe6d083e0dc35bc461b0f05 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#adf421079bbe6d083e0dc35bc461b0f05">basepresolve</a> (int presolvepass=10) const</td></tr>
-<tr class="separator:adf421079bbe6d083e0dc35bc461b0f05 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983a310094548ddee4b632337be04270 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a983a310094548ddee4b632337be04270">getcopy</a> (int period=0) const</td></tr>
+<tr class="separator:a983a310094548ddee4b632337be04270 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca50b2be0ff6b153b2f62045492a581c inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#aca50b2be0ff6b153b2f62045492a581c">basepresolve</a> () const</td></tr>
+<tr class="separator:aca50b2be0ff6b153b2f62045492a581c inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a89ad4906227107e54e5d727ea5bd7 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmaskfilter.html">Core::FMTmaskfilter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#ae5a89ad4906227107e54e5d727ea5bd7">getpresolvefilter</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;originalthemes) const</td></tr>
+<tr class="separator:ae5a89ad4906227107e54e5d727ea5bd7 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f87845c273e486151a7282b9708c0b2 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmaskfilter.html">Core::FMTmaskfilter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a6f87845c273e486151a7282b9708c0b2">getpostsolvefilter</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;originalthemes, const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;devmask) const</td></tr>
 <tr class="separator:a6f87845c273e486151a7282b9708c0b2 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae597ff1f15f14db95859efbfdfc6d39b inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#ae597ff1f15f14db95859efbfdfc6d39b">getselectedmask</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;originalthemes) const</td></tr>
@@ -265,14 +271,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b1e5fee04f398f323f7dbbc30bf6665 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7307dc3a110a24a3ad4d484148d3845 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#ad7307dc3a110a24a3ad4d484148d3845">getpotentialschedule</a> (std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; toremove, std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; selection, bool withlock=true) const</td></tr>
 <tr class="separator:ad7307dc3a110a24a3ad4d484148d3845 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a042bc053e497483637ab69f23f31721e inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classCore_1_1FMTconstraint.html">Core::FMTconstraint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a042bc053e497483637ab69f23f31721e">getreplanningconstraints</a> (const std::string &amp;modeltype, const std::vector&lt; <a class="el" href="classCore_1_1FMTconstraint.html">Core::FMTconstraint</a> &gt; &amp;localconstraints, const int &amp;period) const</td></tr>
-<tr class="separator:a042bc053e497483637ab69f23f31721e inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a333a3dda388414737f3e6b5decf73eda inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a333a3dda388414737f3e6b5decf73eda">doplanning</a> (const bool &amp;<a class="el" href="classModels_1_1FMTmodel.html#abfbf3d799c3420b5a3e71829192f4452">solve</a>, std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &gt; schedules=std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &gt;())</td></tr>
-<tr class="separator:a333a3dda388414737f3e6b5decf73eda inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94f93148736783d7ebad41124392b3c8 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, std::vector&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a94f93148736783d7ebad41124392b3c8">getoutputsfromperiods</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMToutput.html">Core::FMToutput</a> &gt; &amp;theoutputs, const int &amp;firstperiod, const int &amp;lastperiod, <a class="el" href="namespaceCore.html#aea115282aa76a2c0ed357bd8a352e3c2">Core::FMToutputlevel</a> level=Core::FMToutputlevel::standard) const</td></tr>
-<tr class="separator:a94f93148736783d7ebad41124392b3c8 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9196dd3178664c0753f25c2a178d80a inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#af9196dd3178664c0753f25c2a178d80a">setparameter</a> (const <a class="el" href="namespaceModels.html#a130c7a5104bb6d3ad34275f7fbab48c6">FMTdblmodelparameters</a> &amp;key, const double &amp;value)</td></tr>
-<tr class="separator:af9196dd3178664c0753f25c2a178d80a inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7074b36d3da4816f602e181f84772849 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classCore_1_1FMTconstraint.html">Core::FMTconstraint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a7074b36d3da4816f602e181f84772849">getreplanningconstraints</a> (const std::string &amp;modeltype, const std::vector&lt; <a class="el" href="classCore_1_1FMTconstraint.html">Core::FMTconstraint</a> &gt; &amp;localconstraints, const int &amp;period) const</td></tr>
+<tr class="separator:a7074b36d3da4816f602e181f84772849 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56f4b3d6469c737de79cbc009b41313 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#ab56f4b3d6469c737de79cbc009b41313">doplanning</a> (const bool &amp;<a class="el" href="classModels_1_1FMTmodel.html#abfbf3d799c3420b5a3e71829192f4452">solve</a>, std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &gt; schedules=std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &gt;())</td></tr>
+<tr class="separator:ab56f4b3d6469c737de79cbc009b41313 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57577163262d74f454d4af871dfbf553 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, std::vector&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a57577163262d74f454d4af871dfbf553">getoutputsfromperiods</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMToutput.html">Core::FMToutput</a> &gt; &amp;theoutputs, const int &amp;firstperiod, const int &amp;lastperiod, <a class="el" href="namespaceCore.html#aea115282aa76a2c0ed357bd8a352e3c2">Core::FMToutputlevel</a> level=Core::FMToutputlevel::standard) const</td></tr>
+<tr class="separator:a57577163262d74f454d4af871dfbf553 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2a9316cf89409991bfdf4c36337d56 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#ada2a9316cf89409991bfdf4c36337d56">setparameter</a> (const <a class="el" href="namespaceModels.html#a130c7a5104bb6d3ad34275f7fbab48c6">FMTdblmodelparameters</a> &amp;key, const double &amp;value)</td></tr>
+<tr class="separator:ada2a9316cf89409991bfdf4c36337d56 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa934d138f881688d0c0c211823a96caa inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#aa934d138f881688d0c0c211823a96caa">getparameter</a> (const <a class="el" href="namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045f">FMTintmodelparameters</a> &amp;key) const</td></tr>
 <tr class="separator:aa934d138f881688d0c0c211823a96caa inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbdbf78d203b054fcdb0987c1f2ef521 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#afbdbf78d203b054fcdb0987c1f2ef521">getparameter</a> (const <a class="el" href="namespaceModels.html#a130c7a5104bb6d3ad34275f7fbab48c6">FMTdblmodelparameters</a> &amp;key) const</td></tr>
@@ -283,19 +289,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a942898bd92901bd82e9eeb10bf97b846 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0940c5b1b8ee54351ef80555ec5498da inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a0940c5b1b8ee54351ef80555ec5498da">getcompresstime</a> () const</td></tr>
 <tr class="separator:a0940c5b1b8ee54351ef80555ec5498da inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff6298610fe2a20ce74f0fbdb930fd0 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#abff6298610fe2a20ce74f0fbdb930fd0">showparameters</a> (const bool &amp;showhelp=false) const</td></tr>
-<tr class="separator:abff6298610fe2a20ce74f0fbdb930fd0 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6525a19c003ea62e0e853476c708beaf inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a6525a19c003ea62e0e853476c708beaf">showparameters</a> (const bool &amp;showhelp=false) const</td></tr>
+<tr class="separator:a6525a19c003ea62e0e853476c708beaf inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af873b74576ba4c35ce383bc227968177 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#af873b74576ba4c35ce383bc227968177">build</a> (std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &gt; schedules=std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &gt;())</td></tr>
 <tr class="separator:af873b74576ba4c35ce383bc227968177 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfbf3d799c3420b5a3e71829192f4452 inherit pub_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#abfbf3d799c3420b5a3e71829192f4452">solve</a> ()</td></tr>
 <tr class="separator:abfbf3d799c3420b5a3e71829192f4452 inherit pub_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:ae19db1fea8595c9a382fc785411bc11c inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae19db1fea8595c9a382fc785411bc11c">getavailablememory</a> () const</td></tr>
-<tr class="separator:ae19db1fea8595c9a382fc785411bc11c inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a892247268d4fed1aad568ef726b2bf1a">FMTobject</a> ()</td></tr>
 <tr class="separator:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a754d2ff0b01b7230d179467ecb949bc1 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a754d2ff0b01b7230d179467ecb949bc1">~FMTobject</a> ()</td></tr>
-<tr class="separator:a754d2ff0b01b7230d179467ecb949bc1 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aabbeb37f9454aaae7725341a4fc6b871">~FMTobject</a> ()</td></tr>
+<tr class="separator:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6f0d241beec60204ed8d14740a026058">FMTobject</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; exhandler)</td></tr>
 <tr class="separator:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acc66512952f3c5563d317d40f5d0bd5d">FMTobject</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
@@ -306,12 +310,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a45a5a60a8bed1b2c7fc3852a5140947f">redirectlogtofile</a> (const std::string &amp;location)</td></tr>
 <tr class="separator:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e863f6d27b4be0bf0adb54ac66dea11 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a7e863f6d27b4be0bf0adb54ac66dea11">setdefaultlogger</a> ()</td></tr>
-<tr class="separator:a7e863f6d27b4be0bf0adb54ac66dea11 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6311de4070a948825c067c7b5243d048 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6311de4070a948825c067c7b5243d048">setquietlogger</a> ()</td></tr>
-<tr class="separator:a6311de4070a948825c067c7b5243d048 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e8c8fadb353390dde1a33fc0f790b3 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae5e8c8fadb353390dde1a33fc0f790b3">setdebuglogger</a> ()</td></tr>
-<tr class="separator:ae5e8c8fadb353390dde1a33fc0f790b3 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acb289903aad7488bb9d58a555325dbc6">setdefaultlogger</a> ()</td></tr>
+<tr class="separator:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a07f7d55431bdd4c885f84c70436dfeb8">setquietlogger</a> ()</td></tr>
+<tr class="separator:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af84f403de5cbb9676e5da79c8a1f0d74">setdebuglogger</a> ()</td></tr>
+<tr class="separator:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#adb70eea83ae75752e107358d7c47d775">setdefaultexceptionhandler</a> ()</td></tr>
 <tr class="separator:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab718aa354a7b395471a15d29f244477 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aab718aa354a7b395471a15d29f244477">setquietexceptionhandler</a> ()</td></tr>
@@ -329,13 +333,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d82475082a4e3f9f74ad124dcaa3d6f"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">Models::FMTsolverinterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a3d82475082a4e3f9f74ad124dcaa3d6f">getavailablesolverinterface</a> ()</td></tr>
-<tr class="separator:a3d82475082a4e3f9f74ad124dcaa3d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530a0aaed322b39ae99e51a9642bd3e5"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">Models::FMTsolverinterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTsrmodel.html#a530a0aaed322b39ae99e51a9642bd3e5">getavailablesolverinterface</a> ()</td></tr>
+<tr class="separator:a530a0aaed322b39ae99e51a9642bd3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classModels_1_1FMTmodel"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classModels_1_1FMTmodel')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classModels_1_1FMTmodel.html">Models::FMTmodel</a></td></tr>
-<tr class="memitem:a5646f380f0be2168c9554b062aba473c inherit pub_static_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a5646f380f0be2168c9554b062aba473c">defaultdeathaction</a> (const <a class="el" href="classCore_1_1FMTlifespans.html">Core::FMTlifespans</a> &amp;llifespan, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;lthemes)</td></tr>
-<tr class="separator:a5646f380f0be2168c9554b062aba473c inherit pub_static_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab27a43f1995282d4d9d176f3999b5dc8 inherit pub_static_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCore_1_1FMTtransition.html">Core::FMTtransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#ab27a43f1995282d4d9d176f3999b5dc8">defaultdeathtransition</a> (const <a class="el" href="classCore_1_1FMTlifespans.html">Core::FMTlifespans</a> &amp;llifespan, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;lthemes)</td></tr>
-<tr class="separator:ab27a43f1995282d4d9d176f3999b5dc8 inherit pub_static_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6502978ccd4737ee1dd0e7b1fc7bd1 inherit pub_static_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#ace6502978ccd4737ee1dd0e7b1fc7bd1">defaultdeathaction</a> (const <a class="el" href="classCore_1_1FMTlifespans.html">Core::FMTlifespans</a> &amp;llifespan, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;lthemes)</td></tr>
+<tr class="separator:ace6502978ccd4737ee1dd0e7b1fc7bd1 inherit pub_static_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a0ad3f1eb0b19ace6e2c9a10818021 inherit pub_static_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCore_1_1FMTtransition.html">Core::FMTtransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a10a0ad3f1eb0b19ace6e2c9a10818021">defaultdeathtransition</a> (const <a class="el" href="classCore_1_1FMTlifespans.html">Core::FMTlifespans</a> &amp;llifespan, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;lthemes)</td></tr>
+<tr class="separator:a10a0ad3f1eb0b19ace6e2c9a10818021 inherit pub_static_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
+<tr class="memitem:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a9e8ae1c63c33235ce7eec85e29f5b871">getavailablememory</a> ()</td></tr>
+<tr class="separator:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -364,8 +371,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a73f70d2a4a57148937fefd831445c438 inherit pro_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0271eaa9ce12fb79a8264a6c8c42703 inherit pro_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#ac0271eaa9ce12fb79a8264a6c8c42703">cleartransitioncache</a> ()</td></tr>
 <tr class="separator:ac0271eaa9ce12fb79a8264a6c8c42703 inherit pro_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d3a4a6f71298df65ddb78a65cb644b2 inherit pro_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a1d3a4a6f71298df65ddb78a65cb644b2">swap_ptr</a> (const std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:a1d3a4a6f71298df65ddb78a65cb644b2 inherit pro_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d3a7ad714e33aff06cf228f456ffaf inherit pro_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a13d3a7ad714e33aff06cf228f456ffaf">swap_ptr</a> (const std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt; &amp;rhs)</td></tr>
+<tr class="separator:a13d3a7ad714e33aff06cf228f456ffaf inherit pro_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff01b29ae59eccbbc4c2cc41f62a836 inherit pro_methods_classModels_1_1FMTmodel"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodel.html#a5ff01b29ae59eccbbc4c2cc41f62a836">setupschedulesforbuild</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &gt; &amp;schedules) const</td></tr>
+<tr class="separator:a5ff01b29ae59eccbbc4c2cc41f62a836 inherit pro_methods_classModels_1_1FMTmodel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
 <tr class="memitem:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
 <tr class="memitem:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a055e793199bfade8b06bc4850068b9a1">forcesave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
@@ -428,15 +437,22 @@ Friends</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a2c990e6e83cb68a8558368208cd0c382 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a2c990e6e83cb68a8558368208cd0c382">getruntimelocation</a> ()</td></tr>
-<tr class="separator:a2c990e6e83cb68a8558368208cd0c382 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a41e9c6a09ec5a8776a1783f50cd685c3">getruntimelocation</a> ()</td></tr>
+<tr class="separator:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ab87002d0212cf0b244771760a6ec56d1">getclock</a> ()</td></tr>
+<tr class="separator:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
+<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a4df7cf79433c24ff1f98a4521c02e155">getduration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="separator:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af08563fdef482c39ad0cbf3a5018bfa0">getdurationinseconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="separator:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a8c0faf115edea0c6141ddaf6b14797ab inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a8c0faf115edea0c6141ddaf6b14797ab">_exhandler</a> = std::shared_ptr&lt;<a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a>&gt;(new <a class="el" href="classException_1_1FMTdefaultexceptionhandler.html">Exception::FMTdefaultexceptionhandler</a>(<a class="el" href="classCore_1_1FMTobject.html#a260ae6dbf324cd22647bc89ae8a76659">_logger</a>))</td></tr>
-<tr class="memdesc:a8c0faf115edea0c6141ddaf6b14797ab inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <a href="classCore_1_1FMTobject.html#a8c0faf115edea0c6141ddaf6b14797ab">More...</a><br /></td></tr>
-<tr class="separator:a8c0faf115edea0c6141ddaf6b14797ab inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a260ae6dbf324cd22647bc89ae8a76659 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a260ae6dbf324cd22647bc89ae8a76659">_logger</a> = std::shared_ptr&lt;<a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a>&gt;(new <a class="el" href="classLogging_1_1FMTdefaultlogger.html">Logging::FMTdefaultlogger</a>)</td></tr>
-<tr class="memdesc:a260ae6dbf324cd22647bc89ae8a76659 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <a href="classCore_1_1FMTobject.html#a260ae6dbf324cd22647bc89ae8a76659">More...</a><br /></td></tr>
-<tr class="separator:a260ae6dbf324cd22647bc89ae8a76659 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae67617ff7aedd99989a071bcf11206f2">_exhandler</a></td></tr>
+<tr class="memdesc:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <a href="classCore_1_1FMTobject.html#ae67617ff7aedd99989a071bcf11206f2">More...</a><br /></td></tr>
+<tr class="separator:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a52f73fe80b34fae5f277ec5135d1d22d">_logger</a></td></tr>
+<tr class="memdesc:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <a href="classCore_1_1FMTobject.html#a52f73fe80b34fae5f277ec5135d1d22d">More...</a><br /></td></tr>
+<tr class="separator:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classModels_1_1FMTsrmodel.html">FMTsrmodel</a> hold the attributes and methods shared between the spatially referenced models(FTMlpmodel and FMTnssmodel). </p>
@@ -696,8 +712,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a36d55a2a878864067f27cf313c34e444" name="a36d55a2a878864067f27cf313c34e444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36d55a2a878864067f27cf313c34e444">&#9670;&nbsp;</a></span>clone()</h2>
+<a id="a317113bb155e6babc4e77d4aa5eeaa94" name="a317113bb155e6babc4e77d4aa5eeaa94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a317113bb155e6babc4e77d4aa5eeaa94">&#9670;&nbsp;</a></span>clone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -706,7 +722,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt; Models::FMTsrmodel::clone </td>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt; Models::FMTsrmodel::clone </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -720,14 +736,43 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >Get a clone of the <a class="el" href="classModels_1_1FMTsrmodel.html">FMTsrmodel</a> </p>
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#abf5bc00937a9e7c1c5209a83f386eb65">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a94cd352c3a58fb3b878a20b9d7629c5d">Models::FMTmodel</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classModels_1_1FMTlpmodel.html#ac26b43786761fc52528402afb52fa876">Models::FMTlpmodel</a>, and <a class="el" href="classModels_1_1FMTnssmodel.html#a543092b0ae970effcc633eca427913f3">Models::FMTnssmodel</a>.</p>
+<p>Reimplemented in <a class="el" href="classModels_1_1FMTlpmodel.html#ae82430b70b43a530b814c3369e23f158">Models::FMTlpmodel</a>, and <a class="el" href="classModels_1_1FMTnssmodel.html#ad742703d49fc4102005c765fb0403d68">Models::FMTnssmodel</a>.</p>
 
 </div>
 </div>
-<a id="a08ee01cf179e379f9bb1094e66f6e05d" name="a08ee01cf179e379f9bb1094e66f6e05d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08ee01cf179e379f9bb1094e66f6e05d">&#9670;&nbsp;</a></span>getarea()</h2>
+<a id="aef8a14ef82f1ba3ec33e270baaae9166" name="aef8a14ef82f1ba3ec33e270baaae9166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8a14ef82f1ba3ec33e270baaae9166">&#9670;&nbsp;</a></span>forcesolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Models::FMTsrmodel::forcesolution </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> &amp;&#160;</td>
+          <td class="paramname"><em>proportionschedulewithlock</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Force a solution by using a schedule based on proportions instead of area. So if there is modifications to the model, it will place only the parts of the solution that are possible considering the modifications. The schedule must be with lock indicators if locks are used in the model. </p>
+
+</div>
+</div>
+<a id="aa4b9caa90f816df179ac51ad6850d4b5" name="aa4b9caa90f816df179ac51ad6850d4b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b9caa90f816df179ac51ad6850d4b5">&#9670;&nbsp;</a></span>getarea()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -736,7 +781,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; Models::FMTsrmodel::getarea </td>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; Models::FMTsrmodel::getarea </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>period</em> = <code>0</code>, </td>
@@ -759,14 +804,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >This function returns an area for a given period for a <a class="el" href="classModels_1_1FMTsrmodel.html">FMTsrmodel</a>. If period = 0 the area is the same has <a class="el" href="classModels_1_1FMTmodel.html#a8c7a2fc654731bb8da6dd5211b0779bd">FMTmodel::getarea()</a>. For period &gt; 0 the area returned is the FMTdevelopement of the graph that can be (actual of futur) existing at the beginning of the period. Need to have a builded graph with a solution to use this function. </p>
+<p >This function returns an area for a given period for a <a class="el" href="classModels_1_1FMTsrmodel.html">FMTsrmodel</a>. If period = 0 the area is the same has <a class="el" href="classModels_1_1FMTmodel.html#a822d5f723ccbe04bc9426948a9beee85">FMTmodel::getarea()</a>. For period &gt; 0 the area returned is the FMTdevelopement of the graph that can be (actual of futur) existing at the beginning of the period. Need to have a builded graph with a solution to use this function. </p>
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a8c7a2fc654731bb8da6dd5211b0779bd">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a822d5f723ccbe04bc9426948a9beee85">Models::FMTmodel</a>.</p>
 
 </div>
 </div>
-<a id="a3d82475082a4e3f9f74ad124dcaa3d6f" name="a3d82475082a4e3f9f74ad124dcaa3d6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d82475082a4e3f9f74ad124dcaa3d6f">&#9670;&nbsp;</a></span>getavailablesolverinterface()</h2>
+<a id="a530a0aaed322b39ae99e51a9642bd3e5" name="a530a0aaed322b39ae99e51a9642bd3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a530a0aaed322b39ae99e51a9642bd3e5">&#9670;&nbsp;</a></span>getavailablesolverinterface()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -775,7 +820,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">Models::FMTsolverinterface</a> &gt; Models::FMTsrmodel::getavailablesolverinterface </td>
+          <td class="memname">static std::vector&lt; <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">Models::FMTsolverinterface</a> &gt; Models::FMTsrmodel::getavailablesolverinterface </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -853,8 +898,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a1549ab6d521e065f1e38482b56d15f7f" name="a1549ab6d521e065f1e38482b56d15f7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1549ab6d521e065f1e38482b56d15f7f">&#9670;&nbsp;</a></span>getoutput()</h2>
+<a id="ab53cdba3451e1a2453db199e864568e3" name="ab53cdba3451e1a2453db199e864568e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53cdba3451e1a2453db199e864568e3">&#9670;&nbsp;</a></span>getoutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -863,7 +908,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, double &gt; Models::FMTsrmodel::getoutput </td>
+          <td class="memname">virtual std::map&lt; std::string, double &gt; Models::FMTsrmodel::getoutput </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCore_1_1FMToutput.html">Core::FMToutput</a> &amp;&#160;</td>
           <td class="paramname"><em>output</em>, </td>
@@ -894,7 +939,36 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >Get the output value of a output for a given period using the solution of the matrix. the map key returned consist of output name if level == FMToutputlevel::standard || level == FMToutputlevel::totalonly, or developement name if level == FMToutputlevel::developpement </p>
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#abb755ed01573ccc68d9227934195849c">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#af6d1d920ab7ba78fbba455be8837c39b">Models::FMTmodel</a>.</p>
+
+</div>
+</div>
+<a id="a8f1b3e8126738798d70f998c2803d41b" name="a8f1b3e8126738798d70f998c2803d41b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1b3e8126738798d70f998c2803d41b">&#9670;&nbsp;</a></span>getscheduleproportions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html">Core::FMTschedule</a> Models::FMTsrmodel::getscheduleproportions </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>withlock</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Same as getsolution but the schedule area represent the percentage of area of the developement. </p>
 
 </div>
 </div>
@@ -933,7 +1007,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >Get the standard solution for a given period (FMTschedule dont have natural growth solution included). If with lock is true then the schedule will contain locked developement. </p>
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a3cbf406122108e720187916d07022a87">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a0e40e34e9aebf7ad9d010235a4d66094">Models::FMTmodel</a>.</p>
 
 </div>
 </div>
@@ -1135,12 +1209,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >We need to override the passinlogger for the osisolverinterface </p>
 
-<p>Reimplemented from <a class="el" href="classCore_1_1FMTobject.html#ae4cc7e6da6945790a8516adfdf55bba3">Core::FMTobject</a>.</p>
+<p>Reimplemented from <a class="el" href="classCore_1_1FMTobject.html#af36054757252bb5f8d1275789271c3e0">Core::FMTobject</a>.</p>
 
 </div>
 </div>
-<a id="a00faee18e7450737f3fb59a42dde662f" name="a00faee18e7450737f3fb59a42dde662f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00faee18e7450737f3fb59a42dde662f">&#9670;&nbsp;</a></span>postsolve()</h2>
+<a id="a6d22fcab4719d02d810a714bd4362d9e" name="a6d22fcab4719d02d810a714bd4362d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d22fcab4719d02d810a714bd4362d9e">&#9670;&nbsp;</a></span>postsolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1149,7 +1223,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTsrmodel::postsolve </td>
+          <td class="memname">virtual void Models::FMTsrmodel::postsolve </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &amp;&#160;</td>
           <td class="paramname"><em>originalbasemodel</em></td><td>)</td>
@@ -1163,7 +1237,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a3dcebccf4ea80dc0a8ca4d1aa029aac8">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a22cf392b6148dcfb50e6690ee313b74d">Models::FMTmodel</a>.</p>
 
 </div>
 </div>
@@ -1194,8 +1268,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a09b36c08e36243a975ebc0aa84da7be5" name="a09b36c08e36243a975ebc0aa84da7be5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09b36c08e36243a975ebc0aa84da7be5">&#9670;&nbsp;</a></span>presolve()</h2>
+<a id="a55cfe7507d41c6c9a5131ff8f51e98e2" name="a55cfe7507d41c6c9a5131ff8f51e98e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cfe7507d41c6c9a5131ff8f51e98e2">&#9670;&nbsp;</a></span>presolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1204,21 +1278,11 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt; Models::FMTsrmodel::presolve </td>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &gt; Models::FMTsrmodel::presolve </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>presolvepass</em> = <code>10</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt;&#160;</td>
-          <td class="paramname"><em>optionaldevelopments</em> = <code>std::vector&lt;<a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a>&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>optionaldevelopments</em> = <code>std::vector&lt;&#160;<a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a>&#160;&gt;()</code></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1229,9 +1293,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >Presolve a <a class="el" href="classModels_1_1FMTsrmodel.html">FMTsrmodel</a>. </p>
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#aed5cd3c372bb0dc919f02241725fdcb0">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#acca6bf79f9e1653b748b3cc026bedfc3">Models::FMTmodel</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classModels_1_1FMTlpmodel.html#a593217a9c24a71fd4718b37fba20ee74">Models::FMTlpmodel</a>, and <a class="el" href="classModels_1_1FMTnssmodel.html#adf52bcb0baff1e8e12f9840961b3adba">Models::FMTnssmodel</a>.</p>
+<p>Reimplemented in <a class="el" href="classModels_1_1FMTlpmodel.html#a8074b1a7b9e48d02430d61a84fea9bd6">Models::FMTlpmodel</a>, and <a class="el" href="classModels_1_1FMTnssmodel.html#a0b19a1e246eb248d9b07b7b25e5246ae">Models::FMTnssmodel</a>.</p>
 
 </div>
 </div>
@@ -1260,7 +1324,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >Solver's logger cannot work in parallel so you need to pass a logger owned by the thead to the solver to make sure it does not work in concurrency. </p>
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a2e932cbe01a9e76127c3a7f3ffe6868a">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a9ddc0cc8e5d543e130cf934cad6a0672">Models::FMTmodel</a>.</p>
 
 </div>
 </div>
@@ -1299,7 +1363,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >Override setter for boolmodelparameters. </p>
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#aa80521bf7c47fd58b5ae076acd6dfc84">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a734c51353fe458055e423b3b9ffd116e">Models::FMTmodel</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1402,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >Override setter for intmodelparameters. </p>
 
-<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#ae448fc4732684439be75e301a4a51a51">Models::FMTmodel</a>.</p>
+<p>Reimplemented from <a class="el" href="classModels_1_1FMTmodel.html#a12611c75f284bb0c5f37029151c91ecd">Models::FMTmodel</a>.</p>
 
 </div>
 </div>
@@ -1584,9 +1648,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/cyrgu3/Desktop/test/FMT2/FMT/Source/<a class="el" href="FMTsrmodel_8hpp_source.html">FMTsrmodel.hpp</a></li>
-<li>C:/Users/cyrgu3/Desktop/test/FMT2/FMT/Source/<a class="el" href="FMTsrmodel_8cpp.html">FMTsrmodel.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>C:/Users/cyrgu3/Desktop/test/FMT2/FMT/Include/<a class="el" href="FMTsrmodel_8hpp_source.html">FMTsrmodel.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

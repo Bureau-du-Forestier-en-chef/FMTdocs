@@ -70,9 +70,10 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classParser_1_1FMTparser-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Parser::FMTparser Class Reference</div></div>
 </div><!--header-->
@@ -120,10 +121,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1bc5adebaad8ac73c7b4a9c728bf90e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa6d64d21fa3ec0db616626e026ced94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#afa6d64d21fa3ec0db616626e026ced94">isvalid</a> (std::string &amp;line) const</td></tr>
 <tr class="separator:afa6d64d21fa3ec0db616626e026ced94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536cea2c0b4c36c7c30c407bc67db789"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a536cea2c0b4c36c7c30c407bc67db789">regexloop</a> (std::regex &amp;cutregex, std::string &amp;str) const</td></tr>
-<tr class="separator:a536cea2c0b4c36c7c30c407bc67db789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbadbf947d693f41f7bcace06ed71c0f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#adbadbf947d693f41f7bcace06ed71c0f">spliter</a> (std::string strmask, std::regex &amp;xspliter) const</td></tr>
-<tr class="separator:adbadbf947d693f41f7bcace06ed71c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694653de9fcce98e8f942bba27df7cce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a694653de9fcce98e8f942bba27df7cce">regexloop</a> (const std::regex &amp;cutregex, std::string &amp;str) const</td></tr>
+<tr class="separator:a694653de9fcce98e8f942bba27df7cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cbd2fda1a062cad076dc4055dc2bc4a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a5cbd2fda1a062cad076dc4055dc2bc4a">spliter</a> (std::string strmask, const std::regex &amp;xspliter) const</td></tr>
+<tr class="separator:a5cbd2fda1a062cad076dc4055dc2bc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ffa9e287330ee90b70848b509f32206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a9ffa9e287330ee90b70848b509f32206">clearcomments</a> (std::string &amp;line)</td></tr>
 <tr class="separator:a9ffa9e287330ee90b70848b509f32206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0780fc8a4c60721db222dc96ab419f78"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a0780fc8a4c60721db222dc96ab419f78">upper</a> (const std::string &amp;lowercases) const</td></tr>
@@ -145,15 +146,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab17fcfc88be2d12613b4997277f3d91d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab17fcfc88be2d12613b4997277f3d91d"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#ab17fcfc88be2d12613b4997277f3d91d">getnum</a> (const std::string &amp;value, const <a class="el" href="classCore_1_1FMTconstants.html">Core::FMTconstants</a> &amp;constant, int period=0) const</td></tr>
 <tr class="separator:ab17fcfc88be2d12613b4997277f3d91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d844dc21093750ccc764a4acfa619b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa7d844dc21093750ccc764a4acfa619b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#aa7d844dc21093750ccc764a4acfa619b">getnum</a> (const std::string &amp;value) const</td></tr>
-<tr class="separator:aa7d844dc21093750ccc764a4acfa619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb7f22ab76f0a58bb3cb5d4d486591c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abfb7f22ab76f0a58bb3cb5d4d486591c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#abfb7f22ab76f0a58bb3cb5d4d486591c">tryfillnumber</a> (T &amp;number, const std::string &amp;value, const <a class="el" href="classCore_1_1FMTconstants.html">Core::FMTconstants</a> &amp;constant, int period=0) const</td></tr>
-<tr class="separator:abfb7f22ab76f0a58bb3cb5d4d486591c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac212b03b71e2efbd65799a5488763598"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac212b03b71e2efbd65799a5488763598"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTbounds.html">Core::FMTbounds</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#ac212b03b71e2efbd65799a5488763598">bounds</a> (const <a class="el" href="classCore_1_1FMTconstants.html">Core::FMTconstants</a> &amp;constants, const std::string &amp;value, const std::string &amp;ope, <a class="el" href="namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417">Core::FMTsection</a> section) const</td></tr>
-<tr class="separator:ac212b03b71e2efbd65799a5488763598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9658c4d040d0383a0b8531baf17c24af"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9658c4d040d0383a0b8531baf17c24af"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a9658c4d040d0383a0b8531baf17c24af">getnum</a> (const std::string &amp;value) const</td></tr>
+<tr class="separator:a9658c4d040d0383a0b8531baf17c24af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527731fa26608cfb9fde8e8c7b095bb9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a527731fa26608cfb9fde8e8c7b095bb9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a527731fa26608cfb9fde8e8c7b095bb9">tryfillnumber</a> (T &amp;number, const std::string &amp;value, const <a class="el" href="classCore_1_1FMTconstants.html">Core::FMTconstants</a> &amp;constant, int period=0) const</td></tr>
+<tr class="separator:a527731fa26608cfb9fde8e8c7b095bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144047100c631a5f62bedfccb02473f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a144047100c631a5f62bedfccb02473f7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTbounds.html">Core::FMTbounds</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a144047100c631a5f62bedfccb02473f7">bounds</a> (const <a class="el" href="classCore_1_1FMTconstants.html">Core::FMTconstants</a> &amp;constants, const std::string &amp;value, const std::string &amp;ope, <a class="el" href="namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417">Core::FMTsection</a> section) const</td></tr>
+<tr class="separator:a144047100c631a5f62bedfccb02473f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20876210b9c133e45fe020808308688c"><td class="memItemLeft" align="right" valign="top">GDALDataset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a20876210b9c133e45fe020808308688c">createOGRdataset</a> (std::string location=std::string(), std::string gdaldrivername=&quot;CSV&quot;) const</td></tr>
 <tr class="separator:a20876210b9c133e45fe020808308688c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a6bc9aab6b5edd3a6f00be0d144dcf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a79a6bc9aab6b5edd3a6f00be0d144dcf">getGDALvectordrivernames</a> () const</td></tr>
@@ -165,30 +166,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a3c868473066c138c7a4b6944699161"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a5a3c868473066c138c7a4b6944699161">getGDALrasterdriverextensions</a> () const</td></tr>
 <tr class="separator:a5a3c868473066c138c7a4b6944699161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:ae19db1fea8595c9a382fc785411bc11c inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae19db1fea8595c9a382fc785411bc11c">getavailablememory</a> () const</td></tr>
-<tr class="separator:ae19db1fea8595c9a382fc785411bc11c inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a892247268d4fed1aad568ef726b2bf1a">FMTobject</a> ()</td></tr>
 <tr class="separator:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a754d2ff0b01b7230d179467ecb949bc1 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a754d2ff0b01b7230d179467ecb949bc1">~FMTobject</a> ()</td></tr>
-<tr class="separator:a754d2ff0b01b7230d179467ecb949bc1 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aabbeb37f9454aaae7725341a4fc6b871">~FMTobject</a> ()</td></tr>
+<tr class="separator:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6f0d241beec60204ed8d14740a026058">FMTobject</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; exhandler)</td></tr>
 <tr class="separator:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acc66512952f3c5563d317d40f5d0bd5d">FMTobject</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
 <tr class="separator:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43beb96c44fa008bbcd475d367a67ab1 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a43beb96c44fa008bbcd475d367a67ab1">operator=</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
 <tr class="separator:a43beb96c44fa008bbcd475d367a67ab1 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4cc7e6da6945790a8516adfdf55bba3 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae4cc7e6da6945790a8516adfdf55bba3">passinlogger</a> (const std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt; &amp;logger)</td></tr>
-<tr class="separator:ae4cc7e6da6945790a8516adfdf55bba3 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36054757252bb5f8d1275789271c3e0 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af36054757252bb5f8d1275789271c3e0">passinlogger</a> (const std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt; &amp;logger)</td></tr>
+<tr class="separator:af36054757252bb5f8d1275789271c3e0 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ac96f87dd870a03c329ec7dd91c57e0f3">passinexceptionhandler</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; &amp;exhandler)</td></tr>
 <tr class="separator:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a45a5a60a8bed1b2c7fc3852a5140947f">redirectlogtofile</a> (const std::string &amp;location)</td></tr>
 <tr class="separator:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e863f6d27b4be0bf0adb54ac66dea11 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a7e863f6d27b4be0bf0adb54ac66dea11">setdefaultlogger</a> ()</td></tr>
-<tr class="separator:a7e863f6d27b4be0bf0adb54ac66dea11 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6311de4070a948825c067c7b5243d048 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6311de4070a948825c067c7b5243d048">setquietlogger</a> ()</td></tr>
-<tr class="separator:a6311de4070a948825c067c7b5243d048 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e8c8fadb353390dde1a33fc0f790b3 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae5e8c8fadb353390dde1a33fc0f790b3">setdebuglogger</a> ()</td></tr>
-<tr class="separator:ae5e8c8fadb353390dde1a33fc0f790b3 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acb289903aad7488bb9d58a555325dbc6">setdefaultlogger</a> ()</td></tr>
+<tr class="separator:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a07f7d55431bdd4c885f84c70436dfeb8">setquietlogger</a> ()</td></tr>
+<tr class="separator:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af84f403de5cbb9676e5da79c8a1f0d74">setdebuglogger</a> ()</td></tr>
+<tr class="separator:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#adb70eea83ae75752e107358d7c47d775">setdefaultexceptionhandler</a> ()</td></tr>
 <tr class="separator:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab718aa354a7b395471a15d29f244477 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aab718aa354a7b395471a15d29f244477">setquietexceptionhandler</a> ()</td></tr>
@@ -204,11 +203,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1c8388f4cbb465e0e0a4bc4369340f4d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a1c8388f4cbb465e0e0a4bc4369340f4d">seterrorstowarnings</a> (const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;errors)</td></tr>
 <tr class="separator:a1c8388f4cbb465e0e0a4bc4369340f4d inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ad19c5dab06f5f039c2f5a095e987c0a4"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#ad19c5dab06f5f039c2f5a095e987c0a4">rxseparator</a></td></tr>
-<tr class="memdesc:ad19c5dab06f5f039c2f5a095e987c0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for splitting general string.  <a href="classParser_1_1FMTparser.html#ad19c5dab06f5f039c2f5a095e987c0a4">More...</a><br /></td></tr>
-<tr class="separator:ad19c5dab06f5f039c2f5a095e987c0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:adb08868ef39c82b4a8d894b7037fb44e"><td class="memItemLeft" align="right" valign="top">static const std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#adb08868ef39c82b4a8d894b7037fb44e">rxseparator</a></td></tr>
+<tr class="memdesc:adb08868ef39c82b4a8d894b7037fb44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for splitting general string.  <a href="classParser_1_1FMTparser.html#adb08868ef39c82b4a8d894b7037fb44e">More...</a><br /></td></tr>
+<tr class="separator:adb08868ef39c82b4a8d894b7037fb44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -218,9 +217,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ad9fd4b9485f55742f69063b932a9969a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a48fd4de2f9828981e13e376e087e70"><td class="memItemLeft" align="right" valign="top">OGRSpatialReference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a4a48fd4de2f9828981e13e376e087e70">getFORELspatialref</a> () const</td></tr>
 <tr class="separator:a4a48fd4de2f9828981e13e376e087e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6956af040d73962a57a89f6ecf4b401c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6956af040d73962a57a89f6ecf4b401c"><td class="memTemplItemLeft" align="right" valign="top">GDALDataset *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a6956af040d73962a57a89f6ecf4b401c">createdataset</a> (const std::string &amp;location, const <a class="el" href="classSpatial_1_1FMTlayer.html">Spatial::FMTlayer</a>&lt; T &gt; &amp;layer, const GDALDataType datatype) const</td></tr>
-<tr class="separator:a6956af040d73962a57a89f6ecf4b401c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab696a9dbe3cbc0477ca0bb5f073a6b89"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab696a9dbe3cbc0477ca0bb5f073a6b89"><td class="memTemplItemLeft" align="right" valign="top">GDALDataset *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#ab696a9dbe3cbc0477ca0bb5f073a6b89">createdataset</a> (const std::string &amp;location, const <a class="el" href="classSpatial_1_1FMTlayer.html">Spatial::FMTlayer</a>&lt; T &gt; &amp;layer, const GDALDataType datatype) const</td></tr>
+<tr class="separator:ab696a9dbe3cbc0477ca0bb5f073a6b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade4ca6f7196b719e43346e61f17588bd"><td class="memItemLeft" align="right" valign="top">GDALDataset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#ade4ca6f7196b719e43346e61f17588bd">getdataset</a> (const std::string &amp;location) const</td></tr>
 <tr class="separator:ade4ca6f7196b719e43346e61f17588bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0fdc56ec5377b3360fb89d0a9107a63"><td class="memItemLeft" align="right" valign="top">GDALDataset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#ad0fdc56ec5377b3360fb89d0a9107a63">getvectordataset</a> (const std::string &amp;location) const</td></tr>
@@ -277,24 +276,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a0694818d5242043dd9810320b75ce669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417">Core::FMTsection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a0694818d5242043dd9810320b75ce669">_section</a></td></tr>
 <tr class="memdesc:a0694818d5242043dd9810320b75ce669"><td class="mdescLeft">&#160;</td><td class="mdescRight">The section in which the child class is in.  <a href="classParser_1_1FMTparser.html#a0694818d5242043dd9810320b75ce669">More...</a><br /></td></tr>
 <tr class="separator:a0694818d5242043dd9810320b75ce669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add945d01d7f6a9b0e3a18e957d684ef3"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#add945d01d7f6a9b0e3a18e957d684ef3">rxayld</a></td></tr>
-<tr class="memdesc:add945d01d7f6a9b0e3a18e957d684ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing age/period/yield specification.  <a href="classParser_1_1FMTparser.html#add945d01d7f6a9b0e3a18e957d684ef3">More...</a><br /></td></tr>
-<tr class="separator:add945d01d7f6a9b0e3a18e957d684ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae08707e2149e051335b7fbd7acd7fc08"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#ae08707e2149e051335b7fbd7acd7fc08">rxaage</a></td></tr>
-<tr class="memdesc:ae08707e2149e051335b7fbd7acd7fc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing age specificaiton.  <a href="classParser_1_1FMTparser.html#ae08707e2149e051335b7fbd7acd7fc08">More...</a><br /></td></tr>
-<tr class="separator:ae08707e2149e051335b7fbd7acd7fc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2d674d0074d1cb9b75ec11dd77883b"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#aeb2d674d0074d1cb9b75ec11dd77883b">rxayldage</a></td></tr>
-<tr class="memdesc:aeb2d674d0074d1cb9b75ec11dd77883b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing age or yield specification.  <a href="classParser_1_1FMTparser.html#aeb2d674d0074d1cb9b75ec11dd77883b">More...</a><br /></td></tr>
-<tr class="separator:aeb2d674d0074d1cb9b75ec11dd77883b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa392f2ce19023a56ec0e0da127629867"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#aa392f2ce19023a56ec0e0da127629867">rxbounds</a></td></tr>
-<tr class="memdesc:aa392f2ce19023a56ec0e0da127629867"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing bounds for yield or age specification.  <a href="classParser_1_1FMTparser.html#aa392f2ce19023a56ec0e0da127629867">More...</a><br /></td></tr>
-<tr class="separator:aa392f2ce19023a56ec0e0da127629867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1402ad48fcbd92bdd7d4d65be6f056"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#aba1402ad48fcbd92bdd7d4d65be6f056">rxoperators</a></td></tr>
-<tr class="memdesc:aba1402ad48fcbd92bdd7d4d65be6f056"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing simple operators.  <a href="classParser_1_1FMTparser.html#aba1402ad48fcbd92bdd7d4d65be6f056">More...</a><br /></td></tr>
-<tr class="separator:aba1402ad48fcbd92bdd7d4d65be6f056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f39e32d2dae620618f8256c0b6d8a0"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#af5f39e32d2dae620618f8256c0b6d8a0">rxprimary</a></td></tr>
-<tr class="memdesc:af5f39e32d2dae620618f8256c0b6d8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing the primary file.  <a href="classParser_1_1FMTparser.html#af5f39e32d2dae620618f8256c0b6d8a0">More...</a><br /></td></tr>
-<tr class="separator:af5f39e32d2dae620618f8256c0b6d8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73beb72aac8b6fabe2fb9a170d81d7bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a73beb72aac8b6fabe2fb9a170d81d7bb">_constreplacement</a></td></tr>
 <tr class="memdesc:a73beb72aac8b6fabe2fb9a170d81d7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of constant replaced by a numerical number.  <a href="classParser_1_1FMTparser.html#a73beb72aac8b6fabe2fb9a170d81d7bb">More...</a><br /></td></tr>
 <tr class="separator:a73beb72aac8b6fabe2fb9a170d81d7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,18 +292,49 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a8c66464f8917da03bd8a1fea3047b200"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most recent file time read by this parser.  <a href="classParser_1_1FMTparser.html#a8c66464f8917da03bd8a1fea3047b200">More...</a><br /></td></tr>
 <tr class="separator:a8c66464f8917da03bd8a1fea3047b200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a19fbe0434c64b5dae1b280a68250df9f"><td class="memItemLeft" align="right" valign="top">static const std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a19fbe0434c64b5dae1b280a68250df9f">rxayld</a></td></tr>
+<tr class="memdesc:a19fbe0434c64b5dae1b280a68250df9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing age/period/yield specification.  <a href="classParser_1_1FMTparser.html#a19fbe0434c64b5dae1b280a68250df9f">More...</a><br /></td></tr>
+<tr class="separator:a19fbe0434c64b5dae1b280a68250df9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b42b5efc406ad77f2956478a804f4e"><td class="memItemLeft" align="right" valign="top">static const std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a27b42b5efc406ad77f2956478a804f4e">rxaage</a></td></tr>
+<tr class="memdesc:a27b42b5efc406ad77f2956478a804f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing age specificaiton.  <a href="classParser_1_1FMTparser.html#a27b42b5efc406ad77f2956478a804f4e">More...</a><br /></td></tr>
+<tr class="separator:a27b42b5efc406ad77f2956478a804f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a641464901028a3b6841b04e7ec4ae"><td class="memItemLeft" align="right" valign="top">static const std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a70a641464901028a3b6841b04e7ec4ae">rxayldage</a></td></tr>
+<tr class="memdesc:a70a641464901028a3b6841b04e7ec4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing age or yield specification.  <a href="classParser_1_1FMTparser.html#a70a641464901028a3b6841b04e7ec4ae">More...</a><br /></td></tr>
+<tr class="separator:a70a641464901028a3b6841b04e7ec4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d90386a04f78829dd3395144dcbcf02"><td class="memItemLeft" align="right" valign="top">static const std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a7d90386a04f78829dd3395144dcbcf02">rxbounds</a></td></tr>
+<tr class="memdesc:a7d90386a04f78829dd3395144dcbcf02"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing bounds for yield or age specification.  <a href="classParser_1_1FMTparser.html#a7d90386a04f78829dd3395144dcbcf02">More...</a><br /></td></tr>
+<tr class="separator:a7d90386a04f78829dd3395144dcbcf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadeecf07c60bf390c469bc6d51265220"><td class="memItemLeft" align="right" valign="top">static const std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#aadeecf07c60bf390c469bc6d51265220">rxoperators</a></td></tr>
+<tr class="memdesc:aadeecf07c60bf390c469bc6d51265220"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing simple operators.  <a href="classParser_1_1FMTparser.html#aadeecf07c60bf390c469bc6d51265220">More...</a><br /></td></tr>
+<tr class="separator:aadeecf07c60bf390c469bc6d51265220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dde1f1cb60c06e6aea7a5ff417d1877"><td class="memItemLeft" align="right" valign="top">static const std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTparser.html#a6dde1f1cb60c06e6aea7a5ff417d1877">rxprimary</a></td></tr>
+<tr class="memdesc:a6dde1f1cb60c06e6aea7a5ff417d1877"><td class="mdescLeft">&#160;</td><td class="mdescRight">A regex for capturing the primary file.  <a href="classParser_1_1FMTparser.html#a6dde1f1cb60c06e6aea7a5ff417d1877">More...</a><br /></td></tr>
+<tr class="separator:a6dde1f1cb60c06e6aea7a5ff417d1877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
+<tr class="memitem:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae67617ff7aedd99989a071bcf11206f2">_exhandler</a></td></tr>
+<tr class="memdesc:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <a href="classCore_1_1FMTobject.html#ae67617ff7aedd99989a071bcf11206f2">More...</a><br /></td></tr>
+<tr class="separator:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a52f73fe80b34fae5f277ec5135d1d22d">_logger</a></td></tr>
+<tr class="memdesc:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <a href="classCore_1_1FMTobject.html#a52f73fe80b34fae5f277ec5135d1d22d">More...</a><br /></td></tr>
+<tr class="separator:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
+<tr class="memitem:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a9e8ae1c63c33235ce7eec85e29f5b871">getavailablememory</a> ()</td></tr>
+<tr class="separator:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a2c990e6e83cb68a8558368208cd0c382 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a2c990e6e83cb68a8558368208cd0c382">getruntimelocation</a> ()</td></tr>
-<tr class="separator:a2c990e6e83cb68a8558368208cd0c382 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a8c0faf115edea0c6141ddaf6b14797ab inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a8c0faf115edea0c6141ddaf6b14797ab">_exhandler</a> = std::shared_ptr&lt;<a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a>&gt;(new <a class="el" href="classException_1_1FMTdefaultexceptionhandler.html">Exception::FMTdefaultexceptionhandler</a>(<a class="el" href="classCore_1_1FMTobject.html#a260ae6dbf324cd22647bc89ae8a76659">_logger</a>))</td></tr>
-<tr class="memdesc:a8c0faf115edea0c6141ddaf6b14797ab inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <a href="classCore_1_1FMTobject.html#a8c0faf115edea0c6141ddaf6b14797ab">More...</a><br /></td></tr>
-<tr class="separator:a8c0faf115edea0c6141ddaf6b14797ab inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a260ae6dbf324cd22647bc89ae8a76659 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a260ae6dbf324cd22647bc89ae8a76659">_logger</a> = std::shared_ptr&lt;<a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a>&gt;(new <a class="el" href="classLogging_1_1FMTdefaultlogger.html">Logging::FMTdefaultlogger</a>)</td></tr>
-<tr class="memdesc:a260ae6dbf324cd22647bc89ae8a76659 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <a href="classCore_1_1FMTobject.html#a260ae6dbf324cd22647bc89ae8a76659">More...</a><br /></td></tr>
-<tr class="separator:a260ae6dbf324cd22647bc89ae8a76659 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a41e9c6a09ec5a8776a1783f50cd685c3">getruntimelocation</a> ()</td></tr>
+<tr class="separator:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ab87002d0212cf0b244771760a6ec56d1">getclock</a> ()</td></tr>
+<tr class="separator:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
+<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a4df7cf79433c24ff1f98a4521c02e155">getduration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="separator:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af08563fdef482c39ad0cbf3a5018bfa0">getdurationinseconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="separator:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classParser_1_1FMTparser.html">FMTparser</a> is the main parent class of all the other <a class="el" href="classParser_1_1FMTparser.html">FMTparser</a> available in FMT. It has alot of usefull function common to all parser for validation and error throw when turning a std::string to something usefull in FMT. </p>
@@ -391,8 +403,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac212b03b71e2efbd65799a5488763598" name="ac212b03b71e2efbd65799a5488763598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac212b03b71e2efbd65799a5488763598">&#9670;&nbsp;</a></span>bounds()</h2>
+<a id="a144047100c631a5f62bedfccb02473f7" name="a144047100c631a5f62bedfccb02473f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a144047100c631a5f62bedfccb02473f7">&#9670;&nbsp;</a></span>bounds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="classCore_1_1FMTbounds.html">Core::FMTbounds</a>&lt; int &gt; Parser::FMTparser::bounds&lt; int &gt; </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTbounds.html">Core::FMTbounds</a>&lt; T &gt; Parser::FMTparser::bounds </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classCore_1_1FMTconstants.html">Core::FMTconstants</a> &amp;&#160;</td>
           <td class="paramname"><em>constants</em>, </td>
@@ -496,8 +508,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6956af040d73962a57a89f6ecf4b401c" name="a6956af040d73962a57a89f6ecf4b401c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6956af040d73962a57a89f6ecf4b401c">&#9670;&nbsp;</a></span>createdataset()</h2>
+<a id="ab696a9dbe3cbc0477ca0bb5f073a6b89" name="ab696a9dbe3cbc0477ca0bb5f073a6b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab696a9dbe3cbc0477ca0bb5f073a6b89">&#9670;&nbsp;</a></span>createdataset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,7 +520,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">template GDALDataset * Parser::FMTparser::createdataset&lt; double &gt; </td>
+          <td class="memname">GDALDataset * Parser::FMTparser::createdataset </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>location</em>, </td>
@@ -1030,8 +1042,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aa7d844dc21093750ccc764a4acfa619b" name="aa7d844dc21093750ccc764a4acfa619b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7d844dc21093750ccc764a4acfa619b">&#9670;&nbsp;</a></span>getnum() <span class="overload">[1/2]</span></h2>
+<a id="a9658c4d040d0383a0b8531baf17c24af" name="a9658c4d040d0383a0b8531baf17c24af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9658c4d040d0383a0b8531baf17c24af">&#9670;&nbsp;</a></span>getnum() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1039,7 +1051,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">template size_t Parser::FMTparser::getnum&lt; size_t &gt; </td>
+          <td class="memname">T Parser::FMTparser::getnum </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -1486,8 +1498,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a536cea2c0b4c36c7c30c407bc67db789" name="a536cea2c0b4c36c7c30c407bc67db789"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a536cea2c0b4c36c7c30c407bc67db789">&#9670;&nbsp;</a></span>regexloop()</h2>
+<a id="a694653de9fcce98e8f942bba27df7cce" name="a694653de9fcce98e8f942bba27df7cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694653de9fcce98e8f942bba27df7cce">&#9670;&nbsp;</a></span>regexloop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1495,7 +1507,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">std::vector&lt; std::string &gt; Parser::FMTparser::regexloop </td>
           <td>(</td>
-          <td class="paramtype">std::regex &amp;&#160;</td>
+          <td class="paramtype">const std::regex &amp;&#160;</td>
           <td class="paramname"><em>cutregex</em>, </td>
         </tr>
         <tr>
@@ -1726,8 +1738,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="adbadbf947d693f41f7bcace06ed71c0f" name="adbadbf947d693f41f7bcace06ed71c0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbadbf947d693f41f7bcace06ed71c0f">&#9670;&nbsp;</a></span>spliter()</h2>
+<a id="a5cbd2fda1a062cad076dc4055dc2bc4a" name="a5cbd2fda1a062cad076dc4055dc2bc4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbd2fda1a062cad076dc4055dc2bc4a">&#9670;&nbsp;</a></span>spliter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1741,7 +1753,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::regex &amp;&#160;</td>
+          <td class="paramtype">const std::regex &amp;&#160;</td>
           <td class="paramname"><em>xspliter</em>&#160;</td>
         </tr>
         <tr>
@@ -1755,8 +1767,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="abfb7f22ab76f0a58bb3cb5d4d486591c" name="abfb7f22ab76f0a58bb3cb5d4d486591c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfb7f22ab76f0a58bb3cb5d4d486591c">&#9670;&nbsp;</a></span>tryfillnumber()</h2>
+<a id="a527731fa26608cfb9fde8e8c7b095bb9" name="a527731fa26608cfb9fde8e8c7b095bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527731fa26608cfb9fde8e8c7b095bb9">&#9670;&nbsp;</a></span>tryfillnumber()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1764,7 +1776,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">template bool Parser::FMTparser::tryfillnumber&lt; double &gt; </td>
+          <td class="memname">bool Parser::FMTparser::tryfillnumber </td>
           <td>(</td>
           <td class="paramtype">T &amp;&#160;</td>
           <td class="paramname"><em>number</em>, </td>
@@ -2079,8 +2091,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ae08707e2149e051335b7fbd7acd7fc08" name="ae08707e2149e051335b7fbd7acd7fc08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae08707e2149e051335b7fbd7acd7fc08">&#9670;&nbsp;</a></span>rxaage</h2>
+<a id="a27b42b5efc406ad77f2956478a804f4e" name="a27b42b5efc406ad77f2956478a804f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b42b5efc406ad77f2956478a804f4e">&#9670;&nbsp;</a></span>rxaage</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2089,12 +2101,12 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::regex Parser::FMTparser::rxaage</td>
+          <td class="memname">const std::regex Parser::FMTparser::rxaage</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2103,8 +2115,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="add945d01d7f6a9b0e3a18e957d684ef3" name="add945d01d7f6a9b0e3a18e957d684ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add945d01d7f6a9b0e3a18e957d684ef3">&#9670;&nbsp;</a></span>rxayld</h2>
+<a id="a19fbe0434c64b5dae1b280a68250df9f" name="a19fbe0434c64b5dae1b280a68250df9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fbe0434c64b5dae1b280a68250df9f">&#9670;&nbsp;</a></span>rxayld</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2113,12 +2125,12 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::regex Parser::FMTparser::rxayld</td>
+          <td class="memname">const std::regex Parser::FMTparser::rxayld</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2127,8 +2139,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aeb2d674d0074d1cb9b75ec11dd77883b" name="aeb2d674d0074d1cb9b75ec11dd77883b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2d674d0074d1cb9b75ec11dd77883b">&#9670;&nbsp;</a></span>rxayldage</h2>
+<a id="a70a641464901028a3b6841b04e7ec4ae" name="a70a641464901028a3b6841b04e7ec4ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a641464901028a3b6841b04e7ec4ae">&#9670;&nbsp;</a></span>rxayldage</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2137,12 +2149,12 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::regex Parser::FMTparser::rxayldage</td>
+          <td class="memname">const std::regex Parser::FMTparser::rxayldage</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2151,8 +2163,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aa392f2ce19023a56ec0e0da127629867" name="aa392f2ce19023a56ec0e0da127629867"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa392f2ce19023a56ec0e0da127629867">&#9670;&nbsp;</a></span>rxbounds</h2>
+<a id="a7d90386a04f78829dd3395144dcbcf02" name="a7d90386a04f78829dd3395144dcbcf02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d90386a04f78829dd3395144dcbcf02">&#9670;&nbsp;</a></span>rxbounds</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2161,12 +2173,12 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::regex Parser::FMTparser::rxbounds</td>
+          <td class="memname">const std::regex Parser::FMTparser::rxbounds</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2175,8 +2187,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aba1402ad48fcbd92bdd7d4d65be6f056" name="aba1402ad48fcbd92bdd7d4d65be6f056"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba1402ad48fcbd92bdd7d4d65be6f056">&#9670;&nbsp;</a></span>rxoperators</h2>
+<a id="aadeecf07c60bf390c469bc6d51265220" name="aadeecf07c60bf390c469bc6d51265220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadeecf07c60bf390c469bc6d51265220">&#9670;&nbsp;</a></span>rxoperators</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2185,12 +2197,12 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::regex Parser::FMTparser::rxoperators</td>
+          <td class="memname">const std::regex Parser::FMTparser::rxoperators</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2199,8 +2211,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af5f39e32d2dae620618f8256c0b6d8a0" name="af5f39e32d2dae620618f8256c0b6d8a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f39e32d2dae620618f8256c0b6d8a0">&#9670;&nbsp;</a></span>rxprimary</h2>
+<a id="a6dde1f1cb60c06e6aea7a5ff417d1877" name="a6dde1f1cb60c06e6aea7a5ff417d1877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dde1f1cb60c06e6aea7a5ff417d1877">&#9670;&nbsp;</a></span>rxprimary</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2209,12 +2221,12 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::regex Parser::FMTparser::rxprimary</td>
+          <td class="memname">const std::regex Parser::FMTparser::rxprimary</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2223,25 +2235,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad19c5dab06f5f039c2f5a095e987c0a4" name="ad19c5dab06f5f039c2f5a095e987c0a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad19c5dab06f5f039c2f5a095e987c0a4">&#9670;&nbsp;</a></span>rxseparator</h2>
+<a id="adb08868ef39c82b4a8d894b7037fb44e" name="adb08868ef39c82b4a8d894b7037fb44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb08868ef39c82b4a8d894b7037fb44e">&#9670;&nbsp;</a></span>rxseparator</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::regex Parser::FMTparser::rxseparator</td>
+          <td class="memname">const std::regex Parser::FMTparser::rxseparator</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>A regex for splitting general string. </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/cyrgu3/Desktop/test/FMT2/FMT/Source/<a class="el" href="FMTparser_8hpp_source.html">FMTparser.hpp</a></li>
-<li>C:/Users/cyrgu3/Desktop/test/FMT2/FMT/Source/<a class="el" href="FMTparser_8cpp.html">FMTparser.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>C:/Users/cyrgu3/Desktop/test/FMT2/FMT/Include/<a class="el" href="FMTparser_8hpp_source.html">FMTparser.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

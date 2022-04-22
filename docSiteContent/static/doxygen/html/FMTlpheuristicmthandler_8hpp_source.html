@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: C:/Users/cyrgu3/Desktop/test/FMT2/FMT/Source/FMTlpheuristicmthandler.hpp Source File</title>
+<title>FMT: C:/Users/cyrgu3/Desktop/test/FMT2/FMT/Include/FMTlpheuristicmthandler.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_856524284ebe840938865dc061f982fb.html">Include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -106,14 +106,14 @@ $(function() {
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">size_t</span> best_heuristic() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">void</span> reset_number_of_threads(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; ncpu) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_class" href="classHeuristics_1_1FMTlpheuristicmthandler.html">FMTlpheuristicmthandler</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_class" href="classHeuristics_1_1FMTlpheuristicmthandler.html">FMTlpheuristicmthandler</a>(std::vector&lt;FMToperatingareascheduler&gt;&amp; lheuristics, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; linitialsolution);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="classHeuristics_1_1FMTlpheuristicmthandler.html">FMTlpheuristicmthandler</a>(std::vector&lt;FMToperatingareaclusterer&gt;&amp; lheuristics, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; linitialsolution);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classHeuristics_1_1FMTlpheuristicmthandler.html#af0cdfabc54b205eb3cae195c4fee7502">   36</a></span>        <a class="code hl_function" href="classHeuristics_1_1FMTlpheuristicmthandler.html#af0cdfabc54b205eb3cae195c4fee7502">FMTlpheuristicmthandler</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classHeuristics_1_1FMTlpheuristicmthandler.html#a43cdc43ed9b3cabc0a3775df347cb2b8">   37</a></span>        <a class="code hl_function" href="classHeuristics_1_1FMTlpheuristicmthandler.html#a43cdc43ed9b3cabc0a3775df347cb2b8">FMTlpheuristicmthandler</a>(std::vector&lt;FMToperatingareascheduler&gt;&amp; lheuristics, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; linitialsolution);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classHeuristics_1_1FMTlpheuristicmthandler.html#a34f54682d0a585cca7c71ae8c03f9b6e">   38</a></span>        <a class="code hl_function" href="classHeuristics_1_1FMTlpheuristicmthandler.html#a34f54682d0a585cca7c71ae8c03f9b6e">FMTlpheuristicmthandler</a>(std::vector&lt;FMToperatingareaclusterer&gt;&amp; lheuristics, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; linitialsolution);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">        #if defined FMTWITHPYTHON</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_class" href="classHeuristics_1_1FMTlpheuristicmthandler.html">FMTlpheuristicmthandler</a>(boost::python::list&amp; lheuristics, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; linitialsolution);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">        #endif</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">size_t</span> initialsolve() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">size_t</span> greedysolve(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; iterations, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; maxtime) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classHeuristics_1_1FMTlpheuristicmthandler.html#abe62db2d67ec9e51da5c74bd7b8ee8f8">   42</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classHeuristics_1_1FMTlpheuristicmthandler.html#abe62db2d67ec9e51da5c74bd7b8ee8f8">initialsolve</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classHeuristics_1_1FMTlpheuristicmthandler.html#af23c619b84d0775fdcce033300286f16">   43</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classHeuristics_1_1FMTlpheuristicmthandler.html#af23c619b84d0775fdcce033300286f16">greedysolve</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; iterations, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; maxtime) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        };</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>BOOST_CLASS_EXPORT_KEY(<a class="code hl_class" href="classHeuristics_1_1FMTlpheuristicmthandler.html">Heuristics::FMTlpheuristicmthandler</a>)</div>
@@ -122,6 +122,11 @@ $(function() {
 <div class="ttc" id="aFMTobject_8hpp_html"><div class="ttname"><a href="FMTobject_8hpp.html">FMTobject.hpp</a></div></div>
 <div class="ttc" id="aFMTutility_8hpp_html_afaa839e5ab3981464e893c359c215fa1"><div class="ttname"><a href="FMTutility_8hpp.html#afaa839e5ab3981464e893c359c215fa1">FMTEXPORT</a></div><div class="ttdeci">#define FMTEXPORT</div><div class="ttdef"><b>Definition:</b> FMTutility.hpp:89</div></div>
 <div class="ttc" id="aclassHeuristics_1_1FMTlpheuristicmthandler_html"><div class="ttname"><a href="classHeuristics_1_1FMTlpheuristicmthandler.html">Heuristics::FMTlpheuristicmthandler</a></div><div class="ttdef"><b>Definition:</b> FMTlpheuristicmthandler.hpp:30</div></div>
+<div class="ttc" id="aclassHeuristics_1_1FMTlpheuristicmthandler_html_a34f54682d0a585cca7c71ae8c03f9b6e"><div class="ttname"><a href="classHeuristics_1_1FMTlpheuristicmthandler.html#a34f54682d0a585cca7c71ae8c03f9b6e">Heuristics::FMTlpheuristicmthandler::FMTlpheuristicmthandler</a></div><div class="ttdeci">FMTlpheuristicmthandler(std::vector&lt; FMToperatingareaclusterer &gt; &amp;lheuristics, const double &amp;linitialsolution)</div></div>
+<div class="ttc" id="aclassHeuristics_1_1FMTlpheuristicmthandler_html_a43cdc43ed9b3cabc0a3775df347cb2b8"><div class="ttname"><a href="classHeuristics_1_1FMTlpheuristicmthandler.html#a43cdc43ed9b3cabc0a3775df347cb2b8">Heuristics::FMTlpheuristicmthandler::FMTlpheuristicmthandler</a></div><div class="ttdeci">FMTlpheuristicmthandler(std::vector&lt; FMToperatingareascheduler &gt; &amp;lheuristics, const double &amp;linitialsolution)</div></div>
+<div class="ttc" id="aclassHeuristics_1_1FMTlpheuristicmthandler_html_abe62db2d67ec9e51da5c74bd7b8ee8f8"><div class="ttname"><a href="classHeuristics_1_1FMTlpheuristicmthandler.html#abe62db2d67ec9e51da5c74bd7b8ee8f8">Heuristics::FMTlpheuristicmthandler::initialsolve</a></div><div class="ttdeci">size_t initialsolve() const</div></div>
+<div class="ttc" id="aclassHeuristics_1_1FMTlpheuristicmthandler_html_af0cdfabc54b205eb3cae195c4fee7502"><div class="ttname"><a href="classHeuristics_1_1FMTlpheuristicmthandler.html#af0cdfabc54b205eb3cae195c4fee7502">Heuristics::FMTlpheuristicmthandler::FMTlpheuristicmthandler</a></div><div class="ttdeci">FMTlpheuristicmthandler()</div></div>
+<div class="ttc" id="aclassHeuristics_1_1FMTlpheuristicmthandler_html_af23c619b84d0775fdcce033300286f16"><div class="ttname"><a href="classHeuristics_1_1FMTlpheuristicmthandler.html#af23c619b84d0775fdcce033300286f16">Heuristics::FMTlpheuristicmthandler::greedysolve</a></div><div class="ttdeci">size_t greedysolve(const unsigned int &amp;iterations, const double &amp;maxtime) const</div></div>
 <div class="ttc" id="anamespaceHeuristics_html"><div class="ttname"><a href="namespaceHeuristics.html">Heuristics</a></div><div class="ttdoc">Namespace regrouping all tools for solving LP/MIP problems using an heuristic.</div><div class="ttdef"><b>Definition:</b> FMTareaparser.hpp:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

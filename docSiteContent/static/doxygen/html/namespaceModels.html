@@ -66,8 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">Models Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -122,7 +121,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045fabbe24354bb8b036fe0c7b0975d059ad9">PRESOLVE_ITERATIONS</a> = 3
 , <br />
 &#160;&#160;<a class="el" href="namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045fab7aa331db74d31457283a55cd69b9c4c">NUMBER_OF_THREADS</a> = 4
-, <a class="el" href="namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045fa796c86da2848476d44c950c4fe507ffe">LastIntModelParam</a> = 5
+, <a class="el" href="namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045fa9abb3f679b4bff49da0c694f90670e03">MATRIX_TYPE</a> = 5
+, <a class="el" href="namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045fa796c86da2848476d44c950c4fe507ffe">LastIntModelParam</a> = 6
 <br />
  }</td></tr>
 <tr class="separator:ade10874e4877f1cb1bd6b8701fa2045f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,13 +154,6 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804">GUROBI</a> = 4
  }</td></tr>
 <tr class="separator:abb34022e5912d190199b4eef0418eea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a233114744f98d0a10e0b7f4254f01312"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModels.html#a233114744f98d0a10e0b7f4254f01312">FMTmodel::addyieldhandlers&lt; Core::FMTageyieldhandler &gt;</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTageyieldhandler.html">Core::FMTageyieldhandler</a> &gt; &amp;yieldhandlers)</td></tr>
-<tr class="separator:a233114744f98d0a10e0b7f4254f01312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e0fef654e5d51af22d38da17bb27a8"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModels.html#ab6e0fef654e5d51af22d38da17bb27a8">FMTmodel::addyieldhandlers&lt; Core::FMTtimeyieldhandler &gt;</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtimeyieldhandler.html">Core::FMTtimeyieldhandler</a> &gt; &amp;yieldhandlers)</td></tr>
-<tr class="separator:ab6e0fef654e5d51af22d38da17bb27a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Namespace containing all enumerator and classes used to construct or manipulate the different type of model in FMT. </p>
@@ -232,9 +225,11 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ade10874e4877f1cb1bd6b8701fa2045faff3e04cd0f63fc43ca854d08ec7ccc5e" name="ade10874e4877f1cb1bd6b8701fa2045faff3e04cd0f63fc43ca854d08ec7ccc5e"></a>NUMBER_OF_ITERATIONS&#160;</td><td class="fielddoc"><p >The number of iterations to do in <a class="el" href="classModels_1_1FMTsesmodel.html#a6141052f52b2d8a30e0dd4238eb8ace2">FMTsesmodel::greedyreferencebuild</a> <br  />
  </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ade10874e4877f1cb1bd6b8701fa2045fabbe24354bb8b036fe0c7b0975d059ad9" name="ade10874e4877f1cb1bd6b8701fa2045fabbe24354bb8b036fe0c7b0975d059ad9"></a>PRESOLVE_ITERATIONS&#160;</td><td class="fielddoc"><p >The number of iterations to do in <a class="el" href="classModels_1_1FMTmodel.html#aed5cd3c372bb0dc919f02241725fdcb0">FMTmodel::presolve</a> </p>
+<tr><td class="fieldname"><a id="ade10874e4877f1cb1bd6b8701fa2045fabbe24354bb8b036fe0c7b0975d059ad9" name="ade10874e4877f1cb1bd6b8701fa2045fabbe24354bb8b036fe0c7b0975d059ad9"></a>PRESOLVE_ITERATIONS&#160;</td><td class="fielddoc"><p >The number of iterations to do in <a class="el" href="classModels_1_1FMTmodel.html#acca6bf79f9e1653b748b3cc026bedfc3">FMTmodel::presolve</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade10874e4877f1cb1bd6b8701fa2045fab7aa331db74d31457283a55cd69b9c4c" name="ade10874e4877f1cb1bd6b8701fa2045fab7aa331db74d31457283a55cd69b9c4c"></a>NUMBER_OF_THREADS&#160;</td><td class="fielddoc"><p >Number of thread use by solver for optimisation </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ade10874e4877f1cb1bd6b8701fa2045fa9abb3f679b4bff49da0c694f90670e03" name="ade10874e4877f1cb1bd6b8701fa2045fa9abb3f679b4bff49da0c694f90670e03"></a>MATRIX_TYPE&#160;</td><td class="fielddoc"><p >matrix forest model TYPE I,II,III (1,2,3) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ade10874e4877f1cb1bd6b8701fa2045fa796c86da2848476d44c950c4fe507ffe" name="ade10874e4877f1cb1bd6b8701fa2045fa796c86da2848476d44c950c4fe507ffe"></a>LastIntModelParam&#160;</td><td class="fielddoc"><p >End marker, used to allocate a fixed-sized array to store int parameters. </p>
 </td></tr>
@@ -324,43 +319,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804" name="abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804"></a>GUROBI&#160;</td><td class="fielddoc"><p >Gurobi optimizer : <a href="https://www.gurobi.com/">https://www.gurobi.com/</a> </p>
 </td></tr>
 </table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a233114744f98d0a10e0b7f4254f01312" name="a233114744f98d0a10e0b7f4254f01312"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a233114744f98d0a10e0b7f4254f01312">&#9670;&nbsp;</a></span>FMTmodel::addyieldhandlers&lt; Core::FMTageyieldhandler &gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">template void <a class="el" href="classModels_1_1FMTmodel.html#a0f4a1f585bfaefc846cf2bfa2a2ec2ea">Models::FMTmodel::addyieldhandlers</a>&lt; <a class="el" href="classCore_1_1FMTageyieldhandler.html">Core::FMTageyieldhandler</a> &gt; </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTageyieldhandler.html">Core::FMTageyieldhandler</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>yieldhandlers</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab6e0fef654e5d51af22d38da17bb27a8" name="ab6e0fef654e5d51af22d38da17bb27a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6e0fef654e5d51af22d38da17bb27a8">&#9670;&nbsp;</a></span>FMTmodel::addyieldhandlers&lt; Core::FMTtimeyieldhandler &gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">template void <a class="el" href="classModels_1_1FMTmodel.html#a0f4a1f585bfaefc846cf2bfa2a2ec2ea">Models::FMTmodel::addyieldhandlers</a>&lt; <a class="el" href="classCore_1_1FMTtimeyieldhandler.html">Core::FMTtimeyieldhandler</a> &gt; </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtimeyieldhandler.html">Core::FMTtimeyieldhandler</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>yieldhandlers</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
