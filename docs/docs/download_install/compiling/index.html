@@ -333,7 +333,7 @@
   
   
   
-  <script src="/FMTdocs/js/wowchemy-init.min.d5311fd7435c9fda4bf0768e412fb7ae.js"></script>
+  <script src="/FMTdocs/js/wowchemy-init.min.4be02a3b391999348b0c7478778a0e4b.js"></script>
 
   
 
@@ -806,7 +806,7 @@
 <p>Use <code>cd ..</code> to go back to the <code>FMT-Installation</code> folder.</p>
 </li>
 <li>
-<p>Clone the repository of FMT by using <code>git clone https://github.com/gcyr/FMT.git</code></p>
+<p>Clone the repository of FMT by using <code>git clone https://github.com/Bureau-du-Forestier-en-chef/FMT.git</code></p>
 </li>
 <li>
 <p>Use <code>cd ./FMT</code> to navigate into the FMT folder downloaded from the repository of FMT.</p>
@@ -815,7 +815,7 @@
 <p>Copy/paste the following commands <strong>in the Windows notepad</strong>, and then replace the <code>-DMOSEK_DIR</code> parameter with the location of Mosek on your computer:</p>
 </li>
 </ol>
-<pre><code class="language-bash">cmake CMakeLists.txt -B build/release -G &quot;Visual Studio 16 2019&quot; -DVCPKG_TARGET_TRIPLET=x64-windows -DCMAKE_TOOLCHAIN_FILE=&quot;../vcpkg/scripts/buildsystems/vcpkg.cmake&quot; -DBOOST_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DCMAKE_BUILD_TYPE=Release -DGDAL_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DGEOS_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DOSI_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DPYTHON_DIR=&quot;../vcpkg/packages/python3_x64-windows/&quot; -DMOSEK_DIR=&quot;C:/PROGRA~1/Mosek/&quot;
+<pre><code class="language-bash">cmake CMakeLists.txt -B build/release -G &quot;Visual Studio 16 2019&quot; -DBUILD_TYPE=Release -DVCPKG_TARGET_TRIPLET=x64-windows -DCMAKE_TOOLCHAIN_FILE=&quot;../vcpkg/scripts/buildsystems/vcpkg.cmake&quot; -DBOOST_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DCMAKE_BUILD_TYPE=Release -DGDAL_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DGEOS_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DOSI_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DPYTHON_DIR=&quot;../vcpkg/packages/python3_x64-windows/&quot; -DMOSEK_DIR=&quot;C:/PROGRA~1/Mosek/&quot;
 cmake --build build/release --config Release
 cmake --install build/release --config Release
 </code></pre>
@@ -823,6 +823,11 @@ cmake --install build/release --config Release
   <div>
     <p>By default, Mosek was installed in your <code>C:/Program Files</code> folder on windows. This can be expressed by the path <code>C:/PROGRA~1</code> to avoid the space between <code>Program</code> and <code>Files</code>, which can create errors.</p>
 <p>Thus, if you installed Mosek in <code>C:\Program Files\Mosek</code>, you can keep <code>C:/PROGRA~1/Mosek/</code> in the commands.</p>
+  </div>
+</div>
+<div class="alert alert-note">
+  <div>
+    If you installed a version of Visual Studio anterior to 2019, you&rsquo;ll have to edit the part of the commands incating the version of Visual Studio.
   </div>
 </div>
 <ol start="5">
@@ -1072,7 +1077,7 @@ cmake --install build/release --config Release
       
     
     
-    <script src="/FMTdocs/en/js/wowchemy.min.5ba9ed4d06c87a22a820c6acdb849d94.js"></script>
+    <script src="/FMTdocs/en/js/wowchemy.min.9fa6b42477ec5412923e4e8256096b2b.js"></script>
 
     
 

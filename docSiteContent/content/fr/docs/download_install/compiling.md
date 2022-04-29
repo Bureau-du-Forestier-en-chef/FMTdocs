@@ -11,14 +11,14 @@ Maintenant que tout est prêt, il est temps de passer à l'étape de compilation
 
 1. Utilisez `cd ..` pour retourner dans le dossier `FMT-Installation`.
 
-2. Clonez le *repository* de FMT en utilisant `git clone https://github.com/gcyr/FMT.git`.
+2. Clonez le *repository* de FMT en utilisant `git clone https://github.com/Bureau-du-Forestier-en-chef/FMT.git`.
 
 3. Utilisez `cd ./FMT` pour naviguer dans le dossier FMT téléchargé depuis le *repository* de FMT.
 
 4. Copiez/collez les commandes suivantes **dans le bloc-notes de Windows**, puis remplacez le paramètre `-DMOSEK_DIR` par l'emplacement de Mosek sur votre ordinateur :
 
 ```bash
-cmake CMakeLists.txt -B build/release -G "Visual Studio 16 2019" -DVCPKG_TARGET_TRIPLET=x64-windows -DCMAKE_TOOLCHAIN_FILE="../vcpkg/scripts/buildsystems/vcpkg.cmake" -DBOOST_DIR="../vcpkg/installed/x64-windows/" -DCMAKE_BUILD_TYPE=Release -DGDAL_DIR=". ./vcpkg/installed/x64-windows/" -DGEOS_DIR="../vcpkg/installed/x64-windows/" -DOSI_DIR="../vcpkg/installed/x64-windows/" -DPYTHON_DIR="../vcpkg/packages/python3_x64-windows/" -DMOSEK_DIR="C:/PROGRA~1/Mosek/"
+cmake CMakeLists.txt -B build/release -G "Visual Studio 16 2019" -DBUILD_TYPE=Release -DVCPKG_TARGET_TRIPLET=x64-windows -DCMAKE_TOOLCHAIN_FILE="../vcpkg/scripts/buildsystems/vcpkg.cmake" -DBOOST_DIR="../vcpkg/installed/x64-windows/" -DCMAKE_BUILD_TYPE=Release -DGDAL_DIR="../vcpkg/installed/x64-windows/" -DGEOS_DIR="../vcpkg/installed/x64-windows/" -DOSI_DIR="../vcpkg/installed/x64-windows/" -DPYTHON_DIR="../vcpkg/packages/python3_x64-windows/" -DMOSEK_DIR="C:/PROGRA~1/Mosek/"
 cmake --build build/release --config Release
 cmake --install build/release --config Release
 ```

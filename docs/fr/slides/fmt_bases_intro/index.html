@@ -68,15 +68,14 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" >
-        <img alt="" srcset="
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w"
-               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png"
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_3e97aba28143b58dcc47fb606c02453f.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_3e97aba28143b58dcc47fb606c02453f.webp"
                width="40%"
                height="auto"
-               loading="lazy" data-zoomable /></div>
+               loading="eager" data-zoomable /></div>
   </div></figure>
 <p><a href="https://github.com/gcyr/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
 
@@ -310,9 +309,9 @@ $( "li" ).addClass( "fragment" );
 
   
   
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
   
   
 
@@ -322,73 +321,74 @@ $( "li" ).addClass( "fragment" );
   <script>
     Reveal.initialize({
       highlight: {
-        beforeHighlight: hljs => hljs.registerLanguage("fmt",function(hljs){
-	return 	{
-    case_insensitive: false,
-    contains: [
-      {
-        className: "string",
-        begin: /\?/, end: /[\s\t]/,
-        relevance: 0
+        beforeHighlight: hljs => hljs.registerLanguage("fmt", function (hljs) {
+          return {
+            case_insensitive: false,
+            contains: [
+              {
+                className: "string",
+                begin: /\?/, end: /[\s\t]/,
+                relevance: 0
+              },
+              hljs.COMMENT(
+                '{', 
+                '}', 
+                {
+                  contains: [
+                    {
+                      scope: 'doc', begin: '@\\w+'
+                    }
+                  ]
+                }
+              ),
+              hljs.COMMENT(
+                ';', 
+                '\n', 
+                {
+                  contains: [
+                    {
+                      scope: 'doc', begin: '@\\w+'
+                    }
+                  ]
+                }
+              ),
+              {
+                className: "number",
+                begin: String.raw`\b(\d*\.?\d+)\b`,
+                relevance: 0
+              },
+              {
+                className: 'number',
+                begin: String.raw`(#[\w]*)`,
+                relevance: 0
+              },
+              {
+                className: 'string',
+                begin: String.raw`(>=|<=|<|>|\+|\/)`,
+                relevance: 0
+              }
+            ],
+            keywords: {
+              $pattern: /\*\w+|_\w+/,
+              keyword: ["*A", "*AA", "_LOCK",
+                "*THEME", "*AGGREGATE",
+                "*ACTION", "*OPERABLE", "_LOCKEXEMPT", "_MAXAGE", "_AGE",
+                "*CASE", "*SOURCE", "*TARGET", "_REPLACE", "_DEATH",
+                "*OUTPUT", "@AGE", "@YLD", "_AREA", "_INVENT",
+                "*Y", "*YC", "*YM", "_PRED", "_EQUATION", "_SUM", "_RANGE",
+                "_MAX", "_MIN", "_MAXMIN", "_MINMAX", "_EVEN", "_SEQ", "_NDY",
+                "_AVG", "*OBJECTIVE", "*EXCLUDE", "*CONSTRAINTS", "_LENGTH", "_TH",
+                "_SETFROMLOCAL", "_SETFROMGLOBAL", "_REIGNORE", "_RANDOM", "_SIZE", "_REPLICATE",
+                "_PENALTY", "_GOAL", "*FORMAT", "_SETGLOBALSCHEDULE", "_ADJACENCY"]
+            },
+          }
+        })
       },
-      hljs.COMMENT(
-        '{', 
-        '}', 
-        {
-          contains: [
-            {
-              scope: 'doc', begin: '@\\w+'
-            }
-          ]
-        }
-      ),
-      hljs.COMMENT(
-        ';', 
-        '\n', 
-        {
-          contains: [
-            {
-              scope: 'doc', begin: '@\\w+'
-            }
-          ]
-        }
-      ),
-      {
-        className: "number",
-        begin: String.raw`\b(\d*\.?\d+)\b`,
-        relevance: 0
-      },
-      {
-        className: 'number',
-        begin: String.raw`(#[\w]*)`,
-        relevance: 0
-      },
-      {
-        className: 'string',
-        begin: String.raw`(>=|<=|<|>|\+|\/)`,
-        relevance: 0
-      }
-    ],
-    keywords: {
-        $pattern: /\*\w+|_\w+/, 
-      keyword: ["*A", "*AA", "_LOCK",
-        "*THEME", "*AGGREGATE",
-        "*ACTION", "*OPERABLE", "_LOCKEXEMPT","_MAXAGE","_AGE",
-        "*CASE", "*SOURCE", "*TARGET", "_REPLACE", "_DEATH",
-        "*OUTPUT","@AGE","@YLD","_AREA","_INVENT",
-        "*Y", "*YC", "*YM", "_PRED", "_EQUATION", "_SUM", "_RANGE",
-        "_MAX", "_MIN", "_MAXMIN", "_MINMAX", "_EVEN", "_SEQ", "_NDY",
-        "_AVG", "*OBJECTIVE", "*EXCLUDE", "*CONSTRAINTS", "_LENGTH", "_TH",
-        "_SETFROMLOCAL", "_SETFROMGLOBAL", "_REIGNORE", "_RANDOM", "_SIZE", "_REPLICATE",
-        "_PENALTY", "_GOAL", "*FORMAT", "_SETGLOBALSCHEDULE","_ADJACENCY"]
-    },
-	}})
-      },
-      plugins: [ RevealMarkdown, RevealZoom, RevealSearch, RevealNotes, RevealMath, RevealHighlight ],
+      plugins: [RevealMarkdown, RevealZoom, RevealSearch, RevealNotes, RevealMath, RevealHighlight],
       slideNumber: true,
       controlsLayout: 'edges'
     });
-</script>
+  </script>
 
 </body>
 </html>
