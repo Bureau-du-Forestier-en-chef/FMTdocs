@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interface | Documentation de FMT</title>
+    <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/interface/</link>
+      <atom:link href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/interface/index.xml" rel="self" type="application/rss+xml" />
+    <description>Interface</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-ca</language><copyright>© 2022 Bureau du Forestier en Chef du Québec</copyright>
+    <image>
+      <url>https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png</url>
+      <title>Interface</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/interface/</link>
+    </image>
+    
+    <item>
+      <title>Les différents projets avec FMT</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/</guid>
+      <description>&lt;h1 id=&#34;fmt-où-en-somme-nous&#34;&gt;FMT où en somme nous?&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cest-quoi-fmt&#34;&gt;C&amp;rsquo;est quoi FMT?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;F: Forest&lt;/li&gt;
+&lt;li&gt;M: Management&lt;/li&gt;
+&lt;li&gt;T: Tool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cest-quoi-fmt-1&#34;&gt;C&amp;rsquo;est quoi FMT?&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+  2--&gt;14;
+  1--&gt;2--&gt;5;
+  1--&gt;3--&gt;6;
+  1--&gt;4--&gt;7;
+  3--&gt;8;
+  3--&gt;12;
+  3--&gt;15;
+  4--&gt;13;
+  5--&gt;9;
+  5--&gt;10;
+  5--&gt;11;
+  1[&#34;FMT API&#34;];
+  2[&#34;C++&#34;];
+  3[&#34;Python&#34;];
+  4[&#34;Cran R&#34;];
+  5[&#34;Interface&#34;];
+  6[&#34;Re-planification&#34;];
+  7[&#34;Base de données&#34;];
+  8[&#34;BFEC-GCBM&#34;];
+  9[&#34;Planification&#34;];
+  10[&#34;Spatialisation&#34;];
+  11[&#34;BFECOPT&#34;];
+  12[&#34;Analyses Diverses&#34;];
+  13[&#34;Autres&#34;];
+  14[&#34;Tests&#34;];
+  15[&#34;Machine Learning&#34;];
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;comment-on-test-fmt&#34;&gt;Comment on test FMT?&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+pie title Les tests de FMT
+  &#34;Syntaxe&#34; : 3.5
+  &#34;Unités spatiale&#34; : 5.3
+  &#34;Planification&#34; : 61.4
+  &#34;Re-planification&#34; : 5.3
+  &#34;Spatialisation&#34; : 7.0
+  &#34;Machine Learning&#34; : 7.0
+  &#34;Presolve&#34; : 3.5
+  &#34;Analyses autres&#34; : 7.0
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;lévolution-des-versions&#34;&gt;L&amp;rsquo;évolution des versions&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+flowchart LR;
+1 --&gt; 6;
+6 --&gt; 7;
+7 --&gt; 8;
+8 --&gt; 9;
+1 --&gt; 11 --&gt; 6;
+1 --&gt; 2 --&gt; 6;
+2 --&gt; 7;
+2 --&gt; 8;
+2 --&gt; 9;
+1 --&gt; 3 --&gt; 6;
+3 --&gt; 7;
+3 --&gt; 8;
+3 --&gt; 9;
+1 --&gt; 4 --&gt; 9;
+1 --&gt; 10 --&gt; 8;
+10 --&gt; 9;
+1 --&gt; 5 --&gt; 9;
+1[&#34;Master&#34;]
+2[&#34;Re-planification&#34;]
+3[&#34;BFEcopt&#34;]
+4[&#34;Machine Learning&#34;]
+5[&#34;type II&#34;]
+6[&#34;0.9.1&#34;]
+7[&#34;0.9.2&#34;]
+8[&#34;0.9.3&#34;]
+9[&#34;0.9.4 en développement&#34;]
+10[&#34;Presolve&#34;]
+11[&#34;Autres&#34;]
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-nouveautés-094&#34;&gt;Les nouveautés 0.9.4&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Presolve
+&lt;ul&gt;
+&lt;li&gt;Réduit la taille du modèle à un modèle équivalent&lt;/li&gt;
+&lt;li&gt;Diminue la vitesse de construction&lt;/li&gt;
+&lt;li&gt;Diminue la vitesse de résolution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Type II
+&lt;ul&gt;
+&lt;li&gt;Diminue la taille de la matrice&lt;/li&gt;
+&lt;li&gt;Diminue la vitesse de construction et de résolution&lt;/li&gt;
+&lt;li&gt;Diminue l&amp;rsquo;utilisation de la mémoire de l&amp;rsquo;ordinateur par le solveur&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Syntaxe carbone
+&lt;ul&gt;
+&lt;li&gt;Permet d&amp;rsquo;intégrer les réservoirs et flux de carbone à même les yields&lt;/li&gt;
+&lt;li&gt;Permet d&amp;rsquo;obtenir un bilan de carbone spatialement référencé et spatialement explicit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;la-documentationhttpsbureau-du-forestier-en-chefgithubiofmtdocs&#34;&gt;&lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;La Documentation&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+    stateDiagram
+    Code --&gt; Doxygen(78%)
+    Doxygen(78%) --&gt; Présentations
+    state Doxygen(78%) {
+      direction LR
+      C++ --&gt; Python
+      C++ --&gt; R
+    }
+    state Présentations {
+      Formation --&gt; Replanification
+      Formation --&gt; ClubFMT
+      Formation --&gt; Carbone
+      Autres
+    }
+    Doxygen(78%) --&gt; GitHub
+    state GitHub {
+      Fonctionnement
+      Installation
+      MachineLearning
+      Spatialisation
+    }
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;documentation-à-venir&#34;&gt;Documentation à venir&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Github:
+&lt;ul&gt;
+&lt;li&gt;Re-plannification&lt;/li&gt;
+&lt;li&gt;Syntaxe:
+&lt;ul&gt;
+&lt;li&gt;Spatialisation&lt;/li&gt;
+&lt;li&gt;Carbone (Yields)&lt;/li&gt;
+&lt;li&gt;Re-plannification&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Continuer à documenter les fonctions (78%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-travaux&#34;&gt;Les travaux&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+gantt
+dateFormat  YYYY-MM-DD
+title Les travaux dans FMT
+excludes weekends
+section Interface
+Programmation          :done,des1,2021-12-15,2022-03-07 
+Test Phase 1           :     des2,2022-02-25,2022-03-11
+Test Phase 2           :     des3,2022-03-16,2022-03-30
+Test Phase 3           :active,des4,2022-05-03,2022-05-16
+Corrections            :     des5, 2022-03-11,2022-03-20
+Parallélisation BFEcopt/Planification           :     des6, 2022-03-11,2022-04-28
+Mise à jour de la cache :     des8, 2022-04-20,2022-05-20
+Migration du code          :     crit,des9, 2022-05-02,2022-05-09
+Ajout playback et parallisation :     des10, 2022-05-20,2022-06-03
+Ajout de BFECopt       :     des11, 2022-06-03,2022-06-09
+Ajout de la re-planification :des12, 2022-06-09,2022-06-30
+section Formations
+ClubFMThé            :done,des1,2021-12-15,2022-02-30
+Formation Re-planification :active,des2,2022-03-22,2022-06-15
+section Machine Learning
+Phase 1.2 (Développement de syntaxe carbone)            :done,des1,2021-12-15,2022-04-15
+Mise en place d&#39;une présentation                        :     des2,2022-02-15,2022-04-08
+Phase 2.1 (Spatialisation de la récolte)               :active,des3,2021-12-15,2022-06-30
+section Générale
+Presolve                                                :done,des1,2021-12-15,2022-04-01
+Migration à Visual Studio 2022                          :crit,active,des2,2022-04-15,2022-05-20
+Débogage                                                :       des3,2021-12-15,2022-06-30
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-futurs-projets-potentiels&#34;&gt;Les futurs projets potentiels&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Re-planification spatialement explicite
+&lt;ul&gt;
+&lt;li&gt;Permettre d&amp;rsquo;obtenir un effet de spatialisation à travers la re-planification&lt;/li&gt;
+&lt;li&gt;Utilisation d&amp;rsquo;évènements stochastique spatiaux&lt;/li&gt;
+&lt;li&gt;Inclure les enjeux opérationel&lt;/li&gt;
+&lt;li&gt;Changement climatique&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Type I
+&lt;ul&gt;
+&lt;li&gt;Corriger des comportements indésirable des CPF (existant depuis des années)&lt;/li&gt;
+&lt;li&gt;Respect des stratégiques de A à Z par le solveur&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lien avec SELES
+&lt;ul&gt;
+&lt;li&gt;Passer les hypothèses de nos modèles à SELES&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Permettre l&amp;rsquo;optimisation du bilan de carbone&lt;/li&gt;
+&lt;li&gt;Explorer les modèles de prédiction qu&amp;rsquo;on pourrait intégrer directement
+&lt;ul&gt;
+&lt;li&gt;Biomasse&lt;/li&gt;
+&lt;li&gt;Facteur de productivité en fonction du scénario Rcp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;des-questions&#34;&gt;Des Questions?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&#34;https://code.jquery.com/jquery-3.5.0.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+$( &#34;li&#34; ).addClass( &#34;fragment&#34; );
+// $( &#34;p&#34; ).addClass( &#34;fragment&#34; );
+&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
