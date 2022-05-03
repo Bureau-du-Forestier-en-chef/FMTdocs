@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.2.0 for Hugo">
+
+  
+    <link rel="manifest" href="/FMTdocs/fr/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/">
+
+  <title>Les différents projets avec FMT | Documentation de FMT</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/theme/white.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs.min.css" crossorigin="anonymous" id="highlight-theme">
+
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/reveal_custom.min.css">
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h1 id="planification-forestière-à-laide-du-machine-learning">Planification forestière à l’aide du Machine Learning</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp"
+               width="40%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/Bureau-du-Forestier-en-chef/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="cest-quoi-fmt">C&rsquo;est quoi FMT?</h2>
+<ul>
+<li>F: Forest</li>
+<li>M: Management</li>
+<li>T: Tools</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique">Problématique</h2>
+<ul>
+<li>La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeux complexe:
+<ul>
+<li>Le calcul du bilan de carbone forestier pour un modèle de planification est complexe</li>
+<li>L’optimisation spatialement explicit de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="productivité-nette-de-lécosystème">Productivité nette de l’écosystème</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="nep1.jpg" alt="" loading="eager" data-zoomable width="30%" height="30%" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="productivité-nette-de-lécosystème-1">Productivité nette de l’écosystème</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="nep2.jpg" alt="" loading="eager" data-zoomable width="30%" height="30%" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique-productivité-nette-de-lécosystème-">Problématique: Productivité nette de l’écosystème ?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="nep3.jpg" alt="" loading="eager" data-zoomable width="30%" height="30%" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique-états-des-réservoirs-">Problématique: États des réservoirs ?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="pool1.jpg" alt="" loading="eager" data-zoomable width="30%" height="30%" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique-états-des-réservoirs--1">Problématique: États des réservoirs ?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="pool2.jpg" alt="" loading="eager" data-zoomable width="30%" height="30%" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique-états-des-réservoirs--2">Problématique: États des réservoirs ?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="pool3.jpg" alt="" loading="eager" data-zoomable width="30%" height="30%" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématiquepour-chaque-période">Problématique:…Pour chaque période</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="gcbm1.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif">Objectif</h2>
+<ul>
+<li>Obtention du bilan de carbone rapidement:
+<ul>
+<li>Tous les réservoirs de l’écosystème:
+<ul>
+<li>Carbone du sol</li>
+<li>Biomasse sous-terraine</li>
+<li>Litière</li>
+<li>Bois mort</li>
+<li>Biomasse aérienne</li>
+</ul>
+</li>
+<li>La productivité nette de l’écosystème</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="données-dapprentissage">Données d&rsquo;apprentissage</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="gcbm2.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="apprentissage-réalisé">Apprentissage réalisé</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="ml1.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="utilisation-de-la-méthode">Utilisation de la méthode</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="m1.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="utilisation-de-la-méthode-1">Utilisation de la méthode</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="m2.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="concrètement">Concrètement</h2>
+<ul>
+<li>Nouvelle syntaxe pour la section yield</li>
+<li>Voir dans examples/Models/TWD_land/Scenarios/Predictors</li>
+<li>Développement d&rsquo;un nouveau type de yield &ldquo;*YM&rdquo;</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="modèle-pour-les-réservoirs">Modèle pour les réservoirs</h2>
+  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
+  {
+  Intrants:
+    - GFI = Volume de feuillu intolérant
+    - GFT = Volume de feuillu tolérant
+    - GF = Volume feuillu total
+    - GR = Volume résineu total
+  }
+  *YM ? ? ?
+  AG_Biomass_C,BG_Biomass_C,Deadwood_C,Litter_C,Soil_C _PRED(pools_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+
+  </code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="modèle-pour-la-productivité-nette-de-lécosystème">Modèle pour la productivité nette de l&rsquo;écosystème</h2>
+  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
+  {
+  Intrants:
+    - GFI = Volume de feuillu intolérant
+    - GFT = Volume de feuillu tolérant
+    - GF = Volume feuillu total
+    - GR = Volume résineu total
+  }
+  *YM ? ? ?
+  NEP _PRED(nep_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+  </code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="suivi-des-variables">Suivi des variables</h2>
+  <pre><code class="fmt" data-line-numbers="4|5|8|9|12|13" style="font-size:120%">
+
+  ;Inventaire de la productivité nette de l'écosystème en (c)
+  *OUTPUT NEP_Total
+  *SOURCE ? ? ? _INVENT NEP
+
+  ;Inventaire de la biomasse anérienne et souterraine en (c)
+  *OUTPUT Biomasse_Total
+  *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
+
+  ;Inventaire du carbone du sols en (c)
+  *OUTPUT Sols_Total
+  *SOURCE ? ? ? _INVENT Soil_C
+
+  </code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="problématique--optimisation-spatialement-explicit">Problématique : Optimisation spatialement explicit</h2>
+<ul>
+<li>Pratiquement impossible avec nos modèles</li>
+<li>Utilisations d’un heuristique pour placer la récolte</li>
+<li>Difficile à obtenir à moins d’implémenter une heuristique:
+<ul>
+<li>Simulated Annealing</li>
+<li>Tabou Search</li>
+</ul>
+</li>
+<li>Utilisation de la programmation mixte intégrale</li>
+<li>On peut donc difficilement répondre à la question du ou doit t’on faire t&rsquo;elle ou t&rsquo;elle traitement pour améliorer notre bilan de carbone</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif--meilleur-bilan">Objectif : Meilleur bilan</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="se1.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif--meilleur-bilan-1">Objectif : Meilleur bilan</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="se2.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif--meilleur-bilan-et-respect-des-contraintes">Objectif : Meilleur bilan et respect des contraintes</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="se3.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="objectif--meilleur-bilan-et-respect-des-contraintes-1">Objectif : Meilleur bilan et respect des contraintes</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="se4.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="apprentissage">Apprentissage</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="a1.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="apprentissage-1">Apprentissage</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="a2.jpg" alt="" loading="eager" data-zoomable width="auto" height="auto" /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>
+<p>On peut maintenant obtenir un bilan de carbone facilement pour:</p>
+<ul>
+<li>Une solution spatiale explicite et spatialement référencée</li>
+<li>Les cinqs principaux réservoirs de l&rsquo;écosystème</li>
+<li>Le flux de productivitée nette de l&rsquo;écosystème</li>
+</ul>
+</li>
+<li>
+<p>On peut maintenant utiliser le Machine Learning pour:</p>
+<ul>
+<li>Générer des solutions spatialement explicite plausible</li>
+<li>Améliorer notre planification en fonction de notre bilan de carbone</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+</li>
+</ul>
+<h2 id="des-questions">Des Questions?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp"
+               width="40%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/Bureau-du-Forestier-en-chef/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+$( "li" ).addClass( "fragment" );
+// $( "p" ).addClass( "fragment" );
+</script>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/highlight/highlight.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+  
+
+  
+  
+  
+  <script>
+    Reveal.initialize({
+      highlight: {
+        beforeHighlight: hljs => hljs.registerLanguage("fmt", function (hljs) {
+          return {
+            case_insensitive: false,
+            contains: [
+              {
+                className: "string",
+                begin: /\?/, end: /[\s\t]/,
+                relevance: 0
+              },
+              hljs.COMMENT(
+                '{', 
+                '}', 
+                {
+                  contains: [
+                    {
+                      scope: 'doc', begin: '@\\w+'
+                    }
+                  ]
+                }
+              ),
+              hljs.COMMENT(
+                ';', 
+                '\n', 
+                {
+                  contains: [
+                    {
+                      scope: 'doc', begin: '@\\w+'
+                    }
+                  ]
+                }
+              ),
+              {
+                className: "number",
+                begin: String.raw`\b(\d*\.?\d+)\b`,
+                relevance: 0
+              },
+              {
+                className: 'number',
+                begin: String.raw`(#[\w]*)`,
+                relevance: 0
+              },
+              {
+                className: 'string',
+                begin: String.raw`(>=|<=|<|>|\+|\/)`,
+                relevance: 0
+              }
+            ],
+            keywords: {
+              $pattern: /\*\w+|_\w+/,
+              keyword: ["*A", "*AA", "_LOCK",
+                "*THEME", "*AGGREGATE",
+                "*ACTION", "*OPERABLE", "_LOCKEXEMPT", "_MAXAGE", "_AGE",
+                "*CASE", "*SOURCE", "*TARGET", "_REPLACE", "_DEATH",
+                "*OUTPUT", "@AGE", "@YLD", "_AREA", "_INVENT",
+                "*Y", "*YC", "*YM", "_PRED", "_EQUATION", "_SUM", "_RANGE",
+                "_MAX", "_MIN", "_MAXMIN", "_MINMAX", "_EVEN", "_SEQ", "_NDY",
+                "_AVG", "*OBJECTIVE", "*EXCLUDE", "*CONSTRAINTS", "_LENGTH", "_TH",
+                "_SETFROMLOCAL", "_SETFROMGLOBAL", "_REIGNORE", "_RANDOM", "_SIZE", "_REPLICATE",
+                "_PENALTY", "_GOAL", "*FORMAT", "_SETGLOBALSCHEDULE", "_ADJACENCY"]
+            },
+          }
+        })
+      },
+      plugins: [RevealMarkdown, RevealZoom, RevealSearch, RevealNotes, RevealMath, RevealHighlight],
+      slideNumber: true,
+      controlsLayout: 'edges'
+    });
+  </script>
+
+</body>
+</html>

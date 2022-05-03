@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var slides = { highlight_style: "obsidian", theme: "white" };
+  var slides = { highlight_style: "vs", theme: "white" };
 
   // ns-hugo:C:\Users\cyrgu3\AppData\Local\Temp\hugo_cache\modules\filecache\modules\pkg\mod\github.com\wowchemy\wowchemy-hugo-modules\wowchemy@v0.0.0-20210526223849-81ba17522966\assets\js\wowchemy-utils.js
   function fixMermaid(render = false) {
@@ -101,4 +101,5 @@
     });
   }
   var mermaidOptions;
+})();
 })();

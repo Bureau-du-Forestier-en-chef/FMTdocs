@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>carbone | Documentation de FMT</title>
+    <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/carbone/</link>
+      <atom:link href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/carbone/index.xml" rel="self" type="application/rss+xml" />
+    <description>carbone</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-ca</language><copyright>© 2022 Bureau du Forestier en Chef du Québec</copyright>
+    <image>
+      <url>https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png</url>
+      <title>carbone</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/carbone/</link>
+    </image>
+    
+    <item>
+      <title>Les différents projets avec FMT</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/</guid>
+      <description>&lt;h1 id=&#34;planification-forestière-à-laide-du-machine-learning&#34;&gt;Planification forestière à l’aide du Machine Learning&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cest-quoi-fmt&#34;&gt;C&amp;rsquo;est quoi FMT?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;F: Forest&lt;/li&gt;
+&lt;li&gt;M: Management&lt;/li&gt;
+&lt;li&gt;T: Tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique&#34;&gt;Problématique&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeux complexe:
+&lt;ul&gt;
+&lt;li&gt;Le calcul du bilan de carbone forestier pour un modèle de planification est complexe&lt;/li&gt;
+&lt;li&gt;L’optimisation spatialement explicit de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;productivité-nette-de-lécosystème&#34;&gt;Productivité nette de l’écosystème&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;nep1.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;30%&#34; height=&#34;30%&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;productivité-nette-de-lécosystème-1&#34;&gt;Productivité nette de l’écosystème&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;nep2.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;30%&#34; height=&#34;30%&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique-productivité-nette-de-lécosystème-&#34;&gt;Problématique: Productivité nette de l’écosystème ?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;nep3.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;30%&#34; height=&#34;30%&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique-états-des-réservoirs-&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;pool1.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;30%&#34; height=&#34;30%&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique-états-des-réservoirs--1&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;pool2.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;30%&#34; height=&#34;30%&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique-états-des-réservoirs--2&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;pool3.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;30%&#34; height=&#34;30%&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématiquepour-chaque-période&#34;&gt;Problématique:…Pour chaque période&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;gcbm1.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif&#34;&gt;Objectif&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Obtention du bilan de carbone rapidement:
+&lt;ul&gt;
+&lt;li&gt;Tous les réservoirs de l’écosystème:
+&lt;ul&gt;
+&lt;li&gt;Carbone du sol&lt;/li&gt;
+&lt;li&gt;Biomasse sous-terraine&lt;/li&gt;
+&lt;li&gt;Litière&lt;/li&gt;
+&lt;li&gt;Bois mort&lt;/li&gt;
+&lt;li&gt;Biomasse aérienne&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La productivité nette de l’écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;données-dapprentissage&#34;&gt;Données d&amp;rsquo;apprentissage&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;gcbm2.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;apprentissage-réalisé&#34;&gt;Apprentissage réalisé&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;ml1.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;utilisation-de-la-méthode&#34;&gt;Utilisation de la méthode&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;m1.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;utilisation-de-la-méthode-1&#34;&gt;Utilisation de la méthode&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;m2.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;concrètement&#34;&gt;Concrètement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nouvelle syntaxe pour la section yield&lt;/li&gt;
+&lt;li&gt;Voir dans examples/Models/TWD_land/Scenarios/Predictors&lt;/li&gt;
+&lt;li&gt;Développement d&amp;rsquo;un nouveau type de yield &amp;ldquo;*YM&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;modèle-pour-les-réservoirs&#34;&gt;Modèle pour les réservoirs&lt;/h2&gt;
+  &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;3|4|5|6|7|9|10|13|14|15|16|17&#34; style=&#34;font-size:120%&#34;&gt;
+  {
+  Intrants:
+    - GFI = Volume de feuillu intolérant
+    - GFT = Volume de feuillu tolérant
+    - GF = Volume feuillu total
+    - GR = Volume résineu total
+  }
+  *YM ? ? ?
+  AG_Biomass_C,BG_Biomass_C,Deadwood_C,Litter_C,Soil_C _PRED(pools_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;modèle-pour-la-productivité-nette-de-lécosystème&#34;&gt;Modèle pour la productivité nette de l&amp;rsquo;écosystème&lt;/h2&gt;
+  &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;3|4|5|6|7|9|10|13|14|15|16|17&#34; style=&#34;font-size:120%&#34;&gt;
+  {
+  Intrants:
+    - GFI = Volume de feuillu intolérant
+    - GFT = Volume de feuillu tolérant
+    - GF = Volume feuillu total
+    - GR = Volume résineu total
+  }
+  *YM ? ? ?
+  NEP _PRED(nep_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;suivi-des-variables&#34;&gt;Suivi des variables&lt;/h2&gt;
+  &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;4|5|8|9|12|13&#34; style=&#34;font-size:120%&#34;&gt;
+
+  ;Inventaire de la productivité nette de l&#39;écosystème en (c)
+  *OUTPUT NEP_Total
+  *SOURCE ? ? ? _INVENT NEP
+
+  ;Inventaire de la biomasse anérienne et souterraine en (c)
+  *OUTPUT Biomasse_Total
+  *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
+
+  ;Inventaire du carbone du sols en (c)
+  *OUTPUT Sols_Total
+  *SOURCE ? ? ? _INVENT Soil_C
+
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;problématique--optimisation-spatialement-explicit&#34;&gt;Problématique : Optimisation spatialement explicit&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pratiquement impossible avec nos modèles&lt;/li&gt;
+&lt;li&gt;Utilisations d’un heuristique pour placer la récolte&lt;/li&gt;
+&lt;li&gt;Difficile à obtenir à moins d’implémenter une heuristique:
+&lt;ul&gt;
+&lt;li&gt;Simulated Annealing&lt;/li&gt;
+&lt;li&gt;Tabou Search&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Utilisation de la programmation mixte intégrale&lt;/li&gt;
+&lt;li&gt;On peut donc difficilement répondre à la question du ou doit t’on faire t&amp;rsquo;elle ou t&amp;rsquo;elle traitement pour améliorer notre bilan de carbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif--meilleur-bilan&#34;&gt;Objectif : Meilleur bilan&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;se1.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif--meilleur-bilan-1&#34;&gt;Objectif : Meilleur bilan&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;se2.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif--meilleur-bilan-et-respect-des-contraintes&#34;&gt;Objectif : Meilleur bilan et respect des contraintes&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;se3.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif--meilleur-bilan-et-respect-des-contraintes-1&#34;&gt;Objectif : Meilleur bilan et respect des contraintes&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;se4.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;apprentissage&#34;&gt;Apprentissage&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;a1.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;apprentissage-1&#34;&gt;Apprentissage&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;a2.jpg&#34; alt=&#34;&#34; loading=&#34;eager&#34; data-zoomable width=&#34;auto&#34; height=&#34;auto&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On peut maintenant obtenir un bilan de carbone facilement pour:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Une solution spatiale explicite et spatialement référencée&lt;/li&gt;
+&lt;li&gt;Les cinqs principaux réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Le flux de productivitée nette de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On peut maintenant utiliser le Machine Learning pour:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Générer des solutions spatialement explicite plausible&lt;/li&gt;
+&lt;li&gt;Améliorer notre planification en fonction de notre bilan de carbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;des-questions&#34;&gt;Des Questions?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&#34;https://code.jquery.com/jquery-3.5.0.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+$( &#34;li&#34; ).addClass( &#34;fragment&#34; );
+// $( &#34;p&#34; ).addClass( &#34;fragment&#34; );
+&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

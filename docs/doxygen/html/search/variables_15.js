@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_5fn_0',['x_n',['../namespaceSpatial.html#ae4049935a1acb9aa6a981900a2a49d22',1,'Spatial']]]
+  ['vertices_0',['vertices',['../classGraph_1_1FMTgraphstats.html#a7843b454930ba5d582321724599faccb',1,'Graph::FMTgraphstats']]]
 ];
