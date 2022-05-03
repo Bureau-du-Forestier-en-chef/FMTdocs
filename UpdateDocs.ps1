@@ -1,1 +1,1 @@
-hugo -s docSiteContent -d docs
+hugo -s docSiteContent -d ../docs
