@@ -52,7 +52,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
   {{ end }}
   {{ if $.Param "slides.diagram" | default false}}
-  {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\" title=\"mermaid\"></script>" (printf $js.mermaid.url $js.mermaid.version) $js.mermaid.sri | safeHTML }}
+  {{ printf "<script src=\"https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js\"></script>" $js.mermaid.sri | safeHTML }}
   {{ end }}
 
   {{ $slidejs := resources.Get "js/wowchemy-slides.js" | js.Build (dict "params" (dict "slides" $.Params.slides )) }}
@@ -129,7 +129,8 @@
       },
       plugins: [RevealMarkdown, RevealZoom, RevealSearch, RevealNotes, RevealMath, RevealHighlight],
       slideNumber: true,
-      controlsLayout: 'edges'
+      controlsLayout: 'edges',
+	  viewDistance: 1000
     });
   </script>
 
