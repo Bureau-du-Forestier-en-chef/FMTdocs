@@ -10,6 +10,7 @@ slides:
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
   highlight_style: obsidian
+  diagram: true
 ---
 
 # Les bases de FMT
@@ -17,6 +18,88 @@ slides:
 {{< figure src="LogoFMT.png" width="40%" height="auto" >}}
 
 [Github](https://github.com/gcyr/FMT) | [Documentation](https://bureau-du-forestier-en-chef.github.io/FMTdocs/)
+
+---
+
+## Mermaid test
+
+<div class=mermaid>
+pie showData
+title Les tests de FMT
+"Syntaxe" : 3.5
+"Unités spatiale" : 5.3
+"Planification" : 61.4
+"Re-planification" : 5.3
+"Spatialisation" : 7.0
+"Machine Learning" : 7.0
+"Presolve" : 3.5
+"Analyses autres" : 7.0
+</div>
+
+---
+
+## Mermaid test 2
+
+<div class=mermaid>
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+
+---
+
+## Mermaid test 3
+
+<div class=mermaid>
+pie showData
+title Les tests de FMT
+"Syntaxe" : 3.5
+"Unités spatiale" : 5.3
+"Planification" : 61.4
+"Re-planification" : 5.3
+"Spatialisation" : 7.0
+"Machine Learning" : 7.0
+"Presolve" : 3.5
+"Analyses autres" : 7.0
+</div>
+
+---
+
+## Mermaid test 2
+
+<div class=mermaid>
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+
+---
+
+## Mermaid test 2
+
+<div class=mermaid>
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+
+---
+
+## Mermaid test 2
+
+<div class=mermaid>
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
 
 ---
 

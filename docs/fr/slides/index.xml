@@ -39,6 +39,70 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/gcyr/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test&#34;&gt;Mermaid test&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+pie showData
+title Les tests de FMT
+&#34;Syntaxe&#34; : 3.5
+&#34;Unités spatiale&#34; : 5.3
+&#34;Planification&#34; : 61.4
+&#34;Re-planification&#34; : 5.3
+&#34;Spatialisation&#34; : 7.0
+&#34;Machine Learning&#34; : 7.0
+&#34;Presolve&#34; : 3.5
+&#34;Analyses autres&#34; : 7.0
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-2&#34;&gt;Mermaid test 2&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-3&#34;&gt;Mermaid test 3&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+pie showData
+title Les tests de FMT
+&#34;Syntaxe&#34; : 3.5
+&#34;Unités spatiale&#34; : 5.3
+&#34;Planification&#34; : 61.4
+&#34;Re-planification&#34; : 5.3
+&#34;Spatialisation&#34; : 7.0
+&#34;Machine Learning&#34; : 7.0
+&#34;Presolve&#34; : 3.5
+&#34;Analyses autres&#34; : 7.0
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-2-1&#34;&gt;Mermaid test 2&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-2-2&#34;&gt;Mermaid test 2&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-2-3&#34;&gt;Mermaid test 2&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+&lt;/div&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;controles&#34;&gt;Controles&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Suivant: &lt;code&gt;Right Arrow&lt;/code&gt; ou &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;

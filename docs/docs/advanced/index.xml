@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced features | FMT Documentation</title>
+    <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/</link>
+      <atom:link href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/index.xml" rel="self" type="application/rss+xml" />
+    <description>Advanced features</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Bureau du Forestier en Chef du Québec</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png</url>
+      <title>Advanced features</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/</link>
+    </image>
+    
+    <item>
+      <title>Spatially referenced re-planning</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/replanning/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/replanning/</guid>
+      <description>&lt;h2 id=&#34;what-is-re-planning&#34;&gt;What is re-planning?&lt;/h2&gt;
+&lt;p&gt;Re-planning is a process that consists of re-solving a forest planning optimization model (such as those used in FMT) to take into account elements that cannot be considered in the traditional process of solving these models.&lt;/p&gt;
+&lt;p&gt;Re-planning therefore allows for more complex questions to be asked; in particular, it allows for interactions between the &lt;a href=&#34;https://www.researchgate.net/profile/Mark-Boyland/publication/228780711_Hierarchical_Planning_in_Forestry/links/02e7e534d86d03937f000000/Hierarchical-Planning-in-Forestry.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;different levels of hierarchical planning&lt;/a&gt; in forestry (strategic, tactical and operational).&lt;/p&gt;
+&lt;p&gt;Here are some &lt;strong&gt;examples of questions that re-planning can answer&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Questions related to the effects of natural disturbances (fire, spruce budworm, etc.)
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;What is the effect of fire on the determination of harvest levels by the strategic model ?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;What is the effect of a change in stochastic (random) disturbance regime on the determination of harvest levels by the strategic model ?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Questions related to inconsistencies between what is planned at the strategic (large-scale) level, and the reality on the ground (small-scale): &lt;a href=&#34;https://www.researchgate.net/publication/235754092_On_Risk_of_Systematic_Drift_Under_Incoherent_Hierarchical_Forest_Management_Planning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this is the notion of drift between different levels of hierarchical management&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Are the objectives always achieved by taking into account more precise problems and constraints at tactical level ?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Questions related to interactions between the strategic and tactical levels
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;What is the effect of communicating (or not) certain information to the tactical or strategic model? What changes? What does not change ?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;spatially-referenced-re-planning-in-practice&#34;&gt;Spatially referenced re-planning in practice&lt;/h2&gt;
+&lt;h3 id=&#34;models-used&#34;&gt;Models used&lt;/h3&gt;
+&lt;p&gt;When using FMT, spatially referenced re-planning is in practice done by using 3 different FMT models.&lt;/p&gt;
+&lt;p&gt;These 3 models represent 3 scenarios applied to the same initial landscape (same sections &lt;code&gt;AREA&lt;/code&gt;, &lt;code&gt;CONSTANTS&lt;/code&gt;, &lt;code&gt;LANDSCAPE&lt;/code&gt;, &lt;code&gt;OUTPUTS&lt;/code&gt;). However, these scenarios can have different elements from each other (different &lt;code&gt;ACTIONS&lt;/code&gt;, &lt;code&gt;TRANSITIONS&lt;/code&gt;, &lt;code&gt;YIELDS&lt;/code&gt; and &lt;code&gt;OPTIMIZE&lt;/code&gt; sections).&lt;/p&gt;
+&lt;p&gt;These three models are :&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. The strategic model&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is a type III linear programming model, as described in &lt;a href=&#34;../../basics/spatially_referenced_optimization/&#34;&gt;FMT basics&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is the model that will represent what happens at the strategic level, i.e. when we look at things from above without taking into account certain details at finer scales.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. The stochastic model&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It is a non-spatial simulation model (which works in a spatially referenced space like the linear models, and not a spatially explicit space).&lt;/p&gt;
+&lt;p&gt;It will be used to simulate pseudo-random actions with area targets to be reached. These actions can represent forest fires, insect epidemics, and many others!&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    A &lt;strong&gt;pseudo-random simulation&lt;/strong&gt; means that the random components of the simulation are based on a specific number called the &amp;ldquo;seed&amp;rdquo;. &lt;strong&gt;Two pseudo-random simulations done with the same seed will have the exact same results&lt;/strong&gt;; but changing the seed gives different, random results. This is a very convenient way to have randomness, while keeping a certain stability in the results obtained.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;3. The tactical model&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Like the strategic model, this is a type III linear programming model, as described in &lt;a href=&#34;../basics&#34;&gt;FMT basics&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This model will be used to redo an optimization of the forest planning while taking into account the changes that the stochastic model may have made on the landscape, or with different or additional constraints compared to the strategic model.&lt;/p&gt;
+&lt;h3 id=&#34;the-example-of-a-re-planning-iteration&#34;&gt;The example of a re-planning iteration&lt;/h3&gt;
+&lt;p&gt;Re-planning is done using the three models described above, calling them one after the other within each re-planning period. As one of the models (the stochastic model) contains random events, it is however possible to re-do the whole process several times in order to take into account the variability linked to these random events: this is called an &lt;em&gt;iteration&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;When the models are called one after the other, some of their characteristics are passed from one to the other (inventory/state of the landscape for the period, or constraints and existing planning).&lt;/p&gt;
+&lt;p&gt;In the end, a re-planning iteration takes the following form:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1dfcdc74702e9b3b7be3180aec91c1de.webp 400w,
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_9d6c3edec527ae60b17a4cfbcd171bd5.webp 760w,
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1dfcdc74702e9b3b7be3180aec91c1de.webp&#34;
+               width=&#34;705&#34;
+               height=&#34;398&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;In this diagram,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;STRA&lt;/strong&gt; corresponds to the &lt;strong&gt;strategic&lt;/strong&gt; model&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STO&lt;/strong&gt; corresponds to the &lt;strong&gt;stochastic&lt;/strong&gt; model&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TAC&lt;/strong&gt; corresponds to the &lt;strong&gt;tactical&lt;/strong&gt; model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can thus see that for each period,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;strategic&lt;/strong&gt; model is called to do its &lt;strong&gt;planning&lt;/strong&gt;.
+&lt;ul&gt;
+&lt;li&gt;The planning of the strategic model is done on a long time horizon; and this horizon does not change through the periods. That is to say that at each period, the strategic model will, for example, plan for the next 100 years; whether it is 100 years after period 1, or 100 years after period 3.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;strategic&lt;/strong&gt; model share it&amp;rsquo;s inventory with the &lt;strong&gt;stochastic&lt;/strong&gt; model, which is called to do its &lt;strong&gt;simulation&lt;/strong&gt;.
+&lt;ul&gt;
+&lt;li&gt;The stochastic model will only do this simulation for the given period of time (contrary to the planning model which will do its optimization by taking into account a long time horizon). This is because the stochastic model only simulates random events, and does not try to optimize anything.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The inventory resulting from the &lt;strong&gt;stochastic&lt;/strong&gt; model will be passed to the &lt;strong&gt;tactical&lt;/strong&gt; model, which is called to do its &lt;strong&gt;re-planning&lt;/strong&gt;.
+&lt;ul&gt;
+&lt;li&gt;The tactical model will only plan for the given time period; it will not simulate the long term like the strategic model, although it will do optimization and not simulation. Its objective will be, for example, to harvest wood without exceeding the amount of wood harvested by the strategic model, but by taking into account the inventory modified by the random events of the stochastic model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The inventory resulting from the &lt;strong&gt;tactical&lt;/strong&gt; model is then passed back to the &lt;strong&gt;strategic&lt;/strong&gt; model, which will then plan again for the next period.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can thus see two back and forth between the models:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The transition of the inventory from one model to another as the process proceeds (&lt;strong&gt;blue lines on the diagram&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;The passage of planning constraints from the &lt;strong&gt;strategic&lt;/strong&gt; model to the &lt;strong&gt;tactical&lt;/strong&gt; model (&lt;strong&gt;yellow lines on the diagram&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that &lt;strong&gt;this whole process is only one iteration of re-planning&lt;/strong&gt;. In order to really take into account the effects of stochastic events in the stochastic model, it is important to repeat this whole process many times. This allows to take into account the variability that will exist in how the inventory and tactical model will react to random events; the tactical model may also contain random components within it.&lt;/p&gt;
+&lt;h2 id=&#34;the-re-planning-models-in-detail&#34;&gt;The re-planning models in detail&lt;/h2&gt;
+&lt;h3 id=&#34;the-strategic-model&#34;&gt;The strategic model&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;It is a linear programming optimization model (&lt;code&gt;FMTlpmodel&lt;/code&gt;).
+&lt;ul&gt;
+&lt;li&gt;It does not take into account natural disturbances or stochastic events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Normally, it has a long planning horizon for long-term optimization (e.g. 100 to 150 years).&lt;/li&gt;
+&lt;li&gt;It dictates the path to take to the tactical model by sharing informations with it.&lt;/li&gt;
+&lt;li&gt;It can use the new keyword &lt;a href=&#34;./#_setfromlocalratio&#34;&gt;&lt;code&gt;_SETFROMLOCAL(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-stochastic-model&#34;&gt;The stochastic model&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;It is a non-spatial simulation model (&lt;code&gt;FMTnssmodel&lt;/code&gt;).
+&lt;ul&gt;
+&lt;li&gt;It simulates natural disturbances or stochastic events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;It may have a long simulation horizon; but it simulates only one period at a time.&lt;/li&gt;
+&lt;li&gt;Its role is to affect the territory used by the &lt;a href=&#34;./#the-tactical-model&#34;&gt;tactical model&lt;/a&gt;, and thus to blur the lines between the &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt; and the &lt;a href=&#34;./#the-tactical-model&#34;&gt;tactical model&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;It can use the new keywords &lt;a href=&#34;./#_randomoutput&#34;&gt;&lt;code&gt;_RANDOM(output)&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;./#_replicateoutput&#34;&gt;&lt;code&gt;_REPLICATE(output)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;The stochastic model is not necessary or mandatory for re-planning&lt;/strong&gt;. Some questions that can be addressed by re-planning are not related to random disturbances. For example, one may be interested in the mismatches between a strategic model that does not take into account smaller scale constraints (e.g. terrain, economic fluctuations, etc.), and a tactical model that does. In this case, stochasticity may exist in the solutions of the tactical model, but it does not require the use of a stochastic model to alter the inventory or the forest landscape between the stochastic and tactical models.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;the-tactical-model&#34;&gt;The tactical model&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;It is a linear programming optimization model (&lt;code&gt;FMTlpmodel&lt;/code&gt;), like the &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Its planning horizon is only one period.
+&lt;ul&gt;
+&lt;li&gt;Because at the tactical level, we only take into account the short-term, and not the long-term.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Its initial state is that of the current period, given by the &lt;a href=&#34;./#the-stochastic-model&#34;&gt;stochastic-model&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;It can use the new keywords &lt;a href=&#34;./#_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(ratio)&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;./#_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-new-keywords-associated-with-re-planning&#34;&gt;The new keywords associated with re-planning&lt;/h2&gt;
+&lt;p&gt;Different keywords that do not exist in the Woodstock syntax allow the implementation of back and forth information between the different models of re-planning, according to the following scheme:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Re-plannification_keywords_hu579f59c4d39b5e52ac17f0416c7627b7_49692_2f976fff29bf697e5369c2a7c26f9c78.webp 400w,
+               /FMTdocs/media/docs/Re-plannification_keywords_hu579f59c4d39b5e52ac17f0416c7627b7_49692_ebf97bac21f1ce969a6e2da88e8a287a.webp 760w,
+               /FMTdocs/media/docs/Re-plannification_keywords_hu579f59c4d39b5e52ac17f0416c7627b7_49692_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Re-plannification_keywords_hu579f59c4d39b5e52ac17f0416c7627b7_49692_2f976fff29bf697e5369c2a7c26f9c78.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;334&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Others allow you to ignore constraints at given times, or to adjust them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You will find here the list of these new keywords related to re-planning:&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;_reignoreperiod&#34;&gt;&lt;code&gt;_REIGNORE(period)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This keyword must appear in the &lt;code&gt;OPTIMIZE&lt;/code&gt; section of a model.&lt;/p&gt;
+&lt;p&gt;It informs the model to ignore a constraint from a specific re-planning period.&lt;/p&gt;
+&lt;p&gt;This can be very useful to set up a period for re-planning, and then ignore the related constraints.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Keep in mind that the &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt; is repeated in every re-planning period over its entire planning horizon. If its horizon is 100 years and the planning periods are 10 years long, then it will be called in period 3 to plan from the inventory that has been modify by the 2 precedent re-planning  periods. So, it will start at 30 years after the begining of the initial re-planning period and finish 130 years after the begining of the initial re-planning period.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;_replicateoutput&#34;&gt;&lt;code&gt;_REPLICATE(output)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This keyword allows you to change the right-hand side of the equation (&lt;em&gt;Right Hand Side&lt;/em&gt;, or &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt;) of a constraint by fetching a value from an array containing these values for different replicates.&lt;/p&gt;
+&lt;p&gt;In practice, you can put a &lt;code&gt;.csv&lt;/code&gt; file in the scenario directory, and then use &lt;code&gt;_REPLICATE(csv file)&lt;/code&gt; to make FMT apply a certain value in that array for the current iteration.&lt;/p&gt;
+&lt;p&gt;For example, writting the following in the constraints section of a model:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;_RANDOM(outputaction) &amp;lt;= 10 1 _REPLICATE(file.csv)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;replaces, for each iteration, the number &amp;ldquo;10&amp;rdquo; in the constraint with the number in line 1 of the file &lt;code&gt;file.csv&lt;/code&gt; with the column that corresponds to the iteration.&lt;/p&gt;
+&lt;p&gt;In the file, the rows correspond to the period and the columns to the iteration to which we want the value to apply.&lt;/p&gt;
+&lt;h3 id=&#34;_setfromlocalratio&#34;&gt;&lt;code&gt;_SETFROMLOCAL(ratio)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This keyword allows the &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt; to adjust one of its constraints according to the corresponding output value in the &lt;a href=&#34;./#the-tactical-model&#34;&gt;tactical model&lt;/a&gt; used at the previous period.&lt;/p&gt;
+&lt;p&gt;With this constraint, we specify a ratio that can increase or decrease the value taken from the &lt;a href=&#34;./#the-tactical-model&#34;&gt;tactical-model&lt;/a&gt;. For example, a ratio of &lt;code&gt;1.0&lt;/code&gt; will give exactly the value of the &lt;a href=&#34;./#the-tactical-model&#34;&gt;tactical model&lt;/a&gt;; a ratio of &lt;code&gt;2.0&lt;/code&gt; will multiply it by two, and a ratio of &lt;code&gt;0.5&lt;/code&gt; will divide it by two.&lt;/p&gt;
+&lt;p&gt;If we write the following in the constraints section of a &lt;a href=&#34;./#le-model-strategy&#34;&gt;strategic model&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;VOLUMEREC &amp;lt;= 0 1.._LENGTH _SETFROMLOCAL(1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;the &amp;ldquo;0&amp;rdquo; of the &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt; is systematically replaced by the value of the VOLUMEREC output of the previous re-planning period of the &lt;a href=&#34;./#le-tactical-model&#34;&gt;tactical model&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;_randomoutput&#34;&gt;&lt;code&gt;_RANDOM(output)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This keyword is used to generate random values for the &lt;a href=&#34;./#the-stochastic-model&#34;&gt;stochastic model&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    The output chosen with &lt;code&gt;_RANDOM(output)&lt;/code&gt; must be an action output, not an inventory output.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;It is written as a standard constraint.&lt;/p&gt;
+&lt;p&gt;Here is an example to generate a random number between 50 and 100 for period 1 to LENGTH:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;_RANDOM(outputaction) &amp;lt;= 50 1.._LENGTH
+_RANDOM(outputaction) &amp;gt;= 100 1.._LENGTH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(ratio)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This keyword is used to adjust a constraint of the &lt;a href=&#34;./#the-tactical-model&#34;&gt;tactical model&lt;/a&gt; based on a value determined by the &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt;. It is somewhat the reciprocal of &lt;a href=&#34;./#_setfromlocalratio&#34;&gt;&lt;code&gt;_SETFROMLOCAL(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The ratio allows to increase or decrease the value taken from the &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt;. For example, a ratio of &lt;code&gt;1.0&lt;/code&gt; will give exactly the value of the &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt;; a ratio of &lt;code&gt;2.0&lt;/code&gt; will multiply it by two, and a ratio of &lt;code&gt;0.5&lt;/code&gt; will divide it by two.&lt;/p&gt;
+&lt;p&gt;If we write the following in the constraints section of a &lt;a href=&#34;./#le-tactical-model&#34;&gt;tactical model&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;VOLUMEREC &amp;lt;= 0 1.._LENGTH _SETFROMGLOBAL(1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;the number &amp;ldquo;0&amp;rdquo; of the &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt; is systematically replaced by the value of the VOLUMEREC output of the &lt;a href=&#34;./#le-model-strategic&#34;&gt;strategic model&lt;/a&gt; for the current re-planning period.&lt;/p&gt;
+&lt;h3 id=&#34;_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(ratio)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This keyword makes it possible to include the solution (what has been planned as actions) of the &lt;a href=&#34;./#le-strategic-model&#34;&gt;strategic model&lt;/a&gt; in the &lt;a href=&#34;./#le-tactical-model&#34;&gt;tactical model&lt;/a&gt; as a weight to the objective function.&lt;/p&gt;
+&lt;p&gt;To do so, when evaluating the solution of the &lt;a href=&#34;./#le-tactical-model&#34;&gt;tactical model&lt;/a&gt;, each time the latter plans an action on the same development as provided for in the &lt;a href=&#34;./#le-model-strategic&#34;&gt;strategic model&lt;/a&gt;, it will multiply the planned area (at the tactical level) by the specified ratio and add value to the objective according to the formulation of the objective function. If the model is to maximize, we will add up and if it is to minimize, we will subtract the calculated value.&lt;/p&gt;
+&lt;h2 id=&#34;the-results-of-the-re-planning&#34;&gt;The results of the re-planning&lt;/h2&gt;
+&lt;p&gt;As a result of the re-planning process, the following results are obtained:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Three &lt;em&gt;raw&lt;/em&gt; results files (one per model)&lt;/li&gt;
+&lt;li&gt;One probability file (one for the whole process)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;raw-results-files-by-model&#34;&gt;Raw results files by model&lt;/h3&gt;
+&lt;p&gt;These files contain values related to the outputs in the different models, for the different periods, and for the different iterations.&lt;/p&gt;
+&lt;p&gt;They contain different columns:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Iteration&lt;/code&gt;: Indicates the number of the iteration used to take stochasticity into account. Iteration &amp;ldquo;0&amp;rdquo; is for the &amp;ldquo;base&amp;rdquo; strategy model, which is resolved at the very beginning of the re-planning process.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Period&lt;/code&gt;: Indicates the period of re-planning that concerns the value of the output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Output&lt;/code&gt;: Name of the output being considered.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Value&lt;/code&gt;: Value of the output under consideration.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Type&lt;/code&gt;: Type of output (indicates whether it is a &amp;ldquo;total&amp;rdquo; output for the entire landscape, or per development/settlement).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-probability-file&#34;&gt;The probability file&lt;/h3&gt;
+&lt;p&gt;This file contains the probability that outputs of the &lt;a href=&#34;./#the-tactical-model&#34;&gt;tactical model&lt;/a&gt; may drift from the solution of the initial &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt; (solved at the very beginning of the re-planning process), whose outputs are in the &amp;ldquo;0&amp;rdquo; iteration of the raw results files.&lt;/p&gt;
+&lt;p&gt;For each of the outputs defined in the models, the probability file will contain all the probabilities of staying in the lower and upper range of the distance ratio (drift) to the outputs of the [strategic model](. /#the-strategic-model), for the following drift values: &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;0.05&lt;/code&gt;, &lt;code&gt;0.10&lt;/code&gt;, &lt;code&gt;0.15&lt;/code&gt;, &lt;code&gt;0.20&lt;/code&gt;, &lt;code&gt;0.25&lt;/code&gt;, &lt;code&gt;0.30&lt;/code&gt;, &lt;code&gt;0.35&lt;/code&gt;, &lt;code&gt;0.40&lt;/code&gt;, &lt;code&gt;0.45&lt;/code&gt;, &lt;code&gt;0.50&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This file contains different columns:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Period&lt;/code&gt;: Indicates the period of rescheduling that concerns the value of the output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Output&lt;/code&gt;: Name of the output considered.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LowerProbability&lt;/code&gt;: Probability of staying in the lower range of the distance ratio.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UpperProbability&lt;/code&gt;: Probability of remaining in the upper range of the distance ratio.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Drift&lt;/code&gt;: Distance ratio between the solution of the &lt;a href=&#34;./#the-tactical-model&#34;&gt;tactical model&lt;/a&gt; and that of the initial &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The more iterations you do in your re-planning, the more representative and stable your probabilities will be over time. Conversely, a small number of iterations will tend to result in highly variable and often incomplete estimates.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;To understand the probabilities, we must first look at the drift, the value of the initial &lt;a href=&#34;./#the-strategic-model&#34;&gt;strategic model&lt;/a&gt;, then the probabilities.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the value of the initial [strategic model](./#the strategic-model) for a given output is 1000.&lt;/li&gt;
+&lt;li&gt;And if, for period 1, we obtain a &lt;code&gt;LowerProbability&lt;/code&gt; of 1 and a &lt;code&gt;UpperProbability&lt;/code&gt; of 1 for a &lt;em&gt;drift&lt;/em&gt; of 0.3.
+&lt;ul&gt;
+&lt;li&gt;Then this means that there is a 100% probability that the output will remain between a value of 700 and 1300 for period 1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;And if, for period 10, we obtain a &lt;code&gt;LowerProbability&lt;/code&gt; of 0.6 and a &lt;code&gt;UpperProbability&lt;/code&gt; of 0.4 for a &lt;em&gt;drift&lt;/em&gt; of 0.5.
+&lt;ul&gt;
+&lt;li&gt;This means that there is a 60% probability that the output will remain above 500, and a 40% probability that it will remain below 1500 in period 10.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The probability file allows, for example, to verify that a certain scenario has a better probability of remaining between certain values than another scenario.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The raw result files of the 3 models can however be used to do more complex analyses, or to validate hypotheses regarding the communication between the 3 models.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exercise 2</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/exercice_2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/exercice_2/</guid>
+      <description>&lt;p&gt;In this exercise, you will try to use FMT to answer different questions about a strategic model and a tactical model through a re-planning process.&lt;/p&gt;
+&lt;p&gt;Thus, this exercise will teach you to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create a re-planning script&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Re-plan with multiple models, and varying &lt;a href=&#34;../replanning/#the-new-keywords-associated-with-re-planning&#34;&gt;special FMT keywords&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Analyze re-planning results to answer different questions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To do this exercise, &lt;strong&gt;you must have FMT installed on your computer, along with the example files from the FMT GitHub repository&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../../download_install&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;btn btn-primary px-3 py-3&#34;&gt;💾 Download and install FMT&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://downgit.github.io/#/home?url=https://github.com/gcyr/FMT/tree/master/Examples&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;btn btn-primary px-3 py-3&#34;&gt;💾 Download the FMT example files&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;You must also have Python installed on your computer&lt;/strong&gt;. If this is not done, &lt;a href=&#34;../../download_install/importing_in_python/&#34;&gt;refer to this page&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;part-1-creating-a-re-planning-script&#34;&gt;Part 1: Creating a re-planning script&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    If you don&amp;rsquo;t know much about Python, or if you really don&amp;rsquo;t have the time, you can skip this section and use the &lt;code&gt;Replanner.py&lt;/code&gt; script which is in the &amp;ldquo;Examples&amp;rdquo; folder you downloaded, in the &lt;code&gt;/Python/replanning&lt;/code&gt; folder.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The re-planning process often involves running many models, many times (to make iterations).&lt;/p&gt;
+&lt;p&gt;It is therefore very useful to create a Python script that can be called through a console, a terminal, or a command prompt.&lt;/p&gt;
+&lt;p&gt;Even better : it is possible to create a Python script that will read arguments given to it when it is called with the command prompt. This will allow to re-use this script for different re-planning scenarios or purposes.&lt;/p&gt;
+&lt;p&gt;Try to create the following script in Python language:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Importing &lt;code&gt;Models&lt;/code&gt;, &lt;code&gt;Parser&lt;/code&gt;, &lt;code&gt;Core&lt;/code&gt;, &lt;code&gt;Version&lt;/code&gt; and &lt;code&gt;Parallel&lt;/code&gt; from &lt;code&gt;FMT&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Read the following arguments (it is recommended to use the &lt;a href=&#34;https://docs.python.org/3/library/argparse.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;argparse&lt;/code&gt; module&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-pri&lt;/code&gt; which specifies the location of the primary file of the models that will be used&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-str&lt;/code&gt; which indicates the name of the strategic scenario&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-tac&lt;/code&gt; which indicates the name of the tactical scenario&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-sto&lt;/code&gt; which indicates the name of the stochastic scenario&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-out&lt;/code&gt; indicates a comma-separated list of output values of interest to be extracted from the model results&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-fol&lt;/code&gt; which indicates the folder where the output files of the script will be put&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-rep&lt;/code&gt; which indicates the number of iterations/replicas to do&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-len&lt;/code&gt; which indicates the number of periods of the strategic model&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-rel&lt;/code&gt; which indicates the number of periods over which the re-planning will be done&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-thr&lt;/code&gt; which indicates the number of CPU cores to use for parallelization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next, the script will need to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read the model via the primary file&lt;/li&gt;
+&lt;li&gt;Read the different scenarios&lt;/li&gt;
+&lt;li&gt;Create the strategic/global model using the scenario name provided by &lt;code&gt;-str&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;Make the global model run for the duration provided by &lt;code&gt;-len&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Make the global model use the number of threads given by &lt;code&gt;-thr&lt;/code&gt; for parallel resolution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Create the stochastic model using the scenario name provided by &lt;code&gt;-sto&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;Make the stochastic model run for one period&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Create the tactical model using the scenario name provided by &lt;code&gt;-tac&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;Make the tactical model run for one period&lt;/li&gt;
+&lt;li&gt;Make the global model use the number of threads specified by &lt;code&gt;-thr&lt;/code&gt; for parallel resolution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add the outputs selected by the &lt;code&gt;-out&lt;/code&gt; argument in a list from the model outputs&lt;/li&gt;
+&lt;li&gt;Prepare the re-planning task through the &lt;code&gt;Parallel.FMTreplanningtask()&lt;/code&gt; function by providing to the function :
+&lt;ul&gt;
+&lt;li&gt;The strategic model&lt;/li&gt;
+&lt;li&gt;The stochastic model&lt;/li&gt;
+&lt;li&gt;The tactical model&lt;/li&gt;
+&lt;li&gt;The list of desired outputs&lt;/li&gt;
+&lt;li&gt;The folder where the outputs will be put&lt;/li&gt;
+&lt;li&gt;The format of the outputs (here, &lt;code&gt;.csv&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../doxygen/html/classParallel_1_1FMTreplanningtask.html&#34;&gt;All other arguments needed for the function&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Run the rescheduling task through the &lt;code&gt;Parallel.FMTtaskhandler()&lt;/code&gt; function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When you are done, or if you are stuck, &lt;strong&gt;you can view the correction of this exercise for Python code by clicking on the &amp;ldquo;Reveal correction&amp;rdquo; button below&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from FMT import Models
+from FMT import Parser
+from FMT import Core
+from FMT import Version
+from FMT import Parallel
+import os,argparse
+
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(&amp;quot;-pri&amp;quot;, &amp;quot;--primary&amp;quot;, required=True,help=&amp;quot;Fichier primaire&amp;quot;)
+    ap.add_argument(&amp;quot;-str&amp;quot;, &amp;quot;--strategic&amp;quot;, required=True,help=&amp;quot;Nom du scenario strategique&amp;quot;)
+    ap.add_argument(&amp;quot;-tac&amp;quot;, &amp;quot;--tactic&amp;quot;, required=True,help=&amp;quot;Nom du scenario tactique&amp;quot;)
+    ap.add_argument(&amp;quot;-sto&amp;quot;, &amp;quot;--stochastic&amp;quot;, required=True,help=&amp;quot;Nom du scenario stochastique&amp;quot;)
+    ap.add_argument(&amp;quot;-out&amp;quot;, &amp;quot;--outputs&amp;quot;, required=True,help=&amp;quot;Liste d&#39;outputs separe d&#39;une virgule&amp;quot;)
+    ap.add_argument(&amp;quot;-fol&amp;quot;, &amp;quot;--folder&amp;quot;, required=True,help=&amp;quot;Dossier de sortie&amp;quot;)
+    ap.add_argument(&amp;quot;-rep&amp;quot;, &amp;quot;--replicates&amp;quot;, required=True,help=&amp;quot;Nombre de replicas&amp;quot;)
+    ap.add_argument(&amp;quot;-len&amp;quot;, &amp;quot;--strategiclength&amp;quot;, required=True,help=&amp;quot;Nombre de periode du strategique&amp;quot;)
+    ap.add_argument(&amp;quot;-rel&amp;quot;, &amp;quot;--replanninglength&amp;quot;, required=True,help=&amp;quot;Nombre de periode de re-plannification&amp;quot;)
+    ap.add_argument(&amp;quot;-thr&amp;quot;, &amp;quot;--threads&amp;quot;, required=True,help=&amp;quot;Nombre de threads&amp;quot;)
+    ap.add_argument(&amp;quot;-com&amp;quot;,&amp;quot;--compresstime&amp;quot;, nargs=&amp;quot;+&amp;quot;,help=&amp;quot;Compress time sous la forme 20,5 40,8&amp;quot;)
+    args = vars(ap.parse_args())
+    if Version.FMTversion().hasfeature(&amp;quot;OSI&amp;quot;):
+        modelparser = Parser.FMTmodelparser()
+        path = args[&amp;quot;primary&amp;quot;]
+        scenarios = [args[&amp;quot;strategic&amp;quot;],args[&amp;quot;stochastic&amp;quot;],args[&amp;quot;tactic&amp;quot;]]
+        models = modelparser.readproject(path, scenarios)
+        globalmodel = Models.FMTlpmodel(models[0], Models.FMTsolverinterface.CLP)
+        globalmodel.setparameter(Models.FMTintmodelparameters.LENGTH,int(args[&amp;quot;strategiclength&amp;quot;]))
+        globalmodel.setparameter(Models.FMTintmodelparameters.NUMBER_OF_THREADS,1)
+        if &amp;quot;com&amp;quot; in args:
+            for firstperiod,value in [tuple(int(cmpt.split(&amp;quot;,&amp;quot;)[0]),float(cmpt.split(&amp;quot;,&amp;quot;)[1])) for cmpt in args[&amp;quot;com&amp;quot;]]:
+                globalmodel.setcompresstime(firstperiod,int(args[&amp;quot;strategiclength&amp;quot;]),value)
+        stochastic = Models.FMTnssmodel(models[1],0)
+        stochastic.setparameter(Models.FMTintmodelparameters.LENGTH, 1)
+        localmodel = Models.FMTlpmodel(models[2], Models.FMTsolverinterface.CLP)
+        localmodel.setparameter(Models.FMTintmodelparameters.LENGTH, 1)
+        localmodel.setparameter(Models.FMTintmodelparameters.NUMBER_OF_THREADS,1)
+        selectedoutputs=[]
+        for output in globalmodel.getoutputs():
+            if output.getname() in args[&amp;quot;outputs&amp;quot;].split(&amp;quot;,&amp;quot;):
+                selectedoutputs.append(output)
+        outputlocation = args[&amp;quot;folder&amp;quot;]
+        layersoptions=[&amp;quot;SEPARATOR=SEMICOLON&amp;quot;]
+        replanningtask=Parallel.FMTreplanningtask(globalmodel,stochastic, localmodel, selectedoutputs, outputlocation, &amp;quot;CSV&amp;quot;, layersoptions,int(args[&amp;quot;replicates&amp;quot;]),int(args[&amp;quot;replanninglength&amp;quot;]),0.5, Core.FMToutputlevel.totalonly)
+        handler = Parallel.FMTtaskhandler(replanningtask,int(args[&amp;quot;threads&amp;quot;]))
+        handler.setquietlogger()
+        handler.conccurentrun()
+    else:
+        print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;part-2-creation-of-scenarios-for-re-planning&#34;&gt;Part 2: Creation of scenarios for re-planning&lt;/h2&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;After downloading the FMT example files (see above), open the folder &lt;code&gt;Models/TWD_land/Scenarios/Globalex1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This &lt;code&gt;Globalex1&lt;/code&gt; scenario is a scenario that we will use as &lt;a href=&#34;../replanning#the-strategic-model&#34;&gt;strategic model or global model&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Take time to look at the contents of its files&lt;/strong&gt;; in particular, look at its actions, objectives and constraints.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Do the same with the &lt;code&gt;Localex1&lt;/code&gt; model&lt;/strong&gt;, which we will use as the &lt;a href=&#34;../replanning#the-tactical-model&#34;&gt;tactical model or local model&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-1&#34;&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;Open a windows command prompt, or a powershell. Use the command &lt;code&gt;cd&lt;/code&gt; to go to the &lt;code&gt;Examples/Python/replanning&lt;/code&gt; folder. Then use the following command to start re-planning:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX1 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This command tells the script created in the first part that we want to :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the model found at &lt;code&gt;../../Models/TWD_land/TWD_land.pri&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Use the scenario &lt;code&gt;Globalx1&lt;/code&gt; as a strategic model&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Localex1&lt;/code&gt; scenario as a tactical model&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Globalnofire&lt;/code&gt; scenario as a stocastic model&lt;/li&gt;
+&lt;li&gt;Create output tables for the &lt;code&gt;OVOLREC&lt;/code&gt;, &lt;code&gt;OSUPREC&lt;/code&gt;, &lt;code&gt;OSUPPL&lt;/code&gt;, and &lt;code&gt;VOLINVENT&lt;/code&gt; outputs&lt;/li&gt;
+&lt;li&gt;Put these tables in the &lt;code&gt;replanning_EX1&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Make 10 iterations&lt;/li&gt;
+&lt;li&gt;Solve the strategic model for 20 periods&lt;/li&gt;
+&lt;li&gt;Do the re-plannification on 20 periods&lt;/li&gt;
+&lt;li&gt;Use 2 CPU cores to make iterations in parallel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once the command has run, look at the output in the &lt;code&gt;Examples/Python/replanning/replanning_EX1&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;With a stock-out tolerance of 5%, what is the probability of holding &lt;code&gt;OVOLREC&lt;/code&gt; until period 10 in the tactical model?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-4&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;To look at the probability of keeping &lt;code&gt;OVOLREC&lt;/code&gt; above a 5% value drop, we just have to look at the &lt;code&gt;outputsdrift.csv&lt;/code&gt; file. This file shows us the probability that the different outputs selected in the tactical model remain above or below a certain distance (drift) from the strategic model.&lt;/p&gt;
+&lt;p&gt;We can open the file, and go to the lines that concern &lt;code&gt;OVOLREC&lt;/code&gt; and a drift of &lt;code&gt;0.05&lt;/code&gt; (5%), namely lines 462-481.&lt;/p&gt;
+&lt;p&gt;Looking at these rows, we can see that from period 7 onwards, &lt;code&gt;OVOLREC&lt;/code&gt; has a probability of &lt;code&gt;0&lt;/code&gt; of not falling by more than 5% compared to the strategic model (third column &lt;code&gt;LowerProbability&lt;/code&gt;); this probability remains at 0 for all subsequent periods. Thus, it appears that the probability of keeping &lt;code&gt;OVOLREC&lt;/code&gt; above a 5% decline until period 10 is 0.&lt;/p&gt;
+&lt;p&gt;These values can be represented with a graph via the data in &lt;code&gt;outputsdrift.csv&lt;/code&gt; :&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_0af8a7f6ebcbb19d23a51ae0e183be8e.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_d08059d6861eb190a92e28eb5bd00c97.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_0af8a7f6ebcbb19d23a51ae0e183be8e.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;452&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-2&#34;&gt;Question 2&lt;/h3&gt;
+&lt;p&gt;Now duplicate the &lt;code&gt;Globalex1&lt;/code&gt; folder and rename it &lt;code&gt;Globalex2&lt;/code&gt; (delete the existing folder if it already exists).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Then modify the &lt;code&gt;TWD_land.opt&lt;/code&gt; file of &lt;code&gt;Globalex2&lt;/code&gt; to force the &lt;code&gt;Globalex2&lt;/code&gt; scenario not to exceed 20,000 m³ for the &lt;code&gt;OVOLREC&lt;/code&gt; output&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;The content of &lt;code&gt;TWD_land.opt&lt;/code&gt; of the &lt;code&gt;Globalex2&lt;/code&gt; scenario should then be :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAXMIN oVolRec 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 20000 1.._LENGTH
+
+_NDY(oVolRec) 1.._LENGTH
+
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Then run a re-planning with the strategic model &lt;code&gt;Globalex2&lt;/code&gt; and the tactical model &lt;code&gt;Localex1&lt;/code&gt;, with the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex2 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX2 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the command has run, look at the output in the &lt;code&gt;Examples/Python/replanning/replanning_EX2&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;With a stock-out tolerance of 5%, what is the probability of holding &lt;code&gt;OVOLREC&lt;/code&gt; until period 10 in the tactical model?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Is there a gain from question 1?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-6&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Looking at the results of &lt;code&gt;outputsdrift.csv&lt;/code&gt;, we can see that &lt;code&gt;OVOLREC&lt;/code&gt; keeps a probability of &lt;code&gt;1&lt;/code&gt; of not decreasing more than 5% throughout the 20 periods. Thus, there is a maximum probability that &lt;code&gt;OVOLREC&lt;/code&gt; will stay above a 5% decline in the tactical model &lt;code&gt;Localex1&lt;/code&gt;, when using the strategic model &lt;code&gt;Globalex2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We have a clear gain on question 1, for which &lt;code&gt;OVOLREC&lt;/code&gt; could not stay above a 5% decline from the 7th period. This is probably due to the fact that &lt;code&gt;Globalex2&lt;/code&gt; was forced not to harvest too much, which made it easier to maintain this level in &lt;code&gt;Localex1&lt;/code&gt;.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-3&#34;&gt;Question 3&lt;/h3&gt;
+&lt;p&gt;Now duplicate the &lt;code&gt;Localex1&lt;/code&gt; folder and rename it &lt;code&gt;Localex3&lt;/code&gt; (delete the existing folder if it already exists).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Then modify the &lt;code&gt;TWD_land.opt&lt;/code&gt; file of &lt;code&gt;Localex3&lt;/code&gt; to force this tactical model to follow the solution of the strategic model with a weight of 1000, using the keyword &lt;a href=&#34;../replanning/#_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(weight)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-7&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;The content of &lt;code&gt;TWD_land.opt&lt;/code&gt; of the &lt;code&gt;Localex3&lt;/code&gt; scenario should then be :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAX ovolrec 1.._LENGTH _SETGLOBALSCHEDULE(100)
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Then run a re-planning with the strategic model &lt;code&gt;Globalex1&lt;/code&gt; and the tactical model &lt;code&gt;Localex3&lt;/code&gt;, with the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex3 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX3 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the command has run, look at the output in the &lt;code&gt;Examples/Python/replanning/replanning_EX3&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;With a stock-out tolerance of 5%, what is the probability of holding &lt;code&gt;OVOLREC&lt;/code&gt; until period 10 in the tactical model?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Is there a gain from question 1?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-8&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Looking at the results of &lt;code&gt;outputsdrift.csv&lt;/code&gt; in &lt;code&gt;Examples/Python/replanning/replanning_EX3&lt;/code&gt;, we can see that &lt;code&gt;OVOLREC&lt;/code&gt; has a probability of &lt;code&gt;1&lt;/code&gt; of not falling more than 5% from the strategic model in period 8; but that this probability changes to &lt;code&gt;0&lt;/code&gt; from period 9 onwards, and remains at &lt;code&gt;0&lt;/code&gt; for all other periods. Thus, it is certain that &lt;code&gt;OVOLREC&lt;/code&gt; will not stay above a 5% decline until period 10.&lt;/p&gt;
+&lt;p&gt;However, we can still observe a slight gain from question 1; the probability that &lt;code&gt;OVOLREC&lt;/code&gt; will not decrease by more than 5% dropped to &lt;code&gt;0&lt;/code&gt; as early as period 7 in these results. By pushing the tactical model to follow the solution of the strategic model with the keyword &lt;code&gt;_SETGLOBALSCHEDULE(weight)&lt;/code&gt;, we thus gained two more periods of stability!&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-4&#34;&gt;Question 4&lt;/h3&gt;
+&lt;p&gt;Now duplicate the &lt;code&gt;TWD_land._opt&lt;/code&gt; file from &lt;code&gt;Localex1&lt;/code&gt; to the &lt;code&gt;Localex4&lt;/code&gt; folder (delete the existing file if it already exists).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Then modify the &lt;code&gt;TWD_land.opt&lt;/code&gt; file in &lt;code&gt;Localex4&lt;/code&gt; to force the tactical model to follow the replica tables (&lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; and &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;) for harvesting in the stands peuplement1 and peuplement2 (use &lt;a href=&#34;../replanning/#_replicateoutput&#34;&gt;&lt;code&gt;_REPLICATE()&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;. In doing so, you must force the tactical model to do a certain level of harvesting in particular spatial features of the model (peuplement1 and peuplement2) based on files you provide to the model (&lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; and &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;).&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-9&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;The content of &lt;code&gt;TWD_land.opt&lt;/code&gt; of the &lt;code&gt;Localex4&lt;/code&gt; scenario should then be :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+oVolRecPEUPLEMENT1 &amp;lt;= 0 1.._LENGTH _Goal(G1,9999) _REPLICATE(PEUPLEMENT1.csv)
+oVolRecPEUPLEMENT1 &amp;gt;= 0 1.._LENGTH _Goal(G2,9999) _REPLICATE(PEUPLEMENT1.csv)
+oVolRecPEUPLEMENT2 &amp;lt;= 0 1.._LENGTH _Goal(G3,9999) _REPLICATE(PEUPLEMENT2.csv)
+oVolRecPEUPLEMENT2 &amp;gt;= 0 1.._LENGTH _Goal(G4,9999) _REPLICATE(PEUPLEMENT2.csv)
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Then run a re-planning with the strategic model &lt;code&gt;Globalex1&lt;/code&gt; and the tactical model &lt;code&gt;Localex4&lt;/code&gt;, with the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex4 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT,OVOLRECPEUPLEMENT1,OVOLRECPEUPLEMENT2 -fol replanning_EX4 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the command has run, &lt;strong&gt;go to the &lt;code&gt;Localex4.csv&lt;/code&gt; file in the &lt;code&gt;EX4_Scheduling&lt;/code&gt; folder, and look at the results of the &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; and &lt;code&gt;OVOLRECPEUPLEMENT2&lt;/code&gt; outputs&lt;/strong&gt;. In particular, you can create a pivot table in a program such as Microsoft Excel to obtain a graph showing the evolution of these measures over time, with a curve for each iteration.&lt;/p&gt;
+&lt;p&gt;At the same time, open the files &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; and &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;, and observe their contents. Each column corresponds to values that the tactical model was supposed to use for a iteration, with each row containing a value for a given period.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When comparing the contents of &lt;code&gt;Localex4.csv&lt;/code&gt; and &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; and &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;, what do you observe?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-10&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;We can see that the tactical model has indeed followed the harvest levels defined in the &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; and &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt; files for the output &lt;code&gt;OVOLREC&lt;/code&gt; in stands 1 and 2.&lt;/p&gt;
+&lt;p&gt;In particular, we can see that &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; drops to 0 for period 4 in all iterations, as expected in &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt;. We can also see that iteration 4 keeps a value of &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; at 10 most of the time, while the other iterations keep a value of 20.&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_9470bb794010af21def849ac8653507a.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_ee0d470fd4fe31ddcef01a03ba9091c6.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_9470bb794010af21def849ac8653507a.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;452&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;We can observe a drop to 0 for &lt;code&gt;OVOLRECPEUPLEMENT2&lt;/code&gt; at period 9 in all iterations, as expected in &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;.&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_47af8c0520c7eab555dea05e79b278fc.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_23bf476ab66f32b8b71bc70abed18122.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_47af8c0520c7eab555dea05e79b278fc.webp&#34;
+               width=&#34;751&#34;
+               height=&#34;436&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-5&#34;&gt;Question 5&lt;/h3&gt;
+&lt;p&gt;Now duplicate the &lt;code&gt;Localex1&lt;/code&gt; folder and rename it &lt;code&gt;Localex5&lt;/code&gt; (delete the existing folder if it already exists).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Then modify the &lt;code&gt;TWD_land.opt&lt;/code&gt; file of &lt;code&gt;Localex5&lt;/code&gt; to force this tactical model to ignore the 90-100ha planting constraint from period (or to follow it only in period 1) using the keyword &lt;a href=&#34;../replanning/#_reignoreperiod&#34;&gt;&lt;code&gt;_REIGNORE(period)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-11&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;The content of &lt;code&gt;TWD_land.opt&lt;/code&gt; of the &lt;code&gt;Localex5&lt;/code&gt; scenario should then be :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+osuppl &amp;gt;= 90 1 _Goal(G1,9999) _REIGNORE(2)
+osuppl &amp;lt;= 100 1 _Goal(G2,9999) _REIGNORE(2)
+
+*FORMAT MOSEK
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Then run a re-planning with the strategic model &lt;code&gt;Globalex1&lt;/code&gt; and the tactical model &lt;code&gt;Localex5&lt;/code&gt;, with the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex5 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX5 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the command has run, &lt;strong&gt;compare the evolution of the planting level output &lt;code&gt;OSUPPL&lt;/code&gt; in the tactical model &lt;code&gt;Localex1&lt;/code&gt; (in the &lt;code&gt;planning_EX1&lt;/code&gt; folder created in question 1) with the evolution of &lt;code&gt;OSUPPL&lt;/code&gt; in the tactical model &lt;code&gt;Localex5&lt;/code&gt; (in the &lt;code&gt;planning_EX5&lt;/code&gt; folder)&lt;/strong&gt;. As before, you can use a pivot table in a program like Microsoft Excel to obtain a graph showing the evolution of these measures over time, with a curve for each of the iterations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What differences do you observe between &lt;code&gt;Localex1&lt;/code&gt; and &lt;code&gt;Localex5&lt;/code&gt;?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-12&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;We can see that the tactical model &lt;code&gt;Localex1&lt;/code&gt; manages to sustain the level of &lt;code&gt;OSUPPL&lt;/code&gt; for a long time in a stable way, as shown on this graph:&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_188cd30efea6cf2054069ff5bd1cdeb2.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_7b8033f91edec9e2173280b783807745.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_188cd30efea6cf2054069ff5bd1cdeb2.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;452&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;In comparison, in &lt;code&gt;Localex5&lt;/code&gt;, we can see that the level of &lt;code&gt;OSUPPL&lt;/code&gt; is much more variable and unstable. It quickly reaches values of 0, due to the fact that the model constraints on it are ignored after period 2, as shown on this graph:&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_238e1ed66cd21fea65e0176c88fdd45e.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_5483406fddb26fb28efde99e57551b18.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_238e1ed66cd21fea65e0176c88fdd45e.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;452&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Hence, it seems that the local model did ignore the constraints &lt;code&gt;OSUPPL&lt;/code&gt;.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-6&#34;&gt;Question 6&lt;/h3&gt;
+&lt;p&gt;Now duplicate the &lt;code&gt;Localex1&lt;/code&gt; folder and rename it &lt;code&gt;Localex6&lt;/code&gt; (delete the existing folder if it already exists).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Then modify the &lt;code&gt;TWD_land.opt&lt;/code&gt; file of &lt;code&gt;Localex6&lt;/code&gt; to force this tactical model to achieve 100% of the harvest level (&lt;code&gt;OVOLREC&lt;/code&gt;) of the strategic model, with a 1% variability allowed for exceeding the value (so at least 100%, and at most 101%) with the keyword &lt;a href=&#34;../replanning/#_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(weight)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-13&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;The content of &lt;code&gt;TWD_land.opt&lt;/code&gt; of the &lt;code&gt;Localex6&lt;/code&gt; scenario should then be :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+osuprec &amp;lt;= 40272 1.._LENGTH _Goal(G1,9999) _SETFROMGLOBAL(1.0)
+osuprec &amp;gt;= 40272 1.._LENGTH _Goal(G2,9999) _SETFROMGLOBAL(0.99)
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Then run a re-plannibg with the strategic model &lt;code&gt;Globalex1&lt;/code&gt; and the tactical model &lt;code&gt;Localex6&lt;/code&gt;, with the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex6 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX6 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the command has run, look at the output in the &lt;code&gt;Examples/Python/replanning/replanning_EX6&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Now compare the probability of maintaining a similar harvest as in Exercise 1 (with &lt;code&gt;Localex1&lt;/code&gt;) by looking at the contents of &lt;code&gt;outputsdrift.csv&lt;/code&gt; in &lt;code&gt;replanning_EX1&lt;/code&gt; and &lt;code&gt;replanning_EX6&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What differences do you observe?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-14&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;We observe that the probability of maintaining &lt;code&gt;OVOLREC&lt;/code&gt; in the tactical model above a 5% decrease with respect to the strategic model is relatively similar between &lt;code&gt;Localex1&lt;/code&gt; and &lt;code&gt;Localex6&lt;/code&gt;; except that &lt;code&gt;Localex6&lt;/code&gt; has a lower value of this probability at period 7, when it drops towards 0.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-7&#34;&gt;Question 7&lt;/h3&gt;
+&lt;p&gt;Now duplicate the &lt;code&gt;Globalex1&lt;/code&gt; folder and rename it &lt;code&gt;Globalex7&lt;/code&gt; (delete the existing folder if it already exists).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Then modify the &lt;code&gt;TWD_land.opt&lt;/code&gt; file of &lt;code&gt;Globalex7&lt;/code&gt; to force the &lt;code&gt;Globalex7&lt;/code&gt; scenario to achieve at least 99% of the &lt;code&gt;OVOLREC&lt;/code&gt; harvest level of the tactical model&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-15&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;The content of &lt;code&gt;TWD_land.opt&lt;/code&gt; of the &lt;code&gt;Globalex7&lt;/code&gt; scenario should then be :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAXMIN oVolRec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+osuprec &amp;lt;= 40272 1.._LENGTH _Goal(G1,9999) _SETFROMLOCAL(1.0)
+osuprec &amp;gt;= 40272 1.._LENGTH _Goal(G2,9999) _SETFROMLOCAL(0.99)
+
+_NDY(oVolRec) 1.._LENGTH
+
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Then run a re-planning with the strategic model &lt;code&gt;Globalex7&lt;/code&gt; and the tactical model &lt;code&gt;Localex1&lt;/code&gt;, with the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex7 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX7 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the command has run, look at the output in the &lt;code&gt;Examples/Python/replanning/replanning_EX7&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Now observe how the planting levels (output &lt;code&gt;OSSUPL&lt;/code&gt;) compare between those of question 1, and those of this re-planning by looking at the &lt;code&gt;outputsdrift.csv&lt;/code&gt; files of &lt;code&gt;replanning_EX1&lt;/code&gt; and &lt;code&gt;replanning_EX7&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How does the maintenance of the level of &lt;code&gt;OSSUPL&lt;/code&gt; compare to question 1?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-16&#34;&gt;
+  &lt;summary&gt;Reveal correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;It can be seen that for question 1 and this question, &lt;code&gt;OSSUPL&lt;/code&gt; keeps a very low probability of maintaining itself from a large decrease from the first periods when comparing the tactical and strategic model.&lt;/p&gt;
+&lt;p&gt;However, even for very high drift values (e.g. 50%), we can see that &lt;code&gt;OSSUPL&lt;/code&gt; tends to have a higher probability of greatly decreasing its value with &lt;code&gt;Globalex7&lt;/code&gt; than with &lt;code&gt;Globalex1&lt;/code&gt;.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -37,7 +37,7 @@ Utilisez FMT pour :
 
 **Vous pouvez utiliser les informations des pages précédentes de la documentation pour vous aider.**
 
-Lorsque vous avez terminé, ou si vous êtes bloqué, **vous pouvez afficher la correction de cet exercice pour du coe Python en cliquant sur le bouton "Révéler la correction" ci-dessous**.
+Lorsque vous avez terminé, ou si vous êtes bloqué.e, **vous pouvez afficher la correction de cet exercice pour du code Python en cliquant sur le bouton "Révéler la correction" ci-dessous**.
 
 ## Correction
 
