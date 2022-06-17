@@ -29,7 +29,7 @@ To do this exercise, **you must have FMT installed on your computer, along with 
 If you don't know much about Python, or if you really don't have the time, you can skip this section and use the `Replanner.py` script which is in the "Examples" folder you downloaded, in the `/Python/replanning` folder.
 {{% /callout %}}
 
-The re-planning process often involves running many models, many times (to make replicas).
+The re-planning process often involves running many models, many times (to make iterations).
 
 It is therefore very useful to create a Python script that can be called through a console, a terminal, or a command prompt.
 
@@ -45,7 +45,7 @@ Try to create the following script in Python language:
     - `-sto` which indicates the name of the stochastic scenario
     - `-out` indicates a comma-separated list of output values of interest to be extracted from the model results
     - `-fol` which indicates the folder where the output files of the script will be put
-    - `-rep` which indicates the number of replicas to do
+    - `-rep` which indicates the number of iterations/replicas to do
     - `-len` which indicates the number of periods of the strategic model
     - `-rel` which indicates the number of periods over which the re-planning will be done
     - `-thr` which indicates the number of CPU cores to use for parallelization
@@ -152,16 +152,16 @@ python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac 
 
 This command tells the script created in the first part that we want to :
 
-- use the model found at `../../Models/TWD_land/TWD_land.pri`
-- use the scenario `Globalx1` as a strategic model
-- use the `Localex1` scenario as a tactical model
-- use the `Globalnofire` scenario as a stocastic model
-- create output tables for the `OVOLREC`, `OSUPREC`, `OSUPPL`, and `VOLINVENT` outputs
-- put these tables in the `replanning_EX1` folder
-- make 10 replicates
-- solve the strategic model for 20 periods
-- do the re-plannification on 20 periods
-- use 2 CPU cores to make replicas in parallel
+- Use the model found at `../../Models/TWD_land/TWD_land.pri`
+- Use the scenario `Globalx1` as a strategic model
+- Use the `Localex1` scenario as a tactical model
+- Use the `Globalnofire` scenario as a stocastic model
+- Create output tables for the `OVOLREC`, `OSUPREC`, `OSUPPL`, and `VOLINVENT` outputs
+- Put these tables in the `replanning_EX1` folder
+- Make 10 iterations
+- Solve the strategic model for 20 periods
+- Do the re-plannification on 20 periods
+- Use 2 CPU cores to make iterations in parallel
 
 Once the command has run, look at the output in the `Examples/Python/replanning/replanning_EX1` folder.
 
@@ -317,7 +317,7 @@ python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac 
 
 Once the command has run, **go to the `Localex4.csv` file in the `EX4_Scheduling` folder, and look at the results of the `OVOLRECPEUPLEMENT1` and `OVOLRECPEUPLEMENT2` outputs**. In particular, you can create a pivot table in a program such as Microsoft Excel to obtain a graph showing the evolution of these measures over time, with a curve for each iteration.
 
-At the same time, open the files `PEUPLEMENT1.csv` and `PEUPLEMENT2.csv`, and observe their contents. Each column corresponds to values that the tactical model was supposed to use for a replica, with each row containing a value for a given period.
+At the same time, open the files `PEUPLEMENT1.csv` and `PEUPLEMENT2.csv`, and observe their contents. Each column corresponds to values that the tactical model was supposed to use for a iteration, with each row containing a value for a given period.
 
 **When comparing the contents of `Localex4.csv` and `PEUPLEMENT1.csv` and `PEUPLEMENT2.csv`, what do you observe?**
 
