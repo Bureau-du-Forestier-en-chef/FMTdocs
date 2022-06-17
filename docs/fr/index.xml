@@ -13,13 +13,767 @@
     </image>
     
     <item>
+      <title>Re-planification spatialement référencée</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/</guid>
+      <description>&lt;h2 id=&#34;quest-ce-que-la-re-planification-&#34;&gt;Qu&amp;rsquo;est-ce que la re-planification ?&lt;/h2&gt;
+&lt;p&gt;La re-planification est un processus qui consiste à re-solutioner un modèle d&amp;rsquo;optimisation de coupes forestières (comme ceux utilisés dans FMT) pour prendre en compte des éléments qui ne peuvent pas être considérés dans le processus classique de résolution de ces modèles d&amp;rsquo;optimisation.&lt;/p&gt;
+&lt;p&gt;La re-planification permet donc de se poser des questions plus complexes; en particulier, elle permet de toucher aux interactions entre les &lt;a href=&#34;https://www.researchgate.net/profile/Mark-Boyland/publication/228780711_Hierarchical_Planning_in_Forestry/links/02e7e534d86d03937f000000/Hierarchical-Planning-in-Forestry.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;différents niveaux de la planification hiérarchique&lt;/a&gt; en foresterie (stratégique, tactique et opérationnel).&lt;/p&gt;
+&lt;p&gt;Voici quelques &lt;strong&gt;exemples de questions auxquelles là re-planification permet de répondre&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Des question liées aux effets des perturbations naturelles (feux, tordeuse de bourgeon d&amp;rsquo;épinette, etc.)
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Quel est l&amp;rsquo;effet des feux à long terme sur les niveaux de récolte déterminés par le stratégique ?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Quel est l&amp;rsquo;effet d&amp;rsquo;un changement de régime d&amp;rsquo;une perturbation stochastique (aléatoire) sur les niveaux de récolte déterminés par le stratégique ?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Des questions liés aux incohérences entre ce qui est prévu au niveau stratégique (à grande échelle), et la réalité du terrain (à petite échelle) : &lt;a href=&#34;https://www.researchgate.net/publication/235754092_On_Risk_of_Systematic_Drift_Under_Incoherent_Hierarchical_Forest_Management_Planning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;c&amp;rsquo;est la notion de &lt;em&gt;drift&lt;/em&gt; entre les différents niveaux de l&amp;rsquo;aménagement hiérarchique&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Est-ce que les objectifs sont toujours atteints en prenant en compte des problématiques et des contraintes plus précises au niveau tactique ?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Des questions liées aux interactions entre les niveaux stratégique et tactique
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Quel est l&amp;rsquo;effet de communiquer (ou non) certaines informations au modèle tactique ou stratégique ? Qu&amp;rsquo;est-ce qui change ? Qu&amp;rsquo;est-ce qui ne change pas ?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;la-re-planification-spatialement-référencée-en-pratique&#34;&gt;La re-planification spatialement référencée en pratique&lt;/h2&gt;
+&lt;h3 id=&#34;les-modèles-utilisés&#34;&gt;Les modèles utilisés&lt;/h3&gt;
+&lt;p&gt;Lorsqu&amp;rsquo;on utilise FMT, la re-planification spatialement référencée se fait en pratique à l&amp;rsquo;aide de 3 modèles de FMT.&lt;/p&gt;
+&lt;p&gt;Ces 3 modèles représentent 3 scénarios appliqués à un même paysage initial(mêmes sections &lt;code&gt;AREA&lt;/code&gt;, &lt;code&gt;CONSTANTS&lt;/code&gt;, &lt;code&gt;LANDSCAPE&lt;/code&gt;, &lt;code&gt;OUTPUTS&lt;/code&gt;). Cependant, ces scénarios peuvent avoir des éléments différents les uns des autres (sections &lt;code&gt;ACTIONS&lt;/code&gt;, &lt;code&gt;TRANSITIONS&lt;/code&gt;, &lt;code&gt;YIELDS&lt;/code&gt; et &lt;code&gt;OPTIMIZE&lt;/code&gt; différentes).&lt;/p&gt;
+&lt;p&gt;Ces trois modèles sont :&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Le modèle stratégique&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est un modèle de programmation linéaire de type III, comme décrit dans &lt;a href=&#34;../../basics/spatially_referenced_optimization/&#34;&gt;les bases de FMT&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est ce modèle qui va représenter ce qui se passe au niveau stratégique, c&amp;rsquo;est à dire quand on regarde les choses d&amp;rsquo;en haut sans prendre en compte certains détails à des échelles plus fines.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Le modèle stochastique&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est un modèle de simulation non-spatial (qui fonctionne dans un espace spatialement référencé comme les modèles linéaires, et non pas spatialement explicite).&lt;/p&gt;
+&lt;p&gt;Il va servir à simuler des action pseudo-aléatoires avec des cibles de superficies à atteindre. Ces actions peuvent représenter des feux de forêts, des épidémies d&amp;rsquo;insectes, et bien d&amp;rsquo;autres encore !&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Une &lt;strong&gt;simulation pseudo-aléatoire&lt;/strong&gt; signifie que les composantes aléatoires de la simulation se basent sur un chiffre déterminé que l&amp;rsquo;on appelle la &amp;ldquo;graine&amp;rdquo; (seed). &lt;strong&gt;Deux simulations pseudo-aléatoires faites avec la même graine auront exactement les mêmes résultats&lt;/strong&gt;; mais changer la graine donne des résultats différents et aléatoires. C&amp;rsquo;est un fonctionnement très pratique pour avoir de l&amp;rsquo;aléatoire, tout en gardant une certaine stabilité dans les résultats obtenus.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;3. Le modèle tactique&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Comme le modèle stratégique, c&amp;rsquo;est un modèle de programmation linéaire de type III, comme décrit dans &lt;a href=&#34;../basics&#34;&gt;les bases de FMT&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ce modèle va servir à refaire une optimisation de la planification forestière tout en prenant en compte les changements que le modèle stochastique à pu effectuer sur le paysage, ou bien avec des contraintes différentes ou supplémentaires par rapport au modèle stratégique.&lt;/p&gt;
+&lt;h3 id=&#34;lexemple-dune-itération-de-re-planification&#34;&gt;L&amp;rsquo;exemple d&amp;rsquo;une itération de re-planification&lt;/h3&gt;
+&lt;p&gt;La re-planification se fait à l&amp;rsquo;aide des 3 modèles décrits précédemment, en les appelant les un après les autres au sein de chaque période de re-planification. Comme l&amp;rsquo;un des modèles (le modèle stochastique) contient des événements aléatoires, il est cependant possible de refaire tout le processus plusieurs fois afin de prendre en compte la variabilité liée à ces événements aléatoires : c&amp;rsquo;est ce que l&amp;rsquo;on appelle une &lt;em&gt;itération&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Lorsqu&amp;rsquo;on appelle les modèles les un après les autres, certaines de leur caractéristiques sont passées de l&amp;rsquo;un à l&amp;rsquo;autre (inventaire/état du paysage pour la période, ou bien contraintes et planification existante).&lt;/p&gt;
+&lt;p&gt;Au final, une itération de re-planification prend la forme suivante :&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1dfcdc74702e9b3b7be3180aec91c1de.webp 400w,
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_9d6c3edec527ae60b17a4cfbcd171bd5.webp 760w,
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1dfcdc74702e9b3b7be3180aec91c1de.webp&#34;
+               width=&#34;705&#34;
+               height=&#34;398&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Dans ce schéma,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;STRA&lt;/strong&gt; correspond au modèle &lt;strong&gt;stratégique&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STO&lt;/strong&gt; correspond au modèle &lt;strong&gt;stochastique&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TAC&lt;/strong&gt; correspond au modèle &lt;strong&gt;tactique&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On peut ainsi voir que pour chaque période,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le modèle &lt;strong&gt;stratégique&lt;/strong&gt; est appelé pour faire sa &lt;strong&gt;planification&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;La planification du modèle stratégique se fait sur un horizon long; et cet horizon ne change pas à travers les périodes. C&amp;rsquo;est à dire qu&amp;rsquo;a chaque période, le modèle stratégique va, par exemple, planifier pour les 100 ans à venir; que ce soit 100 ans après la période 1, ou 100 ans après la période 3.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Le modèle &lt;strong&gt;stratégique&lt;/strong&gt; partage le même inventaire que le modèle &lt;strong&gt;stochastique&lt;/strong&gt;, ce dernier est appelé à faire sa &lt;strong&gt;simulation&lt;/strong&gt; pour introduire des différences avec l&amp;rsquo;inventaire qui sera passée au modèle tactique.
+&lt;ul&gt;
+&lt;li&gt;Le modèle stochastique ne va faire cette simulation que pour la période de temps donné (contrairement au modèle de planification qui va faire son optimisation en prenant en compte le long terme). C&amp;rsquo;est parce que le modèle stochastique ne fait que simuler des événements aléatoires, et ne cherche pas à optimiser quoi que ce sois.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;inventaire résultant du modèle &lt;strong&gt;stochastique&lt;/strong&gt; va être passé au modèle &lt;strong&gt;tactique&lt;/strong&gt;, qui est appelé pour faire sa &lt;strong&gt;re-planification&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Le modèle tactique ne va planifier que sur la période donnée; il ne va pas simuler le long-terme comme le modèle stratégique, même si il essaye de faire une optimisation. Son objectif sera, par exemple, de récolter du bois sans dépasser la quantité de bois récoltée par le modèle stratégique, mais en prenant en compte l&amp;rsquo;inventaire modifié par les événements aléatoire du modèle stochastique.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;inventaire résultant du modèle &lt;strong&gt;tactique&lt;/strong&gt; est ensuite repassé au modèle &lt;strong&gt;stratégique&lt;/strong&gt;, qui va ensuite planifier à nouveau pour la période suivante.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On peut ainsi voir deux vas-et-viens entre les modèles :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le passage de l&amp;rsquo;inventaire d&amp;rsquo;un modèle à un autre au fur et à mesure du processus (&lt;strong&gt;lignes bleues sur le schéma&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Le passage de contraintes de planification du modèle &lt;strong&gt;stratégique&lt;/strong&gt; au modèle &lt;strong&gt;tactique&lt;/strong&gt; (&lt;strong&gt;lignes jaunes sur le schéma&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notez bien que &lt;strong&gt;tout ce processus ne représente qu&amp;rsquo;une seule itération de la re-planification&lt;/strong&gt;. Afin de réellement prendre en compte les effets des évenements stochastiques, il est important de répéter tout ce processus de nombreuses fois. Cela permet de prendre en compte la variabilité qui existera dans la manière dont l&amp;rsquo;inventaire et le modèle tactique vont réagir aux événements aléatoires; le modèle tactique peut aussi contenir des composantes aléatoires en son sein.&lt;/p&gt;
+&lt;h2 id=&#34;les-modèles-de-re-planification-en-détail&#34;&gt;Les modèles de re-planification en détail&lt;/h2&gt;
+&lt;h3 id=&#34;le-modèle-stratégique&#34;&gt;Le modèle stratégique&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;C&amp;rsquo;est un modèle d’optimisation par programmation linéaire (&lt;code&gt;FMTlpmodel&lt;/code&gt;).
+&lt;ul&gt;
+&lt;li&gt;Il ne prend pas en compte les perturbations naturelles ou les événements stochastiques.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Normalement, il a un horizon de planification long pour faire le suivi de variables et optimiser certains éléments sur le long terme (e.g. 100 à 150 ans).&lt;/li&gt;
+&lt;li&gt;Il dicte la voie à prendre au modèle tactique en lui transmettant des informations.&lt;/li&gt;
+&lt;li&gt;Il peut utiliser le nouveau mot clé &lt;a href=&#34;./#_setfromlocalratio&#34;&gt;&lt;code&gt;_SETFROMLOCAL(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;le-modèle-stochastique&#34;&gt;Le modèle stochastique&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;C&amp;rsquo;est un modèle de simulation non-spatial (&lt;code&gt;FMTnssmodel&lt;/code&gt;).
+&lt;ul&gt;
+&lt;li&gt;Il simule des perturbations naturelles ou des événements stochastiques.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Il peut posséder un horizon de simulation long; mais il ne simule qu&amp;rsquo;une période à la fois.&lt;/li&gt;
+&lt;li&gt;Son rôle est d&amp;rsquo;affecter le territoire utilisé par le &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;, et donc de brouiller les cartes entre le &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; et le &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Il peut utiliser les nouveaux mots clés &lt;a href=&#34;./#_randomoutput&#34;&gt;&lt;code&gt;_RANDOM(output)&lt;/code&gt;&lt;/a&gt; et &lt;a href=&#34;./#_replicateoutput&#34;&gt;&lt;code&gt;_REPLICATE(output)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Le modèle stochastique n&amp;rsquo;est pas nécessaire ou obligatoire pour faire de la re-planification&lt;/strong&gt;. Certaines questions qui peuvent être adressées par la re-planification n&amp;rsquo;ont pas de lien avec des perturbations aléatoires. Par exemple, on peut s&amp;rsquo;intéresser aux décalages entre un modèle stratégique qui ne prend pas en compte des contraintes à plus petites échelles (e.g. terrain, fluctuations économiques, etc.), et un modèle tactique qui les prend en compte. Dans ce cas-ci, de la stochasticité peut exister dans les solutions du modèles tactique, mais elle ne requière pas l&amp;rsquo;utilisation d&amp;rsquo;un modèle stochastique pour altérer l&amp;rsquo;inventaire où le paysage forestier entre le modèle stochastique et tactique.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;le-modèle-tactique&#34;&gt;Le modèle tactique&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;C&amp;rsquo;est un modèle d’optimisation par programmation linéaire (&lt;code&gt;FMTlpmodel&lt;/code&gt;), comme le &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Son horizon de planification est de seulement une période.
+&lt;ul&gt;
+&lt;li&gt;Car à l&amp;rsquo;échelle tactique, on ne prend en compte que le cours-terme, et pas le long-terme.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Son état initial est celui de la période actuelle, donné par le &lt;a href=&#34;./#le-mod%c3%a8le-stochastique&#34;&gt;modèle stochastique&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Il peut utiliser les nouveaux mots clés &lt;a href=&#34;./#_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(ratio)&lt;/code&gt;&lt;/a&gt; et &lt;a href=&#34;./#_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;les-nouveaux-mots-clés-associés-à-la-re-planification&#34;&gt;Les nouveaux mots-clés associés à la re-planification&lt;/h2&gt;
+&lt;p&gt;Différents mots clés qui n&amp;rsquo;existent pas dans la syntaxe Woodstock permettent d&amp;rsquo;implémenter des vas-et-vient d&amp;rsquo;information entre les différents modèles de la re-planification, selon le schéma suivant :&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Re-plannification_Mots_cl%C3%A9s_hu624d1e6d4ab1b556826091be69e46ac9_49640_4bc0de208a74e29aa76a964a14f83230.webp 400w,
+               /FMTdocs/media/docs/Re-plannification_Mots_cl%C3%A9s_hu624d1e6d4ab1b556826091be69e46ac9_49640_431b1fdbae933f38dccb4572139237b9.webp 760w,
+               /FMTdocs/media/docs/Re-plannification_Mots_cl%C3%A9s_hu624d1e6d4ab1b556826091be69e46ac9_49640_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Re-plannification_Mots_cl%C3%A9s_hu624d1e6d4ab1b556826091be69e46ac9_49640_4bc0de208a74e29aa76a964a14f83230.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;320&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;D&amp;rsquo;autres permettent d&amp;rsquo;ignorer des contraintes à des moments donnés, ou bien de les ajuster.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Vous trouverez ici la liste de ces nouveaux mots-clés liés à la re-planification :&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;_reignoreperiod&#34;&gt;&lt;code&gt;_REIGNORE(period)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Ce mot clé doit apparaitre dans la section &lt;code&gt;OPTIMIZE&lt;/code&gt; d&amp;rsquo;un modèle.&lt;/p&gt;
+&lt;p&gt;Il permet d&amp;rsquo;indiquer au modèle d&amp;rsquo;ignorer une contrainte à partir d&amp;rsquo;une période de re-planification précise.&lt;/p&gt;
+&lt;p&gt;Ceci peut être très utile pour instaurer une période de mise à jour de la planification, et ensuite ignorer les contraintes qui y sont liées.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Il ne faut pas oublier que le &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; est répété à toutes les périodes de re-planification, sur tout son horizon de planification. Si son horizon est de 100 ans et que les périodes de planification sont de 10 ans, il sera alors appelé à la période 3 à planifier à partir de l’inventaire qui a été modifié par les 2 périodes de re-planification précédentes. Donc, il commencera 30 ans après le début de la période initiale de re-planification et son horizon se terminera 130 ans après le début de la période initiale de re-planification.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;_replicatefichiercsv&#34;&gt;&lt;code&gt;_REPLICATE(fichier.csv)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Ce mot clé permet de venir changer le terme à droite de l&amp;rsquo;équation (&lt;em&gt;Right Hand Side&lt;/em&gt;, ou &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt;) d&amp;rsquo;une contrainte en venant chercher une valeur dans un tableau contenant ces valeurs pour différents réplica.&lt;/p&gt;
+&lt;p&gt;En pratique, on peu déposer un fichier &lt;code&gt;.csv&lt;/code&gt; dans le répertoire du scénario, puis utiliser &lt;code&gt;_REPLICATE(fichier.csv)&lt;/code&gt; pour que FMT applique une certaine valeur dans ce tableau pour l&amp;rsquo;itération à laquelle il se trouve.&lt;/p&gt;
+&lt;p&gt;Par exemple, écrire la chose suivante dans la section des contraintes d&amp;rsquo;un modèle :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;_RANDOM(outputaction) &amp;lt;= 10 1 _REPLICATE(fichier.csv)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;permet de remplacer, à chaque itération, le chiffre &amp;ldquo;10&amp;rdquo; de la contrainte par le chiffre de la ligne 1 du fichier &lt;code&gt;fichier.csv&lt;/code&gt; avec la colonne qui correspond à l&amp;rsquo;itération.&lt;/p&gt;
+&lt;p&gt;Dans le fichier, les lignes correspondent donc à la période et les colonnes à l&amp;rsquo;itération à laquelle on veut que la valeur s&amp;rsquo;applique.&lt;/p&gt;
+&lt;h3 id=&#34;_setfromlocalratio&#34;&gt;&lt;code&gt;_SETFROMLOCAL(ratio)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Ce mot clé permet au &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; d&amp;rsquo;ajuster une de ses contraintes en fonction de la valeur du output correspondant dans le &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; utilisé à la période précédente.&lt;/p&gt;
+&lt;p&gt;Avec cette contrainte, on précise un ratio qui peut augmenter ou diminuer la valeur prise du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;. Par exemple, un ratio de &lt;code&gt;1.0&lt;/code&gt; donnera exactement la valeur du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;; un ratio de &lt;code&gt;2.0&lt;/code&gt; va la multiplier par deux, et un ratio de &lt;code&gt;0.5&lt;/code&gt; la divisera par deux.&lt;/p&gt;
+&lt;p&gt;Si on écrit la chose suivante dans la section des contraintes d&amp;rsquo;un &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;VOLUMEREC &amp;lt;= 0 1.._LENGTH _SETFROMLOCAL(1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;on se trouve à remplacer systématiquement le chiffre &amp;ldquo;0&amp;rdquo; du &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt; par la valeur du output VOLUMEREC de la période de re-planification précédente du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;_randomoutput&#34;&gt;&lt;code&gt;_RANDOM(output)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Ce mot clé est utiliser pour générer des valeurs de façon aléatoire pour le &lt;a href=&#34;./#le-mod%c3%a8le-stochastique&#34;&gt;modèle stochastique&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    L&amp;rsquo;output choisis avec &lt;code&gt;_RANDOM(output)&lt;/code&gt; doit être un output d&amp;rsquo;action, et non un output d&amp;rsquo;inventaire.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Il s&amp;rsquo;écrit comme pour une contrainte standard.&lt;/p&gt;
+&lt;p&gt;Voici un exemple pour générer un chiffre aléatoire entre 50 et 100 pour les période 1 à LENGTH :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;_RANDOM(outputaction) &amp;lt;= 50 1.._LENGTH
+_RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(ratio)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Ce mot clé est utiliser pour ajuster une contrainte du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; basé sur une valeur déterminée par le &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;. C&amp;rsquo;est un peu la réciproque de &lt;a href=&#34;./#_setfromlocalratio&#34;&gt;&lt;code&gt;_SETFROMLOCAL(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Le ratio permet augmenter ou diminuer la valeur prise du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;. Par exemple, un ratio de &lt;code&gt;1.0&lt;/code&gt; donnera exactement la valeur du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;; un ratio de &lt;code&gt;2.0&lt;/code&gt; va la multiplier par deux, et un ratio de &lt;code&gt;0.5&lt;/code&gt; la divisera par deux.&lt;/p&gt;
+&lt;p&gt;Si on écrit la chose suivante dans la section des contraintes d&amp;rsquo;un &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;VOLUMEREC &amp;lt;= 0 1.._LENGTH _SETFROMGLOBAL(1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;on remplace systématiquement le chiffre &amp;ldquo;0&amp;rdquo; du &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt; par la valeur du output VOLUMEREC du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; pour la période de re-planification en cours.&lt;/p&gt;
+&lt;h3 id=&#34;_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(ratio)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Ce mot clé permet d&amp;rsquo;inclure la solution (ce qui a été planifié comme actions) du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; dans le &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; sous forme de poids à la fonction objective.&lt;/p&gt;
+&lt;p&gt;Pour ce faire, lors l&amp;rsquo;évaluation de la solution du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;, à chaque fois que ce dernier planifiera une action sur un même développement que prévu au &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;, il multipliera la superficie planifiée (au niveau tactique) par le ratio spécifié et ajoutera la valeur à l&amp;rsquo;objectif selon la formulation de la fonction objective. Si le modèle doit maximiser, on additionnera et s&amp;rsquo;il doit minimiser, on soustraiera la valeur calculée.&lt;/p&gt;
+&lt;h2 id=&#34;les-résultats-de-la-re-planification&#34;&gt;Les résultats de la re-planification&lt;/h2&gt;
+&lt;p&gt;Suite au processus de re-planification, on obtient les résultats suivants :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Trois fichiers de résultats &lt;em&gt;bruts&lt;/em&gt; (un par modèle)&lt;/li&gt;
+&lt;li&gt;Un fichier de probabilités (un seul pour tout le processus)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;les-fichiers-de-résultats-bruts-par-modèles&#34;&gt;Les fichiers de résultats bruts par modèles&lt;/h3&gt;
+&lt;p&gt;Ces fichiers contiennent des valeurs liées aux outputs dans les différents modèles, pour les différentes périodes, et pour les différentes itérations.&lt;/p&gt;
+&lt;p&gt;Ils contiennent différentes colonnes :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Iteration&lt;/code&gt; : Indique le numéro de l&amp;rsquo;itération qui est fait pour prendre en compte de la stochasticité. L&amp;rsquo;itération &amp;ldquo;0&amp;rdquo; concerne le modèle stratégique &amp;ldquo;de base&amp;rdquo;, qui est résolu au tout début du processus de re-planification.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Period&lt;/code&gt; : Indique la période de re-planification qui concerne la valeur de l&amp;rsquo;output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Output&lt;/code&gt; : Nom de l&amp;rsquo;output considéré.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Value&lt;/code&gt; : Valeur du output considéré.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Type&lt;/code&gt; : Type de output (indique si c&amp;rsquo;est un output &amp;ldquo;total&amp;rdquo; pour tout le paysage, ou par développement/peuplement).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;le-fichier-de-probabilités&#34;&gt;Le fichier de probabilités&lt;/h3&gt;
+&lt;p&gt;Ce fichier contient les probabilités que des outputs du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; puissent s&amp;rsquo;éloigner (&lt;em&gt;drift&lt;/em&gt;) de la solution du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial (résolu au tout début du processus de re-planification), dont les outputs se trouvent dans l&amp;rsquo;itération &amp;ldquo;0&amp;rdquo; des fichiers de résultats bruts.&lt;/p&gt;
+&lt;p&gt;Pour chacun des outputs définit dans les modèles, le fichier de probabilité contiendra toutes les probabilités de rester dans l&amp;rsquo;intervalle inférieur et supérieur du ratio d&amp;rsquo;éloignement (&lt;em&gt;drift&lt;/em&gt;) vis à vis des outputs du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial, pour les valeurs de ratio d&amp;rsquo;éloignement suivantes : &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;0.05&lt;/code&gt;, &lt;code&gt;0.10&lt;/code&gt;, &lt;code&gt;0.15&lt;/code&gt;, &lt;code&gt;0.20&lt;/code&gt;, &lt;code&gt;0.25&lt;/code&gt;, &lt;code&gt;0.30&lt;/code&gt;, &lt;code&gt;0.35&lt;/code&gt;, &lt;code&gt;0.40&lt;/code&gt;, &lt;code&gt;0.45&lt;/code&gt;, &lt;code&gt;0.50&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ce fichier contient différentes colonnes :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Period&lt;/code&gt; : Indique la période de re-planification qui concerne la valeur de l&amp;rsquo;output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Output&lt;/code&gt; : Nom de l&amp;rsquo;output considéré.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LowerProbability&lt;/code&gt; : Probabilité de rester dans l&amp;rsquo;intervalle inférieure du ratio d&amp;rsquo;éloignement.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UpperProbability&lt;/code&gt; : Probabilité de rester dans l&amp;rsquo;intervalle supérieure du ratio d&amp;rsquo;éloignement.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Drift&lt;/code&gt; : Ration d&amp;rsquo;éloignement entre la solution du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; et celle du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Plus vous ferez d&amp;rsquo;itérations lors de votre re-planification, et plus vos probabilités seront représentatives et stables dans le temps. A l&amp;rsquo;inverse, un petit nombre d&amp;rsquo;itération tendra à résulter ou des estimations très changeantes, et souvent incomplètes.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Pour comprendre les probabilités, il faut d&amp;rsquo;abord regarder le ratio d&amp;rsquo;éloignement, la valeur du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial, puis les probabilités.&lt;/p&gt;
+&lt;p&gt;Par exemple :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Si la valeur du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial pour un output donné est de 1000.&lt;/li&gt;
+&lt;li&gt;Et si, pour la période 1, on obtient une &lt;code&gt;LowerProbability&lt;/code&gt; de 1 et une &lt;code&gt;UpperProbability&lt;/code&gt; de 1 pour un &lt;em&gt;drift&lt;/em&gt; de 0.3.
+&lt;ul&gt;
+&lt;li&gt;Alors, cela veut dire qu&amp;rsquo;il y a une probabilité de 100% pour que l&amp;rsquo;output reste entre une valeur de 700 et de 1300 pour la période 1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Et si, pour la période 10, on obtient une &lt;code&gt;LowerProbability&lt;/code&gt; de 0.6 et une &lt;code&gt;UpperProbability&lt;/code&gt; de 0.4 pour un &lt;em&gt;drift&lt;/em&gt; de 0.5.
+&lt;ul&gt;
+&lt;li&gt;Alors, cela veut dire qu&amp;rsquo;il y a une probabilité de 60% que l&amp;rsquo;output reste au dessus de 500, et une probabilité de 40% qu&amp;rsquo;il reste en dessous de 1500 à la période 10.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Le fichier de probabilité permet, par exemple, de vérifier qu&amp;rsquo;un certain scénario à de meilleure probabilités de se maintenir entre certaines valeurs qu&amp;rsquo;un autre scénario.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Les fichiers de résultats bruts des 3 modèles peuvent cependant être utilisés pour faire des analyses plus complexes, ou bien pour valider des hypothèses en ce qui concerne la communication entre les 3 modèles.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exercice 2</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/exercice_2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/exercice_2/</guid>
+      <description>&lt;p&gt;Dans cet exercice, vous allez essayer d&amp;rsquo;utiliser FMT pour répondre à différentes questions concernant un modèle stratégique et un modèle tactique, par le biais d&amp;rsquo;un processus de re-planification.&lt;/p&gt;
+&lt;p&gt;Ainsi, cet exercice vous apprendra à :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Réaliser un script de re-planification&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faire une re-planification avec plusieurs modèles, en variant &lt;a href=&#34;../replanning/#les-nouveaux-mots-cl%c3%a9s-associ%c3%a9s-%c3%a0-la-re-planification&#34;&gt;les mots clés spéciaux de FMT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Analyser les résultats des re-planifications pour répondre à différentes questions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour faire cet exercice, &lt;strong&gt;vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&amp;rsquo;exemple depuis le dépôt GitHub de FMT&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../../download_install&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;btn btn-primary px-3 py-3&#34;&gt;💾 Télécharger et installer FMT&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://downgit.github.io/#/home?url=https://github.com/gcyr/FMT/tree/master/Examples&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;btn btn-primary px-3 py-3&#34;&gt;💾 Télécharger les fichiers d&amp;rsquo;exemples de FMT&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Vous devez également avoir installé Python sur votre ordinateur&lt;/strong&gt;. Si cela n&amp;rsquo;est pas fait, &lt;a href=&#34;../../download_install/importing_in_python/&#34;&gt;référez vous à cette page&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;1ère-partie--création-dun-script-de-re-planification&#34;&gt;1ère partie : Création d&amp;rsquo;un script de re-planification&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Si vous ne connaissez pas beaucoup le langage Python, ou bien si vous n&amp;rsquo;avez vraiment pas le temps, vous pouvez sauter cette section et utiliser le script &lt;code&gt;Replanner.py&lt;/code&gt; qui se trouve dans le dossier &amp;ldquo;Examples&amp;rdquo; que vous avez téléchargé, dans le dossier &lt;code&gt;/Python/replanning&lt;/code&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Le processus de re-planification implique souvent de lancer de nombreux modèles, et de nombreuses fois (pour faire des itérations).&lt;/p&gt;
+&lt;p&gt;Il est ainsi très utile de creer un script Python qui peut être appellé par le biais d&amp;rsquo;une console, d&amp;rsquo;un terminal, ou d&amp;rsquo;une invite de commande.&lt;/p&gt;
+&lt;p&gt;Encore mieux : il est possible de créer un script Python qui lira des arguments qui lui seront fournis lorsqu&amp;rsquo;il sera appelé avec l&amp;rsquo;invite de commande. Cela permettra de ré-utiliser ce script pour différentes re-planifications.&lt;/p&gt;
+&lt;p&gt;Essayez alors de créer en langage Python le script suivant :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Importation de &lt;code&gt;Models&lt;/code&gt;, &lt;code&gt;Parser&lt;/code&gt;, &lt;code&gt;Core&lt;/code&gt;, &lt;code&gt;Version&lt;/code&gt; et &lt;code&gt;Parallel&lt;/code&gt; depuis &lt;code&gt;FMT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Lecture des arguments suivants (il est recommandé d&amp;rsquo;utiliser le module &lt;a href=&#34;https://docs.python.org/3/library/argparse.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;argparse&lt;/code&gt;&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-pri&lt;/code&gt; qui indique la localisation du fichier primaire des modèles qui seront utilisés&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-str&lt;/code&gt; qui indique le nom du scénario stratégique&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-tac&lt;/code&gt; qui indique le nom du scénario tactique&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-sto&lt;/code&gt; qui indique le nom du scénario stochastique&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-out&lt;/code&gt; qui indique une liste d&amp;rsquo;outputs d&amp;rsquo;intéret, séparés par une virgule, à extraire des résultats des modèles&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-fol&lt;/code&gt; qui indique le dossier où les sorties du script seront mises&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-rep&lt;/code&gt; qui indique le nombre d&amp;rsquo;itération à faire&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-len&lt;/code&gt; qui indique le nombre de périodes du modèle stratégique&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-rel&lt;/code&gt; qui indique le nombre de périodes sur lesquelles la re-planification va se faire&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-thr&lt;/code&gt; qui indique le nombre de coeurs de CPU à utiliser pour faire des itérations en parralèle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ensuite, le script devra :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lire le modèle via le fichier primaire&lt;/li&gt;
+&lt;li&gt;Lire les différents scénarios&lt;/li&gt;
+&lt;li&gt;Créer le modèle stratégique/global en utilisant le nom de scénario fournis par &lt;code&gt;-str&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Faire en sorte que le modèle global se fasse sur la durée fournie par &lt;code&gt;-len&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Faire en sorte que le modèle global utilise le nombre de threads indiqués par &lt;code&gt;-thr&lt;/code&gt; pour la résolution en parallèle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Créer le modèle stochastique en utilisant le nom de scénario fournis par &lt;code&gt;-sto&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Faire en sorte que le modèle stochastique se fasse sur la durée de une période&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Créer le modèle tactique en utilisant le nom de scénario fournis par &lt;code&gt;-tac&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Faire en sorte que le modèle tactique se fasse sur la durée de une période&lt;/li&gt;
+&lt;li&gt;Faire en sorte que le modèle global utilise le nombre de threads indiqués par &lt;code&gt;-thr&lt;/code&gt; pour la résolution en parallèle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ajouter les outputs selectionné par l&amp;rsquo;argument &lt;code&gt;-out&lt;/code&gt; dans une liste depuis les outputs des modèles&lt;/li&gt;
+&lt;li&gt;Préparer la tache de re-planning par le biais de la fonction &lt;code&gt;Parallel.FMTreplanningtask()&lt;/code&gt; en fournissant à la fonction :
+&lt;ul&gt;
+&lt;li&gt;Le modèle stratégique&lt;/li&gt;
+&lt;li&gt;Le modèle stochastique&lt;/li&gt;
+&lt;li&gt;Le modèle tactique&lt;/li&gt;
+&lt;li&gt;La liste des outputs voulus&lt;/li&gt;
+&lt;li&gt;Le dossier où les outputs seront mis&lt;/li&gt;
+&lt;li&gt;Le format des outputs (ici, &lt;code&gt;.csv&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../doxygen/html/classParallel_1_1FMTreplanningtask.html&#34;&gt;Tous les autres arguments nécéssaires à la fonction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lancer la tache de re-planning par le biais de la fonction &lt;code&gt;Parallel.FMTtaskhandler()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lorsque vous avez terminé, ou si vous êtes bloqué.e, &lt;strong&gt;vous pouvez afficher la correction de cet exercice pour du code Python en cliquant sur le bouton &amp;ldquo;Révéler la correction&amp;rdquo; ci-dessous&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from FMT import Models
+from FMT import Parser
+from FMT import Core
+from FMT import Version
+from FMT import Parallel
+import os,argparse
+
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(&amp;quot;-pri&amp;quot;, &amp;quot;--primary&amp;quot;, required=True,help=&amp;quot;Fichier primaire&amp;quot;)
+    ap.add_argument(&amp;quot;-str&amp;quot;, &amp;quot;--strategic&amp;quot;, required=True,help=&amp;quot;Nom du scenario strategique&amp;quot;)
+    ap.add_argument(&amp;quot;-tac&amp;quot;, &amp;quot;--tactic&amp;quot;, required=True,help=&amp;quot;Nom du scenario tactique&amp;quot;)
+    ap.add_argument(&amp;quot;-sto&amp;quot;, &amp;quot;--stochastic&amp;quot;, required=True,help=&amp;quot;Nom du scenario stochastique&amp;quot;)
+    ap.add_argument(&amp;quot;-out&amp;quot;, &amp;quot;--outputs&amp;quot;, required=True,help=&amp;quot;Liste d&#39;outputs separe d&#39;une virgule&amp;quot;)
+    ap.add_argument(&amp;quot;-fol&amp;quot;, &amp;quot;--folder&amp;quot;, required=True,help=&amp;quot;Dossier de sortie&amp;quot;)
+    ap.add_argument(&amp;quot;-rep&amp;quot;, &amp;quot;--replicates&amp;quot;, required=True,help=&amp;quot;Nombre de replicas&amp;quot;)
+    ap.add_argument(&amp;quot;-len&amp;quot;, &amp;quot;--strategiclength&amp;quot;, required=True,help=&amp;quot;Nombre de periode du strategique&amp;quot;)
+    ap.add_argument(&amp;quot;-rel&amp;quot;, &amp;quot;--replanninglength&amp;quot;, required=True,help=&amp;quot;Nombre de periode de re-plannification&amp;quot;)
+    ap.add_argument(&amp;quot;-thr&amp;quot;, &amp;quot;--threads&amp;quot;, required=True,help=&amp;quot;Nombre de threads&amp;quot;)
+    ap.add_argument(&amp;quot;-com&amp;quot;,&amp;quot;--compresstime&amp;quot;, nargs=&amp;quot;+&amp;quot;,help=&amp;quot;Compress time sous la forme 20,5 40,8&amp;quot;)
+    args = vars(ap.parse_args())
+    if Version.FMTversion().hasfeature(&amp;quot;OSI&amp;quot;):
+        modelparser = Parser.FMTmodelparser()
+        path = args[&amp;quot;primary&amp;quot;]
+        scenarios = [args[&amp;quot;strategic&amp;quot;],args[&amp;quot;stochastic&amp;quot;],args[&amp;quot;tactic&amp;quot;]]
+        models = modelparser.readproject(path, scenarios)
+        globalmodel = Models.FMTlpmodel(models[0], Models.FMTsolverinterface.CLP)
+        globalmodel.setparameter(Models.FMTintmodelparameters.LENGTH,int(args[&amp;quot;strategiclength&amp;quot;]))
+        globalmodel.setparameter(Models.FMTintmodelparameters.NUMBER_OF_THREADS,1)
+        if &amp;quot;com&amp;quot; in args:
+            for firstperiod,value in [tuple(int(cmpt.split(&amp;quot;,&amp;quot;)[0]),float(cmpt.split(&amp;quot;,&amp;quot;)[1])) for cmpt in args[&amp;quot;com&amp;quot;]]:
+                globalmodel.setcompresstime(firstperiod,int(args[&amp;quot;strategiclength&amp;quot;]),value)
+        stochastic = Models.FMTnssmodel(models[1],0)
+        stochastic.setparameter(Models.FMTintmodelparameters.LENGTH, 1)
+        localmodel = Models.FMTlpmodel(models[2], Models.FMTsolverinterface.CLP)
+        localmodel.setparameter(Models.FMTintmodelparameters.LENGTH, 1)
+        localmodel.setparameter(Models.FMTintmodelparameters.NUMBER_OF_THREADS,1)
+        selectedoutputs=[]
+        for output in globalmodel.getoutputs():
+            if output.getname() in args[&amp;quot;outputs&amp;quot;].split(&amp;quot;,&amp;quot;):
+                selectedoutputs.append(output)
+        outputlocation = args[&amp;quot;folder&amp;quot;]
+        layersoptions=[&amp;quot;SEPARATOR=SEMICOLON&amp;quot;]
+        replanningtask=Parallel.FMTreplanningtask(globalmodel,stochastic, localmodel, selectedoutputs, outputlocation, &amp;quot;CSV&amp;quot;, layersoptions,int(args[&amp;quot;replicates&amp;quot;]),int(args[&amp;quot;replanninglength&amp;quot;]),0.5, Core.FMToutputlevel.totalonly)
+        handler = Parallel.FMTtaskhandler(replanningtask,int(args[&amp;quot;threads&amp;quot;]))
+        handler.setquietlogger()
+        handler.conccurentrun()
+    else:
+        print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;2ème-partie--création-des-scénarios-pour-la-re-planification&#34;&gt;2ème partie : Création des scénarios pour la re-planification&lt;/h2&gt;
+&lt;h3 id=&#34;préparation&#34;&gt;Préparation&lt;/h3&gt;
+&lt;p&gt;Après avoir téléchargé les fichiers d&amp;rsquo;exemple de FMT (voir plus haut), ouvrez le dossier &lt;code&gt;Models/TWD_land/Scenarios/Globalex1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ce scénario &lt;code&gt;Globalex1&lt;/code&gt; est un scénario qui nous utiliserons comme &lt;a href=&#34;../replanning#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique ou modèle global&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prenez le temps d&amp;rsquo;observer le contenu de ses fichiers&lt;/strong&gt;; en particulier, jetez un oeil à ses actions, ses objectifs et ses contraintes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Faites de même avec le modèle &lt;code&gt;Localex1&lt;/code&gt;&lt;/strong&gt;, que nous utiliserons comme &lt;a href=&#34;../replanning#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique ou modèle local&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;question-1&#34;&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;Ouvrez ensuite une invite de commande de windows, ou bien un powershell. Utilisez la commande &lt;code&gt;cd&lt;/code&gt; pour vous rendre dans le dossier &lt;code&gt;Examples/Python/replanning&lt;/code&gt;. Puis, utilisez la commande suivante pour lancer la re-plannification :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX1 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cette commande indique au script créé dans la première partie que nous voulons :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Utiliser le modèle se trouve au chemin &lt;code&gt;../../Models/TWD_land/TWD_land.pri&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Utiliser le scénario &lt;code&gt;Globalex1&lt;/code&gt; comme modèle stratégique&lt;/li&gt;
+&lt;li&gt;Utiliser le scénario &lt;code&gt;Localex1&lt;/code&gt; comme modèle tactique&lt;/li&gt;
+&lt;li&gt;Utiliser le scénario &lt;code&gt;Globalnofire&lt;/code&gt; comme modèle stocastique&lt;/li&gt;
+&lt;li&gt;Créer des tableaux de sorties pour les outputs &lt;code&gt;OVOLREC&lt;/code&gt;, &lt;code&gt;OSUPREC&lt;/code&gt;, &lt;code&gt;OSUPPL&lt;/code&gt;, et &lt;code&gt;VOLINVENT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Mettre ces tableaux dans le dossier &lt;code&gt;replanning_EX1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Faire 10 itérations&lt;/li&gt;
+&lt;li&gt;Solutionner le modèle stratégique sur 20 périodes&lt;/li&gt;
+&lt;li&gt;Faire la re-plannification sur 20 périodes&lt;/li&gt;
+&lt;li&gt;Utiliser 2 coeurs de CPU pour faire des itérations en parallèle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Avec une tolérance à la rupture de stock de 5%, quelle est la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; jusqu’à la période 10 dans le modèle tactique ?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-4&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Pour regarder la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; au dessus d&amp;rsquo;une baisse de 5%, il suffit de regarder le fichier &lt;code&gt;outputsdrift.csv&lt;/code&gt;. Celui-ci nous indique la probabilité que les différents outputs sélectionnés restent, dans le modèle tactique, au dessus ou en dessous d&amp;rsquo;un certain éloignement vis-à-vis du modèle stratégique.&lt;/p&gt;
+&lt;p&gt;On peut donc ouvrir le fichier, et se rendre jusqu&amp;rsquo;aux lignes qui concernent &lt;code&gt;OVOLREC&lt;/code&gt; et un drift de &lt;code&gt;0.05&lt;/code&gt; (5%), à savoir les lignes 462-481.&lt;/p&gt;
+&lt;p&gt;En regardant ces lignes, on peut voir qu&amp;rsquo;a partir de la période 7, &lt;code&gt;OVOLREC&lt;/code&gt; à une probabilité de &lt;code&gt;0&lt;/code&gt; de ne pas baisser de plus de 5% par rapport au modèle stratégique (troisième colonne &lt;code&gt;LowerProbability&lt;/code&gt;); cette probabilité reste à 0 pour toutes les périodes suivantes. Ainsi, il semble donc que la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; au dessus d&amp;rsquo;une baisse de 5% jusqu&amp;rsquo;à la période 10 est de 0.&lt;/p&gt;
+&lt;p&gt;On peut représenter ces valeurs avec un graphe via les données de &lt;code&gt;outputsdrift.csv&lt;/code&gt; :&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_0af8a7f6ebcbb19d23a51ae0e183be8e.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_d08059d6861eb190a92e28eb5bd00c97.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_0af8a7f6ebcbb19d23a51ae0e183be8e.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;452&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-2&#34;&gt;Question 2&lt;/h3&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Globalex1&lt;/code&gt; et renommez le &lt;code&gt;Globalex2&lt;/code&gt; (supprimez le dossier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Globalex2&lt;/code&gt; afin de forcer le scénario &lt;code&gt;Globalex2&lt;/code&gt; à ne pas dépasser 20 000 m³ pour l&amp;rsquo;output &lt;code&gt;OVOLREC&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Le contenu de &lt;code&gt;TWD_land.opt&lt;/code&gt; du scénario &lt;code&gt;Globalex2&lt;/code&gt; doit alors être :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAXMIN oVolRec 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 20000 1.._LENGTH
+
+_NDY(oVolRec) 1.._LENGTH
+
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex2&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex2 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX2 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Avec une tolérance à la rupture de stock de 5%, quelle est la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; jusqu’à la période 10 dans le modèle tactique ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y-as-t-il un gain vis à vis de la question 1 ?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-6&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;En regardant les résultats de &lt;code&gt;outputsdrift.csv&lt;/code&gt;, on peut voir que &lt;code&gt;OVOLREC&lt;/code&gt; garde une probabilité de &lt;code&gt;1&lt;/code&gt; de ne pas diminuer de plus de 5% tout du long des 20 périodes. Ainsi, il y a une probabilité maximale que &lt;code&gt;OVOLREC&lt;/code&gt; se maintiennent au dessus de 5% de baisse dans le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, lorsque l&amp;rsquo;on utilise le modèle stratégique &lt;code&gt;Globalex2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;On a donc un clair gain vis-à-vis de la question 1, pour laquelle &lt;code&gt;OVOLREC&lt;/code&gt; ne pouvait pas se maintenir au dessus d&amp;rsquo;une baisse de 5% à partir de la 7ième période. Cela est surement du au fait que l&amp;rsquo;on a forcé &lt;code&gt;Globalex2&lt;/code&gt; à ne pas récolter trop, ce qui a rendu le fait de maintenir ce niveau dans &lt;code&gt;Localex1&lt;/code&gt; plus facile.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-3&#34;&gt;Question 3&lt;/h3&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez le &lt;code&gt;Localex3&lt;/code&gt; (supprimez le dossier existant s&amp;rsquo;il existe déjà).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Localex3&lt;/code&gt; afin de forcer ce modèle tactique à suivre la solution du modèle stratégique avec un poids de 100, avec le mot clé &lt;a href=&#34;../replanning/#_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(poids)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-7&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Le contenu de &lt;code&gt;TWD_land.opt&lt;/code&gt; du scénario &lt;code&gt;Localex3&lt;/code&gt; doit alors être :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAX ovolrec 1.._LENGTH _SETGLOBALSCHEDULE(100)
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex3&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex3 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX3 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Avec une tolérance à la rupture de stock de 5%, quelle est la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; jusqu’à la période 10 dans le modèle tactique ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y-as-t-il un gain vis à vis de la question 1 ?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-8&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;En regardant les résultats de &lt;code&gt;outputsdrift.csv&lt;/code&gt; dans &lt;code&gt;Examples/Python/replanning/replanning_EX3&lt;/code&gt;, on peut voir que &lt;code&gt;OVOLREC&lt;/code&gt; a une probabilité de &lt;code&gt;1&lt;/code&gt; de ne pas diminuer de plus de 5% par rapport au modèle stratégique à la période 8; mais que cette probabilité passe à &lt;code&gt;0&lt;/code&gt; à partir de la période 9, et reste à &lt;code&gt;0&lt;/code&gt; pendant toutes les autres périodes. Ainsi, il est certain que &lt;code&gt;OVOLREC&lt;/code&gt; ne se maintiendra pas au dessus d&amp;rsquo;une baisse de 5% jusqu&amp;rsquo;a la période 10.&lt;/p&gt;
+&lt;p&gt;Cependant, on peut quand même observer un léger gain par rapport à la question 1; la probabilité que &lt;code&gt;OVOLREC&lt;/code&gt; ne diminue pas de plus de 5% descendait à &lt;code&gt;0&lt;/code&gt; dès la période 7 dans ces résultats. En poussant le modèle tactique à suivre la solution du modèle stratégique avec le mot clé &lt;code&gt;_SETGLOBALSCHEDULE(poids)&lt;/code&gt;, on a donc gagné deux périodes de stabilité en plus !&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-4&#34;&gt;Question 4&lt;/h3&gt;
+&lt;p&gt;À présent, dupliquez le fichier &lt;code&gt;TWD_land._opt&lt;/code&gt; de &lt;code&gt;Localex1&lt;/code&gt; dans le dossier &lt;code&gt;Localex4&lt;/code&gt; (supprimez le fichier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Localex4&lt;/code&gt; afin de forcer le modèle tactique à suivre les tables de réplicas (&lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;) pour la récolte dans les types de peuplement1 et peuplement2 (utilisez &lt;a href=&#34;../replanning/#_replicateoutput&#34;&gt;&lt;code&gt;_REPLICATE()&lt;/code&gt;&lt;/a&gt;)&lt;/strong&gt;. En ce faisant, vous devez donc forcer le modèle tactique à faire un certain niveau de récolte dans des entités spatiales particulières du modèle (les peuplements 1 et 2) en vous basant sur des fichiers que vous fournissez au modèle (&lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;).&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-9&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Le contenu de &lt;code&gt;TWD_land.opt&lt;/code&gt; du scénario &lt;code&gt;Localex4&lt;/code&gt; doit alors être :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+oVolRecPEUPLEMENT1 &amp;lt;= 0 1.._LENGTH _Goal(G1,9999) _REPLICATE(PEUPLEMENT1.csv)
+oVolRecPEUPLEMENT1 &amp;gt;= 0 1.._LENGTH _Goal(G2,9999) _REPLICATE(PEUPLEMENT1.csv)
+oVolRecPEUPLEMENT2 &amp;lt;= 0 1.._LENGTH _Goal(G3,9999) _REPLICATE(PEUPLEMENT2.csv)
+oVolRecPEUPLEMENT2 &amp;gt;= 0 1.._LENGTH _Goal(G4,9999) _REPLICATE(PEUPLEMENT2.csv)
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex4&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex4 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT,OVOLRECPEUPLEMENT1,OVOLRECPEUPLEMENT2 -fol replanning_EX4 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, &lt;strong&gt;rendez vous dans le fichier &lt;code&gt;Localex4.csv&lt;/code&gt; du dossier &lt;code&gt;replanning_EX4&lt;/code&gt;, et observez les résultats des outputs &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; et &lt;code&gt;OVOLRECPEUPLEMENT2&lt;/code&gt;&lt;/strong&gt;. En particulier, vous pouvez creer une table pivot dans un logiciel comme Microsoft Excel afin d&amp;rsquo;obtenir un graphe montrant l&amp;rsquo;évolution de ces mesures à travers les périodes de temps, avec une courbe pour chacune des itérations.&lt;/p&gt;
+&lt;p&gt;En même temps, ouvrez les fichiers &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;, et observez leur contenu. Chaque colonne correspond à des valeurs que le modèle tactique devait suivre pour une itération, avec chaque ligne contenant une valeur pour une période donnée.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;En comparant le contenu de &lt;code&gt;Localex4.csv&lt;/code&gt; et de &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;, qu&amp;rsquo;observez vous ?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-10&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;On peut voir que le modèle tactique à en effet suivit les niveaux de récolte définit dans les fichiers &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt; pour l&amp;rsquo;output &lt;code&gt;OVOLREC&lt;/code&gt; dans les peuplements 1 et deux.&lt;/p&gt;
+&lt;p&gt;En particulier, on peut voir que &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; descend à 0 pour la période 4 dans toutes les itérations, comme prévu dans &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt;. On peut aussi voir que l&amp;rsquo;itération 4 garde une valeur de &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; à 10 la plupart du temps, alors que les autres itérations gardent une valeur de 20.&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_9470bb794010af21def849ac8653507a.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_ee0d470fd4fe31ddcef01a03ba9091c6.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_9470bb794010af21def849ac8653507a.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;452&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;On peut observer une baisse à 0 pour &lt;code&gt;OVOLRECPEUPLEMENT2&lt;/code&gt; à la période 9 dans toutes les itérations, comme prévu dans &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;.&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_47af8c0520c7eab555dea05e79b278fc.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_23bf476ab66f32b8b71bc70abed18122.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_47af8c0520c7eab555dea05e79b278fc.webp&#34;
+               width=&#34;751&#34;
+               height=&#34;436&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-5&#34;&gt;Question 5&lt;/h3&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez le &lt;code&gt;Localex5&lt;/code&gt; (supprimez le dossier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Localex5&lt;/code&gt; afin de forcer ce modèle tactique à ignorer la contrainte de plantation de 90 à 100ha à partir de la période (ou bien de ne la suivre que durant la période 1) en utilisant le mot clé &lt;a href=&#34;../replanning/#_reignoreperiod&#34;&gt;&lt;code&gt;_REIGNORE(période)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-11&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Le contenu de &lt;code&gt;TWD_land.opt&lt;/code&gt; du scénario &lt;code&gt;Localex5&lt;/code&gt; doit alors être :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+osuppl &amp;gt;= 90 1 _Goal(G1,9999) _REIGNORE(2)
+osuppl &amp;lt;= 100 1 _Goal(G2,9999) _REIGNORE(2)
+
+*FORMAT MOSEK
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex5&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex5 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX5 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, &lt;strong&gt;comparez l&amp;rsquo;évolution de l&amp;rsquo;output du niveau de plantations &lt;code&gt;OSUPPL&lt;/code&gt; dans le modèle tactique &lt;code&gt;Localex1&lt;/code&gt; (dans le dossier &lt;code&gt;replanning_EX1&lt;/code&gt; créé à la question 1) à l&amp;rsquo;évolution de &lt;code&gt;OSUPPL&lt;/code&gt; dans le modèle tactique &lt;code&gt;Localex5&lt;/code&gt; (dans le dossier &lt;code&gt;replanning_EX5&lt;/code&gt;)&lt;/strong&gt;. Comme précédemment, vous pouvez utiliser une table pivot dans un logiciel comme Microsoft Excel afin d&amp;rsquo;obtenir un graphe montrant l&amp;rsquo;évolution de ces mesures à travers les périodes de temps, avec une courbe pour chacune des itérations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quelles différences observez vous entre &lt;code&gt;Localex1&lt;/code&gt; et &lt;code&gt;Localex5&lt;/code&gt; ? ?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-12&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;On peut voir que le modèle tactique &lt;code&gt;Localex1&lt;/code&gt; arrive à soutenir le niveau de &lt;code&gt;OSUPPL&lt;/code&gt; pendant un long moment de manière stable, comme montré sur ce graphe :&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_188cd30efea6cf2054069ff5bd1cdeb2.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_7b8033f91edec9e2173280b783807745.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_188cd30efea6cf2054069ff5bd1cdeb2.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;452&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;En comparaison, dans &lt;code&gt;Localex5&lt;/code&gt;, on peut voir que le niveau de &lt;code&gt;OSUPPL&lt;/code&gt; est beaucoup plus variable et instable. Il atteind rapidement des valeurs de 0, à cause du fait que les contraintes du modèle le concernant sont ignorées après la période 2, comme montré sur ce graphe :&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_238e1ed66cd21fea65e0176c88fdd45e.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_5483406fddb26fb28efde99e57551b18.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_238e1ed66cd21fea65e0176c88fdd45e.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;452&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Ainsi, il semble que le fait d&amp;rsquo;ignorer les contraintes concernant &lt;code&gt;OSUPPL&lt;/code&gt; à bien fonctionné.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-6&#34;&gt;Question 6&lt;/h3&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez le &lt;code&gt;Localex6&lt;/code&gt; (supprimez le dossier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Localex6&lt;/code&gt; afin de forcer ce modèle tactique à réaliser de 100% du niveau de récolte (&lt;code&gt;OVOLREC&lt;/code&gt;) du modèle stratégique, avec une variabilité de 1% autorisée pour le dépassement de la valeur (donc au moins 100%, et au plus 101%) avec le mot clé &lt;a href=&#34;../replanning/#_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(poids)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-13&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Le contenu de &lt;code&gt;TWD_land.opt&lt;/code&gt; du scénario &lt;code&gt;Localex6&lt;/code&gt; doit alors être :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+osuprec &amp;lt;= 40272 1.._LENGTH _Goal(G1,9999) _SETFROMGLOBAL(1.0)
+osuprec &amp;gt;= 40272 1.._LENGTH _Goal(G2,9999) _SETFROMGLOBAL(0.99)
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex6&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex6 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX6 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX6&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Comparez à présent la probabilité de maintenir une récoltée similaire à l&amp;rsquo;exercice 1 (avec &lt;code&gt;Localex1&lt;/code&gt;) en regardant le contenu de &lt;code&gt;outputsdrift.csv&lt;/code&gt; dans &lt;code&gt;replanning_EX1&lt;/code&gt; et &lt;code&gt;replanning_EX6&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quelles différences observez vous ?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-14&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;On observe que la probabilité de maintient de &lt;code&gt;OVOLREC&lt;/code&gt; dans le modèle tactique au dessus d&amp;rsquo;une diminution de 5% par rapport au modèle stratégique est relativement similaire entre &lt;code&gt;Localex1&lt;/code&gt; et &lt;code&gt;Localex6&lt;/code&gt;; si ce n&amp;rsquo;est que &lt;code&gt;Localex6&lt;/code&gt; à une valeur plus basse de cette probabilité à la période 7, quand celle-ci chute vers 0.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;question-7&#34;&gt;Question 7&lt;/h3&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Globalex1&lt;/code&gt; et renommez le &lt;code&gt;Globalex7&lt;/code&gt; (supprimez le dossier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Globalex7&lt;/code&gt; afin de forcer le scénario &lt;code&gt;Globalex7&lt;/code&gt; à réaliser au moins 99% du niveau de récolte &lt;code&gt;OVOLREC&lt;/code&gt; du modèle tactique&lt;/strong&gt;.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-15&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Le contenu de &lt;code&gt;TWD_land.opt&lt;/code&gt; du scénario &lt;code&gt;Globalex7&lt;/code&gt; doit alors être :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+*OBJECTIVE
+_MAXMIN oVolRec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+osuprec &amp;lt;= 40272 1.._LENGTH _Goal(G1,9999) _SETFROMLOCAL(1.0)
+osuprec &amp;gt;= 40272 1.._LENGTH _Goal(G2,9999) _SETFROMLOCAL(0.99)
+
+_NDY(oVolRec) 1.._LENGTH
+
+
+*FORMAT MOSEK
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex7&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex7 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX7 -rep 10 -len 20 -rel 20 -thr 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX7&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observez à présent comment se compare le maintient du niveau des plantations (output &lt;code&gt;OSSUPL&lt;/code&gt;) entre ceux de la question 1, et ceux de cette re-plannification en regardant les fichiers &lt;code&gt;outputsdrift.csv&lt;/code&gt; de &lt;code&gt;replanning_EX1&lt;/code&gt; et &lt;code&gt;replanning_EX7&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Comment se comparent le maintient du niveau de &lt;code&gt;OSSUPL&lt;/code&gt; par rapport à la question 1 ?&lt;/strong&gt;&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-16&#34;&gt;
+  &lt;summary&gt;Révéler la correction&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;On peut remarquer que pour la question 1 et cette question, &lt;code&gt;OSSUPL&lt;/code&gt; garde une probabilité très basse de se maintenir au dela d&amp;rsquo;une grande diminution dès le premières périodes lorsque l&amp;rsquo;on compare le modèle tactique et stratégique.&lt;/p&gt;
+&lt;p&gt;Cependant, même pour des valeurs de drifts très hautes (e.g. 50%), on peut voir que &lt;code&gt;OSSUPL&lt;/code&gt; à tendance à avoir une plus haute probabilité de grandement diminuer sa valeur avec &lt;code&gt;Globalex7&lt;/code&gt; plutot qu&amp;rsquo;avec &lt;code&gt;Globalex1&lt;/code&gt;.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Objets, lecture et interrogation de modèles</title>
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/objects_parsing_interrogation/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/objects_parsing_interrogation/</guid>
       <description>&lt;h2 id=&#34;que-sont-les-objets-&#34;&gt;Que sont les objets ?&lt;/h2&gt;
 &lt;p&gt;FMT est fabriqué avec une structure particulière appelée &lt;em&gt;Programmation orientée objet&lt;/em&gt; (POO). Si vous n&amp;rsquo;en avez jamais entendu parler, en voici un résumé très rapide pour mieux comprendre comment utiliser FMT.&lt;/p&gt;
-&lt;p&gt;Dans l&amp;rsquo;approche OOP, le programme utilise différents &amp;ldquo;objets&amp;rdquo; qui ont une certaine &amp;ldquo;classe&amp;rdquo; et qui peuvent avoir différentes &amp;ldquo;fonctions&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Dans l&amp;rsquo;approche POO ou Object oriented programming en anglais (OOP), le programme utilise différents &amp;ldquo;objets&amp;rdquo; qui ont une certaine &amp;ldquo;classe&amp;rdquo; et qui peuvent avoir différentes &amp;ldquo;fonctions&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Vous connaissez et utilisez peut-être déjà des fonctions dans des logiciels tels que &amp;ldquo;R&amp;rdquo;. Par exemple, dans R, &lt;code&gt;plot()&lt;/code&gt; est une fonction.&lt;/p&gt;
 &lt;p&gt;Vous pourriez également être habitué.e à &lt;em&gt;certains&lt;/em&gt; objets et classes dans le logiciel que vous utilisez. Par exemple, dans &lt;code&gt;R&lt;/code&gt;, &lt;code&gt;data&amp;lt;-read.csv (données.csv)&lt;/code&gt; met le contenu des &lt;code&gt;données.fichier csv&lt;/code&gt; dans l&amp;rsquo;objet &lt;code&gt;data&lt;/code&gt;, qui a la classe &lt;code&gt;data frame&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&amp;rsquo;une classe particulière. Par exemple, une classe &lt;code&gt;chien&lt;/code&gt; aurait la fonction &lt;code&gt;abboyer_sur()&lt;/code&gt;. Si nous avons une classe nommée &lt;code&gt;chat&lt;/code&gt;, nous pourrions alors :&lt;/p&gt;
@@ -29,7 +783,7 @@
 &lt;li&gt;Faire aboyer le chien sur le chat: &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;À son tour, l&amp;rsquo;objet peut avoir des &amp;ldquo;propriétés&amp;rdquo;, qui sont exactement ce à quoi cela ressemble. Par exemple, disons que notre classe &lt;code&gt;chat&lt;/code&gt; a trois propriétés : &lt;code&gt;nom&lt;/code&gt; (qui peut être une chaîne de caractères), &lt;code&gt;age&lt;/code&gt; (qui peut être un nombre) et &lt;code&gt;effrayé&lt;/code&gt; (qui est un booléen, &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Dans notre exemple précédent, avant d&amp;rsquo;utiliser &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, la propriété &lt;code&gt;felix.peur&lt;/code&gt; pouvait être &lt;code&gt;false&lt;/code&gt;. Mais maintenant que nous avons utilisé &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, &lt;code&gt;felix.effrayé&lt;/code&gt; s&amp;rsquo;est surement changé en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Dans notre exemple précédent, avant d&amp;rsquo;utiliser &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, la propriété &lt;code&gt;felix.peur&lt;/code&gt; pouvait être &lt;code&gt;false&lt;/code&gt;. Mais maintenant que nous avons utilisé &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, &lt;code&gt;felix.peur&lt;/code&gt; s&amp;rsquo;est surement changé en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Enfin, une &lt;em&gt;classe parent&lt;/em&gt; en programmation orientée objet signifie que la &lt;em&gt;classe enfant&lt;/em&gt; &lt;em&gt;héritera&lt;/em&gt; automatiquement de toutes les fonctions et propriétés de la fonction parent.&lt;/p&gt;
 &lt;p&gt;Par exemple, supposons que nous ayons une classe parent &lt;code&gt;animal&lt;/code&gt; dont dérivent les classes &lt;code&gt;chien&lt;/code&gt; et &lt;code&gt;chat&lt;/code&gt;. Si la classe &lt;code&gt;animal&lt;/code&gt; a une fonction &lt;code&gt;respiration&lt;/code&gt; (&lt;code&gt;animal.respiration()&lt;/code&gt;), alors les classes &lt;code&gt;chien&lt;/code&gt; et &lt;code&gt;chat&lt;/code&gt; étant ses classes &lt;em&gt;enfant&lt;/em&gt;, elles auront automatiquement cette fonction (&lt;code&gt;chien.respiration()&lt;/code&gt;) et &lt;code&gt;chat.respiration()&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;La &lt;em&gt;programmation orientée objet&lt;/em&gt; est une façon particulière de programmer, intégrée dans le langage de programmation que vous utilisez, qui présente de multiples avantages. L&amp;rsquo;un d&amp;rsquo;eux est de rendre les choses plus faciles à représenter.&lt;/p&gt;
@@ -40,9 +794,9 @@
 &lt;p&gt;Dans FMT, les différents &lt;em&gt;espaces de noms&lt;/em&gt; sont :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Parser&lt;/code&gt;&lt;/strong&gt; : Contient des classes utilisées pour lire ou éditer les fichiers des modèles au format Woodstock&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Modèles&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour manipuler et résoudre les modèles&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Spatial&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour pour travailler sur des données spatialement explicites&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Heuristique&lt;/code&gt;&lt;/strong&gt; : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Models&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour manipuler et résoudre les modèles&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Spatial&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour travailler sur des données spatialement explicites&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Heuristics&lt;/code&gt;&lt;/strong&gt; : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/strong&gt;: Contient des informations sur la version actuelle de FMT, et les fonctions qu&amp;rsquo;elle contient (ce qui dépend de la façon dont il a été compilée)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -83,15 +837,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_aebff935e87cbb26b26f12b1700abf2b.png 400w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_142c22ea82ba47efe9a96c83464b2890.png 760w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_aebff935e87cbb26b26f12b1700abf2b.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_c655a1895cf5415363db3a5bb4ce2ec4.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp&#34;
                width=&#34;760&#34;
                height=&#34;443&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Cependant, ces attributs sont &amp;ldquo;protégés&amp;rdquo; afin qu&amp;rsquo;ils ne soient pas modifiés de manière incorrecte. Si vous souhaitez les lire lors de l&amp;rsquo;utilisation de FMT, vous devrez utiliser &lt;a href=&#34;../../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods&#34;&gt;les fonctions &lt;em&gt;getter&lt;/em&gt;&lt;/a&gt; qui les obtiendront pour vous :&lt;/p&gt;
 
@@ -110,15 +863,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_bb98b942d11785d6e69a626c82eccc05.png 400w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_f625e31903a8b14a97b39b786a2360e8.png 760w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_bb98b942d11785d6e69a626c82eccc05.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_80bc211b0ac010dce4d16d7358c69540.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp&#34;
                width=&#34;743&#34;
                height=&#34;361&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;De plus, vous pouvez les modifier de la bonne manière en utilisant &lt;a href=&#34;../../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods&#34;&gt;les fonctions &lt;em&gt;setter&lt;/em&gt;&lt;/a&gt;. Cela vous permet d&amp;rsquo;éditer différentes parties du modèle.&lt;/p&gt;
 
@@ -137,15 +889,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_05ee8f833cba6af62849c049bfad76a5.png 400w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_269faf72b82502b4f9f4dbcdd454d8db.png 760w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_05ee8f833cba6af62849c049bfad76a5.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_657efddb0952cf79e3d41bdb97290a3e.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp&#34;
                width=&#34;640&#34;
                height=&#34;266&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;En fin de compte, le &lt;code&gt;FMTModel&lt;/code&gt; est ce que nous appelons une &lt;em&gt;classe parent&lt;/em&gt; pour toutes les différentes classes de modèles utilisées par FMT, telles que &lt;code&gt;FMTlpmodel&lt;/code&gt; (modèle de programmation linéaire) et &lt;code&gt;FMTsesmodel&lt;/code&gt; (modèle spatialement explicite) selon le diagramme suivant :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
@@ -452,15 +1203,14 @@ _DEATH
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_90c2daf8549a9b756d72f35b01047f30.png 400w,
-               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_f401477bc32330e98e3570da562381c5.png 760w,
-               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_90c2daf8549a9b756d72f35b01047f30.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_ae6781061ca562c133fcf0a1d68bc72e.webp 400w,
+               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_1af80bb34d6cf59b2665f05ae42e4e6c.webp 760w,
+               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_ae6781061ca562c133fcf0a1d68bc72e.webp&#34;
                width=&#34;760&#34;
                height=&#34;429&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Un &lt;code&gt;FMTdevelopment&lt;/code&gt; est une classe importante de FMT. Elle représente une strate particulière, c&amp;rsquo;est-à-dire un peuplement forestier particulier qui a une composition et un âge donnés, et qui existe à une période donnée.&lt;/p&gt;
 &lt;p&gt;Par conséquent, l&amp;rsquo;objet &lt;code&gt;FMTdevelopment&lt;/code&gt; est associé à un objet &lt;code&gt;FMTmask&lt;/code&gt;, qui décrit l&amp;rsquo;ensemble des attributs (&lt;code&gt;FMTtheme&lt;/code&gt;) qui définit le &lt;code&gt;FMTdevelopment&lt;/code&gt;. Ceci est illustré sur le visuel suivant :&lt;/p&gt;
@@ -480,15 +1230,14 @@ _DEATH
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_41952b99982be65d68c2d721329f249d.png 400w,
-               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_c8d400e712cb2c5d4e0f194abb10629b.png 760w,
-               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_41952b99982be65d68c2d721329f249d.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_3c48f7f78ce6288f062278988b781815.webp 400w,
+               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_3ef049542e9fa4aa6add552e8d75740b.webp 760w,
+               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_3c48f7f78ce6288f062278988b781815.webp&#34;
                width=&#34;476&#34;
                height=&#34;480&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;code&gt;FMTdevelopment&lt;/code&gt; est la classe parente de deux classes, &lt;code&gt;FMTactualdevelopment&lt;/code&gt; et &lt;code&gt;FMTfuturdevelopment&lt;/code&gt;. Un &lt;code&gt;FMTactualdevelopment&lt;/code&gt; représente toujours une strate en début d&amp;rsquo;horizon de planification et contient donc l&amp;rsquo;information de la superficie de la strate. Les &lt;code&gt;FMTfuturdevelopment&lt;/code&gt; sont les futurs possibles et donc aucune superficie ne leur est attribuée au départ. C&amp;rsquo;est le résultat de l&amp;rsquo;optimisation qui nous informe sur la répartitions future des superficies au travers du &lt;code&gt;FMTgraph&lt;/code&gt;.&lt;/p&gt;
 
@@ -507,15 +1256,14 @@ _DEATH
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_8a9577332cd98e3a8e3c1c4593439d3c.png 400w,
-               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_cd38281952b022f303a3830958722016.png 760w,
-               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_8a9577332cd98e3a8e3c1c4593439d3c.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_00564999207bc5c9f09e7c2d3a9cc3dd.webp 400w,
+               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_710da217130215b1bf1eba50c9e7e1a2.webp 760w,
+               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_00564999207bc5c9f09e7c2d3a9cc3dd.webp&#34;
                width=&#34;760&#34;
                height=&#34;348&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Voici ici quelques fonctions de la classe &lt;code&gt;FMTdevelopment&lt;/code&gt; qui peuvent être importantes pour manipuler le modèle à différente fins :&lt;/p&gt;
 &lt;ul&gt;
@@ -740,15 +1488,14 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a ét
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_ac4944d2c540ef9c1673d6f5e501c098.png 400w,
-               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_5751490d1777fd7feacb814d1dafcfb6.png 760w,
-               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_ac4944d2c540ef9c1673d6f5e501c098.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_6c4de68ee6f4a86e90b3cb47a896fb63.webp 400w,
+               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_f74791b998934ed9303ebdad1b28c12d.webp 760w,
+               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_6c4de68ee6f4a86e90b3cb47a896fb63.webp&#34;
                width=&#34;760&#34;
                height=&#34;19&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Remarquez également que nous avons créé une variable nommée &lt;code&gt;tolerance&lt;/code&gt;, qui est nécessaire à la fonction &lt;code&gt;lpmodel$setsolution()&lt;/code&gt;, comme l&amp;rsquo;indique &lt;a href=&#34;../../../../doxygen/html/classModels_1_1FMTsrmodel.html#af2b39c92f48474f4f09bc4c94c99b35b&#34;&gt;la documentation&lt;/a&gt; une fois de plus :&lt;/p&gt;
 
@@ -767,15 +1514,14 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a ét
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_1c5b2390f837e8d344a9cfbed30431d7.png 400w,
-               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_92b70cc5ce247ede254cb9eb35deeec1.png 760w,
-               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_1c5b2390f837e8d344a9cfbed30431d7.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_c9d2ccfc09afcd0233d8fed690622cb3.webp 400w,
+               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_9178b78bef2b3c43e897a78ae2d9c0e4.webp 760w,
+               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_c9d2ccfc09afcd0233d8fed690622cb3.webp&#34;
                width=&#34;605&#34;
                height=&#34;24&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;L&amp;rsquo;équivalent en code Python est le suivant :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import sys
@@ -953,6 +1699,11 @@ cmake --install build/release --config Release
 &lt;p&gt;Ainsi, si vous avez installé Mosek dans &lt;code&gt;C:\Program Files\Mosek&lt;/code&gt;, vous pouvez conserver &lt;code&gt;C:/PROGRA~1/Mosek/&lt;/code&gt; dans ces commandes.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Si vous avez installé une version antérieure de Visual Studio à celle de 2019, il vous faudra changer la partie indiquant la version de Visual Studio.
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Copiez/collez toutes les commandes qui sont prêtes dans le bloc-notes vers l&amp;rsquo;invite de commande pour lancer la compilation. Appuyez sur la touche Entrée pour les activer.&lt;/li&gt;
 &lt;/ol&gt;
@@ -1028,7 +1779,7 @@ cmake --install build/release --config Release
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Vous pouvez utiliser les informations des pages précédentes de la documentation pour vous aider.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Lorsque vous avez terminé, ou si vous êtes bloqué, &lt;strong&gt;vous pouvez afficher la correction de cet exercice pour du coe Python en cliquant sur le bouton &amp;ldquo;Révéler la correction&amp;rdquo; ci-dessous&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Lorsque vous avez terminé, ou si vous êtes bloqué.e, &lt;strong&gt;vous pouvez afficher la correction de cet exercice pour du code Python en cliquant sur le bouton &amp;ldquo;Révéler la correction&amp;rdquo; ci-dessous&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;correction&#34;&gt;Correction&lt;/h2&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
@@ -1236,15 +1987,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_aab03734b8bf770b8987e0d24c13d780.png 400w,
-               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_50f6afe23186059441fe678514ba6398.png 760w,
-               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_aab03734b8bf770b8987e0d24c13d780.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_5554934147af90ee65df5800a14c3adc.webp 400w,
+               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_fecffe3f3b3e4ec8fd07af7a4e0d0146.webp 760w,
+               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_5554934147af90ee65df5800a14c3adc.webp&#34;
                width=&#34;626&#34;
                height=&#34;106&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Cependant, contrairement à l&amp;rsquo;objet &lt;code&gt;FMTgraph&lt;/code&gt; décrit dans la section sur &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;l&amp;rsquo;optimisation spatialement référencée&lt;/a&gt;, le &lt;code&gt;FMTlinegraph&lt;/code&gt; ne contient pas une énumération complète de toutes les actions et états possibles pour les strates dans le pixel : au lieu de cela, il ne contient qu&amp;rsquo;une solution, ou une évolution possible pour les strates.&lt;/p&gt;
 &lt;h2 id=&#34;faire-des-transitions-avec-des-sorties-uniques&#34;&gt;Faire des transitions avec des sorties uniques&lt;/h2&gt;
@@ -1265,15 +2015,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_745f190eb07a2b2ae13a45dfad418807.png 400w,
-               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_45afc81c335a218a7a25b073e17ef5b2.png 760w,
-               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_745f190eb07a2b2ae13a45dfad418807.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_d1c9836a98e32eb10658f7f33165f8f9.webp 400w,
+               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_8d09ebb8d328ee26710201641c411602.webp 760w,
+               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_d1c9836a98e32eb10658f7f33165f8f9.webp&#34;
                width=&#34;636&#34;
                height=&#34;204&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Par conséquent, &lt;strong&gt;vous devrez modifier les transitions d&amp;rsquo;un &lt;code&gt;FMTmodel&lt;/code&gt; pour pouvoir les utiliser dans un &lt;code&gt;FMTsesmodel&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;À cette fin, vous pouvez utiliser la fonction &lt;code&gt;FMTtransition.single()&lt;/code&gt;, qui transforme automatiquement les transitions à sorties multiples en transitions à sortie unique.&lt;/p&gt;
@@ -1296,15 +2045,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_b84ffbdec8c57f26383e63828fc2a2ab.png 400w,
-               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_759b25f9148b37145b8804c04d950dff.png 760w,
-               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_b84ffbdec8c57f26383e63828fc2a2ab.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_5a810eb0a7cfecddbff6090717e317d3.webp 400w,
+               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_95b63de55d5c850224c390da97846a20.webp 760w,
+               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_5a810eb0a7cfecddbff6090717e317d3.webp&#34;
                width=&#34;760&#34;
                height=&#34;290&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;code&gt;FMTevent&lt;/code&gt; peut représenter tout type de perturbation spatialement explicite (coupe, feu, etc.). Il est associé à la période de temps de l&amp;rsquo;événement, et aux coordonnées de l&amp;rsquo;événement spatial.&lt;/p&gt;
 
@@ -1323,15 +2071,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_bd041ae467eb5dcb0ecd31a18f2fb39f.png 400w,
-               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_0f2e717205eb525ac3126aa510c02207.png 760w,
-               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_bd041ae467eb5dcb0ecd31a18f2fb39f.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_a3370702a7de3b3d95dfb402cd8e352e.webp 400w,
+               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_3888d84796208c1d0b4b7ed52d3d80dd.webp 760w,
+               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_a3370702a7de3b3d95dfb402cd8e352e.webp&#34;
                width=&#34;474&#34;
                height=&#34;132&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;la-carte-forestière-initiale&#34;&gt;La carte forestière initiale&lt;/h2&gt;
 &lt;p&gt;En tant que modèle spatialement explicite, le &lt;code&gt;FMTsesmodel&lt;/code&gt; nécessite des informations spatialement explicites sur les forêts du paysage au début de l&amp;rsquo;horizon de planification.&lt;/p&gt;
@@ -1370,15 +2117,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_3e6933ac2fa98c96c072dd91b68488de.png 400w,
-               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_bc77a4a0b0397412666a6f4a1d914de8.png 760w,
-               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_3e6933ac2fa98c96c072dd91b68488de.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_060d419e30beb29b21274d862ca5e9ee.webp 400w,
+               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_fb42e55d7f3b1eca95b76efc1bd7b6c8.webp 760w,
+               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_060d419e30beb29b21274d862ca5e9ee.webp&#34;
                width=&#34;760&#34;
                height=&#34;219&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;PERIODS&amp;gt;&lt;/code&gt; correspondent à la période de temps pour laquelle il faut fixer la contrainte.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1406,15 +2152,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_2c554344f22e57a9fbe2cc4e80ca2f4f.png 400w,
-               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_7ebfac83c25700cecbed2e79dbb19362.png 760w,
-               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_2c554344f22e57a9fbe2cc4e80ca2f4f.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_105a8715c5a31dd27783689e828e8792.webp 400w,
+               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_22d4e6cdfa569256da9c68dd5df637e5.webp 760w,
+               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_105a8715c5a31dd27783689e828e8792.webp&#34;
                width=&#34;760&#34;
                height=&#34;246&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;Les &lt;code&gt;GREENUP&lt;/code&gt; correspondent au nombre de périodes de temps pour lesquelles nous considérons que deux événements sont voisins. Par exemple, si &lt;code&gt;GREENUP&lt;/code&gt; est égal à 3, deux blocs spatiaux d&amp;rsquo;actions qui sont sous la distance maximale indiquée par &lt;code&gt;DISTANCE&lt;/code&gt; mais qui sont séparés temporellement par 4 périodes ne seront pas considérés comme spatialement adjacents ; cependant, s&amp;rsquo;ils étaient séparés par 3, 2 ou 1 période, ou sont dans la même période, ils seront considérés comme spatialement adjacents.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1441,15 +2186,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_5a3b9c1a5a98a1ac316b5c55aa6260ff.png 400w,
-               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_bb339e473835be21abad801a7d9f31d2.png 760w,
-               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_5a3b9c1a5a98a1ac316b5c55aa6260ff.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_612c6f6be0d5b7705e342376bb41a446.webp 400w,
+               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_947600aa8eb7df5c4477b478d4fef32e.webp 760w,
+               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_612c6f6be0d5b7705e342376bb41a446.webp&#34;
                width=&#34;760&#34;
                height=&#34;383&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;En R, le code pour utiliser &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; ressemblera à ceci :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(FMT) # Charge FMT dans R
@@ -1851,17 +2595,80 @@ Solution stuck after 27 iterations Skipping
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
                width=&#34;40%&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/gcyr/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test&#34;&gt;Mermaid test&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+pie showData
+title Les tests de FMT
+&#34;Syntaxe&#34; : 3.5
+&#34;Unités spatiale&#34; : 5.3
+&#34;Planification&#34; : 61.4
+&#34;Re-planification&#34; : 5.3
+&#34;Spatialisation&#34; : 7.0
+&#34;Machine Learning&#34; : 7.0
+&#34;Presolve&#34; : 3.5
+&#34;Analyses autres&#34; : 7.0
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-2&#34;&gt;Mermaid test 2&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-3&#34;&gt;Mermaid test 3&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+pie showData
+title Les tests de FMT
+&#34;Syntaxe&#34; : 3.5
+&#34;Unités spatiale&#34; : 5.3
+&#34;Planification&#34; : 61.4
+&#34;Re-planification&#34; : 5.3
+&#34;Spatialisation&#34; : 7.0
+&#34;Machine Learning&#34; : 7.0
+&#34;Presolve&#34; : 3.5
+&#34;Analyses autres&#34; : 7.0
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-2-1&#34;&gt;Mermaid test 2&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-2-2&#34;&gt;Mermaid test 2&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mermaid-test-2-3&#34;&gt;Mermaid test 2&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;controles&#34;&gt;Controles&lt;/h2&gt;
 &lt;ul&gt;
@@ -2007,19 +2814,18 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
                width=&#34;40%&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;problématique&#34;&gt;Problématique&lt;/h1&gt;
+&lt;h2 id=&#34;problématique&#34;&gt;Problématique&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Notre bilan carbone est difficile à obtenir rapidement:
 &lt;ul&gt;
@@ -2037,7 +2843,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;problématique-1&#34;&gt;Problématique&lt;/h1&gt;
+&lt;h2 id=&#34;problématique-1&#34;&gt;Problématique&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeux complexe:
 &lt;ul&gt;
@@ -2064,15 +2870,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_3e2f13d9abf88e0b128425374fafb022.jpg 400w,
-               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_aef9af3570f698f2c7593e9b162be91a.jpg 760w,
-               /FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/nep1_hu24baea42740819f99d41add56ebeec94_38854_3e2f13d9abf88e0b128425374fafb022.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/nep1_hu24baea42740819f99d41add56ebeec94_38854_00b8ebeea36d2f3d4aa1005fbcddb508.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/nep1_hu24baea42740819f99d41add56ebeec94_38854_ee8d4174fc05c8ad5a611672cef48a10.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/nep1_hu24baea42740819f99d41add56ebeec94_38854_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/nep1_hu24baea42740819f99d41add56ebeec94_38854_00b8ebeea36d2f3d4aa1005fbcddb508.webp&#34;
                width=&#34;30%&#34;
                height=&#34;30%&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;productivité-nette-de-lécosystème-1&#34;&gt;Productivité nette de l’écosystème&lt;/h2&gt;
@@ -2092,15 +2897,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_4dae00f9f0f49467f8ff27cef7012c9d.jpg 400w,
-               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_f7f6646cae196dd008d471e60246feb1.jpg 760w,
-               /FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_4dae00f9f0f49467f8ff27cef7012c9d.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_458cc60fd18ce6667ba06476ab346bb1.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_68642a547a9eaecde2ab4250804a2087.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/nep2_hu5cc09a4df5dda8c5a6ad4ce4a09ae803_36469_458cc60fd18ce6667ba06476ab346bb1.webp&#34;
                width=&#34;30%&#34;
                height=&#34;30%&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;problématique-productivité-nette-de-lécosystème-&#34;&gt;Problématique: Productivité nette de l’écosystème ?&lt;/h2&gt;
@@ -2120,15 +2924,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1701541e4dddfe927aebd272ef312f16.jpg 400w,
-               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_97e97022a2744b6bedc9539b4616f09d.jpg 760w,
-               /FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1701541e4dddfe927aebd272ef312f16.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_a50d799ff25ee5b44281cac4e5cf7911.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_c2dfcc4e4d0d63db31d950d44dfe552e.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/nep3_hu8f936ebaa7e8e305b17b52baf30e18be_38555_a50d799ff25ee5b44281cac4e5cf7911.webp&#34;
                width=&#34;30%&#34;
                height=&#34;30%&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;problématique-états-des-réservoirs-&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
@@ -2148,15 +2951,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_ded7a18421b10e73ed78d2dcae3c5255.jpg 400w,
-               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_11890410cf0b1b28dc8f22f873ef0c02.jpg 760w,
-               /FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_ded7a18421b10e73ed78d2dcae3c5255.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_d92ae3817709a8992e22e888e36fea5d.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_407e936e35808c887392dd1989456b4d.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/pool1_hue1aafad777b9e987c82b8ee3d28bebf8_45999_d92ae3817709a8992e22e888e36fea5d.webp&#34;
                width=&#34;30%&#34;
                height=&#34;30%&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;problématique-états-des-réservoirs--1&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
@@ -2176,15 +2978,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_adab33c79f78275d1c0e42c17069d607.jpg 400w,
-               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_84cc08cee2b241c6db91a1f00d0b5be7.jpg 760w,
-               /FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_adab33c79f78275d1c0e42c17069d607.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_df8e0073b65e762d2944bb863026ef6b.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_ef6386354e40cf9a60a74337918ad550.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/pool2_hu038e5ba599aa3441b3cf7b4aa1953222_39723_df8e0073b65e762d2944bb863026ef6b.webp&#34;
                width=&#34;30%&#34;
                height=&#34;30%&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;problématique-états-des-réservoirs--2&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
@@ -2204,15 +3005,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_f77d977dce1725671d25a52873d31e12.jpg 400w,
-               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_422058d29a1cfce89b064ca1d2337d3b.jpg 760w,
-               /FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_f77d977dce1725671d25a52873d31e12.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_42dcbc88d18e8076c3a9d21cf2866400.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_d0e9cce384092fefe7472d9cb47b7991.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/pool3_hu097e0c353b180eef2c7547dc16571e1d_42664_42dcbc88d18e8076c3a9d21cf2866400.webp&#34;
                width=&#34;30%&#34;
                height=&#34;30%&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;problématiquepour-chaque-période&#34;&gt;Problématique:…Pour chaque période&lt;/h2&gt;
@@ -2232,15 +3032,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_c02d6cfa30ce0d51e4a0f0e6553bbeb9.jpg 400w,
-               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_0e76b3767bd177ca3aa31e52fe8b2294.jpg 760w,
-               /FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_c02d6cfa30ce0d51e4a0f0e6553bbeb9.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_2151d7216cac7639e8ae6af5c498ce56.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_ef13d0f33f606bd1116d05c787001d79.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_2151d7216cac7639e8ae6af5c498ce56.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;objectif&#34;&gt;Objectif&lt;/h2&gt;
@@ -2278,15 +3077,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_383b65639894a45d2218431f70422cfc.jpg 400w,
-               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_d0d792e27682672d00d8b2525e1f5d4b.jpg 760w,
-               /FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_383b65639894a45d2218431f70422cfc.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_ebf071a0ad306d93e2fd9be1a6b3fcd6.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_7f62ba65e633246b7c2ede7be2352036.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_ebf071a0ad306d93e2fd9be1a6b3fcd6.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;apprentissage-réalisé&#34;&gt;Apprentissage réalisé&lt;/h2&gt;
@@ -2306,15 +3104,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_17c89c59b70bc89674b0868ddc81acbd.jpg 400w,
-               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_bca3b17e4e6177b1ee59e011f1b5dfd1.jpg 760w,
-               /FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_17c89c59b70bc89674b0868ddc81acbd.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_fe7282caba56d80420d4b4b7bc8533c1.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_f108493dc4d4608a351edacdb599ef37.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_fe7282caba56d80420d4b4b7bc8533c1.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;utilisation-de-la-méthode&#34;&gt;Utilisation de la méthode&lt;/h2&gt;
@@ -2334,15 +3131,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_842949383e8f56b7c8f2b6ab99f4af86.jpg 400w,
-               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_27e8c7f5d1a79702312651af363a9d9b.jpg 760w,
-               /FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_842949383e8f56b7c8f2b6ab99f4af86.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_7ab2fa3325d55eabef4c520506dd343c.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_ad5c505b813578f8bab875887a5ae6ad.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_7ab2fa3325d55eabef4c520506dd343c.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;utilisation-de-la-méthode-1&#34;&gt;Utilisation de la méthode&lt;/h2&gt;
@@ -2362,15 +3158,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_d48135e1ef1a1ba76c6abfd448db416c.jpg 400w,
-               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_aef2db820e84dd7d8eecf9b21baae274.jpg 760w,
-               /FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_d48135e1ef1a1ba76c6abfd448db416c.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_07703a84c37256162d1ecc2d3521bf00.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_9ab1a9fcb5d59d98cd8d4e7683871f89.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/m2_hu6090c3072aaa81e07d27f5fbf0a9b529_99539_07703a84c37256162d1ecc2d3521bf00.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;concrètement&#34;&gt;Concrètement&lt;/h2&gt;
@@ -2473,15 +3268,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_07acc442700004552a6f361aa7016565.jpg 400w,
-               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_a670cf9689e8759e821b7d8c4d22d386.jpg 760w,
-               /FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/se1_hucb71174a22739ac6e2fceddada47c089_147534_07acc442700004552a6f361aa7016565.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/se1_hucb71174a22739ac6e2fceddada47c089_147534_52f5fd4941cf938b33a5bfe0905d610c.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/se1_hucb71174a22739ac6e2fceddada47c089_147534_1225c8f9c3c79e1f09d6ab2d36baad3f.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/se1_hucb71174a22739ac6e2fceddada47c089_147534_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/se1_hucb71174a22739ac6e2fceddada47c089_147534_52f5fd4941cf938b33a5bfe0905d610c.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;objectif--meilleur-bilan-1&#34;&gt;Objectif : Meilleur bilan&lt;/h2&gt;
@@ -2501,15 +3295,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_51a18e3cb2dcd2d9958cb4c82e4be6e4.jpg 400w,
-               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_a19231ab76a43a2463cf8aad608be1e5.jpg 760w,
-               /FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/se2_huab55fcd687d889e341f5cbace1828b8b_149176_51a18e3cb2dcd2d9958cb4c82e4be6e4.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/se2_huab55fcd687d889e341f5cbace1828b8b_149176_5cc47849daf9c3f15ff706bbe49844a2.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/se2_huab55fcd687d889e341f5cbace1828b8b_149176_4b74fd2596e00fec8ce48d0bcc7a53de.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/se2_huab55fcd687d889e341f5cbace1828b8b_149176_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/se2_huab55fcd687d889e341f5cbace1828b8b_149176_5cc47849daf9c3f15ff706bbe49844a2.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;objectif--meilleur-bilan-et-respect-des-contraintes&#34;&gt;Objectif : Meilleur bilan et respect des contraintes&lt;/h2&gt;
@@ -2529,15 +3322,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_b6e07c5560226bf0c5c5febd530bc5b4.jpg 400w,
-               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_7c7ff0bee997a5cd7d825805c0c1db7e.jpg 760w,
-               /FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_b6e07c5560226bf0c5c5febd530bc5b4.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_cd763d5e02eb8d7a88947b92c20139d4.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_278ada6c311635f5287b6ae42f896b11.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/se3_hu7c63fad9fa31fc6ad0c612be74b86b9d_203046_cd763d5e02eb8d7a88947b92c20139d4.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;objectif--meilleur-bilan-et-respect-des-contraintes-1&#34;&gt;Objectif : Meilleur bilan et respect des contraintes&lt;/h2&gt;
@@ -2557,15 +3349,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_f76e8c24d120e93415be0dbd709e2c62.jpg 400w,
-               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_cd469254f6f042a166b7fbc0ebfaac3f.jpg 760w,
-               /FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_f76e8c24d120e93415be0dbd709e2c62.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_eee7a075afb804810355ad764142f01f.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_37398069f838d3d07d2d3d8b4eef768e.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/se4_hud41e7bfbeec1bc45f573bac432d24bc5_207485_eee7a075afb804810355ad764142f01f.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;apprentissage&#34;&gt;Apprentissage&lt;/h2&gt;
@@ -2585,15 +3376,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_4a2e89ffded06b32bf819a16d1cbbd71.jpg 400w,
-               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_42884f76c9c3c5e5bd137a04116470bd.jpg 760w,
-               /FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/a1_hua6de14f82de572236fd633de943c2301_207901_4a2e89ffded06b32bf819a16d1cbbd71.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/a1_hua6de14f82de572236fd633de943c2301_207901_775e9250f93c6aa45518712e799aaae5.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/a1_hua6de14f82de572236fd633de943c2301_207901_5d50f6d94c11b78faa6763c5368c8a82.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/a1_hua6de14f82de572236fd633de943c2301_207901_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/a1_hua6de14f82de572236fd633de943c2301_207901_775e9250f93c6aa45518712e799aaae5.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;apprentissage-1&#34;&gt;Apprentissage&lt;/h2&gt;
@@ -2613,17 +3403,35 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_f06be374581069e1d1a1b007a80ab8f7.jpg 400w,
-               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_33254aae54858e1c6cff2c26a91662df.jpg 760w,
-               /FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/a2_hu992bee08fadbc1c280bf15646403c53f_166321_f06be374581069e1d1a1b007a80ab8f7.jpg&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone/a2_hu992bee08fadbc1c280bf15646403c53f_166321_19c14fb93a72185ad48695d887bcbb0b.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/a2_hu992bee08fadbc1c280bf15646403c53f_166321_9f141014da92b3686fa7504be09dcc15.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/a2_hu992bee08fadbc1c280bf15646403c53f_166321_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/a2_hu992bee08fadbc1c280bf15646403c53f_166321_19c14fb93a72185ad48695d887bcbb0b.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On peut maintenant obtenir un bilan de carbone facilement pour:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Une solution spatiale explicite et spatialement référencée&lt;/li&gt;
+&lt;li&gt;Les cinqs principaux réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Le flux de productivitée nette de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On peut maintenant utiliser le Machine Learning pour:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Générer des solutions spatialement explicite plausible&lt;/li&gt;
+&lt;li&gt;Améliorer notre planification en fonction de notre bilan de carbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;des-questions&#34;&gt;Des Questions?&lt;/h2&gt;
 
 
@@ -2641,15 +3449,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png 400w,
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_50aff8a1584a5640919f47fa310bec23.png 760w,
-               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_e515696602ef3dc896eabeb31405a409.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
                width=&#34;40%&#34;
                height=&#34;auto&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;script src=&#34;https://code.jquery.com/jquery-3.5.0.js&#34;&gt;&lt;/script&gt;

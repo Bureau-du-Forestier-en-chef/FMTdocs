@@ -729,6 +729,41 @@
 
     
       <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/fr/docs/advanced/"><i class="fas fa-code-branch pr-1"></i>Les fonctions avancées</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/advanced/replanning/">Re-planification spatialement référencée</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/advanced/exercice_2/">Exercice 2</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
         <a class="docs-toc-link " href="/FMTdocs/fr/docs/slides_links/"><i class="fas fa-film pr-1"></i>Présentations</a>
     
 
@@ -829,7 +864,7 @@
           <div class="article-style">
             <h2 id="que-sont-les-objets-">Que sont les objets ?</h2>
 <p>FMT est fabriqué avec une structure particulière appelée <em>Programmation orientée objet</em> (POO). Si vous n&rsquo;en avez jamais entendu parler, en voici un résumé très rapide pour mieux comprendre comment utiliser FMT.</p>
-<p>Dans l&rsquo;approche OOP, le programme utilise différents &ldquo;objets&rdquo; qui ont une certaine &ldquo;classe&rdquo; et qui peuvent avoir différentes &ldquo;fonctions&rdquo;.</p>
+<p>Dans l&rsquo;approche POO ou Object oriented programming en anglais (OOP), le programme utilise différents &ldquo;objets&rdquo; qui ont une certaine &ldquo;classe&rdquo; et qui peuvent avoir différentes &ldquo;fonctions&rdquo;.</p>
 <p>Vous connaissez et utilisez peut-être déjà des fonctions dans des logiciels tels que &ldquo;R&rdquo;. Par exemple, dans R, <code>plot()</code> est une fonction.</p>
 <p>Vous pourriez également être habitué.e à <em>certains</em> objets et classes dans le logiciel que vous utilisez. Par exemple, dans <code>R</code>, <code>data&lt;-read.csv (données.csv)</code> met le contenu des <code>données.fichier csv</code> dans l&rsquo;objet <code>data</code>, qui a la classe <code>data frame</code>.</p>
 <p>Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&rsquo;une classe particulière. Par exemple, une classe <code>chien</code> aurait la fonction <code>abboyer_sur()</code>. Si nous avons une classe nommée <code>chat</code>, nous pourrions alors :</p>
@@ -839,7 +874,7 @@
 <li>Faire aboyer le chien sur le chat: <code>pluto.abboyer_sur(felix)</code></li>
 </ul>
 <p>À son tour, l&rsquo;objet peut avoir des &ldquo;propriétés&rdquo;, qui sont exactement ce à quoi cela ressemble. Par exemple, disons que notre classe <code>chat</code> a trois propriétés : <code>nom</code> (qui peut être une chaîne de caractères), <code>age</code> (qui peut être un nombre) et <code>effrayé</code> (qui est un booléen, <code>true</code> ou <code>false</code>).</p>
-<p>Dans notre exemple précédent, avant d&rsquo;utiliser <code>pluto.abboyer_sur(felix)</code>, la propriété <code>felix.peur</code> pouvait être <code>false</code>. Mais maintenant que nous avons utilisé <code>pluto.abboyer_sur(felix)</code>, <code>felix.effrayé</code> s&rsquo;est surement changé en <code>true</code>.</p>
+<p>Dans notre exemple précédent, avant d&rsquo;utiliser <code>pluto.abboyer_sur(felix)</code>, la propriété <code>felix.peur</code> pouvait être <code>false</code>. Mais maintenant que nous avons utilisé <code>pluto.abboyer_sur(felix)</code>, <code>felix.peur</code> s&rsquo;est surement changé en <code>true</code>.</p>
 <p>Enfin, une <em>classe parent</em> en programmation orientée objet signifie que la <em>classe enfant</em> <em>héritera</em> automatiquement de toutes les fonctions et propriétés de la fonction parent.</p>
 <p>Par exemple, supposons que nous ayons une classe parent <code>animal</code> dont dérivent les classes <code>chien</code> et <code>chat</code>. Si la classe <code>animal</code> a une fonction <code>respiration</code> (<code>animal.respiration()</code>), alors les classes <code>chien</code> et <code>chat</code> étant ses classes <em>enfant</em>, elles auront automatiquement cette fonction (<code>chien.respiration()</code>) et <code>chat.respiration()</code>).</p>
 <p>La <em>programmation orientée objet</em> est une façon particulière de programmer, intégrée dans le langage de programmation que vous utilisez, qui présente de multiples avantages. L&rsquo;un d&rsquo;eux est de rendre les choses plus faciles à représenter.</p>
@@ -850,9 +885,9 @@
 <p>Dans FMT, les différents <em>espaces de noms</em> sont :</p>
 <ul>
 <li><strong><code>Parser</code></strong> : Contient des classes utilisées pour lire ou éditer les fichiers des modèles au format Woodstock</li>
-<li><strong><code>Modèles</code></strong>: Contient des classes utilisées pour manipuler et résoudre les modèles</li>
-<li><strong><code>Spatial</code></strong>: Contient des classes utilisées pour pour travailler sur des données spatialement explicites</li>
-<li><strong><code>Heuristique</code></strong> : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps</li>
+<li><strong><code>Models</code></strong>: Contient des classes utilisées pour manipuler et résoudre les modèles</li>
+<li><strong><code>Spatial</code></strong>: Contient des classes utilisées pour travailler sur des données spatialement explicites</li>
+<li><strong><code>Heuristics</code></strong> : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps</li>
 <li><strong><code>Version</code></strong>: Contient des informations sur la version actuelle de FMT, et les fonctions qu&rsquo;elle contient (ce qui dépend de la façon dont il a été compilée)</li>
 </ul>
 <div class="alert alert-note">
@@ -893,15 +928,14 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" >
-        <img alt="" srcset="
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_aebff935e87cbb26b26f12b1700abf2b.png 400w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_142c22ea82ba47efe9a96c83464b2890.png 760w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1200x1200_fit_lanczos_3.png 1200w"
-               src="/FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_aebff935e87cbb26b26f12b1700abf2b.png"
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_c655a1895cf5415363db3a5bb4ce2ec4.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp"
                width="760"
                height="443"
-               loading="lazy" data-zoomable /></div>
+               loading="eager" data-zoomable /></div>
   </div></figure>
 <p>Cependant, ces attributs sont &ldquo;protégés&rdquo; afin qu&rsquo;ils ne soient pas modifiés de manière incorrecte. Si vous souhaitez les lire lors de l&rsquo;utilisation de FMT, vous devrez utiliser <a href="../../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods">les fonctions <em>getter</em></a> qui les obtiendront pour vous :</p>
 
@@ -920,15 +954,14 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" >
-        <img alt="" srcset="
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_bb98b942d11785d6e69a626c82eccc05.png 400w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_f625e31903a8b14a97b39b786a2360e8.png 760w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_1200x1200_fit_lanczos_3.png 1200w"
-               src="/FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_bb98b942d11785d6e69a626c82eccc05.png"
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_80bc211b0ac010dce4d16d7358c69540.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp"
                width="743"
                height="361"
-               loading="lazy" data-zoomable /></div>
+               loading="eager" data-zoomable /></div>
   </div></figure>
 <p>De plus, vous pouvez les modifier de la bonne manière en utilisant <a href="../../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods">les fonctions <em>setter</em></a>. Cela vous permet d&rsquo;éditer différentes parties du modèle.</p>
 
@@ -947,15 +980,14 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" >
-        <img alt="" srcset="
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_05ee8f833cba6af62849c049bfad76a5.png 400w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_269faf72b82502b4f9f4dbcdd454d8db.png 760w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_1200x1200_fit_lanczos_3.png 1200w"
-               src="/FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_05ee8f833cba6af62849c049bfad76a5.png"
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_657efddb0952cf79e3d41bdb97290a3e.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp"
                width="640"
                height="266"
-               loading="lazy" data-zoomable /></div>
+               loading="eager" data-zoomable /></div>
   </div></figure>
 <p>En fin de compte, le <code>FMTModel</code> est ce que nous appelons une <em>classe parent</em> pour toutes les différentes classes de modèles utilisées par FMT, telles que <code>FMTlpmodel</code> (modèle de programmation linéaire) et <code>FMTsesmodel</code> (modèle spatialement explicite) selon le diagramme suivant :</p>
 <pre><code class="language-mermaid">classDiagram

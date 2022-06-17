@@ -19,7 +19,7 @@
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/objects_parsing_interrogation/</guid>
       <description>&lt;h2 id=&#34;que-sont-les-objets-&#34;&gt;Que sont les objets ?&lt;/h2&gt;
 &lt;p&gt;FMT est fabriqué avec une structure particulière appelée &lt;em&gt;Programmation orientée objet&lt;/em&gt; (POO). Si vous n&amp;rsquo;en avez jamais entendu parler, en voici un résumé très rapide pour mieux comprendre comment utiliser FMT.&lt;/p&gt;
-&lt;p&gt;Dans l&amp;rsquo;approche OOP, le programme utilise différents &amp;ldquo;objets&amp;rdquo; qui ont une certaine &amp;ldquo;classe&amp;rdquo; et qui peuvent avoir différentes &amp;ldquo;fonctions&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Dans l&amp;rsquo;approche POO ou Object oriented programming en anglais (OOP), le programme utilise différents &amp;ldquo;objets&amp;rdquo; qui ont une certaine &amp;ldquo;classe&amp;rdquo; et qui peuvent avoir différentes &amp;ldquo;fonctions&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Vous connaissez et utilisez peut-être déjà des fonctions dans des logiciels tels que &amp;ldquo;R&amp;rdquo;. Par exemple, dans R, &lt;code&gt;plot()&lt;/code&gt; est une fonction.&lt;/p&gt;
 &lt;p&gt;Vous pourriez également être habitué.e à &lt;em&gt;certains&lt;/em&gt; objets et classes dans le logiciel que vous utilisez. Par exemple, dans &lt;code&gt;R&lt;/code&gt;, &lt;code&gt;data&amp;lt;-read.csv (données.csv)&lt;/code&gt; met le contenu des &lt;code&gt;données.fichier csv&lt;/code&gt; dans l&amp;rsquo;objet &lt;code&gt;data&lt;/code&gt;, qui a la classe &lt;code&gt;data frame&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&amp;rsquo;une classe particulière. Par exemple, une classe &lt;code&gt;chien&lt;/code&gt; aurait la fonction &lt;code&gt;abboyer_sur()&lt;/code&gt;. Si nous avons une classe nommée &lt;code&gt;chat&lt;/code&gt;, nous pourrions alors :&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;li&gt;Faire aboyer le chien sur le chat: &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;À son tour, l&amp;rsquo;objet peut avoir des &amp;ldquo;propriétés&amp;rdquo;, qui sont exactement ce à quoi cela ressemble. Par exemple, disons que notre classe &lt;code&gt;chat&lt;/code&gt; a trois propriétés : &lt;code&gt;nom&lt;/code&gt; (qui peut être une chaîne de caractères), &lt;code&gt;age&lt;/code&gt; (qui peut être un nombre) et &lt;code&gt;effrayé&lt;/code&gt; (qui est un booléen, &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Dans notre exemple précédent, avant d&amp;rsquo;utiliser &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, la propriété &lt;code&gt;felix.peur&lt;/code&gt; pouvait être &lt;code&gt;false&lt;/code&gt;. Mais maintenant que nous avons utilisé &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, &lt;code&gt;felix.effrayé&lt;/code&gt; s&amp;rsquo;est surement changé en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Dans notre exemple précédent, avant d&amp;rsquo;utiliser &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, la propriété &lt;code&gt;felix.peur&lt;/code&gt; pouvait être &lt;code&gt;false&lt;/code&gt;. Mais maintenant que nous avons utilisé &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, &lt;code&gt;felix.peur&lt;/code&gt; s&amp;rsquo;est surement changé en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Enfin, une &lt;em&gt;classe parent&lt;/em&gt; en programmation orientée objet signifie que la &lt;em&gt;classe enfant&lt;/em&gt; &lt;em&gt;héritera&lt;/em&gt; automatiquement de toutes les fonctions et propriétés de la fonction parent.&lt;/p&gt;
 &lt;p&gt;Par exemple, supposons que nous ayons une classe parent &lt;code&gt;animal&lt;/code&gt; dont dérivent les classes &lt;code&gt;chien&lt;/code&gt; et &lt;code&gt;chat&lt;/code&gt;. Si la classe &lt;code&gt;animal&lt;/code&gt; a une fonction &lt;code&gt;respiration&lt;/code&gt; (&lt;code&gt;animal.respiration()&lt;/code&gt;), alors les classes &lt;code&gt;chien&lt;/code&gt; et &lt;code&gt;chat&lt;/code&gt; étant ses classes &lt;em&gt;enfant&lt;/em&gt;, elles auront automatiquement cette fonction (&lt;code&gt;chien.respiration()&lt;/code&gt;) et &lt;code&gt;chat.respiration()&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;La &lt;em&gt;programmation orientée objet&lt;/em&gt; est une façon particulière de programmer, intégrée dans le langage de programmation que vous utilisez, qui présente de multiples avantages. L&amp;rsquo;un d&amp;rsquo;eux est de rendre les choses plus faciles à représenter.&lt;/p&gt;
@@ -40,9 +40,9 @@
 &lt;p&gt;Dans FMT, les différents &lt;em&gt;espaces de noms&lt;/em&gt; sont :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Parser&lt;/code&gt;&lt;/strong&gt; : Contient des classes utilisées pour lire ou éditer les fichiers des modèles au format Woodstock&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Modèles&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour manipuler et résoudre les modèles&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Spatial&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour pour travailler sur des données spatialement explicites&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Heuristique&lt;/code&gt;&lt;/strong&gt; : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Models&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour manipuler et résoudre les modèles&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Spatial&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour travailler sur des données spatialement explicites&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Heuristics&lt;/code&gt;&lt;/strong&gt; : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/strong&gt;: Contient des informations sur la version actuelle de FMT, et les fonctions qu&amp;rsquo;elle contient (ce qui dépend de la façon dont il a été compilée)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -83,15 +83,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_aebff935e87cbb26b26f12b1700abf2b.png 400w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_142c22ea82ba47efe9a96c83464b2890.png 760w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_aebff935e87cbb26b26f12b1700abf2b.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_c655a1895cf5415363db3a5bb4ce2ec4.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp&#34;
                width=&#34;760&#34;
                height=&#34;443&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Cependant, ces attributs sont &amp;ldquo;protégés&amp;rdquo; afin qu&amp;rsquo;ils ne soient pas modifiés de manière incorrecte. Si vous souhaitez les lire lors de l&amp;rsquo;utilisation de FMT, vous devrez utiliser &lt;a href=&#34;../../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods&#34;&gt;les fonctions &lt;em&gt;getter&lt;/em&gt;&lt;/a&gt; qui les obtiendront pour vous :&lt;/p&gt;
 
@@ -110,15 +109,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_bb98b942d11785d6e69a626c82eccc05.png 400w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_f625e31903a8b14a97b39b786a2360e8.png 760w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_bb98b942d11785d6e69a626c82eccc05.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_80bc211b0ac010dce4d16d7358c69540.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp&#34;
                width=&#34;743&#34;
                height=&#34;361&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;De plus, vous pouvez les modifier de la bonne manière en utilisant &lt;a href=&#34;../../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods&#34;&gt;les fonctions &lt;em&gt;setter&lt;/em&gt;&lt;/a&gt;. Cela vous permet d&amp;rsquo;éditer différentes parties du modèle.&lt;/p&gt;
 
@@ -137,15 +135,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_05ee8f833cba6af62849c049bfad76a5.png 400w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_269faf72b82502b4f9f4dbcdd454d8db.png 760w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_05ee8f833cba6af62849c049bfad76a5.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp 400w,
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_657efddb0952cf79e3d41bdb97290a3e.webp 760w,
+               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp&#34;
                width=&#34;640&#34;
                height=&#34;266&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;En fin de compte, le &lt;code&gt;FMTModel&lt;/code&gt; est ce que nous appelons une &lt;em&gt;classe parent&lt;/em&gt; pour toutes les différentes classes de modèles utilisées par FMT, telles que &lt;code&gt;FMTlpmodel&lt;/code&gt; (modèle de programmation linéaire) et &lt;code&gt;FMTsesmodel&lt;/code&gt; (modèle spatialement explicite) selon le diagramme suivant :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
@@ -404,15 +401,14 @@ _DEATH
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_90c2daf8549a9b756d72f35b01047f30.png 400w,
-               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_f401477bc32330e98e3570da562381c5.png 760w,
-               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_90c2daf8549a9b756d72f35b01047f30.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_ae6781061ca562c133fcf0a1d68bc72e.webp 400w,
+               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_1af80bb34d6cf59b2665f05ae42e4e6c.webp 760w,
+               /FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTgraph_visual_FR_hue098b42f201121f116cd085a4cbfcb7e_41089_ae6781061ca562c133fcf0a1d68bc72e.webp&#34;
                width=&#34;760&#34;
                height=&#34;429&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Un &lt;code&gt;FMTdevelopment&lt;/code&gt; est une classe importante de FMT. Elle représente une strate particulière, c&amp;rsquo;est-à-dire un peuplement forestier particulier qui a une composition et un âge donnés, et qui existe à une période donnée.&lt;/p&gt;
 &lt;p&gt;Par conséquent, l&amp;rsquo;objet &lt;code&gt;FMTdevelopment&lt;/code&gt; est associé à un objet &lt;code&gt;FMTmask&lt;/code&gt;, qui décrit l&amp;rsquo;ensemble des attributs (&lt;code&gt;FMTtheme&lt;/code&gt;) qui définit le &lt;code&gt;FMTdevelopment&lt;/code&gt;. Ceci est illustré sur le visuel suivant :&lt;/p&gt;
@@ -432,15 +428,14 @@ _DEATH
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_41952b99982be65d68c2d721329f249d.png 400w,
-               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_c8d400e712cb2c5d4e0f194abb10629b.png 760w,
-               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_41952b99982be65d68c2d721329f249d.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_3c48f7f78ce6288f062278988b781815.webp 400w,
+               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_3ef049542e9fa4aa6add552e8d75740b.webp 760w,
+               /FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTdevelopment_explain_FR_hu2bded79802906567a5cbc9e10e6a27e9_23222_3c48f7f78ce6288f062278988b781815.webp&#34;
                width=&#34;476&#34;
                height=&#34;480&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;code&gt;FMTdevelopment&lt;/code&gt; est la classe parente de deux classes, &lt;code&gt;FMTactualdevelopment&lt;/code&gt; et &lt;code&gt;FMTfuturdevelopment&lt;/code&gt;. Un &lt;code&gt;FMTactualdevelopment&lt;/code&gt; représente toujours une strate en début d&amp;rsquo;horizon de planification et contient donc l&amp;rsquo;information de la superficie de la strate. Les &lt;code&gt;FMTfuturdevelopment&lt;/code&gt; sont les futurs possibles et donc aucune superficie ne leur est attribuée au départ. C&amp;rsquo;est le résultat de l&amp;rsquo;optimisation qui nous informe sur la répartitions future des superficies au travers du &lt;code&gt;FMTgraph&lt;/code&gt;.&lt;/p&gt;
 
@@ -459,15 +454,14 @@ _DEATH
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_8a9577332cd98e3a8e3c1c4593439d3c.png 400w,
-               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_cd38281952b022f303a3830958722016.png 760w,
-               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_8a9577332cd98e3a8e3c1c4593439d3c.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_00564999207bc5c9f09e7c2d3a9cc3dd.webp 400w,
+               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_710da217130215b1bf1eba50c9e7e1a2.webp 760w,
+               /FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTgraph_extended_FR_hu17ea88b2664776f56c91e78c124ef461_55230_00564999207bc5c9f09e7c2d3a9cc3dd.webp&#34;
                width=&#34;760&#34;
                height=&#34;348&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Voici ici quelques fonctions de la classe &lt;code&gt;FMTdevelopment&lt;/code&gt; qui peuvent être importantes pour manipuler le modèle à différente fins :&lt;/p&gt;
 &lt;ul&gt;
@@ -692,15 +686,14 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a ét
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_ac4944d2c540ef9c1673d6f5e501c098.png 400w,
-               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_5751490d1777fd7feacb814d1dafcfb6.png 760w,
-               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_ac4944d2c540ef9c1673d6f5e501c098.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_6c4de68ee6f4a86e90b3cb47a896fb63.webp 400w,
+               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_f74791b998934ed9303ebdad1b28c12d.webp 760w,
+               /FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/buildperiod_function_description_hufc6e5d5c3c5b229b82e00829b34878cd_15390_6c4de68ee6f4a86e90b3cb47a896fb63.webp&#34;
                width=&#34;760&#34;
                height=&#34;19&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Remarquez également que nous avons créé une variable nommée &lt;code&gt;tolerance&lt;/code&gt;, qui est nécessaire à la fonction &lt;code&gt;lpmodel$setsolution()&lt;/code&gt;, comme l&amp;rsquo;indique &lt;a href=&#34;../../../../doxygen/html/classModels_1_1FMTsrmodel.html#af2b39c92f48474f4f09bc4c94c99b35b&#34;&gt;la documentation&lt;/a&gt; une fois de plus :&lt;/p&gt;
 
@@ -719,15 +712,14 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a ét
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_1c5b2390f837e8d344a9cfbed30431d7.png 400w,
-               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_92b70cc5ce247ede254cb9eb35deeec1.png 760w,
-               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_1c5b2390f837e8d344a9cfbed30431d7.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_c9d2ccfc09afcd0233d8fed690622cb3.webp 400w,
+               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_9178b78bef2b3c43e897a78ae2d9c0e4.webp 760w,
+               /FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/setsolution_function_description_hud7502f50d87eb36312a95407074c8c87_10134_c9d2ccfc09afcd0233d8fed690622cb3.webp&#34;
                width=&#34;605&#34;
                height=&#34;24&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;L&amp;rsquo;équivalent en code Python est le suivant :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import sys
@@ -886,7 +878,7 @@ Solution set at period   20
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Vous pouvez utiliser les informations des pages précédentes de la documentation pour vous aider.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Lorsque vous avez terminé, ou si vous êtes bloqué, &lt;strong&gt;vous pouvez afficher la correction de cet exercice pour du coe Python en cliquant sur le bouton &amp;ldquo;Révéler la correction&amp;rdquo; ci-dessous&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Lorsque vous avez terminé, ou si vous êtes bloqué.e, &lt;strong&gt;vous pouvez afficher la correction de cet exercice pour du code Python en cliquant sur le bouton &amp;ldquo;Révéler la correction&amp;rdquo; ci-dessous&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;correction&#34;&gt;Correction&lt;/h2&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
@@ -1044,15 +1036,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_aab03734b8bf770b8987e0d24c13d780.png 400w,
-               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_50f6afe23186059441fe678514ba6398.png 760w,
-               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_aab03734b8bf770b8987e0d24c13d780.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_5554934147af90ee65df5800a14c3adc.webp 400w,
+               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_fecffe3f3b3e4ec8fd07af7a4e0d0146.webp 760w,
+               /FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTlinegraph_visual_hu6a72dfba074b860a159c45c28a83a8f9_9527_5554934147af90ee65df5800a14c3adc.webp&#34;
                width=&#34;626&#34;
                height=&#34;106&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Cependant, contrairement à l&amp;rsquo;objet &lt;code&gt;FMTgraph&lt;/code&gt; décrit dans la section sur &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;l&amp;rsquo;optimisation spatialement référencée&lt;/a&gt;, le &lt;code&gt;FMTlinegraph&lt;/code&gt; ne contient pas une énumération complète de toutes les actions et états possibles pour les strates dans le pixel : au lieu de cela, il ne contient qu&amp;rsquo;une solution, ou une évolution possible pour les strates.&lt;/p&gt;
 &lt;h2 id=&#34;faire-des-transitions-avec-des-sorties-uniques&#34;&gt;Faire des transitions avec des sorties uniques&lt;/h2&gt;
@@ -1073,15 +1064,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_745f190eb07a2b2ae13a45dfad418807.png 400w,
-               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_45afc81c335a218a7a25b073e17ef5b2.png 760w,
-               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_745f190eb07a2b2ae13a45dfad418807.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_d1c9836a98e32eb10658f7f33165f8f9.webp 400w,
+               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_8d09ebb8d328ee26710201641c411602.webp 760w,
+               /FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/single_transitions_hua5870f2ffbf0fb1fcfccb13d6e2733f9_20425_d1c9836a98e32eb10658f7f33165f8f9.webp&#34;
                width=&#34;636&#34;
                height=&#34;204&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Par conséquent, &lt;strong&gt;vous devrez modifier les transitions d&amp;rsquo;un &lt;code&gt;FMTmodel&lt;/code&gt; pour pouvoir les utiliser dans un &lt;code&gt;FMTsesmodel&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;À cette fin, vous pouvez utiliser la fonction &lt;code&gt;FMTtransition.single()&lt;/code&gt;, qui transforme automatiquement les transitions à sorties multiples en transitions à sortie unique.&lt;/p&gt;
@@ -1104,15 +1094,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_b84ffbdec8c57f26383e63828fc2a2ab.png 400w,
-               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_759b25f9148b37145b8804c04d950dff.png 760w,
-               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_b84ffbdec8c57f26383e63828fc2a2ab.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_5a810eb0a7cfecddbff6090717e317d3.webp 400w,
+               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_95b63de55d5c850224c390da97846a20.webp 760w,
+               /FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTevent_visual_hu3c6d6159cbe7c90146f57815d473180c_14326_5a810eb0a7cfecddbff6090717e317d3.webp&#34;
                width=&#34;760&#34;
                height=&#34;290&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;code&gt;FMTevent&lt;/code&gt; peut représenter tout type de perturbation spatialement explicite (coupe, feu, etc.). Il est associé à la période de temps de l&amp;rsquo;événement, et aux coordonnées de l&amp;rsquo;événement spatial.&lt;/p&gt;
 
@@ -1131,15 +1120,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_bd041ae467eb5dcb0ecd31a18f2fb39f.png 400w,
-               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_0f2e717205eb525ac3126aa510c02207.png 760w,
-               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_bd041ae467eb5dcb0ecd31a18f2fb39f.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_a3370702a7de3b3d95dfb402cd8e352e.webp 400w,
+               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_3888d84796208c1d0b4b7ed52d3d80dd.webp 760w,
+               /FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTevent_visual2_hu1ad06f91b417535d6bf5fc14636c609e_11931_a3370702a7de3b3d95dfb402cd8e352e.webp&#34;
                width=&#34;474&#34;
                height=&#34;132&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;la-carte-forestière-initiale&#34;&gt;La carte forestière initiale&lt;/h2&gt;
 &lt;p&gt;En tant que modèle spatialement explicite, le &lt;code&gt;FMTsesmodel&lt;/code&gt; nécessite des informations spatialement explicites sur les forêts du paysage au début de l&amp;rsquo;horizon de planification.&lt;/p&gt;
@@ -1178,15 +1166,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_3e6933ac2fa98c96c072dd91b68488de.png 400w,
-               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_bc77a4a0b0397412666a6f4a1d914de8.png 760w,
-               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_3e6933ac2fa98c96c072dd91b68488de.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_060d419e30beb29b21274d862ca5e9ee.webp 400w,
+               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_fb42e55d7f3b1eca95b76efc1bd7b6c8.webp 760w,
+               /FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/neighborsize_hufd564ece1fb23ccf3e6345e22009ccb5_9067_060d419e30beb29b21274d862ca5e9ee.webp&#34;
                width=&#34;760&#34;
                height=&#34;219&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;PERIODS&amp;gt;&lt;/code&gt; correspondent à la période de temps pour laquelle il faut fixer la contrainte.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1214,15 +1201,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_2c554344f22e57a9fbe2cc4e80ca2f4f.png 400w,
-               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_7ebfac83c25700cecbed2e79dbb19362.png 760w,
-               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_2c554344f22e57a9fbe2cc4e80ca2f4f.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_105a8715c5a31dd27783689e828e8792.webp 400w,
+               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_22d4e6cdfa569256da9c68dd5df637e5.webp 760w,
+               /FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/adjacencyDistance_huaed1bffac12c52e3ea8dad246d4d5c9d_17871_105a8715c5a31dd27783689e828e8792.webp&#34;
                width=&#34;760&#34;
                height=&#34;246&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;Les &lt;code&gt;GREENUP&lt;/code&gt; correspondent au nombre de périodes de temps pour lesquelles nous considérons que deux événements sont voisins. Par exemple, si &lt;code&gt;GREENUP&lt;/code&gt; est égal à 3, deux blocs spatiaux d&amp;rsquo;actions qui sont sous la distance maximale indiquée par &lt;code&gt;DISTANCE&lt;/code&gt; mais qui sont séparés temporellement par 4 périodes ne seront pas considérés comme spatialement adjacents ; cependant, s&amp;rsquo;ils étaient séparés par 3, 2 ou 1 période, ou sont dans la même période, ils seront considérés comme spatialement adjacents.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1249,15 +1235,14 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;
-        &lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_5a3b9c1a5a98a1ac316b5c55aa6260ff.png 400w,
-               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_bb339e473835be21abad801a7d9f31d2.png 760w,
-               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_5a3b9c1a5a98a1ac316b5c55aa6260ff.png&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_612c6f6be0d5b7705e342376bb41a446.webp 400w,
+               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_947600aa8eb7df5c4477b478d4fef32e.webp 760w,
+               /FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/greedySimulationAlgorithm_huf8c13db4ede8dbf4262661b422bcefcd_47781_612c6f6be0d5b7705e342376bb41a446.webp&#34;
                width=&#34;760&#34;
                height=&#34;383&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;En R, le code pour utiliser &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; ressemblera à ceci :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(FMT) # Charge FMT dans R

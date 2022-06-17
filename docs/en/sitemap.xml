@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/replanning/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/replanning/"
+                />
+  </url><url>
     <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/basics/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -13,6 +26,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/basics/"
+                />
+  </url><url>
+    <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/exercice_2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/exercice_2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/exercice_2/"
                 />
   </url><url>
     <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/basics/objects_parsing_interrogation/</loc>
@@ -78,6 +104,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/basics/spatially_referenced_optimization/"
+                />
+  </url><url>
+    <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/"
                 />
   </url><url>
     <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/download_install/compiling/</loc>

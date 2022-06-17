@@ -1,0 +1,1374 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="What is re-planning? Re-planning is a process that consists of re-solving a forest planning optimization model (such as those used in FMT) to take into account elements that cannot be considered in the traditional process of solving these models." />
+
+  
+    <link rel="alternate" hreflang="fr" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/" />
+  
+  <link rel="alternate" hreflang="en-us" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/replanning/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/wowchemy.aa936755d898fe5a4c5cf937b93bb8a2.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/FMTdocs/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/replanning/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="FMT Documentation" />
+  <meta property="og:url" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/replanning/" />
+  <meta property="og:title" content="Spatially referenced re-planning | FMT Documentation" />
+  <meta property="og:description" content="What is re-planning? Re-planning is a process that consists of re-solving a forest planning optimization model (such as those used in FMT) to take into account elements that cannot be considered in the traditional process of solving these models." /><meta property="og:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-05-05T00:00:00&#43;01:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Spatially referenced re-planning | FMT Documentation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="0fd33677d422ed7ada68ec4301dbfaa2" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/FMTdocs/js/wowchemy-init.min.d5311fd7435c9fda4bf0768e412fb7ae.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/FMTdocs/">FMT Documentation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/FMTdocs/">FMT Documentation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/FMTdocs/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/FMTdocs/docs/"><span>Documentation</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/FMTdocs/doxygen/html/index.html"><span>Doxygen</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown"
+           aria-haspopup="true" aria-label="Languages">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>English</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/">
+            <span>Français</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Advanced features
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/FMTdocs/docs/">FMT Documentation</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/basics/"><i class="fas fa-play pr-1"></i>The basics</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/objects_parsing_interrogation/">Objects, model parsing and interrogation</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/spatially_referenced_optimization/">Spatially referenced optimization</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/exercice_1/">Exercise 1</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/spatially_explicit_simulation/">Spatially explicit simulation</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/download_install/"><i class="fas fa-download pr-1"></i>Downloading and installing</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/prerequisits/">Prerequisits</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/downloading_libraries/">Downloading the libraries</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/compiling/">Compiling</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/importing_in_python/">Importing FMT in Python</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/advanced/"><i class="fas fa-code-branch pr-1"></i>Advanced features</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class="active"><a href="/FMTdocs/docs/advanced/replanning/">Spatially referenced re-planning</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/advanced/exercice_2/">Exercise 2</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-re-planning">What is re-planning?</a></li>
+    <li><a href="#spatially-referenced-re-planning-in-practice">Spatially referenced re-planning in practice</a>
+      <ul>
+        <li><a href="#models-used">Models used</a></li>
+        <li><a href="#the-example-of-a-re-planning-iteration">The example of a re-planning iteration</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-re-planning-models-in-detail">The re-planning models in detail</a>
+      <ul>
+        <li><a href="#the-strategic-model">The strategic model</a></li>
+        <li><a href="#the-stochastic-model">The stochastic model</a></li>
+        <li><a href="#the-tactical-model">The tactical model</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-new-keywords-associated-with-re-planning">The new keywords associated with re-planning</a>
+      <ul>
+        <li><a href="#_reignoreperiod"><code>_REIGNORE(period)</code></a></li>
+        <li><a href="#_replicateoutput"><code>_REPLICATE(output)</code></a></li>
+        <li><a href="#_setfromlocalratio"><code>_SETFROMLOCAL(ratio)</code></a></li>
+        <li><a href="#_randomoutput"><code>_RANDOM(output)</code></a></li>
+        <li><a href="#_setfromglobalratio"><code>_SETFROMGLOBAL(ratio)</code></a></li>
+        <li><a href="#_setglobalscheduleratio"><code>_SETGLOBALSCHEDULE(ratio)</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#the-results-of-the-re-planning">The results of the re-planning</a>
+      <ul>
+        <li><a href="#raw-results-files-by-model">Raw results files by model</a></li>
+        <li><a href="#the-probability-file">The probability file</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/docs/">
+      
+        FMT Documentation
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/docs/advanced/">
+      
+        Advanced features
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Spatially referenced re-planning
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>Spatially referenced re-planning</h1>
+
+          <div class="article-style">
+            <h2 id="what-is-re-planning">What is re-planning?</h2>
+<p>Re-planning is a process that consists of re-solving a forest planning optimization model (such as those used in FMT) to take into account elements that cannot be considered in the traditional process of solving these models.</p>
+<p>Re-planning therefore allows for more complex questions to be asked; in particular, it allows for interactions between the <a href="https://www.researchgate.net/profile/Mark-Boyland/publication/228780711_Hierarchical_Planning_in_Forestry/links/02e7e534d86d03937f000000/Hierarchical-Planning-in-Forestry.pdf" target="_blank" rel="noopener">different levels of hierarchical planning</a> in forestry (strategic, tactical and operational).</p>
+<p>Here are some <strong>examples of questions that re-planning can answer</strong> :</p>
+<ul>
+<li>Questions related to the effects of natural disturbances (fire, spruce budworm, etc.)
+<ul>
+<li><em>What is the effect of fire on the determination of harvest levels by the strategic model ?</em></li>
+<li><em>What is the effect of a change in stochastic (random) disturbance regime on the determination of harvest levels by the strategic model ?</em></li>
+</ul>
+</li>
+<li>Questions related to inconsistencies between what is planned at the strategic (large-scale) level, and the reality on the ground (small-scale): <a href="https://www.researchgate.net/publication/235754092_On_Risk_of_Systematic_Drift_Under_Incoherent_Hierarchical_Forest_Management_Planning" target="_blank" rel="noopener">this is the notion of drift between different levels of hierarchical management</a>
+<ul>
+<li><em>Are the objectives always achieved by taking into account more precise problems and constraints at tactical level ?</em></li>
+</ul>
+</li>
+<li>Questions related to interactions between the strategic and tactical levels
+<ul>
+<li><em>What is the effect of communicating (or not) certain information to the tactical or strategic model? What changes? What does not change ?</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="spatially-referenced-re-planning-in-practice">Spatially referenced re-planning in practice</h2>
+<h3 id="models-used">Models used</h3>
+<p>When using FMT, spatially referenced re-planning is in practice done by using 3 different FMT models.</p>
+<p>These 3 models represent 3 scenarios applied to the same initial landscape (same sections <code>AREA</code>, <code>CONSTANTS</code>, <code>LANDSCAPE</code>, <code>OUTPUTS</code>). However, these scenarios can have different elements from each other (different <code>ACTIONS</code>, <code>TRANSITIONS</code>, <code>YIELDS</code> and <code>OPTIMIZE</code> sections).</p>
+<p>These three models are :</p>
+<p><strong>1. The strategic model</strong></p>
+<p>This is a type III linear programming model, as described in <a href="../../basics/spatially_referenced_optimization/">FMT basics</a>.</p>
+<p>This is the model that will represent what happens at the strategic level, i.e. when we look at things from above without taking into account certain details at finer scales.</p>
+<p><strong>2. The stochastic model</strong></p>
+<p>It is a non-spatial simulation model (which works in a spatially referenced space like the linear models, and not a spatially explicit space).</p>
+<p>It will be used to simulate pseudo-random actions with area targets to be reached. These actions can represent forest fires, insect epidemics, and many others!</p>
+<div class="alert alert-note">
+  <div>
+    A <strong>pseudo-random simulation</strong> means that the random components of the simulation are based on a specific number called the &ldquo;seed&rdquo;. <strong>Two pseudo-random simulations done with the same seed will have the exact same results</strong>; but changing the seed gives different, random results. This is a very convenient way to have randomness, while keeping a certain stability in the results obtained.
+  </div>
+</div>
+<p><strong>3. The tactical model</strong></p>
+<p>Like the strategic model, this is a type III linear programming model, as described in <a href="../basics">FMT basics</a>.</p>
+<p>This model will be used to redo an optimization of the forest planning while taking into account the changes that the stochastic model may have made on the landscape, or with different or additional constraints compared to the strategic model.</p>
+<h3 id="the-example-of-a-re-planning-iteration">The example of a re-planning iteration</h3>
+<p>Re-planning is done using the three models described above, calling them one after the other within each re-planning period. As one of the models (the stochastic model) contains random events, it is however possible to re-do the whole process several times in order to take into account the variability linked to these random events: this is called an <em>iteration</em>.</p>
+<p>When the models are called one after the other, some of their characteristics are passed from one to the other (inventory/state of the landscape for the period, or constraints and existing planning).</p>
+<p>In the end, a re-planning iteration takes the following form:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1dfcdc74702e9b3b7be3180aec91c1de.webp 400w,
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_9d6c3edec527ae60b17a4cfbcd171bd5.webp 760w,
+               /FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Re-plannification_iteration_schema_hu72e43bf38fa22b8d7cec18e82399ffbe_53771_1dfcdc74702e9b3b7be3180aec91c1de.webp"
+               width="705"
+               height="398"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>In this diagram,</p>
+<ul>
+<li><strong>STRA</strong> corresponds to the <strong>strategic</strong> model</li>
+<li><strong>STO</strong> corresponds to the <strong>stochastic</strong> model</li>
+<li><strong>TAC</strong> corresponds to the <strong>tactical</strong> model</li>
+</ul>
+<p>We can thus see that for each period,</p>
+<ul>
+<li>The <strong>strategic</strong> model is called to do its <strong>planning</strong>.
+<ul>
+<li>The planning of the strategic model is done on a long time horizon; and this horizon does not change through the periods. That is to say that at each period, the strategic model will, for example, plan for the next 100 years; whether it is 100 years after period 1, or 100 years after period 3.</li>
+</ul>
+</li>
+<li>The <strong>strategic</strong> model share it&rsquo;s inventory with the <strong>stochastic</strong> model, which is called to do its <strong>simulation</strong>.
+<ul>
+<li>The stochastic model will only do this simulation for the given period of time (contrary to the planning model which will do its optimization by taking into account a long time horizon). This is because the stochastic model only simulates random events, and does not try to optimize anything.</li>
+</ul>
+</li>
+<li>The inventory resulting from the <strong>stochastic</strong> model will be passed to the <strong>tactical</strong> model, which is called to do its <strong>re-planning</strong>.
+<ul>
+<li>The tactical model will only plan for the given time period; it will not simulate the long term like the strategic model, although it will do optimization and not simulation. Its objective will be, for example, to harvest wood without exceeding the amount of wood harvested by the strategic model, but by taking into account the inventory modified by the random events of the stochastic model.</li>
+</ul>
+</li>
+<li>The inventory resulting from the <strong>tactical</strong> model is then passed back to the <strong>strategic</strong> model, which will then plan again for the next period.</li>
+</ul>
+<p>We can thus see two back and forth between the models:</p>
+<ul>
+<li>The transition of the inventory from one model to another as the process proceeds (<strong>blue lines on the diagram</strong>)</li>
+<li>The passage of planning constraints from the <strong>strategic</strong> model to the <strong>tactical</strong> model (<strong>yellow lines on the diagram</strong>)</li>
+</ul>
+<p>Note that <strong>this whole process is only one iteration of re-planning</strong>. In order to really take into account the effects of stochastic events in the stochastic model, it is important to repeat this whole process many times. This allows to take into account the variability that will exist in how the inventory and tactical model will react to random events; the tactical model may also contain random components within it.</p>
+<h2 id="the-re-planning-models-in-detail">The re-planning models in detail</h2>
+<h3 id="the-strategic-model">The strategic model</h3>
+<ul>
+<li>It is a linear programming optimization model (<code>FMTlpmodel</code>).
+<ul>
+<li>It does not take into account natural disturbances or stochastic events.</li>
+</ul>
+</li>
+<li>Normally, it has a long planning horizon for long-term optimization (e.g. 100 to 150 years).</li>
+<li>It dictates the path to take to the tactical model by sharing informations with it.</li>
+<li>It can use the new keyword <a href="./#_setfromlocalratio"><code>_SETFROMLOCAL(ratio)</code></a>.</li>
+</ul>
+<h3 id="the-stochastic-model">The stochastic model</h3>
+<ul>
+<li>It is a non-spatial simulation model (<code>FMTnssmodel</code>).
+<ul>
+<li>It simulates natural disturbances or stochastic events.</li>
+</ul>
+</li>
+<li>It may have a long simulation horizon; but it simulates only one period at a time.</li>
+<li>Its role is to affect the territory used by the <a href="./#the-tactical-model">tactical model</a>, and thus to blur the lines between the <a href="./#the-strategic-model">strategic model</a> and the <a href="./#the-tactical-model">tactical model</a>.</li>
+<li>It can use the new keywords <a href="./#_randomoutput"><code>_RANDOM(output)</code></a> and <a href="./#_replicateoutput"><code>_REPLICATE(output)</code></a>.</li>
+</ul>
+<div class="alert alert-note">
+  <div>
+    <strong>The stochastic model is not necessary or mandatory for re-planning</strong>. Some questions that can be addressed by re-planning are not related to random disturbances. For example, one may be interested in the mismatches between a strategic model that does not take into account smaller scale constraints (e.g. terrain, economic fluctuations, etc.), and a tactical model that does. In this case, stochasticity may exist in the solutions of the tactical model, but it does not require the use of a stochastic model to alter the inventory or the forest landscape between the stochastic and tactical models.
+  </div>
+</div>
+<h3 id="the-tactical-model">The tactical model</h3>
+<ul>
+<li>It is a linear programming optimization model (<code>FMTlpmodel</code>), like the <a href="./#the-strategic-model">strategic model</a>.</li>
+<li>Its planning horizon is only one period.
+<ul>
+<li>Because at the tactical level, we only take into account the short-term, and not the long-term.</li>
+</ul>
+</li>
+<li>Its initial state is that of the current period, given by the <a href="./#the-stochastic-model">stochastic-model</a>.</li>
+<li>It can use the new keywords <a href="./#_setfromglobalratio"><code>_SETFROMGLOBAL(ratio)</code></a> and <a href="./#_setglobalscheduleratio"><code>_SETGLOBALSCHEDULE(ratio)</code></a>.</li>
+</ul>
+<h2 id="the-new-keywords-associated-with-re-planning">The new keywords associated with re-planning</h2>
+<p>Different keywords that do not exist in the Woodstock syntax allow the implementation of back and forth information between the different models of re-planning, according to the following scheme:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Re-plannification_keywords_hu579f59c4d39b5e52ac17f0416c7627b7_49692_2f976fff29bf697e5369c2a7c26f9c78.webp 400w,
+               /FMTdocs/media/docs/Re-plannification_keywords_hu579f59c4d39b5e52ac17f0416c7627b7_49692_ebf97bac21f1ce969a6e2da88e8a287a.webp 760w,
+               /FMTdocs/media/docs/Re-plannification_keywords_hu579f59c4d39b5e52ac17f0416c7627b7_49692_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Re-plannification_keywords_hu579f59c4d39b5e52ac17f0416c7627b7_49692_2f976fff29bf697e5369c2a7c26f9c78.webp"
+               width="760"
+               height="334"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>Others allow you to ignore constraints at given times, or to adjust them.</p>
+<p><strong>You will find here the list of these new keywords related to re-planning:</strong></p>
+<h3 id="_reignoreperiod"><code>_REIGNORE(period)</code></h3>
+<p>This keyword must appear in the <code>OPTIMIZE</code> section of a model.</p>
+<p>It informs the model to ignore a constraint from a specific re-planning period.</p>
+<p>This can be very useful to set up a period for re-planning, and then ignore the related constraints.</p>
+<div class="alert alert-note">
+  <div>
+    Keep in mind that the <a href="./#the-strategic-model">strategic model</a> is repeated in every re-planning period over its entire planning horizon. If its horizon is 100 years and the planning periods are 10 years long, then it will be called in period 3 to plan from the inventory that has been modify by the 2 precedent re-planning  periods. So, it will start at 30 years after the begining of the initial re-planning period and finish 130 years after the begining of the initial re-planning period.
+  </div>
+</div>
+<h3 id="_replicateoutput"><code>_REPLICATE(output)</code></h3>
+<p>This keyword allows you to change the right-hand side of the equation (<em>Right Hand Side</em>, or <em><strong>RHS</strong></em>) of a constraint by fetching a value from an array containing these values for different replicates.</p>
+<p>In practice, you can put a <code>.csv</code> file in the scenario directory, and then use <code>_REPLICATE(csv file)</code> to make FMT apply a certain value in that array for the current iteration.</p>
+<p>For example, writting the following in the constraints section of a model:</p>
+<pre><code>_RANDOM(outputaction) &lt;= 10 1 _REPLICATE(file.csv)
+</code></pre>
+<p>replaces, for each iteration, the number &ldquo;10&rdquo; in the constraint with the number in line 1 of the file <code>file.csv</code> with the column that corresponds to the iteration.</p>
+<p>In the file, the rows correspond to the period and the columns to the iteration to which we want the value to apply.</p>
+<h3 id="_setfromlocalratio"><code>_SETFROMLOCAL(ratio)</code></h3>
+<p>This keyword allows the <a href="./#the-strategic-model">strategic model</a> to adjust one of its constraints according to the corresponding output value in the <a href="./#the-tactical-model">tactical model</a> used at the previous period.</p>
+<p>With this constraint, we specify a ratio that can increase or decrease the value taken from the <a href="./#the-tactical-model">tactical-model</a>. For example, a ratio of <code>1.0</code> will give exactly the value of the <a href="./#the-tactical-model">tactical model</a>; a ratio of <code>2.0</code> will multiply it by two, and a ratio of <code>0.5</code> will divide it by two.</p>
+<p>If we write the following in the constraints section of a <a href="./#le-model-strategy">strategic model</a>:</p>
+<pre><code>VOLUMEREC &lt;= 0 1.._LENGTH _SETFROMLOCAL(1)
+</code></pre>
+<p>the &ldquo;0&rdquo; of the <em><strong>RHS</strong></em> is systematically replaced by the value of the VOLUMEREC output of the previous re-planning period of the <a href="./#le-tactical-model">tactical model</a>.</p>
+<h3 id="_randomoutput"><code>_RANDOM(output)</code></h3>
+<p>This keyword is used to generate random values for the <a href="./#the-stochastic-model">stochastic model</a>.</p>
+<div class="alert alert-warning">
+  <div>
+    The output chosen with <code>_RANDOM(output)</code> must be an action output, not an inventory output.
+  </div>
+</div>
+<p>It is written as a standard constraint.</p>
+<p>Here is an example to generate a random number between 50 and 100 for period 1 to LENGTH:</p>
+<pre><code class="language-python">_RANDOM(outputaction) &lt;= 50 1.._LENGTH
+_RANDOM(outputaction) &gt;= 100 1.._LENGTH
+</code></pre>
+<h3 id="_setfromglobalratio"><code>_SETFROMGLOBAL(ratio)</code></h3>
+<p>This keyword is used to adjust a constraint of the <a href="./#the-tactical-model">tactical model</a> based on a value determined by the <a href="./#the-strategic-model">strategic model</a>. It is somewhat the reciprocal of <a href="./#_setfromlocalratio"><code>_SETFROMLOCAL(ratio)</code></a>.</p>
+<p>The ratio allows to increase or decrease the value taken from the <a href="./#the-strategic-model">strategic model</a>. For example, a ratio of <code>1.0</code> will give exactly the value of the <a href="./#the-strategic-model">strategic model</a>; a ratio of <code>2.0</code> will multiply it by two, and a ratio of <code>0.5</code> will divide it by two.</p>
+<p>If we write the following in the constraints section of a <a href="./#le-tactical-model">tactical model</a>:</p>
+<pre><code>VOLUMEREC &lt;= 0 1.._LENGTH _SETFROMGLOBAL(1)
+</code></pre>
+<p>the number &ldquo;0&rdquo; of the <em><strong>RHS</strong></em> is systematically replaced by the value of the VOLUMEREC output of the <a href="./#le-model-strategic">strategic model</a> for the current re-planning period.</p>
+<h3 id="_setglobalscheduleratio"><code>_SETGLOBALSCHEDULE(ratio)</code></h3>
+<p>This keyword makes it possible to include the solution (what has been planned as actions) of the <a href="./#le-strategic-model">strategic model</a> in the <a href="./#le-tactical-model">tactical model</a> as a weight to the objective function.</p>
+<p>To do so, when evaluating the solution of the <a href="./#le-tactical-model">tactical model</a>, each time the latter plans an action on the same development as provided for in the <a href="./#le-model-strategic">strategic model</a>, it will multiply the planned area (at the tactical level) by the specified ratio and add value to the objective according to the formulation of the objective function. If the model is to maximize, we will add up and if it is to minimize, we will subtract the calculated value.</p>
+<h2 id="the-results-of-the-re-planning">The results of the re-planning</h2>
+<p>As a result of the re-planning process, the following results are obtained:</p>
+<ul>
+<li>Three <em>raw</em> results files (one per model)</li>
+<li>One probability file (one for the whole process)</li>
+</ul>
+<h3 id="raw-results-files-by-model">Raw results files by model</h3>
+<p>These files contain values related to the outputs in the different models, for the different periods, and for the different iterations.</p>
+<p>They contain different columns:</p>
+<ul>
+<li><code>Iteration</code>: Indicates the number of the iteration used to take stochasticity into account. Iteration &ldquo;0&rdquo; is for the &ldquo;base&rdquo; strategy model, which is resolved at the very beginning of the re-planning process.</li>
+<li><code>Period</code>: Indicates the period of re-planning that concerns the value of the output.</li>
+<li><code>Output</code>: Name of the output being considered.</li>
+<li><code>Value</code>: Value of the output under consideration.</li>
+<li><code>Type</code>: Type of output (indicates whether it is a &ldquo;total&rdquo; output for the entire landscape, or per development/settlement).</li>
+</ul>
+<h3 id="the-probability-file">The probability file</h3>
+<p>This file contains the probability that outputs of the <a href="./#the-tactical-model">tactical model</a> may drift from the solution of the initial <a href="./#the-strategic-model">strategic model</a> (solved at the very beginning of the re-planning process), whose outputs are in the &ldquo;0&rdquo; iteration of the raw results files.</p>
+<p>For each of the outputs defined in the models, the probability file will contain all the probabilities of staying in the lower and upper range of the distance ratio (drift) to the outputs of the [strategic model](. /#the-strategic-model), for the following drift values: <code>0</code>, <code>0.05</code>, <code>0.10</code>, <code>0.15</code>, <code>0.20</code>, <code>0.25</code>, <code>0.30</code>, <code>0.35</code>, <code>0.40</code>, <code>0.45</code>, <code>0.50</code>.</p>
+<p>This file contains different columns:</p>
+<ul>
+<li><code>Period</code>: Indicates the period of rescheduling that concerns the value of the output.</li>
+<li><code>Output</code>: Name of the output considered.</li>
+<li><code>LowerProbability</code>: Probability of staying in the lower range of the distance ratio.</li>
+<li><code>UpperProbability</code>: Probability of remaining in the upper range of the distance ratio.</li>
+<li><code>Drift</code>: Distance ratio between the solution of the <a href="./#the-tactical-model">tactical model</a> and that of the initial <a href="./#the-strategic-model">strategic model</a>.</li>
+</ul>
+<div class="alert alert-note">
+  <div>
+    The more iterations you do in your re-planning, the more representative and stable your probabilities will be over time. Conversely, a small number of iterations will tend to result in highly variable and often incomplete estimates.
+  </div>
+</div>
+<p>To understand the probabilities, we must first look at the drift, the value of the initial <a href="./#the-strategic-model">strategic model</a>, then the probabilities.</p>
+<p>For example:</p>
+<ul>
+<li>If the value of the initial [strategic model](./#the strategic-model) for a given output is 1000.</li>
+<li>And if, for period 1, we obtain a <code>LowerProbability</code> of 1 and a <code>UpperProbability</code> of 1 for a <em>drift</em> of 0.3.
+<ul>
+<li>Then this means that there is a 100% probability that the output will remain between a value of 700 and 1300 for period 1.</li>
+</ul>
+</li>
+<li>And if, for period 10, we obtain a <code>LowerProbability</code> of 0.6 and a <code>UpperProbability</code> of 0.4 for a <em>drift</em> of 0.5.
+<ul>
+<li>This means that there is a 60% probability that the output will remain above 500, and a 40% probability that it will remain below 1500 in period 10.</li>
+</ul>
+</li>
+</ul>
+<div class="alert alert-note">
+  <div>
+    The probability file allows, for example, to verify that a certain scenario has a better probability of remaining between certain values than another scenario.
+  </div>
+</div>
+<div class="alert alert-note">
+  <div>
+    The raw result files of the 3 models can however be used to do more complex analyses, or to validate hypotheses regarding the communication between the 3 models.
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/FMTdocs/docs/advanced/exercice_2/" rel="prev">Exercise 2</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on May 5, 2019</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2022 Bureau du Forestier en Chef du Québec
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/FMTdocs/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/FMTdocs/en/js/wowchemy.min.5ba9ed4d06c87a22a820c6acdb849d94.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

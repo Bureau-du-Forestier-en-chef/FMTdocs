@@ -1,0 +1,1554 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In this exercise, you will try to use FMT to answer different questions about a strategic model and a tactical model through a re-planning process.
+Thus, this exercise will teach you to:" />
+
+  
+    <link rel="alternate" hreflang="fr" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/exercice_2/" />
+  
+  <link rel="alternate" hreflang="en-us" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/exercice_2/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/wowchemy.aa936755d898fe5a4c5cf937b93bb8a2.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/FMTdocs/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/exercice_2/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="FMT Documentation" />
+  <meta property="og:url" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/exercice_2/" />
+  <meta property="og:title" content="Exercise 2 | FMT Documentation" />
+  <meta property="og:description" content="In this exercise, you will try to use FMT to answer different questions about a strategic model and a tactical model through a re-planning process.
+Thus, this exercise will teach you to:" /><meta property="og:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-05-05T00:00:00&#43;01:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Exercise 2 | FMT Documentation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a485d0673d91147fe0dd1dafb10bd03d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/FMTdocs/js/wowchemy-init.min.d5311fd7435c9fda4bf0768e412fb7ae.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/FMTdocs/">FMT Documentation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/FMTdocs/">FMT Documentation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/FMTdocs/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/FMTdocs/docs/"><span>Documentation</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/FMTdocs/doxygen/html/index.html"><span>Doxygen</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown"
+           aria-haspopup="true" aria-label="Languages">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>English</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/exercice_2/">
+            <span>Français</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Advanced features
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/FMTdocs/docs/">FMT Documentation</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/basics/"><i class="fas fa-play pr-1"></i>The basics</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/objects_parsing_interrogation/">Objects, model parsing and interrogation</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/spatially_referenced_optimization/">Spatially referenced optimization</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/exercice_1/">Exercise 1</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/spatially_explicit_simulation/">Spatially explicit simulation</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/download_install/"><i class="fas fa-download pr-1"></i>Downloading and installing</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/prerequisits/">Prerequisits</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/downloading_libraries/">Downloading the libraries</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/compiling/">Compiling</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/importing_in_python/">Importing FMT in Python</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/advanced/"><i class="fas fa-code-branch pr-1"></i>Advanced features</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/docs/advanced/replanning/">Spatially referenced re-planning</a></li>
+
+
+
+  <li class="active"><a href="/FMTdocs/docs/advanced/exercice_2/">Exercise 2</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#part-1-creating-a-re-planning-script">Part 1: Creating a re-planning script</a></li>
+    <li><a href="#part-2-creation-of-scenarios-for-re-planning">Part 2: Creation of scenarios for re-planning</a>
+      <ul>
+        <li><a href="#preparation">Preparation</a></li>
+        <li><a href="#question-1">Question 1</a></li>
+        <li><a href="#question-2">Question 2</a></li>
+        <li><a href="#question-3">Question 3</a></li>
+        <li><a href="#question-4">Question 4</a></li>
+        <li><a href="#question-5">Question 5</a></li>
+        <li><a href="#question-6">Question 6</a></li>
+        <li><a href="#question-7">Question 7</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/docs/">
+      
+        FMT Documentation
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/docs/advanced/">
+      
+        Advanced features
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Exercise 2
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>Exercise 2</h1>
+
+          <div class="article-style">
+            <p>In this exercise, you will try to use FMT to answer different questions about a strategic model and a tactical model through a re-planning process.</p>
+<p>Thus, this exercise will teach you to:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Create a re-planning script</li>
+<li><input checked="" disabled="" type="checkbox"> Re-plan with multiple models, and varying <a href="../replanning/#the-new-keywords-associated-with-re-planning">special FMT keywords</a></li>
+<li><input checked="" disabled="" type="checkbox"> Analyze re-planning results to answer different questions</li>
+</ul>
+<p>To do this exercise, <strong>you must have FMT installed on your computer, along with the example files from the FMT GitHub repository</strong>.</p>
+<ul class="cta-group">
+  
+  <li>
+    <a href="../../download_install" target="_blank" rel="noopener" class="btn btn-primary px-3 py-3">💾 Download and install FMT</a>
+  </li>
+  
+  
+</ul>
+
+<ul class="cta-group">
+  
+  <li>
+    <a href="https://downgit.github.io/#/home?url=https://github.com/gcyr/FMT/tree/master/Examples" target="_blank" rel="noopener" class="btn btn-primary px-3 py-3">💾 Download the FMT example files</a>
+  </li>
+  
+  
+</ul>
+
+<p><strong>You must also have Python installed on your computer</strong>. If this is not done, <a href="../../download_install/importing_in_python/">refer to this page</a>.</p>
+<h2 id="part-1-creating-a-re-planning-script">Part 1: Creating a re-planning script</h2>
+<div class="alert alert-note">
+  <div>
+    If you don&rsquo;t know much about Python, or if you really don&rsquo;t have the time, you can skip this section and use the <code>Replanner.py</code> script which is in the &ldquo;Examples&rdquo; folder you downloaded, in the <code>/Python/replanning</code> folder.
+  </div>
+</div>
+<p>The re-planning process often involves running many models, many times (to make iterations).</p>
+<p>It is therefore very useful to create a Python script that can be called through a console, a terminal, or a command prompt.</p>
+<p>Even better : it is possible to create a Python script that will read arguments given to it when it is called with the command prompt. This will allow to re-use this script for different re-planning scenarios or purposes.</p>
+<p>Try to create the following script in Python language:</p>
+<ul>
+<li>Importing <code>Models</code>, <code>Parser</code>, <code>Core</code>, <code>Version</code> and <code>Parallel</code> from <code>FMT</code>.</li>
+<li>Read the following arguments (it is recommended to use the <a href="https://docs.python.org/3/library/argparse.html" target="_blank" rel="noopener"><code>argparse</code> module</a>)
+<ul>
+<li><code>-pri</code> which specifies the location of the primary file of the models that will be used</li>
+<li><code>-str</code> which indicates the name of the strategic scenario</li>
+<li><code>-tac</code> which indicates the name of the tactical scenario</li>
+<li><code>-sto</code> which indicates the name of the stochastic scenario</li>
+<li><code>-out</code> indicates a comma-separated list of output values of interest to be extracted from the model results</li>
+<li><code>-fol</code> which indicates the folder where the output files of the script will be put</li>
+<li><code>-rep</code> which indicates the number of iterations/replicas to do</li>
+<li><code>-len</code> which indicates the number of periods of the strategic model</li>
+<li><code>-rel</code> which indicates the number of periods over which the re-planning will be done</li>
+<li><code>-thr</code> which indicates the number of CPU cores to use for parallelization</li>
+</ul>
+</li>
+</ul>
+<p>Next, the script will need to:</p>
+<ul>
+<li>Read the model via the primary file</li>
+<li>Read the different scenarios</li>
+<li>Create the strategic/global model using the scenario name provided by <code>-str</code>.
+<ul>
+<li>Make the global model run for the duration provided by <code>-len</code>.</li>
+<li>Make the global model use the number of threads given by <code>-thr</code> for parallel resolution</li>
+</ul>
+</li>
+<li>Create the stochastic model using the scenario name provided by <code>-sto</code>.
+<ul>
+<li>Make the stochastic model run for one period</li>
+</ul>
+</li>
+<li>Create the tactical model using the scenario name provided by <code>-tac</code>.
+<ul>
+<li>Make the tactical model run for one period</li>
+<li>Make the global model use the number of threads specified by <code>-thr</code> for parallel resolution</li>
+</ul>
+</li>
+<li>Add the outputs selected by the <code>-out</code> argument in a list from the model outputs</li>
+<li>Prepare the re-planning task through the <code>Parallel.FMTreplanningtask()</code> function by providing to the function :
+<ul>
+<li>The strategic model</li>
+<li>The stochastic model</li>
+<li>The tactical model</li>
+<li>The list of desired outputs</li>
+<li>The folder where the outputs will be put</li>
+<li>The format of the outputs (here, <code>.csv</code>)</li>
+<li><a href="../../../doxygen/html/classParallel_1_1FMTreplanningtask.html">All other arguments needed for the function</a></li>
+</ul>
+</li>
+<li>Run the rescheduling task through the <code>Parallel.FMTtaskhandler()</code> function</li>
+</ul>
+<p>When you are done, or if you are stuck, <strong>you can view the correction of this exercise for Python code by clicking on the &ldquo;Reveal correction&rdquo; button below</strong>.</p>
+<details class="spoiler "  id="spoiler-3">
+  <summary>Reveal correction</summary>
+  <p><pre><code class="language-python">from FMT import Models
+from FMT import Parser
+from FMT import Core
+from FMT import Version
+from FMT import Parallel
+import os,argparse
+
+
+if __name__ == &quot;__main__&quot;:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(&quot;-pri&quot;, &quot;--primary&quot;, required=True,help=&quot;Fichier primaire&quot;)
+    ap.add_argument(&quot;-str&quot;, &quot;--strategic&quot;, required=True,help=&quot;Nom du scenario strategique&quot;)
+    ap.add_argument(&quot;-tac&quot;, &quot;--tactic&quot;, required=True,help=&quot;Nom du scenario tactique&quot;)
+    ap.add_argument(&quot;-sto&quot;, &quot;--stochastic&quot;, required=True,help=&quot;Nom du scenario stochastique&quot;)
+    ap.add_argument(&quot;-out&quot;, &quot;--outputs&quot;, required=True,help=&quot;Liste d'outputs separe d'une virgule&quot;)
+    ap.add_argument(&quot;-fol&quot;, &quot;--folder&quot;, required=True,help=&quot;Dossier de sortie&quot;)
+    ap.add_argument(&quot;-rep&quot;, &quot;--replicates&quot;, required=True,help=&quot;Nombre de replicas&quot;)
+    ap.add_argument(&quot;-len&quot;, &quot;--strategiclength&quot;, required=True,help=&quot;Nombre de periode du strategique&quot;)
+    ap.add_argument(&quot;-rel&quot;, &quot;--replanninglength&quot;, required=True,help=&quot;Nombre de periode de re-plannification&quot;)
+    ap.add_argument(&quot;-thr&quot;, &quot;--threads&quot;, required=True,help=&quot;Nombre de threads&quot;)
+    ap.add_argument(&quot;-com&quot;,&quot;--compresstime&quot;, nargs=&quot;+&quot;,help=&quot;Compress time sous la forme 20,5 40,8&quot;)
+    args = vars(ap.parse_args())
+    if Version.FMTversion().hasfeature(&quot;OSI&quot;):
+        modelparser = Parser.FMTmodelparser()
+        path = args[&quot;primary&quot;]
+        scenarios = [args[&quot;strategic&quot;],args[&quot;stochastic&quot;],args[&quot;tactic&quot;]]
+        models = modelparser.readproject(path, scenarios)
+        globalmodel = Models.FMTlpmodel(models[0], Models.FMTsolverinterface.CLP)
+        globalmodel.setparameter(Models.FMTintmodelparameters.LENGTH,int(args[&quot;strategiclength&quot;]))
+        globalmodel.setparameter(Models.FMTintmodelparameters.NUMBER_OF_THREADS,1)
+        if &quot;com&quot; in args:
+            for firstperiod,value in [tuple(int(cmpt.split(&quot;,&quot;)[0]),float(cmpt.split(&quot;,&quot;)[1])) for cmpt in args[&quot;com&quot;]]:
+                globalmodel.setcompresstime(firstperiod,int(args[&quot;strategiclength&quot;]),value)
+        stochastic = Models.FMTnssmodel(models[1],0)
+        stochastic.setparameter(Models.FMTintmodelparameters.LENGTH, 1)
+        localmodel = Models.FMTlpmodel(models[2], Models.FMTsolverinterface.CLP)
+        localmodel.setparameter(Models.FMTintmodelparameters.LENGTH, 1)
+        localmodel.setparameter(Models.FMTintmodelparameters.NUMBER_OF_THREADS,1)
+        selectedoutputs=[]
+        for output in globalmodel.getoutputs():
+            if output.getname() in args[&quot;outputs&quot;].split(&quot;,&quot;):
+                selectedoutputs.append(output)
+        outputlocation = args[&quot;folder&quot;]
+        layersoptions=[&quot;SEPARATOR=SEMICOLON&quot;]
+        replanningtask=Parallel.FMTreplanningtask(globalmodel,stochastic, localmodel, selectedoutputs, outputlocation, &quot;CSV&quot;, layersoptions,int(args[&quot;replicates&quot;]),int(args[&quot;replanninglength&quot;]),0.5, Core.FMToutputlevel.totalonly)
+        handler = Parallel.FMTtaskhandler(replanningtask,int(args[&quot;threads&quot;]))
+        handler.setquietlogger()
+        handler.conccurentrun()
+    else:
+        print(&quot;FMT needs to be compiled with OSI&quot;)
+</code></pre>
+</p>
+</details>
+<h2 id="part-2-creation-of-scenarios-for-re-planning">Part 2: Creation of scenarios for re-planning</h2>
+<h3 id="preparation">Preparation</h3>
+<p>After downloading the FMT example files (see above), open the folder <code>Models/TWD_land/Scenarios/Globalex1</code>.</p>
+<p>This <code>Globalex1</code> scenario is a scenario that we will use as <a href="../replanning#the-strategic-model">strategic model or global model</a>.</p>
+<p><strong>Take time to look at the contents of its files</strong>; in particular, look at its actions, objectives and constraints.</p>
+<p><strong>Do the same with the <code>Localex1</code> model</strong>, which we will use as the <a href="../replanning#the-tactical-model">tactical model or local model</a></p>
+<h3 id="question-1">Question 1</h3>
+<p>Open a windows command prompt, or a powershell. Use the command <code>cd</code> to go to the <code>Examples/Python/replanning</code> folder. Then use the following command to start re-planning:</p>
+<pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX1 -rep 10 -len 20 -rel 20 -thr 2
+</code></pre>
+<p>This command tells the script created in the first part that we want to :</p>
+<ul>
+<li>Use the model found at <code>../../Models/TWD_land/TWD_land.pri</code></li>
+<li>Use the scenario <code>Globalx1</code> as a strategic model</li>
+<li>Use the <code>Localex1</code> scenario as a tactical model</li>
+<li>Use the <code>Globalnofire</code> scenario as a stocastic model</li>
+<li>Create output tables for the <code>OVOLREC</code>, <code>OSUPREC</code>, <code>OSUPPL</code>, and <code>VOLINVENT</code> outputs</li>
+<li>Put these tables in the <code>replanning_EX1</code> folder</li>
+<li>Make 10 iterations</li>
+<li>Solve the strategic model for 20 periods</li>
+<li>Do the re-plannification on 20 periods</li>
+<li>Use 2 CPU cores to make iterations in parallel</li>
+</ul>
+<p>Once the command has run, look at the output in the <code>Examples/Python/replanning/replanning_EX1</code> folder.</p>
+<p><strong>With a stock-out tolerance of 5%, what is the probability of holding <code>OVOLREC</code> until period 10 in the tactical model?</strong></p>
+<details class="spoiler "  id="spoiler-4">
+  <summary>Reveal correction</summary>
+  <p><p>To look at the probability of keeping <code>OVOLREC</code> above a 5% value drop, we just have to look at the <code>outputsdrift.csv</code> file. This file shows us the probability that the different outputs selected in the tactical model remain above or below a certain distance (drift) from the strategic model.</p>
+<p>We can open the file, and go to the lines that concern <code>OVOLREC</code> and a drift of <code>0.05</code> (5%), namely lines 462-481.</p>
+<p>Looking at these rows, we can see that from period 7 onwards, <code>OVOLREC</code> has a probability of <code>0</code> of not falling by more than 5% compared to the strategic model (third column <code>LowerProbability</code>); this probability remains at 0 for all subsequent periods. Thus, it appears that the probability of keeping <code>OVOLREC</code> above a 5% decline until period 10 is 0.</p>
+<p>These values can be represented with a graph via the data in <code>outputsdrift.csv</code> :</p>
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_0af8a7f6ebcbb19d23a51ae0e183be8e.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_d08059d6861eb190a92e28eb5bd00c97.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/grapheExercice2_replanning_Exercice1_hu4c06e95e061da6778d0d503031606ad3_12463_0af8a7f6ebcbb19d23a51ae0e183be8e.webp"
+               width="752"
+               height="452"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+</p>
+</details>
+<h3 id="question-2">Question 2</h3>
+<p>Now duplicate the <code>Globalex1</code> folder and rename it <code>Globalex2</code> (delete the existing folder if it already exists).</p>
+<p><strong>Then modify the <code>TWD_land.opt</code> file of <code>Globalex2</code> to force the <code>Globalex2</code> scenario not to exceed 20,000 m³ for the <code>OVOLREC</code> output</strong>.</p>
+<details class="spoiler "  id="spoiler-5">
+  <summary>Reveal correction</summary>
+  <p><p>The content of <code>TWD_land.opt</code> of the <code>Globalex2</code> scenario should then be :</p>
+<pre><code>
+*OBJECTIVE
+_MAXMIN oVolRec 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&lt;= 20000 1.._LENGTH
+
+_NDY(oVolRec) 1.._LENGTH
+
+
+*FORMAT MOSEK
+
+</code></pre>
+</p>
+</details>
+<p>Then run a re-planning with the strategic model <code>Globalex2</code> and the tactical model <code>Localex1</code>, with the following command:</p>
+<pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex2 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX2 -rep 10 -len 20 -rel 20 -thr 2
+</code></pre>
+<p>Once the command has run, look at the output in the <code>Examples/Python/replanning/replanning_EX2</code> folder.</p>
+<p><strong>With a stock-out tolerance of 5%, what is the probability of holding <code>OVOLREC</code> until period 10 in the tactical model?</strong></p>
+<p><strong>Is there a gain from question 1?</strong></p>
+<details class="spoiler "  id="spoiler-6">
+  <summary>Reveal correction</summary>
+  <p><p>Looking at the results of <code>outputsdrift.csv</code>, we can see that <code>OVOLREC</code> keeps a probability of <code>1</code> of not decreasing more than 5% throughout the 20 periods. Thus, there is a maximum probability that <code>OVOLREC</code> will stay above a 5% decline in the tactical model <code>Localex1</code>, when using the strategic model <code>Globalex2</code>.</p>
+<p>We have a clear gain on question 1, for which <code>OVOLREC</code> could not stay above a 5% decline from the 7th period. This is probably due to the fact that <code>Globalex2</code> was forced not to harvest too much, which made it easier to maintain this level in <code>Localex1</code>.</p>
+</p>
+</details>
+<h3 id="question-3">Question 3</h3>
+<p>Now duplicate the <code>Localex1</code> folder and rename it <code>Localex3</code> (delete the existing folder if it already exists).</p>
+<p><strong>Then modify the <code>TWD_land.opt</code> file of <code>Localex3</code> to force this tactical model to follow the solution of the strategic model with a weight of 1000, using the keyword <a href="../replanning/#_setglobalscheduleratio"><code>_SETGLOBALSCHEDULE(weight)</code></a></strong>.</p>
+<details class="spoiler "  id="spoiler-7">
+  <summary>Reveal correction</summary>
+  <p><p>The content of <code>TWD_land.opt</code> of the <code>Localex3</code> scenario should then be :</p>
+<pre><code>
+*OBJECTIVE
+_MAX ovolrec 1.._LENGTH _SETGLOBALSCHEDULE(100)
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+
+*FORMAT MOSEK
+
+</code></pre>
+</p>
+</details>
+<p>Then run a re-planning with the strategic model <code>Globalex1</code> and the tactical model <code>Localex3</code>, with the following command:</p>
+<pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex3 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX3 -rep 10 -len 20 -rel 20 -thr 2
+</code></pre>
+<p>Once the command has run, look at the output in the <code>Examples/Python/replanning/replanning_EX3</code> folder.</p>
+<p><strong>With a stock-out tolerance of 5%, what is the probability of holding <code>OVOLREC</code> until period 10 in the tactical model?</strong></p>
+<p><strong>Is there a gain from question 1?</strong></p>
+<details class="spoiler "  id="spoiler-8">
+  <summary>Reveal correction</summary>
+  <p><p>Looking at the results of <code>outputsdrift.csv</code> in <code>Examples/Python/replanning/replanning_EX3</code>, we can see that <code>OVOLREC</code> has a probability of <code>1</code> of not falling more than 5% from the strategic model in period 8; but that this probability changes to <code>0</code> from period 9 onwards, and remains at <code>0</code> for all other periods. Thus, it is certain that <code>OVOLREC</code> will not stay above a 5% decline until period 10.</p>
+<p>However, we can still observe a slight gain from question 1; the probability that <code>OVOLREC</code> will not decrease by more than 5% dropped to <code>0</code> as early as period 7 in these results. By pushing the tactical model to follow the solution of the strategic model with the keyword <code>_SETGLOBALSCHEDULE(weight)</code>, we thus gained two more periods of stability!</p>
+</p>
+</details>
+<h3 id="question-4">Question 4</h3>
+<p>Now duplicate the <code>TWD_land._opt</code> file from <code>Localex1</code> to the <code>Localex4</code> folder (delete the existing file if it already exists).</p>
+<p><strong>Then modify the <code>TWD_land.opt</code> file in <code>Localex4</code> to force the tactical model to follow the replica tables (<code>PEUPLEMENT1.csv</code> and <code>PEUPLEMENT2.csv</code>) for harvesting in the stands peuplement1 and peuplement2 (use <a href="../replanning/#_replicateoutput"><code>_REPLICATE()</code></a></strong>. In doing so, you must force the tactical model to do a certain level of harvesting in particular spatial features of the model (peuplement1 and peuplement2) based on files you provide to the model (<code>PEUPLEMENT1.csv</code> and <code>PEUPLEMENT2.csv</code>).</p>
+<details class="spoiler "  id="spoiler-9">
+  <summary>Reveal correction</summary>
+  <p><p>The content of <code>TWD_land.opt</code> of the <code>Localex4</code> scenario should then be :</p>
+<pre><code>
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+oVolRecPEUPLEMENT1 &lt;= 0 1.._LENGTH _Goal(G1,9999) _REPLICATE(PEUPLEMENT1.csv)
+oVolRecPEUPLEMENT1 &gt;= 0 1.._LENGTH _Goal(G2,9999) _REPLICATE(PEUPLEMENT1.csv)
+oVolRecPEUPLEMENT2 &lt;= 0 1.._LENGTH _Goal(G3,9999) _REPLICATE(PEUPLEMENT2.csv)
+oVolRecPEUPLEMENT2 &gt;= 0 1.._LENGTH _Goal(G4,9999) _REPLICATE(PEUPLEMENT2.csv)
+
+*FORMAT MOSEK
+
+</code></pre>
+</p>
+</details>
+<p>Then run a re-planning with the strategic model <code>Globalex1</code> and the tactical model <code>Localex4</code>, with the following command:</p>
+<pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex4 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT,OVOLRECPEUPLEMENT1,OVOLRECPEUPLEMENT2 -fol replanning_EX4 -rep 10 -len 20 -rel 20 -thr 2
+</code></pre>
+<p>Once the command has run, <strong>go to the <code>Localex4.csv</code> file in the <code>EX4_Scheduling</code> folder, and look at the results of the <code>OVOLRECPEUPLEMENT1</code> and <code>OVOLRECPEUPLEMENT2</code> outputs</strong>. In particular, you can create a pivot table in a program such as Microsoft Excel to obtain a graph showing the evolution of these measures over time, with a curve for each iteration.</p>
+<p>At the same time, open the files <code>PEUPLEMENT1.csv</code> and <code>PEUPLEMENT2.csv</code>, and observe their contents. Each column corresponds to values that the tactical model was supposed to use for a iteration, with each row containing a value for a given period.</p>
+<p><strong>When comparing the contents of <code>Localex4.csv</code> and <code>PEUPLEMENT1.csv</code> and <code>PEUPLEMENT2.csv</code>, what do you observe?</strong></p>
+<details class="spoiler "  id="spoiler-10">
+  <summary>Reveal correction</summary>
+  <p><p>We can see that the tactical model has indeed followed the harvest levels defined in the <code>PEUPLEMENT1.csv</code> and <code>PEUPLEMENT2.csv</code> files for the output <code>OVOLREC</code> in stands 1 and 2.</p>
+<p>In particular, we can see that <code>OVOLRECPEUPLEMENT1</code> drops to 0 for period 4 in all iterations, as expected in <code>PEUPLEMENT1.csv</code>. We can also see that iteration 4 keeps a value of <code>OVOLRECPEUPLEMENT1</code> at 10 most of the time, while the other iterations keep a value of 20.</p>
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_9470bb794010af21def849ac8653507a.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_ee0d470fd4fe31ddcef01a03ba9091c6.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/grapheExercice2_replanning_Exercice4_huc7e859ad3f0b3c15be02ba9eb0706f87_23471_9470bb794010af21def849ac8653507a.webp"
+               width="752"
+               height="452"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>We can observe a drop to 0 for <code>OVOLRECPEUPLEMENT2</code> at period 9 in all iterations, as expected in <code>PEUPLEMENT2.csv</code>.</p>
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_47af8c0520c7eab555dea05e79b278fc.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_23bf476ab66f32b8b71bc70abed18122.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/grapheExercice2_replanning_Exercice4-2_huda0281a89648c916315c6044d06702d1_20811_47af8c0520c7eab555dea05e79b278fc.webp"
+               width="751"
+               height="436"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+</p>
+</details>
+<h3 id="question-5">Question 5</h3>
+<p>Now duplicate the <code>Localex1</code> folder and rename it <code>Localex5</code> (delete the existing folder if it already exists).</p>
+<p><strong>Then modify the <code>TWD_land.opt</code> file of <code>Localex5</code> to force this tactical model to ignore the 90-100ha planting constraint from period (or to follow it only in period 1) using the keyword <a href="../replanning/#_reignoreperiod"><code>_REIGNORE(period)</code></a></strong>.</p>
+<details class="spoiler "  id="spoiler-11">
+  <summary>Reveal correction</summary>
+  <p><p>The content of <code>TWD_land.opt</code> of the <code>Localex5</code> scenario should then be :</p>
+<pre><code>
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+osuppl &gt;= 90 1 _Goal(G1,9999) _REIGNORE(2)
+osuppl &lt;= 100 1 _Goal(G2,9999) _REIGNORE(2)
+
+*FORMAT MOSEK
+</code></pre>
+</p>
+</details>
+<p>Then run a re-planning with the strategic model <code>Globalex1</code> and the tactical model <code>Localex5</code>, with the following command:</p>
+<pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex5 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX5 -rep 10 -len 20 -rel 20 -thr 2
+</code></pre>
+<p>Once the command has run, <strong>compare the evolution of the planting level output <code>OSUPPL</code> in the tactical model <code>Localex1</code> (in the <code>planning_EX1</code> folder created in question 1) with the evolution of <code>OSUPPL</code> in the tactical model <code>Localex5</code> (in the <code>planning_EX5</code> folder)</strong>. As before, you can use a pivot table in a program like Microsoft Excel to obtain a graph showing the evolution of these measures over time, with a curve for each of the iterations.</p>
+<p><strong>What differences do you observe between <code>Localex1</code> and <code>Localex5</code>?</strong></p>
+<details class="spoiler "  id="spoiler-12">
+  <summary>Reveal correction</summary>
+  <p><p>We can see that the tactical model <code>Localex1</code> manages to sustain the level of <code>OSUPPL</code> for a long time in a stable way, as shown on this graph:</p>
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_188cd30efea6cf2054069ff5bd1cdeb2.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_7b8033f91edec9e2173280b783807745.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/grapheExercice2_replanning_Exercice5_hubc9bfc51f27b65dc2420cf215a484584_59988_188cd30efea6cf2054069ff5bd1cdeb2.webp"
+               width="752"
+               height="452"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>In comparison, in <code>Localex5</code>, we can see that the level of <code>OSUPPL</code> is much more variable and unstable. It quickly reaches values of 0, due to the fact that the model constraints on it are ignored after period 2, as shown on this graph:</p>
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_238e1ed66cd21fea65e0176c88fdd45e.webp 400w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_5483406fddb26fb28efde99e57551b18.webp 760w,
+               /FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/grapheExercice2_replanning_Exercice5-2_hu14c45209bbd24214027ae8312d55e6ae_66296_238e1ed66cd21fea65e0176c88fdd45e.webp"
+               width="752"
+               height="452"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>Hence, it seems that the local model did ignore the constraints <code>OSUPPL</code>.</p>
+</p>
+</details>
+<h3 id="question-6">Question 6</h3>
+<p>Now duplicate the <code>Localex1</code> folder and rename it <code>Localex6</code> (delete the existing folder if it already exists).</p>
+<p><strong>Then modify the <code>TWD_land.opt</code> file of <code>Localex6</code> to force this tactical model to achieve 100% of the harvest level (<code>OVOLREC</code>) of the strategic model, with a 1% variability allowed for exceeding the value (so at least 100%, and at most 101%) with the keyword <a href="../replanning/#_setfromglobalratio"><code>_SETFROMGLOBAL(weight)</code></a></strong>.</p>
+<details class="spoiler "  id="spoiler-13">
+  <summary>Reveal correction</summary>
+  <p><p>The content of <code>TWD_land.opt</code> of the <code>Localex6</code> scenario should then be :</p>
+<pre><code>
+*OBJECTIVE
+_MAX ovolrec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+oVolRec&lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
+
+osuprec &lt;= 40272 1.._LENGTH _Goal(G1,9999) _SETFROMGLOBAL(1.0)
+osuprec &gt;= 40272 1.._LENGTH _Goal(G2,9999) _SETFROMGLOBAL(0.99)
+
+*FORMAT MOSEK
+
+</code></pre>
+</p>
+</details>
+<p>Then run a re-plannibg with the strategic model <code>Globalex1</code> and the tactical model <code>Localex6</code>, with the following command:</p>
+<pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex6 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX6 -rep 10 -len 20 -rel 20 -thr 2
+</code></pre>
+<p>Once the command has run, look at the output in the <code>Examples/Python/replanning/replanning_EX6</code> folder.</p>
+<p><strong>Now compare the probability of maintaining a similar harvest as in Exercise 1 (with <code>Localex1</code>) by looking at the contents of <code>outputsdrift.csv</code> in <code>replanning_EX1</code> and <code>replanning_EX6</code>.</strong></p>
+<p><strong>What differences do you observe?</strong></p>
+<details class="spoiler "  id="spoiler-14">
+  <summary>Reveal correction</summary>
+  <p>We observe that the probability of maintaining <code>OVOLREC</code> in the tactical model above a 5% decrease with respect to the strategic model is relatively similar between <code>Localex1</code> and <code>Localex6</code>; except that <code>Localex6</code> has a lower value of this probability at period 7, when it drops towards 0.</p>
+</details>
+<h3 id="question-7">Question 7</h3>
+<p>Now duplicate the <code>Globalex1</code> folder and rename it <code>Globalex7</code> (delete the existing folder if it already exists).</p>
+<p><strong>Then modify the <code>TWD_land.opt</code> file of <code>Globalex7</code> to force the <code>Globalex7</code> scenario to achieve at least 99% of the <code>OVOLREC</code> harvest level of the tactical model</strong>.</p>
+<details class="spoiler "  id="spoiler-15">
+  <summary>Reveal correction</summary>
+  <p><p>The content of <code>TWD_land.opt</code> of the <code>Globalex7</code> scenario should then be :</p>
+<pre><code>
+*OBJECTIVE
+_MAXMIN oVolRec - _Penalty(_All) 1.._LENGTH
+
+*EXCLUDE
+aCaribou 1.._LENGTH
+afire    1.._LENGTH
+arecup    1.._LENGTH
+
+*CONSTRAINTS
+
+osuprec &lt;= 40272 1.._LENGTH _Goal(G1,9999) _SETFROMLOCAL(1.0)
+osuprec &gt;= 40272 1.._LENGTH _Goal(G2,9999) _SETFROMLOCAL(0.99)
+
+_NDY(oVolRec) 1.._LENGTH
+
+
+*FORMAT MOSEK
+
+</code></pre>
+</p>
+</details>
+<p>Then run a re-planning with the strategic model <code>Globalex7</code> and the tactical model <code>Localex1</code>, with the following command:</p>
+<pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex7 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX7 -rep 10 -len 20 -rel 20 -thr 2
+</code></pre>
+<p>Once the command has run, look at the output in the <code>Examples/Python/replanning/replanning_EX7</code> folder.</p>
+<p><strong>Now observe how the planting levels (output <code>OSSUPL</code>) compare between those of question 1, and those of this re-planning by looking at the <code>outputsdrift.csv</code> files of <code>replanning_EX1</code> and <code>replanning_EX7</code>.</strong></p>
+<p><strong>How does the maintenance of the level of <code>OSSUPL</code> compare to question 1?</strong></p>
+<details class="spoiler "  id="spoiler-16">
+  <summary>Reveal correction</summary>
+  <p><p>It can be seen that for question 1 and this question, <code>OSSUPL</code> keeps a very low probability of maintaining itself from a large decrease from the first periods when comparing the tactical and strategic model.</p>
+<p>However, even for very high drift values (e.g. 50%), we can see that <code>OSSUPL</code> tends to have a higher probability of greatly decreasing its value with <code>Globalex7</code> than with <code>Globalex1</code>.</p>
+</p>
+</details>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/FMTdocs/docs/advanced/replanning/" rel="next">Spatially referenced re-planning</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on May 5, 2019</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2022 Bureau du Forestier en Chef du Québec
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/FMTdocs/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/FMTdocs/en/js/wowchemy.min.5ba9ed4d06c87a22a820c6acdb849d94.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
