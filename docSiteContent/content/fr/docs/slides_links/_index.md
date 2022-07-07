@@ -19,3 +19,4 @@ Les présentations seront déformées si vous les regardez sur mobiles. Il est r
 - [Présentation sur le carbone avec machine learning](../../slides/fmt_carbone)
 - [Présentation sur l'avancement de FMT (28/04/22)](../../slides/fmt_mise_a_jour280422)
 - [Présentation sur le Presolve de FMT](../../slides/fmt_presolve)
+- [Présentation sur la mise à jour de modèle](../../slides/fmt_modelupdate)
