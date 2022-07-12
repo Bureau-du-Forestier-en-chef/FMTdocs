@@ -77,8 +77,8 @@ graph TD;
   9[&#34;Planification&#34;];
   10[&#34;Spatialisation&#34;];
   11[&#34;BFECOPT&#34;];
-  12[&#34;Analyses Diverses&#34;];
-  13[&#34;Autres&#34;];
+  12[&#34;Analyses diverses&#34;];
+  13[&#34;Autre&#34;];
   14[&#34;Tests&#34;];
   15[&#34;Machine Learning&#34;];
 &lt;/div&gt;
@@ -87,13 +87,13 @@ graph TD;
 &lt;div class=mermaid&gt;
 pie title Les tests de FMT
   &#34;Syntaxe&#34; : 3.5
-  &#34;Unités spatiale&#34; : 5.3
+  &#34;Unités spatiales&#34; : 5.3
   &#34;Planification&#34; : 61.4
   &#34;Re-planification&#34; : 5.3
   &#34;Spatialisation&#34; : 7.0
   &#34;Machine Learning&#34; : 7.0
   &#34;Presolve&#34; : 3.5
-  &#34;Analyses autres&#34; : 7.0
+  &#34;Analyses autre&#34; : 7.0
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;lévolution-des-versions&#34;&gt;L&amp;rsquo;évolution des versions&lt;/h2&gt;
@@ -126,7 +126,7 @@ flowchart LR;
 8[&#34;0.9.3&#34;]
 9[&#34;0.9.4 en développement&#34;]
 10[&#34;Presolve&#34;]
-11[&#34;Autres&#34;]
+11[&#34;Autre&#34;]
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;les-nouveautés-094&#34;&gt;Les nouveautés 0.9.4&lt;/h2&gt;
@@ -148,7 +148,7 @@ flowchart LR;
 &lt;li&gt;Syntaxe carbone
 &lt;ul&gt;
 &lt;li&gt;Permet d&amp;rsquo;intégrer les réservoirs et flux de carbone à même les yields&lt;/li&gt;
-&lt;li&gt;Permet d&amp;rsquo;obtenir un bilan de carbone spatialement référencé et spatialement explicit&lt;/li&gt;
+&lt;li&gt;Permet d&amp;rsquo;obtenir un bilan de carbone spatialement référencé et spatialement explicite&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -167,27 +167,27 @@ flowchart LR;
       Formation --&gt; Replanification
       Formation --&gt; ClubFMT
       Formation --&gt; Carbone
-      Autres
+      Autre
     }
     Doxygen(78%) --&gt; GitHub
     state GitHub {
       Fonctionnement
       Installation
-      MachineLearning
+      Machine Learning
       Spatialisation
     }
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;documentation-à-venir&#34;&gt;Documentation à venir&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Github:
+&lt;li&gt;Github
 &lt;ul&gt;
-&lt;li&gt;Re-plannification&lt;/li&gt;
-&lt;li&gt;Syntaxe:
+&lt;li&gt;Re-planification&lt;/li&gt;
+&lt;li&gt;Syntaxe
 &lt;ul&gt;
 &lt;li&gt;Spatialisation&lt;/li&gt;
-&lt;li&gt;Carbone (Yields)&lt;/li&gt;
-&lt;li&gt;Re-plannification&lt;/li&gt;
+&lt;li&gt;Carbone (yields)&lt;/li&gt;
+&lt;li&gt;Re-planification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -231,15 +231,15 @@ Débogage                                                :       des3,2021-12-15
 &lt;li&gt;Re-planification spatialement explicite
 &lt;ul&gt;
 &lt;li&gt;Permettre d&amp;rsquo;obtenir un effet de spatialisation à travers la re-planification&lt;/li&gt;
-&lt;li&gt;Utilisation d&amp;rsquo;évènements stochastique spatiaux&lt;/li&gt;
-&lt;li&gt;Inclure les enjeux opérationel&lt;/li&gt;
-&lt;li&gt;Changement climatique&lt;/li&gt;
+&lt;li&gt;Utilisation d&amp;rsquo;évènements stochastiques spatiaux&lt;/li&gt;
+&lt;li&gt;Inclure les enjeux opérationels&lt;/li&gt;
+&lt;li&gt;Changements climatiques&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Type I
 &lt;ul&gt;
 &lt;li&gt;Corriger des comportements indésirable des CPF (existant depuis des années)&lt;/li&gt;
-&lt;li&gt;Respect des stratégiques de A à Z par le solveur&lt;/li&gt;
+&lt;li&gt;Respect des stratégies de A à Z par le solveur&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Lien avec SELES
@@ -326,9 +326,9 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;hr&gt;
 &lt;h2 id=&#34;problématique&#34;&gt;Problématique&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Notre bilan carbone est difficile à obtenir rapidement:
+&lt;li&gt;Notre bilan carbone est difficile à obtenir rapidement
 &lt;ul&gt;
-&lt;li&gt;Pour tous les réservoirs de l&amp;rsquo;écosystème:
+&lt;li&gt;Pour tous les réservoirs de l&amp;rsquo;écosystème
 &lt;ul&gt;
 &lt;li&gt;Carbone du sol&lt;/li&gt;
 &lt;li&gt;Biomasse souterraine&lt;/li&gt;
@@ -337,17 +337,17 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;li&gt;Biomasse aérienne&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;La productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Pour la productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;problématique-1&#34;&gt;Problématique&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeux complexe:
+&lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
 &lt;ul&gt;
 &lt;li&gt;Le calcul du bilan de carbone forestier pour un modèle de planification est complexe&lt;/li&gt;
-&lt;li&gt;L’optimisation spatialement explicit de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
+&lt;li&gt;L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -433,7 +433,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;problématique-états-des-réservoirs-&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+&lt;h2 id=&#34;problématique-état-des-réservoirs-&#34;&gt;Problématique: État des réservoirs ?&lt;/h2&gt;
 
 
 
@@ -460,7 +460,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;problématique-états-des-réservoirs--1&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+&lt;h2 id=&#34;problématique-état-des-réservoirs--1&#34;&gt;Problématique: État des réservoirs ?&lt;/h2&gt;
 
 
 
@@ -487,7 +487,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;problématique-états-des-réservoirs--2&#34;&gt;Problématique: États des réservoirs ?&lt;/h2&gt;
+&lt;h2 id=&#34;problématique-état-des-réservoirs--2&#34;&gt;Problématique: État des réservoirs ?&lt;/h2&gt;
 
 
 
@@ -543,12 +543,12 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;hr&gt;
 &lt;h2 id=&#34;objectif&#34;&gt;Objectif&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Obtention du bilan de carbone rapidement:
+&lt;li&gt;Obtention du bilan de carbone rapidement
 &lt;ul&gt;
-&lt;li&gt;Tous les réservoirs de l’écosystème:
+&lt;li&gt;Tous les réservoirs de l’écosystème
 &lt;ul&gt;
 &lt;li&gt;Carbone du sol&lt;/li&gt;
-&lt;li&gt;Biomasse sous-terraine&lt;/li&gt;
+&lt;li&gt;Biomasse souterraine&lt;/li&gt;
 &lt;li&gt;Litière&lt;/li&gt;
 &lt;li&gt;Bois mort&lt;/li&gt;
 &lt;li&gt;Biomasse aérienne&lt;/li&gt;
@@ -678,10 +678,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
   &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;3|4|5|6|7|9|10|13|14|15|16|17&#34; style=&#34;font-size:120%&#34;&gt;
   {
   Intrants:
-    - GFI = Volume de feuillu intolérant
-    - GFT = Volume de feuillu tolérant
+    - GFI = Volume de feuillus intolérants
+    - GFT = Volume de feuillus tolérants
     - GF = Volume feuillu total
-    - GR = Volume résineu total
+    - GR = Volume résineux total
   }
   *YM ? ? ?
   AG_Biomass_C,BG_Biomass_C,Deadwood_C,Litter_C,Soil_C _PRED(pools_carbon,GFI,GFT,GF,GR)
@@ -701,10 +701,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
   &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;3|4|5|6|7|9|10|13|14|15|16|17&#34; style=&#34;font-size:120%&#34;&gt;
   {
   Intrants:
-    - GFI = Volume de feuillu intolérant
-    - GFT = Volume de feuillu tolérant
+    - GFI = Volume de feuillus intolérants
+    - GFT = Volume de feuillus tolérants
     - GF = Volume feuillu total
-    - GR = Volume résineu total
+    - GR = Volume résineux total
   }
   *YM ? ? ?
   NEP _PRED(nep_carbon,GFI,GFT,GF,GR)
@@ -730,16 +730,16 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
   *OUTPUT Biomasse_Total
   *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
 
-  ;Inventaire du carbone du sols en (c)
+  ;Inventaire du carbone du sol en (c)
   *OUTPUT Sols_Total
   *SOURCE ? ? ? _INVENT Soil_C
 
   &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;problématique--optimisation-spatialement-explicit&#34;&gt;Problématique : Optimisation spatialement explicit&lt;/h2&gt;
+&lt;h2 id=&#34;problématique--optimisation-spatialement-explicite&#34;&gt;Problématique : Optimisation spatialement explicite&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Pratiquement impossible avec nos modèles&lt;/li&gt;
-&lt;li&gt;Utilisations d’un heuristique pour placer la récolte&lt;/li&gt;
+&lt;li&gt;Utilisation d’une heuristique pour placer la récolte&lt;/li&gt;
 &lt;li&gt;Difficile à obtenir à moins d’implémenter une heuristique:
 &lt;ul&gt;
 &lt;li&gt;Simulated Annealing&lt;/li&gt;
@@ -747,7 +747,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Utilisation de la programmation mixte intégrale&lt;/li&gt;
-&lt;li&gt;On peut donc difficilement répondre à la question du ou doit t’on faire t&amp;rsquo;elle ou t&amp;rsquo;elle traitement pour améliorer notre bilan de carbone&lt;/li&gt;
+&lt;li&gt;On peut donc difficilement répondre à la question du où doit t’on faire tel ou tel traitement pour améliorer notre bilan de carbone&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;objectif--meilleur-bilan&#34;&gt;Objectif : Meilleur bilan&lt;/h2&gt;
@@ -919,7 +919,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;ul&gt;
 &lt;li&gt;Une solution spatiale explicite et spatialement référencée&lt;/li&gt;
 &lt;li&gt;Les cinqs principaux réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
-&lt;li&gt;Le flux de productivitée nette de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Le flux de productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;

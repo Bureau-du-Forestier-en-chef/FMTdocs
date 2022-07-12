@@ -90,9 +90,9 @@
       
 <h2 id="problématique">Problématique</h2>
 <ul>
-<li>Notre bilan carbone est difficile à obtenir rapidement:
+<li>Notre bilan carbone est difficile à obtenir rapidement
 <ul>
-<li>Pour tous les réservoirs de l&rsquo;écosystème:
+<li>Pour tous les réservoirs de l&rsquo;écosystème
 <ul>
 <li>Carbone du sol</li>
 <li>Biomasse souterraine</li>
@@ -101,7 +101,7 @@
 <li>Biomasse aérienne</li>
 </ul>
 </li>
-<li>La productivité nette de l&rsquo;écosystème</li>
+<li>Pour la productivité nette de l&rsquo;écosystème</li>
 </ul>
 </li>
 </ul>
@@ -117,10 +117,10 @@
       
 <h2 id="problématique-1">Problématique</h2>
 <ul>
-<li>La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeux complexe:
+<li>La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
 <ul>
 <li>Le calcul du bilan de carbone forestier pour un modèle de planification est complexe</li>
-<li>L’optimisation spatialement explicit de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique</li>
+<li>L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique</li>
 </ul>
 </li>
 </ul>
@@ -242,7 +242,7 @@
     <section>
     
       
-<h2 id="problématique-états-des-réservoirs-">Problématique: États des réservoirs ?</h2>
+<h2 id="problématique-état-des-réservoirs-">Problématique: État des réservoirs ?</h2>
 
 
 
@@ -278,7 +278,7 @@
     <section>
     
       
-<h2 id="problématique-états-des-réservoirs--1">Problématique: États des réservoirs ?</h2>
+<h2 id="problématique-état-des-réservoirs--1">Problématique: État des réservoirs ?</h2>
 
 
 
@@ -314,7 +314,7 @@
     <section>
     
       
-<h2 id="problématique-états-des-réservoirs--2">Problématique: États des réservoirs ?</h2>
+<h2 id="problématique-état-des-réservoirs--2">Problématique: État des réservoirs ?</h2>
 
 
 
@@ -388,12 +388,12 @@
       
 <h2 id="objectif">Objectif</h2>
 <ul>
-<li>Obtention du bilan de carbone rapidement:
+<li>Obtention du bilan de carbone rapidement
 <ul>
-<li>Tous les réservoirs de l’écosystème:
+<li>Tous les réservoirs de l’écosystème
 <ul>
 <li>Carbone du sol</li>
-<li>Biomasse sous-terraine</li>
+<li>Biomasse souterraine</li>
 <li>Litière</li>
 <li>Bois mort</li>
 <li>Biomasse aérienne</li>
@@ -577,10 +577,10 @@
   <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
   {
   Intrants:
-    - GFI = Volume de feuillu intolérant
-    - GFT = Volume de feuillu tolérant
+    - GFI = Volume de feuillus intolérants
+    - GFT = Volume de feuillus tolérants
     - GF = Volume feuillu total
-    - GR = Volume résineu total
+    - GR = Volume résineux total
   }
   *YM ? ? ?
   AG_Biomass_C,BG_Biomass_C,Deadwood_C,Litter_C,Soil_C _PRED(pools_carbon,GFI,GFT,GF,GR)
@@ -609,10 +609,10 @@
   <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
   {
   Intrants:
-    - GFI = Volume de feuillu intolérant
-    - GFT = Volume de feuillu tolérant
+    - GFI = Volume de feuillus intolérants
+    - GFT = Volume de feuillus tolérants
     - GF = Volume feuillu total
-    - GR = Volume résineu total
+    - GR = Volume résineux total
   }
   *YM ? ? ?
   NEP _PRED(nep_carbon,GFI,GFT,GF,GR)
@@ -647,7 +647,7 @@
   *OUTPUT Biomasse_Total
   *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
 
-  ;Inventaire du carbone du sols en (c)
+  ;Inventaire du carbone du sol en (c)
   *OUTPUT Sols_Total
   *SOURCE ? ? ? _INVENT Soil_C
 
@@ -662,10 +662,10 @@
     <section>
     
       
-<h2 id="problématique--optimisation-spatialement-explicit">Problématique : Optimisation spatialement explicit</h2>
+<h2 id="problématique--optimisation-spatialement-explicite">Problématique : Optimisation spatialement explicite</h2>
 <ul>
 <li>Pratiquement impossible avec nos modèles</li>
-<li>Utilisations d’un heuristique pour placer la récolte</li>
+<li>Utilisation d’une heuristique pour placer la récolte</li>
 <li>Difficile à obtenir à moins d’implémenter une heuristique:
 <ul>
 <li>Simulated Annealing</li>
@@ -673,7 +673,7 @@
 </ul>
 </li>
 <li>Utilisation de la programmation mixte intégrale</li>
-<li>On peut donc difficilement répondre à la question du ou doit t’on faire t&rsquo;elle ou t&rsquo;elle traitement pour améliorer notre bilan de carbone</li>
+<li>On peut donc difficilement répondre à la question du où doit t’on faire tel ou tel traitement pour améliorer notre bilan de carbone</li>
 </ul>
 
     </section>
@@ -908,7 +908,7 @@
 <ul>
 <li>Une solution spatiale explicite et spatialement référencée</li>
 <li>Les cinqs principaux réservoirs de l&rsquo;écosystème</li>
-<li>Le flux de productivitée nette de l&rsquo;écosystème</li>
+<li>Le flux de productivité nette de l&rsquo;écosystème</li>
 </ul>
 </li>
 <li>

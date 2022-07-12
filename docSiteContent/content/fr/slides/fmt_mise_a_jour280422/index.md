@@ -56,8 +56,8 @@ graph TD;
   9["Planification"];
   10["Spatialisation"];
   11["BFECOPT"];
-  12["Analyses Diverses"];
-  13["Autres"];
+  12["Analyses diverses"];
+  13["Autre"];
   14["Tests"];
   15["Machine Learning"];
 </div>
@@ -69,13 +69,13 @@ graph TD;
 <div class=mermaid>
 pie title Les tests de FMT
   "Syntaxe" : 3.5
-  "Unités spatiale" : 5.3
+  "Unités spatiales" : 5.3
   "Planification" : 61.4
   "Re-planification" : 5.3
   "Spatialisation" : 7.0
   "Machine Learning" : 7.0
   "Presolve" : 3.5
-  "Analyses autres" : 7.0
+  "Analyses autre" : 7.0
 </div>
 
 ---
@@ -111,7 +111,7 @@ flowchart LR;
 8["0.9.3"]
 9["0.9.4 en développement"]
 10["Presolve"]
-11["Autres"]
+11["Autre"]
 </div>
 
 ---
@@ -128,7 +128,7 @@ flowchart LR;
   - Diminue l'utilisation de la mémoire de l'ordinateur par le solveur
 - Syntaxe carbone
   - Permet d'intégrer les réservoirs et flux de carbone à même les yields
-  - Permet d'obtenir un bilan de carbone spatialement référencé et spatialement explicit
+  - Permet d'obtenir un bilan de carbone spatialement référencé et spatialement explicite
 
 ---
 
@@ -146,13 +146,13 @@ flowchart LR;
       Formation --> Replanification
       Formation --> ClubFMT
       Formation --> Carbone
-      Autres
+      Autre
     }
     Doxygen(78%) --> GitHub
     state GitHub {
       Fonctionnement
       Installation
-      MachineLearning
+      Machine Learning
       Spatialisation
     }
 </div>
@@ -162,12 +162,12 @@ flowchart LR;
 
 ## Documentation à venir
 
-- Github:
-  - Re-plannification
-  - Syntaxe:
+- Github
+  - Re-planification
+  - Syntaxe
     - Spatialisation
-    - Carbone (Yields)
-    - Re-plannification
+    - Carbone (yields)
+    - Re-planification
 - Continuer à documenter les fonctions (78%)
 
 ---
@@ -211,12 +211,12 @@ Débogage                                                :       des3,2021-12-15
 
 - Re-planification spatialement explicite
   - Permettre d'obtenir un effet de spatialisation à travers la re-planification
-  - Utilisation d'évènements stochastique spatiaux
-  - Inclure les enjeux opérationel
-  - Changement climatique
+  - Utilisation d'évènements stochastiques spatiaux
+  - Inclure les enjeux opérationels
+  - Changements climatiques
 - Type I
   - Corriger des comportements indésirable des CPF (existant depuis des années)
-  - Respect des stratégiques de A à Z par le solveur
+  - Respect des stratégies de A à Z par le solveur
 - Lien avec SELES
   - Passer les hypothèses de nos modèles à SELES
 - Permettre l'optimisation du bilan de carbone

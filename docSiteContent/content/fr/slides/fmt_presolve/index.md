@@ -103,7 +103,7 @@ graph TD;
 <div class=mermaid>
 flowchart LR
     B{"Un seul attribut?"} -- Oui -->C["Élimine le thème"]
-    B -- Non -->D{"Attributs statique?"}
+    B -- Non -->D{"Attributs statiques?"}
     D -- Oui -->C
     D -- Non -->E{"Attribut inutile?"}
     subgraph Réduction du nombre d'éléments
@@ -140,7 +140,7 @@ flowchart LR
     D -- Oui -->E{"Éliminer cette opérabilité"}
     E --> D
     D -- Non -->F{"Opérabilité équivalente?"}
-    F -- Oui -->G{"Regroupement des opérabilitées"}
+    F -- Oui -->G{"Regroupement des opérabilités"}
     G --> F
     F -- Non -->H["Nouvelle action"]
     end
@@ -182,8 +182,8 @@ flowchart LR
 <div class=mermaid>
 flowchart LR
     B{"RHS de 0?"} -- Oui -->C["Output d'actions?"]
-    C -- Oui -->D["Transformer la contrainte en yields et opérabilités d'action et l'éliminer'"]
-    C -- Non -->E["Output d'invetaire?"]
+    C -- Oui -->D["Transformer la contrainte en yields et opérabilité d'action et l'éliminer'"]
+    C -- Non -->E["Output d'inventaire?"]
     E -- Oui -->D
     E -- Non -->F["Conserver la contrainte"]
 </div>
@@ -203,7 +203,7 @@ graph TD;
   3-->8;
   1["Postsolve"];
   2["Réajustement du Graph"];
-  3["Réatribution"];
+  3["Réattribution"];
   4["Thèmes"];
   5["Actions"];
   6["Transitions"];
@@ -218,13 +218,13 @@ graph TD;
 {{< figure src="presolveex.jpg" width="auto" height="auto" >}}
 - Le présolve est réalisé sur le scénario nommé Globalreplanning
   - 10 itérations de presolve sont réalisées
-  - Le modèle possède 11299 développement, l’original(506 de plus)
-  - Le modèle possède 13 thèmes, l’original(7 de plus)
-  - Le modèle possède 276 yields, l’original(89 de plus)
-  - Le modèle possède 14 actions, l’original(19 de plus)
-  - Le modèle possède 14 transitions, l’original(19 de plus)
-  - Le modèle possède 1103 outputs, l’original(1074 de plus)
-  - Le modèle possède 130 contraintes, l’original(9 de plus)
+  - Le modèle possède 11299 développements, l’original (506 de plus)
+  - Le modèle possède 13 thèmes, l’original (7 de plus)
+  - Le modèle possède 276 yields, l’original (89 de plus)
+  - Le modèle possède 14 actions, l’original (19 de plus)
+  - Le modèle possède 14 transitions, l’original (19 de plus)
+  - Le modèle possède 1103 outputs, l’original (1074 de plus)
+  - Le modèle possède 130 contraintes, l’original (9 de plus)
 
 ---
 

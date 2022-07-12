@@ -28,8 +28,8 @@ graph TD;
   1-->2;
   1-->3;
   1["La carte n'est pas à jour"];
-  2["Les données ne sont pas disponible"];
-  3["La période précédante de calcul n'est pas terminée"];
+  2["Les données ne sont pas disponibles"];
+  3["La période précédente de calcul n'est pas terminée"];
 </div>
 
 ---
@@ -37,12 +37,12 @@ graph TD;
 ## Les désavantages de la mise à jour
 
 - Peut causer des biais dans les analyses d'impact
-  - Sousestimer l'impact d'un retrait de superficie
+  - Sous-estimer l'impact d'un retrait de superficie
   - Surestimer le retrait d'une balise de traitement sylvicole
 - Ralentit le solveur mathématique 
   - Solutions multiples
 - Certains solveurs ne peuvent pas résoudre le modèle
-- Causer des erreurs de manipulation (ex: Changer les bornes avec _GOAL)
+- Causer des erreurs de manipulation (ex: changer les bornes avec _GOAL)
 - Causer des biais dans l'interprétation carbone du modèle
 - Causer des erreurs d'interprétation
 

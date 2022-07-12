@@ -77,8 +77,8 @@ graph TD;
   9[&#34;Planification&#34;];
   10[&#34;Spatialisation&#34;];
   11[&#34;BFECOPT&#34;];
-  12[&#34;Analyses Diverses&#34;];
-  13[&#34;Autres&#34;];
+  12[&#34;Analyses diverses&#34;];
+  13[&#34;Autre&#34;];
   14[&#34;Tests&#34;];
   15[&#34;Machine Learning&#34;];
 &lt;/div&gt;
@@ -87,13 +87,13 @@ graph TD;
 &lt;div class=mermaid&gt;
 pie title Les tests de FMT
   &#34;Syntaxe&#34; : 3.5
-  &#34;Unités spatiale&#34; : 5.3
+  &#34;Unités spatiales&#34; : 5.3
   &#34;Planification&#34; : 61.4
   &#34;Re-planification&#34; : 5.3
   &#34;Spatialisation&#34; : 7.0
   &#34;Machine Learning&#34; : 7.0
   &#34;Presolve&#34; : 3.5
-  &#34;Analyses autres&#34; : 7.0
+  &#34;Analyses autre&#34; : 7.0
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;lévolution-des-versions&#34;&gt;L&amp;rsquo;évolution des versions&lt;/h2&gt;
@@ -126,7 +126,7 @@ flowchart LR;
 8[&#34;0.9.3&#34;]
 9[&#34;0.9.4 en développement&#34;]
 10[&#34;Presolve&#34;]
-11[&#34;Autres&#34;]
+11[&#34;Autre&#34;]
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;les-nouveautés-094&#34;&gt;Les nouveautés 0.9.4&lt;/h2&gt;
@@ -148,7 +148,7 @@ flowchart LR;
 &lt;li&gt;Syntaxe carbone
 &lt;ul&gt;
 &lt;li&gt;Permet d&amp;rsquo;intégrer les réservoirs et flux de carbone à même les yields&lt;/li&gt;
-&lt;li&gt;Permet d&amp;rsquo;obtenir un bilan de carbone spatialement référencé et spatialement explicit&lt;/li&gt;
+&lt;li&gt;Permet d&amp;rsquo;obtenir un bilan de carbone spatialement référencé et spatialement explicite&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -167,27 +167,27 @@ flowchart LR;
       Formation --&gt; Replanification
       Formation --&gt; ClubFMT
       Formation --&gt; Carbone
-      Autres
+      Autre
     }
     Doxygen(78%) --&gt; GitHub
     state GitHub {
       Fonctionnement
       Installation
-      MachineLearning
+      Machine Learning
       Spatialisation
     }
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;documentation-à-venir&#34;&gt;Documentation à venir&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Github:
+&lt;li&gt;Github
 &lt;ul&gt;
-&lt;li&gt;Re-plannification&lt;/li&gt;
-&lt;li&gt;Syntaxe:
+&lt;li&gt;Re-planification&lt;/li&gt;
+&lt;li&gt;Syntaxe
 &lt;ul&gt;
 &lt;li&gt;Spatialisation&lt;/li&gt;
-&lt;li&gt;Carbone (Yields)&lt;/li&gt;
-&lt;li&gt;Re-plannification&lt;/li&gt;
+&lt;li&gt;Carbone (yields)&lt;/li&gt;
+&lt;li&gt;Re-planification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -231,15 +231,15 @@ Débogage                                                :       des3,2021-12-15
 &lt;li&gt;Re-planification spatialement explicite
 &lt;ul&gt;
 &lt;li&gt;Permettre d&amp;rsquo;obtenir un effet de spatialisation à travers la re-planification&lt;/li&gt;
-&lt;li&gt;Utilisation d&amp;rsquo;évènements stochastique spatiaux&lt;/li&gt;
-&lt;li&gt;Inclure les enjeux opérationel&lt;/li&gt;
-&lt;li&gt;Changement climatique&lt;/li&gt;
+&lt;li&gt;Utilisation d&amp;rsquo;évènements stochastiques spatiaux&lt;/li&gt;
+&lt;li&gt;Inclure les enjeux opérationels&lt;/li&gt;
+&lt;li&gt;Changements climatiques&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Type I
 &lt;ul&gt;
 &lt;li&gt;Corriger des comportements indésirable des CPF (existant depuis des années)&lt;/li&gt;
-&lt;li&gt;Respect des stratégiques de A à Z par le solveur&lt;/li&gt;
+&lt;li&gt;Respect des stratégies de A à Z par le solveur&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Lien avec SELES
