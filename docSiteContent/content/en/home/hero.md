@@ -19,10 +19,10 @@ cta:
   icon: book-open
 ---
 
-[FMT](https://github.com/gcyr/FMT) (**F**orest **M**anagement **T**ool) is an open source forest management library that makes forest planning easier.
+[FMT](https://github.com/Bureau-du-Forestier-en-chef/FMT) (**F**orest **M**anagement **T**ool) is an open source forest management library that makes forest planning easier.
 
-Want to learn more about [FMT](https://github.com/gcyr/FMT), and how to use it ? You're at the right place !
+Want to learn more about [FMT](https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/master/README.md), and how to use it ? You're at the right place !
 
-<img src="https://img.shields.io/github/last-commit/gcyr/FMT"/>
+<img src="https://img.shields.io/github/last-commit/Bureau-du-Forestier-en-chef/FMT"/>
 
-<a class="github-button" href="https://github.com/gcyr/FMT" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star FMT on GitHub">Star FMT on GitHub</a><br><script async defer src="https://buttons.github.io/buttons.js"></script>
+<a class="github-button" href="https://github.com/Bureau-du-Forestier-en-chef/FMT" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star FMT on GitHub">Star FMT on GitHub</a><br><script async defer src="https://buttons.github.io/buttons.js"></script>
