@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.2.0 for Hugo">
+
+  
+    <link rel="manifest" href="/FMTdocs/fr/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone_2023/">
+
+  <title>Planification avec Machine Learning (Mise à jour 2023) | Documentation de FMT</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/theme/white.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs.min.css" crossorigin="anonymous" id="highlight-theme">
+
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/reveal_custom.min.css">
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h1 id="planification-forestière-à-laide-du-machine-learning-mise-à-jour-2023">Planification forestière à l’aide du Machine Learning (Mise à jour 2023)</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp"
+               width="40%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/Bureau-du-Forestier-en-chef/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="les-problématiques">Les problématiques</h2>
+<ul>
+<li>Notre bilan carbone est difficile à obtenir rapidement
+<ul>
+<li>Pour tous les réservoirs de l&rsquo;écosystème</li>
+<li>Pour la productivité nette de l&rsquo;écosystème</li>
+</ul>
+</li>
+<li>La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
+<ul>
+<li>Le calcul du bilan de carbone forestier pour un modèle de planification est complexe</li>
+<li>L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="les-objectifs">Les objectifs</h2>
+<ul>
+<li>Obtention du bilan de carbone rapidement (Article #1)
+<ul>
+<li>Tous les réservoirs de l’écosystème</li>
+<li>La productivité nette de l’écosystème</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="1-bilan-carbone-avec-lia">1. Bilan carbone avec l&rsquo;IA</h2>
+<div class=mermaid>
+    stateDiagram
+    direction LR
+    state IA_par_pixel {
+       direction LR
+       state Intrants {
+         direction LR
+         Dernières_perturbations
+         Volume_de_feuillue_tolérant
+         Volume_de_feuillue_intolérant
+         Volume_de_résineux
+       }
+       Intrants --> Réservoir
+      state Réservoir {
+       Biomasse_aérienne
+       Biomasse_sousterraine
+       Bois_mort
+       Carbone_du_sol
+       Litière
+     }
+      Intrants --> Flux
+     State Flux {
+        Productivitée_nette_de_l'écosystème
+        }
+   }
+   IA_par_pixel --> Entrainement
+   State Entrainement {
+     direction LR
+     CPF2328 --> Global
+     CPF2328 --> Pessière
+     CPF2328 --> Sapnière
+     CPF2328 --> Érablière
+     }
+   Entrainement --> Validation
+   State Validation {
+     direction LR
+     Spatial --> 07152
+     Non_Spatial --> 07152
+     Spatial --> 02751
+     Non_Spatial --> 02751
+     Spatial --> 08665
+     Non_Spatial --> 08665
+     Spatial --> 08762
+     Non_Spatial --> 08762
+     Spatial --> 09751
+     Non_Spatial --> 09751
+     }
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="les-objectifs-1">Les objectifs</h2>
+<ul>
+<li>Génération de planification spatialement explicite (Article #2)
+<ul>
+<li>Maximisant le bilan carbone</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="2-planification-spatial-par-ia">2. Planification spatial par IA</h2>
+<div class=mermaid>
+    stateDiagram
+    direction LR
+    Modèle --> FMTsamodel
+    state FMTsamodel {
+       direction LR
+       state Intrants {
+         direction LR
+         (i)Spatiaux --> Age
+         (i)Spatiaux --> Opérabilité
+         (i)Non_spatiaux --> Taille_des_blocs
+         (i)Non_spatiaux --> Délai_dadjacence
+       }
+       Intrants --> IA
+      state Générateur {
+       direction LR
+       Calcul_2328 --> Apprentisage
+     }
+     State IA {
+        Générateur --> Prédiction
+        state Prédiction {
+         (o)Spatiaux --> Blocs_de_coupes
+         (o)Non_spatiaux --> faisabilité
+         (o)Non_spatiaux --> Bilan_carbone
+        }
+   }
+   IA --> Optimisation
+   State Optimisation {
+     Validation --> Amélioration
+     }
+ }
+FMTsamodel --> Solution
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class=mermaid>
+gantt
+dateFormat  YYYY-MM-DD
+title Projet FORAC
+excludes weekends
+section IA estimateur carbone
+Script d'entrainement          :done,des1,2021-04-01,2021-09-01 
+Script d'utilisation           :     done,des2,2021-04-01,2021-09-01
+Sélection du modèle           :     done,des2,2021-04-01,2021-05-01
+Rapport          :     done,des3,2021-09-01,2021-10-01
+Installation FMT release           :done,des4,2021-10-01,2021-11-01
+Pytorch à C++            :     done,des5, 2021-10-01,2021-12-01
+Installation FMT debug          :     done,des6, 2021-12-01,2022-03-01
+Implémentation :     done,des8, 2021-12-01,2022-03-01
+Écriture de l'article estimateur de carbone		:des16,2022-09-01,2023-04-01
+Test et validation avec modèles réel		     :active,des15,2022-10-01,2023-05-01
+section IA Planification spatiale
+Test et extension à la planification référencé          :     done,des9, 2022-02-01,2022-05-01
+Mise en place d'un plan :     done,des10, 2021-12-01,2022-02-01
+Lien FMT avec Python avec exemple       :     done,des11, 2022-01-01,2022-04-01
+Modèle IA de spatialisation minétique:		done,des12, 2022-04-01,2022-10-01
+Modèle IA d'évaluation de planification spatialisé           :crit,des13,2022-09-01,2023-03-01
+Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,2023-08-01
+Écriture de l'article planification forestière	:des17,2023-04-01,2023-08-01
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="concrètement">Concrètement</h2>
+<ul>
+<li>Nouvelle syntaxe pour la section yield</li>
+<li>Voir dans examples/Models/TWD_land/Scenarios/Predictors</li>
+<li>Développement d&rsquo;un nouveau type de yield &ldquo;*YM&rdquo;</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="modèle-pour-la-productivité-nette-de-lécosystème">Modèle pour la productivité nette de l&rsquo;écosystème</h2>
+  <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
+  {
+  Intrants:
+    - GFI = Volume de feuillus intolérants
+    - GFT = Volume de feuillus tolérants
+    - GF = Volume feuillu total
+    - GR = Volume résineux total
+  }
+  *YM ? ? ?
+  NEP _PRED(nep_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+  </code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="suivi-des-variables">Suivi des variables</h2>
+  <pre><code class="fmt" data-line-numbers="4|5|8|9|12|13" style="font-size:120%">
+
+  ;Inventaire de la productivité nette de l'écosystème en (c)
+  *OUTPUT NEP_Total
+  *SOURCE ? ? ? _INVENT NEP
+
+  ;Inventaire de la biomasse anérienne et souterraine en (c)
+  *OUTPUT Biomasse_Total
+  *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
+
+  ;Inventaire du carbone du sol en (c)
+  *OUTPUT Sols_Total
+  *SOURCE ? ? ? _INVENT Soil_C
+
+  </code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class=mermaid>
+gantt
+dateFormat  YYYY-MM-DD
+tickInterval month
+axisFormat %b%d
+title Validation
+excludes weekends
+section Échelle Global
+Apprentissage (29 UA)          :done,des1,2023-01-09,2023-01-23 
+Tests avec spatialisations          :     done,des2,2023-03-01,2023-04-01
+Analyse des résultats           :     done,des3,2023-04-01,2023-04-17
+Présentation          :     active,des4,2023-05-01,2023-05-02
+section Échelle des régions écologique
+Apprentissage (29 UA) :done,des5,2023-01-02,2023-01-16
+Tester l'IA (08665) : done,des6,2023-03-06,2023-03-27
+section Optimisation du NEP
+Tester avec 02751 : done,des7,2023-04-03,2023-04-24
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="gcbm-vs-ia-02751">GCBM vs IA (02751)</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_16d54a78a1b22e63ce75044e11666a60.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_619e90d2ef23d324ca912d326ac4189d.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_16d54a78a1b22e63ce75044e11666a60.webp"
+               width="100%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="gcbm-vs-ia-02751-1">GCBM vs IA (02751)</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_49039f30ca0a00efae8ccdb2e6b4ff17.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_83164716f38a860d4bdab274457993ab.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_49039f30ca0a00efae8ccdb2e6b4ff17.webp"
+               width="100%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="constats-ia-vs-gcbm">Constats IA vs GCBM</h2>
+<ul>
+<li>Le modèle d&rsquo;IA par région écologique performe le moins bien
+<ul>
+<li>Sous estime le carbone des réservoirs</li>
+<li>Sous estime le NEP</li>
+</ul>
+</li>
+<li>le modèle d&rsquo;IA Global est le meilleur</li>
+<li>Les scénarios spatialement explicite se collent à GCBM
+<ul>
+<li>Les scénarios non spatiaux performe moins bien</li>
+<li>L&rsquo;objetif du projet était l&rsquo;utilisation avec des modèles spatialement explicite</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="pourquoi-ces-différences">Pourquoi ces différences?</h2>
+<ul>
+<li>Les résultats de l&rsquo;IA diffère de GCBM car:
+<ul>
+<li>IA suppose le feu comme perturbation historique</li>
+<li>GCBM utilise plus d&rsquo;intrants
+<ul>
+<li>Température annuelle moyenne</li>
+<li>Précipitation</li>
+<li>Transitions après perturbation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Le modèle par région écologique performe moins bien car:
+<ul>
+<li>Manque de données par modèle</li>
+<li>Les régions écologiques sont difficiles à identifier dans les modèles</li>
+<li>Superficie orpheline dans les modèles</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="optimisation-du-nep-02751">Optimisation du NEP (02751)</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1fd73c7b7fe83fb2004adeb2c4b2cff2.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_91ad45e63293fad42cafad8e8e3ef97e.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1fd73c7b7fe83fb2004adeb2c4b2cff2.webp"
+               width="100%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="constats">Constats</h2>
+<ul>
+<li>Le scénario MAX NEP à le meilleur bilan carbone</li>
+<li>Le scénario MAX AAM stock plus de carbone dans les différents réservoirs</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>On peut maintenant obtenir un bilan de carbone facilement pour:
+<ul>
+<li>Une solution spatiale explicite et spatialement référencée</li>
+<li>Les cinqs principaux réservoirs de l&rsquo;écosystème</li>
+<li>Le flux de productivité nette de l&rsquo;écosystème</li>
+<li>Calcul du bilan avec perturbations naturelles en utilisant la replanification</li>
+</ul>
+</li>
+<li>On peut maintenant utiliser le Machine Learning pour:
+<ul>
+<li>Générer des intrants au calcul (Courbes de productions, Paramètres économique)</li>
+</ul>
+</li>
+<li>La génération de solution spatiale avec IA:
+<ul>
+<li>Nous permettra de faire de l&rsquo;optimisation spatialement explicite</li>
+<li>Utilisation du projet de fin d&rsquo;étude à B. Forest</li>
+<li>Replanification spatialement explicite</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="les-prochaines-étapes">Les prochaines étapes</h2>
+<ul>
+<li>Validation de l&rsquo;impact de l&rsquo;optimisation du NEP sur
+<ul>
+<li>Le choix des travaux sylvicoles</li>
+<li>La productivité</li>
+<li>Les rotations</li>
+</ul>
+</li>
+<li>Faire d&rsquo;autres analyses (UA du sud)</li>
+<li>Faire un scénario de maximisation des puits de carbone</li>
+<li>Générer une base de donnée contenant les actions:
+<ul>
+<li>Feux</li>
+<li>Récupération après feux</li>
+</ul>
+</li>
+<li>Tester le tout en replanification</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="des-questions">Des Questions?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp"
+               width="40%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/Bureau-du-Forestier-en-chef/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+$( "li" ).addClass( "fragment" );
+// $( "p" ).addClass( "fragment" );
+</script>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/highlight/highlight.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>%!(EXTRA string=sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==)
+  
+
+  
+  
+  
+  <script>
+    Reveal.initialize({
+      highlight: {
+        beforeHighlight: hljs => hljs.registerLanguage("fmt", function (hljs) {
+          return {
+            case_insensitive: false,
+            contains: [
+              {
+                className: "string",
+                begin: /\?/, end: /[\s\t]/,
+                relevance: 0
+              },
+              hljs.COMMENT(
+                '{', 
+                '}', 
+                {
+                  contains: [
+                    {
+                      scope: 'doc', begin: '@\\w+'
+                    }
+                  ]
+                }
+              ),
+              hljs.COMMENT(
+                ';', 
+                '\n', 
+                {
+                  contains: [
+                    {
+                      scope: 'doc', begin: '@\\w+'
+                    }
+                  ]
+                }
+              ),
+              {
+                className: "number",
+                begin: String.raw`\b(\d*\.?\d+)\b`,
+                relevance: 0
+              },
+              {
+                className: 'number',
+                begin: String.raw`(#[\w]*)`,
+                relevance: 0
+              },
+              {
+                className: 'string',
+                begin: String.raw`(>=|<=|<|>|\+|\/)`,
+                relevance: 0
+              }
+            ],
+            keywords: {
+              $pattern: /\*\w+|_\w+/,
+              keyword: ["*A", "*AA", "_LOCK",
+                "*THEME", "*AGGREGATE",
+                "*ACTION", "*OPERABLE", "_LOCKEXEMPT", "_MAXAGE", "_AGE",
+                "*CASE", "*SOURCE", "*TARGET", "_REPLACE", "_DEATH",
+                "*OUTPUT", "@AGE", "@YLD", "_AREA", "_INVENT",
+                "*Y", "*YC", "*YM", "_PRED", "_EQUATION", "_SUM", "_RANGE",
+                "_MAX", "_MIN", "_MAXMIN", "_MINMAX", "_EVEN", "_SEQ", "_NDY",
+                "_AVG", "*OBJECTIVE", "*EXCLUDE", "*CONSTRAINTS", "_LENGTH", "_TH",
+                "_SETFROMLOCAL", "_SETFROMGLOBAL", "_REIGNORE", "_RANDOM", "_SIZE", "_REPLICATE",
+                "_PENALTY", "_GOAL", "*FORMAT", "_SETGLOBALSCHEDULE", "_ADJACENCY"]
+            },
+          }
+        })
+      },
+      plugins: [RevealMarkdown, RevealZoom, RevealSearch, RevealNotes, RevealMath, RevealHighlight],
+      slideNumber: true,
+      controlsLayout: 'edges',
+	  viewDistance: 1000
+    });
+  </script>
+
+</body>
+</html>

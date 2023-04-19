@@ -5,7 +5,7 @@
     <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/machine-learning/</link>
       <atom:link href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Machine learning</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-ca</language><copyright>© 2022 Bureau du Forestier en Chef du Québec</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-ca</language><copyright>© 2023 Bureau du Forestier en Chef du Québec</copyright>
     <image>
       <url>https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png</url>
       <title>Machine learning</title>
@@ -254,6 +254,456 @@ Débogage                                                :       des3,2021-12-15
 &lt;li&gt;Facteur de productivité en fonction du scénario Rcp&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;des-questions&#34;&gt;Des Questions?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&#34;https://code.jquery.com/jquery-3.5.0.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+$( &#34;li&#34; ).addClass( &#34;fragment&#34; );
+// $( &#34;p&#34; ).addClass( &#34;fragment&#34; );
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Planification avec Machine Learning (Mise à jour 2023)</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone_2023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone_2023/</guid>
+      <description>&lt;h1 id=&#34;planification-forestière-à-laide-du-machine-learning-mise-à-jour-2023&#34;&gt;Planification forestière à l’aide du Machine Learning (Mise à jour 2023)&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-problématiques&#34;&gt;Les problématiques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notre bilan carbone est difficile à obtenir rapidement
+&lt;ul&gt;
+&lt;li&gt;Pour tous les réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Pour la productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
+&lt;ul&gt;
+&lt;li&gt;Le calcul du bilan de carbone forestier pour un modèle de planification est complexe&lt;/li&gt;
+&lt;li&gt;L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-objectifs&#34;&gt;Les objectifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Obtention du bilan de carbone rapidement (Article #1)
+&lt;ul&gt;
+&lt;li&gt;Tous les réservoirs de l’écosystème&lt;/li&gt;
+&lt;li&gt;La productivité nette de l’écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-bilan-carbone-avec-lia&#34;&gt;1. Bilan carbone avec l&amp;rsquo;IA&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+    stateDiagram
+    direction LR
+    state IA_par_pixel {
+       direction LR
+       state Intrants {
+         direction LR
+         Dernières_perturbations
+         Volume_de_feuillue_tolérant
+         Volume_de_feuillue_intolérant
+         Volume_de_résineux
+       }
+       Intrants --&gt; Réservoir
+      state Réservoir {
+       Biomasse_aérienne
+       Biomasse_sousterraine
+       Bois_mort
+       Carbone_du_sol
+       Litière
+     }
+      Intrants --&gt; Flux
+     State Flux {
+        Productivitée_nette_de_l&#39;écosystème
+        }
+   }
+   IA_par_pixel --&gt; Entrainement
+   State Entrainement {
+     direction LR
+     CPF2328 --&gt; Global
+     CPF2328 --&gt; Pessière
+     CPF2328 --&gt; Sapnière
+     CPF2328 --&gt; Érablière
+     }
+   Entrainement --&gt; Validation
+   State Validation {
+     direction LR
+     Spatial --&gt; 07152
+     Non_Spatial --&gt; 07152
+     Spatial --&gt; 02751
+     Non_Spatial --&gt; 02751
+     Spatial --&gt; 08665
+     Non_Spatial --&gt; 08665
+     Spatial --&gt; 08762
+     Non_Spatial --&gt; 08762
+     Spatial --&gt; 09751
+     Non_Spatial --&gt; 09751
+     }
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-objectifs-1&#34;&gt;Les objectifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Génération de planification spatialement explicite (Article #2)
+&lt;ul&gt;
+&lt;li&gt;Maximisant le bilan carbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-planification-spatial-par-ia&#34;&gt;2. Planification spatial par IA&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+    stateDiagram
+    direction LR
+    Modèle --&gt; FMTsamodel
+    state FMTsamodel {
+       direction LR
+       state Intrants {
+         direction LR
+         (i)Spatiaux --&gt; Age
+         (i)Spatiaux --&gt; Opérabilité
+         (i)Non_spatiaux --&gt; Taille_des_blocs
+         (i)Non_spatiaux --&gt; Délai_dadjacence
+       }
+       Intrants --&gt; IA
+      state Générateur {
+       direction LR
+       Calcul_2328 --&gt; Apprentisage
+     }
+     State IA {
+        Générateur --&gt; Prédiction
+        state Prédiction {
+         (o)Spatiaux --&gt; Blocs_de_coupes
+         (o)Non_spatiaux --&gt; faisabilité
+         (o)Non_spatiaux --&gt; Bilan_carbone
+        }
+   }
+   IA --&gt; Optimisation
+   State Optimisation {
+     Validation --&gt; Amélioration
+     }
+ }
+FMTsamodel --&gt; Solution
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=mermaid&gt;
+gantt
+dateFormat  YYYY-MM-DD
+title Projet FORAC
+excludes weekends
+section IA estimateur carbone
+Script d&#39;entrainement          :done,des1,2021-04-01,2021-09-01 
+Script d&#39;utilisation           :     done,des2,2021-04-01,2021-09-01
+Sélection du modèle           :     done,des2,2021-04-01,2021-05-01
+Rapport          :     done,des3,2021-09-01,2021-10-01
+Installation FMT release           :done,des4,2021-10-01,2021-11-01
+Pytorch à C++            :     done,des5, 2021-10-01,2021-12-01
+Installation FMT debug          :     done,des6, 2021-12-01,2022-03-01
+Implémentation :     done,des8, 2021-12-01,2022-03-01
+Écriture de l&#39;article estimateur de carbone		:des16,2022-09-01,2023-04-01
+Test et validation avec modèles réel		     :active,des15,2022-10-01,2023-05-01
+section IA Planification spatiale
+Test et extension à la planification référencé          :     done,des9, 2022-02-01,2022-05-01
+Mise en place d&#39;un plan :     done,des10, 2021-12-01,2022-02-01
+Lien FMT avec Python avec exemple       :     done,des11, 2022-01-01,2022-04-01
+Modèle IA de spatialisation minétique:		done,des12, 2022-04-01,2022-10-01
+Modèle IA d&#39;évaluation de planification spatialisé           :crit,des13,2022-09-01,2023-03-01
+Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,2023-08-01
+Écriture de l&#39;article planification forestière	:des17,2023-04-01,2023-08-01
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;concrètement&#34;&gt;Concrètement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nouvelle syntaxe pour la section yield&lt;/li&gt;
+&lt;li&gt;Voir dans examples/Models/TWD_land/Scenarios/Predictors&lt;/li&gt;
+&lt;li&gt;Développement d&amp;rsquo;un nouveau type de yield &amp;ldquo;*YM&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;modèle-pour-la-productivité-nette-de-lécosystème&#34;&gt;Modèle pour la productivité nette de l&amp;rsquo;écosystème&lt;/h2&gt;
+  &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;3|4|5|6|7|9|10|13|14|15|16|17&#34; style=&#34;font-size:120%&#34;&gt;
+  {
+  Intrants:
+    - GFI = Volume de feuillus intolérants
+    - GFT = Volume de feuillus tolérants
+    - GF = Volume feuillu total
+    - GR = Volume résineux total
+  }
+  *YM ? ? ?
+  NEP _PRED(nep_carbon,GFI,GFT,GF,GR)
+  {
+  Extrants:
+    - AG_Biomass_C = Biomasse aérienne
+    - BG_Biomass_C = Biomasse souterraine
+    - Deadwood_C = Bois mort
+    - Litter_C = Littière
+    - Soil_C = Sol
+
+  }
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;suivi-des-variables&#34;&gt;Suivi des variables&lt;/h2&gt;
+  &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;4|5|8|9|12|13&#34; style=&#34;font-size:120%&#34;&gt;
+
+  ;Inventaire de la productivité nette de l&#39;écosystème en (c)
+  *OUTPUT NEP_Total
+  *SOURCE ? ? ? _INVENT NEP
+
+  ;Inventaire de la biomasse anérienne et souterraine en (c)
+  *OUTPUT Biomasse_Total
+  *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
+
+  ;Inventaire du carbone du sol en (c)
+  *OUTPUT Sols_Total
+  *SOURCE ? ? ? _INVENT Soil_C
+
+  &lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;div class=mermaid&gt;
+gantt
+dateFormat  YYYY-MM-DD
+tickInterval month
+axisFormat %b%d
+title Validation
+excludes weekends
+section Échelle Global
+Apprentissage (29 UA)          :done,des1,2023-01-09,2023-01-23 
+Tests avec spatialisations          :     done,des2,2023-03-01,2023-04-01
+Analyse des résultats           :     done,des3,2023-04-01,2023-04-17
+Présentation          :     active,des4,2023-05-01,2023-05-02
+section Échelle des régions écologique
+Apprentissage (29 UA) :done,des5,2023-01-02,2023-01-16
+Tester l&#39;IA (08665) : done,des6,2023-03-06,2023-03-27
+section Optimisation du NEP
+Tester avec 02751 : done,des7,2023-04-03,2023-04-24
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gcbm-vs-ia-02751&#34;&gt;GCBM vs IA (02751)&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_16d54a78a1b22e63ce75044e11666a60.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_619e90d2ef23d324ca912d326ac4189d.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_16d54a78a1b22e63ce75044e11666a60.webp&#34;
+               width=&#34;100%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gcbm-vs-ia-02751-1&#34;&gt;GCBM vs IA (02751)&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_49039f30ca0a00efae8ccdb2e6b4ff17.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_83164716f38a860d4bdab274457993ab.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_49039f30ca0a00efae8ccdb2e6b4ff17.webp&#34;
+               width=&#34;100%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;constats-ia-vs-gcbm&#34;&gt;Constats IA vs GCBM&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Le modèle d&amp;rsquo;IA par région écologique performe le moins bien
+&lt;ul&gt;
+&lt;li&gt;Sous estime le carbone des réservoirs&lt;/li&gt;
+&lt;li&gt;Sous estime le NEP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;le modèle d&amp;rsquo;IA Global est le meilleur&lt;/li&gt;
+&lt;li&gt;Les scénarios spatialement explicite se collent à GCBM
+&lt;ul&gt;
+&lt;li&gt;Les scénarios non spatiaux performe moins bien&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;objetif du projet était l&amp;rsquo;utilisation avec des modèles spatialement explicite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;pourquoi-ces-différences&#34;&gt;Pourquoi ces différences?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Les résultats de l&amp;rsquo;IA diffère de GCBM car:
+&lt;ul&gt;
+&lt;li&gt;IA suppose le feu comme perturbation historique&lt;/li&gt;
+&lt;li&gt;GCBM utilise plus d&amp;rsquo;intrants
+&lt;ul&gt;
+&lt;li&gt;Température annuelle moyenne&lt;/li&gt;
+&lt;li&gt;Précipitation&lt;/li&gt;
+&lt;li&gt;Transitions après perturbation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Le modèle par région écologique performe moins bien car:
+&lt;ul&gt;
+&lt;li&gt;Manque de données par modèle&lt;/li&gt;
+&lt;li&gt;Les régions écologiques sont difficiles à identifier dans les modèles&lt;/li&gt;
+&lt;li&gt;Superficie orpheline dans les modèles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;optimisation-du-nep-02751&#34;&gt;Optimisation du NEP (02751)&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1fd73c7b7fe83fb2004adeb2c4b2cff2.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_91ad45e63293fad42cafad8e8e3ef97e.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1fd73c7b7fe83fb2004adeb2c4b2cff2.webp&#34;
+               width=&#34;100%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;constats&#34;&gt;Constats&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Le scénario MAX NEP à le meilleur bilan carbone&lt;/li&gt;
+&lt;li&gt;Le scénario MAX AAM stock plus de carbone dans les différents réservoirs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;On peut maintenant obtenir un bilan de carbone facilement pour:
+&lt;ul&gt;
+&lt;li&gt;Une solution spatiale explicite et spatialement référencée&lt;/li&gt;
+&lt;li&gt;Les cinqs principaux réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Le flux de productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Calcul du bilan avec perturbations naturelles en utilisant la replanification&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On peut maintenant utiliser le Machine Learning pour:
+&lt;ul&gt;
+&lt;li&gt;Générer des intrants au calcul (Courbes de productions, Paramètres économique)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La génération de solution spatiale avec IA:
+&lt;ul&gt;
+&lt;li&gt;Nous permettra de faire de l&amp;rsquo;optimisation spatialement explicite&lt;/li&gt;
+&lt;li&gt;Utilisation du projet de fin d&amp;rsquo;étude à B. Forest&lt;/li&gt;
+&lt;li&gt;Replanification spatialement explicite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-prochaines-étapes&#34;&gt;Les prochaines étapes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Validation de l&amp;rsquo;impact de l&amp;rsquo;optimisation du NEP sur
+&lt;ul&gt;
+&lt;li&gt;Le choix des travaux sylvicoles&lt;/li&gt;
+&lt;li&gt;La productivité&lt;/li&gt;
+&lt;li&gt;Les rotations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Faire d&amp;rsquo;autres analyses (UA du sud)&lt;/li&gt;
+&lt;li&gt;Faire un scénario de maximisation des puits de carbone&lt;/li&gt;
+&lt;li&gt;Générer une base de donnée contenant les actions:
+&lt;ul&gt;
+&lt;li&gt;Feux&lt;/li&gt;
+&lt;li&gt;Récupération après feux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tester le tout en replanification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;des-questions&#34;&gt;Des Questions?&lt;/h2&gt;
