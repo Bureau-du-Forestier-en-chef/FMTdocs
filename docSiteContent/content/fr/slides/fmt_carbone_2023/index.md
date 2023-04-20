@@ -228,12 +228,12 @@ tickInterval month
 axisFormat %b%d
 title Validation
 excludes weekends
-section Échelle Global
+section Échelle Globale
 Apprentissage (29 UA)          :done,des1,2023-01-09,2023-01-23 
-Tests avec spatialisations          :     done,des2,2023-03-01,2023-04-01
+Tests avec spatialisation          :     done,des2,2023-03-01,2023-04-01
 Analyse des résultats           :     done,des3,2023-04-01,2023-04-17
 Présentation          :     active,des4,2023-05-01,2023-05-02
-section Échelle des régions écologique
+section Échelle des région écologique
 Apprentissage (29 UA) :done,des5,2023-01-02,2023-01-16
 Tester l'IA (08665) : done,des6,2023-03-06,2023-03-27
 section Optimisation du NEP
@@ -245,7 +245,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 ## GCBM vs IA (02751)
 
  - Les modèles d'IA testés
-   - Régions écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328
+   - Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328
    - Global 1 modèle entrainé avec cacul-2328
  - Les types de modélisation
    - Spatial (cellules de 14 ha)
@@ -273,28 +273,28 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
       - Sous estime le carbone des réservoirs
       - Sous estime le NEP
    - le modèle d'IA Global est le meilleur
-   - Les scénarios spatialement explicite se collent à GCBM
-      - Les scénarios non spatiaux performe moins bien
-      - L'objetif du projet était l'utilisation avec des modèles spatialement explicite
+   - Les scénarios spatialement explicites se collent à GCBM
+      - Les scénarios non spatiaux performent moins bien
+      - L'objetif du projet était l'utilisation avec des modèles spatialement explicites
 ---
 
 ## Pourquoi ces différences?
-   - Les résultats de l'IA diffère de GCBM car:
+   - Les résultats de l'IA diffèrent de GCBM car:
       - IA suppose le feu comme perturbation historique
       - GCBM utilise plus d'intrants
          - Température annuelle moyenne
-         - Précipitation
+         - Précipitations
          - Transitions après perturbation
    - Le modèle par région écologique performe moins bien car:
       - Manque de données par modèle
-      - Les régions écologiques sont difficiles à identifier dans les modèles
-      - Superficie orpheline dans les modèles
+      - Les région écologique sont difficiles à identifier dans les modèles
+      - Superficie orphelines dans les modèles
 
 ---
 
 ## Optimisation du NEP (02751)
 
- - Les scénarios sont non spatial
+ - Les scénarios sont non spatiaux
    - MAX_OVOLTOTREC: Détermination
    - MAX_OAAM: Optimisation de l'accroissement annuel moyen
    - MAX_NEP_GLOBAL: Optimisation du bilan (IA)
@@ -309,7 +309,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 
 ## Constats
 
-  - Le scénario MAX NEP à le meilleur bilan carbone
+  - Le scénario MAX NEP a le meilleur bilan carbone
   - Le scénario MAX AAM stock plus de carbone dans les différents réservoirs
 
 ---
@@ -323,7 +323,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
   - Le flux de productivité nette de l'écosystème
   - Calcul du bilan avec perturbations naturelles en utilisant la replanification
 - On peut maintenant utiliser le Machine Learning pour:
-  - Générer des intrants au calcul (Courbes de productions, Paramètres économique)
+  - Générer des intrants au calcul (Courbes de production, Paramètres économique)
 - La génération de solution spatiale avec IA:
    - Nous permettra de faire de l'optimisation spatialement explicite
    - Utilisation du projet de fin d'étude à B. Forest
