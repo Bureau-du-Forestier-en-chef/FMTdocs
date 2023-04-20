@@ -3652,7 +3652,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
 Écriture de l&#39;article planification forestière	:des17,2023-04-01,2023-08-01
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;résultat-concrets-de-la-phase-1&#34;&gt;Résultat concrets de la phase 1&lt;/h2&gt;
+&lt;h2 id=&#34;résultats-concrets-de-la-phase-1&#34;&gt;Résultats concrets de la phase 1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Nouvelle syntaxe pour la section yield&lt;/li&gt;
 &lt;li&gt;Voir dans examples/Models/TWD_land/Scenarios/Predictors&lt;/li&gt;
@@ -3721,7 +3721,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;ul&gt;
 &lt;li&gt;Les modèles d&amp;rsquo;IA testés
 &lt;ul&gt;
-&lt;li&gt;Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328&lt;/li&gt;
+&lt;li&gt;Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec calcul-2328&lt;/li&gt;
 &lt;li&gt;Global 1 modèle entrainé avec cacul-2328&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

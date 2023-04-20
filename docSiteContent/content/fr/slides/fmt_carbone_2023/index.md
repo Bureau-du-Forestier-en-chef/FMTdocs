@@ -169,7 +169,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
 ---
 
 
-## Résultat concrets de la phase 1
+## Résultats concrets de la phase 1
   - Nouvelle syntaxe pour la section yield
   - Voir dans examples/Models/TWD_land/Scenarios/Predictors
   - Développement d'un nouveau type de yield "*YM"
@@ -245,7 +245,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 ## GCBM vs IA (02751)
 
  - Les modèles d'IA testés
-   - Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328
+   - Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec calcul-2328
    - Global 1 modèle entrainé avec cacul-2328
  - Les types de modélisation
    - Spatial (cellules de 14 ha)
