@@ -1138,12 +1138,12 @@ tickInterval month
 axisFormat %b%d
 title Validation
 excludes weekends
-section Échelle Global
+section Échelle Globale
 Apprentissage (29 UA)          :done,des1,2023-01-09,2023-01-23 
-Tests avec spatialisations          :     done,des2,2023-03-01,2023-04-01
+Tests avec spatialisation          :     done,des2,2023-03-01,2023-04-01
 Analyse des résultats           :     done,des3,2023-04-01,2023-04-17
 Présentation          :     active,des4,2023-05-01,2023-05-02
-section Échelle des régions écologique
+section Échelle des région écologique
 Apprentissage (29 UA) :done,des5,2023-01-02,2023-01-16
 Tester l&#39;IA (08665) : done,des6,2023-03-06,2023-03-27
 section Optimisation du NEP
@@ -1154,7 +1154,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;ul&gt;
 &lt;li&gt;Les modèles d&amp;rsquo;IA testés
 &lt;ul&gt;
-&lt;li&gt;Régions écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328&lt;/li&gt;
+&lt;li&gt;Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328&lt;/li&gt;
 &lt;li&gt;Global 1 modèle entrainé avec cacul-2328&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -1230,23 +1230,23 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;le modèle d&amp;rsquo;IA Global est le meilleur&lt;/li&gt;
-&lt;li&gt;Les scénarios spatialement explicite se collent à GCBM
+&lt;li&gt;Les scénarios spatialement explicites se collent à GCBM
 &lt;ul&gt;
-&lt;li&gt;Les scénarios non spatiaux performe moins bien&lt;/li&gt;
-&lt;li&gt;L&amp;rsquo;objetif du projet était l&amp;rsquo;utilisation avec des modèles spatialement explicite&lt;/li&gt;
+&lt;li&gt;Les scénarios non spatiaux performent moins bien&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;objetif du projet était l&amp;rsquo;utilisation avec des modèles spatialement explicites&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;pourquoi-ces-différences&#34;&gt;Pourquoi ces différences?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Les résultats de l&amp;rsquo;IA diffère de GCBM car:
+&lt;li&gt;Les résultats de l&amp;rsquo;IA diffèrent de GCBM car:
 &lt;ul&gt;
 &lt;li&gt;IA suppose le feu comme perturbation historique&lt;/li&gt;
 &lt;li&gt;GCBM utilise plus d&amp;rsquo;intrants
 &lt;ul&gt;
 &lt;li&gt;Température annuelle moyenne&lt;/li&gt;
-&lt;li&gt;Précipitation&lt;/li&gt;
+&lt;li&gt;Précipitations&lt;/li&gt;
 &lt;li&gt;Transitions après perturbation&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -1255,15 +1255,15 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;li&gt;Le modèle par région écologique performe moins bien car:
 &lt;ul&gt;
 &lt;li&gt;Manque de données par modèle&lt;/li&gt;
-&lt;li&gt;Les régions écologiques sont difficiles à identifier dans les modèles&lt;/li&gt;
-&lt;li&gt;Superficie orpheline dans les modèles&lt;/li&gt;
+&lt;li&gt;Les région écologique sont difficiles à identifier dans les modèles&lt;/li&gt;
+&lt;li&gt;Superficie orphelines dans les modèles&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;optimisation-du-nep-02751&#34;&gt;Optimisation du NEP (02751)&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Les scénarios sont non spatial
+&lt;li&gt;Les scénarios sont non spatiaux
 &lt;ul&gt;
 &lt;li&gt;MAX_OVOLTOTREC: Détermination&lt;/li&gt;
 &lt;li&gt;MAX_OAAM: Optimisation de l&amp;rsquo;accroissement annuel moyen&lt;/li&gt;
@@ -1301,7 +1301,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;hr&gt;
 &lt;h2 id=&#34;constats&#34;&gt;Constats&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Le scénario MAX NEP à le meilleur bilan carbone&lt;/li&gt;
+&lt;li&gt;Le scénario MAX NEP a le meilleur bilan carbone&lt;/li&gt;
 &lt;li&gt;Le scénario MAX AAM stock plus de carbone dans les différents réservoirs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -1317,7 +1317,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;/li&gt;
 &lt;li&gt;On peut maintenant utiliser le Machine Learning pour:
 &lt;ul&gt;
-&lt;li&gt;Générer des intrants au calcul (Courbes de productions, Paramètres économique)&lt;/li&gt;
+&lt;li&gt;Générer des intrants au calcul (Courbes de production, Paramètres économique)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;La génération de solution spatiale avec IA:
