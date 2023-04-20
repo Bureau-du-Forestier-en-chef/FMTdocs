@@ -99,7 +99,7 @@
 <li>La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
 <ul>
 <li>Le calcul du bilan de carbone forestier pour un modèle de planification est complexe</li>
-<li>L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique</li>
+<li>L’optimisation spatialement explicite de la localisation des travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique</li>
 </ul>
 </li>
 </ul>
@@ -141,8 +141,8 @@
        state Intrants {
          direction LR
          Dernières_perturbations
-         Volume_de_feuillue_tolérant
-         Volume_de_feuillue_intolérant
+         Volume_de_feuillus_tolérants
+         Volume_de_feuillus_intolérants
          Volume_de_résineux
        }
        Intrants --> Réservoir
@@ -155,7 +155,7 @@
      }
       Intrants --> Flux
      State Flux {
-        Productivitée_nette_de_l'écosystème
+        Productivité_nette_de_l'écosystème
         }
    }
    IA_par_pixel --> Entrainement
@@ -209,7 +209,7 @@
     <section>
     
       
-<h2 id="2-planification-spatial-par-ia">2. Planification spatial par IA</h2>
+<h2 id="2-planification-spatiale-par-ia">2. Planification spatiale par IA</h2>
 <div class=mermaid>
     stateDiagram
     direction LR
@@ -268,13 +268,13 @@ Pytorch à C++            :     done,des5, 2021-10-01,2021-12-01
 Installation FMT debug          :     done,des6, 2021-12-01,2022-03-01
 Implémentation :     done,des8, 2021-12-01,2022-03-01
 Écriture de l'article estimateur de carbone		:des16,2022-09-01,2023-04-01
-Test et validation avec modèles réel		     :active,des15,2022-10-01,2023-05-01
+Test et validation avec modèles réels		     :active,des15,2022-10-01,2023-05-01
 section IA Planification spatiale
-Test et extension à la planification référencé          :     done,des9, 2022-02-01,2022-05-01
+Test et extension à la planification référencée          :     done,des9, 2022-02-01,2022-05-01
 Mise en place d'un plan :     done,des10, 2021-12-01,2022-02-01
 Lien FMT avec Python avec exemple       :     done,des11, 2022-01-01,2022-04-01
-Modèle IA de spatialisation minétique:		done,des12, 2022-04-01,2022-10-01
-Modèle IA d'évaluation de planification spatialisé           :crit,des13,2022-09-01,2023-03-01
+Modèle IA de spatialisation mimétique:		done,des12, 2022-04-01,2022-10-01
+Modèle IA d'évaluation de planification spatialisée           :crit,des13,2022-09-01,2023-03-01
 Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,2023-08-01
 Écriture de l'article planification forestière	:des17,2023-04-01,2023-08-01
 </div>
@@ -288,7 +288,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
     <section>
     
       
-<h2 id="concrètement">Concrètement</h2>
+<h2 id="résultat-concrait-de-la-phase-1">Résultat concrait de la phase 1</h2>
 <ul>
 <li>Nouvelle syntaxe pour la section yield</li>
 <li>Voir dans examples/Models/TWD_land/Scenarios/Predictors</li>
@@ -304,7 +304,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
     <section>
     
       
-<h2 id="modèle-pour-la-productivité-nette-de-lécosystème">Modèle pour la productivité nette de l&rsquo;écosystème</h2>
+<h2 id="nouvelle-syntaxe-yields">Nouvelle syntaxe Yields</h2>
   <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
   {
   Intrants:
@@ -335,7 +335,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
     <section>
     
       
-<h2 id="suivi-des-variables">Suivi des variables</h2>
+<h2 id="nouvelle-syntaxe-outputs">Nouvelle Syntaxe Outputs</h2>
   <pre><code class="fmt" data-line-numbers="4|5|8|9|12|13" style="font-size:120%">
 
   ;Inventaire de la productivité nette de l'écosystème en (c)
@@ -390,6 +390,32 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
     
       
 <h2 id="gcbm-vs-ia-02751">GCBM vs IA (02751)</h2>
+<ul>
+<li>Les modèles d&rsquo;IA testés
+<ul>
+<li>Régions écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328</li>
+<li>Global 1 modèle entrainé avec cacul-2328</li>
+</ul>
+</li>
+<li>Les types de modélisation
+<ul>
+<li>Spatial (cellules de 14 ha)</li>
+<li>Non spatial (à l&rsquo;échelle de la strate)</li>
+</ul>
+</li>
+<li>Notre référence GCBM</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="gcbm-vs-ia-02751-1">GCBM vs IA (02751)</h2>
 
 
 
@@ -425,7 +451,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
     <section>
     
       
-<h2 id="gcbm-vs-ia-02751-1">GCBM vs IA (02751)</h2>
+<h2 id="gcbm-vs-ia-02751-2">GCBM vs IA (02751)</h2>
 
 
 
@@ -443,10 +469,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 <figure  >
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="" srcset="
-               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_49039f30ca0a00efae8ccdb2e6b4ff17.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_83164716f38a860d4bdab274457993ab.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_1200x1200_fit_q75_h2_lanczos.webp 1200w"
-               src="/FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_49039f30ca0a00efae8ccdb2e6b4ff17.webp"
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_ddf2b22688f614139e5ec95dd30f1430.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_fa1504a690b1fc652197632e3f9e0e2d.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_ddf2b22688f614139e5ec95dd30f1430.webp"
                width="100%"
                height="auto"
                loading="eager" data-zoomable /></div>
@@ -520,6 +546,26 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
     
       
 <h2 id="optimisation-du-nep-02751">Optimisation du NEP (02751)</h2>
+<ul>
+<li>Les scénarios sont non spatial
+<ul>
+<li>MAX_OVOLTOTREC: Détermination</li>
+<li>MAX_OAAM: Optimisation de l&rsquo;accroissement annuel moyen</li>
+<li>MAX_NEP_GLOBAL: Optimisation du bilan (IA)</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="optimisation-du-nep-02751-1">Optimisation du NEP (02751)</h2>
 
 
 

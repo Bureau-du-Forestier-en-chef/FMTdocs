@@ -3517,7 +3517,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
 &lt;ul&gt;
 &lt;li&gt;Le calcul du bilan de carbone forestier pour un modèle de planification est complexe&lt;/li&gt;
-&lt;li&gt;L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
+&lt;li&gt;L’optimisation spatialement explicite de la localisation des travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -3541,8 +3541,8 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
        state Intrants {
          direction LR
          Dernières_perturbations
-         Volume_de_feuillue_tolérant
-         Volume_de_feuillue_intolérant
+         Volume_de_feuillus_tolérants
+         Volume_de_feuillus_intolérants
          Volume_de_résineux
        }
        Intrants --&gt; Réservoir
@@ -3555,7 +3555,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
      }
       Intrants --&gt; Flux
      State Flux {
-        Productivitée_nette_de_l&#39;écosystème
+        Productivité_nette_de_l&#39;écosystème
         }
    }
    IA_par_pixel --&gt; Entrainement
@@ -3591,7 +3591,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;2-planification-spatial-par-ia&#34;&gt;2. Planification spatial par IA&lt;/h2&gt;
+&lt;h2 id=&#34;2-planification-spatiale-par-ia&#34;&gt;2. Planification spatiale par IA&lt;/h2&gt;
 &lt;div class=mermaid&gt;
     stateDiagram
     direction LR
@@ -3641,25 +3641,25 @@ Pytorch à C++            :     done,des5, 2021-10-01,2021-12-01
 Installation FMT debug          :     done,des6, 2021-12-01,2022-03-01
 Implémentation :     done,des8, 2021-12-01,2022-03-01
 Écriture de l&#39;article estimateur de carbone		:des16,2022-09-01,2023-04-01
-Test et validation avec modèles réel		     :active,des15,2022-10-01,2023-05-01
+Test et validation avec modèles réels		     :active,des15,2022-10-01,2023-05-01
 section IA Planification spatiale
-Test et extension à la planification référencé          :     done,des9, 2022-02-01,2022-05-01
+Test et extension à la planification référencée          :     done,des9, 2022-02-01,2022-05-01
 Mise en place d&#39;un plan :     done,des10, 2021-12-01,2022-02-01
 Lien FMT avec Python avec exemple       :     done,des11, 2022-01-01,2022-04-01
-Modèle IA de spatialisation minétique:		done,des12, 2022-04-01,2022-10-01
-Modèle IA d&#39;évaluation de planification spatialisé           :crit,des13,2022-09-01,2023-03-01
+Modèle IA de spatialisation mimétique:		done,des12, 2022-04-01,2022-10-01
+Modèle IA d&#39;évaluation de planification spatialisée           :crit,des13,2022-09-01,2023-03-01
 Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,2023-08-01
 Écriture de l&#39;article planification forestière	:des17,2023-04-01,2023-08-01
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;concrètement&#34;&gt;Concrètement&lt;/h2&gt;
+&lt;h2 id=&#34;résultat-concrait-de-la-phase-1&#34;&gt;Résultat concrait de la phase 1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Nouvelle syntaxe pour la section yield&lt;/li&gt;
 &lt;li&gt;Voir dans examples/Models/TWD_land/Scenarios/Predictors&lt;/li&gt;
 &lt;li&gt;Développement d&amp;rsquo;un nouveau type de yield &amp;ldquo;*YM&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;modèle-pour-la-productivité-nette-de-lécosystème&#34;&gt;Modèle pour la productivité nette de l&amp;rsquo;écosystème&lt;/h2&gt;
+&lt;h2 id=&#34;nouvelle-syntaxe-yields&#34;&gt;Nouvelle syntaxe Yields&lt;/h2&gt;
   &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;3|4|5|6|7|9|10|13|14|15|16|17&#34; style=&#34;font-size:120%&#34;&gt;
   {
   Intrants:
@@ -3681,7 +3681,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
   }
   &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;suivi-des-variables&#34;&gt;Suivi des variables&lt;/h2&gt;
+&lt;h2 id=&#34;nouvelle-syntaxe-outputs&#34;&gt;Nouvelle Syntaxe Outputs&lt;/h2&gt;
   &lt;pre&gt;&lt;code class=&#34;fmt&#34; data-line-numbers=&#34;4|5|8|9|12|13&#34; style=&#34;font-size:120%&#34;&gt;
 
   ;Inventaire de la productivité nette de l&#39;écosystème en (c)
@@ -3718,6 +3718,23 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;gcbm-vs-ia-02751&#34;&gt;GCBM vs IA (02751)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Les modèles d&amp;rsquo;IA testés
+&lt;ul&gt;
+&lt;li&gt;Régions écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328&lt;/li&gt;
+&lt;li&gt;Global 1 modèle entrainé avec cacul-2328&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Les types de modélisation
+&lt;ul&gt;
+&lt;li&gt;Spatial (cellules de 14 ha)&lt;/li&gt;
+&lt;li&gt;Non spatial (à l&amp;rsquo;échelle de la strate)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Notre référence GCBM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gcbm-vs-ia-02751-1&#34;&gt;GCBM vs IA (02751)&lt;/h2&gt;
 
 
 
@@ -3744,7 +3761,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;gcbm-vs-ia-02751-1&#34;&gt;GCBM vs IA (02751)&lt;/h2&gt;
+&lt;h2 id=&#34;gcbm-vs-ia-02751-2&#34;&gt;GCBM vs IA (02751)&lt;/h2&gt;
 
 
 
@@ -3762,10 +3779,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_49039f30ca0a00efae8ccdb2e6b4ff17.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_83164716f38a860d4bdab274457993ab.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/Cardone_du_sol_hu03232c576e3f6461db4c52df4299efa5_45728_49039f30ca0a00efae8ccdb2e6b4ff17.webp&#34;
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_ddf2b22688f614139e5ec95dd30f1430.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_fa1504a690b1fc652197632e3f9e0e2d.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_ddf2b22688f614139e5ec95dd30f1430.webp&#34;
                width=&#34;100%&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -3812,6 +3829,17 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;optimisation-du-nep-02751&#34;&gt;Optimisation du NEP (02751)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Les scénarios sont non spatial
+&lt;ul&gt;
+&lt;li&gt;MAX_OVOLTOTREC: Détermination&lt;/li&gt;
+&lt;li&gt;MAX_OAAM: Optimisation de l&amp;rsquo;accroissement annuel moyen&lt;/li&gt;
+&lt;li&gt;MAX_NEP_GLOBAL: Optimisation du bilan (IA)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;optimisation-du-nep-02751-1&#34;&gt;Optimisation du NEP (02751)&lt;/h2&gt;
 
 
 

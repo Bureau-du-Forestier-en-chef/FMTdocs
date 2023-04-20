@@ -31,7 +31,7 @@ slides:
   - Pour la productivité nette de l'écosystème
 - La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
   - Le calcul du bilan de carbone forestier pour un modèle de planification est complexe
-  - L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique
+  - L’optimisation spatialement explicite de la localisation des travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique
 
 ---
 
@@ -52,8 +52,8 @@ slides:
        state Intrants {
          direction LR
          Dernières_perturbations
-         Volume_de_feuillue_tolérant
-         Volume_de_feuillue_intolérant
+         Volume_de_feuillus_tolérants
+         Volume_de_feuillus_intolérants
          Volume_de_résineux
        }
        Intrants --> Réservoir
@@ -66,7 +66,7 @@ slides:
      }
       Intrants --> Flux
      State Flux {
-        Productivitée_nette_de_l'écosystème
+        Productivité_nette_de_l'écosystème
         }
    }
    IA_par_pixel --> Entrainement
@@ -103,7 +103,7 @@ slides:
 
 ---
 
-## 2. Planification spatial par IA
+## 2. Planification spatiale par IA
 <div class=mermaid>
     stateDiagram
     direction LR
@@ -155,13 +155,13 @@ Pytorch à C++            :     done,des5, 2021-10-01,2021-12-01
 Installation FMT debug          :     done,des6, 2021-12-01,2022-03-01
 Implémentation :     done,des8, 2021-12-01,2022-03-01
 Écriture de l'article estimateur de carbone		:des16,2022-09-01,2023-04-01
-Test et validation avec modèles réel		     :active,des15,2022-10-01,2023-05-01
+Test et validation avec modèles réels		     :active,des15,2022-10-01,2023-05-01
 section IA Planification spatiale
-Test et extension à la planification référencé          :     done,des9, 2022-02-01,2022-05-01
+Test et extension à la planification référencée          :     done,des9, 2022-02-01,2022-05-01
 Mise en place d'un plan :     done,des10, 2021-12-01,2022-02-01
 Lien FMT avec Python avec exemple       :     done,des11, 2022-01-01,2022-04-01
-Modèle IA de spatialisation minétique:		done,des12, 2022-04-01,2022-10-01
-Modèle IA d'évaluation de planification spatialisé           :crit,des13,2022-09-01,2023-03-01
+Modèle IA de spatialisation mimétique:		done,des12, 2022-04-01,2022-10-01
+Modèle IA d'évaluation de planification spatialisée           :crit,des13,2022-09-01,2023-03-01
 Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,2023-08-01
 Écriture de l'article planification forestière	:des17,2023-04-01,2023-08-01
 </div>
@@ -169,15 +169,14 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
 ---
 
 
-## Concrètement
-
+## Résultat concrait de la phase 1
   - Nouvelle syntaxe pour la section yield
   - Voir dans examples/Models/TWD_land/Scenarios/Predictors
   - Développement d'un nouveau type de yield "*YM"
 
 ---
 
-## Modèle pour la productivité nette de l'écosystème
+## Nouvelle syntaxe Yields
 
   <pre><code class="fmt" data-line-numbers="3|4|5|6|7|9|10|13|14|15|16|17" style="font-size:120%">
   {
@@ -202,7 +201,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
 
 ---
 
-## Suivi des variables
+## Nouvelle Syntaxe Outputs
 
   <pre><code class="fmt" data-line-numbers="4|5|8|9|12|13" style="font-size:120%">
 
@@ -245,13 +244,26 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 
 ## GCBM vs IA (02751)
 
+ - Les modèles d'IA testés
+   - Régions écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec cacul-2328
+   - Global 1 modèle entrainé avec cacul-2328
+ - Les types de modélisation
+   - Spatial (cellules de 14 ha)
+   - Non spatial (à l'échelle de la strate)
+ - Notre référence GCBM
+   
+
+---
+
+## GCBM vs IA (02751)
+
 {{< figure src="NEP.jpg" width="100%" height="auto" >}}
 
 ---
 
 ## GCBM vs IA (02751)
 
-{{< figure src="Cardone_du_sol.jpg" width="100%" height="auto" >}}
+{{< figure src="Carbone_du_sol_global.jpg" width="100%" height="auto" >}}
 
 ---
 
@@ -277,6 +289,15 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
       - Manque de données par modèle
       - Les régions écologiques sont difficiles à identifier dans les modèles
       - Superficie orpheline dans les modèles
+
+---
+
+## Optimisation du NEP (02751)
+
+ - Les scénarios sont non spatial
+   - MAX_OVOLTOTREC: Détermination
+   - MAX_OAAM: Optimisation de l'accroissement annuel moyen
+   - MAX_NEP_GLOBAL: Optimisation du bilan (IA)
    
 ---
 
