@@ -59,7 +59,7 @@ slides:
        Intrants --> Réservoir
       state Réservoir {
        Biomasse_aérienne
-       Biomasse_sousterraine
+       Biomasse_souterraine
        Bois_mort
        Carbone_du_sol
        Litière
@@ -74,7 +74,7 @@ slides:
      direction LR
      CPF2328 --> Global
      CPF2328 --> Pessière
-     CPF2328 --> Sapnière
+     CPF2328 --> Sapinière
      CPF2328 --> Érablière
      }
    Entrainement --> Validation
@@ -169,7 +169,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
 ---
 
 
-## Résultat concrait de la phase 1
+## Résultat concrets de la phase 1
   - Nouvelle syntaxe pour la section yield
   - Voir dans examples/Models/TWD_land/Scenarios/Predictors
   - Développement d'un nouveau type de yield "*YM"
@@ -233,7 +233,7 @@ Apprentissage (29 UA)          :done,des1,2023-01-09,2023-01-23
 Tests avec spatialisation          :     done,des2,2023-03-01,2023-04-01
 Analyse des résultats           :     done,des3,2023-04-01,2023-04-17
 Présentation          :     active,des4,2023-05-01,2023-05-02
-section Échelle des région écologique
+section Échelle des régions écologiques
 Apprentissage (29 UA) :done,des5,2023-01-02,2023-01-16
 Tester l'IA (08665) : done,des6,2023-03-06,2023-03-27
 section Optimisation du NEP
@@ -319,11 +319,11 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 
 - On peut maintenant obtenir un bilan de carbone facilement pour:
   - Une solution spatiale explicite et spatialement référencée
-  - Les cinqs principaux réservoirs de l'écosystème
+  - Les cinq principaux réservoirs de l'écosystème
   - Le flux de productivité nette de l'écosystème
   - Calcul du bilan avec perturbations naturelles en utilisant la replanification
 - On peut maintenant utiliser le Machine Learning pour:
-  - Générer des intrants au calcul (Courbes de production, Paramètres économique)
+  - Générer des intrants au calcul (Courbes de production, Paramètres économiques)
 - La génération de solution spatiale avec IA:
    - Nous permettra de faire de l'optimisation spatialement explicite
    - Utilisation du projet de fin d'étude à B. Forest

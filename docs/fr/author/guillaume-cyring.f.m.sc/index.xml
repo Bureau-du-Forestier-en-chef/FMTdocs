@@ -768,7 +768,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
        Intrants --&gt; Réservoir
       state Réservoir {
        Biomasse_aérienne
-       Biomasse_sousterraine
+       Biomasse_souterraine
        Bois_mort
        Carbone_du_sol
        Litière
@@ -783,7 +783,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
      direction LR
      CPF2328 --&gt; Global
      CPF2328 --&gt; Pessière
-     CPF2328 --&gt; Sapnière
+     CPF2328 --&gt; Sapinière
      CPF2328 --&gt; Érablière
      }
    Entrainement --&gt; Validation
@@ -872,7 +872,7 @@ Modèle IA de spatialisation (avec carbone)           :crit,des14,2023-02-01,202
 Écriture de l&#39;article planification forestière	:des17,2023-04-01,2023-08-01
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;résultat-concrait-de-la-phase-1&#34;&gt;Résultat concrait de la phase 1&lt;/h2&gt;
+&lt;h2 id=&#34;résultat-concrets-de-la-phase-1&#34;&gt;Résultat concrets de la phase 1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Nouvelle syntaxe pour la section yield&lt;/li&gt;
 &lt;li&gt;Voir dans examples/Models/TWD_land/Scenarios/Predictors&lt;/li&gt;
@@ -930,7 +930,7 @@ Apprentissage (29 UA)          :done,des1,2023-01-09,2023-01-23
 Tests avec spatialisation          :     done,des2,2023-03-01,2023-04-01
 Analyse des résultats           :     done,des3,2023-04-01,2023-04-17
 Présentation          :     active,des4,2023-05-01,2023-05-02
-section Échelle des région écologique
+section Échelle des régions écologiques
 Apprentissage (29 UA) :done,des5,2023-01-02,2023-01-16
 Tester l&#39;IA (08665) : done,des6,2023-03-06,2023-03-27
 section Optimisation du NEP
@@ -1097,14 +1097,14 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;li&gt;On peut maintenant obtenir un bilan de carbone facilement pour:
 &lt;ul&gt;
 &lt;li&gt;Une solution spatiale explicite et spatialement référencée&lt;/li&gt;
-&lt;li&gt;Les cinqs principaux réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Les cinq principaux réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
 &lt;li&gt;Le flux de productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
 &lt;li&gt;Calcul du bilan avec perturbations naturelles en utilisant la replanification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;On peut maintenant utiliser le Machine Learning pour:
 &lt;ul&gt;
-&lt;li&gt;Générer des intrants au calcul (Courbes de production, Paramètres économique)&lt;/li&gt;
+&lt;li&gt;Générer des intrants au calcul (Courbes de production, Paramètres économiques)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;La génération de solution spatiale avec IA:
