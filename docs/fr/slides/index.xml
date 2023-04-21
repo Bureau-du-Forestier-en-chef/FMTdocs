@@ -1033,10 +1033,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
        direction LR
        state Intrants {
          direction LR
-         (i)Spatiaux --&gt; Age
-         (i)Spatiaux --&gt; Opérabilité
-         (i)Non_spatiaux --&gt; Taille_des_blocs
-         (i)Non_spatiaux --&gt; Délai_dadjacence
+         (i)Cellule --&gt; Âge
+         (i)Cellule --&gt; Opérabilité
+         (i)Globale --&gt; Taille_des_blocs
+         (i)Globale --&gt; Délai_dadjacence
        }
        Intrants --&gt; IA
       state Générateur {
@@ -1154,8 +1154,8 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;ul&gt;
 &lt;li&gt;Les modèles d&amp;rsquo;IA testés
 &lt;ul&gt;
-&lt;li&gt;Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec calcul-2328&lt;/li&gt;
-&lt;li&gt;Global 1 modèle entrainé avec cacul-2328&lt;/li&gt;
+&lt;li&gt;Région écologique 3 modèles (Pessière,Sapinière,Érablière) entrainés avec calcul-2328&lt;/li&gt;
+&lt;li&gt;Global 1 modèle entrainé avec calcul-2328&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Les types de modélisation
@@ -1185,10 +1185,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_16d54a78a1b22e63ce75044e11666a60.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_619e90d2ef23d324ca912d326ac4189d.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_16d54a78a1b22e63ce75044e11666a60.webp&#34;
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu743eee5eef7f72bb4dd29a9aa49067bb_47942_ff5b01c95d780fd7de86392a0474d80c.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu743eee5eef7f72bb4dd29a9aa49067bb_47942_6f5c453e4dc992877b60329862456cfa.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu743eee5eef7f72bb4dd29a9aa49067bb_47942_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu743eee5eef7f72bb4dd29a9aa49067bb_47942_ff5b01c95d780fd7de86392a0474d80c.webp&#34;
                width=&#34;100%&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1212,10 +1212,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_ddf2b22688f614139e5ec95dd30f1430.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_fa1504a690b1fc652197632e3f9e0e2d.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_ddf2b22688f614139e5ec95dd30f1430.webp&#34;
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu811be4079f32f8cb35fa96c264ff5d33_43937_236c83ed0daafa8a833e869adf257816.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu811be4079f32f8cb35fa96c264ff5d33_43937_815d64d0fa811170208f035046a811f4.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu811be4079f32f8cb35fa96c264ff5d33_43937_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu811be4079f32f8cb35fa96c264ff5d33_43937_236c83ed0daafa8a833e869adf257816.webp&#34;
                width=&#34;100%&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1226,10 +1226,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;li&gt;Le modèle d&amp;rsquo;IA par région écologique performe le moins bien
 &lt;ul&gt;
 &lt;li&gt;Sous estime le carbone des réservoirs&lt;/li&gt;
-&lt;li&gt;Sous estime le NEP&lt;/li&gt;
+&lt;li&gt;À le plus grand écart avec le bilan des émissions nettes de GCBM&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;le modèle d&amp;rsquo;IA Global est le meilleur&lt;/li&gt;
+&lt;li&gt;Le modèle d&amp;rsquo;IA Global est le meilleur&lt;/li&gt;
 &lt;li&gt;Les scénarios spatialement explicites se collent à GCBM
 &lt;ul&gt;
 &lt;li&gt;Les scénarios non spatiaux performent moins bien&lt;/li&gt;
@@ -1290,10 +1290,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1fd73c7b7fe83fb2004adeb2c4b2cff2.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_91ad45e63293fad42cafad8e8e3ef97e.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1fd73c7b7fe83fb2004adeb2c4b2cff2.webp&#34;
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu2e0c960c90a7ae520251f5385dc9a7d4_46791_54f08bc52e3ac425393116b47fa882d6.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu2e0c960c90a7ae520251f5385dc9a7d4_46791_1087b5761fdba037365ea7b20084eedf.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu2e0c960c90a7ae520251f5385dc9a7d4_46791_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu2e0c960c90a7ae520251f5385dc9a7d4_46791_54f08bc52e3ac425393116b47fa882d6.webp&#34;
                width=&#34;100%&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1311,8 +1311,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;ul&gt;
 &lt;li&gt;Une solution spatiale explicite et spatialement référencée&lt;/li&gt;
 &lt;li&gt;Les cinq principaux réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
-&lt;li&gt;Le flux de productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
-&lt;li&gt;Calcul du bilan avec perturbations naturelles en utilisant la replanification&lt;/li&gt;
+&lt;li&gt;Les émissions nettes de l&amp;rsquo;écosystème&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;On peut maintenant utiliser le Machine Learning pour:

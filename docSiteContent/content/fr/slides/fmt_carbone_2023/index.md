@@ -1,7 +1,7 @@
 ---
 
 title: Planification avec Machine Learning (Mise à jour 2023)
-summary: Comprendre ce que FMT est, et ce qu'il fait.
+summary: Comprendre le projet d'IA
 authors: ["Guillaume Cyr,ing.f.,M.Sc."]
 tags: ["Machine learning","FORAC","carbon"]
 categories: []
@@ -112,10 +112,10 @@ slides:
        direction LR
        state Intrants {
          direction LR
-         (i)Spatiaux --> Age
-         (i)Spatiaux --> Opérabilité
-         (i)Non_spatiaux --> Taille_des_blocs
-         (i)Non_spatiaux --> Délai_dadjacence
+         (i)Cellule --> Âge
+         (i)Cellule --> Opérabilité
+         (i)Globale --> Taille_des_blocs
+         (i)Globale --> Délai_dadjacence
        }
        Intrants --> IA
       state Générateur {
@@ -245,8 +245,8 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 ## GCBM vs IA (02751)
 
  - Les modèles d'IA testés
-   - Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec calcul-2328
-   - Global 1 modèle entrainé avec cacul-2328
+   - Région écologique 3 modèles (Pessière,Sapinière,Érablière) entrainés avec calcul-2328
+   - Global 1 modèle entrainé avec calcul-2328
  - Les types de modélisation
    - Spatial (cellules de 14 ha)
    - Non spatial (à l'échelle de la strate)
@@ -271,8 +271,8 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 
    - Le modèle d'IA par région écologique performe le moins bien
       - Sous estime le carbone des réservoirs
-      - Sous estime le NEP
-   - le modèle d'IA Global est le meilleur
+      - À le plus grand écart avec le bilan des émissions nettes de GCBM
+   - Le modèle d'IA Global est le meilleur
    - Les scénarios spatialement explicites se collent à GCBM
       - Les scénarios non spatiaux performent moins bien
       - L'objetif du projet était l'utilisation avec des modèles spatialement explicites
@@ -320,8 +320,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 - On peut maintenant obtenir un bilan de carbone facilement pour:
   - Une solution spatiale explicite et spatialement référencée
   - Les cinq principaux réservoirs de l'écosystème
-  - Le flux de productivité nette de l'écosystème
-  - Calcul du bilan avec perturbations naturelles en utilisant la replanification
+  - Les émissions nettes de l'écosystème
 - On peut maintenant utiliser le Machine Learning pour:
   - Générer des intrants au calcul (Courbes de production, Paramètres économiques)
 - La génération de solution spatiale avec IA:

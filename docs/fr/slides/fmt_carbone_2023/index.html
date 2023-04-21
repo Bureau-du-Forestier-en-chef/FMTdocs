@@ -218,10 +218,10 @@
        direction LR
        state Intrants {
          direction LR
-         (i)Spatiaux --> Age
-         (i)Spatiaux --> Opérabilité
-         (i)Non_spatiaux --> Taille_des_blocs
-         (i)Non_spatiaux --> Délai_dadjacence
+         (i)Cellule --> Âge
+         (i)Cellule --> Opérabilité
+         (i)Globale --> Taille_des_blocs
+         (i)Globale --> Délai_dadjacence
        }
        Intrants --> IA
       state Générateur {
@@ -393,8 +393,8 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 <ul>
 <li>Les modèles d&rsquo;IA testés
 <ul>
-<li>Région écologique 3 modèles (Pessière,Sapnière,Érablière) entrainés avec calcul-2328</li>
-<li>Global 1 modèle entrainé avec cacul-2328</li>
+<li>Région écologique 3 modèles (Pessière,Sapinière,Érablière) entrainés avec calcul-2328</li>
+<li>Global 1 modèle entrainé avec calcul-2328</li>
 </ul>
 </li>
 <li>Les types de modélisation
@@ -433,10 +433,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 <figure  >
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="" srcset="
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_16d54a78a1b22e63ce75044e11666a60.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_619e90d2ef23d324ca912d326ac4189d.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_1200x1200_fit_q75_h2_lanczos.webp 1200w"
-               src="/FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu03d0b0aafdbcad7c3dfdceb5f0824c15_47942_16d54a78a1b22e63ce75044e11666a60.webp"
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu743eee5eef7f72bb4dd29a9aa49067bb_47942_ff5b01c95d780fd7de86392a0474d80c.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu743eee5eef7f72bb4dd29a9aa49067bb_47942_6f5c453e4dc992877b60329862456cfa.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu743eee5eef7f72bb4dd29a9aa49067bb_47942_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/FMTdocs/fr/slides/fmt_carbone_2023/NEP_hu743eee5eef7f72bb4dd29a9aa49067bb_47942_ff5b01c95d780fd7de86392a0474d80c.webp"
                width="100%"
                height="auto"
                loading="eager" data-zoomable /></div>
@@ -469,10 +469,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 <figure  >
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="" srcset="
-               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_ddf2b22688f614139e5ec95dd30f1430.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_fa1504a690b1fc652197632e3f9e0e2d.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_1200x1200_fit_q75_h2_lanczos.webp 1200w"
-               src="/FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu90ad030600b4e2a40afc83b226b105d7_43937_ddf2b22688f614139e5ec95dd30f1430.webp"
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu811be4079f32f8cb35fa96c264ff5d33_43937_236c83ed0daafa8a833e869adf257816.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu811be4079f32f8cb35fa96c264ff5d33_43937_815d64d0fa811170208f035046a811f4.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu811be4079f32f8cb35fa96c264ff5d33_43937_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/FMTdocs/fr/slides/fmt_carbone_2023/Carbone_du_sol_global_hu811be4079f32f8cb35fa96c264ff5d33_43937_236c83ed0daafa8a833e869adf257816.webp"
                width="100%"
                height="auto"
                loading="eager" data-zoomable /></div>
@@ -492,10 +492,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 <li>Le modèle d&rsquo;IA par région écologique performe le moins bien
 <ul>
 <li>Sous estime le carbone des réservoirs</li>
-<li>Sous estime le NEP</li>
+<li>À le plus grand écart avec le bilan des émissions nettes de GCBM</li>
 </ul>
 </li>
-<li>le modèle d&rsquo;IA Global est le meilleur</li>
+<li>Le modèle d&rsquo;IA Global est le meilleur</li>
 <li>Les scénarios spatialement explicites se collent à GCBM
 <ul>
 <li>Les scénarios non spatiaux performent moins bien</li>
@@ -583,10 +583,10 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 <figure  >
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="" srcset="
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1fd73c7b7fe83fb2004adeb2c4b2cff2.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_91ad45e63293fad42cafad8e8e3ef97e.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1200x1200_fit_q75_h2_lanczos.webp 1200w"
-               src="/FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu7bc875e5cd85be3d3d184d131e5bae71_30838_1fd73c7b7fe83fb2004adeb2c4b2cff2.webp"
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu2e0c960c90a7ae520251f5385dc9a7d4_46791_54f08bc52e3ac425393116b47fa882d6.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu2e0c960c90a7ae520251f5385dc9a7d4_46791_1087b5761fdba037365ea7b20084eedf.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu2e0c960c90a7ae520251f5385dc9a7d4_46791_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/FMTdocs/fr/slides/fmt_carbone_2023/NEP_GLOBAL_hu2e0c960c90a7ae520251f5385dc9a7d4_46791_54f08bc52e3ac425393116b47fa882d6.webp"
                width="100%"
                height="auto"
                loading="eager" data-zoomable /></div>
@@ -622,8 +622,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 <ul>
 <li>Une solution spatiale explicite et spatialement référencée</li>
 <li>Les cinq principaux réservoirs de l&rsquo;écosystème</li>
-<li>Le flux de productivité nette de l&rsquo;écosystème</li>
-<li>Calcul du bilan avec perturbations naturelles en utilisant la replanification</li>
+<li>Les émissions nettes de l&rsquo;écosystème</li>
 </ul>
 </li>
 <li>On peut maintenant utiliser le Machine Learning pour:
