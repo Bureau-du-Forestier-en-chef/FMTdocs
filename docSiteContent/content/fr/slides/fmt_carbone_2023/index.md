@@ -257,7 +257,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 
 ## GCBM vs IA (02751)
 
-{{< figure src="NEP.jpg" width="100%" height="auto" >}}
+{{< figure src="NEP_GLOBAL.jpg" width="100%" height="auto" >}}
 
 ---
 
@@ -303,7 +303,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 
 ## Optimisation du NEP (02751)
 
-{{< figure src="NEP_GLOBAL.jpg" width="100%" height="auto" >}}
+{{< figure src="NEP.jpg" width="100%" height="auto" >}}
 
 ---
 
