@@ -766,5 +766,317 @@ _NDY(oVolRec) 1.._LENGTH
 </description>
     </item>
     
+    <item>
+      <title>Planification des Compartiments d&#39;Organisation Spatiale (COS)</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/</guid>
+      <description>&lt;h2 id=&#34;les-cos-et-la-planification-spatiale-des-coupes&#34;&gt;Les COS et la planification spatiale des coupes&lt;/h2&gt;
+&lt;p&gt;Un COS (&lt;em&gt;Compartiment d&amp;rsquo;Organisation Spatiale&lt;/em&gt;) est une aire de forêt que l&amp;rsquo;on peut utiliser pour agréger des zones de coupes forestières dans l&amp;rsquo;espace. Dans Woodstock, elle est représentée de manière spatialement référencée par un groupe d&amp;rsquo;aires ou des peuplements qui partagent un numéro de COS commun.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_hu9c3954e6535866c11b5657b20150f407_156266_fce40dbe64b7fe64aedc96149967a6cc.webp 400w,
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_hu9c3954e6535866c11b5657b20150f407_156266_03a9b8fb38a15c3487649f9c070e9936.webp 760w,
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_hu9c3954e6535866c11b5657b20150f407_156266_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Figure%201-%20explication%20COS_hu9c3954e6535866c11b5657b20150f407_156266_fce40dbe64b7fe64aedc96149967a6cc.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;205&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;L&amp;rsquo;agrégation des coupes forestières a été pendant un temps vue d&amp;rsquo;un mauvais œil dans certains pays à cause des vastes étendues de forêts coupées continues qu&amp;rsquo;elle pouvait générer. Cependant, elle est aujourd&amp;rsquo;hui considérée à nouveau dans le but de minimiser l&amp;rsquo;étendue des zones de coupes au niveau du paysage, ainsi que la quantité de chemins forestiers générés. Le prix des coupes en est également réduit par une réduction des déplacements et de la complexité lors des interventions forestières.&lt;/p&gt;
+&lt;p&gt;FMT propose ainsi différentes fonctions qui permettent de dériver un calendrier d&amp;rsquo;ouverture et de fermeture de COS qui respecte plusieurs contraintes spatiales données quant à la taille des zones de coupes. Ainsi, le calendrier va fermer des COS trop proches lorsque cela pourrait causer des tailles de coupes trop grandes si elles étaient choisies, ou bien forcer de grandes coupes en restreignant les COS disponibles pour la coupe.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_hua3426d7a490245ac3a13cab05261da04_225321_775de02e21e40cc9ed34285434abb296.webp 400w,
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_hua3426d7a490245ac3a13cab05261da04_225321_b50114129793082b2ca695558753e1be.webp 760w,
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_hua3426d7a490245ac3a13cab05261da04_225321_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_hua3426d7a490245ac3a13cab05261da04_225321_775de02e21e40cc9ed34285434abb296.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;255&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Ce calendrier d&amp;rsquo;ouverture et de fermeture de COS va ainsi permettre de communiquer les contraintes spatiales aux modèles de programmation linéaire basés sur des fichiers Woodstock que FMT utilise (voir &lt;a href=&#34;../../basics/spatially_referenced_optimization/&#34;&gt;les bases de FMT&lt;/a&gt;). FMT va alors pouvoir générer une nouvelle solution pour un modèle avec l&amp;rsquo;ajout de ce calendrier. Bien évidemment, lorsque l&amp;rsquo;on ajoute des contraintes additionnelles au modèle, cela a généralement pour cause de réduire la quantité de bois qui est récoltable dans la solution optimale. Ainsi, l&amp;rsquo;ajout de ce calendrier d&amp;rsquo;ouvertures et de fermetures de COS va réduire le bois récolté dans la nouvelle solution généré par FMT.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;idée est alors de trouver un calendrier &amp;ldquo;optimal&amp;rdquo; qui va réduire le moins possible la quantité de bois récoltable dans la solution du modèle. On peut le faire par le biais du processus itératif suivant :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On calcule la solution du modèle sans calendrier.&lt;/li&gt;
+&lt;li&gt;On génère un premier calendrier d&amp;rsquo;ouverture et de fermeture de COS qui respecte les contraintes spatiales données.
+&lt;ul&gt;
+&lt;li&gt;Ce calendrier est simplement &amp;ldquo;réalisable&amp;rdquo;; il n&amp;rsquo;est pas forcément optimisé, mais respecte simplement toutes les contraintes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On ajoute le calendrier au modèle, et on recalcule la solution du modèle.&lt;/li&gt;
+&lt;li&gt;On compare la quantité de bois récolté dans la première solution (sans calendrier) avec cette nouvelle solution (avec calendrier). On obtient le % de réduction de bois récoltable dont le calendrier est responsable.
+&lt;ul&gt;
+&lt;li&gt;Le but est alors d&amp;rsquo;optimiser le calendrier pour réduire ce pourcentage autant que possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On réalise ensuite la boucle suivante (appellée un &lt;em&gt;greedy algorithm&lt;/em&gt;) avec autant d&amp;rsquo;itérations que nécessaire :
+&lt;ul&gt;
+&lt;li&gt;On change le calendrier des COS de manière aléatoire tout en faisant en sorte qu&amp;rsquo;il continue de respecter toutes les contraintes spatiales&lt;/li&gt;
+&lt;li&gt;On insère le calendrier dans le modèle et l&amp;rsquo;on recalcule la solution&lt;/li&gt;
+&lt;li&gt;Si le calendrier a réduit le pourcentage de réduction de bois récoltable, on garde la modification aléatoire pour l&amp;rsquo;itération suivante
+&lt;ul&gt;
+&lt;li&gt;Sinon, on annule cette modification aléatoire et l&amp;rsquo;on en cherche une autre&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_hu57a9e10c282d77b4e933656ea5b7a6b8_431230_e38140421623e7c405e90abed365606f.webp 400w,
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_hu57a9e10c282d77b4e933656ea5b7a6b8_431230_8045d34815fe858fea55d0625ccc0eb0.webp 760w,
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_hu57a9e10c282d77b4e933656ea5b7a6b8_431230_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_hu57a9e10c282d77b4e933656ea5b7a6b8_431230_e38140421623e7c405e90abed365606f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;472&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Il est possible de résoudre le problème de l&amp;rsquo;optimisation du calendrier avec des méthodes plus complexes, comme celle du &lt;em&gt;mixed integer programming&lt;/em&gt; (MIP) pour obtenir une solution vraiment optimale.
+Cependant, ces algorithmes peuvent demander beaucoup trop de calcul pour des modèles de programmation linéaire qui concernent des paysages forestiers complexes. Dans ce cas-là, le &lt;em&gt;greedy algorithm&lt;/em&gt; est utile pour éviter des temps de calcul trop long.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;limplémentation-des-cos-dans-des-fichiers-woodstock&#34;&gt;L&amp;rsquo;implémentation des COS dans des fichiers Woodstock&lt;/h2&gt;
+&lt;p&gt;La syntaxe des fichiers Woodstock n&amp;rsquo;est pas faite pour permettre de l&amp;rsquo;optimisation via des contraintes spatiales. Cependant, le système des COS utilisé par FMT peut être mis en place dans des fichiers Woodstock par le biais d&amp;rsquo;un &lt;em&gt;yield&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Par exemple, il est possible de créer un &lt;em&gt;yield&lt;/em&gt; nommé &lt;code&gt;youvert&lt;/code&gt; qui décrit si un peuplement est disponible à la récolte ou non. Ce &lt;em&gt;yield&lt;/em&gt; peut alors être assigné à un numéro de COS présent dans un thème, et va donc s&amp;rsquo;appliquer à tous les peuplements qui sont associés à ce numéro de COS via ce même thème. Il peut ensuite servir à restreindre certaines actions (e.g., des coupes) au sein du modèle.&lt;/p&gt;
+&lt;p&gt;Dans la section &lt;code&gt;YIELD&lt;/code&gt; du modèle woodstock, ce &lt;em&gt;yield&lt;/em&gt; qui indique quand un COS est ouvert ou fermé aura une valeur pour chacune des périodes du modèle. Cet enchainement de valeurs représente donc le calendrier d&amp;rsquo;ouverture ou de fermeture des COS. En pratique, la section YIELD qui contient le calendrier formulé par FMT prendra la forme suivante (ici, le yield &lt;code&gt;youvert&lt;/code&gt; indique si un COS est ouvert ou fermé) :&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Dessin_Yield_FR_hu8389fc96fab242f806bbfa715231dc13_515811_81da5f04eb5f8f7975953bf5b0b7f89b.webp 400w,
+               /FMTdocs/media/docs/Dessin_Yield_FR_hu8389fc96fab242f806bbfa715231dc13_515811_65bf6f71138152f7072c6b73e1455a6e.webp 760w,
+               /FMTdocs/media/docs/Dessin_Yield_FR_hu8389fc96fab242f806bbfa715231dc13_515811_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Dessin_Yield_FR_hu8389fc96fab242f806bbfa715231dc13_515811_81da5f04eb5f8f7975953bf5b0b7f89b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;404&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Pour ce qui est d&amp;rsquo;une action dans le modèle comme une coupe, le &lt;em&gt;yield&lt;/em&gt; peut être utilisé de la manière suivante dans la section ACTION du modèle pour restreindre l&amp;rsquo;action à des COS ouverts :&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/docs/Dessin_Yield_Action_FR_hue567deedb2f91b6de78af6a7e3d2c226_291964_ec7d1e821629edc27f1f462b8dbf1b76.webp 400w,
+               /FMTdocs/media/docs/Dessin_Yield_Action_FR_hue567deedb2f91b6de78af6a7e3d2c226_291964_a69daa21afdf841deab791cd228ad856.webp 760w,
+               /FMTdocs/media/docs/Dessin_Yield_Action_FR_hue567deedb2f91b6de78af6a7e3d2c226_291964_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/Dessin_Yield_Action_FR_hue567deedb2f91b6de78af6a7e3d2c226_291964_ec7d1e821629edc27f1f462b8dbf1b76.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;381&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;fonctions-utilisées-et-paramètres-nécessaires&#34;&gt;Fonctions utilisées et paramètres nécessaires&lt;/h2&gt;
+&lt;p&gt;FMT propose plusieurs fonctions qui permettent de créer un calendrier optimisé d&amp;rsquo;ouverture et de fermeture de COS dans FMT. Ces fonctions nécessitent différents paramètres qui seront décrits ici.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Cette documentation ne traitera pas du problème de la définition des COS, que l&amp;rsquo;on appelle le &lt;em&gt;clustering&lt;/em&gt;. Idéalement, définir les COS (c.-à-d. attribuer des numéros de COS a des peuplements) devrait se faire en même temps qu&amp;rsquo;optimiser le calendrier; mais cela représente une opération très complexe. Ainsi, le clustering est généralement fait en amont de l&amp;rsquo;optimisation du calendrier, en regroupant des strates similaires et proches dans l&amp;rsquo;espace.&lt;/p&gt;
+&lt;p&gt;Ainsi, &lt;strong&gt;pour pouvoir utiliser les fonctions suivantes, les COS doivent déjà avoir été insérés dans les fichiers du modèle sous forme de numéros de COS associés aux peuplements par des masques&lt;/strong&gt;. Voir la &lt;a href=&#34;#limpl%c3%a9mentation-des-cos-dans-des-fichiers-woodstock&#34;&gt;section précédente&lt;/a&gt; pour plus d&amp;rsquo;information.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;création-des-cos-au-sein-dun-modèle-de-programmation-linéaire-dans-fmt&#34;&gt;Création des COS au sein d&amp;rsquo;un modèle de programmation linéaire dans FMT&lt;/h3&gt;
+&lt;p&gt;Dans FMT, une fois qu&amp;rsquo;un modèle linéaire a été créé en se basant sur des fichiers woodstock (voir &lt;a href=&#34;../../basics/spatially_referenced_optimization/&#34;&gt;les bases de FMT&lt;/a&gt;), il est possible de créer la structure des COS au sein du modèle (voir sections précédentes) par le biais de la fonction &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La fonction &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt; sert à construire un seul COS au sein du modèle, et doit donc être répétée pour chacun des COS qui doit être créée. Elle nécessite différents paramètres. Ces paramètres servent à donner des contraintes sur comment et quand un COS peut être ouvert dans le calendrier.&lt;/p&gt;
+&lt;p&gt;Vous trouverez un exemple de cette création dans la &lt;a href=&#34;#exemple-de-script&#34;&gt;section suivante&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Le calendrier d&amp;rsquo;ouverture et de fermeture des COS que FMT pourra créer par la suite est très sensible à ces différents paramètres. Si ceux-ci sont mal indiqués, FMT pourra être incapable de trouver une solution réalisable au modèle.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Le premier paramètre contient le COS à créer en soi. Celui-ci peut être construit à l&amp;rsquo;aide de la fonction &lt;code&gt;Heuristics.FMToperatingarea()&lt;/code&gt;, qui prend elle-même deux paramètres : le premier est le masque qui va décrire quels peuplements seront contenus dans ce COS, et le second est le &lt;code&gt;neihgbors perimeter&lt;/code&gt;, ou &lt;em&gt;périmètres des voisins&lt;/em&gt;. Ce second paramètre décrit le ratio du périmètre du COS que celle-ci doit avoir en commun avec un autre COS pour que les deux soient considérés comme voisins. Par exemple, si le périmètre des voisins est de 0.5, alors 50% du périmètre du COS doit être partagé avec un autre COS pour qu&amp;rsquo;ils soient considérés comme voisins.&lt;/li&gt;
+&lt;li&gt;Le deuxième paramètre est le &lt;code&gt;opening time&lt;/code&gt;, ou le temps d&amp;rsquo;ouverture. Il définit combien de temps le COS doit rester ouvert lorsqu&amp;rsquo;il est ouvert sur une période. Par exemple, si le temps d&amp;rsquo;ouverture est de 5, alors le COS sera toujours ouvert pour 5 périodes à la fois.&lt;/li&gt;
+&lt;li&gt;Le troisième paramètre est le &lt;code&gt;return time&lt;/code&gt;, ou temps de retour. Il correspond au nombre de périodes de temps qui doivent être respectées avant que le COS soit réouvert dans le futur. Par exemple, si le temps de retour est de 5, alors il doit y avoir au moins 5 périodes de temps entre deux ouvertures du COS.&lt;/li&gt;
+&lt;li&gt;Le quatrième paramètre est le &lt;code&gt;repetition pattern&lt;/code&gt;, ou la répétition du patron de récolte. Il est supérieur ou égal à 1, et il va effectivement forcer le COS à suivre plusieurs fois un patron d&amp;rsquo;ouvertures/fermetures dans le temps qui correspond à une alternance entre son temps d&amp;rsquo;ouverture et de fermeture. Par exemple, pour un temps d&amp;rsquo;ouverture de 2, un temps de fermeture de 3 et une valeur de répétition du patron de récolte de 2, une fois le COS ouvert, il suivra automatique le calendrier &amp;ldquo;ouvert, ouvert, fermé, fermé, fermé, ouvert, ouvert, fermé, fermé, fermé&amp;rdquo;, ce qui correspondant à 2 répétitions de ses paramètres d&amp;rsquo;ouverture et de fermeture.&lt;/li&gt;
+&lt;li&gt;Le cinquième paramètre est la &lt;code&gt;green up period&lt;/code&gt;, ou période de verdissement. Elle correspond au délai que doit attendre le COS pour être ouvert à nouveau si un COS voisin est récolté. Les COS voisins sont en retours trouvés grâce au périmètre des voisins donné plus tôt.&lt;/li&gt;
+&lt;li&gt;Le sixième paramètre est la &lt;code&gt;starting period&lt;/code&gt;, ou période de départ. Elle correspond à la période à partir de laquelle le COS peut commencer à être ouvert dans le modèle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tous les COS créés par la fonction &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt; doivent idéalement être mis au sein d&amp;rsquo;une liste, qui sera donnée en paramètre à une autre fonction par la suite.&lt;/p&gt;
+&lt;h3 id=&#34;détermination-des-cos-voisins-pour-utiliser-des-contraintes-spatiales-avancées&#34;&gt;Détermination des COS voisins pour utiliser des contraintes spatiales avancées&lt;/h3&gt;
+&lt;p&gt;Il est possible que vous ayez un fichier shapefile contenant la position dans l&amp;rsquo;espace de chacun des COS.&lt;/p&gt;
+&lt;p&gt;Si c&amp;rsquo;est le cas, il est alors possible de déterminer quels COS sont voisins en lisant le fichier shapefile, et en comparant les numéros des polygones correspondant aux COS dans ce fichier shapefile avec ceux qui se trouvent dans les fichiers du modèle linéaire. Cela permet d&amp;rsquo;utiliser la contrainte spatiale déterminée par le paramètre &lt;code&gt;green up period&lt;/code&gt; décrit dans la &lt;a href=&#34;#cr%c3%a9ation-des-cos-au-sein-dune-mod%c3%a8le-de-programmation-lin%c3%a9aire-dans-fmt&#34;&gt;section précédente&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Pour utiliser les fonctions suivantes, &lt;strong&gt;les premiers attributs présents dans le fichier shapefile/vectoriel doivent correspondre aux thèmes présents dans les fichiers Woodstock de votre modèle&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Le fichier shapefile ou vectoriel peut contenir d&amp;rsquo;autres attributs par la suite; mais sans ces premiers attributs correspondants aux thèmes des fichiers Woodstock, les fonctions de FMT ne pourront pas reconnaitre quel polygone correspond à quel COS, et elles ne fonctionneront pas.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Pour cela, il est possible d&amp;rsquo;utiliser la fonction &lt;code&gt;getschemeneighbors()&lt;/code&gt; d&amp;rsquo;un objet &lt;code&gt;FMTareaparser&lt;/code&gt; créé auparavant, et de lui fournir la liste de COS crée par le biais de &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt; (voir &lt;a href=&#34;#cr%c3%a9ation-des-cos-au-sein-dune-mod%c3%a8le-de-programmation-lin%c3%a9aire-dans-fmt&#34;&gt;section précédente&lt;/a&gt;) ainsi que le fichier shapefile (ou un autre type de fichier vectoriel) qui contient les COS. Il suffit ensuite d&amp;rsquo;indiquer quels sont les champs du fichier shapefile qui contiennent les informations liées à l&amp;rsquo;âge des COS et leur aire. Il est possible d&amp;rsquo;utiliser des paramètres optionnels afin de ne pas considérer les COS avec des aires trop petites.&lt;/p&gt;
+&lt;p&gt;En se faisant, la fonction &lt;code&gt;getschemeneighbors()&lt;/code&gt; renverra une liste de COS similaire à celle créée par &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt;; cependant, pour chacun des COS, le vecteur indiquant la liste de leurs voisins spatiaux sera rempli.&lt;/p&gt;
+&lt;p&gt;Cela devrait prendre la forme suivante :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# On créer l&#39;objet FMTareaparser
+areap = Parser.FMTareaparser()
+# On indique le chemin du fichier shapefile
+shapefileLocation = &amp;quot;./spatialCompartments.shp&amp;quot;
+# On utilise la fonction sur une liste de COS deja crée avec Heuristics.FMToperatingareascheme() auparavant, operaeas
+# L&#39;objet &amp;quot;modelthemes&amp;quot; contient les themes du modèle
+# La liste sera mise a jour avec des COS qui contiennent leur vecteur de voisins remplis selon leur position dans l&#39;espace décrite dans le fichier vectoriel spatialCompartments.shp donné en argument
+opeareas = areap.getschemeneighbors(opeareas,modelthemes,shapefileLocation,&amp;quot;AGE&amp;quot;,&amp;quot;SUPERFICIE&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Pour plus d&amp;rsquo;informations, voir la &lt;a href=&#34;../../../../doxygen/html/classParser_1_1FMTareaparser.html#a000283e41dfb73733984a4292b6dfa4a&#34;&gt;page doxygen de &lt;code&gt;FMTareaparser&lt;/code&gt; et la section sur &lt;code&gt;getschemeneighbors&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;création-dun-output-node-lié-aux-actions-influencées-par-le-calendrier-des-cos&#34;&gt;Création d&amp;rsquo;un &lt;em&gt;output node&lt;/em&gt; lié aux actions influencées par le calendrier des COS.&lt;/h3&gt;
+&lt;p&gt;Afin de pouvoir commencer à optimiser le calendrier des COS (voir &lt;a href=&#34;#lancement-du-greedy-algorithm-et-r%c3%a9cup%c3%a9ration-du-calendrier-optimis%c3%a9&#34;&gt;section suivante&lt;/a&gt;), il faut fournir à FMT différentes informations quand aux actions et aux peuplements qui seront affectés par les COS. Pour ce faire, FMT a besoin des &lt;code&gt;FMToutputnode&lt;/code&gt; liés aux actions qui seront visées par les ouvertures et fermeture de COS (par exemple, un type de coupes qui ne peuvent pas se faire trop proches les une des autres). Ces objets sont seulement utilisés parce qu&amp;rsquo;ils sont les plus utiles pour cette étape, et non pas parce qu&amp;rsquo;ils sont les seuls qui peuvent donner ces informations à FMT.&lt;/p&gt;
+&lt;p&gt;Les objets &lt;code&gt;FMToutputnode&lt;/code&gt; contiennent les &lt;em&gt;output nodes&lt;/em&gt; du modèle linéaire. Ces derniers sont composés de 4 éléments : un masque (pour définir les peuplements considérés par l&amp;rsquo;&lt;em&gt;output node&lt;/em&gt;), une action, un yield, et un paramètre qui peut être utilisé pour modifier le yield. Par exemple, un &lt;em&gt;output node&lt;/em&gt; peut concerner 80% du volume brut récolté par les coupes totales dans tous les peuplements via la mention &lt;code&gt;? ? ? coupetotale volumebrut * 0.88&lt;/code&gt;. Les &lt;em&gt;output nodes&lt;/em&gt; sont indiqués dans le fichier &lt;code&gt;.out&lt;/code&gt; de la formulation Woodstock. Plusieurs &lt;em&gt;output nodes&lt;/em&gt; peuvent alors être combiné pour donner un seul output.&lt;/p&gt;
+&lt;p&gt;Afin de fournir ces &lt;code&gt;FMToutputnode&lt;/code&gt; à FMT, deux méthodes sont disponibles :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Il est possible de créer un nouvel objet &lt;code&gt;FMToutputnode&lt;/code&gt; qui contiendra toutes les actions visées par les COS en faisant un agrégat de ces actions. Pour ce faire, il suffit d&amp;rsquo;indiquer un nom d&amp;rsquo;agrégat d&amp;rsquo;action à toutes les actions visées via la fonction &lt;code&gt;push_aggregate()&lt;/code&gt; associées aux objets &lt;code&gt;FMTaction&lt;/code&gt;; puis, à fournir ce nom d&amp;rsquo;agrégats au constructeur de &lt;code&gt;FMToutputnode&lt;/code&gt;. Si ces actions concernent tous les peuplements possibles, le constructeur pour alors prendre la forme &lt;code&gt;FMToutputnode(Core.FMTmask((&amp;quot;? &amp;quot;*len(themes))[:-1],themes),Agg_name)&lt;/code&gt;, avec &lt;code&gt;Agg_name&lt;/code&gt; contenant le nom de l&amp;rsquo;agrégat des actions visées par les COS.&lt;/li&gt;
+&lt;li&gt;Il est aussi possible de récupérer un &lt;code&gt;FMToutputnode&lt;/code&gt; qui est contenu dans l&amp;rsquo;un des &lt;code&gt;FMToutput&lt;/code&gt; du modèle directement via la fonction &lt;code&gt;getnodes()&lt;/code&gt; associée aux objets &lt;code&gt;FMToutput&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Un exemple de la deuxième méthode est montré dans &lt;a href=&#34;#exemple-de-script&#34;&gt;l&amp;rsquo;exemple de script&lt;/a&gt; plus bas.&lt;/p&gt;
+&lt;h3 id=&#34;lancement-du-greedy-algorithm-et-récupération-du-calendrier-optimisé&#34;&gt;Lancement du &lt;em&gt;greedy algorithm&lt;/em&gt; et récupération du calendrier optimisé&lt;/h3&gt;
+&lt;p&gt;La dernière étape est de lancer le &lt;em&gt;greedy algorithm&lt;/em&gt; pour créer un calendrier optimisé.&lt;/p&gt;
+&lt;p&gt;Pour ce faire, il suffit de créer un objet qui va contenir la &amp;ldquo;tache&amp;rdquo; du greedy algorithm, et de donner cette tache à une fonction de FMT qui s&amp;rsquo;occupe de lancer les taches parallèles. Ces deux étapes sont essentielles, car le &lt;em&gt;greedy algorithm&lt;/em&gt; de FMT utilise des taches en parallèle afin de réaliser les différentes itérations de l&amp;rsquo;algorithme aussi rapidement que possible.&lt;/p&gt;
+&lt;p&gt;La création de l&amp;rsquo;objet contenant la tache de l&amp;rsquo;algorithme se fait via la fonction &lt;code&gt;Parallel.FMTopareaschedulertask()&lt;/code&gt;. La fonction nécessite 7 paramètres :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le &lt;code&gt;FMTlpmodel&lt;/code&gt; qui contient le modèle linéaire pour lequel on veut faire le calendrier des COS&lt;/li&gt;
+&lt;li&gt;Un objet contenant la liste de COS (voir la &lt;a href=&#34;#cr%C3%A9ation-des-cos-au-sein-dune-mod%C3%A8le-de-programmation-lin%C3%A9aire-dans-fmt&#34;&gt;section précédente&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Le &lt;em&gt;output node&lt;/em&gt; créé dans la &lt;a href=&#34;#cr%C3%A9ation-dun-noeud-li%C3%A9s-aux-actions-influenc%C3%A9es-par-le-calendrier-des-cos&#34;&gt;section précédente&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Une chaine de caractères (&lt;em&gt;string&lt;/em&gt;) qui indique où les fichiers créés par la fonction (qui contiennent des informations sur le calendrier optimisé final) seront copiés&lt;/li&gt;
+&lt;li&gt;Une chaine de caractères (&lt;em&gt;string&lt;/em&gt;) indiquant le nom de l&amp;rsquo;output lié au statut ouvert ou fermé des COS (par exemple &lt;code&gt;youvert&lt;/code&gt;; voir sections précédentes)&lt;/li&gt;
+&lt;li&gt;Un nombre indiquant le nombre maximum d&amp;rsquo;itérations que le &lt;em&gt;greedy algorithm&lt;/em&gt; peut réaliser avant de s&amp;rsquo;arrêter (voir sections précédentes)&lt;/li&gt;
+&lt;li&gt;Un nombre indiquant le temps maximal (en secondes) que le &lt;em&gt;greedy algorithm&lt;/em&gt; peut prendre avant de s&amp;rsquo;arrêter; l&amp;rsquo;algorithme s&amp;rsquo;arrettera si ce temps ou si le nombre d&amp;rsquo;itérations maximal est atteint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Une fois que l&amp;rsquo;objet contenant la tache est créé avec cette fonction, il doit être passé à la fonction &lt;code&gt;Parallel.FMTtaskhandler()&lt;/code&gt;. Cette fonction peut accepter un second paramètre qui indique le nombre de cœurs du processeur de l&amp;rsquo;ordinateur que la fonction utilisera pour réaliser les opérations en parallèle. La fonction retournera un objet &lt;code&gt;FMTtaskhandler&lt;/code&gt;, qui peut ensuite lancer l&amp;rsquo;algorithme pour de bon à l&amp;rsquo;aide de la fonction &lt;code&gt;conccurentrun()&lt;/code&gt; de l&amp;rsquo;objet.&lt;/p&gt;
+&lt;p&gt;Il est aussi possible de ne pas lancer le &lt;em&gt;greedy algorithm&lt;/em&gt;, mais d&amp;rsquo;obtenir un premier calendrier non optimisé, mais simplement &amp;ldquo;réalisable&amp;rdquo;. Pour cela, il suffit d&amp;rsquo;utiliser la fonction &lt;code&gt;getoperatingareaschedulerheuristics()&lt;/code&gt; d&amp;rsquo;un objet &lt;code&gt;FMTlpmodel&lt;/code&gt; en lui fournissant un objet contenant la liste des COS et un &lt;em&gt;output node&lt;/em&gt;, ainsi que le nombre de calendriers non optimisés que l&amp;rsquo;on veut obtenir. Un exemple est montré dans &lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/bb5aedacd33178f479769ea77d000307e134e3f3/Examples/Python/Operatingareascheduling.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ce script&lt;/a&gt; aux lignes 34-35.&lt;/p&gt;
+&lt;h2 id=&#34;exemple-de-script&#34;&gt;Exemple de script&lt;/h2&gt;
+&lt;p&gt;Un exemple de script très simple pour créer un calendrier de COS &lt;strong&gt;non optimisé&lt;/strong&gt; en python est disponible &lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/3ebc304ca488bf10039b1843e6e31fc197493d47/Examples/Python/Operatingareascheduling.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;à cette adresse&lt;/a&gt;. Ce script ne fait que générer une première version non optimisée d&amp;rsquo;un calendrier pour les COS, mais qui est simplement réalisable en fonction des contraintes données.&lt;/p&gt;
+&lt;p&gt;Le script suivant est une autre version de ce script qui est intégralement commenté, et qui lance à la fin le &lt;em&gt;greedy algorithm&lt;/em&gt; pour obtenir un calendrier optimisé de COS.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Ici, on charge FMT directement, comme si il avait été installé avec pip.
+from FMT import Models
+from FMT import Parser
+from FMT import Core
+from FMT import Heuristics
+from FMT import Version                  
+
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+	# On vérifie que FMT possède bien les fonctions nécessaires pour ce script
+	if Version.FMTversion().hasfeature(&amp;quot;OSI&amp;quot;):
+		# Definition du chemin menant au modèle woodstock
+		primarylocation = &amp;quot;../Models/TWD_land/TWD_land.pri&amp;quot;
+		# Création d&#39;un objet pour lire le modèle (parser)
+		modelparser = Parser.FMTmodelparser()
+		# On lit le model grâce au parser.
+		models = modelparser.readproject(primarylocation,[&amp;quot;LP&amp;quot;])
+		# On désactive le log pour ce modèle (optionel)
+		models[0].setquietlogger()
+		# On charge le modèle parmis la liste des modèles renvoyée
+		optimizationmodel=Models.FMTlpmodel(models[0],Models.FMTsolverinterface.CLP)
+		# On récupère les thèmes du modèle
+		themes = optimizationmodel.getthemes()
+		# On créé une liste que l&#39;on va remplir avec les opératings areas
+		opareas = []
+		# Pour chacun des numéros de COS présent dans les thèmes, on créer une COS que l&#39;on met dans la liste
+		for attribute in themes[2].getattributes(&amp;quot;?&amp;quot;):
+			mask = [&amp;quot;?&amp;quot; for theme in themes]
+			mask[2] = attribute
+			# On créer la COS avec le masque qui sélectionne les peuplements avec les numéros de COS
+			# On utilise un opening time de 2, un return time de 1, un reptition de 4, une green up period de 0, et une starting period de 1.
+			opareas.append(Heuristics.FMToperatingareascheme(Heuristics.FMToperatingarea(Core.FMTmask(mask,themes),0),2,1,4,0,1))
+		# Les lignes suivantes vont trouver une solution initiale au modèle, sans calendrier de COS. Voir bases de FMT.
+		for period in range(0,10):
+				print(optimizationmodel.buildperiod())
+		allconstraints = optimizationmodel.getconstraints()
+		objective = allconstraints.pop(0)
+		for constraint in allconstraints:
+				optimizationmodel.setconstraint(constraint)
+		optimizationmodel.setobjective(objective)
+		optimizationmodel.initialsolve()
+		# On récupère les output nodes du modèle nécessaires pour créer un calendrier de COS grace aux actions qu&#39;ils contiennent
+		nodeofoutput = None
+		for output in optimizationmodel.getoutputs():
+				if &amp;quot;OSUPREC&amp;quot; == output.getname():
+					  nodeofoutput = output.getnodes(optimizationmodel.getarea(),optimizationmodel.getactions(),optimizationmodel.getyields())[0]
+					  break;
+		# On finit en définissant les paramètres nécessaires pour lancer le greedy algorithm : l&#39;endroit ou mettre les outputs, et le temps maximal et le nombre d&#39;itérations maximales pour l&#39;algorithme.
+		outputsLocation = &amp;quot;./Outputs/outputCalendrier&amp;quot;
+		maximumIterations = 30
+		maximumTime = 1209600 # Temps maximum en seconde; ici, cela correspond a deux semaines.
+        # On créer l&#39;objet qui contient la tache a lancer avec le greedy algorithm
+        maintask = Parallel.FMTopareaschedulertask(optimizationmodel, opeareas, outputsLocation, &amp;quot;YOUVERT&amp;quot;, maximumIterations, maximumTime)
+        # On met la tache au sein d&#39;un objet qui gère le lancement des taches en parallèle dans FMT
+        handler = Parallel.FMTtaskhandler(maintask,self.thr)
+        # On active l&#39;enregistrement du log de la tache
+        handler.settasklogger()
+        # on lance la tache du greedy algorithm en parralèle
+        handler.conccurentrun()
+	else:
+		print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

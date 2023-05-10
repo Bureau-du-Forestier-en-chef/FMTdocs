@@ -93,6 +93,19 @@
                 href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/download_install/downloading_libraries/"
                 />
   </url><url>
+    <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/operational_area_scheduling/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/operational_area_scheduling/"
+                />
+  </url><url>
     <loc>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/basics/spatially_referenced_optimization/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <xhtml:link

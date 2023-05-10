@@ -1,0 +1,1412 @@
+<!DOCTYPE html><html lang="fr-ca" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Les COS et la planification spatiale des coupes Un COS (Compartiment d&rsquo;Organisation Spatiale) est une aire de forêt que l&rsquo;on peut utiliser pour agréger des zones de coupes forestières dans l&rsquo;espace." />
+
+  
+    <link rel="alternate" hreflang="en" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/operational_area_scheduling/" />
+  
+  <link rel="alternate" hreflang="fr-ca" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/wowchemy.aa936755d898fe5a4c5cf937b93bb8a2.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/FMTdocs/fr/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Documentation de FMT" />
+  <meta property="og:url" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/" />
+  <meta property="og:title" content="Planification des Compartiments d&#39;Organisation Spatiale (COS) | Documentation de FMT" />
+  <meta property="og:description" content="Les COS et la planification spatiale des coupes Un COS (Compartiment d&rsquo;Organisation Spatiale) est une aire de forêt que l&rsquo;on peut utiliser pour agréger des zones de coupes forestières dans l&rsquo;espace." /><meta property="og:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="fr-ca" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-05-05T00:00:00&#43;01:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Planification des Compartiments d&#39;Organisation Spatiale (COS) | Documentation de FMT</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ccad905f191f54fdede3399dde3d8dae" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/FMTdocs/js/wowchemy-init.min.d5311fd7435c9fda4bf0768e412fb7ae.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Rechercher</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Recherche..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Recherche...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Ouvrir la barre de navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/FMTdocs/fr/"><span>Accueil</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/FMTdocs/fr/docs/"><span>Documentation</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/FMTdocs/doxygen/html/index.html"><span>Doxygen</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Rechercher"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown"
+           aria-haspopup="true" aria-label="Languages">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>Français</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/operational_area_scheduling/">
+            <span>English</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Les fonctions avancées
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Recherche...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/FMTdocs/fr/docs/">Documentation de FMT</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/fr/docs/basics/"><i class="fas fa-play pr-1"></i>Les bases de FMT</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/basics/objects_parsing_interrogation/">Objets, lecture et interrogation de modèles</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/basics/spatially_referenced_optimization/">Optimisation spatiallement référencée</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/basics/exercice_1/">Exercice 1</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/basics/spatially_explicit_simulation/">Simulation spatiallement explicite</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/fr/docs/download_install/"><i class="fas fa-download pr-1"></i>Téléchargement et installation</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/download_install/prerequisits/">Prérequis</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/download_install/downloading_libraries/">Télécharger les librairies</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/download_install/compiling/">Compiler</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/download_install/importing_in_python/">Importer FMT dans Python</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/fr/docs/advanced/"><i class="fas fa-code-branch pr-1"></i>Les fonctions avancées</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/advanced/replanning/">Re-planification spatialement référencée</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/fr/docs/advanced/exercice_2/">Exercice 2</a></li>
+
+
+
+  <li class="active"><a href="/FMTdocs/fr/docs/advanced/operational_area_scheduling/">Planification des COS</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/fr/docs/slides_links/"><i class="fas fa-film pr-1"></i>Présentations</a>
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Dans cette page</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#les-cos-et-la-planification-spatiale-des-coupes">Les COS et la planification spatiale des coupes</a></li>
+    <li><a href="#limplémentation-des-cos-dans-des-fichiers-woodstock">L&rsquo;implémentation des COS dans des fichiers Woodstock</a></li>
+    <li><a href="#fonctions-utilisées-et-paramètres-nécessaires">Fonctions utilisées et paramètres nécessaires</a>
+      <ul>
+        <li><a href="#création-des-cos-au-sein-dun-modèle-de-programmation-linéaire-dans-fmt">Création des COS au sein d&rsquo;un modèle de programmation linéaire dans FMT</a></li>
+        <li><a href="#détermination-des-cos-voisins-pour-utiliser-des-contraintes-spatiales-avancées">Détermination des COS voisins pour utiliser des contraintes spatiales avancées</a></li>
+        <li><a href="#création-dun-output-node-lié-aux-actions-influencées-par-le-calendrier-des-cos">Création d&rsquo;un <em>output node</em> lié aux actions influencées par le calendrier des COS.</a></li>
+        <li><a href="#lancement-du-greedy-algorithm-et-récupération-du-calendrier-optimisé">Lancement du <em>greedy algorithm</em> et récupération du calendrier optimisé</a></li>
+      </ul>
+    </li>
+    <li><a href="#exemple-de-script">Exemple de script</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/fr/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/fr/docs/">
+      
+        Documentation de FMT
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/fr/docs/advanced/">
+      
+        Les fonctions avancées
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Planification des COS
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>Planification des Compartiments d&#39;Organisation Spatiale (COS)</h1>
+
+          <div class="article-style">
+            <h2 id="les-cos-et-la-planification-spatiale-des-coupes">Les COS et la planification spatiale des coupes</h2>
+<p>Un COS (<em>Compartiment d&rsquo;Organisation Spatiale</em>) est une aire de forêt que l&rsquo;on peut utiliser pour agréger des zones de coupes forestières dans l&rsquo;espace. Dans Woodstock, elle est représentée de manière spatialement référencée par un groupe d&rsquo;aires ou des peuplements qui partagent un numéro de COS commun.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_hu9c3954e6535866c11b5657b20150f407_156266_fce40dbe64b7fe64aedc96149967a6cc.webp 400w,
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_hu9c3954e6535866c11b5657b20150f407_156266_03a9b8fb38a15c3487649f9c070e9936.webp 760w,
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_hu9c3954e6535866c11b5657b20150f407_156266_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Figure%201-%20explication%20COS_hu9c3954e6535866c11b5657b20150f407_156266_fce40dbe64b7fe64aedc96149967a6cc.webp"
+               width="760"
+               height="205"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>L&rsquo;agrégation des coupes forestières a été pendant un temps vue d&rsquo;un mauvais œil dans certains pays à cause des vastes étendues de forêts coupées continues qu&rsquo;elle pouvait générer. Cependant, elle est aujourd&rsquo;hui considérée à nouveau dans le but de minimiser l&rsquo;étendue des zones de coupes au niveau du paysage, ainsi que la quantité de chemins forestiers générés. Le prix des coupes en est également réduit par une réduction des déplacements et de la complexité lors des interventions forestières.</p>
+<p>FMT propose ainsi différentes fonctions qui permettent de dériver un calendrier d&rsquo;ouverture et de fermeture de COS qui respecte plusieurs contraintes spatiales données quant à la taille des zones de coupes. Ainsi, le calendrier va fermer des COS trop proches lorsque cela pourrait causer des tailles de coupes trop grandes si elles étaient choisies, ou bien forcer de grandes coupes en restreignant les COS disponibles pour la coupe.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_hua3426d7a490245ac3a13cab05261da04_225321_775de02e21e40cc9ed34285434abb296.webp 400w,
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_hua3426d7a490245ac3a13cab05261da04_225321_b50114129793082b2ca695558753e1be.webp 760w,
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_hua3426d7a490245ac3a13cab05261da04_225321_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_hua3426d7a490245ac3a13cab05261da04_225321_775de02e21e40cc9ed34285434abb296.webp"
+               width="760"
+               height="255"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>Ce calendrier d&rsquo;ouverture et de fermeture de COS va ainsi permettre de communiquer les contraintes spatiales aux modèles de programmation linéaire basés sur des fichiers Woodstock que FMT utilise (voir <a href="../../basics/spatially_referenced_optimization/">les bases de FMT</a>). FMT va alors pouvoir générer une nouvelle solution pour un modèle avec l&rsquo;ajout de ce calendrier. Bien évidemment, lorsque l&rsquo;on ajoute des contraintes additionnelles au modèle, cela a généralement pour cause de réduire la quantité de bois qui est récoltable dans la solution optimale. Ainsi, l&rsquo;ajout de ce calendrier d&rsquo;ouvertures et de fermetures de COS va réduire le bois récolté dans la nouvelle solution généré par FMT.</p>
+<p>L&rsquo;idée est alors de trouver un calendrier &ldquo;optimal&rdquo; qui va réduire le moins possible la quantité de bois récoltable dans la solution du modèle. On peut le faire par le biais du processus itératif suivant :</p>
+<ul>
+<li>On calcule la solution du modèle sans calendrier.</li>
+<li>On génère un premier calendrier d&rsquo;ouverture et de fermeture de COS qui respecte les contraintes spatiales données.
+<ul>
+<li>Ce calendrier est simplement &ldquo;réalisable&rdquo;; il n&rsquo;est pas forcément optimisé, mais respecte simplement toutes les contraintes.</li>
+</ul>
+</li>
+<li>On ajoute le calendrier au modèle, et on recalcule la solution du modèle.</li>
+<li>On compare la quantité de bois récolté dans la première solution (sans calendrier) avec cette nouvelle solution (avec calendrier). On obtient le % de réduction de bois récoltable dont le calendrier est responsable.
+<ul>
+<li>Le but est alors d&rsquo;optimiser le calendrier pour réduire ce pourcentage autant que possible.</li>
+</ul>
+</li>
+<li>On réalise ensuite la boucle suivante (appellée un <em>greedy algorithm</em>) avec autant d&rsquo;itérations que nécessaire :
+<ul>
+<li>On change le calendrier des COS de manière aléatoire tout en faisant en sorte qu&rsquo;il continue de respecter toutes les contraintes spatiales</li>
+<li>On insère le calendrier dans le modèle et l&rsquo;on recalcule la solution</li>
+<li>Si le calendrier a réduit le pourcentage de réduction de bois récoltable, on garde la modification aléatoire pour l&rsquo;itération suivante
+<ul>
+<li>Sinon, on annule cette modification aléatoire et l&rsquo;on en cherche une autre</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_hu57a9e10c282d77b4e933656ea5b7a6b8_431230_e38140421623e7c405e90abed365606f.webp 400w,
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_hu57a9e10c282d77b4e933656ea5b7a6b8_431230_8045d34815fe858fea55d0625ccc0eb0.webp 760w,
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_hu57a9e10c282d77b4e933656ea5b7a6b8_431230_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_hu57a9e10c282d77b4e933656ea5b7a6b8_431230_e38140421623e7c405e90abed365606f.webp"
+               width="760"
+               height="472"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<div class="alert alert-note">
+  <div>
+    Il est possible de résoudre le problème de l&rsquo;optimisation du calendrier avec des méthodes plus complexes, comme celle du <em>mixed integer programming</em> (MIP) pour obtenir une solution vraiment optimale.
+Cependant, ces algorithmes peuvent demander beaucoup trop de calcul pour des modèles de programmation linéaire qui concernent des paysages forestiers complexes. Dans ce cas-là, le <em>greedy algorithm</em> est utile pour éviter des temps de calcul trop long.
+  </div>
+</div>
+<h2 id="limplémentation-des-cos-dans-des-fichiers-woodstock">L&rsquo;implémentation des COS dans des fichiers Woodstock</h2>
+<p>La syntaxe des fichiers Woodstock n&rsquo;est pas faite pour permettre de l&rsquo;optimisation via des contraintes spatiales. Cependant, le système des COS utilisé par FMT peut être mis en place dans des fichiers Woodstock par le biais d&rsquo;un <em>yield</em>.</p>
+<p>Par exemple, il est possible de créer un <em>yield</em> nommé <code>youvert</code> qui décrit si un peuplement est disponible à la récolte ou non. Ce <em>yield</em> peut alors être assigné à un numéro de COS présent dans un thème, et va donc s&rsquo;appliquer à tous les peuplements qui sont associés à ce numéro de COS via ce même thème. Il peut ensuite servir à restreindre certaines actions (e.g., des coupes) au sein du modèle.</p>
+<p>Dans la section <code>YIELD</code> du modèle woodstock, ce <em>yield</em> qui indique quand un COS est ouvert ou fermé aura une valeur pour chacune des périodes du modèle. Cet enchainement de valeurs représente donc le calendrier d&rsquo;ouverture ou de fermeture des COS. En pratique, la section YIELD qui contient le calendrier formulé par FMT prendra la forme suivante (ici, le yield <code>youvert</code> indique si un COS est ouvert ou fermé) :</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Dessin_Yield_FR_hu8389fc96fab242f806bbfa715231dc13_515811_81da5f04eb5f8f7975953bf5b0b7f89b.webp 400w,
+               /FMTdocs/media/docs/Dessin_Yield_FR_hu8389fc96fab242f806bbfa715231dc13_515811_65bf6f71138152f7072c6b73e1455a6e.webp 760w,
+               /FMTdocs/media/docs/Dessin_Yield_FR_hu8389fc96fab242f806bbfa715231dc13_515811_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Dessin_Yield_FR_hu8389fc96fab242f806bbfa715231dc13_515811_81da5f04eb5f8f7975953bf5b0b7f89b.webp"
+               width="760"
+               height="404"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>Pour ce qui est d&rsquo;une action dans le modèle comme une coupe, le <em>yield</em> peut être utilisé de la manière suivante dans la section ACTION du modèle pour restreindre l&rsquo;action à des COS ouverts :</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Dessin_Yield_Action_FR_hue567deedb2f91b6de78af6a7e3d2c226_291964_ec7d1e821629edc27f1f462b8dbf1b76.webp 400w,
+               /FMTdocs/media/docs/Dessin_Yield_Action_FR_hue567deedb2f91b6de78af6a7e3d2c226_291964_a69daa21afdf841deab791cd228ad856.webp 760w,
+               /FMTdocs/media/docs/Dessin_Yield_Action_FR_hue567deedb2f91b6de78af6a7e3d2c226_291964_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Dessin_Yield_Action_FR_hue567deedb2f91b6de78af6a7e3d2c226_291964_ec7d1e821629edc27f1f462b8dbf1b76.webp"
+               width="760"
+               height="381"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<h2 id="fonctions-utilisées-et-paramètres-nécessaires">Fonctions utilisées et paramètres nécessaires</h2>
+<p>FMT propose plusieurs fonctions qui permettent de créer un calendrier optimisé d&rsquo;ouverture et de fermeture de COS dans FMT. Ces fonctions nécessitent différents paramètres qui seront décrits ici.</p>
+<div class="alert alert-warning">
+  <div>
+    <p>Cette documentation ne traitera pas du problème de la définition des COS, que l&rsquo;on appelle le <em>clustering</em>. Idéalement, définir les COS (c.-à-d. attribuer des numéros de COS a des peuplements) devrait se faire en même temps qu&rsquo;optimiser le calendrier; mais cela représente une opération très complexe. Ainsi, le clustering est généralement fait en amont de l&rsquo;optimisation du calendrier, en regroupant des strates similaires et proches dans l&rsquo;espace.</p>
+<p>Ainsi, <strong>pour pouvoir utiliser les fonctions suivantes, les COS doivent déjà avoir été insérés dans les fichiers du modèle sous forme de numéros de COS associés aux peuplements par des masques</strong>. Voir la <a href="#limpl%c3%a9mentation-des-cos-dans-des-fichiers-woodstock">section précédente</a> pour plus d&rsquo;information.</p>
+  </div>
+</div>
+<h3 id="création-des-cos-au-sein-dun-modèle-de-programmation-linéaire-dans-fmt">Création des COS au sein d&rsquo;un modèle de programmation linéaire dans FMT</h3>
+<p>Dans FMT, une fois qu&rsquo;un modèle linéaire a été créé en se basant sur des fichiers woodstock (voir <a href="../../basics/spatially_referenced_optimization/">les bases de FMT</a>), il est possible de créer la structure des COS au sein du modèle (voir sections précédentes) par le biais de la fonction <code>Heuristics.FMToperatingareascheme()</code>.</p>
+<p>La fonction <code>Heuristics.FMToperatingareascheme()</code> sert à construire un seul COS au sein du modèle, et doit donc être répétée pour chacun des COS qui doit être créée. Elle nécessite différents paramètres. Ces paramètres servent à donner des contraintes sur comment et quand un COS peut être ouvert dans le calendrier.</p>
+<p>Vous trouverez un exemple de cette création dans la <a href="#exemple-de-script">section suivante</a>.</p>
+<div class="alert alert-warning">
+  <div>
+    Le calendrier d&rsquo;ouverture et de fermeture des COS que FMT pourra créer par la suite est très sensible à ces différents paramètres. Si ceux-ci sont mal indiqués, FMT pourra être incapable de trouver une solution réalisable au modèle.
+  </div>
+</div>
+<ul>
+<li>Le premier paramètre contient le COS à créer en soi. Celui-ci peut être construit à l&rsquo;aide de la fonction <code>Heuristics.FMToperatingarea()</code>, qui prend elle-même deux paramètres : le premier est le masque qui va décrire quels peuplements seront contenus dans ce COS, et le second est le <code>neihgbors perimeter</code>, ou <em>périmètres des voisins</em>. Ce second paramètre décrit le ratio du périmètre du COS que celle-ci doit avoir en commun avec un autre COS pour que les deux soient considérés comme voisins. Par exemple, si le périmètre des voisins est de 0.5, alors 50% du périmètre du COS doit être partagé avec un autre COS pour qu&rsquo;ils soient considérés comme voisins.</li>
+<li>Le deuxième paramètre est le <code>opening time</code>, ou le temps d&rsquo;ouverture. Il définit combien de temps le COS doit rester ouvert lorsqu&rsquo;il est ouvert sur une période. Par exemple, si le temps d&rsquo;ouverture est de 5, alors le COS sera toujours ouvert pour 5 périodes à la fois.</li>
+<li>Le troisième paramètre est le <code>return time</code>, ou temps de retour. Il correspond au nombre de périodes de temps qui doivent être respectées avant que le COS soit réouvert dans le futur. Par exemple, si le temps de retour est de 5, alors il doit y avoir au moins 5 périodes de temps entre deux ouvertures du COS.</li>
+<li>Le quatrième paramètre est le <code>repetition pattern</code>, ou la répétition du patron de récolte. Il est supérieur ou égal à 1, et il va effectivement forcer le COS à suivre plusieurs fois un patron d&rsquo;ouvertures/fermetures dans le temps qui correspond à une alternance entre son temps d&rsquo;ouverture et de fermeture. Par exemple, pour un temps d&rsquo;ouverture de 2, un temps de fermeture de 3 et une valeur de répétition du patron de récolte de 2, une fois le COS ouvert, il suivra automatique le calendrier &ldquo;ouvert, ouvert, fermé, fermé, fermé, ouvert, ouvert, fermé, fermé, fermé&rdquo;, ce qui correspondant à 2 répétitions de ses paramètres d&rsquo;ouverture et de fermeture.</li>
+<li>Le cinquième paramètre est la <code>green up period</code>, ou période de verdissement. Elle correspond au délai que doit attendre le COS pour être ouvert à nouveau si un COS voisin est récolté. Les COS voisins sont en retours trouvés grâce au périmètre des voisins donné plus tôt.</li>
+<li>Le sixième paramètre est la <code>starting period</code>, ou période de départ. Elle correspond à la période à partir de laquelle le COS peut commencer à être ouvert dans le modèle.</li>
+</ul>
+<p>Tous les COS créés par la fonction <code>Heuristics.FMToperatingareascheme()</code> doivent idéalement être mis au sein d&rsquo;une liste, qui sera donnée en paramètre à une autre fonction par la suite.</p>
+<h3 id="détermination-des-cos-voisins-pour-utiliser-des-contraintes-spatiales-avancées">Détermination des COS voisins pour utiliser des contraintes spatiales avancées</h3>
+<p>Il est possible que vous ayez un fichier shapefile contenant la position dans l&rsquo;espace de chacun des COS.</p>
+<p>Si c&rsquo;est le cas, il est alors possible de déterminer quels COS sont voisins en lisant le fichier shapefile, et en comparant les numéros des polygones correspondant aux COS dans ce fichier shapefile avec ceux qui se trouvent dans les fichiers du modèle linéaire. Cela permet d&rsquo;utiliser la contrainte spatiale déterminée par le paramètre <code>green up period</code> décrit dans la <a href="#cr%c3%a9ation-des-cos-au-sein-dune-mod%c3%a8le-de-programmation-lin%c3%a9aire-dans-fmt">section précédente</a>.</p>
+<div class="alert alert-warning">
+  <div>
+    <p>Pour utiliser les fonctions suivantes, <strong>les premiers attributs présents dans le fichier shapefile/vectoriel doivent correspondre aux thèmes présents dans les fichiers Woodstock de votre modèle</strong>.</p>
+<p>Le fichier shapefile ou vectoriel peut contenir d&rsquo;autres attributs par la suite; mais sans ces premiers attributs correspondants aux thèmes des fichiers Woodstock, les fonctions de FMT ne pourront pas reconnaitre quel polygone correspond à quel COS, et elles ne fonctionneront pas.</p>
+  </div>
+</div>
+<p>Pour cela, il est possible d&rsquo;utiliser la fonction <code>getschemeneighbors()</code> d&rsquo;un objet <code>FMTareaparser</code> créé auparavant, et de lui fournir la liste de COS crée par le biais de <code>Heuristics.FMToperatingareascheme()</code> (voir <a href="#cr%c3%a9ation-des-cos-au-sein-dune-mod%c3%a8le-de-programmation-lin%c3%a9aire-dans-fmt">section précédente</a>) ainsi que le fichier shapefile (ou un autre type de fichier vectoriel) qui contient les COS. Il suffit ensuite d&rsquo;indiquer quels sont les champs du fichier shapefile qui contiennent les informations liées à l&rsquo;âge des COS et leur aire. Il est possible d&rsquo;utiliser des paramètres optionnels afin de ne pas considérer les COS avec des aires trop petites.</p>
+<p>En se faisant, la fonction <code>getschemeneighbors()</code> renverra une liste de COS similaire à celle créée par <code>Heuristics.FMToperatingareascheme()</code>; cependant, pour chacun des COS, le vecteur indiquant la liste de leurs voisins spatiaux sera rempli.</p>
+<p>Cela devrait prendre la forme suivante :</p>
+<pre><code class="language-python"># On créer l'objet FMTareaparser
+areap = Parser.FMTareaparser()
+# On indique le chemin du fichier shapefile
+shapefileLocation = &quot;./spatialCompartments.shp&quot;
+# On utilise la fonction sur une liste de COS deja crée avec Heuristics.FMToperatingareascheme() auparavant, operaeas
+# L'objet &quot;modelthemes&quot; contient les themes du modèle
+# La liste sera mise a jour avec des COS qui contiennent leur vecteur de voisins remplis selon leur position dans l'espace décrite dans le fichier vectoriel spatialCompartments.shp donné en argument
+opeareas = areap.getschemeneighbors(opeareas,modelthemes,shapefileLocation,&quot;AGE&quot;,&quot;SUPERFICIE&quot;)
+</code></pre>
+<p>Pour plus d&rsquo;informations, voir la <a href="../../../../doxygen/html/classParser_1_1FMTareaparser.html#a000283e41dfb73733984a4292b6dfa4a">page doxygen de <code>FMTareaparser</code> et la section sur <code>getschemeneighbors</code></a></p>
+<h3 id="création-dun-output-node-lié-aux-actions-influencées-par-le-calendrier-des-cos">Création d&rsquo;un <em>output node</em> lié aux actions influencées par le calendrier des COS.</h3>
+<p>Afin de pouvoir commencer à optimiser le calendrier des COS (voir <a href="#lancement-du-greedy-algorithm-et-r%c3%a9cup%c3%a9ration-du-calendrier-optimis%c3%a9">section suivante</a>), il faut fournir à FMT différentes informations quand aux actions et aux peuplements qui seront affectés par les COS. Pour ce faire, FMT a besoin des <code>FMToutputnode</code> liés aux actions qui seront visées par les ouvertures et fermeture de COS (par exemple, un type de coupes qui ne peuvent pas se faire trop proches les une des autres). Ces objets sont seulement utilisés parce qu&rsquo;ils sont les plus utiles pour cette étape, et non pas parce qu&rsquo;ils sont les seuls qui peuvent donner ces informations à FMT.</p>
+<p>Les objets <code>FMToutputnode</code> contiennent les <em>output nodes</em> du modèle linéaire. Ces derniers sont composés de 4 éléments : un masque (pour définir les peuplements considérés par l&rsquo;<em>output node</em>), une action, un yield, et un paramètre qui peut être utilisé pour modifier le yield. Par exemple, un <em>output node</em> peut concerner 80% du volume brut récolté par les coupes totales dans tous les peuplements via la mention <code>? ? ? coupetotale volumebrut * 0.88</code>. Les <em>output nodes</em> sont indiqués dans le fichier <code>.out</code> de la formulation Woodstock. Plusieurs <em>output nodes</em> peuvent alors être combiné pour donner un seul output.</p>
+<p>Afin de fournir ces <code>FMToutputnode</code> à FMT, deux méthodes sont disponibles :</p>
+<ol>
+<li>Il est possible de créer un nouvel objet <code>FMToutputnode</code> qui contiendra toutes les actions visées par les COS en faisant un agrégat de ces actions. Pour ce faire, il suffit d&rsquo;indiquer un nom d&rsquo;agrégat d&rsquo;action à toutes les actions visées via la fonction <code>push_aggregate()</code> associées aux objets <code>FMTaction</code>; puis, à fournir ce nom d&rsquo;agrégats au constructeur de <code>FMToutputnode</code>. Si ces actions concernent tous les peuplements possibles, le constructeur pour alors prendre la forme <code>FMToutputnode(Core.FMTmask((&quot;? &quot;*len(themes))[:-1],themes),Agg_name)</code>, avec <code>Agg_name</code> contenant le nom de l&rsquo;agrégat des actions visées par les COS.</li>
+<li>Il est aussi possible de récupérer un <code>FMToutputnode</code> qui est contenu dans l&rsquo;un des <code>FMToutput</code> du modèle directement via la fonction <code>getnodes()</code> associée aux objets <code>FMToutput</code>.</li>
+</ol>
+<p>Un exemple de la deuxième méthode est montré dans <a href="#exemple-de-script">l&rsquo;exemple de script</a> plus bas.</p>
+<h3 id="lancement-du-greedy-algorithm-et-récupération-du-calendrier-optimisé">Lancement du <em>greedy algorithm</em> et récupération du calendrier optimisé</h3>
+<p>La dernière étape est de lancer le <em>greedy algorithm</em> pour créer un calendrier optimisé.</p>
+<p>Pour ce faire, il suffit de créer un objet qui va contenir la &ldquo;tache&rdquo; du greedy algorithm, et de donner cette tache à une fonction de FMT qui s&rsquo;occupe de lancer les taches parallèles. Ces deux étapes sont essentielles, car le <em>greedy algorithm</em> de FMT utilise des taches en parallèle afin de réaliser les différentes itérations de l&rsquo;algorithme aussi rapidement que possible.</p>
+<p>La création de l&rsquo;objet contenant la tache de l&rsquo;algorithme se fait via la fonction <code>Parallel.FMTopareaschedulertask()</code>. La fonction nécessite 7 paramètres :</p>
+<ul>
+<li>Le <code>FMTlpmodel</code> qui contient le modèle linéaire pour lequel on veut faire le calendrier des COS</li>
+<li>Un objet contenant la liste de COS (voir la <a href="#cr%C3%A9ation-des-cos-au-sein-dune-mod%C3%A8le-de-programmation-lin%C3%A9aire-dans-fmt">section précédente</a>)</li>
+<li>Le <em>output node</em> créé dans la <a href="#cr%C3%A9ation-dun-noeud-li%C3%A9s-aux-actions-influenc%C3%A9es-par-le-calendrier-des-cos">section précédente</a></li>
+<li>Une chaine de caractères (<em>string</em>) qui indique où les fichiers créés par la fonction (qui contiennent des informations sur le calendrier optimisé final) seront copiés</li>
+<li>Une chaine de caractères (<em>string</em>) indiquant le nom de l&rsquo;output lié au statut ouvert ou fermé des COS (par exemple <code>youvert</code>; voir sections précédentes)</li>
+<li>Un nombre indiquant le nombre maximum d&rsquo;itérations que le <em>greedy algorithm</em> peut réaliser avant de s&rsquo;arrêter (voir sections précédentes)</li>
+<li>Un nombre indiquant le temps maximal (en secondes) que le <em>greedy algorithm</em> peut prendre avant de s&rsquo;arrêter; l&rsquo;algorithme s&rsquo;arrettera si ce temps ou si le nombre d&rsquo;itérations maximal est atteint</li>
+</ul>
+<p>Une fois que l&rsquo;objet contenant la tache est créé avec cette fonction, il doit être passé à la fonction <code>Parallel.FMTtaskhandler()</code>. Cette fonction peut accepter un second paramètre qui indique le nombre de cœurs du processeur de l&rsquo;ordinateur que la fonction utilisera pour réaliser les opérations en parallèle. La fonction retournera un objet <code>FMTtaskhandler</code>, qui peut ensuite lancer l&rsquo;algorithme pour de bon à l&rsquo;aide de la fonction <code>conccurentrun()</code> de l&rsquo;objet.</p>
+<p>Il est aussi possible de ne pas lancer le <em>greedy algorithm</em>, mais d&rsquo;obtenir un premier calendrier non optimisé, mais simplement &ldquo;réalisable&rdquo;. Pour cela, il suffit d&rsquo;utiliser la fonction <code>getoperatingareaschedulerheuristics()</code> d&rsquo;un objet <code>FMTlpmodel</code> en lui fournissant un objet contenant la liste des COS et un <em>output node</em>, ainsi que le nombre de calendriers non optimisés que l&rsquo;on veut obtenir. Un exemple est montré dans <a href="https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/bb5aedacd33178f479769ea77d000307e134e3f3/Examples/Python/Operatingareascheduling.py" target="_blank" rel="noopener">ce script</a> aux lignes 34-35.</p>
+<h2 id="exemple-de-script">Exemple de script</h2>
+<p>Un exemple de script très simple pour créer un calendrier de COS <strong>non optimisé</strong> en python est disponible <a href="https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/3ebc304ca488bf10039b1843e6e31fc197493d47/Examples/Python/Operatingareascheduling.py" target="_blank" rel="noopener">à cette adresse</a>. Ce script ne fait que générer une première version non optimisée d&rsquo;un calendrier pour les COS, mais qui est simplement réalisable en fonction des contraintes données.</p>
+<p>Le script suivant est une autre version de ce script qui est intégralement commenté, et qui lance à la fin le <em>greedy algorithm</em> pour obtenir un calendrier optimisé de COS.</p>
+<pre><code class="language-python"># Ici, on charge FMT directement, comme si il avait été installé avec pip.
+from FMT import Models
+from FMT import Parser
+from FMT import Core
+from FMT import Heuristics
+from FMT import Version                  
+
+
+if __name__ == &quot;__main__&quot;:
+	# On vérifie que FMT possède bien les fonctions nécessaires pour ce script
+	if Version.FMTversion().hasfeature(&quot;OSI&quot;):
+		# Definition du chemin menant au modèle woodstock
+		primarylocation = &quot;../Models/TWD_land/TWD_land.pri&quot;
+		# Création d'un objet pour lire le modèle (parser)
+		modelparser = Parser.FMTmodelparser()
+		# On lit le model grâce au parser.
+		models = modelparser.readproject(primarylocation,[&quot;LP&quot;])
+		# On désactive le log pour ce modèle (optionel)
+		models[0].setquietlogger()
+		# On charge le modèle parmis la liste des modèles renvoyée
+		optimizationmodel=Models.FMTlpmodel(models[0],Models.FMTsolverinterface.CLP)
+		# On récupère les thèmes du modèle
+		themes = optimizationmodel.getthemes()
+		# On créé une liste que l'on va remplir avec les opératings areas
+		opareas = []
+		# Pour chacun des numéros de COS présent dans les thèmes, on créer une COS que l'on met dans la liste
+		for attribute in themes[2].getattributes(&quot;?&quot;):
+			mask = [&quot;?&quot; for theme in themes]
+			mask[2] = attribute
+			# On créer la COS avec le masque qui sélectionne les peuplements avec les numéros de COS
+			# On utilise un opening time de 2, un return time de 1, un reptition de 4, une green up period de 0, et une starting period de 1.
+			opareas.append(Heuristics.FMToperatingareascheme(Heuristics.FMToperatingarea(Core.FMTmask(mask,themes),0),2,1,4,0,1))
+		# Les lignes suivantes vont trouver une solution initiale au modèle, sans calendrier de COS. Voir bases de FMT.
+		for period in range(0,10):
+				print(optimizationmodel.buildperiod())
+		allconstraints = optimizationmodel.getconstraints()
+		objective = allconstraints.pop(0)
+		for constraint in allconstraints:
+				optimizationmodel.setconstraint(constraint)
+		optimizationmodel.setobjective(objective)
+		optimizationmodel.initialsolve()
+		# On récupère les output nodes du modèle nécessaires pour créer un calendrier de COS grace aux actions qu'ils contiennent
+		nodeofoutput = None
+		for output in optimizationmodel.getoutputs():
+				if &quot;OSUPREC&quot; == output.getname():
+					  nodeofoutput = output.getnodes(optimizationmodel.getarea(),optimizationmodel.getactions(),optimizationmodel.getyields())[0]
+					  break;
+		# On finit en définissant les paramètres nécessaires pour lancer le greedy algorithm : l'endroit ou mettre les outputs, et le temps maximal et le nombre d'itérations maximales pour l'algorithme.
+		outputsLocation = &quot;./Outputs/outputCalendrier&quot;
+		maximumIterations = 30
+		maximumTime = 1209600 # Temps maximum en seconde; ici, cela correspond a deux semaines.
+        # On créer l'objet qui contient la tache a lancer avec le greedy algorithm
+        maintask = Parallel.FMTopareaschedulertask(optimizationmodel, opeareas, outputsLocation, &quot;YOUVERT&quot;, maximumIterations, maximumTime)
+        # On met la tache au sein d'un objet qui gère le lancement des taches en parallèle dans FMT
+        handler = Parallel.FMTtaskhandler(maintask,self.thr)
+        # On active l'enregistrement du log de la tache
+        handler.settasklogger()
+        # on lance la tache du greedy algorithm en parralèle
+        handler.conccurentrun()
+	else:
+		print(&quot;FMT needs to be compiled with OSI&quot;)
+</code></pre>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Précédent</div>
+    <a href="/FMTdocs/fr/docs/advanced/exercice_2/" rel="next">Exercice 2</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Dernière mise à jour le May 5, 2019</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2023 Bureau du Forestier en Chef du Québec
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copier
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Télécharger
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/FMTdocs/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/FMTdocs/fr/js/wowchemy.min.6bacdebda5ddd7bfb5bb006003a8e424.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

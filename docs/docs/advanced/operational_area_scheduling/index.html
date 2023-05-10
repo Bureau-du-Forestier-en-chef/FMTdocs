@@ -1,0 +1,1392 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="SOC and spatial harvest planning A SOC (Spatial Organization Compartment) is a forest area that can be used to spatially aggregate harvest areas. In Woodstock, it is represented in a spatially referenced way by a group of areas or stands that share a common SOC number." />
+
+  
+    <link rel="alternate" hreflang="fr" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/" />
+  
+  <link rel="alternate" hreflang="en-us" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/operational_area_scheduling/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/wowchemy.aa936755d898fe5a4c5cf937b93bb8a2.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/FMTdocs/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/operational_area_scheduling/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="FMT Documentation" />
+  <meta property="og:url" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/advanced/operational_area_scheduling/" />
+  <meta property="og:title" content="Spatial Organization Compartments (SOC) scheduling | FMT Documentation" />
+  <meta property="og:description" content="SOC and spatial harvest planning A SOC (Spatial Organization Compartment) is a forest area that can be used to spatially aggregate harvest areas. In Woodstock, it is represented in a spatially referenced way by a group of areas or stands that share a common SOC number." /><meta property="og:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-05-05T00:00:00&#43;01:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Spatial Organization Compartments (SOC) scheduling | FMT Documentation</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ccad905f191f54fdede3399dde3d8dae" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/FMTdocs/js/wowchemy-init.min.d5311fd7435c9fda4bf0768e412fb7ae.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/FMTdocs/">FMT Documentation</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/FMTdocs/">FMT Documentation</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/FMTdocs/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/FMTdocs/docs/"><span>Documentation</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/FMTdocs/doxygen/html/index.html"><span>Doxygen</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown"
+           aria-haspopup="true" aria-label="Languages">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>English</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/">
+            <span>Français</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Advanced features
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <ul class="nav docs-sidenav">
+        <li class=""><a href="/FMTdocs/docs/">FMT Documentation</a></li>
+    
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/basics/"><i class="fas fa-play pr-1"></i>The basics</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/objects_parsing_interrogation/">Objects, model parsing and interrogation</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/spatially_referenced_optimization/">Spatially referenced optimization</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/exercice_1/">Exercise 1</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/basics/spatially_explicit_simulation/">Spatially explicit simulation</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/download_install/"><i class="fas fa-download pr-1"></i>Downloading and installing</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/prerequisits/">Prerequisits</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/downloading_libraries/">Downloading the libraries</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/compiling/">Compiling</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/download_install/importing_in_python/">Importing FMT in Python</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/FMTdocs/docs/advanced/"><i class="fas fa-code-branch pr-1"></i>Advanced features</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/FMTdocs/docs/advanced/replanning/">Spatially referenced re-planning</a></li>
+
+
+
+  <li class=""><a href="/FMTdocs/docs/advanced/exercice_2/">Exercise 2</a></li>
+
+
+
+  <li class="active"><a href="/FMTdocs/docs/advanced/operational_area_scheduling/">Operating area scheduling</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+    
+
+    
+      </ul>
+    
+
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#soc-and-spatial-harvest-planning">SOC and spatial harvest planning</a></li>
+    <li><a href="#the-implementation-of-soc-in-woodstock-files">The implementation of SOC in Woodstock files</a></li>
+    <li><a href="#functions-used-and-required-parameters">Functions used and required parameters</a>
+      <ul>
+        <li><a href="#creating-soc-within-a-linear-programming-model-in-fmt">Creating SOC within a linear programming model in FMT</a></li>
+        <li><a href="#determining-neighboring-socs-to-use-advanced-spatial-constraints">Determining neighboring SOCs to use advanced spatial constraints</a></li>
+        <li><a href="#creation-of-an-output-node-related-to-actions-influenced-by-the-soc-schedule">Creation of an <em>output node</em> related to actions influenced by the SOC schedule.</a></li>
+        <li><a href="#launching-the-greedy-algorithm-and-retrieving-the-optimized-calendar">Launching the <em>greedy algorithm</em> and retrieving the optimized calendar</a></li>
+      </ul>
+    </li>
+    <li><a href="#example-script">Example script</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/docs/">
+      
+        FMT Documentation
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/FMTdocs/docs/advanced/">
+      
+        Advanced features
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Operating area scheduling
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>Spatial Organization Compartments (SOC) scheduling</h1>
+
+          <div class="article-style">
+            <h2 id="soc-and-spatial-harvest-planning">SOC and spatial harvest planning</h2>
+<p>A SOC (<em>Spatial Organization Compartment</em>) is a forest area that can be used to spatially aggregate harvest areas. In Woodstock, it is represented in a spatially referenced way by a group of areas or stands that share a common SOC number.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_EN_hu142a5b2a41b633e828ef90cc98cda5d7_160627_138ee278647a906c474ab7669580fd2e.webp 400w,
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_EN_hu142a5b2a41b633e828ef90cc98cda5d7_160627_23e0d2b4110abefe6b4222ae8c5a5ee7.webp 760w,
+               /FMTdocs/media/docs/Figure%201-%20explication%20COS_EN_hu142a5b2a41b633e828ef90cc98cda5d7_160627_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Figure%201-%20explication%20COS_EN_hu142a5b2a41b633e828ef90cc98cda5d7_160627_138ee278647a906c474ab7669580fd2e.webp"
+               width="760"
+               height="205"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>The aggregation of harvest areas was for a time frowned upon in some countries because of the large areas of continuous cut forest it could generate. However, it is now being reconsidered with the aim of minimizing the extent of cut areas on the landscape, as well as the amount of logging roads generated. The cost of cutting is also reduced by reducing travel and complexity during forestry operations.</p>
+<p>FMT thus provides various functions that allow deriving a SOC opening and closing schedule that respects several given spatial constraints on the size of the cut areas. Thus, the schedule will close SOCs that are too close together when this could cause cut sizes to be too large if selected, or force large cuts by restricting the SOCs available for cutting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_EN_hu6136dfd0174ff9180ae2061a7a01c21b_221902_04be8af1a3fbd7721ccf576ade2c483e.webp 400w,
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_EN_hu6136dfd0174ff9180ae2061a7a01c21b_221902_7249da3246d5297493f3897d70a8b17a.webp 760w,
+               /FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_EN_hu6136dfd0174ff9180ae2061a7a01c21b_221902_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Figure%202%20-%20Explication%20calendrier_EN_hu6136dfd0174ff9180ae2061a7a01c21b_221902_04be8af1a3fbd7721ccf576ade2c483e.webp"
+               width="760"
+               height="255"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>This SOC opening and closing schedule will thus allow to communicate spatial constraints to the linear programming models based on the Woodstock files that FMT uses (see <a href="../../basics/spatially_referenced_optimization/">FMT basics</a>). FMT will then be able to generate a new solution for a model with the addition of this calendar. Of course, when additional constraints are added to the model, it usually reduces the amount of wood that can be harvested in the optimal solution. Thus, adding this schedule of SOC openings and closings will reduce the amount of wood harvested in the new solution generated by FMT.</p>
+<p>The idea is then to find an &ldquo;optimal&rdquo; schedule that will reduce the amount of harvestable wood in the model solution as little as possible. This can be done through the following iterative process:</p>
+<ul>
+<li>Compute the model solution without a schedule.</li>
+<li>A first schedule of SOC opening and closing is generated that respects the given spatial constraints.
+<ul>
+<li>This schedule is simply &ldquo;feasible&rdquo;; it is not necessarily optimized, but simply respects all constraints.</li>
+</ul>
+</li>
+<li>The schedule is added to the model, and the model solution is recalculated.</li>
+<li>We compare the amount of wood harvested in the first solution (without schedule) with this new solution (with schedule). We obtain the % reduction of harvestable wood for which the schedule is responsible.
+<ul>
+<li>The goal is then to optimize the schedule to reduce this percentage as much as possible.</li>
+</ul>
+</li>
+<li>We then perform the following loop (called a <em>greedy algorithm</em>) with as many iterations as necessary:
+<ul>
+<li>We change the SOC schedule randomly while ensuring that it continues to meet all spatial constraints</li>
+<li>We insert the schedule into the model and recalculate the solution</li>
+<li>If the schedule has reduced the percentage reduction in harvestable timber, the random change is saved for the next iteration
+<ul>
+<li>If not, we cancel this random modification and look for another one</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_EN_huebe79f2ee78df0e3967f7bee52e1db77_429145_8f1496564ada58efcfa66061df8006e3.webp 400w,
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_EN_huebe79f2ee78df0e3967f7bee52e1db77_429145_90a11da0f0c3454c12574f856fbd3efb.webp 760w,
+               /FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_EN_huebe79f2ee78df0e3967f7bee52e1db77_429145_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Figure%203%20-%20Greedy%20Algorithm%20COS_EN_huebe79f2ee78df0e3967f7bee52e1db77_429145_8f1496564ada58efcfa66061df8006e3.webp"
+               width="760"
+               height="472"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<div class="alert alert-note">
+  <div>
+    It is possible to solve the schedule optimization problem with more complex methods, such as <em>mixed integer programming</em> (MIP) to obtain a truly optimal solution.
+However, these algorithms can be computationally intensive for linear programming models involving complex forest landscapes. In this case, the <em>greedy algorithm</em> is useful to avoid long computation times.
+  </div>
+</div>
+<h2 id="the-implementation-of-soc-in-woodstock-files">The implementation of SOC in Woodstock files</h2>
+<p>The syntax of Woodstock files is not designed to allow optimization via spatial constraints. However, the SOC system used by FMT can be implemented in Woodstock files through a <em>yield</em>.</p>
+<p>For example, it is possible to create a <em>yield</em> named <code>yopen</code> that describes whether a stand is available for harvest or not. This <em>yield</em> can then be assigned to a SOC number in a theme, and will therefore apply to all stands that are associated with that SOC number via that same theme. It can then be used to restrict certain actions (e.g., cuts) within the model.</p>
+<p>In the <code>YIELD</code> section of the woodstock model, this <em>yield</em> which indicates when a SOC is open or closed will have a value for each period of the model. This sequence of values thus represents the opening or closing schedule of the SOC. In practice, the YIELD section which contains the schedule formulated by FMT will take the following form (here, the yield <code>yield</code> indicates whether a SOC is open or closed):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Dessin_Yield_EN_hud1f4ec94f6a8f9ae3ed2c201ce7f9fd8_504456_b6475b2a9525dff20c445ca9a4da8a83.webp 400w,
+               /FMTdocs/media/docs/Dessin_Yield_EN_hud1f4ec94f6a8f9ae3ed2c201ce7f9fd8_504456_09bd443ebf4255a0e286b309ef6adcfb.webp 760w,
+               /FMTdocs/media/docs/Dessin_Yield_EN_hud1f4ec94f6a8f9ae3ed2c201ce7f9fd8_504456_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Dessin_Yield_EN_hud1f4ec94f6a8f9ae3ed2c201ce7f9fd8_504456_b6475b2a9525dff20c445ca9a4da8a83.webp"
+               width="760"
+               height="417"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p>With respect to an action in the model such as a cut, the <em>yield</em> can be used in the ACTION section of the model to restrict the action to open SOC as follows:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/docs/Dessin_Yield_Action_EN_hu3eb4633463050c9ddfd98609c3af8cf8_252779_9ea6506ca83a0073d4c0c457af757d97.webp 400w,
+               /FMTdocs/media/docs/Dessin_Yield_Action_EN_hu3eb4633463050c9ddfd98609c3af8cf8_252779_af9a9b2a3b4d3b185fc585be3a8ef8c4.webp 760w,
+               /FMTdocs/media/docs/Dessin_Yield_Action_EN_hu3eb4633463050c9ddfd98609c3af8cf8_252779_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/docs/Dessin_Yield_Action_EN_hu3eb4633463050c9ddfd98609c3af8cf8_252779_9ea6506ca83a0073d4c0c457af757d97.webp"
+               width="760"
+               height="360"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<h2 id="functions-used-and-required-parameters">Functions used and required parameters</h2>
+<p>FMT offers several functions that allow to create an optimized SOC opening and closing schedule in FMT. These functions require different parameters that will be described here.</p>
+<div class="alert alert-warning">
+  <div>
+    <p>This documentation will not deal with the problem of defining SOCs, which is called <em>clustering</em>. Ideally, defining SOCs (i.e., assigning SOC numbers to stands) should be done at the same time as optimizing the schedule; but this is a very complex operation. Thus, clustering is usually done before the schedule optimization, by grouping similar strata that are close in space.</p>
+<p>Thus, <strong>in order to use the following functions, the SOC must have already been inserted into the model files as SOC numbers associated with stands by masks</strong>. See <a href="#the-implementation-of-soc-in-woodstock-files">previous section</a> for more information.</p>
+  </div>
+</div>
+<h3 id="creating-soc-within-a-linear-programming-model-in-fmt">Creating SOC within a linear programming model in FMT</h3>
+<p>In FMT, once a linear model has been created based on woodstock files (see <a href="../../basics/spatially_referenced_optimization/">FMT basics</a>), it is possible to create the structure of SOCs within the model (see previous sections) through the <code>Heuristics.FMToperatingareascheme()</code> function.</p>
+<p>The function <code>Heuristics.FMToperatingareascheme()</code> is used to build a single SOC within the model, and therefore must be repeated for each SOC that is to be created. It requires different parameters. These parameters are used to give constraints on how and when a SOC can be opened in the calendar.</p>
+<p>You will find an example of this creation in the <a href="#example-script">next section</a>.</p>
+<div class="alert alert-warning">
+  <div>
+    The timing of the opening and closing of SOCs that FMT can subsequently create is very sensitive to these different parameters. If these are incorrectly specified, FMT may be unable to find a feasible solution to the model.
+  </div>
+</div>
+<ul>
+<li>The first parameter contains the SOC to create itself. It can be constructed using the function <code>Heuristics.FMToperatingarea()</code>, which itself takes two parameters: the first is the mask that will describe which stands will be contained in this SOC, and the second is the <code>neihgbors perimeter</code>. This second parameter describes the ratio of the perimeter of the SOC that it must have in common with another SOC for both to be considered neighbors. For example, if the neighbor perimeter is 0.5, then 50% of the SOC perimeter must be shared with another SOC for them to be considered neighbors.</li>
+<li>The second parameter is the <code>opening time</code>. It defines how long the SOC should remain open when it is open for a period of time. For example, if the opening time is 5, then the SOC will always be open for 5 periods at a time.</li>
+<li>The third parameter is the <code>return time</code>. This is the number of periods of time that must be met before the SOC is reopened in the future. For example, if the return time is 5, then there must be at least 5 time periods between two openings of the SOC.</li>
+<li>The fourth parameter is the <code>repetition pattern</code>, or the repetition of the harvest pattern. It is greater than or equal to 1, and it will effectively force the SOC to follow a pattern of openings/closures several times in time that corresponds to an alternation between its opening and closing time. For example, for an opening time of 2, a closing time of 3 and a harvest pattern repetition value of 2, once the SOC is opened, it will automatically follow the &ldquo;open, open, closed, closed, open, closed, closed&rdquo; schedule, which corresponds to 2 repetitions of its opening and closing parameters.</li>
+<li>The fifth parameter is the <code>green up period</code>. It corresponds to the time the SOC has to wait to be opened again if a neighboring SOC is harvested. Neighboring SOC are in turn found through the perimeter of the neighbors given earlier.</li>
+<li>The sixth parameter is the <code>starting period</code>. It corresponds to the period from which the SOC can start to be opened in the model.</li>
+</ul>
+<p>All SOC created by the function <code>Heuristics.FMToperatingareascheme()</code> should ideally be put into a list, which will be given as parameter to another function later.</p>
+<h3 id="determining-neighboring-socs-to-use-advanced-spatial-constraints">Determining neighboring SOCs to use advanced spatial constraints</h3>
+<p>You may have a shapefile containing the spatial position of each of the SOC.</p>
+<p>If this is the case, then it is possible to determine which SOC are neighbors by reading the shapefile, and comparing the polygon numbers corresponding to the SOC in the shapefile with those in the linear model files. This makes it possible to use the spatial constraint determined by the <code>green up period</code> parameter described in the <a href="#creating-soc-within-a-linear-programming-model-in-fmt">previous section</a>.</p>
+<div class="alert alert-warning">
+  <div>
+    <p>To use the following functions, <strong>the first attributes present in the shapefile/vector file must match the themes present in the Woodstock files of your model</strong>.</p>
+<p>The shapefile or vector file may contain other attributes afterward; but without these first attributes matching the themes in the Woodstock files, the FMT functions will not be able to recognize which polygon corresponds to which SOC, and they will not work.</p>
+  </div>
+</div>
+<p>This can be done by using the <code>getschemeneighbors()</code> function of a previously created <code>FMTareaparser</code> object, and providing it with the list of SOC created through <code>Heuristics.FMToperatingareascheme()</code> (see <a href="#creating-soc-within-a-linear-programming-model-in-fmt">previous section</a>) as well as the shapefile (or other type of vector file) that contains the SOC. Then you just have to indicate which fields of the shapefile contain the information related to the age of the SOC and their area. It is possible to use optional parameters in order not to consider SOC with too small areas.</p>
+<p>In doing so, the <code>getschemeneighbors()</code> function will return a list of SOCs similar to that created by <code>Heuristics.FMToperatingareascheme()</code>; however, for each of the SOCs, the vector indicating the list of their spatial neighbors will be filled in.</p>
+<p>This should take the following form:</p>
+<pre><code class="language-python"># We create the FMTareaparser object to read the files
+areap = Parser.FMTareaparser()
+# We indicate the location of the shapefile
+shapefileLocation = &quot;./spatialCompartments.shp&quot;
+# We use the function on a list of SOC already created with Heuristics.FMToperatingareascheme() before, operaeas
+# The &quot;modelthemes&quot; object contains the themes of the model
+# The list will be updated with SOC that contain their neighbors vector filled according to their position in space described in the vector file spatialCompartments.shp given as argument
+opeareas = areap.getschemeneighbors(opeareas,modelthemes,shapefileLocation,&quot;AGE&quot;,&quot;SUPERFICIE&quot;)
+</code></pre>
+<p>For more information, see the <a href="../../../../doxygen/html/classParser_1_1FMTareaparser.html#a000283e41dfb73733984a4292b6dfa4a">doxygen page of <code>FMTareaparser</code> and the section on <code>getschemeneighbors</code></a></p>
+<h3 id="creation-of-an-output-node-related-to-actions-influenced-by-the-soc-schedule">Creation of an <em>output node</em> related to actions influenced by the SOC schedule.</h3>
+<p>In order to start optimizing the SOC schedule (see <a href="#launching-the-greedy-algorithm-and-retrieving-the-optimized-calendar">next section</a>), we need to provide FMT with different information when it comes to the actions and stands that will be affected by the SOC. To do this, FMT needs a <code>FMToutputnode</code> object related to the actions that will be targeted by the SOC openings and closings (e.g., a type of cutting that cannot be done too close to each other). These objects are only used because they are the most useful for this step, not because they are the only ones that can give this information to FMT.</p>
+<p>The <code>FMToutputnode</code> objects contain the <em>output nodes</em> of the linear model. These are composed of 4 elements: a mask (to define the stands considered by the <em>output node</em>), an action, a yield, and a parameter that can be used to modify the yield. For example, an <em>output node</em> can concern 80% of the gross volume harvested by total cuts in all stands via the statement <code>? ? ? coupetotale volumebrut * 0.88</code>. The <em>output nodes</em> are indicated in the <code>.out</code> file of the Woodstock formulation. Several <em>output nodes</em> can then be combined to give a single output.</p>
+<p>In order to provide these <code>FMToutputnode</code> to FMT, two methods are available:</p>
+<ol>
+<li>It is possible to create a new <code>FMToutputnode</code> object that will contain all the actions targeted by the SOC by making an aggregate of these actions. To do this, you just have to give an aggregate name to all the actions via the <code>push_aggregate()</code> function associated to the <code>FMTaction</code> objects; then, to give this aggregate name to the <code>FMToutputnode</code> constructor. If these actions concern all possible stands, then the constructor to take the form <code>FMToutputnode(Core.FMTmask(&quot;? &quot;*len(themes))[:-1],themes),Agg_name)</code>, with <code>Agg_name</code> containing the name of the aggregate of actions targeted by the SOC.</li>
+<li>It is also possible to retrieve an <code>FMToutputnode</code> that is contained in one of the <code>FMToutput</code> of the model directly via the <code>getnodes()</code> function associated with the <code>FMToutput</code> objects.</li>
+</ol>
+<p>An example of the second method is shown in <a href="#example-script">sample script</a> below.</p>
+<h3 id="launching-the-greedy-algorithm-and-retrieving-the-optimized-calendar">Launching the <em>greedy algorithm</em> and retrieving the optimized calendar</h3>
+<p>The last step is to launch the <em>greedy algorithm</em> to create an optimized calendar.</p>
+<p>To do this, you just have to create an object that will contain the greedy algorithm&rsquo;s &ldquo;task&rdquo;, and to give this task to a function of FMT that will launch the parallel tasks. These two steps are essential, because the <em>greedy algorithm</em> of FMT uses parallel tasks in order to perform the different iterations of the algorithm as quickly as possible.</p>
+<p>The creation of the object containing the algorithm&rsquo;s task is done via the function <code>Parallel.FMTopareaschedulertask()</code>. The function requires 7 parameters:</p>
+<ul>
+<li>The <code>FMTlpmodel</code> which contains the linear model for which we want to do the SOC schedule</li>
+<li>An object containing the list of SOC (see <a href="#creating-soc-within-a-linear-programming-model-in-fmt">previous section</a>)</li>
+<li>The <em>output node</em> created in the <a href="#creation-of-an-output-node-related-to-actions-influenced-by-the-soc-schedule">previous section</a></li>
+<li>A string (<em>string</em>) that indicates where the files created by the function (that contain information about the final optimized calendar) will be copied</li>
+<li>A string (<em>string</em>) indicating the name of the output related to the open or closed status of the SOC (e.g. <code>yopen</code>; see previous sections)</li>
+<li>A number indicating the maximum number of iterations the <em>greedy algorithm</em> can perform before stopping (see previous sections)</li>
+<li>A number indicating the maximum time (in seconds) the <em>greedy algorithm</em> can take before stopping; the algorithm will stop if this time or the maximum number of iterations is reached</li>
+</ul>
+<p>Once the object containing the task is created with this function, it must be passed to the function <code>Parallel.FMTtaskhandler()</code>. This function can accept a second parameter that specifies the number of cores in the computer&rsquo;s processor that the function will use to perform the parallel operations. The function will return an <code>FMTtaskhandler</code> object, which can then run the algorithm in earnest using the object&rsquo;s <code>concurentrun()</code> function.</p>
+<p>It is also possible not to run the <em>greedy algorithm</em>, but simply to obtain a first non-optimized and &ldquo;feasible&rdquo; schedule. To do this, one just has to use the <code>getoperatingareaschedulerheuristics()</code> function of an <code>FMTlpmodel</code> object by providing it with an object containing the list of SOC and an <em>output node</em>, as well as the number of non-optimized schedules one wants to obtain. An example is shown in <a href="https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/bb5aedacd33178f479769ea77d000307e134e3f3/Examples/Python/Operatingareascheduling.py" target="_blank" rel="noopener">this script</a> on lines 34-35.</p>
+<h2 id="example-script">Example script</h2>
+<p>A very simple sample script to create a <strong>non-optimized</strong> SOC calendar in python is available <a href="https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/3ebc304ca488bf10039b1843e6e31fc197493d47/Examples/Python/Operatingareascheduling.py" target="_blank" rel="noopener">at this address</a>. This script only generates an initial unoptimized version of a SOC calendar, but one that is simply feasible within the constraints given.</p>
+<p>The following script is another version of this script which is fully commented, and which runs at the end the <em>greedy algorithm</em> to get an optimized SOC schedule.</p>
+<pre><code class="language-python"># Ici, on charge FMT directement, comme si il avait été installé avec pip.
+from FMT import Models
+from FMT import Parser
+from FMT import Core
+from FMT import Heuristics
+from FMT import Version                  
+
+
+if __name__ == &quot;__main__&quot;:
+	# We check that FMT has the necessary functions for this script
+	if Version.FMTversion().hasfeature(&quot;OSI&quot;):
+		# Defining the path leading to the woodstock model files
+		primarylocation = &quot;../Models/TWD_land/TWD_land.pri&quot;
+		# Creatomg an object to read the model (parser)
+		modelparser = Parser.FMTmodelparser()
+		# Reading the model using the parser
+		models = modelparser.readproject(primarylocation,[&quot;LP&quot;])
+		# Disabling logging for this model (optional)
+		models[0].setquietlogger()
+		# Loading the model in the list of models returned
+		optimizationmodel=Models.FMTlpmodel(models[0],Models.FMTsolverinterface.CLP)
+		# Gathering the themes of the model
+		themes = optimizationmodel.getthemes()
+		# Creating a list to fill with the operating areas
+		opareas = []
+		# For each of the SOC numbers present in the themes, we create a SOC that we put in the list
+		for attribute in themes[2].getattributes(&quot;?&quot;):
+			mask = [&quot;?&quot; for theme in themes]
+			mask[2] = attribute
+			# We create the SOC with the mask that selects the forest stands with the number of the SOC
+			# We use an opening time of 2, a return time of 1, a reptition of 4, a green up period of 0, and a starting period of 1.
+			opareas.append(Heuristics.FMToperatingareascheme(Heuristics.FMToperatingarea(Core.FMTmask(mask,themes),0),2,1,4,0,1))
+		# The following lines are used to find an initial solution to the model, without any SOC schedule. See the Basics of FMT section.
+		for period in range(0,10):
+				print(optimizationmodel.buildperiod())
+		allconstraints = optimizationmodel.getconstraints()
+		objective = allconstraints.pop(0)
+		for constraint in allconstraints:
+				optimizationmodel.setconstraint(constraint)
+		optimizationmodel.setobjective(objective)
+		optimizationmodel.initialsolve()
+		# We gather the output nodes of the model necessary to create the SOC schedule via the actions that they contain
+		nodeofoutput = None
+		for output in optimizationmodel.getoutputs():
+				if &quot;OSUPREC&quot; == output.getname():
+					  nodeofoutput = output.getnodes(optimizationmodel.getarea(),optimizationmodel.getactions(),optimizationmodel.getyields())[0]
+					  break;
+		# We finish by defining the necessary parameters to launch the greedy algorithm : the location of the outputs, the maximal time and maximal number of iterations for the algorithm
+		outputsLocation = &quot;./Outputs/outputCalendrier&quot;
+		maximumIterations = 30
+		maximumTime = 1209600 # Maximum time in seconds; here, it corresponds to two weeks.
+		# We create the object that will contain the task to launch with the greedy algorithm
+        maintask = Parallel.FMTopareaschedulertask(optimizationmodel, opeareas, outputsLocation, &quot;YOUVERT&quot;, maximumIterations, maximumTime)
+        # We put the task inside an object that deals with launching parralel tasks in FMT
+        handler = Parallel.FMTtaskhandler(maintask,self.thr)
+        # We active the log during the parallel tasks
+        handler.settasklogger()
+        # We launch the task of the greedy algorithm in parallel
+        handler.conccurentrun()
+	else:
+		print(&quot;FMT needs to be compiled with OSI&quot;)
+</code></pre>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/FMTdocs/docs/advanced/exercice_2/" rel="next">Exercise 2</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on May 5, 2019</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2023 Bureau du Forestier en Chef du Québec
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/FMTdocs/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/FMTdocs/en/js/wowchemy.min.5ba9ed4d06c87a22a820c6acdb849d94.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
