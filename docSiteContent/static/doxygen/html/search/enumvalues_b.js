@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['objective_0',['objective',['../namespaceParser.html#a3b979ae5f73f20cde81759cd160c6b95ae9092f7428192302fa77d13a040df385',1,'Parser']]],
-  ['objectivevariable_1',['objectivevariable',['../namespaceModels.html#a63cd248953aed1fe122438a30226cf5aaddd1157f3f85c7e92c7f75d021da0e35',1,'Models']]],
-  ['opt1_2',['opt1',['../namespaceSpatial.html#adf5b72644f816db92c54298546209092a2bb225ceb5ee2493167cfde0d72da242',1,'Spatial']]],
-  ['optimize_3',['Optimize',['../namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417a660b070287f819371d3bd41685c33341',1,'Core']]],
-  ['outputs_4',['Outputs',['../namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417a395c2c11c427017ce6ccf751dd5d3381',1,'Core']]]
+  ['postsolve_0',['POSTSOLVE',['../namespaceModels.html#ae1d396c28f4bac89b223ca90afd49a1fae3fce257012d5ab75a4fcc2f1afe1dd3',1,'Models']]],
+  ['pow_1',['pow',['../namespaceCore.html#aad8f02b5faae95d2108b6381934edadba30d7e0494351def45591fccb21d3510b',1,'Core']]],
+  ['presolve_5fcan_5fremove_5fstatic_5fthemes_2',['PRESOLVE_CAN_REMOVE_STATIC_THEMES',['../namespaceModels.html#ae1d396c28f4bac89b223ca90afd49a1fa5be444acc93254ffdab3a2cfbf6b6c20',1,'Models']]],
+  ['presolve_5fiterations_3',['PRESOLVE_ITERATIONS',['../namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045fabbe24354bb8b036fe0c7b0975d059ad9',1,'Models']]]
 ];

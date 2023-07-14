@@ -14,12 +14,9 @@ var searchData=
   ['fmtoptimizationsection_11',['FMToptimizationsection',['../namespaceParser.html#a3b979ae5f73f20cde81759cd160c6b95',1,'Parser']]],
   ['fmtotar_12',['FMTotar',['../namespaceCore.html#af202891860e714e2a80594b4ae626f71',1,'Core']]],
   ['fmtoutputlevel_13',['FMToutputlevel',['../namespaceCore.html#aea115282aa76a2c0ed357bd8a352e3c2',1,'Core']]],
-  ['fmtsamovetype_14',['FMTsamovetype',['../namespaceSpatial.html#adf5b72644f816db92c54298546209092',1,'Spatial']]],
-  ['fmtsapenaltytype_15',['FMTsapenaltytype',['../namespaceSpatial.html#ac9cbd104cc5be35aa4f1f128cc1e15c1',1,'Spatial']]],
-  ['fmtsawarmuptype_16',['FMTsawarmuptype',['../namespaceModels.html#a07b8553fbd386b958dab60fe937c4d54',1,'Models']]],
-  ['fmtsection_17',['FMTsection',['../namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417',1,'Core']]],
-  ['fmtsolverinterface_18',['FMTsolverinterface',['../namespaceModels.html#abb34022e5912d190199b4eef0418eea1',1,'Models']]],
-  ['fmtspatialscheduletype_19',['FMTspatialscheduletype',['../namespaceSpatial.html#affa960272585194982c588cff09baad8',1,'Spatial']]],
-  ['fmtyieldparserop_20',['FMTyieldparserop',['../namespaceCore.html#aca10f9687957b864f545fc67dcb3e780',1,'Core']]],
-  ['fmtyldtype_21',['FMTyldtype',['../namespaceCore.html#a9388fdb08c9130a7d5f7f5a84ea1a3b7',1,'Core']]]
+  ['fmtsection_14',['FMTsection',['../namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417',1,'Core']]],
+  ['fmtsolverinterface_15',['FMTsolverinterface',['../namespaceModels.html#abb34022e5912d190199b4eef0418eea1',1,'Models']]],
+  ['fmtspatialscheduletype_16',['FMTspatialscheduletype',['../namespaceSpatial.html#affa960272585194982c588cff09baad8',1,'Spatial']]],
+  ['fmtyieldparserop_17',['FMTyieldparserop',['../namespaceCore.html#aca10f9687957b864f545fc67dcb3e780',1,'Core']]],
+  ['fmtyldtype_18',['FMTyldtype',['../namespaceCore.html#a9388fdb08c9130a7d5f7f5a84ea1a3b7',1,'Core']]]
 ];
