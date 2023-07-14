@@ -15,7 +15,6 @@ type: book  # Do not modify.
 Les présentations seront déformées si vous les regardez sur mobiles. Il est recommandé de les visionner sur une tablette ou un ordinateur de bureau !
 {{% /callout %}}
 
-- [Présentation sur les bases de FMT](../../slides/fmt_bases_intro)
 - [Présentation sur le carbone avec machine learning](../../slides/fmt_carbone)
 - [Présentation sur l'avancement de FMT (28/04/22)](../../slides/fmt_mise_a_jour280422)
 - [Présentation sur le Presolve de FMT](../../slides/fmt_presolve)

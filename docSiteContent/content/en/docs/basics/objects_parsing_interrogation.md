@@ -83,8 +83,9 @@ In the end, the `FMTModel` is what we call a *parent class* for all of the diffe
 ```mermaid
 classDiagram
 FMTobject <|-- FMTmodel
-FMTmodel <|-- FMTsamodel
-FMTmodel <|-- FMTsesmodel
+FMTmodel <|-- FMTsemodel
+FMTsemodel <|-- FMTsamodel
+FMTsemodel <|-- FMTsesmodel
 FMTmodel <|-- FMTsrmodel
 FMTsrmodel <|-- FMTlpmodel
 FMTsrmodel <|-- FMTnssmodel
@@ -92,9 +93,9 @@ FMTsrmodel <|-- FMTnssmodel
 
 Observe that all of these classes ultimately inherit from the `FMTobject` class. This is the case for every object in FMT, as `FMTobject` contains useful functions and properties for debugging FMT.
 
-The `FMTnssmodel` and `FMTlpmodel` are spatially referenced models. The `FMTlpmodel` is used for **optimization**, while `FMTnssmodel` is used for **simulation**.
+The `FMTnssmodel` and `FMTlpmodel` are spatially referenced models `FMTsrmodel`. The `FMTlpmodel` is used for **optimization**, while `FMTnssmodel` is used for **simulation**.
 
-Meanwhile, the `FMTsesmodel` and `FMTsamodel` are spatially explicit models. In the same way, `FMTsamodel` is used for **optimization**, while `FMTsesmodel` is used for **simulation**.
+Meanwhile, the `FMTsesmodel` and `FMTsamodel` are spatially explicit models `FMTsemodel`. In the same way, `FMTsamodel` is used for **optimization**, while `FMTsesmodel` is used for **simulation**.
 
 **We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the `FMTlpmodel`.**
 

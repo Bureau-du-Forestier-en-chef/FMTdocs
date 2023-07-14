@@ -23,8 +23,9 @@ Notez que **nous ne parlons pas de l'optimisation d'un modèle spatialement expl
 
 ```mermaid
 classDiagram
-FMTmodel <|-- FMTsamodel
-FMTmodel <|-- FMTsesmodel
+FMTmodel <|-- FMTsemodel
+FMTsemodel <|-- FMTsamodel
+FMTsemodel <|-- FMTsesmodel
 FMTmodel <|-- FMTsrmodel
 FMTsrmodel <|-- FMTlpmodel
 FMTsrmodel <|-- FMTnssmodel
