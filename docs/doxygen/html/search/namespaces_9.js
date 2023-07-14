@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spatial_0',['Spatial',['../namespaceSpatial.html',1,'']]]
+  ['r_0',['R',['../namespaceR.html',1,'']]]
 ];

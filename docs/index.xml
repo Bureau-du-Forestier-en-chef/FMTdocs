@@ -901,15 +901,16 @@ _NDY(oVolRec) 1.._LENGTH
 &lt;p&gt;In the end, the &lt;code&gt;FMTModel&lt;/code&gt; is what we call a &lt;em&gt;parent class&lt;/em&gt; for all of the different class of models that FMT uses, such as &lt;code&gt;FMTlpmodel&lt;/code&gt; (linear programming model), and &lt;code&gt;FMTsesmodel&lt;/code&gt; (spatialy explicit model) according to the following diagram :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
 FMTobject &amp;lt;|-- FMTmodel
-FMTmodel &amp;lt;|-- FMTsamodel
-FMTmodel &amp;lt;|-- FMTsesmodel
+FMTmodel &amp;lt;|-- FMTsemodel
+FMTsemodel &amp;lt;|-- FMTsamodel
+FMTsemodel &amp;lt;|-- FMTsesmodel
 FMTmodel &amp;lt;|-- FMTsrmodel
 FMTsrmodel &amp;lt;|-- FMTlpmodel
 FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Observe that all of these classes ultimately inherit from the &lt;code&gt;FMTobject&lt;/code&gt; class. This is the case for every object in FMT, as &lt;code&gt;FMTobject&lt;/code&gt; contains useful functions and properties for debugging FMT.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;FMTnssmodel&lt;/code&gt; and &lt;code&gt;FMTlpmodel&lt;/code&gt; are spatially referenced models. The &lt;code&gt;FMTlpmodel&lt;/code&gt; is used for &lt;strong&gt;optimization&lt;/strong&gt;, while &lt;code&gt;FMTnssmodel&lt;/code&gt; is used for &lt;strong&gt;simulation&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Meanwhile, the &lt;code&gt;FMTsesmodel&lt;/code&gt; and &lt;code&gt;FMTsamodel&lt;/code&gt; are spatially explicit models. In the same way, &lt;code&gt;FMTsamodel&lt;/code&gt; is used for &lt;strong&gt;optimization&lt;/strong&gt;, while &lt;code&gt;FMTsesmodel&lt;/code&gt; is used for &lt;strong&gt;simulation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;FMTnssmodel&lt;/code&gt; and &lt;code&gt;FMTlpmodel&lt;/code&gt; are spatially referenced models &lt;code&gt;FMTsrmodel&lt;/code&gt;. The &lt;code&gt;FMTlpmodel&lt;/code&gt; is used for &lt;strong&gt;optimization&lt;/strong&gt;, while &lt;code&gt;FMTnssmodel&lt;/code&gt; is used for &lt;strong&gt;simulation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the &lt;code&gt;FMTsesmodel&lt;/code&gt; and &lt;code&gt;FMTsamodel&lt;/code&gt; are spatially explicit models &lt;code&gt;FMTsemodel&lt;/code&gt;. In the same way, &lt;code&gt;FMTsamodel&lt;/code&gt; is used for &lt;strong&gt;optimization&lt;/strong&gt;, while &lt;code&gt;FMTsesmodel&lt;/code&gt; is used for &lt;strong&gt;simulation&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the &lt;code&gt;FMTlpmodel&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;loading-a-simple-fmtlpmodel&#34;&gt;Loading a simple &lt;code&gt;FMTlpmodel&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Here is an example of how it looks like to read a linear programming model (in Woodstock format) with FMT.&lt;/p&gt;
@@ -1536,7 +1537,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 &lt;p&gt;It can solve a type III forest planning model, and get an optimal harvest schedule using constraints and objectives defined by the user.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    The notion of type I, II and III of forest planning models correspond to a particular taxonomy relating to their mathematical structure, and to the way that they can be solved. Type III forest planning models are currently the most advanced type, and can be solved for large landscapes with a lot of forest area. You can learn more about them by reading &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this article&lt;/a&gt;.
+    The notion of type I, II and III of forest planning models correspond to a particular taxonomy relating to their mathematical structure, and to the way that they can be solved. Type III forest planning models are currently the most advanced type, and can be solved for large landscapes with a lot of forest area. You can learn more about them by reading &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34;&gt;this article&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;The &lt;code&gt;FMTlpmodel&lt;/code&gt; contains an object called the &lt;code&gt;FMTgraph&lt;/code&gt;, which contains the &lt;em&gt;graph&lt;/em&gt; of the model. The graph is an ensemble of nodes linked together with vertices. Each node correspond to a possible state for a particular strata (which are spatially referenced groups of forest forest stands with the same characteristics), with each vertex representing a particular way that it can evolve to another state in the same period of time and between periods.&lt;/p&gt;
@@ -2021,7 +2022,7 @@ cmake --install build/release --config Release
 &lt;/div&gt;
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
-    If the compilation ends up with error messages that are red, you can come and &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post an issue on the issue page of the repository for FMT&lt;/a&gt;.
+    If the compilation ends up with error messages that are red, you can come and &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34;&gt;post an issue on the issue page of the repository for FMT&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -2196,7 +2197,7 @@ scheduleParser.write(modelSolution, r&amp;quot;D:/TempCode/FMT/FMT/Examples/prog
       <description>&lt;p&gt;To import FMT that you just compiled into Python, you need to have &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt; and &lt;a href=&#34;https://packaging.python.org/en/latest/tutorials/installing-packages/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pip&lt;/a&gt; installed on your computer.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    If you don&amp;rsquo;t have Python installed, we recommand to you install &lt;a href=&#34;https://docs.conda.io/en/latest/miniconda.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Miniconda&lt;/a&gt;, the &amp;ldquo;light&amp;rdquo; version of the popular &lt;a href=&#34;https://www.anaconda.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anaconda&lt;/a&gt; Python distribution. Miniconda contains Python, pip, and many other packages that are usefull when using FMT.
+    If you don&amp;rsquo;t have Python installed, we recommand to you install &lt;a href=&#34;https://docs.conda.io/en/latest/miniconda.html&#34;&gt;Miniconda&lt;/a&gt;, the &amp;ldquo;light&amp;rdquo; version of the popular &lt;a href=&#34;https://www.anaconda.com/&#34;&gt;Anaconda&lt;/a&gt; Python distribution. Miniconda contains Python, pip, and many other packages that are usefull when using FMT.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;There are two ways to import FMT into Python :&lt;/p&gt;
@@ -2232,7 +2233,7 @@ from FMT import Version
 &lt;p&gt;And &lt;strong&gt;that&amp;rsquo;s it, you&amp;rsquo;re done 🎊🎉!&lt;/strong&gt; Now, you can start using FMT !&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    If you had any issues during the process of downloading and installing FMT, please &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post an issue on the issue page of the repository for FMT&lt;/a&gt;.
+    If you had any issues during the process of downloading and installing FMT, please &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34;&gt;post an issue on the issue page of the repository for FMT&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -2254,8 +2255,9 @@ from FMT import Version
 &lt;p&gt;&lt;code&gt;FMTsesmodel&lt;/code&gt; is a particular model that gives the user the opportunity to &lt;strong&gt;spatialize&lt;/strong&gt; solutions coming from any &lt;code&gt;FMTsrmodel&lt;/code&gt; class, which are the spatially referenced models (see &lt;a href=&#34;../objects_parsing_interrogation&#34;&gt;objects, model parsing and interrogation&lt;/a&gt; and &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Note that &lt;strong&gt;we are not talking about optimizing a spatially explicit model&lt;/strong&gt;; this is quite a complex task that is still on the roadmap of FMT (and which is the goal of the &lt;code&gt;FMTsamodel&lt;/code&gt; class).&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
-FMTmodel &amp;lt;|-- FMTsamodel
-FMTmodel &amp;lt;|-- FMTsesmodel
+FMTmodel &amp;lt;|-- FMTsemodel
+FMTsemodel &amp;lt;|-- FMTsamodel
+FMTsemodel &amp;lt;|-- FMTsesmodel
 FMTmodel &amp;lt;|-- FMTsrmodel
 FMTsrmodel &amp;lt;|-- FMTlpmodel
 FMTsrmodel &amp;lt;|-- FMTnssmodel

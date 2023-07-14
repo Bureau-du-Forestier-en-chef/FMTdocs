@@ -441,82 +441,6 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/gcyr/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;mermaid-test&#34;&gt;Mermaid test&lt;/h2&gt;
-&lt;div class=mermaid&gt;
-pie showData
-title Les tests de FMT
-&#34;Syntaxe&#34; : 3.5
-&#34;Unités spatiale&#34; : 5.3
-&#34;Planification&#34; : 61.4
-&#34;Re-planification&#34; : 5.3
-&#34;Spatialisation&#34; : 7.0
-&#34;Machine Learning&#34; : 7.0
-&#34;Presolve&#34; : 3.5
-&#34;Analyses autres&#34; : 7.0
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;mermaid-test-2&#34;&gt;Mermaid test 2&lt;/h2&gt;
-&lt;div class=mermaid&gt;
-graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;mermaid-test-3&#34;&gt;Mermaid test 3&lt;/h2&gt;
-&lt;div class=mermaid&gt;
-pie showData
-title Les tests de FMT
-&#34;Syntaxe&#34; : 3.5
-&#34;Unités spatiale&#34; : 5.3
-&#34;Planification&#34; : 61.4
-&#34;Re-planification&#34; : 5.3
-&#34;Spatialisation&#34; : 7.0
-&#34;Machine Learning&#34; : 7.0
-&#34;Presolve&#34; : 3.5
-&#34;Analyses autres&#34; : 7.0
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;mermaid-test-2-1&#34;&gt;Mermaid test 2&lt;/h2&gt;
-&lt;div class=mermaid&gt;
-graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;mermaid-test-2-2&#34;&gt;Mermaid test 2&lt;/h2&gt;
-&lt;div class=mermaid&gt;
-graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;mermaid-test-2-3&#34;&gt;Mermaid test 2&lt;/h2&gt;
-&lt;div class=mermaid&gt;
-graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;controles&#34;&gt;Controles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Suivant: &lt;code&gt;Right Arrow&lt;/code&gt; ou &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Précédent: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Début: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fin: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Vue globale: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Notes de présentateur: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Plein écran: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;quest-ce-que-fmt-&#34;&gt;Qu&amp;rsquo;est-ce que FMT ?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;librairie open source&lt;/li&gt;
@@ -570,24 +494,6 @@ graph TD;
 &lt;li&gt;Optimisation spatialement explicite&lt;/li&gt;
 &lt;li&gt;Meilleus &lt;em&gt;outputs&lt;/em&gt; (sorties)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;un-test-de-code-&#34;&gt;Un test de code !&lt;/h2&gt;
-&lt;p&gt;Highlight.js rend ca tout beau tout propre et interactif !&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;R&#34;&gt;
-library(FMT) # Charge FMT dans R
-if (new(FMTversion)$hasfeature(&#34;OSI&#34;)) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
-{
-  # Créer un objet parser pour lire les fichiers du modèle
-  newmodelparser &lt;- new(FMTmodelparser)
-  # Lit le projet avec le parser en spécifiant que l&#39;on veut lire le scénario &#34;LP&#34; (il peut y avoir différents scénarios dans un seul modèle)
-  modelslist &lt;- newmodelparser$readproject(&#34;Models/TWD_land/TWD_land.pri&#34;, c(&#34;LP&#34;), TRUE, TRUE, TRUE)
-  model_scenario_lp &lt;- modelslist[[1]]
-  # On récupère le nom du modèle
-  print(model_scen_lp$getname())
-} else { # Si le modèle n&#39;as pas été compilé avec OSI, on affiche une erreur
-  print(&#34;FMT needs to be compiled with OSI&#34;)
-}
-&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;comment-ca-du-code-interactif-&#34;&gt;Comment ca, du code interactif ?&lt;/h2&gt;
 &lt;p&gt;Reveal.js permet de mettre en valeur des lignes par intermitence. Ici, la 2, puis la 8, puis la 13. Fantastique pour parler du code au fur et à mesure.&lt;/p&gt;

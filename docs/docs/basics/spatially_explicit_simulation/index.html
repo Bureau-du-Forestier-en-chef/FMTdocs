@@ -331,7 +331,7 @@
   
   
   
-  <script src="/FMTdocs/js/wowchemy-init.min.d5311fd7435c9fda4bf0768e412fb7ae.js"></script>
+  <script src="/FMTdocs/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
 
   
 
@@ -862,8 +862,9 @@
 <p><code>FMTsesmodel</code> is a particular model that gives the user the opportunity to <strong>spatialize</strong> solutions coming from any <code>FMTsrmodel</code> class, which are the spatially referenced models (see <a href="../objects_parsing_interrogation">objects, model parsing and interrogation</a> and <a href="../spatially_referenced_optimization">spatially referenced optimization</a>).</p>
 <p>Note that <strong>we are not talking about optimizing a spatially explicit model</strong>; this is quite a complex task that is still on the roadmap of FMT (and which is the goal of the <code>FMTsamodel</code> class).</p>
 <pre><code class="language-mermaid">classDiagram
-FMTmodel &lt;|-- FMTsamodel
-FMTmodel &lt;|-- FMTsesmodel
+FMTmodel &lt;|-- FMTsemodel
+FMTsemodel &lt;|-- FMTsamodel
+FMTsemodel &lt;|-- FMTsesmodel
 FMTmodel &lt;|-- FMTsrmodel
 FMTsrmodel &lt;|-- FMTlpmodel
 FMTsrmodel &lt;|-- FMTnssmodel
@@ -1708,7 +1709,7 @@ Solution stuck after 27 iterations Skipping
       
     
     
-    <script src="/FMTdocs/en/js/wowchemy.min.5ba9ed4d06c87a22a820c6acdb849d94.js"></script>
+    <script src="/FMTdocs/en/js/wowchemy.min.a9d447374e0a67bfaf99b862c669aabc.js"></script>
 
     
 

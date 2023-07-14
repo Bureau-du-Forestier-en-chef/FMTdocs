@@ -151,7 +151,7 @@ cmake --install build/release --config Release
 &lt;/div&gt;
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
-    Si la compilation se termine par des messages d&amp;rsquo;erreur en rouge, vous pouvez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poster un problème sur la page des problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
+    Si la compilation se termine par des messages d&amp;rsquo;erreur en rouge, vous pouvez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34;&gt;poster un problème sur la page des problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -167,7 +167,7 @@ cmake --install build/release --config Release
       <description>&lt;p&gt;Pour importer FMT que vous venez de compiler dans Python, vous devez avoir installé &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt; et &lt;a href=&#34;https://packaging.python.org/en/latest/tutorials/installing-packages/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pip&lt;/a&gt; sur votre ordinateur.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si Python n&amp;rsquo;est pas installé sur votre ordinateur, nous vous recommandons d&amp;rsquo;installer &lt;a href=&#34;https://docs.conda.io/en/latest/miniconda.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Miniconda&lt;/a&gt;, la version &amp;ldquo;légère&amp;rdquo; de la célèbre distribution Python &lt;a href=&#34;https://www.anaconda.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anaconda&lt;/a&gt;. Miniconda contient Python, pip et de nombreux autres modules qui sont utiles pour utiliser FMT.
+    Si Python n&amp;rsquo;est pas installé sur votre ordinateur, nous vous recommandons d&amp;rsquo;installer &lt;a href=&#34;https://docs.conda.io/en/latest/miniconda.html&#34;&gt;Miniconda&lt;/a&gt;, la version &amp;ldquo;légère&amp;rdquo; de la célèbre distribution Python &lt;a href=&#34;https://www.anaconda.com/&#34;&gt;Anaconda&lt;/a&gt;. Miniconda contient Python, pip et de nombreux autres modules qui sont utiles pour utiliser FMT.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Il existe deux façons d&amp;rsquo;importer FMT dans Python :&lt;/p&gt;
@@ -203,7 +203,7 @@ from FMT import Version
 &lt;p&gt;Et &lt;strong&gt;c&amp;rsquo;est tout, vous avez terminé 🎊🎉!&lt;/strong&gt; Maintenant, vous pouvez commencer à utiliser FMT !&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si vous avez eu des problèmes pendant le processus de téléchargement et d&amp;rsquo;installation de FMT, veuillez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poster un problème sur la page de problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
+    Si vous avez eu des problèmes pendant le processus de téléchargement et d&amp;rsquo;installation de FMT, veuillez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34;&gt;poster un problème sur la page de problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>

@@ -1,0 +1,9 @@
+<map id="Heuristics::FMToperatingareaclusterer" name="Heuristics::FMToperatingareaclusterer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,229,247,256"/>
+<area shape="rect" id="Node000002" href="$classHeuristics_1_1FMTlpheuristic.html" title=" " alt="" coords="40,155,212,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,196,129,229,123,229,123,196"/>
+<area shape="rect" id="Node000003" href="$classModels_1_1FMTlpsolver.html" title=" " alt="" coords="56,80,196,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,122,129,154,123,154,123,122"/>
+<area shape="rect" id="Node000004" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="67,5,185,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="129,47,129,80,123,80,123,47"/>
+</map>

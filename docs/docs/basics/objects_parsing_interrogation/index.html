@@ -329,7 +329,7 @@
   
   
   
-  <script src="/FMTdocs/js/wowchemy-init.min.d5311fd7435c9fda4bf0768e412fb7ae.js"></script>
+  <script src="/FMTdocs/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
 
   
 
@@ -976,15 +976,16 @@
 <p>In the end, the <code>FMTModel</code> is what we call a <em>parent class</em> for all of the different class of models that FMT uses, such as <code>FMTlpmodel</code> (linear programming model), and <code>FMTsesmodel</code> (spatialy explicit model) according to the following diagram :</p>
 <pre><code class="language-mermaid">classDiagram
 FMTobject &lt;|-- FMTmodel
-FMTmodel &lt;|-- FMTsamodel
-FMTmodel &lt;|-- FMTsesmodel
+FMTmodel &lt;|-- FMTsemodel
+FMTsemodel &lt;|-- FMTsamodel
+FMTsemodel &lt;|-- FMTsesmodel
 FMTmodel &lt;|-- FMTsrmodel
 FMTsrmodel &lt;|-- FMTlpmodel
 FMTsrmodel &lt;|-- FMTnssmodel
 </code></pre>
 <p>Observe that all of these classes ultimately inherit from the <code>FMTobject</code> class. This is the case for every object in FMT, as <code>FMTobject</code> contains useful functions and properties for debugging FMT.</p>
-<p>The <code>FMTnssmodel</code> and <code>FMTlpmodel</code> are spatially referenced models. The <code>FMTlpmodel</code> is used for <strong>optimization</strong>, while <code>FMTnssmodel</code> is used for <strong>simulation</strong>.</p>
-<p>Meanwhile, the <code>FMTsesmodel</code> and <code>FMTsamodel</code> are spatially explicit models. In the same way, <code>FMTsamodel</code> is used for <strong>optimization</strong>, while <code>FMTsesmodel</code> is used for <strong>simulation</strong>.</p>
+<p>The <code>FMTnssmodel</code> and <code>FMTlpmodel</code> are spatially referenced models <code>FMTsrmodel</code>. The <code>FMTlpmodel</code> is used for <strong>optimization</strong>, while <code>FMTnssmodel</code> is used for <strong>simulation</strong>.</p>
+<p>Meanwhile, the <code>FMTsesmodel</code> and <code>FMTsamodel</code> are spatially explicit models <code>FMTsemodel</code>. In the same way, <code>FMTsamodel</code> is used for <strong>optimization</strong>, while <code>FMTsesmodel</code> is used for <strong>simulation</strong>.</p>
 <p><strong>We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the <code>FMTlpmodel</code>.</strong></p>
 <h2 id="loading-a-simple-fmtlpmodel">Loading a simple <code>FMTlpmodel</code></h2>
 <p>Here is an example of how it looks like to read a linear programming model (in Woodstock format) with FMT.</p>
@@ -1406,7 +1407,7 @@ _DEATH
       
     
     
-    <script src="/FMTdocs/en/js/wowchemy.min.5ba9ed4d06c87a22a820c6acdb849d94.js"></script>
+    <script src="/FMTdocs/en/js/wowchemy.min.a9d447374e0a67bfaf99b862c669aabc.js"></script>
 
     
 

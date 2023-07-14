@@ -1,0 +1,8 @@
+<map id="Heuristics::FMToperatingarea" name="Heuristics::FMToperatingarea">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,203,197,229"/>
+<area shape="rect" id="Node000002" href="$classCore_1_1FMTmask.html" title=" " alt="" coords="44,5,158,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,47,94,96,94,139,102,202,96,203,89,139,89,96,94,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="140,96,268,139"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="127,40,183,93,180,97,123,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,151,116,204,112,200,170,147"/>
+</map>
