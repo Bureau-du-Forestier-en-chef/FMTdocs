@@ -23,9 +23,9 @@ slides:
 
 ## C'est quoi FMT?
 
-- F: Forest
-- M: Management
-- T: Tool
+- F: Forêt
+- M: Modélisée
+- T: dans le Temps
 
 
 ---

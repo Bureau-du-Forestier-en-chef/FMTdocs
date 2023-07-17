@@ -19,100 +19,6 @@ slides:
 
 [Github](https://github.com/gcyr/FMT) | [Documentation](https://bureau-du-forestier-en-chef.github.io/FMTdocs/)
 
----
-
-## Mermaid test
-
-<div class=mermaid>
-pie showData
-title Les tests de FMT
-"Syntaxe" : 3.5
-"Unités spatiale" : 5.3
-"Planification" : 61.4
-"Re-planification" : 5.3
-"Spatialisation" : 7.0
-"Machine Learning" : 7.0
-"Presolve" : 3.5
-"Analyses autres" : 7.0
-</div>
-
----
-
-## Mermaid test 2
-
-<div class=mermaid>
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-</div>
-
----
-
-## Mermaid test 3
-
-<div class=mermaid>
-pie showData
-title Les tests de FMT
-"Syntaxe" : 3.5
-"Unités spatiale" : 5.3
-"Planification" : 61.4
-"Re-planification" : 5.3
-"Spatialisation" : 7.0
-"Machine Learning" : 7.0
-"Presolve" : 3.5
-"Analyses autres" : 7.0
-</div>
-
----
-
-## Mermaid test 2
-
-<div class=mermaid>
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-</div>
-
----
-
-## Mermaid test 2
-
-<div class=mermaid>
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-</div>
-
----
-
-## Mermaid test 2
-
-<div class=mermaid>
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-</div>
-
----
-
-## Controles
-
-- Suivant: `Right Arrow` ou `Space`
-- Précédent: `Left Arrow` 
-- Début: `Home`
-- Fin: `End`
-- Vue globale: `Esc`
-- Notes de présentateur: `S`
-- Plein écran: `F`
-- Zoom: `Alt + Click`
 
 ---
 
@@ -177,28 +83,6 @@ Projet du Bureau du Forestier en Chec du Québec.
 
 ---
 
-## Un test de code !
-
-Highlight.js rend ca tout beau tout propre et interactif !
-
-<pre><code class="R">
-library(FMT) # Charge FMT dans R
-if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
-{
-  # Créer un objet parser pour lire les fichiers du modèle
-  newmodelparser <- new(FMTmodelparser)
-  # Lit le projet avec le parser en spécifiant que l'on veut lire le scénario "LP" (il peut y avoir différents scénarios dans un seul modèle)
-  modelslist <- newmodelparser$readproject("Models/TWD_land/TWD_land.pri", c("LP"), TRUE, TRUE, TRUE)
-  model_scenario_lp <- modelslist[[1]]
-  # On récupère le nom du modèle
-  print(model_scen_lp$getname())
-} else { # Si le modèle n'as pas été compilé avec OSI, on affiche une erreur
-  print("FMT needs to be compiled with OSI")
-}
-</code></pre>
-
----
-
 ## Comment ca, du code interactif ?
 
 Reveal.js permet de mettre en valeur des lignes par intermitence. Ici, la 2, puis la 8, puis la 13. Fantastique pour parler du code au fur et à mesure.
@@ -227,14 +111,6 @@ if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec O
 
 ^ Lien vers la présentation suivante, si besoin.
 
-<!-- CODE SUPLEMENTAIRE DE CLEMENT -->
-<!-- Ce code permet de automatiquement
-  faire en sorte que toutes les listes
-  dans la présentation aient la classe "fragment"
-  de reveal.js, ce qui les fait apparaitre petit à petit.
-  Bien plus rapide que de mettre le code {{% fragment %}}
-  pour chacune d'entre elle. 
-  D'autres classes peuvent être rajoutées. -->
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
