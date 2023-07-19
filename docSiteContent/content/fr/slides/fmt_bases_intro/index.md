@@ -83,8 +83,6 @@ Projet du Bureau du Forestier en Chec du Québec.
 
 
 
----
-
 ## Comment ca, du code interactif ?
 
 Reveal.js permet de mettre en valeur des lignes par intermitence. Ici, la 2, puis la 8, puis la 13. Fantastique pour parler du code au fur et à mesure.
@@ -113,14 +111,6 @@ if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec O
 
 ^ Lien vers la présentation suivante, si besoin.
 
-<!-- CODE SUPLEMENTAIRE DE CLEMENT -->
-<!-- Ce code permet de automatiquement
-  faire en sorte que toutes les listes
-  dans la présentation aient la classe "fragment"
-  de reveal.js, ce qui les fait apparaitre petit à petit.
-  Bien plus rapide que de mettre le code {{% fragment %}}
-  pour chacune d'entre elle. 
-  D'autres classes peuvent être rajoutées. -->
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
