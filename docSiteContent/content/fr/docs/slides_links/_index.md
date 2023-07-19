@@ -20,3 +20,4 @@ Les présentations seront déformées si vous les regardez sur mobiles. Il est r
 - [Présentation sur le Presolve de FMT](../../slides/fmt_presolve)
 - [Présentation sur la mise à jour de modèle](../../slides/fmt_modelupdate)
 - [Présentation sur l'avancement IA carbone](../../slides/fmt_carbone_2023)
+- [Présentation rencontre_250723](../../slides/rencontre_250723)
