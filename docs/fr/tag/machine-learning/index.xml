@@ -47,9 +47,9 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;cest-quoi-fmt&#34;&gt;C&amp;rsquo;est quoi FMT?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;F: Forest&lt;/li&gt;
-&lt;li&gt;M: Management&lt;/li&gt;
-&lt;li&gt;T: Tool&lt;/li&gt;
+&lt;li&gt;F: Forêt&lt;/li&gt;
+&lt;li&gt;M: Modélisée&lt;/li&gt;
+&lt;li&gt;T: dans le Temps&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;cest-quoi-fmt-1&#34;&gt;C&amp;rsquo;est quoi FMT?&lt;/h2&gt;
@@ -731,6 +731,484 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Tester le tout en replanification&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;des-questions&#34;&gt;Des Questions?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&#34;https://code.jquery.com/jquery-3.5.0.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+$( &#34;li&#34; ).addClass( &#34;fragment&#34; );
+// $( &#34;p&#34; ).addClass( &#34;fragment&#34; );
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Planification avec Machine Learning (Mise à jour 2023)</title>
+      <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/rencontre_250723/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/rencontre_250723/</guid>
+      <description>&lt;h1 id=&#34;fmt-et-développements-mise-à-jour-été-2023&#34;&gt;FMT et développements, mise à jour été 2023&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp&#34;
+               width=&#34;40%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;plan-de-la-présentation&#34;&gt;Plan de la présentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Les problématiques&lt;/li&gt;
+&lt;li&gt;Présentation de FMT&lt;/li&gt;
+&lt;li&gt;Génération de calendriers de COS&lt;/li&gt;
+&lt;li&gt;Replanification&lt;/li&gt;
+&lt;li&gt;Intélligence artificielle (machine learning)&lt;/li&gt;
+&lt;li&gt;Chronologie des travaux entamés&lt;/li&gt;
+&lt;li&gt;Planification 0-6 mois&lt;/li&gt;
+&lt;li&gt;Planification 1-5 ans&lt;/li&gt;
+&lt;li&gt;Questions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-problématiques&#34;&gt;Les problématiques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notre bilan carbone est difficile à obtenir rapidement
+&lt;ul&gt;
+&lt;li&gt;Pour tous les réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Pour la productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
+&lt;ul&gt;
+&lt;li&gt;Le calcul du bilan de carbone forestier pour un modèle de planification est complexe&lt;/li&gt;
+&lt;li&gt;L’optimisation spatialement explicite de la localisation des travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;quest-ce-que-fmt-&#34;&gt;Qu&amp;rsquo;est-ce que FMT ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;librairie open source&lt;/li&gt;
+&lt;li&gt;objets et fonctions&lt;/li&gt;
+&lt;li&gt;en C++, R ou Python&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=mermaid&gt;
+graph TD;
+  2--&gt;14;
+  1--&gt;2--&gt;5;
+  1--&gt;3--&gt;6;
+  1--&gt;4--&gt;7;
+  3--&gt;8;
+  3--&gt;12;
+  3--&gt;15;
+  4--&gt;13;
+  5--&gt;9;
+  5--&gt;10;
+  5--&gt;11;
+  1[&#34;FMT API&#34;];
+  2[&#34;C++&#34;];
+  3[&#34;Python&#34;];
+  4[&#34;Cran R&#34;];
+  5[&#34;Interface&#34;];
+  6[&#34;Re-planification&#34;];
+  7[&#34;Base de données&#34;];
+  8[&#34;BFEC-GCBM&#34;];
+  9[&#34;Planification&#34;];
+  10[&#34;Spatialisation&#34;];
+  11[&#34;BFECOPT&#34;];
+  12[&#34;Analyses diverses&#34;];
+  13[&#34;Autre&#34;];
+  14[&#34;Tests&#34;];
+  15[&#34;Machine Learning&#34;];
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=mermaid&gt;
+classDiagram
+    FMTobject &lt;|-- FMTmodel
+    FMTmodel &lt;|-- FMTsemodel
+    FMTsemodel &lt;|-- FMTsamodel
+    FMTsemodel &lt;|-- FMTsesmodel
+    FMTmodel &lt;|-- FMTsrmodel
+    FMTsrmodel &lt;|-- FMTlpmodel
+    FMTsrmodel &lt;|-- FMTnssmodel
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;a-quoi-sert-fmt-&#34;&gt;A quoi sert FMT ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;planification forestière
+&lt;ul&gt;
+&lt;li&gt;Comment récolter des forêts pour maximiser des objectifs (e.g. rendement) ?&lt;/li&gt;
+&lt;li&gt;Sous certaines contraintes (e.g. legislation, technologie, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;en-pratique-a-quoi-ca-sert-&#34;&gt;En pratique, a quoi ca sert ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lecture de modèles Woodstock&lt;/li&gt;
+&lt;li&gt;Simulation de paysages forestiers&lt;/li&gt;
+&lt;li&gt;Optimisation / Ré-optimisation de modèles&lt;/li&gt;
+&lt;li&gt;Planification (en utilisant des événements stochastiques)&lt;/li&gt;
+&lt;li&gt;Résolution des heuristiques d&amp;rsquo;agrégation&lt;/li&gt;
+&lt;li&gt;Planification des blocs de récolte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;comment-est-ce-que-ça-marche-&#34;&gt;Comment est-ce que ça marche ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Code source en c++&lt;/li&gt;
+&lt;li&gt;Compilation en Python et R&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;!-- svg diagram created with draw.io using file &gt; embed &gt; svg for the html code. --&gt;
+&lt;p&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; version=&#34;1.1&#34; width=&#34;611px&#34; viewBox=&#34;-0.5 -0.5 611 151&#34; style=&#34;max-width:100%;max-height:151px;&#34;&gt;&lt;defs/&gt;&lt;g&gt;&lt;rect x=&#34;210&#34; y=&#34;0&#34; width=&#34;180&#34; height=&#34;40&#34; fill=&#34;rgb(255, 255, 255)&#34; stroke=&#34;rgb(0, 0, 0)&#34; pointer-events=&#34;all&#34;/&gt;&lt;g transform=&#34;translate(-0.5 -0.5)&#34;&gt;&lt;switch&gt;&lt;foreignObject style=&#34;overflow: visible; text-align: left;&#34; pointer-events=&#34;none&#34; width=&#34;100%&#34; height=&#34;100%&#34; requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34; style=&#34;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 20px; margin-left: 211px;&#34;&gt;&lt;div style=&#34;box-sizing: border-box; font-size: 0px; text-align: center;&#34; data-drawio-colors=&#34;color: rgb(0, 0, 0); &#34;&gt;&lt;div style=&#34;display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;&#34;&gt;&lt;div style=&#34;display: inline-block&#34;&gt;&lt;span id=&#34;L-L-1-2&#34; class=&#34;edgeLabel L-LS-1&#39; L-LE-2&#34;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&#34;display: inline-block&#34;&gt;&lt;span id=&#34;L-L-1-3&#34; class=&#34;edgeLabel L-LS-1&#39; L-LE-3&#34;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&#34;display: inline-block&#34;&gt;&lt;span id=&#34;L-L-1-4&#34; class=&#34;edgeLabel L-LS-1&#39; L-LE-4&#34;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&#34;display: inline-block&#34;&gt;Interface de programmation (C++)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/foreignObject&gt;&lt;text x=&#34;300&#34; y=&#34;24&#34; fill=&#34;rgb(0, 0, 0)&#34; font-family=&#34;Helvetica&#34; font-size=&#34;12px&#34; text-anchor=&#34;middle&#34;&gt;Interface de programmation (C+&amp;hellip;&lt;/text&gt;&lt;/switch&gt;&lt;/g&gt;&lt;rect x=&#34;0&#34; y=&#34;110&#34; width=&#34;180&#34; height=&#34;40&#34; fill=&#34;rgb(255, 255, 255)&#34; stroke=&#34;rgb(0, 0, 0)&#34; pointer-events=&#34;all&#34;/&gt;&lt;g transform=&#34;translate(-0.5 -0.5)&#34;&gt;&lt;switch&gt;&lt;foreignObject style=&#34;overflow: visible; text-align: left;&#34; pointer-events=&#34;none&#34; width=&#34;100%&#34; height=&#34;100%&#34; requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34; style=&#34;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 1px;&#34;&gt;&lt;div style=&#34;box-sizing: border-box; font-size: 0px; text-align: center;&#34; data-drawio-colors=&#34;color: rgb(0, 0, 0); &#34;&gt;&lt;div style=&#34;display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;&#34;&gt;R&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/foreignObject&gt;&lt;text x=&#34;90&#34; y=&#34;134&#34; fill=&#34;rgb(0, 0, 0)&#34; font-family=&#34;Helvetica&#34; font-size=&#34;12px&#34; text-anchor=&#34;middle&#34;&gt;R&lt;/text&gt;&lt;/switch&gt;&lt;/g&gt;&lt;rect x=&#34;210&#34; y=&#34;110&#34; width=&#34;180&#34; height=&#34;40&#34; fill=&#34;rgb(255, 255, 255)&#34; stroke=&#34;rgb(0, 0, 0)&#34; pointer-events=&#34;all&#34;/&gt;&lt;g transform=&#34;translate(-0.5 -0.5)&#34;&gt;&lt;switch&gt;&lt;foreignObject style=&#34;overflow: visible; text-align: left;&#34; pointer-events=&#34;none&#34; width=&#34;100%&#34; height=&#34;100%&#34; requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34; style=&#34;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 211px;&#34;&gt;&lt;div style=&#34;box-sizing: border-box; font-size: 0px; text-align: center;&#34; data-drawio-colors=&#34;color: rgb(0, 0, 0); &#34;&gt;&lt;div style=&#34;display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;&#34;&gt;Python 2&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/foreignObject&gt;&lt;text x=&#34;300&#34; y=&#34;134&#34; fill=&#34;rgb(0, 0, 0)&#34; font-family=&#34;Helvetica&#34; font-size=&#34;12px&#34; text-anchor=&#34;middle&#34;&gt;Python 2&lt;/text&gt;&lt;/switch&gt;&lt;/g&gt;&lt;rect x=&#34;430&#34; y=&#34;110&#34; width=&#34;180&#34; height=&#34;40&#34; fill=&#34;rgb(255, 255, 255)&#34; stroke=&#34;rgb(0, 0, 0)&#34; pointer-events=&#34;all&#34;/&gt;&lt;g transform=&#34;translate(-0.5 -0.5)&#34;&gt;&lt;switch&gt;&lt;foreignObject style=&#34;overflow: visible; text-align: left;&#34; pointer-events=&#34;none&#34; width=&#34;100%&#34; height=&#34;100%&#34; requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34; style=&#34;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 130px; margin-left: 431px;&#34;&gt;&lt;div style=&#34;box-sizing: border-box; font-size: 0px; text-align: center;&#34; data-drawio-colors=&#34;color: rgb(0, 0, 0); &#34;&gt;&lt;div style=&#34;display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;&#34;&gt;Python 3&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/foreignObject&gt;&lt;text x=&#34;520&#34; y=&#34;134&#34; fill=&#34;rgb(0, 0, 0)&#34; font-family=&#34;Helvetica&#34; font-size=&#34;12px&#34; text-anchor=&#34;middle&#34;&gt;Python 3&lt;/text&gt;&lt;/switch&gt;&lt;/g&gt;&lt;path d=&#34;M 90 110 L 300 40&#34; fill=&#34;none&#34; stroke=&#34;rgb(0, 0, 0)&#34; stroke-miterlimit=&#34;10&#34; pointer-events=&#34;stroke&#34;/&gt;&lt;path d=&#34;M 300 110 L 300 40&#34; fill=&#34;none&#34; stroke=&#34;rgb(0, 0, 0)&#34; stroke-miterlimit=&#34;10&#34; pointer-events=&#34;stroke&#34;/&gt;&lt;path d=&#34;M 520 110 L 300 40&#34; fill=&#34;none&#34; stroke=&#34;rgb(0, 0, 0)&#34; stroke-miterlimit=&#34;10&#34; pointer-events=&#34;stroke&#34;/&gt;&lt;/g&gt;&lt;switch&gt;&lt;g requiredFeatures=&#34;http://www.w3.org/TR/SVG11/feature#Extensibility&#34;/&gt;&lt;a transform=&#34;translate(0,-5)&#34; xlink:href=&#34;https://www.diagrams.net/doc/faq/svg-export-text-problems&#34; target=&#34;_blank&#34;&gt;&lt;text text-anchor=&#34;middle&#34; font-size=&#34;10px&#34; x=&#34;50%&#34; y=&#34;100%&#34;&gt;Text is not SVG - cannot display&lt;/text&gt;&lt;/a&gt;&lt;/switch&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;pourquoi-fmt-&#34;&gt;Pourquoi FMT ?&lt;/h2&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;p&gt;Projet du Bureau du Forestier en Chef du Québec.&lt;/p&gt;
+&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;2017 : Besoin d&amp;rsquo;automatiser l&amp;rsquo;utilisation de modèles Woodstocks&lt;/li&gt;
+&lt;li&gt;2018 : Besoin de relier Woodstock à GCBM pour estimations de carbone&lt;/li&gt;
+&lt;li&gt;2019 à aujourd&amp;rsquo;hui : Augmentation des performances et fonctionalités&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;planification-des-compartiments-dorganisation-spatiale-cos-bfecoptfmt&#34;&gt;Planification des Compartiments d&amp;rsquo;Organisation Spatiale (COS) BFECOpt/FMT&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation COS&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_5f93889ab7e34529d434e63eabfb8062.webp 400w,
+               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_beeaedfc07926eed52174ed461600a2c.webp 760w,
+               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_5f93889ab7e34529d434e63eabfb8062.webp&#34;
+               width=&#34;90%&#34;
+               height=&#34;auto&#34;
+               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-bilan-carbone-avec-lia&#34;&gt;1. Bilan carbone avec l&amp;rsquo;IA&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+    stateDiagram
+    direction LR
+    state IA_par_pixel {
+       direction LR
+       state Intrants {
+         direction LR
+         Dernières_perturbations
+         Volume_de_feuillus_tolérants
+         Volume_de_feuillus_intolérants
+         Volume_de_résineux
+       }
+       Intrants --&gt; Réservoir
+      state Réservoir {
+       Biomasse_aérienne
+       Biomasse_souterraine
+       Bois_mort
+       Carbone_du_sol
+       Litière
+     }
+      Intrants --&gt; Flux
+     State Flux {
+        Productivité_nette_de_l&#39;écosystème
+        }
+   }
+   IA_par_pixel --&gt; Entrainement
+   State Entrainement {
+     direction LR
+     CPF2328 --&gt; Global
+     CPF2328 --&gt; Pessière
+     CPF2328 --&gt; Sapinière
+     CPF2328 --&gt; Érablière
+     }
+   Entrainement --&gt; Validation
+   State Validation {
+     direction LR
+     Spatial --&gt; 07152
+     Non_Spatial --&gt; 07152
+     Spatial --&gt; 02751
+     Non_Spatial --&gt; 02751
+     Spatial --&gt; 08665
+     Non_Spatial --&gt; 08665
+     Spatial --&gt; 08762
+     Non_Spatial --&gt; 08762
+     Spatial --&gt; 09751
+     Non_Spatial --&gt; 09751
+     }
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;planification-spatiale-par-ia&#34;&gt;Planification spatiale par IA&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+    stateDiagram
+    direction LR
+    Modèle --&gt; FMTsamodel
+    state FMTsamodel {
+       direction LR
+       state Intrants {
+         direction LR
+         (i)Cellule --&gt; Âge
+         (i)Cellule --&gt; Opérabilité
+         (i)Globale --&gt; Taille_des_blocs
+         (i)Globale --&gt; Délai_dadjacence
+       }
+       Intrants --&gt; IA
+      state Générateur {
+       direction LR
+       Calcul_2328 --&gt; Apprentisage
+     }
+     State IA {
+        Générateur --&gt; Prédiction
+        state Prédiction {
+         (o)Spatiaux --&gt; Blocs_de_coupes
+         (o)Non_spatiaux --&gt; faisabilité
+         (o)Non_spatiaux --&gt; Bilan_carbone
+        }
+   }
+   IA --&gt; Optimisation
+   State Optimisation {
+     Validation --&gt; Amélioration
+     }
+ }
+FMTsamodel --&gt; Solution
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-objectifs&#34;&gt;Les objectifs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Obtention du bilan de carbone rapidement (Article #1)
+&lt;ul&gt;
+&lt;li&gt;Tous les réservoirs de l’écosystème&lt;/li&gt;
+&lt;li&gt;La productivité nette de l’écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Génération de planification spatialement explicite (Article #2)
+&lt;ul&gt;
+&lt;li&gt;Maximisant le bilan carbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div class=mermaid&gt;
+gantt
+dateFormat  YYYY-MM-DD
+title Projet FORAC
+excludes weekends
+section IA estimateur carbone
+Script d&#39;entrainement          :done,des1,2021-04-01,2021-09-01 
+Script d&#39;utilisation           :     done,des2,2021-04-01,2021-09-01
+Sélection du modèle           :     done,des2,2021-04-01,2021-05-01
+Rapport          :     done,des3,2021-09-01,2021-10-01
+Installation FMT release           :done,des4,2021-10-01,2021-11-01
+Pytorch à C++            :     done,des5, 2021-10-01,2021-12-01
+Installation FMT debug          :     done,des6, 2021-12-01,2022-03-01
+Implémentation :     done,des8, 2021-12-01,2022-03-01
+Écriture de l&#39;article estimateur de carbone		:des16,2022-09-01,2023-04-01
+Test et validation avec modèles réels		     :active,des15,2022-10-01,2023-05-01
+section IA Planification spatiale
+Test et extension à la planification référencée          :     done,des9, 2022-02-01,2022-05-01
+Mise en place d&#39;un plan :     done,des10, 2021-12-01,2022-02-01
+Lien FMT avec Python avec exemple       :     done,des11, 2022-01-01,2022-04-01
+Modèle IA de spatialisation mimétique:		done,des12, 2022-04-01,2022-10-01
+Modèle IA d&#39;évaluation de planification spatialisée           :done,des13,2022-09-01,2023-03-01
+Modèle IA de spatialisation (avec carbone)           :done,des14,2023-02-01,2023-08-01
+Écriture de l&#39;article planification forestière	:crit,des17,2023-04-01,2023-08-01
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;constats-ia-vs-gcbm&#34;&gt;Constats IA vs GCBM&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;On peut maintenant obtenir un bilan de carbone facilement pour:
+&lt;ul&gt;
+&lt;li&gt;Une solution spatiale explicite et spatialement référencée&lt;/li&gt;
+&lt;li&gt;Les cinq principaux réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;li&gt;Les émissions nettes de l&amp;rsquo;écosystème&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On peut maintenant utiliser le Machine Learning pour:
+&lt;ul&gt;
+&lt;li&gt;Générer des intrants au calcul (Courbes de production, Paramètres économiques)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La génération de solution spatiale avec IA:
+&lt;ul&gt;
+&lt;li&gt;Nous permettra de faire de l&amp;rsquo;optimisation spatialement explicite&lt;/li&gt;
+&lt;li&gt;Utilisation du projet de fin d&amp;rsquo;étude à B. Forest&lt;/li&gt;
+&lt;li&gt;Replanification spatialement explicite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div class=mermaid&gt;
+gantt
+dateFormat  YYYY-MM-DD
+title Travaux entamés
+excludes weekends
+section Replanification
+Développement :done, 2023-01-23,2023-05-22
+Support travaux (F.S, L-A.G, A.B-R) : ,2023-01-09,2023-12-27 
+section Interface
+Déploiement :done, 2023-01-09,2023-01-10
+Présentation :done, 2023-03-13,2023-03-14
+Documentation  :done, 2023-04-03,2023-04-10
+Mise en place d&#39;un comité FMT : ,2023-05-1,2023-11-07
+BFEC-GCBM, mises à jour de FMT :en cours, 2023-07-10,2023-08-28
+section Génération de calendriers de COS
+Intégration des fonctions du chantier COS : en cours, 2023-04-17,2023-12-27
+section IA
+Modèles global et par sous-domaines d&#39;intéligence artificielle  :done,2023-01-09,2023-05-01
+Tests IA :en cours,2023-04-03,2023-08-28 
+Entretien et débogage : ,2023-01-02,2023-12-27
+Support : ,2023-01-02,2023-12-27
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;étapes-de-la-replannification-0-6-mois&#34;&gt;Étapes de la replannification (0-6 mois)&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+gantt
+dateFormat  YYYY-MM-DD
+tickInterval month
+axisFormat %b%d
+title Planification 0-6 mois
+excludes weekends
+section Carbone
+Utilisation de l&#39;IA pour l&#39;obtention d&#39;un bilan carbone : ,2023-12-18,2024-01-01
+section Analyses
+Support et transfert aux analystes : , 2023-08-07,2024-01-01
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;étapes-de-lia-0-6-mois&#34;&gt;Étapes de l&amp;rsquo;IA (0-6 mois)&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+gantt
+dateFormat  YYYY-MM-DD
+tickInterval month
+axisFormat %b%d
+title Planification 0-6 mois
+excludes weekends
+section IA Carbone
+Optimisation NEP, :active,    des1, 2023-05-26,2023-07-24
+Optimisation des Stocks de Carbone	:active,    des1, 2023-05-26,2023-07-24
+Optimisation AAM 2751 (scénario de référence) :active,    des1, 2023-06-26,2023-07-24
+Optimisation stock de carbone forêt feuillue - UA 7152 :    des1, 2023-07-14,2023-09-28
+Analyses des différents scénarios d&#39;optimisation :    des1, 2023-08-17,2023-09-28
+Apprentissage avec perturbations naturelles :    des1, 2023-09-04,2023-12-18
+Développement pour opérationalisation du calcul : ,2023-09-04,2024-01-01
+Test de l&#39;opérationalisation : ,2023-10-06,2024-01-01
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation Machine Learning&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;interface-0-6-mois&#34;&gt;Interface (0-6 mois)&lt;/h2&gt;
+&lt;div class=mermaid&gt;
+gantt
+dateFormat  YYYY-MM-DD
+tickInterval month
+axisFormat %b%d
+title Planification 0-6 mois
+excludes weekends
+section SSP
+Analyses de modèles de base : ,2023-08-17,2024-01-01
+section Spatialisation
+Ajout du Simulated Annealing : ,2023-10-16,2024-01-01
+section Calendrier de COS
+Intégration des fonctions du chantier COS : en cours, 2023-04-17,2023-12-27
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-futurs-projets-0-5-ans&#34;&gt;LES FUTURS PROJETS (0-5 ans)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;GCBM&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mise à jour de GCBM&lt;/li&gt;
+&lt;li&gt;Refonte des scripts en Python3&lt;/li&gt;
+&lt;li&gt;Intégration des produits du bois&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spatialisation du calcul&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Développement d&amp;rsquo;un indice caribou&lt;/li&gt;
+&lt;li&gt;Développement d&amp;rsquo;un indice de réseau routier&lt;/li&gt;
+&lt;li&gt;Visualisation de solutions alternatives&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;les-futurs-projets-0-5-ans-1&#34;&gt;LES FUTURS PROJETS (0-5 ans)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Gestion des modèles de base&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatisation des validations&lt;/li&gt;
+&lt;li&gt;Automatisation d&amp;rsquo;analyses préliminaires&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replanification spatialement explicite&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Permettre d’obtenir un effet de spatialisation à travers la replanification&lt;/li&gt;
+&lt;li&gt;Utilisation d’évènements stochastiques spatiaux&lt;/li&gt;
+&lt;li&gt;Inclure les enjeux opérationels&lt;/li&gt;
+&lt;li&gt;Changements climatiques&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Continuer/faire un transfert de connaissances aux différents services&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;des-questions&#34;&gt;Des Questions?&lt;/h2&gt;
