@@ -146,8 +146,10 @@ Projet du Bureau du Forestier en Chef du Québec.
 
 ---
 ## Planification des Compartiments d'Organisation Spatiale (COS) BFECOpt/FMT
+[Documentation COS](https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/operational_area_scheduling/)
 
 {{< figure src="Figure3COS.png" width="90%" height="auto" >}}
+
 ---
 
 ## 1. Bilan carbone avec l'IA
@@ -345,6 +347,8 @@ Support et transfert aux analystes : , 2023-08-07,2024-01-01
 
 </div>
 
+[Documentation](https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/)
+
 ---
 
 ## Étapes de l'IA (0-6 mois)
@@ -368,6 +372,8 @@ Test de l'opérationalisation : ,2023-10-06,2024-01-01
 
 </div>
 
+[Documentation Machine Learning](https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone/)
+
 ---
 
 ## Interface (0-6 mois)
@@ -389,6 +395,8 @@ Intégration des fonctions du chantier COS : en cours, 2023-04-17,2023-12-27
 
 </div>
 
+
+
 ---
 
 ## LES FUTURS PROJETS (0-5 ans)
@@ -404,7 +412,7 @@ Intégration des fonctions du chantier COS : en cours, 2023-04-17,2023-12-27
 	- Visualisation de solutions alternatives
 	
 ---
-## Suite
+## LES FUTURS PROJETS (0-5 ans)
 	
 - Gestion des modèles de base
 	- Automatisation des validations
