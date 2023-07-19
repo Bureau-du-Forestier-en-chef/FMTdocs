@@ -4337,7 +4337,7 @@ classDiagram
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;1-bilan-carbone-avec-lia&#34;&gt;1. Bilan carbone avec l&amp;rsquo;IA&lt;/h2&gt;
+&lt;h2 id=&#34;bilan-carbone-avec-lia&#34;&gt;Bilan carbone avec l&amp;rsquo;IA&lt;/h2&gt;
 &lt;div class=mermaid&gt;
     stateDiagram
     direction LR

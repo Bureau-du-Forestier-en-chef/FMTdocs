@@ -152,7 +152,7 @@ Projet du Bureau du Forestier en Chef du Québec.
 
 ---
 
-## 1. Bilan carbone avec l'IA
+## Bilan carbone avec l'IA
 <div class=mermaid>
     stateDiagram
     direction LR
