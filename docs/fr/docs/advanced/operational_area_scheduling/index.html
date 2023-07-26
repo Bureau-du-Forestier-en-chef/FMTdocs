@@ -329,7 +329,7 @@
   
   
   
-  <script src="/FMTdocs/js/wowchemy-init.min.4be02a3b391999348b0c7478778a0e4b.js"></script>
+  <script src="/FMTdocs/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
 
   
 
@@ -392,7 +392,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/fr/">Documentation de FMT</a>
+      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
     </div>
     
 
@@ -405,7 +405,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/fr/">Documentation de FMT</a>
+      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
     </div>
     
 
@@ -1041,7 +1041,7 @@ Cependant, ces algorithmes peuvent demander beaucoup trop de calcul pour des mod
 <div class="alert alert-warning">
   <div>
     <p>Cette documentation ne traitera pas du problème de la définition des COS, que l&rsquo;on appelle le <em>clustering</em>. Idéalement, définir les COS (c.-à-d. attribuer des numéros de COS a des peuplements) devrait se faire en même temps qu&rsquo;optimiser le calendrier; mais cela représente une opération très complexe. Ainsi, le clustering est généralement fait en amont de l&rsquo;optimisation du calendrier, en regroupant des strates similaires et proches dans l&rsquo;espace.</p>
-<p>Ainsi, <strong>pour pouvoir utiliser les fonctions suivantes, les COS doivent déjà avoir été insérés dans les fichiers du modèle sous forme de numéros de COS associés aux peuplements par des masques</strong>. Voir la <a href="#limpl%c3%a9mentation-des-cos-dans-des-fichiers-woodstock">section précédente</a> pour plus d&rsquo;information.</p>
+<p>Ainsi, <strong>pour pouvoir utiliser les fonctions suivantes, les COS doivent déjà avoir été insérés dans les fichiers du modèle sous forme de numéros de COS associés aux peuplements par des masques</strong>. Voir la <a href="#limpl%C3%A9mentation-des-cos-dans-des-fichiers-woodstock">section précédente</a> pour plus d&rsquo;information.</p>
   </div>
 </div>
 <h3 id="création-des-cos-au-sein-dun-modèle-de-programmation-linéaire-dans-fmt">Création des COS au sein d&rsquo;un modèle de programmation linéaire dans FMT</h3>
@@ -1086,7 +1086,7 @@ opeareas = areap.getschemeneighbors(opeareas,modelthemes,shapefileLocation,&quot
 <p>Pour plus d&rsquo;informations, voir la <a href="../../../../doxygen/html/classParser_1_1FMTareaparser.html#a000283e41dfb73733984a4292b6dfa4a">page doxygen de <code>FMTareaparser</code> et la section sur <code>getschemeneighbors</code></a></p>
 <h3 id="création-dun-output-node-lié-aux-actions-influencées-par-le-calendrier-des-cos">Création d&rsquo;un <em>output node</em> lié aux actions influencées par le calendrier des COS.</h3>
 <p>Afin de pouvoir commencer à optimiser le calendrier des COS (voir <a href="#lancement-du-greedy-algorithm-et-r%c3%a9cup%c3%a9ration-du-calendrier-optimis%c3%a9">section suivante</a>), il faut fournir à FMT différentes informations quand aux actions et aux peuplements qui seront affectés par les COS. Pour ce faire, FMT a besoin des <code>FMToutputnode</code> liés aux actions qui seront visées par les ouvertures et fermeture de COS (par exemple, un type de coupes qui ne peuvent pas se faire trop proches les une des autres). Ces objets sont seulement utilisés parce qu&rsquo;ils sont les plus utiles pour cette étape, et non pas parce qu&rsquo;ils sont les seuls qui peuvent donner ces informations à FMT.</p>
-<p>Les objets <code>FMToutputnode</code> contiennent les <em>output nodes</em> du modèle linéaire. Ces derniers sont composés de 4 éléments : un masque (pour définir les peuplements considérés par l&rsquo;<em>output node</em>), une action, un yield, et un paramètre qui peut être utilisé pour modifier le yield. Par exemple, un <em>output node</em> peut concerner 80% du volume brut récolté par les coupes totales dans tous les peuplements via la mention <code>? ? ? coupetotale volumebrut * 0.88</code>. Les <em>output nodes</em> sont indiqués dans le fichier <code>.out</code> de la formulation Woodstock. Plusieurs <em>output nodes</em> peuvent alors être combiné pour donner un seul output.</p>
+<p>Les objets <code>FMToutputnode</code> contiennent les <em>output nodes</em> du modèle linéaire. Ces derniers sont composés de 4 éléments : un masque (pour définir les peuplements considérés par l'<em>output node</em>), une action, un yield, et un paramètre qui peut être utilisé pour modifier le yield. Par exemple, un <em>output node</em> peut concerner 80% du volume brut récolté par les coupes totales dans tous les peuplements via la mention <code>? ? ? coupetotale volumebrut * 0.88</code>. Les <em>output nodes</em> sont indiqués dans le fichier <code>.out</code> de la formulation Woodstock. Plusieurs <em>output nodes</em> peuvent alors être combiné pour donner un seul output.</p>
 <p>Afin de fournir ces <code>FMToutputnode</code> à FMT, deux méthodes sont disponibles :</p>
 <ol>
 <li>Il est possible de créer un nouvel objet <code>FMToutputnode</code> qui contiendra toutes les actions visées par les COS en faisant un agrégat de ces actions. Pour ce faire, il suffit d&rsquo;indiquer un nom d&rsquo;agrégat d&rsquo;action à toutes les actions visées via la fonction <code>push_aggregate()</code> associées aux objets <code>FMTaction</code>; puis, à fournir ce nom d&rsquo;agrégats au constructeur de <code>FMToutputnode</code>. Si ces actions concernent tous les peuplements possibles, le constructeur pour alors prendre la forme <code>FMToutputnode(Core.FMTmask((&quot;? &quot;*len(themes))[:-1],themes),Agg_name)</code>, avec <code>Agg_name</code> contenant le nom de l&rsquo;agrégat des actions visées par les COS.</li>
@@ -1399,7 +1399,7 @@ if __name__ == &quot;__main__&quot;:
       
     
     
-    <script src="/FMTdocs/fr/js/wowchemy.min.895aa7075d3fa765066ba7542ec83ce5.js"></script>
+    <script src="/FMTdocs/fr/js/wowchemy.min.d1c5d978fc205b583019e723de2f6d36.js"></script>
 
     
 

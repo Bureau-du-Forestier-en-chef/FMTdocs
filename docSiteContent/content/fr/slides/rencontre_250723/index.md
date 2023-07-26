@@ -1,9 +1,9 @@
 ---
 
-title: Planification avec Machine Learning (Mise à jour 2023)
+title: Planification des développements FMT
 summary: Comprendre le projet d'IA
 authors: ["Guillaume Cyr,ing.f.,M.Sc."]
-tags: ["Machine learning","FORAC","carbon"]
+tags: ["Machine learning","FORAC","FMT"]
 categories: []
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
@@ -25,29 +25,14 @@ slides:
 
 ## Plan de la présentation
 
-- Les problématiques 
 - Présentation de FMT
 - Génération de calendriers de COS
 - Replanification 
-- Intélligence artificielle (machine learning)
+- Intelligence artificielle (machine learning)
 - Chronologie des travaux entamés
 - Planification 0-6 mois
 - Planification 1-5 ans
 - Questions
-
-
----
-
-## Les problématiques
-
-- Notre bilan carbone est difficile à obtenir rapidement
-  - Pour tous les réservoirs de l'écosystème
-  - Pour la productivité nette de l'écosystème
-- La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
-  - Le calcul du bilan de carbone forestier pour un modèle de planification est complexe
-  - L’optimisation spatialement explicite de la localisation des travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique
-
-
 
 ---
 

@@ -1280,7 +1280,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
     </item>
     
     <item>
-      <title>Planification avec Machine Learning (Mise à jour 2023)</title>
+      <title>Planification des développements FMT</title>
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/rencontre_250723/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/rencontre_250723/</guid>
@@ -1314,31 +1314,14 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;hr&gt;
 &lt;h2 id=&#34;plan-de-la-présentation&#34;&gt;Plan de la présentation&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Les problématiques&lt;/li&gt;
 &lt;li&gt;Présentation de FMT&lt;/li&gt;
 &lt;li&gt;Génération de calendriers de COS&lt;/li&gt;
 &lt;li&gt;Replanification&lt;/li&gt;
-&lt;li&gt;Intélligence artificielle (machine learning)&lt;/li&gt;
+&lt;li&gt;Intelligence artificielle (machine learning)&lt;/li&gt;
 &lt;li&gt;Chronologie des travaux entamés&lt;/li&gt;
 &lt;li&gt;Planification 0-6 mois&lt;/li&gt;
 &lt;li&gt;Planification 1-5 ans&lt;/li&gt;
 &lt;li&gt;Questions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;les-problématiques&#34;&gt;Les problématiques&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Notre bilan carbone est difficile à obtenir rapidement
-&lt;ul&gt;
-&lt;li&gt;Pour tous les réservoirs de l&amp;rsquo;écosystème&lt;/li&gt;
-&lt;li&gt;Pour la productivité nette de l&amp;rsquo;écosystème&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
-&lt;ul&gt;
-&lt;li&gt;Le calcul du bilan de carbone forestier pour un modèle de planification est complexe&lt;/li&gt;
-&lt;li&gt;L’optimisation spatialement explicite de la localisation des travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;quest-ce-que-fmt-&#34;&gt;Qu&amp;rsquo;est-ce que FMT ?&lt;/h2&gt;
@@ -1447,10 +1430,10 @@ classDiagram
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_5f93889ab7e34529d434e63eabfb8062.webp 400w,
-               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_beeaedfc07926eed52174ed461600a2c.webp 760w,
+               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_732aa432a314b65ba8aca43205c0cf64.webp 400w,
+               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_22517f3a8cb0728648464d306c551cd6.webp 760w,
                /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_5f93889ab7e34529d434e63eabfb8062.webp&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_732aa432a314b65ba8aca43205c0cf64.webp&#34;
                width=&#34;90%&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;

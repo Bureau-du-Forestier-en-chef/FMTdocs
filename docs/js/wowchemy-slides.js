@@ -2,7 +2,7 @@
   // ns-params:@params
   var slides = { highlight_style: "vs", theme: "white" };
 
-  // ns-hugo:C:\Users\trero9\AppData\Local\Temp\hugo_cache\modules\filecache\modules\pkg\mod\github.com\wowchemy\wowchemy-hugo-modules\wowchemy@v0.0.0-20210526223849-81ba17522966\assets\js\wowchemy-utils.js
+  // ns-hugo:C:\Users\CYRGU3\AppData\Local\Temp\hugo_cache\modules\filecache\modules\pkg\mod\github.com\wowchemy\wowchemy-hugo-modules\wowchemy@v0.0.0-20210526223849-81ba17522966\assets\js\wowchemy-utils.js
   function fixMermaid(render = false) {
     let mermaids = [];
     [].push.apply(mermaids, document.getElementsByClassName("language-mermaid"));
@@ -67,16 +67,7 @@
       var background = mslide.slideBackgroundElement;
       var currentHorizontalIndex = Reveal.getState()["indexh"];
       var diagramSlideIndex = Reveal.getIndices(mslide)["h"];
-      if (
-        // find slides with non-rendered mermaid tags
-        // these will not have the attribute data-processed
-        !diag.hasAttribute("data-processed") && // check also that reveal slide is already loaded
-        // reveal slides seem to be lazily loaded
-        // things could be easier if reveal had a slide-loaded event
-        background.hasAttribute("data-loaded") && // loaded slides must also have the display attribute set to block
-        background.style.display === "block" && // render diagrams that are 1 slide away
-        diagramSlideIndex - currentHorizontalIndex <= 1
-      )
+      if (!diag.hasAttribute("data-processed") && background.hasAttribute("data-loaded") && background.style.display === "block" && diagramSlideIndex - currentHorizontalIndex <= 1)
         return mslide;
     }
     return null;
