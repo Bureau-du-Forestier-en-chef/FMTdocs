@@ -27,7 +27,7 @@
     
   
   <meta name="description" content="Dans cet exercice, vous allez essayer d&rsquo;utiliser FMT pour lire un scénario, le résoudre, lire une de ses sorties, et exporter la solution.
-Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&rsquo;exemple depuis le dépôt GitHub de FMT." />
+Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&rsquo;exemples depuis le dépôt GitHub de FMT." />
 
   
     <link rel="alternate" hreflang="en" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/basics/exercice_1/" />
@@ -290,7 +290,7 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
   <meta property="og:url" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/exercice_1/" />
   <meta property="og:title" content="Exercice 1 | Documentation de FMT" />
   <meta property="og:description" content="Dans cet exercice, vous allez essayer d&rsquo;utiliser FMT pour lire un scénario, le résoudre, lire une de ses sorties, et exporter la solution.
-Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&rsquo;exemple depuis le dépôt GitHub de FMT." /><meta property="og:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" />
+Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&rsquo;exemples depuis le dépôt GitHub de FMT." /><meta property="og:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="fr-ca" />
   
     
@@ -331,7 +331,7 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
   
   
   
-  <script src="/FMTdocs/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
+  <script src="/FMTdocs/js/wowchemy-init.min.4be02a3b391999348b0c7478778a0e4b.js"></script>
 
   
 
@@ -394,7 +394,7 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
+      <a class="navbar-brand" href="/fr/">Documentation de FMT</a>
     </div>
     
 
@@ -407,7 +407,7 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
+      <a class="navbar-brand" href="/fr/">Documentation de FMT</a>
     </div>
     
 
@@ -738,7 +738,7 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
       
 
 
-  <li class=""><a href="/FMTdocs/fr/docs/advanced/replanning/">Re-planification spatialement référencée</a></li>
+  <li class=""><a href="/FMTdocs/fr/docs/advanced/replanning/">Replanification spatialement référencée</a></li>
 
 
 
@@ -863,7 +863,7 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
 
           <div class="article-style">
             <p>Dans cet exercice, vous allez essayer d&rsquo;utiliser FMT pour lire un scénario, le résoudre, lire une de ses sorties, et exporter la solution.</p>
-<p>Pour faire cet exercice, <strong>vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&rsquo;exemple depuis le dépôt GitHub de FMT</strong>.</p>
+<p>Pour faire cet exercice, <strong>vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&rsquo;exemples depuis le dépôt GitHub de FMT</strong>.</p>
 <ul class="cta-group">
   
   <li>
@@ -885,7 +885,7 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
 <h2 id="objectifs-de-lexercice">Objectifs de l&rsquo;exercice</h2>
 <p>Utilisez FMT pour :</p>
 <ol>
-<li>Lire le modèle Woodstock <code>TWD_land</code> dans les fichiers d&rsquo;exemple en sélectionnant son scénario nommé <code>LP</code>.
+<li>Lire le modèle Woodstock <code>TWD_land</code> dans les fichiers d&rsquo;exemples en sélectionnant son scénario nommé <code>LP</code>.
 <ul>
 <li>N&rsquo;oubliez pas de sélectionner le solveur <code>CLP</code> lors de la lecture du modèle.</li>
 </ul>
@@ -920,7 +920,7 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
   <summary>Révéler la correction</summary>
   <p><pre><code class="language-python">#%% CHARGEMENT DE FMT
 
-# Ici, on charge FMT directement, comme si il avait été installé avec pip.
+# Ici, on charge FMT directement, comme s'il avait été installé avec pip.
 
 from FMT import Models
 from FMT import Parser
@@ -931,8 +931,8 @@ from FMT import Version
 # Création d'un objet pour lire le modèle (parser)
 modelParser = Parser.FMTmodelparser()
 
-# Definition du chemin menant au modèle woodstock
-# Le modèle woodstock est fait de pleins de petits fichiers différents
+# Definition du chemin menant au modèle Woodstock
+# Le modèle Woodstock est fait de pleins de petits fichiers différents
 # On pointe vers le fichier .pri, qui contient la location de tous les petits fichiers du modèle.
 # WARNING : FMT a du mal avec les espaces dans les chemins. Essayez d'avoir un
 # chemin sans espaces.
@@ -940,16 +940,16 @@ pathToWoodstockModel = &quot;D:/TempCode/FMT/FMT/Examples/Models/TWD_land/TWD_la
 
 # On définit le/les scénarios que l'on va lire
 # Les scénarios sont des ensembles de contraites et objectifs,
-# ou bien un planning deja fait que l'on va simuler.
+# ou bien un planning déjà fait que l'on va simuler.
 scenariosToSelect = [&quot;LP&quot;]
 
-# On lit le model grace au parser. Celui-ci va renvoyer une liste de modèles
+# On lit le model grâce au parser. Celui-ci va renvoyer une liste de modèles
 # qu'il a détécté. Dans notre cas, on n'en aura qu'un seul.
 listOfModelsParsed = modelParser.readproject(pathToWoodstockModel, scenariosToSelect)
 
-# On charge le modèle parmis la liste des modèles renvoyée
+# On charge le modèle parmis la liste des modèles renvoyés
 # Pour le charger correctement, il faut décrire le type de modèle que c'est, ainsi que des paramètres importants.
-# Ici, le modèle sera un modèle linéraire spatialement référence (LP),
+# Ici, le modèle sera un modèle linéraire spatialement référencé (LP),
 # et on utilisera le solveur CLP pour le résoudre.
 LPModel = Models.FMTlpmodel(listOfModelsParsed[0], Models.FMTsolverinterface.CLP)
 
@@ -1246,7 +1246,7 @@ scheduleParser.write(modelSolution, r&quot;D:/TempCode/FMT/FMT/Examples/programm
       
     
     
-    <script src="/FMTdocs/fr/js/wowchemy.min.d1c5d978fc205b583019e723de2f6d36.js"></script>
+    <script src="/FMTdocs/fr/js/wowchemy.min.895aa7075d3fa765066ba7542ec83ce5.js"></script>
 
     
 

@@ -17,7 +17,7 @@
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/</guid>
-      <description>&lt;h1 id=&#34;fmt-où-en-somme-nous&#34;&gt;FMT où en somme nous?&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;fmt-où-en-somme-nous&#34;&gt;FMT où en somme-nous?&lt;/h1&gt;
 
 
 
@@ -71,7 +71,7 @@ graph TD;
   3[&#34;Python&#34;];
   4[&#34;Cran R&#34;];
   5[&#34;Interface&#34;];
-  6[&#34;Re-planification&#34;];
+  6[&#34;Replanification&#34;];
   7[&#34;Base de données&#34;];
   8[&#34;BFEC-GCBM&#34;];
   9[&#34;Planification&#34;];
@@ -89,7 +89,7 @@ pie title Les tests de FMT
   &#34;Syntaxe&#34; : 3.5
   &#34;Unités spatiales&#34; : 5.3
   &#34;Planification&#34; : 61.4
-  &#34;Re-planification&#34; : 5.3
+  &#34;Replanification&#34; : 5.3
   &#34;Spatialisation&#34; : 7.0
   &#34;Machine Learning&#34; : 7.0
   &#34;Presolve&#34; : 3.5
@@ -117,7 +117,7 @@ flowchart LR;
 10 --&gt; 9;
 1 --&gt; 5 --&gt; 9;
 1[&#34;Master&#34;]
-2[&#34;Re-planification&#34;]
+2[&#34;Replanification&#34;]
 3[&#34;BFEcopt&#34;]
 4[&#34;Machine Learning&#34;]
 5[&#34;type II&#34;]
@@ -182,12 +182,12 @@ flowchart LR;
 &lt;ul&gt;
 &lt;li&gt;Github
 &lt;ul&gt;
-&lt;li&gt;Re-planification&lt;/li&gt;
+&lt;li&gt;Replanification&lt;/li&gt;
 &lt;li&gt;Syntaxe
 &lt;ul&gt;
 &lt;li&gt;Spatialisation&lt;/li&gt;
 &lt;li&gt;Carbone (yields)&lt;/li&gt;
-&lt;li&gt;Re-planification&lt;/li&gt;
+&lt;li&gt;Replanification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -212,10 +212,10 @@ Mise à jour de la cache :     des8, 2022-04-20,2022-05-20
 Migration du code          :     crit,des9, 2022-05-02,2022-05-09
 Ajout playback et parallisation :     des10, 2022-05-20,2022-06-03
 Ajout de BFECopt       :     des11, 2022-06-03,2022-06-09
-Ajout de la re-planification :des12, 2022-06-09,2022-06-30
+Ajout de la replanification :des12, 2022-06-09,2022-06-30
 section Formations
 ClubFMThé            :done,des1,2021-12-15,2022-02-30
-Formation Re-planification :active,des2,2022-03-22,2022-06-15
+Formation Replanification :active,des2,2022-03-22,2022-06-15
 section Machine Learning
 Phase 1.2 (Développement de syntaxe carbone)            :done,des1,2021-12-15,2022-04-15
 Mise en place d&#39;une présentation                        :     des2,2022-02-15,2022-04-08
@@ -228,9 +228,9 @@ Débogage                                                :       des3,2021-12-15
 &lt;hr&gt;
 &lt;h2 id=&#34;les-futurs-projets-potentiels&#34;&gt;Les futurs projets potentiels&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Re-planification spatialement explicite
+&lt;li&gt;Replanification spatialement explicite
 &lt;ul&gt;
-&lt;li&gt;Permettre d&amp;rsquo;obtenir un effet de spatialisation à travers la re-planification&lt;/li&gt;
+&lt;li&gt;Permettre d&amp;rsquo;obtenir un effet de spatialisation à travers la replanification&lt;/li&gt;
 &lt;li&gt;Utilisation d&amp;rsquo;évènements stochastiques spatiaux&lt;/li&gt;
 &lt;li&gt;Inclure les enjeux opérationels&lt;/li&gt;
 &lt;li&gt;Changements climatiques&lt;/li&gt;

@@ -329,7 +329,7 @@
   
   
   
-  <script src="/FMTdocs/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
+  <script src="/FMTdocs/js/wowchemy-init.min.4be02a3b391999348b0c7478778a0e4b.js"></script>
 
   
 
@@ -392,7 +392,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
+      <a class="navbar-brand" href="/fr/">Documentation de FMT</a>
     </div>
     
 
@@ -405,7 +405,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
+      <a class="navbar-brand" href="/fr/">Documentation de FMT</a>
     </div>
     
 
@@ -736,7 +736,7 @@
       
 
 
-  <li class=""><a href="/FMTdocs/fr/docs/advanced/replanning/">Re-planification spatialement référencée</a></li>
+  <li class=""><a href="/FMTdocs/fr/docs/advanced/replanning/">Replanification spatialement référencée</a></li>
 
 
 
@@ -871,14 +871,14 @@
 <p>Dans l&rsquo;approche POO ou Object oriented programming en anglais (OOP), le programme utilise différents &ldquo;objets&rdquo; qui ont une certaine &ldquo;classe&rdquo; et qui peuvent avoir différentes &ldquo;fonctions&rdquo;.</p>
 <p>Vous connaissez et utilisez peut-être déjà des fonctions dans des logiciels tels que &ldquo;R&rdquo;. Par exemple, dans R, <code>plot()</code> est une fonction.</p>
 <p>Vous pourriez également être habitué.e à <em>certains</em> objets et classes dans le logiciel que vous utilisez. Par exemple, dans <code>R</code>, <code>data&lt;-read.csv (données.csv)</code> met le contenu des <code>données.fichier csv</code> dans l&rsquo;objet <code>data</code>, qui a la classe <code>data frame</code>.</p>
-<p>Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&rsquo;une classe particulière. Par exemple, une classe <code>chien</code> aurait la fonction <code>abboyer_sur()</code>. Si nous avons une classe nommée <code>chat</code>, nous pourrions alors :</p>
+<p>Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&rsquo;une classe particulière. Par exemple, une classe <code>chien</code> aurait la fonction <code>aboyer_sur()</code>. Si nous avons une classe nommée <code>chat</code>, nous pourrions alors :</p>
 <ul>
 <li>Créer un nouvel objet <code>chien</code> de la classe <code>chien</code> : <code>pluto = chien(nom = Pluto, age = 8)</code></li>
 <li>Créer un nouvel objet <code>chat</code> à partir de la classe <code>chat</code> : <code>felix = chat(nom = Felix, age = 2)</code></li>
-<li>Faire aboyer le chien sur le chat: <code>pluto.abboyer_sur(felix)</code></li>
+<li>Faire aboyer le chien sur le chat: <code>pluto.aboyer_sur(felix)</code></li>
 </ul>
 <p>À son tour, l&rsquo;objet peut avoir des &ldquo;propriétés&rdquo;, qui sont exactement ce à quoi cela ressemble. Par exemple, disons que notre classe <code>chat</code> a trois propriétés : <code>nom</code> (qui peut être une chaîne de caractères), <code>age</code> (qui peut être un nombre) et <code>effrayé</code> (qui est un booléen, <code>true</code> ou <code>false</code>).</p>
-<p>Dans notre exemple précédent, avant d&rsquo;utiliser <code>pluto.abboyer_sur(felix)</code>, la propriété <code>felix.peur</code> pouvait être <code>false</code>. Mais maintenant que nous avons utilisé <code>pluto.abboyer_sur(felix)</code>, <code>felix.peur</code> s&rsquo;est surement changé en <code>true</code>.</p>
+<p>Dans notre exemple précédent, avant d&rsquo;utiliser <code>pluto.aboyer_sur(felix)</code>, la propriété <code>felix.peur</code> pouvait être <code>false</code>. Mais maintenant que nous avons utilisé <code>pluto.aboyer_sur(felix)</code>, <code>felix.peur</code> s&rsquo;est surement changé en <code>true</code>.</p>
 <p>Enfin, une <em>classe parent</em> en programmation orientée objet signifie que la <em>classe enfant</em> <em>héritera</em> automatiquement de toutes les fonctions et propriétés de la fonction parent.</p>
 <p>Par exemple, supposons que nous ayons une classe parent <code>animal</code> dont dérivent les classes <code>chien</code> et <code>chat</code>. Si la classe <code>animal</code> a une fonction <code>respiration</code> (<code>animal.respiration()</code>), alors les classes <code>chien</code> et <code>chat</code> étant ses classes <em>enfant</em>, elles auront automatiquement cette fonction (<code>chien.respiration()</code>) et <code>chat.respiration()</code>).</p>
 <p>La <em>programmation orientée objet</em> est une façon particulière de programmer, intégrée dans le langage de programmation que vous utilisez, qui présente de multiples avantages. L&rsquo;un d&rsquo;eux est de rendre les choses plus faciles à représenter.</p>
@@ -891,12 +891,12 @@
 <li><strong><code>Parser</code></strong> : Contient des classes utilisées pour lire ou éditer les fichiers des modèles au format Woodstock</li>
 <li><strong><code>Models</code></strong>: Contient des classes utilisées pour manipuler et résoudre les modèles</li>
 <li><strong><code>Spatial</code></strong>: Contient des classes utilisées pour travailler sur des données spatialement explicites</li>
-<li><strong><code>Heuristics</code></strong> : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps</li>
+<li><strong><code>Heuristics</code></strong> : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupes et les planifier dans le temps</li>
 <li><strong><code>Version</code></strong>: Contient des informations sur la version actuelle de FMT, et les fonctions qu&rsquo;elle contient (ce qui dépend de la façon dont il a été compilée)</li>
 </ul>
 <div class="alert alert-note">
   <div>
-    Si vous regardez l'[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
+    Si vous regardez l&rsquo;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
   </div>
 </div>
 <h2 id="classes-importantes-de-lespace-de-noms-parser">Classes importantes de l&rsquo;espace de noms <code>Parser</code></h2>
@@ -1070,7 +1070,7 @@ Done reading Tue Oct 05 10:59:57 2021
 <p>Par exemple, pour voir la liste des objets <code>FMTaction</code> associés à un <code>FMTmodel</code> particulier, vous pouvez utiliser la fonction <code>FMTModel.getactions()</code> (ou <code>FMTModel$getactions()</code> en R), et utiliser une boucle <code>for</code> pour afficher toutes les actions dans le modèle. <strong>Les actions affichées de cette manière correspondront aux actions présentes dans le fichier <code>.act</code> des fichiers Woodstock pour le modèle</strong>.</p>
 <p>Voici un exemple qui affiche les actions et les transitions d&rsquo;un <code>FMTmodel</code> en code R :</p>
 <pre><code class="language-R">library(FMT) # Charge FMT dans R
-if (new(FMTversion)$hasfeature(&quot;OSI&quot;)) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
+if (new(FMTversion)$hasfeature(&quot;OSI&quot;)) # Vérifier si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
 {
 	# Créer un objet parser pour lire les fichiers du modèle
 	newmodelparser &lt;- new(FMTmodelparser)
@@ -1087,7 +1087,7 @@ if (new(FMTversion)$hasfeature(&quot;OSI&quot;)) # Vérifie si FMT a été compi
 	print(&quot;***** Here is the name of the transitions&quot;)
 	for (transition in model$gettransitions())
 	{
-		# On concaténe l'entrée pour la transition afin de la rendre plus lisible dans le terminal
+		# On concatène l'entrée pour la transition afin de la rendre plus lisible dans le terminal
 		cat(transition$str())
 	}
 
@@ -1431,7 +1431,7 @@ _DEATH
       
     
     
-    <script src="/FMTdocs/fr/js/wowchemy.min.d1c5d978fc205b583019e723de2f6d36.js"></script>
+    <script src="/FMTdocs/fr/js/wowchemy.min.895aa7075d3fa765066ba7542ec83ce5.js"></script>
 
     
 

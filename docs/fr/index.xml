@@ -13,19 +13,19 @@
     </image>
     
     <item>
-      <title>Re-planification spatialement référencée</title>
+      <title>Replanification spatialement référencée</title>
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/replanning/</guid>
-      <description>&lt;h2 id=&#34;quest-ce-que-la-re-planification-&#34;&gt;Qu&amp;rsquo;est-ce que la re-planification ?&lt;/h2&gt;
-&lt;p&gt;La re-planification est un processus qui consiste à re-solutioner un modèle d&amp;rsquo;optimisation de coupes forestières (comme ceux utilisés dans FMT) pour prendre en compte des éléments qui ne peuvent pas être considérés dans le processus classique de résolution de ces modèles d&amp;rsquo;optimisation.&lt;/p&gt;
-&lt;p&gt;La re-planification permet donc de se poser des questions plus complexes; en particulier, elle permet de toucher aux interactions entre les &lt;a href=&#34;https://www.researchgate.net/profile/Mark-Boyland/publication/228780711_Hierarchical_Planning_in_Forestry/links/02e7e534d86d03937f000000/Hierarchical-Planning-in-Forestry.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;différents niveaux de la planification hiérarchique&lt;/a&gt; en foresterie (stratégique, tactique et opérationnel).&lt;/p&gt;
-&lt;p&gt;Voici quelques &lt;strong&gt;exemples de questions auxquelles là re-planification permet de répondre&lt;/strong&gt; :&lt;/p&gt;
+      <description>&lt;h2 id=&#34;quest-ce-que-la-replanification-&#34;&gt;Qu&amp;rsquo;est-ce que la replanification ?&lt;/h2&gt;
+&lt;p&gt;La replanification est un processus qui consiste à resolutioner un modèle d&amp;rsquo;optimisation de coupes forestières (comme ceux utilisés dans FMT) pour prendre en compte des éléments qui ne peuvent pas être considérés dans le processus classique de résolution de ces modèles d&amp;rsquo;optimisation.&lt;/p&gt;
+&lt;p&gt;La replanification permet donc de se poser des questions plus complexes; en particulier, elle permet de toucher aux interactions entre les &lt;a href=&#34;https://www.researchgate.net/profile/Mark-Boyland/publication/228780711_Hierarchical_Planning_in_Forestry/links/02e7e534d86d03937f000000/Hierarchical-Planning-in-Forestry.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;différents niveaux de la planification hiérarchique&lt;/a&gt; en foresterie (stratégique, tactique et opérationnel).&lt;/p&gt;
+&lt;p&gt;Voici quelques &lt;strong&gt;exemples de questions auxquelles la replanification permet de répondre&lt;/strong&gt; :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Des question liées aux effets des perturbations naturelles (feux, tordeuse de bourgeon d&amp;rsquo;épinette, etc.)
+&lt;li&gt;Des questions liées aux effets des perturbations naturelles (feux, tordeuse des bourgeons de l&amp;rsquo;épinette, etc.)
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Quel est l&amp;rsquo;effet des feux à long terme sur les niveaux de récolte déterminés par le stratégique ?&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Quel est l&amp;rsquo;effet d&amp;rsquo;un changement de régime d&amp;rsquo;une perturbation stochastique (aléatoire) sur les niveaux de récolte déterminés par le stratégique ?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Quel est l&amp;rsquo;effet des feux à long terme sur les niveaux de récolte déterminés par le niveau stratégique ?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Quel est l&amp;rsquo;effet d&amp;rsquo;un changement de régime d&amp;rsquo;une perturbation stochastique (aléatoire) sur les niveaux de récolte déterminés par le niveau stratégique ?&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Des questions liés aux incohérences entre ce qui est prévu au niveau stratégique (à grande échelle), et la réalité du terrain (à petite échelle) : &lt;a href=&#34;https://www.researchgate.net/publication/235754092_On_Risk_of_Systematic_Drift_Under_Incoherent_Hierarchical_Forest_Management_Planning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;c&amp;rsquo;est la notion de &lt;em&gt;drift&lt;/em&gt; entre les différents niveaux de l&amp;rsquo;aménagement hiérarchique&lt;/a&gt;
@@ -39,17 +39,17 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;la-re-planification-spatialement-référencée-en-pratique&#34;&gt;La re-planification spatialement référencée en pratique&lt;/h2&gt;
+&lt;h2 id=&#34;la-replanification-spatialement-référencée-en-pratique&#34;&gt;La replanification spatialement référencée en pratique&lt;/h2&gt;
 &lt;h3 id=&#34;les-modèles-utilisés&#34;&gt;Les modèles utilisés&lt;/h3&gt;
-&lt;p&gt;Lorsqu&amp;rsquo;on utilise FMT, la re-planification spatialement référencée se fait en pratique à l&amp;rsquo;aide de 3 modèles de FMT.&lt;/p&gt;
-&lt;p&gt;Ces 3 modèles représentent 3 scénarios appliqués à un même paysage initial(mêmes sections &lt;code&gt;AREA&lt;/code&gt;, &lt;code&gt;CONSTANTS&lt;/code&gt;, &lt;code&gt;LANDSCAPE&lt;/code&gt;, &lt;code&gt;OUTPUTS&lt;/code&gt;). Cependant, ces scénarios peuvent avoir des éléments différents les uns des autres (sections &lt;code&gt;ACTIONS&lt;/code&gt;, &lt;code&gt;TRANSITIONS&lt;/code&gt;, &lt;code&gt;YIELDS&lt;/code&gt; et &lt;code&gt;OPTIMIZE&lt;/code&gt; différentes).&lt;/p&gt;
+&lt;p&gt;Lorsqu&amp;rsquo;on utilise FMT, la replanification spatialement référencée se fait en pratique à l&amp;rsquo;aide de trois modèles de FMT.&lt;/p&gt;
+&lt;p&gt;Ces trois modèles représentent trois scénarios appliqués à un même paysage initial(mêmes sections &lt;code&gt;AREA&lt;/code&gt;, &lt;code&gt;CONSTANTS&lt;/code&gt;, &lt;code&gt;LANDSCAPE&lt;/code&gt;, &lt;code&gt;OUTPUTS&lt;/code&gt;). Cependant, ces scénarios peuvent avoir des éléments différents les uns des autres (sections &lt;code&gt;ACTIONS&lt;/code&gt;, &lt;code&gt;TRANSITIONS&lt;/code&gt;, &lt;code&gt;YIELDS&lt;/code&gt; et &lt;code&gt;OPTIMIZE&lt;/code&gt; différentes).&lt;/p&gt;
 &lt;p&gt;Ces trois modèles sont :&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. Le modèle stratégique&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;C&amp;rsquo;est un modèle de programmation linéaire de type III, comme décrit dans &lt;a href=&#34;../../basics/spatially_referenced_optimization/&#34;&gt;les bases de FMT&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;C&amp;rsquo;est ce modèle qui va représenter ce qui se passe au niveau stratégique, c&amp;rsquo;est à dire quand on regarde les choses d&amp;rsquo;en haut sans prendre en compte certains détails à des échelles plus fines.&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est ce modèle qui va représenter ce qui se passe au niveau stratégique, c&amp;rsquo;est-à-dire quand on regarde les choses d&amp;rsquo;en haut sans prendre en compte certains détails à des échelles plus fines.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. Le modèle stochastique&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;C&amp;rsquo;est un modèle de simulation non-spatial (qui fonctionne dans un espace spatialement référencé comme les modèles linéaires, et non pas spatialement explicite).&lt;/p&gt;
-&lt;p&gt;Il va servir à simuler des action pseudo-aléatoires avec des cibles de superficies à atteindre. Ces actions peuvent représenter des feux de forêts, des épidémies d&amp;rsquo;insectes, et bien d&amp;rsquo;autres encore !&lt;/p&gt;
+&lt;p&gt;Il va servir à simuler des actions pseudo-aléatoires avec des cibles de superficies à atteindre. Ces actions peuvent représenter des feux de forêts, des épidémies d&amp;rsquo;insectes, et bien d&amp;rsquo;autres encore !&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Une &lt;strong&gt;simulation pseudo-aléatoire&lt;/strong&gt; signifie que les composantes aléatoires de la simulation se basent sur un chiffre déterminé que l&amp;rsquo;on appelle la &amp;ldquo;graine&amp;rdquo; (seed). &lt;strong&gt;Deux simulations pseudo-aléatoires faites avec la même graine auront exactement les mêmes résultats&lt;/strong&gt;; mais changer la graine donne des résultats différents et aléatoires. C&amp;rsquo;est un fonctionnement très pratique pour avoir de l&amp;rsquo;aléatoire, tout en gardant une certaine stabilité dans les résultats obtenus.
@@ -58,10 +58,10 @@
 &lt;p&gt;&lt;strong&gt;3. Le modèle tactique&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Comme le modèle stratégique, c&amp;rsquo;est un modèle de programmation linéaire de type III, comme décrit dans &lt;a href=&#34;../basics&#34;&gt;les bases de FMT&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ce modèle va servir à refaire une optimisation de la planification forestière tout en prenant en compte les changements que le modèle stochastique à pu effectuer sur le paysage, ou bien avec des contraintes différentes ou supplémentaires par rapport au modèle stratégique.&lt;/p&gt;
-&lt;h3 id=&#34;lexemple-dune-itération-de-re-planification&#34;&gt;L&amp;rsquo;exemple d&amp;rsquo;une itération de re-planification&lt;/h3&gt;
-&lt;p&gt;La re-planification se fait à l&amp;rsquo;aide des 3 modèles décrits précédemment, en les appelant les un après les autres au sein de chaque période de re-planification. Comme l&amp;rsquo;un des modèles (le modèle stochastique) contient des événements aléatoires, il est cependant possible de refaire tout le processus plusieurs fois afin de prendre en compte la variabilité liée à ces événements aléatoires : c&amp;rsquo;est ce que l&amp;rsquo;on appelle une &lt;em&gt;itération&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;lexemple-dune-itération-de-replanification&#34;&gt;L&amp;rsquo;exemple d&amp;rsquo;une itération de replanification&lt;/h3&gt;
+&lt;p&gt;La replanification se fait à l&amp;rsquo;aide des trois modèles décrits précédemment, en les appelant les un après les autres au sein de chaque période de replanification. Comme l&amp;rsquo;un des modèles (le modèle stochastique) contient des événements aléatoires, il est cependant possible de refaire tout le processus plusieurs fois afin de prendre en compte la variabilité liée à ces événements aléatoires : c&amp;rsquo;est ce que l&amp;rsquo;on appelle une &lt;em&gt;itération&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Lorsqu&amp;rsquo;on appelle les modèles les un après les autres, certaines de leur caractéristiques sont passées de l&amp;rsquo;un à l&amp;rsquo;autre (inventaire/état du paysage pour la période, ou bien contraintes et planification existante).&lt;/p&gt;
-&lt;p&gt;Au final, une itération de re-planification prend la forme suivante :&lt;/p&gt;
+&lt;p&gt;Au final, une itération de replanification prend la forme suivante :&lt;/p&gt;
 
 
 
@@ -97,17 +97,17 @@
 &lt;ul&gt;
 &lt;li&gt;Le modèle &lt;strong&gt;stratégique&lt;/strong&gt; est appelé pour faire sa &lt;strong&gt;planification&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;La planification du modèle stratégique se fait sur un horizon long; et cet horizon ne change pas à travers les périodes. C&amp;rsquo;est à dire qu&amp;rsquo;a chaque période, le modèle stratégique va, par exemple, planifier pour les 100 ans à venir; que ce soit 100 ans après la période 1, ou 100 ans après la période 3.&lt;/li&gt;
+&lt;li&gt;La planification du modèle stratégique se fait sur un horizon long; et cet horizon ne change pas à travers les périodes. C&amp;rsquo;est-à-dire qu&amp;rsquo;à chaque période, le modèle stratégique va, par exemple, planifier pour les 100 ans à venir; que ce soit 100 ans après la période 1, ou 100 ans après la période 3.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Le modèle &lt;strong&gt;stratégique&lt;/strong&gt; partage le même inventaire que le modèle &lt;strong&gt;stochastique&lt;/strong&gt;, ce dernier est appelé à faire sa &lt;strong&gt;simulation&lt;/strong&gt; pour introduire des différences avec l&amp;rsquo;inventaire qui sera passée au modèle tactique.
 &lt;ul&gt;
-&lt;li&gt;Le modèle stochastique ne va faire cette simulation que pour la période de temps donné (contrairement au modèle de planification qui va faire son optimisation en prenant en compte le long terme). C&amp;rsquo;est parce que le modèle stochastique ne fait que simuler des événements aléatoires, et ne cherche pas à optimiser quoi que ce sois.&lt;/li&gt;
+&lt;li&gt;Le modèle stochastique ne va faire cette simulation que pour la période de temps donnée (contrairement au modèle de planification qui va faire son optimisation en prenant en compte le long terme). C&amp;rsquo;est parce que le modèle stochastique ne fait que simuler des événements aléatoires, et ne cherche pas à optimiser quoi que ce soit.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;L&amp;rsquo;inventaire résultant du modèle &lt;strong&gt;stochastique&lt;/strong&gt; va être passé au modèle &lt;strong&gt;tactique&lt;/strong&gt;, qui est appelé pour faire sa &lt;strong&gt;re-planification&lt;/strong&gt;
+&lt;li&gt;L&amp;rsquo;inventaire résultant du modèle &lt;strong&gt;stochastique&lt;/strong&gt; va être passé au modèle &lt;strong&gt;tactique&lt;/strong&gt;, qui est appelé pour faire sa &lt;strong&gt;replanification&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;Le modèle tactique ne va planifier que sur la période donnée; il ne va pas simuler le long-terme comme le modèle stratégique, même si il essaye de faire une optimisation. Son objectif sera, par exemple, de récolter du bois sans dépasser la quantité de bois récoltée par le modèle stratégique, mais en prenant en compte l&amp;rsquo;inventaire modifié par les événements aléatoire du modèle stochastique.&lt;/li&gt;
+&lt;li&gt;Le modèle tactique ne va planifier que sur la période donnée; il ne va pas simuler le long-terme comme le modèle stratégique, même s&amp;rsquo;il essaye de faire une optimisation. Son objectif sera, par exemple, de récolter du bois sans dépasser la quantité de bois récoltée par le modèle stratégique, mais en prenant en compte l&amp;rsquo;inventaire modifié par les événements aléatoires du modèle stochastique.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;L&amp;rsquo;inventaire résultant du modèle &lt;strong&gt;tactique&lt;/strong&gt; est ensuite repassé au modèle &lt;strong&gt;stratégique&lt;/strong&gt;, qui va ensuite planifier à nouveau pour la période suivante.&lt;/li&gt;
@@ -117,8 +117,8 @@
 &lt;li&gt;Le passage de l&amp;rsquo;inventaire d&amp;rsquo;un modèle à un autre au fur et à mesure du processus (&lt;strong&gt;lignes bleues sur le schéma&lt;/strong&gt;)&lt;/li&gt;
 &lt;li&gt;Le passage de contraintes de planification du modèle &lt;strong&gt;stratégique&lt;/strong&gt; au modèle &lt;strong&gt;tactique&lt;/strong&gt; (&lt;strong&gt;lignes jaunes sur le schéma&lt;/strong&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Notez bien que &lt;strong&gt;tout ce processus ne représente qu&amp;rsquo;une seule itération de la re-planification&lt;/strong&gt;. Afin de réellement prendre en compte les effets des évenements stochastiques, il est important de répéter tout ce processus de nombreuses fois. Cela permet de prendre en compte la variabilité qui existera dans la manière dont l&amp;rsquo;inventaire et le modèle tactique vont réagir aux événements aléatoires; le modèle tactique peut aussi contenir des composantes aléatoires en son sein.&lt;/p&gt;
-&lt;h2 id=&#34;les-modèles-de-re-planification-en-détail&#34;&gt;Les modèles de re-planification en détail&lt;/h2&gt;
+&lt;p&gt;Notez bien que &lt;strong&gt;tout ce processus ne représente qu&amp;rsquo;une seule itération de la replanification&lt;/strong&gt;. Afin de réellement prendre en compte les effets des évenements stochastiques, il est important de répéter tout ce processus de nombreuses fois. Cela permet de prendre en compte la variabilité qui existera dans la manière dont l&amp;rsquo;inventaire et le modèle tactique vont réagir aux événements aléatoires; le modèle tactique peut aussi contenir des composantes aléatoires en son sein.&lt;/p&gt;
+&lt;h2 id=&#34;les-modèles-de-replanification-en-détail&#34;&gt;Les modèles de replanification en détail&lt;/h2&gt;
 &lt;h3 id=&#34;le-modèle-stratégique&#34;&gt;Le modèle stratégique&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;C&amp;rsquo;est un modèle d’optimisation par programmation linéaire (&lt;code&gt;FMTlpmodel&lt;/code&gt;).
@@ -143,7 +143,7 @@
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    &lt;strong&gt;Le modèle stochastique n&amp;rsquo;est pas nécessaire ou obligatoire pour faire de la re-planification&lt;/strong&gt;. Certaines questions qui peuvent être adressées par la re-planification n&amp;rsquo;ont pas de lien avec des perturbations aléatoires. Par exemple, on peut s&amp;rsquo;intéresser aux décalages entre un modèle stratégique qui ne prend pas en compte des contraintes à plus petites échelles (e.g. terrain, fluctuations économiques, etc.), et un modèle tactique qui les prend en compte. Dans ce cas-ci, de la stochasticité peut exister dans les solutions du modèles tactique, mais elle ne requière pas l&amp;rsquo;utilisation d&amp;rsquo;un modèle stochastique pour altérer l&amp;rsquo;inventaire où le paysage forestier entre le modèle stochastique et tactique.
+    &lt;strong&gt;Le modèle stochastique n&amp;rsquo;est pas nécessaire ou obligatoire pour faire de la replanification&lt;/strong&gt;. Certaines questions qui peuvent être adressées par la replanification n&amp;rsquo;ont pas de lien avec des perturbations aléatoires. Par exemple, on peut s&amp;rsquo;intéresser aux décalages entre un modèle stratégique qui ne prend pas en compte des contraintes à plus petites échelles (e.g. terrain, fluctuations économiques, etc.), et un modèle tactique qui les prend en compte. Dans ce cas-ci, de la stochasticité peut exister dans les solutions du modèles tactique, mais elle ne requière pas l&amp;rsquo;utilisation d&amp;rsquo;un modèle stochastique pour altérer l&amp;rsquo;inventaire où le paysage forestier entre le modèle stochastique et tactique.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;le-modèle-tactique&#34;&gt;Le modèle tactique&lt;/h3&gt;
@@ -151,14 +151,14 @@
 &lt;li&gt;C&amp;rsquo;est un modèle d’optimisation par programmation linéaire (&lt;code&gt;FMTlpmodel&lt;/code&gt;), comme le &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Son horizon de planification est de seulement une période.
 &lt;ul&gt;
-&lt;li&gt;Car à l&amp;rsquo;échelle tactique, on ne prend en compte que le cours-terme, et pas le long-terme.&lt;/li&gt;
+&lt;li&gt;Car à l&amp;rsquo;échelle tactique, on ne prend en compte que le court-terme, et non le long-terme.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Son état initial est celui de la période actuelle, donné par le &lt;a href=&#34;./#le-mod%c3%a8le-stochastique&#34;&gt;modèle stochastique&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Il peut utiliser les nouveaux mots clés &lt;a href=&#34;./#_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(ratio)&lt;/code&gt;&lt;/a&gt; et &lt;a href=&#34;./#_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;les-nouveaux-mots-clés-associés-à-la-re-planification&#34;&gt;Les nouveaux mots-clés associés à la re-planification&lt;/h2&gt;
-&lt;p&gt;Différents mots clés qui n&amp;rsquo;existent pas dans la syntaxe Woodstock permettent d&amp;rsquo;implémenter des vas-et-vient d&amp;rsquo;information entre les différents modèles de la re-planification, selon le schéma suivant :&lt;/p&gt;
+&lt;h2 id=&#34;les-nouveaux-mots-clés-associés-à-la-replanification&#34;&gt;Les nouveaux mots-clés associés à la replanification&lt;/h2&gt;
+&lt;p&gt;Différents mots clés qui n&amp;rsquo;existent pas dans la syntaxe Woodstock permettent d&amp;rsquo;implémenter des va-et-vient d&amp;rsquo;information entre les différents modèles de la replanification, selon le schéma suivant :&lt;/p&gt;
 
 
 
@@ -185,18 +185,18 @@
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;D&amp;rsquo;autres permettent d&amp;rsquo;ignorer des contraintes à des moments donnés, ou bien de les ajuster.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Vous trouverez ici la liste de ces nouveaux mots-clés liés à la re-planification :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Vous trouverez ici la liste de ces nouveaux mots-clés liés à la replanification :&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;_reignoreperiod&#34;&gt;&lt;code&gt;_REIGNORE(period)&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Ce mot clé doit apparaitre dans la section &lt;code&gt;OPTIMIZE&lt;/code&gt; d&amp;rsquo;un modèle.&lt;/p&gt;
-&lt;p&gt;Il permet d&amp;rsquo;indiquer au modèle d&amp;rsquo;ignorer une contrainte à partir d&amp;rsquo;une période de re-planification précise.&lt;/p&gt;
+&lt;p&gt;Ce mot clé doit apparaître dans la section &lt;code&gt;OPTIMIZE&lt;/code&gt; d&amp;rsquo;un modèle.&lt;/p&gt;
+&lt;p&gt;Il permet d&amp;rsquo;indiquer au modèle d&amp;rsquo;ignorer une contrainte à partir d&amp;rsquo;une période de replanification précise.&lt;/p&gt;
 &lt;p&gt;Ceci peut être très utile pour instaurer une période de mise à jour de la planification, et ensuite ignorer les contraintes qui y sont liées.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Il ne faut pas oublier que le &lt;a href=&#34;./#le-mod%C3%A8le-strat%C3%A9gique&#34;&gt;modèle stratégique&lt;/a&gt; est répété à toutes les périodes de re-planification, sur tout son horizon de planification. Si son horizon est de 100 ans et que les périodes de planification sont de 10 ans, il sera alors appelé à la période 3 à planifier à partir de l’inventaire qui a été modifié par les 2 périodes de re-planification précédentes. Donc, il commencera 30 ans après le début de la période initiale de re-planification et son horizon se terminera 130 ans après le début de la période initiale de re-planification.
+    Il ne faut pas oublier que le &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; est répété à toutes les périodes de replanification, sur tout son horizon de planification. Si son horizon est de 100 ans et que les périodes de planification sont de 10 ans, il sera alors appelé à la période 3 à planifier à partir de l’inventaire qui a été modifié par les 2 périodes de replanification précédentes. Donc, il commencera 30 ans après le début de la période initiale de replanification et son horizon se terminera 130 ans après le début de la période initiale de replanification.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;_replicatefichiercsv&#34;&gt;&lt;code&gt;_REPLICATE(fichier.csv)&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Ce mot clé permet de venir changer le terme à droite de l&amp;rsquo;équation (&lt;em&gt;Right Hand Side&lt;/em&gt;, ou &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt;) d&amp;rsquo;une contrainte en venant chercher une valeur dans un tableau contenant ces valeurs pour différents réplica.&lt;/p&gt;
+&lt;p&gt;Ce mot clé permet de venir changer le terme à droite de l&amp;rsquo;équation (&lt;em&gt;Right Hand Side&lt;/em&gt;, ou &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt;) d&amp;rsquo;une contrainte en venant chercher une valeur dans un tableau contenant ces valeurs pour différents réplicas.&lt;/p&gt;
 &lt;p&gt;En pratique, on peu déposer un fichier &lt;code&gt;.csv&lt;/code&gt; dans le répertoire du scénario, puis utiliser &lt;code&gt;_REPLICATE(fichier.csv)&lt;/code&gt; pour que FMT applique une certaine valeur dans ce tableau pour l&amp;rsquo;itération à laquelle il se trouve.&lt;/p&gt;
 &lt;p&gt;Par exemple, écrire la chose suivante dans la section des contraintes d&amp;rsquo;un modèle :&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;_RANDOM(outputaction) &amp;lt;= 10 1 _REPLICATE(fichier.csv)
@@ -209,31 +209,31 @@
 &lt;p&gt;Si on écrit la chose suivante dans la section des contraintes d&amp;rsquo;un &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; :&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;VOLUMEREC &amp;lt;= 0 1.._LENGTH _SETFROMLOCAL(1)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;on se trouve à remplacer systématiquement le chiffre &amp;ldquo;0&amp;rdquo; du &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt; par la valeur du output VOLUMEREC de la période de re-planification précédente du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;on se trouve à remplacer systématiquement le chiffre &amp;ldquo;0&amp;rdquo; du &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt; par la valeur du output VOLUMEREC de la période de replanification précédente du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;_randomoutput&#34;&gt;&lt;code&gt;_RANDOM(output)&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Ce mot clé est utiliser pour générer des valeurs de façon aléatoire pour le &lt;a href=&#34;./#le-mod%c3%a8le-stochastique&#34;&gt;modèle stochastique&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ce mot clé est utilisé pour générer des valeurs de façon aléatoire pour le &lt;a href=&#34;./#le-mod%c3%a8le-stochastique&#34;&gt;modèle stochastique&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
-    L&amp;rsquo;output choisis avec &lt;code&gt;_RANDOM(output)&lt;/code&gt; doit être un output d&amp;rsquo;action, et non un output d&amp;rsquo;inventaire.
+    L&amp;rsquo;output choisi avec &lt;code&gt;_RANDOM(output)&lt;/code&gt; doit être un output d&amp;rsquo;action, et non un output d&amp;rsquo;inventaire.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Il s&amp;rsquo;écrit comme pour une contrainte standard.&lt;/p&gt;
-&lt;p&gt;Voici un exemple pour générer un chiffre aléatoire entre 50 et 100 pour les période 1 à LENGTH :&lt;/p&gt;
+&lt;p&gt;Voici un exemple pour générer un chiffre aléatoire entre 50 et 100 pour les périodes 1 à LENGTH :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;_RANDOM(outputaction) &amp;lt;= 50 1.._LENGTH
 _RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(ratio)&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Ce mot clé est utiliser pour ajuster une contrainte du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; basé sur une valeur déterminée par le &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;. C&amp;rsquo;est un peu la réciproque de &lt;a href=&#34;./#_setfromlocalratio&#34;&gt;&lt;code&gt;_SETFROMLOCAL(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Le ratio permet augmenter ou diminuer la valeur prise du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;. Par exemple, un ratio de &lt;code&gt;1.0&lt;/code&gt; donnera exactement la valeur du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;; un ratio de &lt;code&gt;2.0&lt;/code&gt; va la multiplier par deux, et un ratio de &lt;code&gt;0.5&lt;/code&gt; la divisera par deux.&lt;/p&gt;
+&lt;p&gt;Ce mot-clé est utilisé pour ajuster une contrainte du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; basé sur une valeur déterminée par le &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;. C&amp;rsquo;est un peu la réciproque de &lt;a href=&#34;./#_setfromlocalratio&#34;&gt;&lt;code&gt;_SETFROMLOCAL(ratio)&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Le ratio permet d&amp;rsquo;augmenter ou de diminuer la valeur prise du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;. Par exemple, un ratio de &lt;code&gt;1.0&lt;/code&gt; donnera exactement la valeur du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;; un ratio de &lt;code&gt;2.0&lt;/code&gt; va la multiplier par deux, et un ratio de &lt;code&gt;0.5&lt;/code&gt; la divisera par deux.&lt;/p&gt;
 &lt;p&gt;Si on écrit la chose suivante dans la section des contraintes d&amp;rsquo;un &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; :&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;VOLUMEREC &amp;lt;= 0 1.._LENGTH _SETFROMGLOBAL(1)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;on remplace systématiquement le chiffre &amp;ldquo;0&amp;rdquo; du &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt; par la valeur du output VOLUMEREC du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; pour la période de re-planification en cours.&lt;/p&gt;
+&lt;p&gt;on remplace systématiquement le chiffre &amp;ldquo;0&amp;rdquo; du &lt;em&gt;&lt;strong&gt;RHS&lt;/strong&gt;&lt;/em&gt; par la valeur du output VOLUMEREC du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; pour la période de replanification en cours.&lt;/p&gt;
 &lt;h3 id=&#34;_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(ratio)&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Ce mot clé permet d&amp;rsquo;inclure la solution (ce qui a été planifié comme actions) du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; dans le &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; sous forme de poids à la fonction objective.&lt;/p&gt;
-&lt;p&gt;Pour ce faire, lors l&amp;rsquo;évaluation de la solution du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;, à chaque fois que ce dernier planifiera une action sur un même développement que prévu au &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;, il multipliera la superficie planifiée (au niveau tactique) par le ratio spécifié et ajoutera la valeur à l&amp;rsquo;objectif selon la formulation de la fonction objective. Si le modèle doit maximiser, on additionnera et s&amp;rsquo;il doit minimiser, on soustraiera la valeur calculée.&lt;/p&gt;
-&lt;h2 id=&#34;les-résultats-de-la-re-planification&#34;&gt;Les résultats de la re-planification&lt;/h2&gt;
-&lt;p&gt;Suite au processus de re-planification, on obtient les résultats suivants :&lt;/p&gt;
+&lt;p&gt;Pour ce faire, lors de l&amp;rsquo;évaluation de la solution du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt;, à chaque fois que ce dernier planifiera une action sur un même développement que prévu au &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt;, il multipliera la superficie planifiée (au niveau tactique) par le ratio spécifié et ajoutera la valeur à l&amp;rsquo;objectif selon la formulation de la fonction objective. Si le modèle doit maximiser, on additionnera et s&amp;rsquo;il doit minimiser, on soustraiera la valeur calculée.&lt;/p&gt;
+&lt;h2 id=&#34;les-résultats-de-la-replanification&#34;&gt;Les résultats de la replanification&lt;/h2&gt;
+&lt;p&gt;Suite au processus de replanification, on obtient les résultats suivants :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Trois fichiers de résultats &lt;em&gt;bruts&lt;/em&gt; (un par modèle)&lt;/li&gt;
 &lt;li&gt;Un fichier de probabilités (un seul pour tout le processus)&lt;/li&gt;
@@ -242,26 +242,26 @@ _RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
 &lt;p&gt;Ces fichiers contiennent des valeurs liées aux outputs dans les différents modèles, pour les différentes périodes, et pour les différentes itérations.&lt;/p&gt;
 &lt;p&gt;Ils contiennent différentes colonnes :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Iteration&lt;/code&gt; : Indique le numéro de l&amp;rsquo;itération qui est fait pour prendre en compte de la stochasticité. L&amp;rsquo;itération &amp;ldquo;0&amp;rdquo; concerne le modèle stratégique &amp;ldquo;de base&amp;rdquo;, qui est résolu au tout début du processus de re-planification.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Period&lt;/code&gt; : Indique la période de re-planification qui concerne la valeur de l&amp;rsquo;output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Iteration&lt;/code&gt; : Indique le numéro de l&amp;rsquo;itération qui est fait pour prendre en compte de la stochasticité. L&amp;rsquo;itération &amp;ldquo;0&amp;rdquo; concerne le modèle stratégique &amp;ldquo;de base&amp;rdquo;, qui est résolu au tout début du processus de replanification.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Period&lt;/code&gt; : Indique la période de replanification qui concerne la valeur de l&amp;rsquo;output.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Output&lt;/code&gt; : Nom de l&amp;rsquo;output considéré.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Value&lt;/code&gt; : Valeur du output considéré.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Type&lt;/code&gt; : Type de output (indique si c&amp;rsquo;est un output &amp;ldquo;total&amp;rdquo; pour tout le paysage, ou par développement/peuplement).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;le-fichier-de-probabilités&#34;&gt;Le fichier de probabilités&lt;/h3&gt;
-&lt;p&gt;Ce fichier contient les probabilités que des outputs du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; puissent s&amp;rsquo;éloigner (&lt;em&gt;drift&lt;/em&gt;) de la solution du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial (résolu au tout début du processus de re-planification), dont les outputs se trouvent dans l&amp;rsquo;itération &amp;ldquo;0&amp;rdquo; des fichiers de résultats bruts.&lt;/p&gt;
-&lt;p&gt;Pour chacun des outputs définit dans les modèles, le fichier de probabilité contiendra toutes les probabilités de rester dans l&amp;rsquo;intervalle inférieur et supérieur du ratio d&amp;rsquo;éloignement (&lt;em&gt;drift&lt;/em&gt;) vis à vis des outputs du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial, pour les valeurs de ratio d&amp;rsquo;éloignement suivantes : &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;0.05&lt;/code&gt;, &lt;code&gt;0.10&lt;/code&gt;, &lt;code&gt;0.15&lt;/code&gt;, &lt;code&gt;0.20&lt;/code&gt;, &lt;code&gt;0.25&lt;/code&gt;, &lt;code&gt;0.30&lt;/code&gt;, &lt;code&gt;0.35&lt;/code&gt;, &lt;code&gt;0.40&lt;/code&gt;, &lt;code&gt;0.45&lt;/code&gt;, &lt;code&gt;0.50&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ce fichier contient les probabilités que des outputs du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; puissent s&amp;rsquo;éloigner (&lt;em&gt;drift&lt;/em&gt;) de la solution du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial (résolu au tout début du processus de replanification), dont les outputs se trouvent dans l&amp;rsquo;itération &amp;ldquo;0&amp;rdquo; des fichiers de résultats bruts.&lt;/p&gt;
+&lt;p&gt;Pour chacun des outputs définis dans les modèles, le fichier de probabilité contiendra toutes les probabilités de rester dans l&amp;rsquo;intervalle inférieur et supérieur du ratio d&amp;rsquo;éloignement (&lt;em&gt;drift&lt;/em&gt;) vis-à-vis des outputs du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial, pour les valeurs de ratio d&amp;rsquo;éloignement suivantes : &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;0.05&lt;/code&gt;, &lt;code&gt;0.10&lt;/code&gt;, &lt;code&gt;0.15&lt;/code&gt;, &lt;code&gt;0.20&lt;/code&gt;, &lt;code&gt;0.25&lt;/code&gt;, &lt;code&gt;0.30&lt;/code&gt;, &lt;code&gt;0.35&lt;/code&gt;, &lt;code&gt;0.40&lt;/code&gt;, &lt;code&gt;0.45&lt;/code&gt;, &lt;code&gt;0.50&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Ce fichier contient différentes colonnes :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Period&lt;/code&gt; : Indique la période de re-planification qui concerne la valeur de l&amp;rsquo;output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Period&lt;/code&gt; : Indique la période de replanification qui concerne la valeur de l&amp;rsquo;output.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Output&lt;/code&gt; : Nom de l&amp;rsquo;output considéré.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;LowerProbability&lt;/code&gt; : Probabilité de rester dans l&amp;rsquo;intervalle inférieure du ratio d&amp;rsquo;éloignement.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;UpperProbability&lt;/code&gt; : Probabilité de rester dans l&amp;rsquo;intervalle supérieure du ratio d&amp;rsquo;éloignement.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Drift&lt;/code&gt; : Ration d&amp;rsquo;éloignement entre la solution du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; et celle du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Drift&lt;/code&gt; : Ratio d&amp;rsquo;éloignement entre la solution du &lt;a href=&#34;./#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique&lt;/a&gt; et celle du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Plus vous ferez d&amp;rsquo;itérations lors de votre re-planification, et plus vos probabilités seront représentatives et stables dans le temps. A l&amp;rsquo;inverse, un petit nombre d&amp;rsquo;itération tendra à résulter ou des estimations très changeantes, et souvent incomplètes.
+    Plus vous ferez d&amp;rsquo;itérations lors de votre replanification, et plus vos probabilités seront représentatives et stables dans le temps. À l&amp;rsquo;inverse, un petit nombre d&amp;rsquo;itérations tendra à résulter ou des estimations très changeantes, et souvent incomplètes.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Pour comprendre les probabilités, il faut d&amp;rsquo;abord regarder le ratio d&amp;rsquo;éloignement, la valeur du &lt;a href=&#34;./#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique&lt;/a&gt; initial, puis les probabilités.&lt;/p&gt;
@@ -281,12 +281,12 @@ _RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Le fichier de probabilité permet, par exemple, de vérifier qu&amp;rsquo;un certain scénario à de meilleure probabilités de se maintenir entre certaines valeurs qu&amp;rsquo;un autre scénario.
+    Le fichier de probabilité permet, par exemple, de vérifier qu&amp;rsquo;un certain scénario a de meilleures probabilités de se maintenir entre certaines valeurs qu&amp;rsquo;un autre scénario.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Les fichiers de résultats bruts des 3 modèles peuvent cependant être utilisés pour faire des analyses plus complexes, ou bien pour valider des hypothèses en ce qui concerne la communication entre les 3 modèles.
+    Les fichiers de résultats bruts des 3 modèles peuvent cependant être utilisés pour faire des analyses plus complexes, ou bien pour valider des hypothèses en ce qui concerne la communication entre les trois modèles.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -297,12 +297,12 @@ _RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/exercice_2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/advanced/exercice_2/</guid>
-      <description>&lt;p&gt;Dans cet exercice, vous allez essayer d&amp;rsquo;utiliser FMT pour répondre à différentes questions concernant un modèle stratégique et un modèle tactique, par le biais d&amp;rsquo;un processus de re-planification.&lt;/p&gt;
+      <description>&lt;p&gt;Dans cet exercice, vous allez essayer d&amp;rsquo;utiliser FMT pour répondre à différentes questions concernant un modèle stratégique et un modèle tactique, par le biais d&amp;rsquo;un processus de replanification.&lt;/p&gt;
 &lt;p&gt;Ainsi, cet exercice vous apprendra à :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Réaliser un script de re-planification&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faire une re-planification avec plusieurs modèles, en variant &lt;a href=&#34;../replanning/#les-nouveaux-mots-cl%c3%a9s-associ%c3%a9s-%c3%a0-la-re-planification&#34;&gt;les mots clés spéciaux de FMT&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Analyser les résultats des re-planifications pour répondre à différentes questions&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Réaliser un script de replanification&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faire une replanification avec plusieurs modèles, en variant &lt;a href=&#34;../replanning/#les-nouveaux-mots-cl%c3%a9s-associ%c3%a9s-%c3%a0-la-re-planification&#34;&gt;les mots clés spéciaux de FMT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Analyser les résultats des replanifications pour répondre à différentes questions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Pour faire cet exercice, &lt;strong&gt;vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&amp;rsquo;exemple depuis le dépôt GitHub de FMT&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul class=&#34;cta-group&#34;&gt;
@@ -323,16 +323,16 @@ _RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
   
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Vous devez également avoir installé Python sur votre ordinateur&lt;/strong&gt;. Si cela n&amp;rsquo;est pas fait, &lt;a href=&#34;../../download_install/importing_in_python/&#34;&gt;référez vous à cette page&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;1ère-partie--création-dun-script-de-re-planification&#34;&gt;1ère partie : Création d&amp;rsquo;un script de re-planification&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Vous devez également avoir installé Python sur votre ordinateur&lt;/strong&gt;. Si cela n&amp;rsquo;est pas fait, &lt;a href=&#34;../../download_install/importing_in_python/&#34;&gt;référez-vous à cette page&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;1ère-partie--création-dun-script-de-replanification&#34;&gt;1ère partie : Création d&amp;rsquo;un script de replanification&lt;/h2&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Si vous ne connaissez pas beaucoup le langage Python, ou bien si vous n&amp;rsquo;avez vraiment pas le temps, vous pouvez sauter cette section et utiliser le script &lt;code&gt;Replanner.py&lt;/code&gt; qui se trouve dans le dossier &amp;ldquo;Examples&amp;rdquo; que vous avez téléchargé, dans le dossier &lt;code&gt;/Python/replanning&lt;/code&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Le processus de re-planification implique souvent de lancer de nombreux modèles, et de nombreuses fois (pour faire des itérations).&lt;/p&gt;
+&lt;p&gt;Le processus de replanification implique souvent de lancer de nombreux modèles, et de nombreuses fois (pour faire des itérations).&lt;/p&gt;
 &lt;p&gt;Il est ainsi très utile de creer un script Python qui peut être appellé par le biais d&amp;rsquo;une console, d&amp;rsquo;un terminal, ou d&amp;rsquo;une invite de commande.&lt;/p&gt;
-&lt;p&gt;Encore mieux : il est possible de créer un script Python qui lira des arguments qui lui seront fournis lorsqu&amp;rsquo;il sera appelé avec l&amp;rsquo;invite de commande. Cela permettra de ré-utiliser ce script pour différentes re-planifications.&lt;/p&gt;
+&lt;p&gt;Encore mieux : il est possible de créer un script Python qui lira des arguments qui lui seront fournis lorsqu&amp;rsquo;il sera appelé avec l&amp;rsquo;invite de commande. Cela permettra de réutiliser ce script pour différentes replanifications.&lt;/p&gt;
 &lt;p&gt;Essayez alors de créer en langage Python le script suivant :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Importation de &lt;code&gt;Models&lt;/code&gt;, &lt;code&gt;Parser&lt;/code&gt;, &lt;code&gt;Core&lt;/code&gt;, &lt;code&gt;Version&lt;/code&gt; et &lt;code&gt;Parallel&lt;/code&gt; depuis &lt;code&gt;FMT&lt;/code&gt;&lt;/li&gt;
@@ -344,9 +344,9 @@ _RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
 &lt;li&gt;&lt;code&gt;-sto&lt;/code&gt; qui indique le nom du scénario stochastique&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;-out&lt;/code&gt; qui indique une liste d&amp;rsquo;outputs d&amp;rsquo;intéret, séparés par une virgule, à extraire des résultats des modèles&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;-fol&lt;/code&gt; qui indique le dossier où les sorties du script seront mises&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-rep&lt;/code&gt; qui indique le nombre d&amp;rsquo;itération à faire&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-rep&lt;/code&gt; qui indique le nombre d&amp;rsquo;itérations à faire&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;-len&lt;/code&gt; qui indique le nombre de périodes du modèle stratégique&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-rel&lt;/code&gt; qui indique le nombre de périodes sur lesquelles la re-planification va se faire&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-rel&lt;/code&gt; qui indique le nombre de périodes sur lesquelles la replanification va se faire&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;-thr&lt;/code&gt; qui indique le nombre de coeurs de CPU à utiliser pour faire des itérations en parralèle&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -372,8 +372,8 @@ _RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
 &lt;li&gt;Faire en sorte que le modèle global utilise le nombre de threads indiqués par &lt;code&gt;-thr&lt;/code&gt; pour la résolution en parallèle&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Ajouter les outputs selectionné par l&amp;rsquo;argument &lt;code&gt;-out&lt;/code&gt; dans une liste depuis les outputs des modèles&lt;/li&gt;
-&lt;li&gt;Préparer la tache de re-planning par le biais de la fonction &lt;code&gt;Parallel.FMTreplanningtask()&lt;/code&gt; en fournissant à la fonction :
+&lt;li&gt;Ajouter les outputs selectionnés par l&amp;rsquo;argument &lt;code&gt;-out&lt;/code&gt; dans une liste depuis les outputs des modèles&lt;/li&gt;
+&lt;li&gt;Préparer la tâche de replanning par le biais de la fonction &lt;code&gt;Parallel.FMTreplanningtask()&lt;/code&gt; en fournissant à la fonction :
 &lt;ul&gt;
 &lt;li&gt;Le modèle stratégique&lt;/li&gt;
 &lt;li&gt;Le modèle stochastique&lt;/li&gt;
@@ -384,7 +384,7 @@ _RANDOM(outputaction)  &amp;gt;= 100 1.._LENGTH
 &lt;li&gt;&lt;a href=&#34;../../../../doxygen/html/classParallel_1_1FMTreplanningtask.html&#34;&gt;Tous les autres arguments nécéssaires à la fonction&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Lancer la tache de re-planning par le biais de la fonction &lt;code&gt;Parallel.FMTtaskhandler()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Lancer la tâche de replanning par le biais de la fonction &lt;code&gt;Parallel.FMTtaskhandler()&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Lorsque vous avez terminé, ou si vous êtes bloqué.e, &lt;strong&gt;vous pouvez afficher la correction de cet exercice pour du code Python en cliquant sur le bouton &amp;ldquo;Révéler la correction&amp;rdquo; ci-dessous&lt;/strong&gt;.&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
@@ -442,19 +442,19 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;h2 id=&#34;2ème-partie--création-des-scénarios-pour-la-re-planification&#34;&gt;2ème partie : Création des scénarios pour la re-planification&lt;/h2&gt;
+&lt;h2 id=&#34;2ème-partie--création-des-scénarios-pour-la-replanification&#34;&gt;2ème partie : Création des scénarios pour la replanification&lt;/h2&gt;
 &lt;h3 id=&#34;préparation&#34;&gt;Préparation&lt;/h3&gt;
-&lt;p&gt;Après avoir téléchargé les fichiers d&amp;rsquo;exemple de FMT (voir plus haut), ouvrez le dossier &lt;code&gt;Models/TWD_land/Scenarios/Globalex1&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Ce scénario &lt;code&gt;Globalex1&lt;/code&gt; est un scénario qui nous utiliserons comme &lt;a href=&#34;../replanning#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique ou modèle global&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Après avoir téléchargé les fichiers d&amp;rsquo;exemples de FMT (voir plus haut), ouvrez le dossier &lt;code&gt;Models/TWD_land/Scenarios/Globalex1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ce scénario &lt;code&gt;Globalex1&lt;/code&gt; est un scénario que nous utiliserons comme &lt;a href=&#34;../replanning#le-mod%c3%a8le-strat%c3%a9gique&#34;&gt;modèle stratégique ou modèle global&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Prenez le temps d&amp;rsquo;observer le contenu de ses fichiers&lt;/strong&gt;; en particulier, jetez un oeil à ses actions, ses objectifs et ses contraintes.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Faites de même avec le modèle &lt;code&gt;Localex1&lt;/code&gt;&lt;/strong&gt;, que nous utiliserons comme &lt;a href=&#34;../replanning#le-mod%c3%a8le-tactique&#34;&gt;modèle tactique ou modèle local&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;question-1&#34;&gt;Question 1&lt;/h3&gt;
-&lt;p&gt;Ouvrez ensuite une invite de commande de windows, ou bien un powershell. Utilisez la commande &lt;code&gt;cd&lt;/code&gt; pour vous rendre dans le dossier &lt;code&gt;Examples/Python/replanning&lt;/code&gt;. Puis, utilisez la commande suivante pour lancer la re-plannification :&lt;/p&gt;
+&lt;p&gt;Ouvrez ensuite une invite de commande de Windows, ou bien un Powershell. Utilisez la commande &lt;code&gt;cd&lt;/code&gt; pour vous rendre dans le dossier &lt;code&gt;Examples/Python/replanning&lt;/code&gt;. Puis, utilisez la commande suivante pour lancer la replannification :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX1 -rep 10 -len 20 -rel 20 -thr 2
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Cette commande indique au script créé dans la première partie que nous voulons :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Utiliser le modèle se trouve au chemin &lt;code&gt;../../Models/TWD_land/TWD_land.pri&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Utiliser le modèle qui se trouve au chemin &lt;code&gt;../../Models/TWD_land/TWD_land.pri&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Utiliser le scénario &lt;code&gt;Globalex1&lt;/code&gt; comme modèle stratégique&lt;/li&gt;
 &lt;li&gt;Utiliser le scénario &lt;code&gt;Localex1&lt;/code&gt; comme modèle tactique&lt;/li&gt;
 &lt;li&gt;Utiliser le scénario &lt;code&gt;Globalnofire&lt;/code&gt; comme modèle stocastique&lt;/li&gt;
@@ -462,16 +462,16 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 &lt;li&gt;Mettre ces tableaux dans le dossier &lt;code&gt;replanning_EX1&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Faire 10 itérations&lt;/li&gt;
 &lt;li&gt;Solutionner le modèle stratégique sur 20 périodes&lt;/li&gt;
-&lt;li&gt;Faire la re-plannification sur 20 périodes&lt;/li&gt;
+&lt;li&gt;Faire la replannification sur 20 périodes&lt;/li&gt;
 &lt;li&gt;Utiliser 2 coeurs de CPU pour faire des itérations en parallèle&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentes dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX1&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Avec une tolérance à la rupture de stock de 5%, quelle est la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; jusqu’à la période 10 dans le modèle tactique ?&lt;/strong&gt;&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-4&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
-  &lt;p&gt;&lt;p&gt;Pour regarder la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; au dessus d&amp;rsquo;une baisse de 5%, il suffit de regarder le fichier &lt;code&gt;outputsdrift.csv&lt;/code&gt;. Celui-ci nous indique la probabilité que les différents outputs sélectionnés restent, dans le modèle tactique, au dessus ou en dessous d&amp;rsquo;un certain éloignement vis-à-vis du modèle stratégique.&lt;/p&gt;
+  &lt;p&gt;&lt;p&gt;Pour regarder la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; au-dessus d&amp;rsquo;une baisse de 5%, il suffit de regarder le fichier &lt;code&gt;outputsdrift.csv&lt;/code&gt;. Celui-ci nous indique la probabilité que les différents outputs sélectionnés restent, dans le modèle tactique, au-dessus ou en-dessous d&amp;rsquo;un certain éloignement vis-à-vis du modèle stratégique.&lt;/p&gt;
 &lt;p&gt;On peut donc ouvrir le fichier, et se rendre jusqu&amp;rsquo;aux lignes qui concernent &lt;code&gt;OVOLREC&lt;/code&gt; et un drift de &lt;code&gt;0.05&lt;/code&gt; (5%), à savoir les lignes 462-481.&lt;/p&gt;
-&lt;p&gt;En regardant ces lignes, on peut voir qu&amp;rsquo;a partir de la période 7, &lt;code&gt;OVOLREC&lt;/code&gt; à une probabilité de &lt;code&gt;0&lt;/code&gt; de ne pas baisser de plus de 5% par rapport au modèle stratégique (troisième colonne &lt;code&gt;LowerProbability&lt;/code&gt;); cette probabilité reste à 0 pour toutes les périodes suivantes. Ainsi, il semble donc que la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; au dessus d&amp;rsquo;une baisse de 5% jusqu&amp;rsquo;à la période 10 est de 0.&lt;/p&gt;
+&lt;p&gt;En regardant ces lignes, on peut voir qu&amp;rsquo;à partir de la période 7, &lt;code&gt;OVOLREC&lt;/code&gt; a une probabilité de &lt;code&gt;0&lt;/code&gt; de ne pas baisser de plus de 5% par rapport au modèle stratégique (troisième colonne &lt;code&gt;LowerProbability&lt;/code&gt;); cette probabilité reste à 0 pour toutes les périodes suivantes. Ainsi, il semble donc que la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; au-dessus d&amp;rsquo;une baisse de 5% jusqu&amp;rsquo;à la période 10 est de 0.&lt;/p&gt;
 &lt;p&gt;On peut représenter ces valeurs avec un graphe via les données de &lt;code&gt;outputsdrift.csv&lt;/code&gt; :&lt;/p&gt;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
@@ -487,7 +487,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 &lt;/p&gt;
 &lt;/details&gt;
 &lt;h3 id=&#34;question-2&#34;&gt;Question 2&lt;/h3&gt;
-&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Globalex1&lt;/code&gt; et renommez le &lt;code&gt;Globalex2&lt;/code&gt; (supprimez le dossier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Globalex1&lt;/code&gt; et renommez-le &lt;code&gt;Globalex2&lt;/code&gt; (supprimez le dossier existant s&amp;rsquo;il existe déjà).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Globalex2&lt;/code&gt; afin de forcer le scénario &lt;code&gt;Globalex2&lt;/code&gt; à ne pas dépasser 20 000 m³ pour l&amp;rsquo;output &lt;code&gt;OVOLREC&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
@@ -513,20 +513,20 @@ _NDY(oVolRec) 1.._LENGTH
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex2&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;p&gt;Lancez ensuite une replannification avec le modèle stratégique &lt;code&gt;Globalex2&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex2 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX2 -rep 10 -len 20 -rel 20 -thr 2
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentes dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX2&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Avec une tolérance à la rupture de stock de 5%, quelle est la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; jusqu’à la période 10 dans le modèle tactique ?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Y-as-t-il un gain vis à vis de la question 1 ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y-as-t-il un gain vis-à-vis de la question 1 ?&lt;/strong&gt;&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-6&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
-  &lt;p&gt;&lt;p&gt;En regardant les résultats de &lt;code&gt;outputsdrift.csv&lt;/code&gt;, on peut voir que &lt;code&gt;OVOLREC&lt;/code&gt; garde une probabilité de &lt;code&gt;1&lt;/code&gt; de ne pas diminuer de plus de 5% tout du long des 20 périodes. Ainsi, il y a une probabilité maximale que &lt;code&gt;OVOLREC&lt;/code&gt; se maintiennent au dessus de 5% de baisse dans le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, lorsque l&amp;rsquo;on utilise le modèle stratégique &lt;code&gt;Globalex2&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;On a donc un clair gain vis-à-vis de la question 1, pour laquelle &lt;code&gt;OVOLREC&lt;/code&gt; ne pouvait pas se maintenir au dessus d&amp;rsquo;une baisse de 5% à partir de la 7ième période. Cela est surement du au fait que l&amp;rsquo;on a forcé &lt;code&gt;Globalex2&lt;/code&gt; à ne pas récolter trop, ce qui a rendu le fait de maintenir ce niveau dans &lt;code&gt;Localex1&lt;/code&gt; plus facile.&lt;/p&gt;
+  &lt;p&gt;&lt;p&gt;En regardant les résultats de &lt;code&gt;outputsdrift.csv&lt;/code&gt;, on peut voir que &lt;code&gt;OVOLREC&lt;/code&gt; garde une probabilité de &lt;code&gt;1&lt;/code&gt; de ne pas diminuer de plus de 5% tout du long des 20 périodes. Ainsi, il y a une probabilité maximale que &lt;code&gt;OVOLREC&lt;/code&gt; se maintiennent au-dessus de 5% de baisse dans le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, lorsque l&amp;rsquo;on utilise le modèle stratégique &lt;code&gt;Globalex2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;On a donc un gain clair vis-à-vis de la question 1, pour laquelle &lt;code&gt;OVOLREC&lt;/code&gt; ne pouvait pas se maintenir au-dessus d&amp;rsquo;une baisse de 5% à partir de la 7ième période. Cela est surement dû au fait que l&amp;rsquo;on a forcé &lt;code&gt;Globalex2&lt;/code&gt; à ne pas récolter trop, ce qui a rendu le fait de maintenir ce niveau dans &lt;code&gt;Localex1&lt;/code&gt; plus facile.&lt;/p&gt;
 &lt;/p&gt;
 &lt;/details&gt;
 &lt;h3 id=&#34;question-3&#34;&gt;Question 3&lt;/h3&gt;
-&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez le &lt;code&gt;Localex3&lt;/code&gt; (supprimez le dossier existant s&amp;rsquo;il existe déjà).&lt;/p&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez-le &lt;code&gt;Localex3&lt;/code&gt; (supprimez le dossier existant s&amp;rsquo;il existe déjà).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Localex3&lt;/code&gt; afin de forcer ce modèle tactique à suivre la solution du modèle stratégique avec un poids de 100, avec le mot clé &lt;a href=&#34;../replanning/#_setglobalscheduleratio&#34;&gt;&lt;code&gt;_SETGLOBALSCHEDULE(poids)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-7&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
@@ -550,20 +550,20 @@ oVolRec&amp;lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex3&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;p&gt;Lancez ensuite une replannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex3&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex3 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX3 -rep 10 -len 20 -rel 20 -thr 2
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentes dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX3&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Avec une tolérance à la rupture de stock de 5%, quelle est la probabilité de maintenir &lt;code&gt;OVOLREC&lt;/code&gt; jusqu’à la période 10 dans le modèle tactique ?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Y-as-t-il un gain vis à vis de la question 1 ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y-as-t-il un gain vis-à-vis de la question 1 ?&lt;/strong&gt;&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-8&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
-  &lt;p&gt;&lt;p&gt;En regardant les résultats de &lt;code&gt;outputsdrift.csv&lt;/code&gt; dans &lt;code&gt;Examples/Python/replanning/replanning_EX3&lt;/code&gt;, on peut voir que &lt;code&gt;OVOLREC&lt;/code&gt; a une probabilité de &lt;code&gt;1&lt;/code&gt; de ne pas diminuer de plus de 5% par rapport au modèle stratégique à la période 8; mais que cette probabilité passe à &lt;code&gt;0&lt;/code&gt; à partir de la période 9, et reste à &lt;code&gt;0&lt;/code&gt; pendant toutes les autres périodes. Ainsi, il est certain que &lt;code&gt;OVOLREC&lt;/code&gt; ne se maintiendra pas au dessus d&amp;rsquo;une baisse de 5% jusqu&amp;rsquo;a la période 10.&lt;/p&gt;
+  &lt;p&gt;&lt;p&gt;En regardant les résultats de &lt;code&gt;outputsdrift.csv&lt;/code&gt; dans &lt;code&gt;Examples/Python/replanning/replanning_EX3&lt;/code&gt;, on peut voir que &lt;code&gt;OVOLREC&lt;/code&gt; a une probabilité de &lt;code&gt;1&lt;/code&gt; de ne pas diminuer de plus de 5% par rapport au modèle stratégique à la période 8; mais que cette probabilité passe à &lt;code&gt;0&lt;/code&gt; à partir de la période 9, et reste à &lt;code&gt;0&lt;/code&gt; pendant toutes les autres périodes. Ainsi, il est certain que &lt;code&gt;OVOLREC&lt;/code&gt; ne se maintiendra pas au-dessus d&amp;rsquo;une baisse de 5% jusqu&amp;rsquo;a la période 10.&lt;/p&gt;
 &lt;p&gt;Cependant, on peut quand même observer un léger gain par rapport à la question 1; la probabilité que &lt;code&gt;OVOLREC&lt;/code&gt; ne diminue pas de plus de 5% descendait à &lt;code&gt;0&lt;/code&gt; dès la période 7 dans ces résultats. En poussant le modèle tactique à suivre la solution du modèle stratégique avec le mot clé &lt;code&gt;_SETGLOBALSCHEDULE(poids)&lt;/code&gt;, on a donc gagné deux périodes de stabilité en plus !&lt;/p&gt;
 &lt;/p&gt;
 &lt;/details&gt;
 &lt;h3 id=&#34;question-4&#34;&gt;Question 4&lt;/h3&gt;
-&lt;p&gt;À présent, dupliquez le fichier &lt;code&gt;TWD_land._opt&lt;/code&gt; de &lt;code&gt;Localex1&lt;/code&gt; dans le dossier &lt;code&gt;Localex4&lt;/code&gt; (supprimez le fichier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;À présent, dupliquez le fichier &lt;code&gt;TWD_land._opt&lt;/code&gt; de &lt;code&gt;Localex1&lt;/code&gt; dans le dossier &lt;code&gt;Localex4&lt;/code&gt; (supprimez le fichier existant s&amp;rsquo;il existe déjà).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Localex4&lt;/code&gt; afin de forcer le modèle tactique à suivre les tables de réplicas (&lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;) pour la récolte dans les types de peuplement1 et peuplement2 (utilisez &lt;a href=&#34;../replanning/#_replicateoutput&#34;&gt;&lt;code&gt;_REPLICATE()&lt;/code&gt;&lt;/a&gt;)&lt;/strong&gt;. En ce faisant, vous devez donc forcer le modèle tactique à faire un certain niveau de récolte dans des entités spatiales particulières du modèle (les peuplements 1 et 2) en vous basant sur des fichiers que vous fournissez au modèle (&lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;).&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-9&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
@@ -591,7 +591,7 @@ oVolRecPEUPLEMENT2 &amp;gt;= 0 1.._LENGTH _Goal(G4,9999) _REPLICATE(PEUPLEMENT2.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex4&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;p&gt;Lancez ensuite une replannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex4&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex4 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT,OVOLRECPEUPLEMENT1,OVOLRECPEUPLEMENT2 -fol replanning_EX4 -rep 10 -len 20 -rel 20 -thr 2
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, &lt;strong&gt;rendez vous dans le fichier &lt;code&gt;Localex4.csv&lt;/code&gt; du dossier &lt;code&gt;replanning_EX4&lt;/code&gt;, et observez les résultats des outputs &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; et &lt;code&gt;OVOLRECPEUPLEMENT2&lt;/code&gt;&lt;/strong&gt;. En particulier, vous pouvez creer une table pivot dans un logiciel comme Microsoft Excel afin d&amp;rsquo;obtenir un graphe montrant l&amp;rsquo;évolution de ces mesures à travers les périodes de temps, avec une courbe pour chacune des itérations.&lt;/p&gt;
@@ -599,7 +599,7 @@ oVolRecPEUPLEMENT2 &amp;gt;= 0 1.._LENGTH _Goal(G4,9999) _REPLICATE(PEUPLEMENT2.
 &lt;p&gt;&lt;strong&gt;En comparant le contenu de &lt;code&gt;Localex4.csv&lt;/code&gt; et de &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt;, qu&amp;rsquo;observez vous ?&lt;/strong&gt;&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-10&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
-  &lt;p&gt;&lt;p&gt;On peut voir que le modèle tactique à en effet suivit les niveaux de récolte définit dans les fichiers &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt; pour l&amp;rsquo;output &lt;code&gt;OVOLREC&lt;/code&gt; dans les peuplements 1 et deux.&lt;/p&gt;
+  &lt;p&gt;&lt;p&gt;On peut voir que le modèle tactique à en effet suivi les niveaux de récolte définit dans les fichiers &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt; et &lt;code&gt;PEUPLEMENT2.csv&lt;/code&gt; pour l&amp;rsquo;output &lt;code&gt;OVOLREC&lt;/code&gt; dans les peuplements 1 et deux.&lt;/p&gt;
 &lt;p&gt;En particulier, on peut voir que &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; descend à 0 pour la période 4 dans toutes les itérations, comme prévu dans &lt;code&gt;PEUPLEMENT1.csv&lt;/code&gt;. On peut aussi voir que l&amp;rsquo;itération 4 garde une valeur de &lt;code&gt;OVOLRECPEUPLEMENT1&lt;/code&gt; à 10 la plupart du temps, alors que les autres itérations gardent une valeur de 20.&lt;/p&gt;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
@@ -627,7 +627,7 @@ oVolRecPEUPLEMENT2 &amp;gt;= 0 1.._LENGTH _Goal(G4,9999) _REPLICATE(PEUPLEMENT2.
 &lt;/p&gt;
 &lt;/details&gt;
 &lt;h3 id=&#34;question-5&#34;&gt;Question 5&lt;/h3&gt;
-&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez le &lt;code&gt;Localex5&lt;/code&gt; (supprimez le dossier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez-le &lt;code&gt;Localex5&lt;/code&gt; (supprimez le dossier existant s&amp;rsquo;il existe déjà).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Localex5&lt;/code&gt; afin de forcer ce modèle tactique à ignorer la contrainte de plantation de 90 à 100ha à partir de la période (ou bien de ne la suivre que durant la période 1) en utilisant le mot clé &lt;a href=&#34;../replanning/#_reignoreperiod&#34;&gt;&lt;code&gt;_REIGNORE(période)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-11&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
@@ -652,11 +652,11 @@ osuppl &amp;lt;= 100 1 _Goal(G2,9999) _REIGNORE(2)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex5&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;p&gt;Lancez ensuite une replannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex5&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex5 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX5 -rep 10 -len 20 -rel 20 -thr 2
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, &lt;strong&gt;comparez l&amp;rsquo;évolution de l&amp;rsquo;output du niveau de plantations &lt;code&gt;OSUPPL&lt;/code&gt; dans le modèle tactique &lt;code&gt;Localex1&lt;/code&gt; (dans le dossier &lt;code&gt;replanning_EX1&lt;/code&gt; créé à la question 1) à l&amp;rsquo;évolution de &lt;code&gt;OSUPPL&lt;/code&gt; dans le modèle tactique &lt;code&gt;Localex5&lt;/code&gt; (dans le dossier &lt;code&gt;replanning_EX5&lt;/code&gt;)&lt;/strong&gt;. Comme précédemment, vous pouvez utiliser une table pivot dans un logiciel comme Microsoft Excel afin d&amp;rsquo;obtenir un graphe montrant l&amp;rsquo;évolution de ces mesures à travers les périodes de temps, avec une courbe pour chacune des itérations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quelles différences observez vous entre &lt;code&gt;Localex1&lt;/code&gt; et &lt;code&gt;Localex5&lt;/code&gt; ? ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quelles différences observez-vous entre &lt;code&gt;Localex1&lt;/code&gt; et &lt;code&gt;Localex5&lt;/code&gt; ? ?&lt;/strong&gt;&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-12&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
   &lt;p&gt;&lt;p&gt;On peut voir que le modèle tactique &lt;code&gt;Localex1&lt;/code&gt; arrive à soutenir le niveau de &lt;code&gt;OSUPPL&lt;/code&gt; pendant un long moment de manière stable, comme montré sur ce graphe :&lt;/p&gt;
@@ -687,7 +687,7 @@ osuppl &amp;lt;= 100 1 _Goal(G2,9999) _REIGNORE(2)
 &lt;/p&gt;
 &lt;/details&gt;
 &lt;h3 id=&#34;question-6&#34;&gt;Question 6&lt;/h3&gt;
-&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez le &lt;code&gt;Localex6&lt;/code&gt; (supprimez le dossier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Localex1&lt;/code&gt; et renommez-le &lt;code&gt;Localex6&lt;/code&gt; (supprimez le dossier existant s&amp;rsquo;il existe déjà).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Localex6&lt;/code&gt; afin de forcer ce modèle tactique à réaliser de 100% du niveau de récolte (&lt;code&gt;OVOLREC&lt;/code&gt;) du modèle stratégique, avec une variabilité de 1% autorisée pour le dépassement de la valeur (donc au moins 100%, et au plus 101%) avec le mot clé &lt;a href=&#34;../replanning/#_setfromglobalratio&#34;&gt;&lt;code&gt;_SETFROMGLOBAL(poids)&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-13&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
@@ -713,18 +713,18 @@ osuprec &amp;gt;= 40272 1.._LENGTH _Goal(G2,9999) _SETFROMGLOBAL(0.99)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex6&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;p&gt;Lancez ensuite une replannification avec le modèle stratégique &lt;code&gt;Globalex1&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex6&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex6 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX6 -rep 10 -len 20 -rel 20 -thr 2
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX6&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Comparez à présent la probabilité de maintenir une récoltée similaire à l&amp;rsquo;exercice 1 (avec &lt;code&gt;Localex1&lt;/code&gt;) en regardant le contenu de &lt;code&gt;outputsdrift.csv&lt;/code&gt; dans &lt;code&gt;replanning_EX1&lt;/code&gt; et &lt;code&gt;replanning_EX6&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quelles différences observez vous ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentes dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX6&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Comparez à présent la probabilité de maintenir une récolte similaire à l&amp;rsquo;exercice 1 (avec &lt;code&gt;Localex1&lt;/code&gt;) en regardant le contenu de &lt;code&gt;outputsdrift.csv&lt;/code&gt; dans &lt;code&gt;replanning_EX1&lt;/code&gt; et &lt;code&gt;replanning_EX6&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quelles différences observez-vous ?&lt;/strong&gt;&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-14&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
-  &lt;p&gt;On observe que la probabilité de maintient de &lt;code&gt;OVOLREC&lt;/code&gt; dans le modèle tactique au dessus d&amp;rsquo;une diminution de 5% par rapport au modèle stratégique est relativement similaire entre &lt;code&gt;Localex1&lt;/code&gt; et &lt;code&gt;Localex6&lt;/code&gt;; si ce n&amp;rsquo;est que &lt;code&gt;Localex6&lt;/code&gt; à une valeur plus basse de cette probabilité à la période 7, quand celle-ci chute vers 0.&lt;/p&gt;
+  &lt;p&gt;On observe que la probabilité de maintient de &lt;code&gt;OVOLREC&lt;/code&gt; dans le modèle tactique au-dessus d&amp;rsquo;une diminution de 5% par rapport au modèle stratégique est relativement similaire entre &lt;code&gt;Localex1&lt;/code&gt; et &lt;code&gt;Localex6&lt;/code&gt;; si ce n&amp;rsquo;est que &lt;code&gt;Localex6&lt;/code&gt; à une valeur plus basse de cette probabilité à la période 7, quand celle-ci chute vers 0.&lt;/p&gt;
 &lt;/details&gt;
 &lt;h3 id=&#34;question-7&#34;&gt;Question 7&lt;/h3&gt;
-&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Globalex1&lt;/code&gt; et renommez le &lt;code&gt;Globalex7&lt;/code&gt; (supprimez le dossier existant si il existe déjà).&lt;/p&gt;
+&lt;p&gt;À présent, dupliquez le dossier &lt;code&gt;Globalex1&lt;/code&gt; et renommez-le &lt;code&gt;Globalex7&lt;/code&gt; (supprimez le dossier existant s&amp;rsquo;il existe déjà).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Modifiez ensuite le fichier &lt;code&gt;TWD_land.opt&lt;/code&gt; de &lt;code&gt;Globalex7&lt;/code&gt; afin de forcer le scénario &lt;code&gt;Globalex7&lt;/code&gt; à réaliser au moins 99% du niveau de récolte &lt;code&gt;OVOLREC&lt;/code&gt; du modèle tactique&lt;/strong&gt;.&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-15&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
@@ -751,15 +751,15 @@ _NDY(oVolRec) 1.._LENGTH
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;p&gt;Lancez ensuite une re-plannification avec le modèle stratégique &lt;code&gt;Globalex7&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
+&lt;p&gt;Lancez ensuite une replannification avec le modèle stratégique &lt;code&gt;Globalex7&lt;/code&gt; et le modèle tactique &lt;code&gt;Localex1&lt;/code&gt;, avec la commande suivante :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex7 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX7 -rep 10 -len 20 -rel 20 -thr 2
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentent dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX7&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Observez à présent comment se compare le maintient du niveau des plantations (output &lt;code&gt;OSSUPL&lt;/code&gt;) entre ceux de la question 1, et ceux de cette re-plannification en regardant les fichiers &lt;code&gt;outputsdrift.csv&lt;/code&gt; de &lt;code&gt;replanning_EX1&lt;/code&gt; et &lt;code&gt;replanning_EX7&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Une fois que la commande s&amp;rsquo;est éxécutée, regardez les sorties présentes dans le dossier &lt;code&gt;Examples/Python/replanning/replanning_EX7&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observez à présent comment se compare le maintient du niveau des plantations (output &lt;code&gt;OSSUPL&lt;/code&gt;) entre ceux de la question 1, et ceux de cette replannification en regardant les fichiers &lt;code&gt;outputsdrift.csv&lt;/code&gt; de &lt;code&gt;replanning_EX1&lt;/code&gt; et &lt;code&gt;replanning_EX7&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Comment se comparent le maintient du niveau de &lt;code&gt;OSSUPL&lt;/code&gt; par rapport à la question 1 ?&lt;/strong&gt;&lt;/p&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-16&#34;&gt;
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
-  &lt;p&gt;&lt;p&gt;On peut remarquer que pour la question 1 et cette question, &lt;code&gt;OSSUPL&lt;/code&gt; garde une probabilité très basse de se maintenir au dela d&amp;rsquo;une grande diminution dès le premières périodes lorsque l&amp;rsquo;on compare le modèle tactique et stratégique.&lt;/p&gt;
+  &lt;p&gt;&lt;p&gt;On peut remarquer que pour la question 1 et cette question, &lt;code&gt;OSSUPL&lt;/code&gt; garde une probabilité très basse de se maintenir au dela d&amp;rsquo;une grande diminution dès les premières périodes lorsque l&amp;rsquo;on compare le modèle tactique et stratégique.&lt;/p&gt;
 &lt;p&gt;Cependant, même pour des valeurs de drifts très hautes (e.g. 50%), on peut voir que &lt;code&gt;OSSUPL&lt;/code&gt; à tendance à avoir une plus haute probabilité de grandement diminuer sa valeur avec &lt;code&gt;Globalex7&lt;/code&gt; plutot qu&amp;rsquo;avec &lt;code&gt;Globalex1&lt;/code&gt;.&lt;/p&gt;
 &lt;/p&gt;
 &lt;/details&gt;
@@ -776,14 +776,14 @@ _NDY(oVolRec) 1.._LENGTH
 &lt;p&gt;Dans l&amp;rsquo;approche POO ou Object oriented programming en anglais (OOP), le programme utilise différents &amp;ldquo;objets&amp;rdquo; qui ont une certaine &amp;ldquo;classe&amp;rdquo; et qui peuvent avoir différentes &amp;ldquo;fonctions&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Vous connaissez et utilisez peut-être déjà des fonctions dans des logiciels tels que &amp;ldquo;R&amp;rdquo;. Par exemple, dans R, &lt;code&gt;plot()&lt;/code&gt; est une fonction.&lt;/p&gt;
 &lt;p&gt;Vous pourriez également être habitué.e à &lt;em&gt;certains&lt;/em&gt; objets et classes dans le logiciel que vous utilisez. Par exemple, dans &lt;code&gt;R&lt;/code&gt;, &lt;code&gt;data&amp;lt;-read.csv (données.csv)&lt;/code&gt; met le contenu des &lt;code&gt;données.fichier csv&lt;/code&gt; dans l&amp;rsquo;objet &lt;code&gt;data&lt;/code&gt;, qui a la classe &lt;code&gt;data frame&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&amp;rsquo;une classe particulière. Par exemple, une classe &lt;code&gt;chien&lt;/code&gt; aurait la fonction &lt;code&gt;abboyer_sur()&lt;/code&gt;. Si nous avons une classe nommée &lt;code&gt;chat&lt;/code&gt;, nous pourrions alors :&lt;/p&gt;
+&lt;p&gt;Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&amp;rsquo;une classe particulière. Par exemple, une classe &lt;code&gt;chien&lt;/code&gt; aurait la fonction &lt;code&gt;aboyer_sur()&lt;/code&gt;. Si nous avons une classe nommée &lt;code&gt;chat&lt;/code&gt;, nous pourrions alors :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Créer un nouvel objet &lt;code&gt;chien&lt;/code&gt; de la classe &lt;code&gt;chien&lt;/code&gt; : &lt;code&gt;pluto = chien(nom = Pluto, age = 8)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Créer un nouvel objet &lt;code&gt;chat&lt;/code&gt; à partir de la classe &lt;code&gt;chat&lt;/code&gt; : &lt;code&gt;felix = chat(nom = Felix, age = 2)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Faire aboyer le chien sur le chat: &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Faire aboyer le chien sur le chat: &lt;code&gt;pluto.aboyer_sur(felix)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;À son tour, l&amp;rsquo;objet peut avoir des &amp;ldquo;propriétés&amp;rdquo;, qui sont exactement ce à quoi cela ressemble. Par exemple, disons que notre classe &lt;code&gt;chat&lt;/code&gt; a trois propriétés : &lt;code&gt;nom&lt;/code&gt; (qui peut être une chaîne de caractères), &lt;code&gt;age&lt;/code&gt; (qui peut être un nombre) et &lt;code&gt;effrayé&lt;/code&gt; (qui est un booléen, &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Dans notre exemple précédent, avant d&amp;rsquo;utiliser &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, la propriété &lt;code&gt;felix.peur&lt;/code&gt; pouvait être &lt;code&gt;false&lt;/code&gt;. Mais maintenant que nous avons utilisé &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, &lt;code&gt;felix.peur&lt;/code&gt; s&amp;rsquo;est surement changé en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Dans notre exemple précédent, avant d&amp;rsquo;utiliser &lt;code&gt;pluto.aboyer_sur(felix)&lt;/code&gt;, la propriété &lt;code&gt;felix.peur&lt;/code&gt; pouvait être &lt;code&gt;false&lt;/code&gt;. Mais maintenant que nous avons utilisé &lt;code&gt;pluto.aboyer_sur(felix)&lt;/code&gt;, &lt;code&gt;felix.peur&lt;/code&gt; s&amp;rsquo;est surement changé en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Enfin, une &lt;em&gt;classe parent&lt;/em&gt; en programmation orientée objet signifie que la &lt;em&gt;classe enfant&lt;/em&gt; &lt;em&gt;héritera&lt;/em&gt; automatiquement de toutes les fonctions et propriétés de la fonction parent.&lt;/p&gt;
 &lt;p&gt;Par exemple, supposons que nous ayons une classe parent &lt;code&gt;animal&lt;/code&gt; dont dérivent les classes &lt;code&gt;chien&lt;/code&gt; et &lt;code&gt;chat&lt;/code&gt;. Si la classe &lt;code&gt;animal&lt;/code&gt; a une fonction &lt;code&gt;respiration&lt;/code&gt; (&lt;code&gt;animal.respiration()&lt;/code&gt;), alors les classes &lt;code&gt;chien&lt;/code&gt; et &lt;code&gt;chat&lt;/code&gt; étant ses classes &lt;em&gt;enfant&lt;/em&gt;, elles auront automatiquement cette fonction (&lt;code&gt;chien.respiration()&lt;/code&gt;) et &lt;code&gt;chat.respiration()&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;La &lt;em&gt;programmation orientée objet&lt;/em&gt; est une façon particulière de programmer, intégrée dans le langage de programmation que vous utilisez, qui présente de multiples avantages. L&amp;rsquo;un d&amp;rsquo;eux est de rendre les choses plus faciles à représenter.&lt;/p&gt;
@@ -796,12 +796,12 @@ _NDY(oVolRec) 1.._LENGTH
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Parser&lt;/code&gt;&lt;/strong&gt; : Contient des classes utilisées pour lire ou éditer les fichiers des modèles au format Woodstock&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Models&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour manipuler et résoudre les modèles&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Spatial&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour travailler sur des données spatialement explicites&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Heuristics&lt;/code&gt;&lt;/strong&gt; : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Heuristics&lt;/code&gt;&lt;/strong&gt; : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupes et les planifier dans le temps&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/strong&gt;: Contient des informations sur la version actuelle de FMT, et les fonctions qu&amp;rsquo;elle contient (ce qui dépend de la façon dont il a été compilée)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si vous regardez l&#39;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
+    Si vous regardez l&amp;rsquo;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;classes-importantes-de-lespace-de-noms-parser&#34;&gt;Classes importantes de l&amp;rsquo;espace de noms &lt;code&gt;Parser&lt;/code&gt;&lt;/h2&gt;
@@ -975,7 +975,7 @@ Done reading Tue Oct 05 10:59:57 2021
 &lt;p&gt;Par exemple, pour voir la liste des objets &lt;code&gt;FMTaction&lt;/code&gt; associés à un &lt;code&gt;FMTmodel&lt;/code&gt; particulier, vous pouvez utiliser la fonction &lt;code&gt;FMTModel.getactions()&lt;/code&gt; (ou &lt;code&gt;FMTModel$getactions()&lt;/code&gt; en R), et utiliser une boucle &lt;code&gt;for&lt;/code&gt; pour afficher toutes les actions dans le modèle. &lt;strong&gt;Les actions affichées de cette manière correspondront aux actions présentes dans le fichier &lt;code&gt;.act&lt;/code&gt; des fichiers Woodstock pour le modèle&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Voici un exemple qui affiche les actions et les transitions d&amp;rsquo;un &lt;code&gt;FMTmodel&lt;/code&gt; en code R :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(FMT) # Charge FMT dans R
-if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
+if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifier si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
 {
 	# Créer un objet parser pour lire les fichiers du modèle
 	newmodelparser &amp;lt;- new(FMTmodelparser)
@@ -992,7 +992,7 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a ét
 	print(&amp;quot;***** Here is the name of the transitions&amp;quot;)
 	for (transition in model$gettransitions())
 	{
-		# On concaténe l&#39;entrée pour la transition afin de la rendre plus lisible dans le terminal
+		# On concatène l&#39;entrée pour la transition afin de la rendre plus lisible dans le terminal
 		cat(transition$str())
 	}
 
@@ -1183,7 +1183,7 @@ _DEATH
 &lt;p&gt;Il peut résoudre un modèle de planification forestière de type III, et obtenir un calendrier de récolte optimal en utilisant les contraintes et les objectifs définis par l&amp;rsquo;utilisateur.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34;&gt;cet article&lt;/a&gt;.
+    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cet article&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Le &lt;code&gt;FMTlpmodel&lt;/code&gt; contient un objet appelé &lt;code&gt;FMTgraph&lt;/code&gt;, qui contient le &lt;em&gt;graphe&lt;/em&gt; du modèle. Le graphe est un ensemble de noeuds reliés entre eux par des liens. Chaque noeud correspond à un état possible pour une strate particulière (qui sont des groupes de peuplements forestiers référencés dans l&amp;rsquo;espace avec les mêmes caractéristiques), et chaque lien représente une façon particulière dont elle peut évoluer vers un autre état dans la même période de temps et entre les périodes.&lt;/p&gt;
@@ -1424,7 +1424,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 		print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;) # Si le modèle n&#39;as pas été compilé avec OSI, on affiche une erreur
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;résoudre-le-fmtlpmodel&#34;&gt;Résoudre le &lt;code&gt;FMTlpmodel&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le &lt;code&gt;FMTlpmodel&lt;/code&gt; peut être résolu en utilisant la fonction &lt;code&gt;FMTlpmodel.initialsolve()&lt;/code&gt;. La fonction renvoie une valeur &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt; selon que le modèle a été résolu avec succès. Si la résolution s&amp;rsquo;est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différente manières (un exemple est présenté plus bas).&lt;/p&gt;
+&lt;p&gt;Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le &lt;code&gt;FMTlpmodel&lt;/code&gt; peut être résolu en utilisant la fonction &lt;code&gt;FMTlpmodel.initialsolve()&lt;/code&gt;. La fonction renvoie une valeur &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt; selon que le modèle a été résolu avec succès. Si la résolution s&amp;rsquo;est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différentes manières (un exemple est présenté plus bas).&lt;/p&gt;
 &lt;h2 id=&#34;construire-le-graphe-avec-une-solution-existante-construction-partielle&#34;&gt;Construire le graphe avec une solution existante (construction partielle)&lt;/h2&gt;
 &lt;p&gt;Parfois, on peut vouloir obtenir des résultats d&amp;rsquo;une solution/planification que l&amp;rsquo;on a déjà déjà (voir la section suivante) sans résoudre le modèle à nouveau, puisqu&amp;rsquo;il a déjà été résolu précédemment.&lt;/p&gt;
 &lt;p&gt;Dans ce cas, il est possible de lire une solution qui a été trouvée précédemment, et de construire le &lt;code&gt;FMTgraph&lt;/code&gt; du modèle en générant seulement les noeuds et les liens utilisés par la solution.&lt;/p&gt;
@@ -1433,7 +1433,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 &lt;li&gt;Lire le fichier de calendrier du scénario, et le passer à la fonction &lt;code&gt;FMTlpmodel.buildperiod()&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Définir la solution pour chaque période avec la fonction &lt;code&gt;FMTlpmodel.setsolution()&lt;/code&gt;.
 &lt;ul&gt;
-&lt;li&gt;Si le modèle contient plusieurs actions &lt;code&gt;_LOCKEXEMPT&lt;/code&gt;, l&amp;rsquo;utilisation de &lt;code&gt;FMTlpmodel.setsolution()&lt;/code&gt; peut provoquer des erreurs car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction &lt;code&gt;FMTlpmodel.setsolutionbylp()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Si le modèle contient plusieurs actions &lt;code&gt;_LOCKEXEMPT&lt;/code&gt;, l&amp;rsquo;utilisation de &lt;code&gt;FMTlpmodel.setsolution()&lt;/code&gt; peut provoquer des erreurs, car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction &lt;code&gt;FMTlpmodel.setsolutionbylp()&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1614,13 +1614,13 @@ Solution set at period   20
 &lt;p&gt;La solution d&amp;rsquo;un modèle peut être mise dans une liste en utilisant la fonction &lt;code&gt;FMTlpmodel.getsolution()&lt;/code&gt; pour chacune des périodes d&amp;rsquo;intérêt.&lt;/p&gt;
 &lt;p&gt;Ensuite, la liste des solutions pour chaque période doit être transformée en un vecteur, qui peut ensuite être écrit dans un fichier &lt;code&gt;.txt&lt;/code&gt; en utilisant la fonction &lt;code&gt;FMTscheduleparser.write()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Pour un exemple, voir &lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;pré-solution-dun-modèle&#34;&gt;Pré-solution d&amp;rsquo;un modèle&lt;/h2&gt;
+&lt;h2 id=&#34;présolution-dun-modèle&#34;&gt;Présolution d&amp;rsquo;un modèle&lt;/h2&gt;
 &lt;p&gt;Certains modèles peuvent être difficiles à résoudre, à cause de leur nombre élevé d&amp;rsquo;actions, de strates, et ainsi de suite.&lt;/p&gt;
-&lt;p&gt;Dans ce cas, la fonction &lt;code&gt;FMTmodel.basepresolve()&lt;/code&gt; peut être utilisée pour pré-solutioner le modèle.&lt;/p&gt;
+&lt;p&gt;Dans ce cas, la fonction &lt;code&gt;FMTmodel.basepresolve()&lt;/code&gt; peut être utilisée pour présolutioner le modèle.&lt;/p&gt;
 &lt;p&gt;Cette fonction retourne un modèle avec moins de thèmes, d&amp;rsquo;actions, de transitions, de sorties et de contraintes que le modèle original, mais avec la même quantité d&amp;rsquo;informations. Cela le rend plus facile à résoudre, tout en donnant la même réponse à la fin.&lt;/p&gt;
-&lt;p&gt;Dans certaines situations, FMT pré-solutionerra le modèle automatiquement.&lt;/p&gt;
+&lt;p&gt;Dans certaines situations, FMT présolutionerra le modèle automatiquement.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Maintenant que vous savez tout ce qu&amp;rsquo;il y a à savoir sur l&amp;rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&amp;rsquo;essayer l&#39;&lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt; pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.&lt;/p&gt;
+&lt;p&gt;Maintenant que vous savez tout ce qu&amp;rsquo;il y a à savoir sur l&amp;rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&amp;rsquo;essayer l&amp;rsquo;&lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt; pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.&lt;/p&gt;
 </description>
     </item>
     
@@ -1683,7 +1683,7 @@ Solution set at period   20
                height=&#34;255&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;Ce calendrier d&amp;rsquo;ouverture et de fermeture de COS va ainsi permettre de communiquer les contraintes spatiales aux modèles de programmation linéaire basés sur des fichiers Woodstock que FMT utilise (voir &lt;a href=&#34;../../basics/spatially_referenced_optimization/&#34;&gt;les bases de FMT&lt;/a&gt;). FMT va alors pouvoir générer une nouvelle solution pour un modèle avec l&amp;rsquo;ajout de ce calendrier. Bien évidemment, lorsque l&amp;rsquo;on ajoute des contraintes additionnelles au modèle, cela a généralement pour cause de réduire la quantité de bois qui est récoltable dans la solution optimale. Ainsi, l&amp;rsquo;ajout de ce calendrier d&amp;rsquo;ouvertures et de fermetures de COS va réduire le bois récolté dans la nouvelle solution généré par FMT.&lt;/p&gt;
+&lt;p&gt;Ce calendrier d&amp;rsquo;ouverture et de fermeture de COS va ainsi permettre de communiquer les contraintes spatiales aux modèles de programmation linéaire basés sur des fichiers Woodstock que FMT utilise (voir &lt;a href=&#34;../../basics/spatially_referenced_optimization/&#34;&gt;les bases de FMT&lt;/a&gt;). FMT va alors pouvoir générer une nouvelle solution pour un modèle avec l&amp;rsquo;ajout de ce calendrier. Bien évidemment, lorsque l&amp;rsquo;on ajoute des contraintes additionnelles au modèle, cela a généralement pour cause de réduire la quantité de bois qui est récoltable dans la solution optimale. Ainsi, l&amp;rsquo;ajout de ce calendrier d&amp;rsquo;ouvertures et de fermetures de COS va réduire le bois récolté dans la nouvelle solution générée par FMT.&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;idée est alors de trouver un calendrier &amp;ldquo;optimal&amp;rdquo; qui va réduire le moins possible la quantité de bois récoltable dans la solution du modèle. On peut le faire par le biais du processus itératif suivant :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;On calcule la solution du modèle sans calendrier.&lt;/li&gt;
@@ -1738,7 +1738,7 @@ Solution set at period   20
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Il est possible de résoudre le problème de l&amp;rsquo;optimisation du calendrier avec des méthodes plus complexes, comme celle du &lt;em&gt;mixed integer programming&lt;/em&gt; (MIP) pour obtenir une solution vraiment optimale.
-Cependant, ces algorithmes peuvent demander beaucoup trop de calcul pour des modèles de programmation linéaire qui concernent des paysages forestiers complexes. Dans ce cas-là, le &lt;em&gt;greedy algorithm&lt;/em&gt; est utile pour éviter des temps de calcul trop long.
+Cependant, ces algorithmes peuvent demander beaucoup trop de calcul pour des modèles de programmation linéaire qui concernent des paysages forestiers complexes. Dans ce cas-là, le &lt;em&gt;greedy algorithm&lt;/em&gt; est utile pour éviter des temps de calcul trop longs.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;limplémentation-des-cos-dans-des-fichiers-woodstock&#34;&gt;L&amp;rsquo;implémentation des COS dans des fichiers Woodstock&lt;/h2&gt;
@@ -1801,24 +1801,24 @@ Cependant, ces algorithmes peuvent demander beaucoup trop de calcul pour des mod
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
     &lt;p&gt;Cette documentation ne traitera pas du problème de la définition des COS, que l&amp;rsquo;on appelle le &lt;em&gt;clustering&lt;/em&gt;. Idéalement, définir les COS (c.-à-d. attribuer des numéros de COS a des peuplements) devrait se faire en même temps qu&amp;rsquo;optimiser le calendrier; mais cela représente une opération très complexe. Ainsi, le clustering est généralement fait en amont de l&amp;rsquo;optimisation du calendrier, en regroupant des strates similaires et proches dans l&amp;rsquo;espace.&lt;/p&gt;
-&lt;p&gt;Ainsi, &lt;strong&gt;pour pouvoir utiliser les fonctions suivantes, les COS doivent déjà avoir été insérés dans les fichiers du modèle sous forme de numéros de COS associés aux peuplements par des masques&lt;/strong&gt;. Voir la &lt;a href=&#34;#limpl%C3%A9mentation-des-cos-dans-des-fichiers-woodstock&#34;&gt;section précédente&lt;/a&gt; pour plus d&amp;rsquo;information.&lt;/p&gt;
+&lt;p&gt;Ainsi, &lt;strong&gt;pour pouvoir utiliser les fonctions suivantes, les COS doivent déjà avoir été insérés dans les fichiers du modèle sous forme de numéros de COS associés aux peuplements par des masques&lt;/strong&gt;. Voir la &lt;a href=&#34;#limpl%c3%a9mentation-des-cos-dans-des-fichiers-woodstock&#34;&gt;section précédente&lt;/a&gt; pour plus d&amp;rsquo;information.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;création-des-cos-au-sein-dun-modèle-de-programmation-linéaire-dans-fmt&#34;&gt;Création des COS au sein d&amp;rsquo;un modèle de programmation linéaire dans FMT&lt;/h3&gt;
 &lt;p&gt;Dans FMT, une fois qu&amp;rsquo;un modèle linéaire a été créé en se basant sur des fichiers woodstock (voir &lt;a href=&#34;../../basics/spatially_referenced_optimization/&#34;&gt;les bases de FMT&lt;/a&gt;), il est possible de créer la structure des COS au sein du modèle (voir sections précédentes) par le biais de la fonction &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;La fonction &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt; sert à construire un seul COS au sein du modèle, et doit donc être répétée pour chacun des COS qui doit être créée. Elle nécessite différents paramètres. Ces paramètres servent à donner des contraintes sur comment et quand un COS peut être ouvert dans le calendrier.&lt;/p&gt;
+&lt;p&gt;La fonction &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt; sert à construire un seul COS au sein du modèle, et doit donc être répétée pour chacun des COS qui doit être créé. Elle nécessite différents paramètres. Ces paramètres servent à donner des contraintes sur comment et quand un COS peut être ouvert dans le calendrier.&lt;/p&gt;
 &lt;p&gt;Vous trouverez un exemple de cette création dans la &lt;a href=&#34;#exemple-de-script&#34;&gt;section suivante&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
-    Le calendrier d&amp;rsquo;ouverture et de fermeture des COS que FMT pourra créer par la suite est très sensible à ces différents paramètres. Si ceux-ci sont mal indiqués, FMT pourra être incapable de trouver une solution réalisable au modèle.
+    Le calendrier d&amp;rsquo;ouverture et de fermeture des COS que FMT pourra créer par la suite est très sensible à ces différents paramètres. Si ceux-ci sont mal indiqués, FMT pourrait être incapable de trouver une solution réalisable au modèle.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;Le premier paramètre contient le COS à créer en soi. Celui-ci peut être construit à l&amp;rsquo;aide de la fonction &lt;code&gt;Heuristics.FMToperatingarea()&lt;/code&gt;, qui prend elle-même deux paramètres : le premier est le masque qui va décrire quels peuplements seront contenus dans ce COS, et le second est le &lt;code&gt;neihgbors perimeter&lt;/code&gt;, ou &lt;em&gt;périmètres des voisins&lt;/em&gt;. Ce second paramètre décrit le ratio du périmètre du COS que celle-ci doit avoir en commun avec un autre COS pour que les deux soient considérés comme voisins. Par exemple, si le périmètre des voisins est de 0.5, alors 50% du périmètre du COS doit être partagé avec un autre COS pour qu&amp;rsquo;ils soient considérés comme voisins.&lt;/li&gt;
+&lt;li&gt;Le premier paramètre contient le COS à créer en soi. Celui-ci peut être construit à l&amp;rsquo;aide de la fonction &lt;code&gt;Heuristics.FMToperatingarea()&lt;/code&gt;, qui prend elle-même deux paramètres : le premier est le masque qui va décrire quels peuplements seront contenus dans ce COS, et le second est le &lt;code&gt;neihgbors perimeter&lt;/code&gt;, ou &lt;em&gt;périmètre des voisins&lt;/em&gt;. Ce second paramètre décrit le ratio du périmètre du COS que celui-ci doit avoir en commun avec un autre COS pour que les deux soient considérés comme voisins. Par exemple, si le périmètre des voisins est de 0.5, alors 50% du périmètre du COS doit être partagé avec un autre COS pour qu&amp;rsquo;ils soient considérés comme voisins.&lt;/li&gt;
 &lt;li&gt;Le deuxième paramètre est le &lt;code&gt;opening time&lt;/code&gt;, ou le temps d&amp;rsquo;ouverture. Il définit combien de temps le COS doit rester ouvert lorsqu&amp;rsquo;il est ouvert sur une période. Par exemple, si le temps d&amp;rsquo;ouverture est de 5, alors le COS sera toujours ouvert pour 5 périodes à la fois.&lt;/li&gt;
-&lt;li&gt;Le troisième paramètre est le &lt;code&gt;return time&lt;/code&gt;, ou temps de retour. Il correspond au nombre de périodes de temps qui doivent être respectées avant que le COS soit réouvert dans le futur. Par exemple, si le temps de retour est de 5, alors il doit y avoir au moins 5 périodes de temps entre deux ouvertures du COS.&lt;/li&gt;
-&lt;li&gt;Le quatrième paramètre est le &lt;code&gt;repetition pattern&lt;/code&gt;, ou la répétition du patron de récolte. Il est supérieur ou égal à 1, et il va effectivement forcer le COS à suivre plusieurs fois un patron d&amp;rsquo;ouvertures/fermetures dans le temps qui correspond à une alternance entre son temps d&amp;rsquo;ouverture et de fermeture. Par exemple, pour un temps d&amp;rsquo;ouverture de 2, un temps de fermeture de 3 et une valeur de répétition du patron de récolte de 2, une fois le COS ouvert, il suivra automatique le calendrier &amp;ldquo;ouvert, ouvert, fermé, fermé, fermé, ouvert, ouvert, fermé, fermé, fermé&amp;rdquo;, ce qui correspondant à 2 répétitions de ses paramètres d&amp;rsquo;ouverture et de fermeture.&lt;/li&gt;
-&lt;li&gt;Le cinquième paramètre est la &lt;code&gt;green up period&lt;/code&gt;, ou période de verdissement. Elle correspond au délai que doit attendre le COS pour être ouvert à nouveau si un COS voisin est récolté. Les COS voisins sont en retours trouvés grâce au périmètre des voisins donné plus tôt.&lt;/li&gt;
+&lt;li&gt;Le troisième paramètre est le &lt;code&gt;return time&lt;/code&gt;, ou temps de retour. Il correspond au nombre de périodes de temps qui doivent être respectés avant que le COS soit réouvert dans le futur. Par exemple, si le temps de retour est de 5, alors il doit y avoir au moins 5 périodes de temps entre deux ouvertures du COS.&lt;/li&gt;
+&lt;li&gt;Le quatrième paramètre est le &lt;code&gt;repetition pattern&lt;/code&gt;, ou la répétition du patron de récolte. Il est supérieur ou égal à 1, et il va effectivement forcer le COS à suivre plusieurs fois un patron d&amp;rsquo;ouvertures/fermetures dans le temps qui correspond à une alternance entre son temps d&amp;rsquo;ouverture et de fermeture. Par exemple, pour un temps d&amp;rsquo;ouverture de 2, un temps de fermeture de 3 et une valeur de répétition du patron de récolte de 2, une fois le COS ouvert, il suivra automatiquement le calendrier &amp;ldquo;ouvert, ouvert, fermé, fermé, fermé, ouvert, ouvert, fermé, fermé, fermé&amp;rdquo;, ce qui correspondant à 2 répétitions de ses paramètres d&amp;rsquo;ouverture et de fermeture.&lt;/li&gt;
+&lt;li&gt;Le cinquième paramètre est la &lt;code&gt;green up period&lt;/code&gt;, ou période de verdissement. Elle correspond au délai que doit attendre le COS pour être ouvert à nouveau si un COS voisin est récolté. Les COS voisins sont en retour trouvés grâce au périmètre des voisins donné plus tôt.&lt;/li&gt;
 &lt;li&gt;Le sixième paramètre est la &lt;code&gt;starting period&lt;/code&gt;, ou période de départ. Elle correspond à la période à partir de laquelle le COS peut commencer à être ouvert dans le modèle.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Tous les COS créés par la fonction &lt;code&gt;Heuristics.FMToperatingareascheme()&lt;/code&gt; doivent idéalement être mis au sein d&amp;rsquo;une liste, qui sera donnée en paramètre à une autre fonction par la suite.&lt;/p&gt;
@@ -1846,17 +1846,17 @@ opeareas = areap.getschemeneighbors(opeareas,modelthemes,shapefileLocation,&amp;
 &lt;p&gt;Pour plus d&amp;rsquo;informations, voir la &lt;a href=&#34;../../../../doxygen/html/classParser_1_1FMTareaparser.html#a000283e41dfb73733984a4292b6dfa4a&#34;&gt;page doxygen de &lt;code&gt;FMTareaparser&lt;/code&gt; et la section sur &lt;code&gt;getschemeneighbors&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;création-dun-output-node-lié-aux-actions-influencées-par-le-calendrier-des-cos&#34;&gt;Création d&amp;rsquo;un &lt;em&gt;output node&lt;/em&gt; lié aux actions influencées par le calendrier des COS.&lt;/h3&gt;
 &lt;p&gt;Afin de pouvoir commencer à optimiser le calendrier des COS (voir &lt;a href=&#34;#lancement-du-greedy-algorithm-et-r%c3%a9cup%c3%a9ration-du-calendrier-optimis%c3%a9&#34;&gt;section suivante&lt;/a&gt;), il faut fournir à FMT différentes informations quand aux actions et aux peuplements qui seront affectés par les COS. Pour ce faire, FMT a besoin des &lt;code&gt;FMToutputnode&lt;/code&gt; liés aux actions qui seront visées par les ouvertures et fermeture de COS (par exemple, un type de coupes qui ne peuvent pas se faire trop proches les une des autres). Ces objets sont seulement utilisés parce qu&amp;rsquo;ils sont les plus utiles pour cette étape, et non pas parce qu&amp;rsquo;ils sont les seuls qui peuvent donner ces informations à FMT.&lt;/p&gt;
-&lt;p&gt;Les objets &lt;code&gt;FMToutputnode&lt;/code&gt; contiennent les &lt;em&gt;output nodes&lt;/em&gt; du modèle linéaire. Ces derniers sont composés de 4 éléments : un masque (pour définir les peuplements considérés par l&#39;&lt;em&gt;output node&lt;/em&gt;), une action, un yield, et un paramètre qui peut être utilisé pour modifier le yield. Par exemple, un &lt;em&gt;output node&lt;/em&gt; peut concerner 80% du volume brut récolté par les coupes totales dans tous les peuplements via la mention &lt;code&gt;? ? ? coupetotale volumebrut * 0.88&lt;/code&gt;. Les &lt;em&gt;output nodes&lt;/em&gt; sont indiqués dans le fichier &lt;code&gt;.out&lt;/code&gt; de la formulation Woodstock. Plusieurs &lt;em&gt;output nodes&lt;/em&gt; peuvent alors être combiné pour donner un seul output.&lt;/p&gt;
+&lt;p&gt;Les objets &lt;code&gt;FMToutputnode&lt;/code&gt; contiennent les &lt;em&gt;output nodes&lt;/em&gt; du modèle linéaire. Ces derniers sont composés de 4 éléments : un masque (pour définir les peuplements considérés par l&amp;rsquo;&lt;em&gt;output node&lt;/em&gt;), une action, un yield, et un paramètre qui peut être utilisé pour modifier le yield. Par exemple, un &lt;em&gt;output node&lt;/em&gt; peut concerner 80% du volume brut récolté par les coupes totales dans tous les peuplements via la mention &lt;code&gt;? ? ? coupetotale volumebrut * 0.88&lt;/code&gt;. Les &lt;em&gt;output nodes&lt;/em&gt; sont indiqués dans le fichier &lt;code&gt;.out&lt;/code&gt; de la formulation Woodstock. Plusieurs &lt;em&gt;output nodes&lt;/em&gt; peuvent alors être combiné pour donner un seul output.&lt;/p&gt;
 &lt;p&gt;Afin de fournir ces &lt;code&gt;FMToutputnode&lt;/code&gt; à FMT, deux méthodes sont disponibles :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Il est possible de créer un nouvel objet &lt;code&gt;FMToutputnode&lt;/code&gt; qui contiendra toutes les actions visées par les COS en faisant un agrégat de ces actions. Pour ce faire, il suffit d&amp;rsquo;indiquer un nom d&amp;rsquo;agrégat d&amp;rsquo;action à toutes les actions visées via la fonction &lt;code&gt;push_aggregate()&lt;/code&gt; associées aux objets &lt;code&gt;FMTaction&lt;/code&gt;; puis, à fournir ce nom d&amp;rsquo;agrégats au constructeur de &lt;code&gt;FMToutputnode&lt;/code&gt;. Si ces actions concernent tous les peuplements possibles, le constructeur pour alors prendre la forme &lt;code&gt;FMToutputnode(Core.FMTmask((&amp;quot;? &amp;quot;*len(themes))[:-1],themes),Agg_name)&lt;/code&gt;, avec &lt;code&gt;Agg_name&lt;/code&gt; contenant le nom de l&amp;rsquo;agrégat des actions visées par les COS.&lt;/li&gt;
+&lt;li&gt;Il est possible de créer un nouvel objet &lt;code&gt;FMToutputnode&lt;/code&gt; qui contiendra toutes les actions visées par les COS en faisant un agrégat de ces actions. Pour ce faire, il suffit d&amp;rsquo;indiquer un nom d&amp;rsquo;agrégat d&amp;rsquo;action à toutes les actions visées via la fonction &lt;code&gt;push_aggregate()&lt;/code&gt; associées aux objets &lt;code&gt;FMTaction&lt;/code&gt;; puis, à fournir ce nom d&amp;rsquo;agrégats au constructeur de &lt;code&gt;FMToutputnode&lt;/code&gt;. Si ces actions concernent tous les peuplements possibles, le constructeur poura alors prendre la forme &lt;code&gt;FMToutputnode(Core.FMTmask((&amp;quot;? &amp;quot;*len(themes))[:-1],themes),Agg_name)&lt;/code&gt;, avec &lt;code&gt;Agg_name&lt;/code&gt; contenant le nom de l&amp;rsquo;agrégat des actions visées par les COS.&lt;/li&gt;
 &lt;li&gt;Il est aussi possible de récupérer un &lt;code&gt;FMToutputnode&lt;/code&gt; qui est contenu dans l&amp;rsquo;un des &lt;code&gt;FMToutput&lt;/code&gt; du modèle directement via la fonction &lt;code&gt;getnodes()&lt;/code&gt; associée aux objets &lt;code&gt;FMToutput&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Un exemple de la deuxième méthode est montré dans &lt;a href=&#34;#exemple-de-script&#34;&gt;l&amp;rsquo;exemple de script&lt;/a&gt; plus bas.&lt;/p&gt;
 &lt;h3 id=&#34;lancement-du-greedy-algorithm-et-récupération-du-calendrier-optimisé&#34;&gt;Lancement du &lt;em&gt;greedy algorithm&lt;/em&gt; et récupération du calendrier optimisé&lt;/h3&gt;
 &lt;p&gt;La dernière étape est de lancer le &lt;em&gt;greedy algorithm&lt;/em&gt; pour créer un calendrier optimisé.&lt;/p&gt;
-&lt;p&gt;Pour ce faire, il suffit de créer un objet qui va contenir la &amp;ldquo;tache&amp;rdquo; du greedy algorithm, et de donner cette tache à une fonction de FMT qui s&amp;rsquo;occupe de lancer les taches parallèles. Ces deux étapes sont essentielles, car le &lt;em&gt;greedy algorithm&lt;/em&gt; de FMT utilise des taches en parallèle afin de réaliser les différentes itérations de l&amp;rsquo;algorithme aussi rapidement que possible.&lt;/p&gt;
-&lt;p&gt;La création de l&amp;rsquo;objet contenant la tache de l&amp;rsquo;algorithme se fait via la fonction &lt;code&gt;Parallel.FMTopareaschedulertask()&lt;/code&gt;. La fonction nécessite 7 paramètres :&lt;/p&gt;
+&lt;p&gt;Pour ce faire, il suffit de créer un objet qui va contenir la &amp;ldquo;tâche&amp;rdquo; du greedy algorithm, et de donner cette tâche à une fonction de FMT qui s&amp;rsquo;occupe de lancer les tâches parallèles. Ces deux étapes sont essentielles, car le &lt;em&gt;greedy algorithm&lt;/em&gt; de FMT utilise des tâches en parallèle afin de réaliser les différentes itérations de l&amp;rsquo;algorithme aussi rapidement que possible.&lt;/p&gt;
+&lt;p&gt;La création de l&amp;rsquo;objet contenant la tâche de l&amp;rsquo;algorithme se fait via la fonction &lt;code&gt;Parallel.FMTopareaschedulertask()&lt;/code&gt;. La fonction nécessite 7 paramètres :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Le &lt;code&gt;FMTlpmodel&lt;/code&gt; qui contient le modèle linéaire pour lequel on veut faire le calendrier des COS&lt;/li&gt;
 &lt;li&gt;Un objet contenant la liste de COS (voir la &lt;a href=&#34;#cr%C3%A9ation-des-cos-au-sein-dune-mod%C3%A8le-de-programmation-lin%C3%A9aire-dans-fmt&#34;&gt;section précédente&lt;/a&gt;)&lt;/li&gt;
@@ -1866,12 +1866,12 @@ opeareas = areap.getschemeneighbors(opeareas,modelthemes,shapefileLocation,&amp;
 &lt;li&gt;Un nombre indiquant le nombre maximum d&amp;rsquo;itérations que le &lt;em&gt;greedy algorithm&lt;/em&gt; peut réaliser avant de s&amp;rsquo;arrêter (voir sections précédentes)&lt;/li&gt;
 &lt;li&gt;Un nombre indiquant le temps maximal (en secondes) que le &lt;em&gt;greedy algorithm&lt;/em&gt; peut prendre avant de s&amp;rsquo;arrêter; l&amp;rsquo;algorithme s&amp;rsquo;arrettera si ce temps ou si le nombre d&amp;rsquo;itérations maximal est atteint&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Une fois que l&amp;rsquo;objet contenant la tache est créé avec cette fonction, il doit être passé à la fonction &lt;code&gt;Parallel.FMTtaskhandler()&lt;/code&gt;. Cette fonction peut accepter un second paramètre qui indique le nombre de cœurs du processeur de l&amp;rsquo;ordinateur que la fonction utilisera pour réaliser les opérations en parallèle. La fonction retournera un objet &lt;code&gt;FMTtaskhandler&lt;/code&gt;, qui peut ensuite lancer l&amp;rsquo;algorithme pour de bon à l&amp;rsquo;aide de la fonction &lt;code&gt;conccurentrun()&lt;/code&gt; de l&amp;rsquo;objet.&lt;/p&gt;
+&lt;p&gt;Une fois que l&amp;rsquo;objet contenant la tâche est créé avec cette fonction, il doit être passé à la fonction &lt;code&gt;Parallel.FMTtaskhandler()&lt;/code&gt;. Cette fonction peut accepter un second paramètre qui indique le nombre de cœurs du processeur de l&amp;rsquo;ordinateur que la fonction utilisera pour réaliser les opérations en parallèle. La fonction retournera un objet &lt;code&gt;FMTtaskhandler&lt;/code&gt;, qui peut ensuite lancer l&amp;rsquo;algorithme pour de bon à l&amp;rsquo;aide de la fonction &lt;code&gt;conccurentrun()&lt;/code&gt; de l&amp;rsquo;objet.&lt;/p&gt;
 &lt;p&gt;Il est aussi possible de ne pas lancer le &lt;em&gt;greedy algorithm&lt;/em&gt;, mais d&amp;rsquo;obtenir un premier calendrier non optimisé, mais simplement &amp;ldquo;réalisable&amp;rdquo;. Pour cela, il suffit d&amp;rsquo;utiliser la fonction &lt;code&gt;getoperatingareaschedulerheuristics()&lt;/code&gt; d&amp;rsquo;un objet &lt;code&gt;FMTlpmodel&lt;/code&gt; en lui fournissant un objet contenant la liste des COS et un &lt;em&gt;output node&lt;/em&gt;, ainsi que le nombre de calendriers non optimisés que l&amp;rsquo;on veut obtenir. Un exemple est montré dans &lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/bb5aedacd33178f479769ea77d000307e134e3f3/Examples/Python/Operatingareascheduling.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ce script&lt;/a&gt; aux lignes 34-35.&lt;/p&gt;
 &lt;h2 id=&#34;exemple-de-script&#34;&gt;Exemple de script&lt;/h2&gt;
 &lt;p&gt;Un exemple de script très simple pour créer un calendrier de COS &lt;strong&gt;non optimisé&lt;/strong&gt; en python est disponible &lt;a href=&#34;https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/3ebc304ca488bf10039b1843e6e31fc197493d47/Examples/Python/Operatingareascheduling.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;à cette adresse&lt;/a&gt;. Ce script ne fait que générer une première version non optimisée d&amp;rsquo;un calendrier pour les COS, mais qui est simplement réalisable en fonction des contraintes données.&lt;/p&gt;
 &lt;p&gt;Le script suivant est une autre version de ce script qui est intégralement commenté, et qui lance à la fin le &lt;em&gt;greedy algorithm&lt;/em&gt; pour obtenir un calendrier optimisé de COS.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Ici, on charge FMT directement, comme si il avait été installé avec pip.
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Ici, on charge FMT directement, comme s&#39;il avait été installé avec pip.
 from FMT import Models
 from FMT import Parser
 from FMT import Core
@@ -1890,7 +1890,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 		models = modelparser.readproject(primarylocation,[&amp;quot;LP&amp;quot;])
 		# On désactive le log pour ce modèle (optionel)
 		models[0].setquietlogger()
-		# On charge le modèle parmis la liste des modèles renvoyée
+		# On charge le modèle parmis la liste des modèles renvoyés
 		optimizationmodel=Models.FMTlpmodel(models[0],Models.FMTsolverinterface.CLP)
 		# On récupère les thèmes du modèle
 		themes = optimizationmodel.getthemes()
@@ -1900,8 +1900,8 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 		for attribute in themes[2].getattributes(&amp;quot;?&amp;quot;):
 			mask = [&amp;quot;?&amp;quot; for theme in themes]
 			mask[2] = attribute
-			# On créer la COS avec le masque qui sélectionne les peuplements avec les numéros de COS
-			# On utilise un opening time de 2, un return time de 1, un reptition de 4, une green up period de 0, et une starting period de 1.
+			# On créer le COS avec le masque qui sélectionne les peuplements avec les numéros de COS
+			# On utilise un opening time de 2, un return time de 1, une reptition de 4, une green up period de 0, et une starting period de 1.
 			opareas.append(Heuristics.FMToperatingareascheme(Heuristics.FMToperatingarea(Core.FMTmask(mask,themes),0),2,1,4,0,1))
 		# Les lignes suivantes vont trouver une solution initiale au modèle, sans calendrier de COS. Voir bases de FMT.
 		for period in range(0,10):
@@ -1921,14 +1921,14 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 		# On finit en définissant les paramètres nécessaires pour lancer le greedy algorithm : l&#39;endroit ou mettre les outputs, et le temps maximal et le nombre d&#39;itérations maximales pour l&#39;algorithme.
 		outputsLocation = &amp;quot;./Outputs/outputCalendrier&amp;quot;
 		maximumIterations = 30
-		maximumTime = 1209600 # Temps maximum en seconde; ici, cela correspond a deux semaines.
-        # On créer l&#39;objet qui contient la tache a lancer avec le greedy algorithm
+		maximumTime = 1209600 # Temps maximum en seconde; ici, cela correspond à deux semaines.
+        # On créer l&#39;objet qui contient la tâche à lancer avec le greedy algorithm
         maintask = Parallel.FMTopareaschedulertask(optimizationmodel, opeareas, outputsLocation, &amp;quot;YOUVERT&amp;quot;, maximumIterations, maximumTime)
-        # On met la tache au sein d&#39;un objet qui gère le lancement des taches en parallèle dans FMT
+        # On met la tâche au sein d&#39;un objet qui gère le lancement des tâches en parallèle dans FMT
         handler = Parallel.FMTtaskhandler(maintask,self.thr)
-        # On active l&#39;enregistrement du log de la tache
+        # On active l&#39;enregistrement du log de la tâche
         handler.settasklogger()
-        # on lance la tache du greedy algorithm en parralèle
+        # on lance la tâche du greedy algorithm en parralèle
         handler.conccurentrun()
 	else:
 		print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;)
@@ -2027,7 +2027,7 @@ cmake --install build/release --config Release
 &lt;/div&gt;
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
-    Si la compilation se termine par des messages d&amp;rsquo;erreur en rouge, vous pouvez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34;&gt;poster un problème sur la page des problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
+    Si la compilation se termine par des messages d&amp;rsquo;erreur en rouge, vous pouvez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poster un problème sur la page des problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -2041,7 +2041,7 @@ cmake --install build/release --config Release
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/exercice_1/</guid>
       <description>&lt;p&gt;Dans cet exercice, vous allez essayer d&amp;rsquo;utiliser FMT pour lire un scénario, le résoudre, lire une de ses sorties, et exporter la solution.&lt;/p&gt;
-&lt;p&gt;Pour faire cet exercice, &lt;strong&gt;vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&amp;rsquo;exemple depuis le dépôt GitHub de FMT&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pour faire cet exercice, &lt;strong&gt;vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&amp;rsquo;exemples depuis le dépôt GitHub de FMT&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul class=&#34;cta-group&#34;&gt;
   
   &lt;li&gt;
@@ -2063,7 +2063,7 @@ cmake --install build/release --config Release
 &lt;h2 id=&#34;objectifs-de-lexercice&#34;&gt;Objectifs de l&amp;rsquo;exercice&lt;/h2&gt;
 &lt;p&gt;Utilisez FMT pour :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Lire le modèle Woodstock &lt;code&gt;TWD_land&lt;/code&gt; dans les fichiers d&amp;rsquo;exemple en sélectionnant son scénario nommé &lt;code&gt;LP&lt;/code&gt;.
+&lt;li&gt;Lire le modèle Woodstock &lt;code&gt;TWD_land&lt;/code&gt; dans les fichiers d&amp;rsquo;exemples en sélectionnant son scénario nommé &lt;code&gt;LP&lt;/code&gt;.
 &lt;ul&gt;
 &lt;li&gt;N&amp;rsquo;oubliez pas de sélectionner le solveur &lt;code&gt;CLP&lt;/code&gt; lors de la lecture du modèle.&lt;/li&gt;
 &lt;/ul&gt;
@@ -2098,7 +2098,7 @@ cmake --install build/release --config Release
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
   &lt;p&gt;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#%% CHARGEMENT DE FMT
 
-# Ici, on charge FMT directement, comme si il avait été installé avec pip.
+# Ici, on charge FMT directement, comme s&#39;il avait été installé avec pip.
 
 from FMT import Models
 from FMT import Parser
@@ -2109,8 +2109,8 @@ from FMT import Version
 # Création d&#39;un objet pour lire le modèle (parser)
 modelParser = Parser.FMTmodelparser()
 
-# Definition du chemin menant au modèle woodstock
-# Le modèle woodstock est fait de pleins de petits fichiers différents
+# Definition du chemin menant au modèle Woodstock
+# Le modèle Woodstock est fait de pleins de petits fichiers différents
 # On pointe vers le fichier .pri, qui contient la location de tous les petits fichiers du modèle.
 # WARNING : FMT a du mal avec les espaces dans les chemins. Essayez d&#39;avoir un
 # chemin sans espaces.
@@ -2118,16 +2118,16 @@ pathToWoodstockModel = &amp;quot;D:/TempCode/FMT/FMT/Examples/Models/TWD_land/TW
 
 # On définit le/les scénarios que l&#39;on va lire
 # Les scénarios sont des ensembles de contraites et objectifs,
-# ou bien un planning deja fait que l&#39;on va simuler.
+# ou bien un planning déjà fait que l&#39;on va simuler.
 scenariosToSelect = [&amp;quot;LP&amp;quot;]
 
-# On lit le model grace au parser. Celui-ci va renvoyer une liste de modèles
+# On lit le model grâce au parser. Celui-ci va renvoyer une liste de modèles
 # qu&#39;il a détécté. Dans notre cas, on n&#39;en aura qu&#39;un seul.
 listOfModelsParsed = modelParser.readproject(pathToWoodstockModel, scenariosToSelect)
 
-# On charge le modèle parmis la liste des modèles renvoyée
+# On charge le modèle parmis la liste des modèles renvoyés
 # Pour le charger correctement, il faut décrire le type de modèle que c&#39;est, ainsi que des paramètres importants.
-# Ici, le modèle sera un modèle linéraire spatialement référence (LP),
+# Ici, le modèle sera un modèle linéraire spatialement référencé (LP),
 # et on utilisera le solveur CLP pour le résoudre.
 LPModel = Models.FMTlpmodel(listOfModelsParsed[0], Models.FMTsolverinterface.CLP)
 
@@ -2203,7 +2203,7 @@ scheduleParser.write(modelSolution, r&amp;quot;D:/TempCode/FMT/FMT/Examples/prog
       <description>&lt;p&gt;Pour importer FMT que vous venez de compiler dans Python, vous devez avoir installé &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt; et &lt;a href=&#34;https://packaging.python.org/en/latest/tutorials/installing-packages/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pip&lt;/a&gt; sur votre ordinateur.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si Python n&amp;rsquo;est pas installé sur votre ordinateur, nous vous recommandons d&amp;rsquo;installer &lt;a href=&#34;https://docs.conda.io/en/latest/miniconda.html&#34;&gt;Miniconda&lt;/a&gt;, la version &amp;ldquo;légère&amp;rdquo; de la célèbre distribution Python &lt;a href=&#34;https://www.anaconda.com/&#34;&gt;Anaconda&lt;/a&gt;. Miniconda contient Python, pip et de nombreux autres modules qui sont utiles pour utiliser FMT.
+    Si Python n&amp;rsquo;est pas installé sur votre ordinateur, nous vous recommandons d&amp;rsquo;installer &lt;a href=&#34;https://docs.conda.io/en/latest/miniconda.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Miniconda&lt;/a&gt;, la version &amp;ldquo;légère&amp;rdquo; de la célèbre distribution Python &lt;a href=&#34;https://www.anaconda.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anaconda&lt;/a&gt;. Miniconda contient Python, pip et de nombreux autres modules qui sont utiles pour utiliser FMT.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Il existe deux façons d&amp;rsquo;importer FMT dans Python :&lt;/p&gt;
@@ -2220,7 +2220,7 @@ from FMT import Parser
 from FMT import Core
 from FMT import Version
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;dans lequel &lt;code&gt;&amp;lt;Chemin vers le dossier FMT&amp;gt;&lt;/code&gt; sera remplacé par l&amp;rsquo;emplacement du dossier où se trouvent les fichiers FMT que vous avez téléchargés depuis GitHub (et où se trouvent aussi les bibliothèque de fonction compilées de FMT, à présent).&lt;/p&gt;
+&lt;p&gt;dans lequel &lt;code&gt;&amp;lt;Chemin vers le dossier FMT&amp;gt;&lt;/code&gt; sera remplacé par l&amp;rsquo;emplacement du dossier où se trouvent les fichiers FMT que vous avez téléchargés depuis GitHub (et où se trouvent aussi les bibliothèques de fonction compilées de FMT, à présent).&lt;/p&gt;
 &lt;p&gt;Cela peut cependant devenir redondant, ce qui rend la deuxième option - l&amp;rsquo;installation avec pip - plus intéressante.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;&lt;strong&gt;En utilisant pip et la &lt;em&gt;Python wheel&lt;/em&gt; que vous avez compilée&lt;/strong&gt;.&lt;/li&gt;
@@ -2239,7 +2239,7 @@ from FMT import Version
 &lt;p&gt;Et &lt;strong&gt;c&amp;rsquo;est tout, vous avez terminé 🎊🎉!&lt;/strong&gt; Maintenant, vous pouvez commencer à utiliser FMT !&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si vous avez eu des problèmes pendant le processus de téléchargement et d&amp;rsquo;installation de FMT, veuillez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34;&gt;poster un problème sur la page de problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
+    Si vous avez eu des problèmes pendant le processus de téléchargement et d&amp;rsquo;installation de FMT, veuillez &lt;a href=&#34;https://github.com/gcyr/FMT/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poster un problème sur la page de problèmes du &lt;em&gt;repository&lt;/em&gt; de FMT&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -2251,7 +2251,7 @@ from FMT import Version
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/spatially_explicit_simulation/</guid>
       <description>&lt;h2 id=&#34;un-petit-rappel-sur-la-signification-de-spatialement-référencé&#34;&gt;Un petit rappel sur la signification de &amp;ldquo;spatialement référencé&amp;rdquo;.&lt;/h2&gt;
-&lt;p&gt;On peut distinguer 3 façons de prendre en compte l&amp;rsquo;espace dans un modèle :&lt;/p&gt;
+&lt;p&gt;On peut distinguer trois façons de prendre en compte l&amp;rsquo;espace dans un modèle :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Dans un &lt;strong&gt;modèle non spatial&lt;/strong&gt; ou &lt;strong&gt;modèle spatialement implicite&lt;/strong&gt;, les entités (par exemple, les forêts, les animaux, les agents, etc.) ne sont pas directement associées à une position dans l&amp;rsquo;espace, mais la relation entre elles dans le modèle peut impliquer que seules certaines d&amp;rsquo;entre elles interagissent entre elles de manière à mimer une disposition spatiale.&lt;/li&gt;
 &lt;li&gt;Dans un modèle &lt;strong&gt;spatialement référencé&lt;/strong&gt;, les entités sont associées à des régions de l&amp;rsquo;espace, mais pas à une position précise dans ces régions ; ces régions peuvent être non-continues. Les modèles de Woodstock sont par nature spatialement référencés, car ils considèrent des &lt;em&gt;strates&lt;/em&gt; qui correspondent à des forêts de même composition et de même âge, qui peuvent être dispersées en de nombreux endroits du paysage.&lt;/li&gt;
@@ -2268,9 +2268,9 @@ FMTmodel &amp;lt;|-- FMTsrmodel
 FMTsrmodel &amp;lt;|-- FMTlpmodel
 FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Au lieu de ca, le &lt;code&gt;FMTsesmodel&lt;/code&gt; va essayer de spatialiser le calendrier d&amp;rsquo;un &lt;code&gt;FMTsrmodel&lt;/code&gt; en plaçant des blocs de coupe sur une carte. Il fait cela en faisant des itérations dans lesquelles il simule le placement de ces blocs, et en sélectionnant la meilleure solution trouvée.&lt;/p&gt;
+&lt;p&gt;Au lieu de ça, le &lt;code&gt;FMTsesmodel&lt;/code&gt; va essayer de spatialiser le calendrier d&amp;rsquo;un &lt;code&gt;FMTsrmodel&lt;/code&gt; en plaçant des blocs de coupe sur une carte. Il fait cela en faisant des itérations dans lesquelles il simule le placement de ces blocs, et en sélectionnant la meilleure solution trouvée.&lt;/p&gt;
 &lt;p&gt;Pour utiliser une métaphore, cela revient à essayer de trouver une position gagnante aux échecs si vous n&amp;rsquo;êtes pas capable de la trouver en réfléchissant bien au placement de vos pièces d&amp;rsquo;échecs : vous pourriez essayer de placer vos pièces au hasard de nombreuses, nombreuses fois, et vous demander à chaque fois si vous avez gagné, ou si vous êtes plus proche de la victoire, et si la position des pièces d&amp;rsquo;échecs respecte les règles du jeu.&lt;/p&gt;
-&lt;p&gt;Ici, &lt;code&gt;FMTsesmodel&lt;/code&gt; essaiera de placer les blocs de coupe selon la solution d&amp;rsquo;un &lt;code&gt;FMTsrmodel&lt;/code&gt; (qui est un calendrier d&amp;rsquo;opérations forestières appliqué à des &lt;em&gt;strates&lt;/em&gt; spatialement référencées). Son but sera de trouver le meilleur positionnement possible, en s&amp;rsquo;accommodant au mieux des contraintes linéaires et spatiales qui sont données pour leur placement, et en maximisant la valeur objective (par exemple, en maximisant le bois récolté).&lt;/p&gt;
+&lt;p&gt;Ici, &lt;code&gt;FMTsesmodel&lt;/code&gt; essaiera de placer les blocs de coupes selon la solution d&amp;rsquo;un &lt;code&gt;FMTsrmodel&lt;/code&gt; (qui est un calendrier d&amp;rsquo;opérations forestières appliqué à des &lt;em&gt;strates&lt;/em&gt; spatialement référencées). Son but sera de trouver le meilleur positionnement possible, en s&amp;rsquo;accommodant au mieux des contraintes linéaires et spatiales qui sont données pour leur placement, et en maximisant la valeur objective (par exemple, en maximisant le bois récolté).&lt;/p&gt;
 &lt;p&gt;Cependant, cette méthode a peu de chance de trouver le &lt;strong&gt;placement optimal&lt;/strong&gt;, s&amp;rsquo;il existe ; à la place, plus il y a d&amp;rsquo;itérations pour essayer de les placer, plus il y a de chance de trouver une solution qui se rapproche le plus possible d&amp;rsquo;un placement optimal des blocs coupés dans l&amp;rsquo;espace. C&amp;rsquo;est pourquoi ce processus représente ce que nous appelons une &lt;a href=&#34;https://en.wikipedia.org/wiki/Heuristic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;heuristique&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;lespace-dans-fmt&#34;&gt;L&amp;rsquo;espace dans FMT&lt;/h2&gt;
 &lt;p&gt;FMT utilise des &lt;code&gt;FMTlayers&lt;/code&gt; pour représenter toute solution spatialement explicite.&lt;/p&gt;
@@ -2280,7 +2280,7 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;h2 id=&#34;la-classe-fmtspatialschedule&#34;&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt;.&lt;/h2&gt;
 &lt;p&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution spatialement explicite sous la forme d&amp;rsquo;un &lt;code&gt;FMTlayer&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Elle contient une fonction importante, &lt;code&gt;FMTspatialschedule.getsolutionstatus()&lt;/code&gt;, qui imprime des informations importantes sur la façon dont la solution contenue dans le &lt;code&gt;FMTspatialschedule&lt;/code&gt; atteint l&amp;rsquo;objectif du modèle.&lt;/p&gt;
-&lt;p&gt;Cette fonction donne également une valeur de l&#39;&lt;em&gt;infaisabilité primaire&lt;/em&gt;, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.&lt;/p&gt;
+&lt;p&gt;Cette fonction donne également une valeur de l&amp;rsquo;&lt;em&gt;infaisabilité primaire&lt;/em&gt;, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.&lt;/p&gt;
 &lt;p&gt;Notez que contrairement à l&amp;rsquo;objet &lt;code&gt;FMTschedule&lt;/code&gt; qui ne concerne qu&amp;rsquo;une seule période de temps (c&amp;rsquo;est pourquoi le code montré dans la section sur &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;l&amp;rsquo;optimisation spatialement référencée&lt;/a&gt; contenait une boucle &lt;code&gt;for&lt;/code&gt; autour du nombre de périodes d&amp;rsquo;intérêt lorsqu&amp;rsquo;il s&amp;rsquo;agissait de la classe &lt;code&gt;FMTschedule&lt;/code&gt;), &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution pour plusieurs périodes de temps à la fois.&lt;/p&gt;
 &lt;h2 id=&#34;le-fmtlinegraph&#34;&gt;Le &lt;code&gt;FMTlinegraph&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Comme dit précédemment, la structure spatiale d&amp;rsquo;un &lt;code&gt;FMTsesmodel&lt;/code&gt; est comme une carte raster faite de pixels, chaque pixel étant un &lt;code&gt;FMTlinegraph&lt;/code&gt;.&lt;/p&gt;
@@ -2406,8 +2406,8 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;p&gt;Ces deux fonctions requièrent plusieurs paramètres pour identifier correctement les thèmes nécessaires, et pour spécifier plusieurs caractéristiques spatiales de la classe &lt;code&gt;FMTforest&lt;/code&gt; que vous allez créer.&lt;/p&gt;
 &lt;p&gt;Une fois que la &lt;code&gt;FMTforest&lt;/code&gt; est créée, elle doit être fournie au &lt;code&gt;FMTsesmodel&lt;/code&gt; en utilisant la fonction &lt;code&gt;FMTsesmodel.setinitialmapping()&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;utilisation-de-nouveaux-mots-clés-dans-les-fichiers-woodstock-pour-les-contraintes-spatiales&#34;&gt;Utilisation de nouveaux mots-clés dans les fichiers Woodstock pour les contraintes spatiales&lt;/h2&gt;
-&lt;p&gt;Dans un modèle Woodstock habituel, les contraintes spatiales ne sont pas prises en compte. Cependant, vous aurez certainement besoin d&amp;rsquo;en utiliser pour une simulation spatiale avec le &lt;code&gt;FMTsesmodel&lt;/code&gt;, afin de placer les blocs de coupe du planning optimisé.&lt;/p&gt;
-&lt;p&gt;A cette fin, FMT peut lire deux nouveaux mots-clés dans la section &lt;em&gt;optimize&lt;/em&gt; d&amp;rsquo;un modèle Woodstock qui n&amp;rsquo;existent pas dans la syntaxe originale de Woodstock.&lt;/p&gt;
+&lt;p&gt;Dans un modèle Woodstock habituel, les contraintes spatiales ne sont pas prises en compte. Cependant, vous aurez certainement besoin d&amp;rsquo;en utiliser pour une simulation spatiale avec le &lt;code&gt;FMTsesmodel&lt;/code&gt;, afin de placer les blocs de coupes du planning optimisé.&lt;/p&gt;
+&lt;p&gt;À cette fin, FMT peut lire deux nouveaux mots-clés dans la section &lt;em&gt;optimize&lt;/em&gt; d&amp;rsquo;un modèle Woodstock qui n&amp;rsquo;existent pas dans la syntaxe originale de Woodstock.&lt;/p&gt;
 &lt;p&gt;Ces mots-clés sont &lt;code&gt;_SIZE&lt;/code&gt; et &lt;code&gt;_ADJACENCY&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_SIZE&lt;/code&gt; doit être utilisé avec la syntaxe suivante dans la section &lt;em&gt;optimize&lt;/em&gt; d&amp;rsquo;un modèle Woodstock :&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_SIZE(ACTION, NEIGHBORSIZE) &amp;gt;= &amp;lt;TAILLE EN PIXELS&amp;gt; &amp;lt;PÉRIODES&amp;gt;&lt;/code&gt;&lt;/p&gt;
@@ -2478,11 +2478,11 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;li&gt;Les &lt;code&gt;GREENUP&lt;/code&gt; correspondent au nombre de périodes de temps pour lesquelles nous considérons que deux événements sont voisins. Par exemple, si &lt;code&gt;GREENUP&lt;/code&gt; est égal à 3, deux blocs spatiaux d&amp;rsquo;actions qui sont sous la distance maximale indiquée par &lt;code&gt;DISTANCE&lt;/code&gt; mais qui sont séparés temporellement par 4 périodes ne seront pas considérés comme spatialement adjacents ; cependant, s&amp;rsquo;ils étaient séparés par 3, 2 ou 1 période, ou sont dans la même période, ils seront considérés comme spatialement adjacents.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;faire-la-simulation-avec-fmtsesmodelgreedyreferencebuild&#34;&gt;Faire la simulation avec &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Une fois que vous avez une solution/ un calendrier spatialement référencé (voir &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;optimisation spatialement référencé&lt;/a&gt;) et que vous avez défini le paysage initial pour le &lt;code&gt;FMTsesmodel&lt;/code&gt; (voir les sections précédentes), vous pouvez utiliser &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; pour faire la simulation proprement dite, et obtenir un calendrier d&amp;rsquo;opérations spatialement explicite basée sur le calendrier d&amp;rsquo;opérations spatialement référencé.&lt;/p&gt;
+&lt;p&gt;Une fois que vous avez une solution/ un calendrier spatialement référencé (voir &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;optimisation spatialement référencé&lt;/a&gt;) et que vous avez défini le paysage initial pour le &lt;code&gt;FMTsesmodel&lt;/code&gt; (voir les sections précédentes), vous pouvez utiliser &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; pour faire la simulation proprement dite, et obtenir un calendrier d&amp;rsquo;opérations spatialement explicite basé sur le calendrier d&amp;rsquo;opérations spatialement référencé.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; a besoin de la solution spatialement référencée d&amp;rsquo;un &lt;code&gt;FMTlpmodel&lt;/code&gt; (ou d&amp;rsquo;un &lt;code&gt;FMTnssmodel&lt;/code&gt;), sous la forme d&amp;rsquo;un objet &lt;code&gt;FMTschedule&lt;/code&gt;. Cette solution décrit quel développement (ou strates) est récolté pour une période donnée, avec quelle action, et sur quelle surface/zone.&lt;/p&gt;
 &lt;p&gt;Le &lt;code&gt;FMTschedule&lt;/code&gt; d&amp;rsquo;un &lt;code&gt;FMTlpmodel&lt;/code&gt; ou &lt;code&gt;FMTnssmodel&lt;/code&gt; solutionné peut être récupéré en utilisant leur fonction &lt;code&gt;getsolution()&lt;/code&gt;. Cependant, la fonction récupérera la solution pour une période ; vous devrez boucler autour des périodes pour obtenir les solutions pour chaque période d&amp;rsquo;intérêt, et pour indiquer si vous voulez que la solution prenne en compte les développements bloqués (&lt;em&gt;locked&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; construira une solution spatialement explicite à partir d&amp;rsquo;une solution spatialement référencée pour une période donnée. Avec le &lt;code&gt;FMTschedule&lt;/code&gt; pour la période, la fonction aura besoin d&amp;rsquo;un argument &lt;code&gt;randomiterations&lt;/code&gt; qui est le nombre maximal d&amp;rsquo;itérations faites par l&amp;rsquo;algorithme avant qu&amp;rsquo;il ne s&amp;rsquo;arrête quand aucune augmentation de la valeur de la fonction d&amp;rsquo;objectif (maximisation de l&amp;rsquo;objectif) ou diminution de la valeur d&amp;rsquo;infaisabilité primaire n&amp;rsquo;a été trouvée. Cela s&amp;rsquo;explique par le fait que la simulation est constituée d&amp;rsquo;itérations au cours desquelles le modèle tente de placer les blocs de coupe dans l&amp;rsquo;espace conformément au calendrier d&amp;rsquo;opérations spatialement référencé afin d&amp;rsquo;augmenter la fonction d&amp;rsquo;objectif du modèle (par exemple, le volume récolté) tout en respectant les contraintes linéaires et spatiales données (dont la déviation aux contraintes est représentée par la valeur d&amp;rsquo;infaisabilité primaire).&lt;/p&gt;
-&lt;p&gt;Une dernière entrée est un numéro de graine aléatoire (&lt;em&gt;seed&lt;/em&gt;) qui sera utilisé pour générer des nombres aléatoires utilisés pour créer les blocs de coupe à chaque itération. Ce système de graine permet à FMT d&amp;rsquo;utiliser des nombres aléatoires qui sont &amp;ldquo;réplicables&amp;rdquo; ; c&amp;rsquo;est-à-dire que si vous gardez la même graine, FMT obtiendra les mêmes nombres aléatoires, et fera exactement les mêmes simulations.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; construira une solution spatialement explicite à partir d&amp;rsquo;une solution spatialement référencée pour une période donnée. Avec le &lt;code&gt;FMTschedule&lt;/code&gt; pour la période, la fonction aura besoin d&amp;rsquo;un argument &lt;code&gt;randomiterations&lt;/code&gt; qui est le nombre maximal d&amp;rsquo;itérations faites par l&amp;rsquo;algorithme avant qu&amp;rsquo;il ne s&amp;rsquo;arrête quand aucune augmentation de la valeur de la fonction d&amp;rsquo;objectif (maximisation de l&amp;rsquo;objectif) ou diminution de la valeur d&amp;rsquo;infaisabilité primaire n&amp;rsquo;a été trouvée. Cela s&amp;rsquo;explique par le fait que la simulation est constituée d&amp;rsquo;itérations au cours desquelles le modèle tente de placer les blocs de coupes dans l&amp;rsquo;espace conformément au calendrier d&amp;rsquo;opérations spatialement référencées afin d&amp;rsquo;augmenter la fonction d&amp;rsquo;objectif du modèle (par exemple, le volume récolté) tout en respectant les contraintes linéaires et spatiales données (dont la déviation aux contraintes est représentée par la valeur d&amp;rsquo;infaisabilité primaire).&lt;/p&gt;
+&lt;p&gt;Une dernière entrée est un numéro de graine aléatoire (&lt;em&gt;seed&lt;/em&gt;) qui sera utilisé pour générer des nombres aléatoires utilisés pour créer les blocs de coupes à chaque itération. Ce système de graine permet à FMT d&amp;rsquo;utiliser des nombres aléatoires qui sont &amp;ldquo;réplicables&amp;rdquo; ; c&amp;rsquo;est-à-dire que si vous gardez la même graine, FMT obtiendra les mêmes nombres aléatoires, et fera exactement les mêmes simulations.&lt;/p&gt;
 &lt;p&gt;Voici une représentation du fonctionnement de l&amp;rsquo;algorithme de simulation en pratique :&lt;/p&gt;
 
 
@@ -2531,22 +2531,22 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a ét
 		print(lpmodel$setconstraint(constraint)$str())
 	}
 	print(lpmodel$setobjective(modelobjective)$str())
-	# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie &amp;quot;true&amp;quot; si il a été résolu
+	# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie &amp;quot;true&amp;quot; s&#39;il a été résolu
 	if (lpmodel$initialsolve())
 	{
 		# On créer un nouveau modèle de simulation spatialement explicite, en se basant sur le contenu de lpmodel
 		simulationmodel &amp;lt;- new(FMTsesmodel, lpmodel)
-		# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaires
+		# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaire
 		singletransition &amp;lt;- list()
 		for (transition in simulationmodel$gettransitions())
 		{
-			# Le +1 est fait pour s&#39;adapter au fait que FMT étant codé en C++, il fonctionne en base 0 (les listes commencet à l&#39;indice 0); alors que R fonctionne en base 1.
+			# Le +1 est fait pour s&#39;adapter au fait que FMT étant codé en C++, il fonctionne en base 0 (les listes commencent à l&#39;indice 0); alors que R fonctionne en base 1.
 			singletransitions[[length(singletransitions) + 1]] &amp;lt;- transition$single()
 		}
 		simulationmodel$settransitions(singletransitions)
 		# On prépare un parseur pour lire la carte initiale des forêts
 		areaparser &amp;lt;- new(FMTareaparser)
-		# On définit où est-ce que le raster avec les informations initiales des forêts se trouvent
+		# On définit où est-ce que le raster des forêts se trouve avec les informations initiales 
 		rasterslocation &amp;lt;- &amp;quot;../Models/TWD_land/rasters&amp;quot;
 		ageraster &amp;lt;- file.path(rasterlocation,&amp;quot;AGE.tif&amp;quot;)
 		# On lit les différents rasters qui contiennent les différents &amp;quot;themes&amp;quot; (ou attributs) initiaux des forêts en faisant
@@ -2598,11 +2598,11 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 		for constraint in constraints:
 			lpmodel.setconstraint(constraint)
 		lpmodel.setobjective(objective)
-		# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie &amp;quot;true&amp;quot; si il a été résolu
+		# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie &amp;quot;true&amp;quot; s&#39;il a été résolu
 		if lpmodel.initialsolve():
 			# On créer un nouveau modèle de simulation spatialement explicite, en se basant sur le contenu de lpmodel
 			simulationmodel = Models.FMTsesmodel(lpmodel)
-			# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaires
+			# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaire
 			singletransitions = []
 			for transition in simulationmodel.gettransitions():
 				singletransitions.append(transition.single())
@@ -2613,13 +2613,13 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 			rasterslocation = &amp;quot;../Models/TWD_land/rasters/&amp;quot;
 			ageraster = os.path.join(rasterslocation, &amp;quot;AGE.tif&amp;quot;)
 			# On lit les différents rasters qui contiennent les différents &amp;quot;themes&amp;quot; (ou attributs) initiaux des forêts en faisant
-			# une boucle autour de tous les themes définits dans le modèle, et en mettant le nom de ces rasters dans une liste
+			# une boucle autour de tous les thèmes définis dans le modèle, et en mettant le nom de ces rasters dans une liste
 			themesrasters = []
 			themeid = 1
 			for theme in simulationmodel.getthemes():
 				themesrasters.append(os.path.join(rasterslocation, &amp;quot;THEME&amp;quot; + str(themeid) + &amp;quot;.tif&amp;quot;))
 				themeid += 1
-			# Maintenant que l&#39;on a tous les rasters, on creer un object FMTforest en lisant tous les rasters de themes, qui contiennent les informations initiales des forêts
+			# Maintenant que l&#39;on a tous les rasters, on creer un object FMTforest en lisant tous les rasters de thèmes, qui contiennent les informations initiales des forêts
 			initialforestmap = areaparser.readrasters(simulationmodel.getthemes(), themesrasters, ageraster, 1, 0.0001)
 			# On donne les données initiales de forêt au modèle spatialement explicite
 			simulationmodel.setinitialmapping(initialforestmap)
@@ -2726,7 +2726,7 @@ Stalled after 14 iterations Skipping
 {&#39;ACARIBOU&#39;: 10491.125109295706, &#39;COUPETOTALE&#39;: 0.3982872281191633, &#39;Objective&#39;: 27667.040000000005, &#39;PLANTATION&#39;: 1.0028031096555103, &#39;Primalinfeasibility&#39;: 77340.64000000012, &#39;Total&#39;: 0.8163283360740083}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;analyser-les-sorties-de-fmtsesmodelgreedyreferencebuild&#34;&gt;Analyser les sorties de &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; retourne des informations sur la meilleure solution qui a été trouvée ; c&amp;rsquo;est-à-dire le meilleur placement spatial des blocs de coupe que l&amp;rsquo;algorithme a été capable de trouver en optimisant la fonction d&amp;rsquo;objectif, tout en respectant les contraintes linéaires et spatiales qui ont été données par l&amp;rsquo;utilisateur.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; retourne des informations sur la meilleure solution qui a été trouvée ; c&amp;rsquo;est-à-dire le meilleur placement spatial des blocs de coupes que l&amp;rsquo;algorithme a été capable de trouver en optimisant la fonction d&amp;rsquo;objectif, tout en respectant les contraintes linéaires et spatiales qui ont été données par l&amp;rsquo;utilisateur.&lt;/p&gt;
 &lt;p&gt;En particulier, &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; indique 4 informations importantes :&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -2861,7 +2861,7 @@ Stalled after 14 iterations Skipping
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Stalled after 16 iterations Skipping
 {&#39;ACARIBOU&#39;: 0.981677543988014, &#39;COUPETOTALE&#39;: 0.9817026645791909, &#39;Objective&#39;: 42453.599999999984, &#39;Primalinfeasibility&#39;: 0.0, &#39;Total&#39;: 0.9816850800303768}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Le processus se répète ensuite pour les 9 autres périodes. A chaque fois, le FMT commence par une première itération de placement des actions dans l&amp;rsquo;espace en essayant de respecter les contraintes. Ensuite, l&amp;rsquo;algorithme se termine lorsqu&amp;rsquo;il est soit &lt;strong&gt;stalled&lt;/strong&gt; (stabilisé), soit &lt;strong&gt;stuck&lt;/strong&gt; (bloqué), ce qui signifie qu&amp;rsquo;il ne peut plus améliorer la solution ou réduire l&amp;rsquo;infaisabilité primale. Il affiche alors le nombre d&amp;rsquo;actions qu&amp;rsquo;il a pu placer dans l&amp;rsquo;espace.&lt;/p&gt;
+&lt;p&gt;Le processus se répète ensuite pour les 9 autres périodes. À chaque fois, FMT commence par une première itération de placement des actions dans l&amp;rsquo;espace en essayant de respecter les contraintes. Ensuite, l&amp;rsquo;algorithme se termine lorsqu&amp;rsquo;il est soit &lt;strong&gt;stalled&lt;/strong&gt; (stabilisé), soit &lt;strong&gt;stuck&lt;/strong&gt; (bloqué), ce qui signifie qu&amp;rsquo;il ne peut plus améliorer la solution ou réduire l&amp;rsquo;infaisabilité primale. Il affiche alors le nombre d&amp;rsquo;actions qu&amp;rsquo;il a pu placer dans l&amp;rsquo;espace.&lt;/p&gt;
 &lt;p&gt;Notez que &lt;strong&gt;stalled&lt;/strong&gt; et &lt;strong&gt;stuck&lt;/strong&gt; ont deux significations différentes :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Stalled&lt;/strong&gt; signifie que l&amp;rsquo;algorithme a généré exactement les mêmes solutions (le même placement des coupes dans l&amp;rsquo;espace) que ses 3 dernières itérations, ce qui implique qu&amp;rsquo;il ne peut générer aucune nouvelle solution. Cela peut se produire lorsque les contraintes font que le nombre de solutions potentielles est limité, ce qui signifie que l&amp;rsquo;algorithme les aura rapidement toutes essayées.&lt;/li&gt;
@@ -2883,7 +2883,7 @@ Solution stuck after 27 iterations Skipping
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Et ainsi de suite jusqu&amp;rsquo;à la 10ème période.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Vous devriez maintenant en savoir assez pour commencer à utiliser le FMT par vous-même. Si vous avez d&amp;rsquo;autres questions, veuillez contacter &lt;a href=&#34;mailto:Guillaume.Cyr@fec.gouv.qc.ca&#34;&gt;Guillaume Cyr&lt;/a&gt; ou &lt;a href=&#34;mailto:Bruno.Forest@fec.gouv.qc.ca&#34;&gt;Bruno Forest&lt;/a&gt; du BFEC. Vous pouvez également installer FMT sur votre ordinateur en suivant la section &lt;a href=&#34;../../download_install/&#34;&gt;Téléchargement et installation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vous devriez maintenant en savoir assez pour commencer à utiliser le FMT par vous-même. Si vous avez d&amp;rsquo;autres questions, veuillez contacter &lt;a href=&#34;mailto:Guillaume.Cyr@fec.gouv.qc.ca&#34;&gt;Guillaume Cyr&lt;/a&gt; du BFEC. Vous pouvez également installer FMT sur votre ordinateur en suivant la section &lt;a href=&#34;../../download_install/&#34;&gt;Téléchargement et installation&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -3149,7 +3149,7 @@ flowchart LR
 &lt;div class=mermaid&gt;
 flowchart LR
     B{&#34;Aucune opérabilité?&#34;} -- Oui --&gt;C[&#34;Élimine l&#39;action&#34;]
-    B -- Non --&gt;D{&#34;Ligne d&#39;opérabilité inutile?&#39;&#34;}
+    B -- Non --&gt;D{&#34;Ligne d&#39;opérabilité inutile?&#34;}
     subgraph Réduction du nombre d&#39;éléments
     D -- Oui --&gt;E{&#34;Éliminer cette opérabilité&#34;}
     E --&gt; D
@@ -3164,7 +3164,7 @@ flowchart LR
 &lt;div class=mermaid&gt;
 flowchart LR
     B{&#34;Aucune action?&#34;} -- Oui --&gt;C[&#34;Élimine la transition&#34;]
-    B -- Non --&gt;D{&#34;Ligne de source inutile?&#39;&#34;}
+    B -- Non --&gt;D{&#34;Ligne de source inutile?&#34;}
     subgraph Réduction du nombre d&#39;éléments
     D -- Oui --&gt;E{&#34;Éliminer cette source et ses targets&#34;}
     E --&gt; D
@@ -3187,7 +3187,7 @@ flowchart LR
 &lt;div class=mermaid&gt;
 flowchart LR
     B{&#34;RHS de 0?&#34;} -- Oui --&gt;C[&#34;Output d&#39;actions?&#34;]
-    C -- Oui --&gt;D[&#34;Transformer la contrainte en yields et opérabilité d&#39;action et l&#39;éliminer&#39;&#34;]
+    C -- Oui --&gt;D[&#34;Transformer la contrainte en yields et opérabilité d&#39;action et l&#39;éliminer&#34;]
     C -- Non --&gt;E[&#34;Output d&#39;inventaire?&#34;]
     E -- Oui --&gt;D
     E -- Non --&gt;F[&#34;Conserver la contrainte&#34;]
@@ -3329,7 +3329,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;li&gt;en C++, R ou Python&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;a-quoi-sert-fmt-&#34;&gt;A quoi sert FMT ?&lt;/h2&gt;
+&lt;h2 id=&#34;à-quoi-sert-fmt-&#34;&gt;À quoi sert FMT ?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;planification forestière
 &lt;ul&gt;
@@ -3339,11 +3339,11 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;en-pratique-a-quoi-ca-sert-&#34;&gt;En pratique, a quoi ca sert ?&lt;/h2&gt;
+&lt;h2 id=&#34;en-pratique-à-quoi-ça-sert-&#34;&gt;En pratique, à quoi ça sert ?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Lecture de modèles Woodstock&lt;/li&gt;
 &lt;li&gt;Simulation de paysages forestiers&lt;/li&gt;
-&lt;li&gt;Optimisation / Ré-optimisation de modèles&lt;/li&gt;
+&lt;li&gt;Optimisation / Réoptimisation de modèles&lt;/li&gt;
 &lt;li&gt;Planification (en utilisant des événements stochastiques)&lt;/li&gt;
 &lt;li&gt;Résolution des heuristiques d&amp;rsquo;agrégation&lt;/li&gt;
 &lt;li&gt;Planification des blocs de récolte&lt;/li&gt;
@@ -3361,21 +3361,21 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;hr&gt;
 &lt;h2 id=&#34;pourquoi-fmt-&#34;&gt;Pourquoi FMT ?&lt;/h2&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-&lt;p&gt;Projet du Bureau du Forestier en Chec du Québec.&lt;/p&gt;
+&lt;p&gt;Projet du Bureau du Forestier en Chef du Québec.&lt;/p&gt;
 &lt;/span&gt;
 &lt;ul&gt;
-&lt;li&gt;2017 : Besoin d&amp;rsquo;automatiser l&amp;rsquo;utilisation de modèles Woodstocks&lt;/li&gt;
+&lt;li&gt;2017 : Besoin d&amp;rsquo;automatiser l&amp;rsquo;utilisation de modèles Woodstock&lt;/li&gt;
 &lt;li&gt;2018 : Besoin de relier Woodstock à GCBM pour estimations de carbone&lt;/li&gt;
 &lt;li&gt;2019 à aujourd&amp;rsquo;hui : Augmentation des performances et fonctionalités&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;le-futur&#34;&gt;Le futur&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Interface utilisateurice (GUI)&lt;/li&gt;
+&lt;li&gt;Interface utilisateur·rice (GUI)&lt;/li&gt;
 &lt;li&gt;Optimisation spatialement explicite&lt;/li&gt;
-&lt;li&gt;Meilleus &lt;em&gt;outputs&lt;/em&gt; (sorties)&lt;/li&gt;
+&lt;li&gt;Meilleurs &lt;em&gt;outputs&lt;/em&gt; (sorties)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;comment-ca-du-code-interactif-&#34;&gt;Comment ca, du code interactif ?&lt;/h2&gt;
+&lt;h2 id=&#34;comment-ça-marche-du-code-interactif-&#34;&gt;Comment ça marche, du code interactif ?&lt;/h2&gt;
 &lt;p&gt;Reveal.js permet de mettre en valeur des lignes par intermitence. Ici, la 2, puis la 8, puis la 13. Fantastique pour parler du code au fur et à mesure.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;R&#34; data-line-numbers=&#34;2|8|13&#34;&gt;
 library(FMT) # Charge FMT dans R
@@ -3409,7 +3409,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280422/</guid>
-      <description>&lt;h1 id=&#34;fmt-où-en-somme-nous&#34;&gt;FMT où en somme nous?&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;fmt-où-en-somme-nous&#34;&gt;FMT où en somme-nous?&lt;/h1&gt;
 
 
 
@@ -3463,7 +3463,7 @@ graph TD;
   3[&#34;Python&#34;];
   4[&#34;Cran R&#34;];
   5[&#34;Interface&#34;];
-  6[&#34;Re-planification&#34;];
+  6[&#34;Replanification&#34;];
   7[&#34;Base de données&#34;];
   8[&#34;BFEC-GCBM&#34;];
   9[&#34;Planification&#34;];
@@ -3481,7 +3481,7 @@ pie title Les tests de FMT
   &#34;Syntaxe&#34; : 3.5
   &#34;Unités spatiales&#34; : 5.3
   &#34;Planification&#34; : 61.4
-  &#34;Re-planification&#34; : 5.3
+  &#34;Replanification&#34; : 5.3
   &#34;Spatialisation&#34; : 7.0
   &#34;Machine Learning&#34; : 7.0
   &#34;Presolve&#34; : 3.5
@@ -3509,7 +3509,7 @@ flowchart LR;
 10 --&gt; 9;
 1 --&gt; 5 --&gt; 9;
 1[&#34;Master&#34;]
-2[&#34;Re-planification&#34;]
+2[&#34;Replanification&#34;]
 3[&#34;BFEcopt&#34;]
 4[&#34;Machine Learning&#34;]
 5[&#34;type II&#34;]
@@ -3574,12 +3574,12 @@ flowchart LR;
 &lt;ul&gt;
 &lt;li&gt;Github
 &lt;ul&gt;
-&lt;li&gt;Re-planification&lt;/li&gt;
+&lt;li&gt;Replanification&lt;/li&gt;
 &lt;li&gt;Syntaxe
 &lt;ul&gt;
 &lt;li&gt;Spatialisation&lt;/li&gt;
 &lt;li&gt;Carbone (yields)&lt;/li&gt;
-&lt;li&gt;Re-planification&lt;/li&gt;
+&lt;li&gt;Replanification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -3604,10 +3604,10 @@ Mise à jour de la cache :     des8, 2022-04-20,2022-05-20
 Migration du code          :     crit,des9, 2022-05-02,2022-05-09
 Ajout playback et parallisation :     des10, 2022-05-20,2022-06-03
 Ajout de BFECopt       :     des11, 2022-06-03,2022-06-09
-Ajout de la re-planification :des12, 2022-06-09,2022-06-30
+Ajout de la replanification :des12, 2022-06-09,2022-06-30
 section Formations
 ClubFMThé            :done,des1,2021-12-15,2022-02-30
-Formation Re-planification :active,des2,2022-03-22,2022-06-15
+Formation Replanification :active,des2,2022-03-22,2022-06-15
 section Machine Learning
 Phase 1.2 (Développement de syntaxe carbone)            :done,des1,2021-12-15,2022-04-15
 Mise en place d&#39;une présentation                        :     des2,2022-02-15,2022-04-08
@@ -3620,9 +3620,9 @@ Débogage                                                :       des3,2021-12-15
 &lt;hr&gt;
 &lt;h2 id=&#34;les-futurs-projets-potentiels&#34;&gt;Les futurs projets potentiels&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Re-planification spatialement explicite
+&lt;li&gt;Replanification spatialement explicite
 &lt;ul&gt;
-&lt;li&gt;Permettre d&amp;rsquo;obtenir un effet de spatialisation à travers la re-planification&lt;/li&gt;
+&lt;li&gt;Permettre d&amp;rsquo;obtenir un effet de spatialisation à travers la replanification&lt;/li&gt;
 &lt;li&gt;Utilisation d&amp;rsquo;évènements stochastiques spatiaux&lt;/li&gt;
 &lt;li&gt;Inclure les enjeux opérationels&lt;/li&gt;
 &lt;li&gt;Changements climatiques&lt;/li&gt;
@@ -3742,7 +3742,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;1-bilan-carbone-avec-lia&#34;&gt;1. Bilan carbone avec l&amp;rsquo;IA&lt;/h2&gt;
+&lt;h2 id=&#34;bilan-carbone-avec-lia&#34;&gt;Bilan carbone avec l&amp;rsquo;IA&lt;/h2&gt;
 &lt;div class=mermaid&gt;
     stateDiagram
     direction LR
@@ -3801,7 +3801,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;2-planification-spatiale-par-ia&#34;&gt;2. Planification spatiale par IA&lt;/h2&gt;
+&lt;h2 id=&#34;planification-spatiale-par-ia&#34;&gt;Planification spatiale par IA&lt;/h2&gt;
 &lt;div class=mermaid&gt;
     stateDiagram
     direction LR
@@ -3931,11 +3931,11 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;ul&gt;
 &lt;li&gt;Les modèles d&amp;rsquo;IA testés
 &lt;ul&gt;
-&lt;li&gt;Région écologique 3 modèles (Pessière,Sapinière,Érablière) entrainés avec calcul-2328&lt;/li&gt;
-&lt;li&gt;Global 1 modèle entrainé avec calcul-2328&lt;/li&gt;
+&lt;li&gt;Région écologique trois modèles (Pessière,Sapinière,Érablière) entrainés avec calcul-2328&lt;/li&gt;
+&lt;li&gt;Global un modèle entrainé avec calcul-2328&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Les types de modélisation
+&lt;li&gt;Les types de modélisations
 &lt;ul&gt;
 &lt;li&gt;Spatial (cellules de 14 ha)&lt;/li&gt;
 &lt;li&gt;Non spatial (à l&amp;rsquo;échelle de la strate)&lt;/li&gt;
@@ -4000,7 +4000,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;hr&gt;
 &lt;h2 id=&#34;constats-ia-vs-gcbm&#34;&gt;Constats IA vs GCBM&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Le modèle d&amp;rsquo;IA par région écologique performe le moins bien
+&lt;li&gt;Le modèle d&amp;rsquo;IA par région écologique performe moins bien
 &lt;ul&gt;
 &lt;li&gt;Sous estime le carbone des réservoirs&lt;/li&gt;
 &lt;li&gt;À le plus grand écart avec le bilan des émissions nettes de GCBM&lt;/li&gt;
@@ -4019,7 +4019,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;ul&gt;
 &lt;li&gt;Les résultats de l&amp;rsquo;IA diffèrent de GCBM car:
 &lt;ul&gt;
-&lt;li&gt;IA suppose le feu comme perturbation historique&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;IA suppose le feu comme perturbation historique&lt;/li&gt;
 &lt;li&gt;GCBM utilise plus d&amp;rsquo;intrants
 &lt;ul&gt;
 &lt;li&gt;Température annuelle moyenne&lt;/li&gt;
@@ -4032,7 +4032,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 &lt;li&gt;Le modèle par région écologique performe moins bien car:
 &lt;ul&gt;
 &lt;li&gt;Manque de données par modèle&lt;/li&gt;
-&lt;li&gt;Les région écologique sont difficiles à identifier dans les modèles&lt;/li&gt;
+&lt;li&gt;Les régions écologiques sont difficiles à identifier dans les modèles&lt;/li&gt;
 &lt;li&gt;Superficie orphelines dans les modèles&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -4266,7 +4266,7 @@ classDiagram
 &lt;ul&gt;
 &lt;li&gt;Lecture de modèles Woodstock&lt;/li&gt;
 &lt;li&gt;Simulation de paysages forestiers&lt;/li&gt;
-&lt;li&gt;Optimisation / Ré-optimisation de modèles&lt;/li&gt;
+&lt;li&gt;Optimisation / Réoptimisation de modèles&lt;/li&gt;
 &lt;li&gt;Planification (en utilisant des événements stochastiques)&lt;/li&gt;
 &lt;li&gt;Résolution des heuristiques d&amp;rsquo;agrégation&lt;/li&gt;
 &lt;li&gt;Planification des blocs de récolte&lt;/li&gt;
@@ -4311,10 +4311,10 @@ classDiagram
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_732aa432a314b65ba8aca43205c0cf64.webp 400w,
-               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_22517f3a8cb0728648464d306c551cd6.webp 760w,
+               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_5f93889ab7e34529d434e63eabfb8062.webp 400w,
+               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_beeaedfc07926eed52174ed461600a2c.webp 760w,
                /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_732aa432a314b65ba8aca43205c0cf64.webp&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_5f93889ab7e34529d434e63eabfb8062.webp&#34;
                width=&#34;90%&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -4382,7 +4382,7 @@ classDiagram
          (i)Cellule --&gt; Âge
          (i)Cellule --&gt; Opérabilité
          (i)Globale --&gt; Taille_des_blocs
-         (i)Globale --&gt; Délai_dadjacence
+         (i)Globale --&gt; Délai_d&#39;adjacence
        }
        Intrants --&gt; IA
       state Générateur {
@@ -4522,7 +4522,7 @@ Optimisation AAM 2751 (scénario de référence) :active,    des1, 2023-06-26,20
 Optimisation stock de carbone forêt feuillue - UA 7152 :    des1, 2023-07-14,2023-09-28
 Analyses des différents scénarios d&#39;optimisation :    des1, 2023-08-17,2023-09-28
 Apprentissage avec perturbations naturelles :    des1, 2023-09-04,2023-12-18
-Développement pour opérationalisation du calcul : ,2023-09-04,2024-01-01
+Développement pour l&#39;opérationalisation du calcul : ,2023-09-04,2024-01-01
 Test de l&#39;opérationalisation : ,2023-10-06,2024-01-01
 &lt;/div&gt;
 &lt;p&gt;&lt;a href=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_carbone/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation Machine Learning&lt;/a&gt;&lt;/p&gt;
@@ -4677,7 +4677,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;li&gt;La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
 &lt;ul&gt;
 &lt;li&gt;Le calcul du bilan de carbone forestier pour un modèle de planification est complexe&lt;/li&gt;
-&lt;li&gt;L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
+&lt;li&gt;L’optimisation spatialement explicite de la localisation des travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -4862,10 +4862,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_2151d7216cac7639e8ae6af5c498ce56.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_ef13d0f33f606bd1116d05c787001d79.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm1_hu4238c32fd8b4ff10d922d98d59031d9d_136578_2151d7216cac7639e8ae6af5c498ce56.webp&#34;
+               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_85bee0acfacfa332229a8bd691c5ee5e.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_76fa157b0bd5cb06fbfff8e3544b6eb2.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_85bee0acfacfa332229a8bd691c5ee5e.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -4907,10 +4907,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_ebf071a0ad306d93e2fd9be1a6b3fcd6.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_7f62ba65e633246b7c2ede7be2352036.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm2_hufd827c231d0f68b8e5c5b00c9b5640a3_68692_ebf071a0ad306d93e2fd9be1a6b3fcd6.webp&#34;
+               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_aa226df720c2999b921683ef41723165.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_e88c780e690525b36b26e0646f3c243f.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_aa226df720c2999b921683ef41723165.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -4934,10 +4934,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_fe7282caba56d80420d4b4b7bc8533c1.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_f108493dc4d4608a351edacdb599ef37.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/ml1_huce2c7522e5e913b17190ed8eafaee7b5_63455_fe7282caba56d80420d4b4b7bc8533c1.webp&#34;
+               /FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_0d4932d9643d541476458952d30a0339.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_f8d02c951d698c2f14d64a2a7bab20f4.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_0d4932d9643d541476458952d30a0339.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -4961,10 +4961,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_7ab2fa3325d55eabef4c520506dd343c.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_ad5c505b813578f8bab875887a5ae6ad.webp 760w,
-               /FMTdocs/fr/slides/fmt_carbone/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/m1_hu98beb4534d2a962f6fb179b2a6655b71_77841_7ab2fa3325d55eabef4c520506dd343c.webp&#34;
+               /FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_412653f6ec05365dd296287dea5a5a14.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_643da09d1d664c85b6f6f39b08e328a3.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_412653f6ec05365dd296287dea5a5a14.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -5056,7 +5056,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
   *OUTPUT NEP_Total
   *SOURCE ? ? ? _INVENT NEP
 
-  ;Inventaire de la biomasse anérienne et souterraine en (c)
+  ;Inventaire de la biomasse aérienne et souterraine en (c)
   *OUTPUT Biomasse_Total
   *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
 
@@ -5255,7 +5255,7 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;li&gt;
 &lt;p&gt;On peut maintenant utiliser le Machine Learning pour:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Générer des solutions spatialement explicite plausible&lt;/li&gt;
+&lt;li&gt;Générer des solutions spatialement explicites plausibles&lt;/li&gt;
 &lt;li&gt;Améliorer notre planification en fonction de notre bilan de carbone&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;

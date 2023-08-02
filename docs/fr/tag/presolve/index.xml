@@ -140,7 +140,7 @@ flowchart LR
 &lt;div class=mermaid&gt;
 flowchart LR
     B{&#34;Aucune opérabilité?&#34;} -- Oui --&gt;C[&#34;Élimine l&#39;action&#34;]
-    B -- Non --&gt;D{&#34;Ligne d&#39;opérabilité inutile?&#39;&#34;}
+    B -- Non --&gt;D{&#34;Ligne d&#39;opérabilité inutile?&#34;}
     subgraph Réduction du nombre d&#39;éléments
     D -- Oui --&gt;E{&#34;Éliminer cette opérabilité&#34;}
     E --&gt; D
@@ -155,7 +155,7 @@ flowchart LR
 &lt;div class=mermaid&gt;
 flowchart LR
     B{&#34;Aucune action?&#34;} -- Oui --&gt;C[&#34;Élimine la transition&#34;]
-    B -- Non --&gt;D{&#34;Ligne de source inutile?&#39;&#34;}
+    B -- Non --&gt;D{&#34;Ligne de source inutile?&#34;}
     subgraph Réduction du nombre d&#39;éléments
     D -- Oui --&gt;E{&#34;Éliminer cette source et ses targets&#34;}
     E --&gt; D
@@ -178,7 +178,7 @@ flowchart LR
 &lt;div class=mermaid&gt;
 flowchart LR
     B{&#34;RHS de 0?&#34;} -- Oui --&gt;C[&#34;Output d&#39;actions?&#34;]
-    C -- Oui --&gt;D[&#34;Transformer la contrainte en yields et opérabilité d&#39;action et l&#39;éliminer&#39;&#34;]
+    C -- Oui --&gt;D[&#34;Transformer la contrainte en yields et opérabilité d&#39;action et l&#39;éliminer&#34;]
     C -- Non --&gt;E[&#34;Output d&#39;inventaire?&#34;]
     E -- Oui --&gt;D
     E -- Non --&gt;F[&#34;Conserver la contrainte&#34;]

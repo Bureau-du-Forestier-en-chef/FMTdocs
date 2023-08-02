@@ -22,14 +22,14 @@
 &lt;p&gt;Dans l&amp;rsquo;approche POO ou Object oriented programming en anglais (OOP), le programme utilise différents &amp;ldquo;objets&amp;rdquo; qui ont une certaine &amp;ldquo;classe&amp;rdquo; et qui peuvent avoir différentes &amp;ldquo;fonctions&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Vous connaissez et utilisez peut-être déjà des fonctions dans des logiciels tels que &amp;ldquo;R&amp;rdquo;. Par exemple, dans R, &lt;code&gt;plot()&lt;/code&gt; est une fonction.&lt;/p&gt;
 &lt;p&gt;Vous pourriez également être habitué.e à &lt;em&gt;certains&lt;/em&gt; objets et classes dans le logiciel que vous utilisez. Par exemple, dans &lt;code&gt;R&lt;/code&gt;, &lt;code&gt;data&amp;lt;-read.csv (données.csv)&lt;/code&gt; met le contenu des &lt;code&gt;données.fichier csv&lt;/code&gt; dans l&amp;rsquo;objet &lt;code&gt;data&lt;/code&gt;, qui a la classe &lt;code&gt;data frame&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&amp;rsquo;une classe particulière. Par exemple, une classe &lt;code&gt;chien&lt;/code&gt; aurait la fonction &lt;code&gt;abboyer_sur()&lt;/code&gt;. Si nous avons une classe nommée &lt;code&gt;chat&lt;/code&gt;, nous pourrions alors :&lt;/p&gt;
+&lt;p&gt;Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d&amp;rsquo;une classe particulière. Par exemple, une classe &lt;code&gt;chien&lt;/code&gt; aurait la fonction &lt;code&gt;aboyer_sur()&lt;/code&gt;. Si nous avons une classe nommée &lt;code&gt;chat&lt;/code&gt;, nous pourrions alors :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Créer un nouvel objet &lt;code&gt;chien&lt;/code&gt; de la classe &lt;code&gt;chien&lt;/code&gt; : &lt;code&gt;pluto = chien(nom = Pluto, age = 8)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Créer un nouvel objet &lt;code&gt;chat&lt;/code&gt; à partir de la classe &lt;code&gt;chat&lt;/code&gt; : &lt;code&gt;felix = chat(nom = Felix, age = 2)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Faire aboyer le chien sur le chat: &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Faire aboyer le chien sur le chat: &lt;code&gt;pluto.aboyer_sur(felix)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;À son tour, l&amp;rsquo;objet peut avoir des &amp;ldquo;propriétés&amp;rdquo;, qui sont exactement ce à quoi cela ressemble. Par exemple, disons que notre classe &lt;code&gt;chat&lt;/code&gt; a trois propriétés : &lt;code&gt;nom&lt;/code&gt; (qui peut être une chaîne de caractères), &lt;code&gt;age&lt;/code&gt; (qui peut être un nombre) et &lt;code&gt;effrayé&lt;/code&gt; (qui est un booléen, &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Dans notre exemple précédent, avant d&amp;rsquo;utiliser &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, la propriété &lt;code&gt;felix.peur&lt;/code&gt; pouvait être &lt;code&gt;false&lt;/code&gt;. Mais maintenant que nous avons utilisé &lt;code&gt;pluto.abboyer_sur(felix)&lt;/code&gt;, &lt;code&gt;felix.peur&lt;/code&gt; s&amp;rsquo;est surement changé en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Dans notre exemple précédent, avant d&amp;rsquo;utiliser &lt;code&gt;pluto.aboyer_sur(felix)&lt;/code&gt;, la propriété &lt;code&gt;felix.peur&lt;/code&gt; pouvait être &lt;code&gt;false&lt;/code&gt;. Mais maintenant que nous avons utilisé &lt;code&gt;pluto.aboyer_sur(felix)&lt;/code&gt;, &lt;code&gt;felix.peur&lt;/code&gt; s&amp;rsquo;est surement changé en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Enfin, une &lt;em&gt;classe parent&lt;/em&gt; en programmation orientée objet signifie que la &lt;em&gt;classe enfant&lt;/em&gt; &lt;em&gt;héritera&lt;/em&gt; automatiquement de toutes les fonctions et propriétés de la fonction parent.&lt;/p&gt;
 &lt;p&gt;Par exemple, supposons que nous ayons une classe parent &lt;code&gt;animal&lt;/code&gt; dont dérivent les classes &lt;code&gt;chien&lt;/code&gt; et &lt;code&gt;chat&lt;/code&gt;. Si la classe &lt;code&gt;animal&lt;/code&gt; a une fonction &lt;code&gt;respiration&lt;/code&gt; (&lt;code&gt;animal.respiration()&lt;/code&gt;), alors les classes &lt;code&gt;chien&lt;/code&gt; et &lt;code&gt;chat&lt;/code&gt; étant ses classes &lt;em&gt;enfant&lt;/em&gt;, elles auront automatiquement cette fonction (&lt;code&gt;chien.respiration()&lt;/code&gt;) et &lt;code&gt;chat.respiration()&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;La &lt;em&gt;programmation orientée objet&lt;/em&gt; est une façon particulière de programmer, intégrée dans le langage de programmation que vous utilisez, qui présente de multiples avantages. L&amp;rsquo;un d&amp;rsquo;eux est de rendre les choses plus faciles à représenter.&lt;/p&gt;
@@ -42,12 +42,12 @@
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Parser&lt;/code&gt;&lt;/strong&gt; : Contient des classes utilisées pour lire ou éditer les fichiers des modèles au format Woodstock&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Models&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour manipuler et résoudre les modèles&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Spatial&lt;/code&gt;&lt;/strong&gt;: Contient des classes utilisées pour travailler sur des données spatialement explicites&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;Heuristics&lt;/code&gt;&lt;/strong&gt; : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Heuristics&lt;/code&gt;&lt;/strong&gt; : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupes et les planifier dans le temps&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/strong&gt;: Contient des informations sur la version actuelle de FMT, et les fonctions qu&amp;rsquo;elle contient (ce qui dépend de la façon dont il a été compilée)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Si vous regardez l&#39;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
+    Si vous regardez l&amp;rsquo;[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;classes-importantes-de-lespace-de-noms-parser&#34;&gt;Classes importantes de l&amp;rsquo;espace de noms &lt;code&gt;Parser&lt;/code&gt;&lt;/h2&gt;
@@ -221,7 +221,7 @@ Done reading Tue Oct 05 10:59:57 2021
 &lt;p&gt;Par exemple, pour voir la liste des objets &lt;code&gt;FMTaction&lt;/code&gt; associés à un &lt;code&gt;FMTmodel&lt;/code&gt; particulier, vous pouvez utiliser la fonction &lt;code&gt;FMTModel.getactions()&lt;/code&gt; (ou &lt;code&gt;FMTModel$getactions()&lt;/code&gt; en R), et utiliser une boucle &lt;code&gt;for&lt;/code&gt; pour afficher toutes les actions dans le modèle. &lt;strong&gt;Les actions affichées de cette manière correspondront aux actions présentes dans le fichier &lt;code&gt;.act&lt;/code&gt; des fichiers Woodstock pour le modèle&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Voici un exemple qui affiche les actions et les transitions d&amp;rsquo;un &lt;code&gt;FMTmodel&lt;/code&gt; en code R :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(FMT) # Charge FMT dans R
-if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
+if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifier si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
 {
 	# Créer un objet parser pour lire les fichiers du modèle
 	newmodelparser &amp;lt;- new(FMTmodelparser)
@@ -238,7 +238,7 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a ét
 	print(&amp;quot;***** Here is the name of the transitions&amp;quot;)
 	for (transition in model$gettransitions())
 	{
-		# On concaténe l&#39;entrée pour la transition afin de la rendre plus lisible dans le terminal
+		# On concatène l&#39;entrée pour la transition afin de la rendre plus lisible dans le terminal
 		cat(transition$str())
 	}
 
@@ -381,7 +381,7 @@ _DEATH
 &lt;p&gt;Il peut résoudre un modèle de planification forestière de type III, et obtenir un calendrier de récolte optimal en utilisant les contraintes et les objectifs définis par l&amp;rsquo;utilisateur.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34;&gt;cet article&lt;/a&gt;.
+    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cet article&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Le &lt;code&gt;FMTlpmodel&lt;/code&gt; contient un objet appelé &lt;code&gt;FMTgraph&lt;/code&gt;, qui contient le &lt;em&gt;graphe&lt;/em&gt; du modèle. Le graphe est un ensemble de noeuds reliés entre eux par des liens. Chaque noeud correspond à un état possible pour une strate particulière (qui sont des groupes de peuplements forestiers référencés dans l&amp;rsquo;espace avec les mêmes caractéristiques), et chaque lien représente une façon particulière dont elle peut évoluer vers un autre état dans la même période de temps et entre les périodes.&lt;/p&gt;
@@ -622,7 +622,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 		print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;) # Si le modèle n&#39;as pas été compilé avec OSI, on affiche une erreur
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;résoudre-le-fmtlpmodel&#34;&gt;Résoudre le &lt;code&gt;FMTlpmodel&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le &lt;code&gt;FMTlpmodel&lt;/code&gt; peut être résolu en utilisant la fonction &lt;code&gt;FMTlpmodel.initialsolve()&lt;/code&gt;. La fonction renvoie une valeur &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt; selon que le modèle a été résolu avec succès. Si la résolution s&amp;rsquo;est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différente manières (un exemple est présenté plus bas).&lt;/p&gt;
+&lt;p&gt;Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le &lt;code&gt;FMTlpmodel&lt;/code&gt; peut être résolu en utilisant la fonction &lt;code&gt;FMTlpmodel.initialsolve()&lt;/code&gt;. La fonction renvoie une valeur &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt; selon que le modèle a été résolu avec succès. Si la résolution s&amp;rsquo;est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différentes manières (un exemple est présenté plus bas).&lt;/p&gt;
 &lt;h2 id=&#34;construire-le-graphe-avec-une-solution-existante-construction-partielle&#34;&gt;Construire le graphe avec une solution existante (construction partielle)&lt;/h2&gt;
 &lt;p&gt;Parfois, on peut vouloir obtenir des résultats d&amp;rsquo;une solution/planification que l&amp;rsquo;on a déjà déjà (voir la section suivante) sans résoudre le modèle à nouveau, puisqu&amp;rsquo;il a déjà été résolu précédemment.&lt;/p&gt;
 &lt;p&gt;Dans ce cas, il est possible de lire une solution qui a été trouvée précédemment, et de construire le &lt;code&gt;FMTgraph&lt;/code&gt; du modèle en générant seulement les noeuds et les liens utilisés par la solution.&lt;/p&gt;
@@ -631,7 +631,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 &lt;li&gt;Lire le fichier de calendrier du scénario, et le passer à la fonction &lt;code&gt;FMTlpmodel.buildperiod()&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Définir la solution pour chaque période avec la fonction &lt;code&gt;FMTlpmodel.setsolution()&lt;/code&gt;.
 &lt;ul&gt;
-&lt;li&gt;Si le modèle contient plusieurs actions &lt;code&gt;_LOCKEXEMPT&lt;/code&gt;, l&amp;rsquo;utilisation de &lt;code&gt;FMTlpmodel.setsolution()&lt;/code&gt; peut provoquer des erreurs car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction &lt;code&gt;FMTlpmodel.setsolutionbylp()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Si le modèle contient plusieurs actions &lt;code&gt;_LOCKEXEMPT&lt;/code&gt;, l&amp;rsquo;utilisation de &lt;code&gt;FMTlpmodel.setsolution()&lt;/code&gt; peut provoquer des erreurs, car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction &lt;code&gt;FMTlpmodel.setsolutionbylp()&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -812,13 +812,13 @@ Solution set at period   20
 &lt;p&gt;La solution d&amp;rsquo;un modèle peut être mise dans une liste en utilisant la fonction &lt;code&gt;FMTlpmodel.getsolution()&lt;/code&gt; pour chacune des périodes d&amp;rsquo;intérêt.&lt;/p&gt;
 &lt;p&gt;Ensuite, la liste des solutions pour chaque période doit être transformée en un vecteur, qui peut ensuite être écrit dans un fichier &lt;code&gt;.txt&lt;/code&gt; en utilisant la fonction &lt;code&gt;FMTscheduleparser.write()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Pour un exemple, voir &lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;pré-solution-dun-modèle&#34;&gt;Pré-solution d&amp;rsquo;un modèle&lt;/h2&gt;
+&lt;h2 id=&#34;présolution-dun-modèle&#34;&gt;Présolution d&amp;rsquo;un modèle&lt;/h2&gt;
 &lt;p&gt;Certains modèles peuvent être difficiles à résoudre, à cause de leur nombre élevé d&amp;rsquo;actions, de strates, et ainsi de suite.&lt;/p&gt;
-&lt;p&gt;Dans ce cas, la fonction &lt;code&gt;FMTmodel.basepresolve()&lt;/code&gt; peut être utilisée pour pré-solutioner le modèle.&lt;/p&gt;
+&lt;p&gt;Dans ce cas, la fonction &lt;code&gt;FMTmodel.basepresolve()&lt;/code&gt; peut être utilisée pour présolutioner le modèle.&lt;/p&gt;
 &lt;p&gt;Cette fonction retourne un modèle avec moins de thèmes, d&amp;rsquo;actions, de transitions, de sorties et de contraintes que le modèle original, mais avec la même quantité d&amp;rsquo;informations. Cela le rend plus facile à résoudre, tout en donnant la même réponse à la fin.&lt;/p&gt;
-&lt;p&gt;Dans certaines situations, FMT pré-solutionerra le modèle automatiquement.&lt;/p&gt;
+&lt;p&gt;Dans certaines situations, FMT présolutionerra le modèle automatiquement.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Maintenant que vous savez tout ce qu&amp;rsquo;il y a à savoir sur l&amp;rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&amp;rsquo;essayer l&#39;&lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt; pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.&lt;/p&gt;
+&lt;p&gt;Maintenant que vous savez tout ce qu&amp;rsquo;il y a à savoir sur l&amp;rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&amp;rsquo;essayer l&amp;rsquo;&lt;a href=&#34;../exercice_1/&#34;&gt;exercice 1&lt;/a&gt; pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.&lt;/p&gt;
 </description>
     </item>
     
@@ -828,7 +828,7 @@ Solution set at period   20
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/exercice_1/</guid>
       <description>&lt;p&gt;Dans cet exercice, vous allez essayer d&amp;rsquo;utiliser FMT pour lire un scénario, le résoudre, lire une de ses sorties, et exporter la solution.&lt;/p&gt;
-&lt;p&gt;Pour faire cet exercice, &lt;strong&gt;vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&amp;rsquo;exemple depuis le dépôt GitHub de FMT&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Pour faire cet exercice, &lt;strong&gt;vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d&amp;rsquo;exemples depuis le dépôt GitHub de FMT&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul class=&#34;cta-group&#34;&gt;
   
   &lt;li&gt;
@@ -850,7 +850,7 @@ Solution set at period   20
 &lt;h2 id=&#34;objectifs-de-lexercice&#34;&gt;Objectifs de l&amp;rsquo;exercice&lt;/h2&gt;
 &lt;p&gt;Utilisez FMT pour :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Lire le modèle Woodstock &lt;code&gt;TWD_land&lt;/code&gt; dans les fichiers d&amp;rsquo;exemple en sélectionnant son scénario nommé &lt;code&gt;LP&lt;/code&gt;.
+&lt;li&gt;Lire le modèle Woodstock &lt;code&gt;TWD_land&lt;/code&gt; dans les fichiers d&amp;rsquo;exemples en sélectionnant son scénario nommé &lt;code&gt;LP&lt;/code&gt;.
 &lt;ul&gt;
 &lt;li&gt;N&amp;rsquo;oubliez pas de sélectionner le solveur &lt;code&gt;CLP&lt;/code&gt; lors de la lecture du modèle.&lt;/li&gt;
 &lt;/ul&gt;
@@ -885,7 +885,7 @@ Solution set at period   20
   &lt;summary&gt;Révéler la correction&lt;/summary&gt;
   &lt;p&gt;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#%% CHARGEMENT DE FMT
 
-# Ici, on charge FMT directement, comme si il avait été installé avec pip.
+# Ici, on charge FMT directement, comme s&#39;il avait été installé avec pip.
 
 from FMT import Models
 from FMT import Parser
@@ -896,8 +896,8 @@ from FMT import Version
 # Création d&#39;un objet pour lire le modèle (parser)
 modelParser = Parser.FMTmodelparser()
 
-# Definition du chemin menant au modèle woodstock
-# Le modèle woodstock est fait de pleins de petits fichiers différents
+# Definition du chemin menant au modèle Woodstock
+# Le modèle Woodstock est fait de pleins de petits fichiers différents
 # On pointe vers le fichier .pri, qui contient la location de tous les petits fichiers du modèle.
 # WARNING : FMT a du mal avec les espaces dans les chemins. Essayez d&#39;avoir un
 # chemin sans espaces.
@@ -905,16 +905,16 @@ pathToWoodstockModel = &amp;quot;D:/TempCode/FMT/FMT/Examples/Models/TWD_land/TW
 
 # On définit le/les scénarios que l&#39;on va lire
 # Les scénarios sont des ensembles de contraites et objectifs,
-# ou bien un planning deja fait que l&#39;on va simuler.
+# ou bien un planning déjà fait que l&#39;on va simuler.
 scenariosToSelect = [&amp;quot;LP&amp;quot;]
 
-# On lit le model grace au parser. Celui-ci va renvoyer une liste de modèles
+# On lit le model grâce au parser. Celui-ci va renvoyer une liste de modèles
 # qu&#39;il a détécté. Dans notre cas, on n&#39;en aura qu&#39;un seul.
 listOfModelsParsed = modelParser.readproject(pathToWoodstockModel, scenariosToSelect)
 
-# On charge le modèle parmis la liste des modèles renvoyée
+# On charge le modèle parmis la liste des modèles renvoyés
 # Pour le charger correctement, il faut décrire le type de modèle que c&#39;est, ainsi que des paramètres importants.
-# Ici, le modèle sera un modèle linéraire spatialement référence (LP),
+# Ici, le modèle sera un modèle linéraire spatialement référencé (LP),
 # et on utilisera le solveur CLP pour le résoudre.
 LPModel = Models.FMTlpmodel(listOfModelsParsed[0], Models.FMTsolverinterface.CLP)
 
@@ -988,7 +988,7 @@ scheduleParser.write(modelSolution, r&amp;quot;D:/TempCode/FMT/FMT/Examples/prog
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/spatially_explicit_simulation/</guid>
       <description>&lt;h2 id=&#34;un-petit-rappel-sur-la-signification-de-spatialement-référencé&#34;&gt;Un petit rappel sur la signification de &amp;ldquo;spatialement référencé&amp;rdquo;.&lt;/h2&gt;
-&lt;p&gt;On peut distinguer 3 façons de prendre en compte l&amp;rsquo;espace dans un modèle :&lt;/p&gt;
+&lt;p&gt;On peut distinguer trois façons de prendre en compte l&amp;rsquo;espace dans un modèle :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Dans un &lt;strong&gt;modèle non spatial&lt;/strong&gt; ou &lt;strong&gt;modèle spatialement implicite&lt;/strong&gt;, les entités (par exemple, les forêts, les animaux, les agents, etc.) ne sont pas directement associées à une position dans l&amp;rsquo;espace, mais la relation entre elles dans le modèle peut impliquer que seules certaines d&amp;rsquo;entre elles interagissent entre elles de manière à mimer une disposition spatiale.&lt;/li&gt;
 &lt;li&gt;Dans un modèle &lt;strong&gt;spatialement référencé&lt;/strong&gt;, les entités sont associées à des régions de l&amp;rsquo;espace, mais pas à une position précise dans ces régions ; ces régions peuvent être non-continues. Les modèles de Woodstock sont par nature spatialement référencés, car ils considèrent des &lt;em&gt;strates&lt;/em&gt; qui correspondent à des forêts de même composition et de même âge, qui peuvent être dispersées en de nombreux endroits du paysage.&lt;/li&gt;
@@ -1005,9 +1005,9 @@ FMTmodel &amp;lt;|-- FMTsrmodel
 FMTsrmodel &amp;lt;|-- FMTlpmodel
 FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Au lieu de ca, le &lt;code&gt;FMTsesmodel&lt;/code&gt; va essayer de spatialiser le calendrier d&amp;rsquo;un &lt;code&gt;FMTsrmodel&lt;/code&gt; en plaçant des blocs de coupe sur une carte. Il fait cela en faisant des itérations dans lesquelles il simule le placement de ces blocs, et en sélectionnant la meilleure solution trouvée.&lt;/p&gt;
+&lt;p&gt;Au lieu de ça, le &lt;code&gt;FMTsesmodel&lt;/code&gt; va essayer de spatialiser le calendrier d&amp;rsquo;un &lt;code&gt;FMTsrmodel&lt;/code&gt; en plaçant des blocs de coupe sur une carte. Il fait cela en faisant des itérations dans lesquelles il simule le placement de ces blocs, et en sélectionnant la meilleure solution trouvée.&lt;/p&gt;
 &lt;p&gt;Pour utiliser une métaphore, cela revient à essayer de trouver une position gagnante aux échecs si vous n&amp;rsquo;êtes pas capable de la trouver en réfléchissant bien au placement de vos pièces d&amp;rsquo;échecs : vous pourriez essayer de placer vos pièces au hasard de nombreuses, nombreuses fois, et vous demander à chaque fois si vous avez gagné, ou si vous êtes plus proche de la victoire, et si la position des pièces d&amp;rsquo;échecs respecte les règles du jeu.&lt;/p&gt;
-&lt;p&gt;Ici, &lt;code&gt;FMTsesmodel&lt;/code&gt; essaiera de placer les blocs de coupe selon la solution d&amp;rsquo;un &lt;code&gt;FMTsrmodel&lt;/code&gt; (qui est un calendrier d&amp;rsquo;opérations forestières appliqué à des &lt;em&gt;strates&lt;/em&gt; spatialement référencées). Son but sera de trouver le meilleur positionnement possible, en s&amp;rsquo;accommodant au mieux des contraintes linéaires et spatiales qui sont données pour leur placement, et en maximisant la valeur objective (par exemple, en maximisant le bois récolté).&lt;/p&gt;
+&lt;p&gt;Ici, &lt;code&gt;FMTsesmodel&lt;/code&gt; essaiera de placer les blocs de coupes selon la solution d&amp;rsquo;un &lt;code&gt;FMTsrmodel&lt;/code&gt; (qui est un calendrier d&amp;rsquo;opérations forestières appliqué à des &lt;em&gt;strates&lt;/em&gt; spatialement référencées). Son but sera de trouver le meilleur positionnement possible, en s&amp;rsquo;accommodant au mieux des contraintes linéaires et spatiales qui sont données pour leur placement, et en maximisant la valeur objective (par exemple, en maximisant le bois récolté).&lt;/p&gt;
 &lt;p&gt;Cependant, cette méthode a peu de chance de trouver le &lt;strong&gt;placement optimal&lt;/strong&gt;, s&amp;rsquo;il existe ; à la place, plus il y a d&amp;rsquo;itérations pour essayer de les placer, plus il y a de chance de trouver une solution qui se rapproche le plus possible d&amp;rsquo;un placement optimal des blocs coupés dans l&amp;rsquo;espace. C&amp;rsquo;est pourquoi ce processus représente ce que nous appelons une &lt;a href=&#34;https://en.wikipedia.org/wiki/Heuristic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;heuristique&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;lespace-dans-fmt&#34;&gt;L&amp;rsquo;espace dans FMT&lt;/h2&gt;
 &lt;p&gt;FMT utilise des &lt;code&gt;FMTlayers&lt;/code&gt; pour représenter toute solution spatialement explicite.&lt;/p&gt;
@@ -1017,7 +1017,7 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;h2 id=&#34;la-classe-fmtspatialschedule&#34;&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt;.&lt;/h2&gt;
 &lt;p&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution spatialement explicite sous la forme d&amp;rsquo;un &lt;code&gt;FMTlayer&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Elle contient une fonction importante, &lt;code&gt;FMTspatialschedule.getsolutionstatus()&lt;/code&gt;, qui imprime des informations importantes sur la façon dont la solution contenue dans le &lt;code&gt;FMTspatialschedule&lt;/code&gt; atteint l&amp;rsquo;objectif du modèle.&lt;/p&gt;
-&lt;p&gt;Cette fonction donne également une valeur de l&#39;&lt;em&gt;infaisabilité primaire&lt;/em&gt;, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.&lt;/p&gt;
+&lt;p&gt;Cette fonction donne également une valeur de l&amp;rsquo;&lt;em&gt;infaisabilité primaire&lt;/em&gt;, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.&lt;/p&gt;
 &lt;p&gt;Notez que contrairement à l&amp;rsquo;objet &lt;code&gt;FMTschedule&lt;/code&gt; qui ne concerne qu&amp;rsquo;une seule période de temps (c&amp;rsquo;est pourquoi le code montré dans la section sur &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;l&amp;rsquo;optimisation spatialement référencée&lt;/a&gt; contenait une boucle &lt;code&gt;for&lt;/code&gt; autour du nombre de périodes d&amp;rsquo;intérêt lorsqu&amp;rsquo;il s&amp;rsquo;agissait de la classe &lt;code&gt;FMTschedule&lt;/code&gt;), &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution pour plusieurs périodes de temps à la fois.&lt;/p&gt;
 &lt;h2 id=&#34;le-fmtlinegraph&#34;&gt;Le &lt;code&gt;FMTlinegraph&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Comme dit précédemment, la structure spatiale d&amp;rsquo;un &lt;code&gt;FMTsesmodel&lt;/code&gt; est comme une carte raster faite de pixels, chaque pixel étant un &lt;code&gt;FMTlinegraph&lt;/code&gt;.&lt;/p&gt;
@@ -1143,8 +1143,8 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;p&gt;Ces deux fonctions requièrent plusieurs paramètres pour identifier correctement les thèmes nécessaires, et pour spécifier plusieurs caractéristiques spatiales de la classe &lt;code&gt;FMTforest&lt;/code&gt; que vous allez créer.&lt;/p&gt;
 &lt;p&gt;Une fois que la &lt;code&gt;FMTforest&lt;/code&gt; est créée, elle doit être fournie au &lt;code&gt;FMTsesmodel&lt;/code&gt; en utilisant la fonction &lt;code&gt;FMTsesmodel.setinitialmapping()&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;utilisation-de-nouveaux-mots-clés-dans-les-fichiers-woodstock-pour-les-contraintes-spatiales&#34;&gt;Utilisation de nouveaux mots-clés dans les fichiers Woodstock pour les contraintes spatiales&lt;/h2&gt;
-&lt;p&gt;Dans un modèle Woodstock habituel, les contraintes spatiales ne sont pas prises en compte. Cependant, vous aurez certainement besoin d&amp;rsquo;en utiliser pour une simulation spatiale avec le &lt;code&gt;FMTsesmodel&lt;/code&gt;, afin de placer les blocs de coupe du planning optimisé.&lt;/p&gt;
-&lt;p&gt;A cette fin, FMT peut lire deux nouveaux mots-clés dans la section &lt;em&gt;optimize&lt;/em&gt; d&amp;rsquo;un modèle Woodstock qui n&amp;rsquo;existent pas dans la syntaxe originale de Woodstock.&lt;/p&gt;
+&lt;p&gt;Dans un modèle Woodstock habituel, les contraintes spatiales ne sont pas prises en compte. Cependant, vous aurez certainement besoin d&amp;rsquo;en utiliser pour une simulation spatiale avec le &lt;code&gt;FMTsesmodel&lt;/code&gt;, afin de placer les blocs de coupes du planning optimisé.&lt;/p&gt;
+&lt;p&gt;À cette fin, FMT peut lire deux nouveaux mots-clés dans la section &lt;em&gt;optimize&lt;/em&gt; d&amp;rsquo;un modèle Woodstock qui n&amp;rsquo;existent pas dans la syntaxe originale de Woodstock.&lt;/p&gt;
 &lt;p&gt;Ces mots-clés sont &lt;code&gt;_SIZE&lt;/code&gt; et &lt;code&gt;_ADJACENCY&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_SIZE&lt;/code&gt; doit être utilisé avec la syntaxe suivante dans la section &lt;em&gt;optimize&lt;/em&gt; d&amp;rsquo;un modèle Woodstock :&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_SIZE(ACTION, NEIGHBORSIZE) &amp;gt;= &amp;lt;TAILLE EN PIXELS&amp;gt; &amp;lt;PÉRIODES&amp;gt;&lt;/code&gt;&lt;/p&gt;
@@ -1215,11 +1215,11 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;li&gt;Les &lt;code&gt;GREENUP&lt;/code&gt; correspondent au nombre de périodes de temps pour lesquelles nous considérons que deux événements sont voisins. Par exemple, si &lt;code&gt;GREENUP&lt;/code&gt; est égal à 3, deux blocs spatiaux d&amp;rsquo;actions qui sont sous la distance maximale indiquée par &lt;code&gt;DISTANCE&lt;/code&gt; mais qui sont séparés temporellement par 4 périodes ne seront pas considérés comme spatialement adjacents ; cependant, s&amp;rsquo;ils étaient séparés par 3, 2 ou 1 période, ou sont dans la même période, ils seront considérés comme spatialement adjacents.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;faire-la-simulation-avec-fmtsesmodelgreedyreferencebuild&#34;&gt;Faire la simulation avec &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Une fois que vous avez une solution/ un calendrier spatialement référencé (voir &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;optimisation spatialement référencé&lt;/a&gt;) et que vous avez défini le paysage initial pour le &lt;code&gt;FMTsesmodel&lt;/code&gt; (voir les sections précédentes), vous pouvez utiliser &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; pour faire la simulation proprement dite, et obtenir un calendrier d&amp;rsquo;opérations spatialement explicite basée sur le calendrier d&amp;rsquo;opérations spatialement référencé.&lt;/p&gt;
+&lt;p&gt;Une fois que vous avez une solution/ un calendrier spatialement référencé (voir &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;optimisation spatialement référencé&lt;/a&gt;) et que vous avez défini le paysage initial pour le &lt;code&gt;FMTsesmodel&lt;/code&gt; (voir les sections précédentes), vous pouvez utiliser &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; pour faire la simulation proprement dite, et obtenir un calendrier d&amp;rsquo;opérations spatialement explicite basé sur le calendrier d&amp;rsquo;opérations spatialement référencé.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; a besoin de la solution spatialement référencée d&amp;rsquo;un &lt;code&gt;FMTlpmodel&lt;/code&gt; (ou d&amp;rsquo;un &lt;code&gt;FMTnssmodel&lt;/code&gt;), sous la forme d&amp;rsquo;un objet &lt;code&gt;FMTschedule&lt;/code&gt;. Cette solution décrit quel développement (ou strates) est récolté pour une période donnée, avec quelle action, et sur quelle surface/zone.&lt;/p&gt;
 &lt;p&gt;Le &lt;code&gt;FMTschedule&lt;/code&gt; d&amp;rsquo;un &lt;code&gt;FMTlpmodel&lt;/code&gt; ou &lt;code&gt;FMTnssmodel&lt;/code&gt; solutionné peut être récupéré en utilisant leur fonction &lt;code&gt;getsolution()&lt;/code&gt;. Cependant, la fonction récupérera la solution pour une période ; vous devrez boucler autour des périodes pour obtenir les solutions pour chaque période d&amp;rsquo;intérêt, et pour indiquer si vous voulez que la solution prenne en compte les développements bloqués (&lt;em&gt;locked&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; construira une solution spatialement explicite à partir d&amp;rsquo;une solution spatialement référencée pour une période donnée. Avec le &lt;code&gt;FMTschedule&lt;/code&gt; pour la période, la fonction aura besoin d&amp;rsquo;un argument &lt;code&gt;randomiterations&lt;/code&gt; qui est le nombre maximal d&amp;rsquo;itérations faites par l&amp;rsquo;algorithme avant qu&amp;rsquo;il ne s&amp;rsquo;arrête quand aucune augmentation de la valeur de la fonction d&amp;rsquo;objectif (maximisation de l&amp;rsquo;objectif) ou diminution de la valeur d&amp;rsquo;infaisabilité primaire n&amp;rsquo;a été trouvée. Cela s&amp;rsquo;explique par le fait que la simulation est constituée d&amp;rsquo;itérations au cours desquelles le modèle tente de placer les blocs de coupe dans l&amp;rsquo;espace conformément au calendrier d&amp;rsquo;opérations spatialement référencé afin d&amp;rsquo;augmenter la fonction d&amp;rsquo;objectif du modèle (par exemple, le volume récolté) tout en respectant les contraintes linéaires et spatiales données (dont la déviation aux contraintes est représentée par la valeur d&amp;rsquo;infaisabilité primaire).&lt;/p&gt;
-&lt;p&gt;Une dernière entrée est un numéro de graine aléatoire (&lt;em&gt;seed&lt;/em&gt;) qui sera utilisé pour générer des nombres aléatoires utilisés pour créer les blocs de coupe à chaque itération. Ce système de graine permet à FMT d&amp;rsquo;utiliser des nombres aléatoires qui sont &amp;ldquo;réplicables&amp;rdquo; ; c&amp;rsquo;est-à-dire que si vous gardez la même graine, FMT obtiendra les mêmes nombres aléatoires, et fera exactement les mêmes simulations.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; construira une solution spatialement explicite à partir d&amp;rsquo;une solution spatialement référencée pour une période donnée. Avec le &lt;code&gt;FMTschedule&lt;/code&gt; pour la période, la fonction aura besoin d&amp;rsquo;un argument &lt;code&gt;randomiterations&lt;/code&gt; qui est le nombre maximal d&amp;rsquo;itérations faites par l&amp;rsquo;algorithme avant qu&amp;rsquo;il ne s&amp;rsquo;arrête quand aucune augmentation de la valeur de la fonction d&amp;rsquo;objectif (maximisation de l&amp;rsquo;objectif) ou diminution de la valeur d&amp;rsquo;infaisabilité primaire n&amp;rsquo;a été trouvée. Cela s&amp;rsquo;explique par le fait que la simulation est constituée d&amp;rsquo;itérations au cours desquelles le modèle tente de placer les blocs de coupes dans l&amp;rsquo;espace conformément au calendrier d&amp;rsquo;opérations spatialement référencées afin d&amp;rsquo;augmenter la fonction d&amp;rsquo;objectif du modèle (par exemple, le volume récolté) tout en respectant les contraintes linéaires et spatiales données (dont la déviation aux contraintes est représentée par la valeur d&amp;rsquo;infaisabilité primaire).&lt;/p&gt;
+&lt;p&gt;Une dernière entrée est un numéro de graine aléatoire (&lt;em&gt;seed&lt;/em&gt;) qui sera utilisé pour générer des nombres aléatoires utilisés pour créer les blocs de coupes à chaque itération. Ce système de graine permet à FMT d&amp;rsquo;utiliser des nombres aléatoires qui sont &amp;ldquo;réplicables&amp;rdquo; ; c&amp;rsquo;est-à-dire que si vous gardez la même graine, FMT obtiendra les mêmes nombres aléatoires, et fera exactement les mêmes simulations.&lt;/p&gt;
 &lt;p&gt;Voici une représentation du fonctionnement de l&amp;rsquo;algorithme de simulation en pratique :&lt;/p&gt;
 
 
@@ -1268,22 +1268,22 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Vérifie si FMT a ét
 		print(lpmodel$setconstraint(constraint)$str())
 	}
 	print(lpmodel$setobjective(modelobjective)$str())
-	# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie &amp;quot;true&amp;quot; si il a été résolu
+	# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie &amp;quot;true&amp;quot; s&#39;il a été résolu
 	if (lpmodel$initialsolve())
 	{
 		# On créer un nouveau modèle de simulation spatialement explicite, en se basant sur le contenu de lpmodel
 		simulationmodel &amp;lt;- new(FMTsesmodel, lpmodel)
-		# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaires
+		# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaire
 		singletransition &amp;lt;- list()
 		for (transition in simulationmodel$gettransitions())
 		{
-			# Le +1 est fait pour s&#39;adapter au fait que FMT étant codé en C++, il fonctionne en base 0 (les listes commencet à l&#39;indice 0); alors que R fonctionne en base 1.
+			# Le +1 est fait pour s&#39;adapter au fait que FMT étant codé en C++, il fonctionne en base 0 (les listes commencent à l&#39;indice 0); alors que R fonctionne en base 1.
 			singletransitions[[length(singletransitions) + 1]] &amp;lt;- transition$single()
 		}
 		simulationmodel$settransitions(singletransitions)
 		# On prépare un parseur pour lire la carte initiale des forêts
 		areaparser &amp;lt;- new(FMTareaparser)
-		# On définit où est-ce que le raster avec les informations initiales des forêts se trouvent
+		# On définit où est-ce que le raster des forêts se trouve avec les informations initiales 
 		rasterslocation &amp;lt;- &amp;quot;../Models/TWD_land/rasters&amp;quot;
 		ageraster &amp;lt;- file.path(rasterlocation,&amp;quot;AGE.tif&amp;quot;)
 		# On lit les différents rasters qui contiennent les différents &amp;quot;themes&amp;quot; (ou attributs) initiaux des forêts en faisant
@@ -1335,11 +1335,11 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 		for constraint in constraints:
 			lpmodel.setconstraint(constraint)
 		lpmodel.setobjective(objective)
-		# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie &amp;quot;true&amp;quot; si il a été résolu
+		# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie &amp;quot;true&amp;quot; s&#39;il a été résolu
 		if lpmodel.initialsolve():
 			# On créer un nouveau modèle de simulation spatialement explicite, en se basant sur le contenu de lpmodel
 			simulationmodel = Models.FMTsesmodel(lpmodel)
-			# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaires
+			# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaire
 			singletransitions = []
 			for transition in simulationmodel.gettransitions():
 				singletransitions.append(transition.single())
@@ -1350,13 +1350,13 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 			rasterslocation = &amp;quot;../Models/TWD_land/rasters/&amp;quot;
 			ageraster = os.path.join(rasterslocation, &amp;quot;AGE.tif&amp;quot;)
 			# On lit les différents rasters qui contiennent les différents &amp;quot;themes&amp;quot; (ou attributs) initiaux des forêts en faisant
-			# une boucle autour de tous les themes définits dans le modèle, et en mettant le nom de ces rasters dans une liste
+			# une boucle autour de tous les thèmes définis dans le modèle, et en mettant le nom de ces rasters dans une liste
 			themesrasters = []
 			themeid = 1
 			for theme in simulationmodel.getthemes():
 				themesrasters.append(os.path.join(rasterslocation, &amp;quot;THEME&amp;quot; + str(themeid) + &amp;quot;.tif&amp;quot;))
 				themeid += 1
-			# Maintenant que l&#39;on a tous les rasters, on creer un object FMTforest en lisant tous les rasters de themes, qui contiennent les informations initiales des forêts
+			# Maintenant que l&#39;on a tous les rasters, on creer un object FMTforest en lisant tous les rasters de thèmes, qui contiennent les informations initiales des forêts
 			initialforestmap = areaparser.readrasters(simulationmodel.getthemes(), themesrasters, ageraster, 1, 0.0001)
 			# On donne les données initiales de forêt au modèle spatialement explicite
 			simulationmodel.setinitialmapping(initialforestmap)
@@ -1463,7 +1463,7 @@ Stalled after 14 iterations Skipping
 {&#39;ACARIBOU&#39;: 10491.125109295706, &#39;COUPETOTALE&#39;: 0.3982872281191633, &#39;Objective&#39;: 27667.040000000005, &#39;PLANTATION&#39;: 1.0028031096555103, &#39;Primalinfeasibility&#39;: 77340.64000000012, &#39;Total&#39;: 0.8163283360740083}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;analyser-les-sorties-de-fmtsesmodelgreedyreferencebuild&#34;&gt;Analyser les sorties de &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; retourne des informations sur la meilleure solution qui a été trouvée ; c&amp;rsquo;est-à-dire le meilleur placement spatial des blocs de coupe que l&amp;rsquo;algorithme a été capable de trouver en optimisant la fonction d&amp;rsquo;objectif, tout en respectant les contraintes linéaires et spatiales qui ont été données par l&amp;rsquo;utilisateur.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; retourne des informations sur la meilleure solution qui a été trouvée ; c&amp;rsquo;est-à-dire le meilleur placement spatial des blocs de coupes que l&amp;rsquo;algorithme a été capable de trouver en optimisant la fonction d&amp;rsquo;objectif, tout en respectant les contraintes linéaires et spatiales qui ont été données par l&amp;rsquo;utilisateur.&lt;/p&gt;
 &lt;p&gt;En particulier, &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; indique 4 informations importantes :&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1598,7 +1598,7 @@ Stalled after 14 iterations Skipping
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Stalled after 16 iterations Skipping
 {&#39;ACARIBOU&#39;: 0.981677543988014, &#39;COUPETOTALE&#39;: 0.9817026645791909, &#39;Objective&#39;: 42453.599999999984, &#39;Primalinfeasibility&#39;: 0.0, &#39;Total&#39;: 0.9816850800303768}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Le processus se répète ensuite pour les 9 autres périodes. A chaque fois, le FMT commence par une première itération de placement des actions dans l&amp;rsquo;espace en essayant de respecter les contraintes. Ensuite, l&amp;rsquo;algorithme se termine lorsqu&amp;rsquo;il est soit &lt;strong&gt;stalled&lt;/strong&gt; (stabilisé), soit &lt;strong&gt;stuck&lt;/strong&gt; (bloqué), ce qui signifie qu&amp;rsquo;il ne peut plus améliorer la solution ou réduire l&amp;rsquo;infaisabilité primale. Il affiche alors le nombre d&amp;rsquo;actions qu&amp;rsquo;il a pu placer dans l&amp;rsquo;espace.&lt;/p&gt;
+&lt;p&gt;Le processus se répète ensuite pour les 9 autres périodes. À chaque fois, FMT commence par une première itération de placement des actions dans l&amp;rsquo;espace en essayant de respecter les contraintes. Ensuite, l&amp;rsquo;algorithme se termine lorsqu&amp;rsquo;il est soit &lt;strong&gt;stalled&lt;/strong&gt; (stabilisé), soit &lt;strong&gt;stuck&lt;/strong&gt; (bloqué), ce qui signifie qu&amp;rsquo;il ne peut plus améliorer la solution ou réduire l&amp;rsquo;infaisabilité primale. Il affiche alors le nombre d&amp;rsquo;actions qu&amp;rsquo;il a pu placer dans l&amp;rsquo;espace.&lt;/p&gt;
 &lt;p&gt;Notez que &lt;strong&gt;stalled&lt;/strong&gt; et &lt;strong&gt;stuck&lt;/strong&gt; ont deux significations différentes :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Stalled&lt;/strong&gt; signifie que l&amp;rsquo;algorithme a généré exactement les mêmes solutions (le même placement des coupes dans l&amp;rsquo;espace) que ses 3 dernières itérations, ce qui implique qu&amp;rsquo;il ne peut générer aucune nouvelle solution. Cela peut se produire lorsque les contraintes font que le nombre de solutions potentielles est limité, ce qui signifie que l&amp;rsquo;algorithme les aura rapidement toutes essayées.&lt;/li&gt;
@@ -1620,7 +1620,7 @@ Solution stuck after 27 iterations Skipping
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Et ainsi de suite jusqu&amp;rsquo;à la 10ème période.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Vous devriez maintenant en savoir assez pour commencer à utiliser le FMT par vous-même. Si vous avez d&amp;rsquo;autres questions, veuillez contacter &lt;a href=&#34;mailto:Guillaume.Cyr@fec.gouv.qc.ca&#34;&gt;Guillaume Cyr&lt;/a&gt; ou &lt;a href=&#34;mailto:Bruno.Forest@fec.gouv.qc.ca&#34;&gt;Bruno Forest&lt;/a&gt; du BFEC. Vous pouvez également installer FMT sur votre ordinateur en suivant la section &lt;a href=&#34;../../download_install/&#34;&gt;Téléchargement et installation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vous devriez maintenant en savoir assez pour commencer à utiliser le FMT par vous-même. Si vous avez d&amp;rsquo;autres questions, veuillez contacter &lt;a href=&#34;mailto:Guillaume.Cyr@fec.gouv.qc.ca&#34;&gt;Guillaume Cyr&lt;/a&gt; du BFEC. Vous pouvez également installer FMT sur votre ordinateur en suivant la section &lt;a href=&#34;../../download_install/&#34;&gt;Téléchargement et installation&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

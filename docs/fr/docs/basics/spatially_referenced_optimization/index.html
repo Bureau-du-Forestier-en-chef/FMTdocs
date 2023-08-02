@@ -331,7 +331,7 @@ FMTlpmodel vous permettra de résoudre un modèle de programmation linéaire à 
   
   
   
-  <script src="/FMTdocs/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
+  <script src="/FMTdocs/js/wowchemy-init.min.4be02a3b391999348b0c7478778a0e4b.js"></script>
 
   
 
@@ -394,7 +394,7 @@ FMTlpmodel vous permettra de résoudre un modèle de programmation linéaire à 
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
+      <a class="navbar-brand" href="/fr/">Documentation de FMT</a>
     </div>
     
 
@@ -407,7 +407,7 @@ FMTlpmodel vous permettra de résoudre un modèle de programmation linéaire à 
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/FMTdocs/fr/">Documentation de FMT</a>
+      <a class="navbar-brand" href="/fr/">Documentation de FMT</a>
     </div>
     
 
@@ -738,7 +738,7 @@ FMTlpmodel vous permettra de résoudre un modèle de programmation linéaire à 
       
 
 
-  <li class=""><a href="/FMTdocs/fr/docs/advanced/replanning/">Re-planification spatialement référencée</a></li>
+  <li class=""><a href="/FMTdocs/fr/docs/advanced/replanning/">Replanification spatialement référencée</a></li>
 
 
 
@@ -808,7 +808,7 @@ FMTlpmodel vous permettra de résoudre un modèle de programmation linéaire à 
     <li><a href="#construire-le-graphe-avec-une-solution-existante-construction-partielle">Construire le graphe avec une solution existante (construction partielle)</a></li>
     <li><a href="#obtenir-des-valeurs-de-sortie-du-modèle">Obtenir des valeurs de sortie du modèle</a></li>
     <li><a href="#exportation-du-calendrier-dun-modèle-résolu">Exportation du calendrier d&rsquo;un modèle résolu</a></li>
-    <li><a href="#pré-solution-dun-modèle">Pré-solution d&rsquo;un modèle</a></li>
+    <li><a href="#présolution-dun-modèle">Présolution d&rsquo;un modèle</a></li>
   </ul>
 </nav>
 
@@ -885,7 +885,7 @@ FMTlpmodel vous permettra de résoudre un modèle de programmation linéaire à 
 <p>Il peut résoudre un modèle de planification forestière de type III, et obtenir un calendrier de récolte optimal en utilisant les contraintes et les objectifs définis par l&rsquo;utilisateur.</p>
 <div class="alert alert-note">
   <div>
-    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant <a href="https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf">cet article</a>.
+    La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant <a href="https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf" target="_blank" rel="noopener">cet article</a>.
   </div>
 </div>
 <p>Le <code>FMTlpmodel</code> contient un objet appelé <code>FMTgraph</code>, qui contient le <em>graphe</em> du modèle. Le graphe est un ensemble de noeuds reliés entre eux par des liens. Chaque noeud correspond à un état possible pour une strate particulière (qui sont des groupes de peuplements forestiers référencés dans l&rsquo;espace avec les mêmes caractéristiques), et chaque lien représente une façon particulière dont elle peut évoluer vers un autre état dans la même période de temps et entre les périodes.</p>
@@ -1126,7 +1126,7 @@ if __name__ == &quot;__main__&quot;:
 		print(&quot;FMT needs to be compiled with OSI&quot;) # Si le modèle n'as pas été compilé avec OSI, on affiche une erreur
 </code></pre>
 <h2 id="résoudre-le-fmtlpmodel">Résoudre le <code>FMTlpmodel</code></h2>
-<p>Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le <code>FMTlpmodel</code> peut être résolu en utilisant la fonction <code>FMTlpmodel.initialsolve()</code>. La fonction renvoie une valeur <code>true</code> ou <code>false</code> selon que le modèle a été résolu avec succès. Si la résolution s&rsquo;est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différente manières (un exemple est présenté plus bas).</p>
+<p>Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le <code>FMTlpmodel</code> peut être résolu en utilisant la fonction <code>FMTlpmodel.initialsolve()</code>. La fonction renvoie une valeur <code>true</code> ou <code>false</code> selon que le modèle a été résolu avec succès. Si la résolution s&rsquo;est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différentes manières (un exemple est présenté plus bas).</p>
 <h2 id="construire-le-graphe-avec-une-solution-existante-construction-partielle">Construire le graphe avec une solution existante (construction partielle)</h2>
 <p>Parfois, on peut vouloir obtenir des résultats d&rsquo;une solution/planification que l&rsquo;on a déjà déjà (voir la section suivante) sans résoudre le modèle à nouveau, puisqu&rsquo;il a déjà été résolu précédemment.</p>
 <p>Dans ce cas, il est possible de lire une solution qui a été trouvée précédemment, et de construire le <code>FMTgraph</code> du modèle en générant seulement les noeuds et les liens utilisés par la solution.</p>
@@ -1135,7 +1135,7 @@ if __name__ == &quot;__main__&quot;:
 <li>Lire le fichier de calendrier du scénario, et le passer à la fonction <code>FMTlpmodel.buildperiod()</code>.</li>
 <li>Définir la solution pour chaque période avec la fonction <code>FMTlpmodel.setsolution()</code>.
 <ul>
-<li>Si le modèle contient plusieurs actions <code>_LOCKEXEMPT</code>, l&rsquo;utilisation de <code>FMTlpmodel.setsolution()</code> peut provoquer des erreurs car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction <code>FMTlpmodel.setsolutionbylp()</code>.</li>
+<li>Si le modèle contient plusieurs actions <code>_LOCKEXEMPT</code>, l&rsquo;utilisation de <code>FMTlpmodel.setsolution()</code> peut provoquer des erreurs, car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction <code>FMTlpmodel.setsolutionbylp()</code>.</li>
 </ul>
 </li>
 </ul>
@@ -1316,13 +1316,13 @@ Solution set at period   20
 <p>La solution d&rsquo;un modèle peut être mise dans une liste en utilisant la fonction <code>FMTlpmodel.getsolution()</code> pour chacune des périodes d&rsquo;intérêt.</p>
 <p>Ensuite, la liste des solutions pour chaque période doit être transformée en un vecteur, qui peut ensuite être écrit dans un fichier <code>.txt</code> en utilisant la fonction <code>FMTscheduleparser.write()</code>.</p>
 <p>Pour un exemple, voir <a href="../exercice_1/">exercice 1</a>.</p>
-<h2 id="pré-solution-dun-modèle">Pré-solution d&rsquo;un modèle</h2>
+<h2 id="présolution-dun-modèle">Présolution d&rsquo;un modèle</h2>
 <p>Certains modèles peuvent être difficiles à résoudre, à cause de leur nombre élevé d&rsquo;actions, de strates, et ainsi de suite.</p>
-<p>Dans ce cas, la fonction <code>FMTmodel.basepresolve()</code> peut être utilisée pour pré-solutioner le modèle.</p>
+<p>Dans ce cas, la fonction <code>FMTmodel.basepresolve()</code> peut être utilisée pour présolutioner le modèle.</p>
 <p>Cette fonction retourne un modèle avec moins de thèmes, d&rsquo;actions, de transitions, de sorties et de contraintes que le modèle original, mais avec la même quantité d&rsquo;informations. Cela le rend plus facile à résoudre, tout en donnant la même réponse à la fin.</p>
-<p>Dans certaines situations, FMT pré-solutionerra le modèle automatiquement.</p>
+<p>Dans certaines situations, FMT présolutionerra le modèle automatiquement.</p>
 <hr>
-<p>Maintenant que vous savez tout ce qu&rsquo;il y a à savoir sur l&rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&rsquo;essayer l'<a href="../exercice_1/">exercice 1</a> pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.</p>
+<p>Maintenant que vous savez tout ce qu&rsquo;il y a à savoir sur l&rsquo;optimisation à spatialement référencée dans FMT, nous vous recommandons d&rsquo;essayer l&rsquo;<a href="../exercice_1/">exercice 1</a> pour vous aider à apprendre à utiliser FMT en pratique. Dans cet exercice, vous apprendrez à utiliser par vous-même certaines des fonctions les plus régulièrement utilisées.</p>
 
           </div>
 
@@ -1555,7 +1555,7 @@ Solution set at period   20
       
     
     
-    <script src="/FMTdocs/fr/js/wowchemy.min.d1c5d978fc205b583019e723de2f6d36.js"></script>
+    <script src="/FMTdocs/fr/js/wowchemy.min.895aa7075d3fa765066ba7542ec83ce5.js"></script>
 
     
 
