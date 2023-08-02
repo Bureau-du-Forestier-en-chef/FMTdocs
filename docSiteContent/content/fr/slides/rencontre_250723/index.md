@@ -100,7 +100,7 @@ classDiagram
 
 - Lecture de modèles Woodstock
 - Simulation de paysages forestiers
-- Optimisation / Ré-optimisation de modèles
+- Optimisation / Réoptimisation de modèles
 - Planification (en utilisant des événements stochastiques)
 - Résolution des heuristiques d'agrégation
 - Planification des blocs de récolte
@@ -203,7 +203,7 @@ Projet du Bureau du Forestier en Chef du Québec.
          (i)Cellule --> Âge
          (i)Cellule --> Opérabilité
          (i)Globale --> Taille_des_blocs
-         (i)Globale --> Délai_dadjacence
+         (i)Globale --> Délai_d'adjacence
        }
        Intrants --> IA
       state Générateur {
@@ -352,7 +352,7 @@ Optimisation AAM 2751 (scénario de référence) :active,    des1, 2023-06-26,20
 Optimisation stock de carbone forêt feuillue - UA 7152 :    des1, 2023-07-14,2023-09-28
 Analyses des différents scénarios d'optimisation :    des1, 2023-08-17,2023-09-28
 Apprentissage avec perturbations naturelles :    des1, 2023-09-04,2023-12-18
-Développement pour opérationalisation du calcul : ,2023-09-04,2024-01-01
+Développement pour l'opérationalisation du calcul : ,2023-09-04,2024-01-01
 Test de l'opérationalisation : ,2023-10-06,2024-01-01
 
 </div>

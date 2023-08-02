@@ -1,7 +1,7 @@
 ---
 # Title, summary, and page position.
 linktitle: Les fonctions avancées
-summary: Découvrir les fonctions les plus poussées de FMT, comme la re-planification.
+summary: Découvrir les fonctions les plus poussées de FMT, comme la replanification.
 weight: 3
 icon: code-branch
 icon_pack: fas
@@ -12,7 +12,7 @@ date: "2018-09-09T00:00:00Z"
 type: book  # Do not modify.
 ---
 
-[FMT](https://github.com/gcyr/FMT) possède des fonctions avancées telle que la re-planification, qui permettent d'explorer des questions complexes liées à l'aménagement forestier et à son optimisation.
+[FMT](https://github.com/gcyr/FMT) possède des fonctions avancées telle que la replanification, qui permettent d'explorer des questions complexes liées à l'aménagement forestier et à son optimisation.
 
 Cette section de la documentation va toucher à ses fonctions avancées une par une.
 

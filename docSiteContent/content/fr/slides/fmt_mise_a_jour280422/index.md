@@ -13,7 +13,7 @@ slides:
   diagram: true
 ---
 
-# FMT où en somme nous?
+# FMT où en somme-nous?
 
 {{< figure src="LogoFMT.png" width="40%" height="auto" >}}
 
@@ -50,7 +50,7 @@ graph TD;
   3["Python"];
   4["Cran R"];
   5["Interface"];
-  6["Re-planification"];
+  6["Replanification"];
   7["Base de données"];
   8["BFEC-GCBM"];
   9["Planification"];
@@ -71,7 +71,7 @@ pie title Les tests de FMT
   "Syntaxe" : 3.5
   "Unités spatiales" : 5.3
   "Planification" : 61.4
-  "Re-planification" : 5.3
+  "Replanification" : 5.3
   "Spatialisation" : 7.0
   "Machine Learning" : 7.0
   "Presolve" : 3.5
@@ -102,7 +102,7 @@ flowchart LR;
 10 --> 9;
 1 --> 5 --> 9;
 1["Master"]
-2["Re-planification"]
+2["Replanification"]
 3["BFEcopt"]
 4["Machine Learning"]
 5["type II"]
@@ -163,11 +163,11 @@ flowchart LR;
 ## Documentation à venir
 
 - Github
-  - Re-planification
+  - Replanification
   - Syntaxe
     - Spatialisation
     - Carbone (yields)
-    - Re-planification
+    - Replanification
 - Continuer à documenter les fonctions (78%)
 
 ---
@@ -190,10 +190,10 @@ Mise à jour de la cache :     des8, 2022-04-20,2022-05-20
 Migration du code          :     crit,des9, 2022-05-02,2022-05-09
 Ajout playback et parallisation :     des10, 2022-05-20,2022-06-03
 Ajout de BFECopt       :     des11, 2022-06-03,2022-06-09
-Ajout de la re-planification :des12, 2022-06-09,2022-06-30
+Ajout de la replanification :des12, 2022-06-09,2022-06-30
 section Formations
 ClubFMThé            :done,des1,2021-12-15,2022-02-30
-Formation Re-planification :active,des2,2022-03-22,2022-06-15
+Formation Replanification :active,des2,2022-03-22,2022-06-15
 section Machine Learning
 Phase 1.2 (Développement de syntaxe carbone)            :done,des1,2021-12-15,2022-04-15
 Mise en place d'une présentation                        :     des2,2022-02-15,2022-04-08
@@ -209,8 +209,8 @@ Débogage                                                :       des3,2021-12-15
 
 ## Les futurs projets potentiels
 
-- Re-planification spatialement explicite
-  - Permettre d'obtenir un effet de spatialisation à travers la re-planification
+- Replanification spatialement explicite
+  - Permettre d'obtenir un effet de spatialisation à travers la replanification
   - Utilisation d'évènements stochastiques spatiaux
   - Inclure les enjeux opérationels
   - Changements climatiques

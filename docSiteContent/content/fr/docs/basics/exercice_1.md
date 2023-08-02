@@ -9,7 +9,7 @@ weight: 4
 
 Dans cet exercice, vous allez essayer d'utiliser FMT pour lire un scénario, le résoudre, lire une de ses sorties, et exporter la solution.
 
-Pour faire cet exercice, **vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d'exemple depuis le dépôt GitHub de FMT**.
+Pour faire cet exercice, **vous devez avoir installé FMT sur votre ordinateur et avoir téléchargé les fichiers d'exemples depuis le dépôt GitHub de FMT**.
 
 {{< cta cta_text="💾 Télécharger et installer FMT" cta_link="../../download_install" cta_new_tab="true" >}}
 
@@ -19,7 +19,7 @@ Pour faire cet exercice, **vous devez avoir installé FMT sur votre ordinateur e
 
 Utilisez FMT pour :
 
-1. Lire le modèle Woodstock `TWD_land` dans les fichiers d'exemple en sélectionnant son scénario nommé `LP`.
+1. Lire le modèle Woodstock `TWD_land` dans les fichiers d'exemples en sélectionnant son scénario nommé `LP`.
 	- N'oubliez pas de sélectionner le solveur `CLP` lors de la lecture du modèle.
 2. Résolvez le modèle en
 	- Construisant son graphe complet pour 10 périodes
@@ -46,7 +46,7 @@ Lorsque vous avez terminé, ou si vous êtes bloqué.e, **vous pouvez afficher l
 ```python
 #%% CHARGEMENT DE FMT
 
-# Ici, on charge FMT directement, comme si il avait été installé avec pip.
+# Ici, on charge FMT directement, comme s'il avait été installé avec pip.
 
 from FMT import Models
 from FMT import Parser
@@ -57,8 +57,8 @@ from FMT import Version
 # Création d'un objet pour lire le modèle (parser)
 modelParser = Parser.FMTmodelparser()
 
-# Definition du chemin menant au modèle woodstock
-# Le modèle woodstock est fait de pleins de petits fichiers différents
+# Definition du chemin menant au modèle Woodstock
+# Le modèle Woodstock est fait de pleins de petits fichiers différents
 # On pointe vers le fichier .pri, qui contient la location de tous les petits fichiers du modèle.
 # WARNING : FMT a du mal avec les espaces dans les chemins. Essayez d'avoir un
 # chemin sans espaces.
@@ -66,16 +66,16 @@ pathToWoodstockModel = "D:/TempCode/FMT/FMT/Examples/Models/TWD_land/TWD_land.pr
 
 # On définit le/les scénarios que l'on va lire
 # Les scénarios sont des ensembles de contraites et objectifs,
-# ou bien un planning deja fait que l'on va simuler.
+# ou bien un planning déjà fait que l'on va simuler.
 scenariosToSelect = ["LP"]
 
-# On lit le model grace au parser. Celui-ci va renvoyer une liste de modèles
+# On lit le model grâce au parser. Celui-ci va renvoyer une liste de modèles
 # qu'il a détécté. Dans notre cas, on n'en aura qu'un seul.
 listOfModelsParsed = modelParser.readproject(pathToWoodstockModel, scenariosToSelect)
 
-# On charge le modèle parmis la liste des modèles renvoyée
+# On charge le modèle parmis la liste des modèles renvoyés
 # Pour le charger correctement, il faut décrire le type de modèle que c'est, ainsi que des paramètres importants.
-# Ici, le modèle sera un modèle linéraire spatialement référence (LP),
+# Ici, le modèle sera un modèle linéraire spatialement référencé (LP),
 # et on utilisera le solveur CLP pour le résoudre.
 LPModel = Models.FMTlpmodel(listOfModelsParsed[0], Models.FMTsolverinterface.CLP)
 

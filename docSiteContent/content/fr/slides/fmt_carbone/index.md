@@ -38,7 +38,7 @@ slides:
 
 - La localisation des activités sylvicoles pouvant améliorer le bilan carbone est un enjeu complexe
   - Le calcul du bilan de carbone forestier pour un modèle de planification est complexe
-  - L’optimisation spatialement explicite de la localisation travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique
+  - L’optimisation spatialement explicite de la localisation des travaux sylvicoles peut être très difficile à réaliser avec un modèle mathématique classique
 
 
 ---
@@ -203,7 +203,7 @@ slides:
   *OUTPUT NEP_Total
   *SOURCE ? ? ? _INVENT NEP
 
-  ;Inventaire de la biomasse anérienne et souterraine en (c)
+  ;Inventaire de la biomasse aérienne et souterraine en (c)
   *OUTPUT Biomasse_Total
   *SOURCE ? ? ? _INVENT AG_Biomass_C + ? ? ? _INVENT BG_Biomass_C
 
@@ -275,7 +275,7 @@ slides:
   - Les cinqs principaux réservoirs de l'écosystème
   - Le flux de productivité nette de l'écosystème
 - On peut maintenant utiliser le Machine Learning pour:
-  - Générer des solutions spatialement explicite plausible
+  - Générer des solutions spatialement explicites plausibles
   - Améliorer notre planification en fonction de notre bilan de carbone
 
   ---

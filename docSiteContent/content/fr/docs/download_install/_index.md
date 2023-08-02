@@ -26,11 +26,11 @@ Vous utilisez des *binaries* tous les jours, sans même y penser. Par exemple, u
 
 ## Que faut-il pour compiler ?
 
-Pour compiler [FMT](https://github.com/gcyr/FMT), votre ordinateur aura besoin de :
+Pour compiler [FMT](https://github.com/gcyr/FMT), votre ordinateur aura besoin :
 
-- Le code source de FMT
-- Toutes les bibliothèques de fonctions utilisées par FMT
-- Un compilateur
+- Du code source de FMT
+- De toutes les bibliothèques de fonctions utilisées par FMT
+- D'un compilateur
 
 La documentation vous guidera pour toutes ces étapes.
 

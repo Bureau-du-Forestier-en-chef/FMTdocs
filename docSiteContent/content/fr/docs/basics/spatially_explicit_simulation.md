@@ -9,7 +9,7 @@ weight: 5
 
 ## Un petit rappel sur la signification de "spatialement référencé".
 
-On peut distinguer 3 façons de prendre en compte l'espace dans un modèle :
+On peut distinguer trois façons de prendre en compte l'espace dans un modèle :
 
 - Dans un **modèle non spatial** ou **modèle spatialement implicite**, les entités (par exemple, les forêts, les animaux, les agents, etc.) ne sont pas directement associées à une position dans l'espace, mais la relation entre elles dans le modèle peut impliquer que seules certaines d'entre elles interagissent entre elles de manière à mimer une disposition spatiale.
 - Dans un modèle **spatialement référencé**, les entités sont associées à des régions de l'espace, mais pas à une position précise dans ces régions ; ces régions peuvent être non-continues. Les modèles de Woodstock sont par nature spatialement référencés, car ils considèrent des *strates* qui correspondent à des forêts de même composition et de même âge, qui peuvent être dispersées en de nombreux endroits du paysage.
@@ -31,11 +31,11 @@ FMTsrmodel <|-- FMTlpmodel
 FMTsrmodel <|-- FMTnssmodel
 ```
 
-Au lieu de ca, le `FMTsesmodel` va essayer de spatialiser le calendrier d'un `FMTsrmodel` en plaçant des blocs de coupe sur une carte. Il fait cela en faisant des itérations dans lesquelles il simule le placement de ces blocs, et en sélectionnant la meilleure solution trouvée.
+Au lieu de ça, le `FMTsesmodel` va essayer de spatialiser le calendrier d'un `FMTsrmodel` en plaçant des blocs de coupe sur une carte. Il fait cela en faisant des itérations dans lesquelles il simule le placement de ces blocs, et en sélectionnant la meilleure solution trouvée.
 
 Pour utiliser une métaphore, cela revient à essayer de trouver une position gagnante aux échecs si vous n'êtes pas capable de la trouver en réfléchissant bien au placement de vos pièces d'échecs : vous pourriez essayer de placer vos pièces au hasard de nombreuses, nombreuses fois, et vous demander à chaque fois si vous avez gagné, ou si vous êtes plus proche de la victoire, et si la position des pièces d'échecs respecte les règles du jeu.
 
-Ici, `FMTsesmodel` essaiera de placer les blocs de coupe selon la solution d'un `FMTsrmodel` (qui est un calendrier d'opérations forestières appliqué à des *strates* spatialement référencées). Son but sera de trouver le meilleur positionnement possible, en s'accommodant au mieux des contraintes linéaires et spatiales qui sont données pour leur placement, et en maximisant la valeur objective (par exemple, en maximisant le bois récolté).
+Ici, `FMTsesmodel` essaiera de placer les blocs de coupes selon la solution d'un `FMTsrmodel` (qui est un calendrier d'opérations forestières appliqué à des *strates* spatialement référencées). Son but sera de trouver le meilleur positionnement possible, en s'accommodant au mieux des contraintes linéaires et spatiales qui sont données pour leur placement, et en maximisant la valeur objective (par exemple, en maximisant le bois récolté).
 
 Cependant, cette méthode a peu de chance de trouver le **placement optimal**, s'il existe ; à la place, plus il y a d'itérations pour essayer de les placer, plus il y a de chance de trouver une solution qui se rapproche le plus possible d'un placement optimal des blocs coupés dans l'espace. C'est pourquoi ce processus représente ce que nous appelons une [heuristique](https://en.wikipedia.org/wiki/Heuristic).
 
@@ -110,9 +110,9 @@ Une fois que la `FMTforest` est créée, elle doit être fournie au `FMTsesmodel
 
 ## Utilisation de nouveaux mots-clés dans les fichiers Woodstock pour les contraintes spatiales
 
-Dans un modèle Woodstock habituel, les contraintes spatiales ne sont pas prises en compte. Cependant, vous aurez certainement besoin d'en utiliser pour une simulation spatiale avec le `FMTsesmodel`, afin de placer les blocs de coupe du planning optimisé.
+Dans un modèle Woodstock habituel, les contraintes spatiales ne sont pas prises en compte. Cependant, vous aurez certainement besoin d'en utiliser pour une simulation spatiale avec le `FMTsesmodel`, afin de placer les blocs de coupes du planning optimisé.
 
-A cette fin, FMT peut lire deux nouveaux mots-clés dans la section *optimize* d'un modèle Woodstock qui n'existent pas dans la syntaxe originale de Woodstock.
+À cette fin, FMT peut lire deux nouveaux mots-clés dans la section *optimize* d'un modèle Woodstock qui n'existent pas dans la syntaxe originale de Woodstock.
 
 Ces mots-clés sont `_SIZE` et `_ADJACENCY`.
 
@@ -143,15 +143,15 @@ Avec :
 
 ## Faire la simulation avec `FMTsesmodel.Greedyreferencebuild()`
 
-Une fois que vous avez une solution/ un calendrier spatialement référencé (voir [optimisation spatialement référencé](../spatially_referenced_optimization)) et que vous avez défini le paysage initial pour le `FMTsesmodel` (voir les sections précédentes), vous pouvez utiliser `FMTsesmodel.Greedyreferencebuild()` pour faire la simulation proprement dite, et obtenir un calendrier d'opérations spatialement explicite basée sur le calendrier d'opérations spatialement référencé.
+Une fois que vous avez une solution/ un calendrier spatialement référencé (voir [optimisation spatialement référencé](../spatially_referenced_optimization)) et que vous avez défini le paysage initial pour le `FMTsesmodel` (voir les sections précédentes), vous pouvez utiliser `FMTsesmodel.Greedyreferencebuild()` pour faire la simulation proprement dite, et obtenir un calendrier d'opérations spatialement explicite basé sur le calendrier d'opérations spatialement référencé.
 
 `FMTsesmodel.Greedyreferencebuild()` a besoin de la solution spatialement référencée d'un `FMTlpmodel` (ou d'un `FMTnssmodel`), sous la forme d'un objet `FMTschedule`. Cette solution décrit quel développement (ou strates) est récolté pour une période donnée, avec quelle action, et sur quelle surface/zone.
 
 Le `FMTschedule` d'un `FMTlpmodel` ou `FMTnssmodel` solutionné peut être récupéré en utilisant leur fonction `getsolution()`. Cependant, la fonction récupérera la solution pour une période ; vous devrez boucler autour des périodes pour obtenir les solutions pour chaque période d'intérêt, et pour indiquer si vous voulez que la solution prenne en compte les développements bloqués (*locked*).
 
-`FMTsesmodel.Greedyreferencebuild()` construira une solution spatialement explicite à partir d'une solution spatialement référencée pour une période donnée. Avec le `FMTschedule` pour la période, la fonction aura besoin d'un argument `randomiterations` qui est le nombre maximal d'itérations faites par l'algorithme avant qu'il ne s'arrête quand aucune augmentation de la valeur de la fonction d'objectif (maximisation de l'objectif) ou diminution de la valeur d'infaisabilité primaire n'a été trouvée. Cela s'explique par le fait que la simulation est constituée d'itérations au cours desquelles le modèle tente de placer les blocs de coupe dans l'espace conformément au calendrier d'opérations spatialement référencé afin d'augmenter la fonction d'objectif du modèle (par exemple, le volume récolté) tout en respectant les contraintes linéaires et spatiales données (dont la déviation aux contraintes est représentée par la valeur d'infaisabilité primaire).
+`FMTsesmodel.Greedyreferencebuild()` construira une solution spatialement explicite à partir d'une solution spatialement référencée pour une période donnée. Avec le `FMTschedule` pour la période, la fonction aura besoin d'un argument `randomiterations` qui est le nombre maximal d'itérations faites par l'algorithme avant qu'il ne s'arrête quand aucune augmentation de la valeur de la fonction d'objectif (maximisation de l'objectif) ou diminution de la valeur d'infaisabilité primaire n'a été trouvée. Cela s'explique par le fait que la simulation est constituée d'itérations au cours desquelles le modèle tente de placer les blocs de coupes dans l'espace conformément au calendrier d'opérations spatialement référencées afin d'augmenter la fonction d'objectif du modèle (par exemple, le volume récolté) tout en respectant les contraintes linéaires et spatiales données (dont la déviation aux contraintes est représentée par la valeur d'infaisabilité primaire).
 
-Une dernière entrée est un numéro de graine aléatoire (*seed*) qui sera utilisé pour générer des nombres aléatoires utilisés pour créer les blocs de coupe à chaque itération. Ce système de graine permet à FMT d'utiliser des nombres aléatoires qui sont "réplicables" ; c'est-à-dire que si vous gardez la même graine, FMT obtiendra les mêmes nombres aléatoires, et fera exactement les mêmes simulations.
+Une dernière entrée est un numéro de graine aléatoire (*seed*) qui sera utilisé pour générer des nombres aléatoires utilisés pour créer les blocs de coupes à chaque itération. Ce système de graine permet à FMT d'utiliser des nombres aléatoires qui sont "réplicables" ; c'est-à-dire que si vous gardez la même graine, FMT obtiendra les mêmes nombres aléatoires, et fera exactement les mêmes simulations.
 
 Voici une représentation du fonctionnement de l'algorithme de simulation en pratique :
 
@@ -181,22 +181,22 @@ if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec O
 		print(lpmodel$setconstraint(constraint)$str())
 	}
 	print(lpmodel$setobjective(modelobjective)$str())
-	# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie "true" si il a été résolu
+	# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie "true" s'il a été résolu
 	if (lpmodel$initialsolve())
 	{
 		# On créer un nouveau modèle de simulation spatialement explicite, en se basant sur le contenu de lpmodel
 		simulationmodel <- new(FMTsesmodel, lpmodel)
-		# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaires
+		# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaire
 		singletransition <- list()
 		for (transition in simulationmodel$gettransitions())
 		{
-			# Le +1 est fait pour s'adapter au fait que FMT étant codé en C++, il fonctionne en base 0 (les listes commencet à l'indice 0); alors que R fonctionne en base 1.
+			# Le +1 est fait pour s'adapter au fait que FMT étant codé en C++, il fonctionne en base 0 (les listes commencent à l'indice 0); alors que R fonctionne en base 1.
 			singletransitions[[length(singletransitions) + 1]] <- transition$single()
 		}
 		simulationmodel$settransitions(singletransitions)
 		# On prépare un parseur pour lire la carte initiale des forêts
 		areaparser <- new(FMTareaparser)
-		# On définit où est-ce que le raster avec les informations initiales des forêts se trouvent
+		# On définit où est-ce que le raster des forêts se trouve avec les informations initiales 
 		rasterslocation <- "../Models/TWD_land/rasters"
 		ageraster <- file.path(rasterlocation,"AGE.tif")
 		# On lit les différents rasters qui contiennent les différents "themes" (ou attributs) initiaux des forêts en faisant
@@ -251,11 +251,11 @@ if __name__ == "__main__":
 		for constraint in constraints:
 			lpmodel.setconstraint(constraint)
 		lpmodel.setobjective(objective)
-		# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie "true" si il a été résolu
+		# Ici, on test si le modèle a été résolu tout en le résolvant, vu que initialsolve() résoud le modèle et renvoie "true" s'il a été résolu
 		if lpmodel.initialsolve():
 			# On créer un nouveau modèle de simulation spatialement explicite, en se basant sur le contenu de lpmodel
 			simulationmodel = Models.FMTsesmodel(lpmodel)
-			# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaires
+			# On fait en sorte que les transitions du modèle aient une seule sortie, et on les modifient si nécéssaire
 			singletransitions = []
 			for transition in simulationmodel.gettransitions():
 				singletransitions.append(transition.single())
@@ -266,13 +266,13 @@ if __name__ == "__main__":
 			rasterslocation = "../Models/TWD_land/rasters/"
 			ageraster = os.path.join(rasterslocation, "AGE.tif")
 			# On lit les différents rasters qui contiennent les différents "themes" (ou attributs) initiaux des forêts en faisant
-			# une boucle autour de tous les themes définits dans le modèle, et en mettant le nom de ces rasters dans une liste
+			# une boucle autour de tous les thèmes définis dans le modèle, et en mettant le nom de ces rasters dans une liste
 			themesrasters = []
 			themeid = 1
 			for theme in simulationmodel.getthemes():
 				themesrasters.append(os.path.join(rasterslocation, "THEME" + str(themeid) + ".tif"))
 				themeid += 1
-			# Maintenant que l'on a tous les rasters, on creer un object FMTforest en lisant tous les rasters de themes, qui contiennent les informations initiales des forêts
+			# Maintenant que l'on a tous les rasters, on creer un object FMTforest en lisant tous les rasters de thèmes, qui contiennent les informations initiales des forêts
 			initialforestmap = areaparser.readrasters(simulationmodel.getthemes(), themesrasters, ageraster, 1, 0.0001)
 			# On donne les données initiales de forêt au modèle spatialement explicite
 			simulationmodel.setinitialmapping(initialforestmap)
@@ -384,7 +384,7 @@ Stalled after 14 iterations Skipping
 
 ## Analyser les sorties de `FMTsesmodel.Greedyreferencebuild()`
 
-`FMTsesmodel.Greedyreferencebuild()` retourne des informations sur la meilleure solution qui a été trouvée ; c'est-à-dire le meilleur placement spatial des blocs de coupe que l'algorithme a été capable de trouver en optimisant la fonction d'objectif, tout en respectant les contraintes linéaires et spatiales qui ont été données par l'utilisateur.
+`FMTsesmodel.Greedyreferencebuild()` retourne des informations sur la meilleure solution qui a été trouvée ; c'est-à-dire le meilleur placement spatial des blocs de coupes que l'algorithme a été capable de trouver en optimisant la fonction d'objectif, tout en respectant les contraintes linéaires et spatiales qui ont été données par l'utilisateur.
 
 En particulier, `FMTsesmodel.Greedyreferencebuild()` indique 4 informations importantes :
 
@@ -519,7 +519,7 @@ Stalled after 16 iterations Skipping
 {'ACARIBOU': 0.981677543988014, 'COUPETOTALE': 0.9817026645791909, 'Objective': 42453.599999999984, 'Primalinfeasibility': 0.0, 'Total': 0.9816850800303768}
 ```
 
-Le processus se répète ensuite pour les 9 autres périodes. A chaque fois, le FMT commence par une première itération de placement des actions dans l'espace en essayant de respecter les contraintes. Ensuite, l'algorithme se termine lorsqu'il est soit **stalled** (stabilisé), soit **stuck** (bloqué), ce qui signifie qu'il ne peut plus améliorer la solution ou réduire l'infaisabilité primale. Il affiche alors le nombre d'actions qu'il a pu placer dans l'espace.
+Le processus se répète ensuite pour les 9 autres périodes. À chaque fois, FMT commence par une première itération de placement des actions dans l'espace en essayant de respecter les contraintes. Ensuite, l'algorithme se termine lorsqu'il est soit **stalled** (stabilisé), soit **stuck** (bloqué), ce qui signifie qu'il ne peut plus améliorer la solution ou réduire l'infaisabilité primale. Il affiche alors le nombre d'actions qu'il a pu placer dans l'espace.
 
 Notez que **stalled** et **stuck** ont deux significations différentes :
 
@@ -550,4 +550,4 @@ Et ainsi de suite jusqu'à la 10ème période.
 
 * * *
 
-Vous devriez maintenant en savoir assez pour commencer à utiliser le FMT par vous-même. Si vous avez d'autres questions, veuillez contacter [Guillaume Cyr](mailto:Guillaume.Cyr@fec.gouv.qc.ca) ou [Bruno Forest](mailto:Bruno.Forest@fec.gouv.qc.ca) du BFEC. Vous pouvez également installer FMT sur votre ordinateur en suivant la section [Téléchargement et installation](../../download_install/).
+Vous devriez maintenant en savoir assez pour commencer à utiliser le FMT par vous-même. Si vous avez d'autres questions, veuillez contacter [Guillaume Cyr](mailto:Guillaume.Cyr@fec.gouv.qc.ca) du BFEC. Vous pouvez également installer FMT sur votre ordinateur en suivant la section [Téléchargement et installation](../../download_install/).

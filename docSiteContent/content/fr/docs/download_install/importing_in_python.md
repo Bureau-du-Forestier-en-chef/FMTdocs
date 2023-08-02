@@ -31,7 +31,7 @@ from FMT import Core
 from FMT import Version
 ```
 
-dans lequel `<Chemin vers le dossier FMT>` sera remplacé par l'emplacement du dossier où se trouvent les fichiers FMT que vous avez téléchargés depuis GitHub (et où se trouvent aussi les bibliothèque de fonction compilées de FMT, à présent).
+dans lequel `<Chemin vers le dossier FMT>` sera remplacé par l'emplacement du dossier où se trouvent les fichiers FMT que vous avez téléchargés depuis GitHub (et où se trouvent aussi les bibliothèques de fonction compilées de FMT, à présent).
 
 Cela peut cependant devenir redondant, ce qui rend la deuxième option - l'installation avec pip - plus intéressante.
 

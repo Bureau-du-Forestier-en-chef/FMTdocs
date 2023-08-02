@@ -231,7 +231,7 @@ if __name__ == "__main__":
 
 ## Résoudre le `FMTlpmodel`
 
-Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le `FMTlpmodel` peut être résolu en utilisant la fonction `FMTlpmodel.initialsolve()`. La fonction renvoie une valeur `true` ou `false` selon que le modèle a été résolu avec succès. Si la résolution s'est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différente manières (un exemple est présenté plus bas). 
+Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le `FMTlpmodel` peut être résolu en utilisant la fonction `FMTlpmodel.initialsolve()`. La fonction renvoie une valeur `true` ou `false` selon que le modèle a été résolu avec succès. Si la résolution s'est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différentes manières (un exemple est présenté plus bas). 
 
 ## Construire le graphe avec une solution existante (construction partielle)
 
@@ -243,7 +243,7 @@ Pour cela, trois choses doivent être faites :
 
 - Lire le fichier de calendrier du scénario, et le passer à la fonction `FMTlpmodel.buildperiod()`.
 - Définir la solution pour chaque période avec la fonction `FMTlpmodel.setsolution()`.
-	- Si le modèle contient plusieurs actions `_LOCKEXEMPT`, l'utilisation de `FMTlpmodel.setsolution()` peut provoquer des erreurs car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction `FMTlpmodel.setsolutionbylp()`.
+	- Si le modèle contient plusieurs actions `_LOCKEXEMPT`, l'utilisation de `FMTlpmodel.setsolution()` peut provoquer des erreurs, car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction `FMTlpmodel.setsolutionbylp()`.
 
 Cela donnera le code suivant, dans R :
 
@@ -397,15 +397,15 @@ Ensuite, la liste des solutions pour chaque période doit être transformée en 
 
 Pour un exemple, voir [exercice 1](../exercice_1/).
 
-## Pré-solution d'un modèle
+## Présolution d'un modèle
 
 Certains modèles peuvent être difficiles à résoudre, à cause de leur nombre élevé d'actions, de strates, et ainsi de suite.
 
-Dans ce cas, la fonction `FMTmodel.basepresolve()` peut être utilisée pour pré-solutioner le modèle.
+Dans ce cas, la fonction `FMTmodel.basepresolve()` peut être utilisée pour présolutioner le modèle.
 
 Cette fonction retourne un modèle avec moins de thèmes, d'actions, de transitions, de sorties et de contraintes que le modèle original, mais avec la même quantité d'informations. Cela le rend plus facile à résoudre, tout en donnant la même réponse à la fin.
 
-Dans certaines situations, FMT pré-solutionerra le modèle automatiquement.
+Dans certaines situations, FMT présolutionerra le modèle automatiquement.
 
 * * *
 

@@ -21,7 +21,7 @@ cta:
 
 [FMT](https://github.com/Bureau-du-Forestier-en-chef/FMT) (**F**orêt **M**odélisée dans le **T**emps) est une librairie de fonctions open source qui facilite la planification forestière.
 
-Vous voulez apprendre plus à propos de [FMT](https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/master/README.fr.md), et sur comment l'utiliser ? Vous êtes au bon endroit !
+Vous voulez en apprendre plus à propos de [FMT](https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/master/README.fr.md), et sur comment l'utiliser ? Vous êtes au bon endroit !
 
 <img src="https://img.shields.io/github/last-commit/Bureau-du-Forestier-en-chef/FMT"/>
 

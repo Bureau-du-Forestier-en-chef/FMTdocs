@@ -17,15 +17,15 @@ Vous connaissez et utilisez peut-être déjà des fonctions dans des logiciels t
 
 Vous pourriez également être habitué.e à *certains* objets et classes dans le logiciel que vous utilisez. Par exemple, dans `R`, `data<-read.csv (données.csv)` met le contenu des `données.fichier csv` dans l'objet `data`, qui a la classe `data frame`.
 
-Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d'une classe particulière. Par exemple, une classe `chien` aurait la fonction `abboyer_sur()`. Si nous avons une classe nommée `chat`, nous pourrions alors :
+Maintenant, imaginez que chaque fonction que vous utilisez est associée à un objet d'une classe particulière. Par exemple, une classe `chien` aurait la fonction `aboyer_sur()`. Si nous avons une classe nommée `chat`, nous pourrions alors :
 
 - Créer un nouvel objet `chien` de la classe `chien` : `pluto = chien(nom = Pluto, age = 8)`
 - Créer un nouvel objet `chat` à partir de la classe `chat` : `felix = chat(nom = Felix, age = 2)`
-- Faire aboyer le chien sur le chat: `pluto.abboyer_sur(felix)`
+- Faire aboyer le chien sur le chat: `pluto.aboyer_sur(felix)`
 
 À son tour, l'objet peut avoir des "propriétés", qui sont exactement ce à quoi cela ressemble. Par exemple, disons que notre classe `chat` a trois propriétés : `nom` (qui peut être une chaîne de caractères), `age` (qui peut être un nombre) et `effrayé` (qui est un booléen, `true` ou `false`).
 
-Dans notre exemple précédent, avant d'utiliser `pluto.abboyer_sur(felix)`, la propriété `felix.peur` pouvait être `false`. Mais maintenant que nous avons utilisé `pluto.abboyer_sur(felix)`, `felix.peur` s'est surement changé en `true`.
+Dans notre exemple précédent, avant d'utiliser `pluto.aboyer_sur(felix)`, la propriété `felix.peur` pouvait être `false`. Mais maintenant que nous avons utilisé `pluto.aboyer_sur(felix)`, `felix.peur` s'est surement changé en `true`.
 
 Enfin, une *classe parent* en programmation orientée objet signifie que la *classe enfant* *héritera* automatiquement de toutes les fonctions et propriétés de la fonction parent.
 
@@ -46,7 +46,7 @@ Dans FMT, les différents *espaces de noms* sont :
 - **`Parser`** : Contient des classes utilisées pour lire ou éditer les fichiers des modèles au format Woodstock
 - **`Models`**: Contient des classes utilisées pour manipuler et résoudre les modèles
 - **`Spatial`**: Contient des classes utilisées pour travailler sur des données spatialement explicites
-- **`Heuristics`** : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupe et les planifier dans le temps
+- **`Heuristics`** : Contient les heuristiques utilisées pour agréger spatialement les blocs de coupes et les planifier dans le temps
 - **`Version`**: Contient des informations sur la version actuelle de FMT, et les fonctions qu'elle contient (ce qui dépend de la façon dont il a été compilée)
 
 {{% callout note %}}
@@ -180,7 +180,7 @@ Voici un exemple qui affiche les actions et les transitions d'un `FMTmodel` en c
 
 ```R
 library(FMT) # Charge FMT dans R
-if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
+if (new(FMTversion)$hasfeature("OSI")) # Vérifier si FMT a été compilé avec OSI en créant un nouvel objet FMTversion, et en utilisant la fonction hasfeature().
 {
 	# Créer un objet parser pour lire les fichiers du modèle
 	newmodelparser <- new(FMTmodelparser)
@@ -197,7 +197,7 @@ if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec O
 	print("***** Here is the name of the transitions")
 	for (transition in model$gettransitions())
 	{
-		# On concaténe l'entrée pour la transition afin de la rendre plus lisible dans le terminal
+		# On concatène l'entrée pour la transition afin de la rendre plus lisible dans le terminal
 		cat(transition$str())
 	}
 

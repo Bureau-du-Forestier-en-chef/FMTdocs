@@ -23,14 +23,14 @@ Concrètement, FMT vous permet de :
 - **Lire les modèles de planification forestière** basés sur le format de fichiers Woodstock (qui sont des [modèles de programmation linéaire de type III](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf) référencés spatialement)
 - **Modifier ces modèles de planification forestière**
 - **Résoudre ces modèles de planification forestière** (c'est-à-dire générer un calendrier d'actions qui maximisent les objectifs et respectent les contraintes)
-- **Rendre les variables de peuplements et le calendrier optimisé *spatialement explicites*** (c'est-à-dire cartographier les opérations forestières)
+- **Rendre les variables de peuplements et le calendrier optimisé *spatialement explicite*** (c'est-à-dire cartographier les opérations forestières)
 
 ## À quoi sert-il principalement ?
 
 - Lecture de modèles Woodstock
 - Simulation de paysages forestiers
-- Optimisation / Ré-optimisation de modèles
-- Re-planification (en utilisant des événements stochastiques)
+- Optimisation / Réoptimisation de modèles
+- Replanification (en utilisant des événements stochastiques)
 - Résolution des heuristiques d'agrégation
 - Planification des blocs de récolte
 

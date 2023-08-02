@@ -31,7 +31,7 @@ slides:
 
 ---
 
-## A quoi sert FMT ?
+## À quoi sert FMT ?
 
 - planification forestière
   - comment récolter des forêts pour maximiser des objectifs (e.g. rendement) ?
@@ -39,11 +39,11 @@ slides:
 
 ---
 
-## En pratique, a quoi ca sert ?
+## En pratique, à quoi ça sert ?
 
 - Lecture de modèles Woodstock
 - Simulation de paysages forestiers
-- Optimisation / Ré-optimisation de modèles
+- Optimisation / Réoptimisation de modèles
 - Planification (en utilisant des événements stochastiques)
 - Résolution des heuristiques d'agrégation
 - Planification des blocs de récolte
@@ -65,10 +65,10 @@ slides:
 ## Pourquoi FMT ?
 
 {{% fragment %}}
-Projet du Bureau du Forestier en Chec du Québec.
+Projet du Bureau du Forestier en Chef du Québec.
 {{% /fragment %}}
 
-- 2017 : Besoin d'automatiser l'utilisation de modèles Woodstocks
+- 2017 : Besoin d'automatiser l'utilisation de modèles Woodstock
 - 2018 : Besoin de relier Woodstock à GCBM pour estimations de carbone
 - 2019 à aujourd'hui : Augmentation des performances et fonctionalités
 
@@ -77,13 +77,13 @@ Projet du Bureau du Forestier en Chec du Québec.
 
 ## Le futur
 
-- Interface utilisateurice (GUI)
+- Interface utilisateur·rice (GUI)
 - Optimisation spatialement explicite
-- Meilleus *outputs* (sorties)
+- Meilleurs *outputs* (sorties)
 
 
 
-## Comment ca, du code interactif ?
+## Comment ça marche, du code interactif ?
 
 Reveal.js permet de mettre en valeur des lignes par intermitence. Ici, la 2, puis la 8, puis la 13. Fantastique pour parler du code au fur et à mesure.
 

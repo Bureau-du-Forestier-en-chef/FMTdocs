@@ -43,7 +43,7 @@ slides:
 
 ---
 
-## 1. Bilan carbone avec l'IA
+## Bilan carbone avec l'IA
 <div class=mermaid>
     stateDiagram
     direction LR
@@ -103,7 +103,7 @@ slides:
 
 ---
 
-## 2. Planification spatiale par IA
+## Planification spatiale par IA
 <div class=mermaid>
     stateDiagram
     direction LR
@@ -245,9 +245,9 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 ## GCBM vs IA (02751)
 
  - Les modèles d'IA testés
-   - Région écologique 3 modèles (Pessière,Sapinière,Érablière) entrainés avec calcul-2328
-   - Global 1 modèle entrainé avec calcul-2328
- - Les types de modélisation
+   - Région écologique trois modèles (Pessière,Sapinière,Érablière) entrainés avec calcul-2328
+   - Global un modèle entrainé avec calcul-2328
+ - Les types de modélisations
    - Spatial (cellules de 14 ha)
    - Non spatial (à l'échelle de la strate)
  - Notre référence GCBM
@@ -269,7 +269,7 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 
 ## Constats IA vs GCBM
 
-   - Le modèle d'IA par région écologique performe le moins bien
+   - Le modèle d'IA par région écologique performe moins bien
       - Sous estime le carbone des réservoirs
       - À le plus grand écart avec le bilan des émissions nettes de GCBM
    - Le modèle d'IA Global est le meilleur
@@ -280,14 +280,14 @@ Tester avec 02751 : done,des7,2023-04-03,2023-04-24
 
 ## Pourquoi ces différences?
    - Les résultats de l'IA diffèrent de GCBM car:
-      - IA suppose le feu comme perturbation historique
+      - L'IA suppose le feu comme perturbation historique
       - GCBM utilise plus d'intrants
          - Température annuelle moyenne
          - Précipitations
          - Transitions après perturbation
    - Le modèle par région écologique performe moins bien car:
       - Manque de données par modèle
-      - Les région écologique sont difficiles à identifier dans les modèles
+      - Les régions écologiques sont difficiles à identifier dans les modèles
       - Superficie orphelines dans les modèles
 
 ---

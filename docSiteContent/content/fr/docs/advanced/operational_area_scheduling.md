@@ -19,7 +19,7 @@ FMT propose ainsi différentes fonctions qui permettent de dériver un calendrie
 
 {{< figure src="docs/Figure 2 - Explication calendrier.png" >}}
 
-Ce calendrier d'ouverture et de fermeture de COS va ainsi permettre de communiquer les contraintes spatiales aux modèles de programmation linéaire basés sur des fichiers Woodstock que FMT utilise (voir [les bases de FMT](../../basics/spatially_referenced_optimization/)). FMT va alors pouvoir générer une nouvelle solution pour un modèle avec l'ajout de ce calendrier. Bien évidemment, lorsque l'on ajoute des contraintes additionnelles au modèle, cela a généralement pour cause de réduire la quantité de bois qui est récoltable dans la solution optimale. Ainsi, l'ajout de ce calendrier d'ouvertures et de fermetures de COS va réduire le bois récolté dans la nouvelle solution généré par FMT.
+Ce calendrier d'ouverture et de fermeture de COS va ainsi permettre de communiquer les contraintes spatiales aux modèles de programmation linéaire basés sur des fichiers Woodstock que FMT utilise (voir [les bases de FMT](../../basics/spatially_referenced_optimization/)). FMT va alors pouvoir générer une nouvelle solution pour un modèle avec l'ajout de ce calendrier. Bien évidemment, lorsque l'on ajoute des contraintes additionnelles au modèle, cela a généralement pour cause de réduire la quantité de bois qui est récoltable dans la solution optimale. Ainsi, l'ajout de ce calendrier d'ouvertures et de fermetures de COS va réduire le bois récolté dans la nouvelle solution générée par FMT.
 
 L'idée est alors de trouver un calendrier "optimal" qui va réduire le moins possible la quantité de bois récoltable dans la solution du modèle. On peut le faire par le biais du processus itératif suivant :
 
@@ -39,7 +39,7 @@ L'idée est alors de trouver un calendrier "optimal" qui va réduire le moins po
 
 {{% callout note %}}
 Il est possible de résoudre le problème de l'optimisation du calendrier avec des méthodes plus complexes, comme celle du *mixed integer programming* (MIP) pour obtenir une solution vraiment optimale.
-Cependant, ces algorithmes peuvent demander beaucoup trop de calcul pour des modèles de programmation linéaire qui concernent des paysages forestiers complexes. Dans ce cas-là, le *greedy algorithm* est utile pour éviter des temps de calcul trop long.
+Cependant, ces algorithmes peuvent demander beaucoup trop de calcul pour des modèles de programmation linéaire qui concernent des paysages forestiers complexes. Dans ce cas-là, le *greedy algorithm* est utile pour éviter des temps de calcul trop longs.
 {{% /callout %}}
 
 ## L'implémentation des COS dans des fichiers Woodstock
@@ -70,19 +70,19 @@ Ainsi, **pour pouvoir utiliser les fonctions suivantes, les COS doivent déjà a
 
 Dans FMT, une fois qu'un modèle linéaire a été créé en se basant sur des fichiers woodstock (voir [les bases de FMT](../../basics/spatially_referenced_optimization/)), il est possible de créer la structure des COS au sein du modèle (voir sections précédentes) par le biais de la fonction `Heuristics.FMToperatingareascheme()`.
 
-La fonction `Heuristics.FMToperatingareascheme()` sert à construire un seul COS au sein du modèle, et doit donc être répétée pour chacun des COS qui doit être créée. Elle nécessite différents paramètres. Ces paramètres servent à donner des contraintes sur comment et quand un COS peut être ouvert dans le calendrier.
+La fonction `Heuristics.FMToperatingareascheme()` sert à construire un seul COS au sein du modèle, et doit donc être répétée pour chacun des COS qui doit être créé. Elle nécessite différents paramètres. Ces paramètres servent à donner des contraintes sur comment et quand un COS peut être ouvert dans le calendrier.
 
 Vous trouverez un exemple de cette création dans la [section suivante](#exemple-de-script).
 
 {{% callout warning %}}
-Le calendrier d'ouverture et de fermeture des COS que FMT pourra créer par la suite est très sensible à ces différents paramètres. Si ceux-ci sont mal indiqués, FMT pourra être incapable de trouver une solution réalisable au modèle.
+Le calendrier d'ouverture et de fermeture des COS que FMT pourra créer par la suite est très sensible à ces différents paramètres. Si ceux-ci sont mal indiqués, FMT pourrait être incapable de trouver une solution réalisable au modèle.
 {{% /callout %}}
 
-- Le premier paramètre contient le COS à créer en soi. Celui-ci peut être construit à l'aide de la fonction `Heuristics.FMToperatingarea()`, qui prend elle-même deux paramètres : le premier est le masque qui va décrire quels peuplements seront contenus dans ce COS, et le second est le `neihgbors perimeter`, ou *périmètres des voisins*. Ce second paramètre décrit le ratio du périmètre du COS que celle-ci doit avoir en commun avec un autre COS pour que les deux soient considérés comme voisins. Par exemple, si le périmètre des voisins est de 0.5, alors 50% du périmètre du COS doit être partagé avec un autre COS pour qu'ils soient considérés comme voisins.
+- Le premier paramètre contient le COS à créer en soi. Celui-ci peut être construit à l'aide de la fonction `Heuristics.FMToperatingarea()`, qui prend elle-même deux paramètres : le premier est le masque qui va décrire quels peuplements seront contenus dans ce COS, et le second est le `neihgbors perimeter`, ou *périmètre des voisins*. Ce second paramètre décrit le ratio du périmètre du COS que celui-ci doit avoir en commun avec un autre COS pour que les deux soient considérés comme voisins. Par exemple, si le périmètre des voisins est de 0.5, alors 50% du périmètre du COS doit être partagé avec un autre COS pour qu'ils soient considérés comme voisins.
 - Le deuxième paramètre est le `opening time`, ou le temps d'ouverture. Il définit combien de temps le COS doit rester ouvert lorsqu'il est ouvert sur une période. Par exemple, si le temps d'ouverture est de 5, alors le COS sera toujours ouvert pour 5 périodes à la fois.
-- Le troisième paramètre est le `return time`, ou temps de retour. Il correspond au nombre de périodes de temps qui doivent être respectées avant que le COS soit réouvert dans le futur. Par exemple, si le temps de retour est de 5, alors il doit y avoir au moins 5 périodes de temps entre deux ouvertures du COS.
-- Le quatrième paramètre est le `repetition pattern`, ou la répétition du patron de récolte. Il est supérieur ou égal à 1, et il va effectivement forcer le COS à suivre plusieurs fois un patron d'ouvertures/fermetures dans le temps qui correspond à une alternance entre son temps d'ouverture et de fermeture. Par exemple, pour un temps d'ouverture de 2, un temps de fermeture de 3 et une valeur de répétition du patron de récolte de 2, une fois le COS ouvert, il suivra automatique le calendrier "ouvert, ouvert, fermé, fermé, fermé, ouvert, ouvert, fermé, fermé, fermé", ce qui correspondant à 2 répétitions de ses paramètres d'ouverture et de fermeture.
-- Le cinquième paramètre est la `green up period`, ou période de verdissement. Elle correspond au délai que doit attendre le COS pour être ouvert à nouveau si un COS voisin est récolté. Les COS voisins sont en retours trouvés grâce au périmètre des voisins donné plus tôt.
+- Le troisième paramètre est le `return time`, ou temps de retour. Il correspond au nombre de périodes de temps qui doivent être respectés avant que le COS soit réouvert dans le futur. Par exemple, si le temps de retour est de 5, alors il doit y avoir au moins 5 périodes de temps entre deux ouvertures du COS.
+- Le quatrième paramètre est le `repetition pattern`, ou la répétition du patron de récolte. Il est supérieur ou égal à 1, et il va effectivement forcer le COS à suivre plusieurs fois un patron d'ouvertures/fermetures dans le temps qui correspond à une alternance entre son temps d'ouverture et de fermeture. Par exemple, pour un temps d'ouverture de 2, un temps de fermeture de 3 et une valeur de répétition du patron de récolte de 2, une fois le COS ouvert, il suivra automatiquement le calendrier "ouvert, ouvert, fermé, fermé, fermé, ouvert, ouvert, fermé, fermé, fermé", ce qui correspondant à 2 répétitions de ses paramètres d'ouverture et de fermeture.
+- Le cinquième paramètre est la `green up period`, ou période de verdissement. Elle correspond au délai que doit attendre le COS pour être ouvert à nouveau si un COS voisin est récolté. Les COS voisins sont en retour trouvés grâce au périmètre des voisins donné plus tôt.
 - Le sixième paramètre est la `starting period`, ou période de départ. Elle correspond à la période à partir de laquelle le COS peut commencer à être ouvert dans le modèle.
 
 Tous les COS créés par la fonction `Heuristics.FMToperatingareascheme()` doivent idéalement être mis au sein d'une liste, qui sera donnée en paramètre à une autre fonction par la suite.
@@ -125,7 +125,7 @@ Afin de pouvoir commencer à optimiser le calendrier des COS (voir [section suiv
 Les objets `FMToutputnode` contiennent les *output nodes* du modèle linéaire. Ces derniers sont composés de 4 éléments : un masque (pour définir les peuplements considérés par l'*output node*), une action, un yield, et un paramètre qui peut être utilisé pour modifier le yield. Par exemple, un *output node* peut concerner 80% du volume brut récolté par les coupes totales dans tous les peuplements via la mention `? ? ? coupetotale volumebrut * 0.88`. Les *output nodes* sont indiqués dans le fichier `.out` de la formulation Woodstock. Plusieurs *output nodes* peuvent alors être combiné pour donner un seul output.
 
 Afin de fournir ces `FMToutputnode` à FMT, deux méthodes sont disponibles :
-1. Il est possible de créer un nouvel objet `FMToutputnode` qui contiendra toutes les actions visées par les COS en faisant un agrégat de ces actions. Pour ce faire, il suffit d'indiquer un nom d'agrégat d'action à toutes les actions visées via la fonction `push_aggregate()` associées aux objets `FMTaction`; puis, à fournir ce nom d'agrégats au constructeur de `FMToutputnode`. Si ces actions concernent tous les peuplements possibles, le constructeur pour alors prendre la forme `FMToutputnode(Core.FMTmask(("? "*len(themes))[:-1],themes),Agg_name)`, avec `Agg_name` contenant le nom de l'agrégat des actions visées par les COS.
+1. Il est possible de créer un nouvel objet `FMToutputnode` qui contiendra toutes les actions visées par les COS en faisant un agrégat de ces actions. Pour ce faire, il suffit d'indiquer un nom d'agrégat d'action à toutes les actions visées via la fonction `push_aggregate()` associées aux objets `FMTaction`; puis, à fournir ce nom d'agrégats au constructeur de `FMToutputnode`. Si ces actions concernent tous les peuplements possibles, le constructeur poura alors prendre la forme `FMToutputnode(Core.FMTmask(("? "*len(themes))[:-1],themes),Agg_name)`, avec `Agg_name` contenant le nom de l'agrégat des actions visées par les COS.
 2. Il est aussi possible de récupérer un `FMToutputnode` qui est contenu dans l'un des `FMToutput` du modèle directement via la fonction `getnodes()` associée aux objets `FMToutput`.
 
 Un exemple de la deuxième méthode est montré dans [l'exemple de script](#exemple-de-script) plus bas.
@@ -134,9 +134,9 @@ Un exemple de la deuxième méthode est montré dans [l'exemple de script](#exem
 
 La dernière étape est de lancer le *greedy algorithm* pour créer un calendrier optimisé.
 
-Pour ce faire, il suffit de créer un objet qui va contenir la "tache" du greedy algorithm, et de donner cette tache à une fonction de FMT qui s'occupe de lancer les taches parallèles. Ces deux étapes sont essentielles, car le *greedy algorithm* de FMT utilise des taches en parallèle afin de réaliser les différentes itérations de l'algorithme aussi rapidement que possible.
+Pour ce faire, il suffit de créer un objet qui va contenir la "tâche" du greedy algorithm, et de donner cette tâche à une fonction de FMT qui s'occupe de lancer les tâches parallèles. Ces deux étapes sont essentielles, car le *greedy algorithm* de FMT utilise des tâches en parallèle afin de réaliser les différentes itérations de l'algorithme aussi rapidement que possible.
 
-La création de l'objet contenant la tache de l'algorithme se fait via la fonction `Parallel.FMTopareaschedulertask()`. La fonction nécessite 7 paramètres :
+La création de l'objet contenant la tâche de l'algorithme se fait via la fonction `Parallel.FMTopareaschedulertask()`. La fonction nécessite 7 paramètres :
 
 - Le `FMTlpmodel` qui contient le modèle linéaire pour lequel on veut faire le calendrier des COS
 - Un objet contenant la liste de COS (voir la [section précédente](#cr%C3%A9ation-des-cos-au-sein-dune-mod%C3%A8le-de-programmation-lin%C3%A9aire-dans-fmt))
@@ -146,7 +146,7 @@ La création de l'objet contenant la tache de l'algorithme se fait via la foncti
 - Un nombre indiquant le nombre maximum d'itérations que le *greedy algorithm* peut réaliser avant de s'arrêter (voir sections précédentes)
 - Un nombre indiquant le temps maximal (en secondes) que le *greedy algorithm* peut prendre avant de s'arrêter; l'algorithme s'arrettera si ce temps ou si le nombre d'itérations maximal est atteint 
 
-Une fois que l'objet contenant la tache est créé avec cette fonction, il doit être passé à la fonction `Parallel.FMTtaskhandler()`. Cette fonction peut accepter un second paramètre qui indique le nombre de cœurs du processeur de l'ordinateur que la fonction utilisera pour réaliser les opérations en parallèle. La fonction retournera un objet `FMTtaskhandler`, qui peut ensuite lancer l'algorithme pour de bon à l'aide de la fonction `conccurentrun()` de l'objet.
+Une fois que l'objet contenant la tâche est créé avec cette fonction, il doit être passé à la fonction `Parallel.FMTtaskhandler()`. Cette fonction peut accepter un second paramètre qui indique le nombre de cœurs du processeur de l'ordinateur que la fonction utilisera pour réaliser les opérations en parallèle. La fonction retournera un objet `FMTtaskhandler`, qui peut ensuite lancer l'algorithme pour de bon à l'aide de la fonction `conccurentrun()` de l'objet.
 
 Il est aussi possible de ne pas lancer le *greedy algorithm*, mais d'obtenir un premier calendrier non optimisé, mais simplement "réalisable". Pour cela, il suffit d'utiliser la fonction `getoperatingareaschedulerheuristics()` d'un objet `FMTlpmodel` en lui fournissant un objet contenant la liste des COS et un *output node*, ainsi que le nombre de calendriers non optimisés que l'on veut obtenir. Un exemple est montré dans [ce script](https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/bb5aedacd33178f479769ea77d000307e134e3f3/Examples/Python/Operatingareascheduling.py) aux lignes 34-35.
 
@@ -158,7 +158,7 @@ Un exemple de script très simple pour créer un calendrier de COS **non optimis
 Le script suivant est une autre version de ce script qui est intégralement commenté, et qui lance à la fin le *greedy algorithm* pour obtenir un calendrier optimisé de COS.
 
 ```python
-# Ici, on charge FMT directement, comme si il avait été installé avec pip.
+# Ici, on charge FMT directement, comme s'il avait été installé avec pip.
 from FMT import Models
 from FMT import Parser
 from FMT import Core
@@ -177,7 +177,7 @@ if __name__ == "__main__":
 		models = modelparser.readproject(primarylocation,["LP"])
 		# On désactive le log pour ce modèle (optionel)
 		models[0].setquietlogger()
-		# On charge le modèle parmis la liste des modèles renvoyée
+		# On charge le modèle parmis la liste des modèles renvoyés
 		optimizationmodel=Models.FMTlpmodel(models[0],Models.FMTsolverinterface.CLP)
 		# On récupère les thèmes du modèle
 		themes = optimizationmodel.getthemes()
@@ -187,8 +187,8 @@ if __name__ == "__main__":
 		for attribute in themes[2].getattributes("?"):
 			mask = ["?" for theme in themes]
 			mask[2] = attribute
-			# On créer la COS avec le masque qui sélectionne les peuplements avec les numéros de COS
-			# On utilise un opening time de 2, un return time de 1, un reptition de 4, une green up period de 0, et une starting period de 1.
+			# On créer le COS avec le masque qui sélectionne les peuplements avec les numéros de COS
+			# On utilise un opening time de 2, un return time de 1, une reptition de 4, une green up period de 0, et une starting period de 1.
 			opareas.append(Heuristics.FMToperatingareascheme(Heuristics.FMToperatingarea(Core.FMTmask(mask,themes),0),2,1,4,0,1))
 		# Les lignes suivantes vont trouver une solution initiale au modèle, sans calendrier de COS. Voir bases de FMT.
 		for period in range(0,10):
@@ -208,14 +208,14 @@ if __name__ == "__main__":
 		# On finit en définissant les paramètres nécessaires pour lancer le greedy algorithm : l'endroit ou mettre les outputs, et le temps maximal et le nombre d'itérations maximales pour l'algorithme.
 		outputsLocation = "./Outputs/outputCalendrier"
 		maximumIterations = 30
-		maximumTime = 1209600 # Temps maximum en seconde; ici, cela correspond a deux semaines.
-        # On créer l'objet qui contient la tache a lancer avec le greedy algorithm
+		maximumTime = 1209600 # Temps maximum en seconde; ici, cela correspond à deux semaines.
+        # On créer l'objet qui contient la tâche à lancer avec le greedy algorithm
         maintask = Parallel.FMTopareaschedulertask(optimizationmodel, opeareas, outputsLocation, "YOUVERT", maximumIterations, maximumTime)
-        # On met la tache au sein d'un objet qui gère le lancement des taches en parallèle dans FMT
+        # On met la tâche au sein d'un objet qui gère le lancement des tâches en parallèle dans FMT
         handler = Parallel.FMTtaskhandler(maintask,self.thr)
-        # On active l'enregistrement du log de la tache
+        # On active l'enregistrement du log de la tâche
         handler.settasklogger()
-        # on lance la tache du greedy algorithm en parralèle
+        # on lance la tâche du greedy algorithm en parralèle
         handler.conccurentrun()
 	else:
 		print("FMT needs to be compiled with OSI")
