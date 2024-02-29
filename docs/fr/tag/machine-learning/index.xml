@@ -5,7 +5,7 @@
     <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/machine-learning/</link>
       <atom:link href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/tag/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Machine learning</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-ca</language><copyright>© 2023 Bureau du Forestier en Chef du Québec</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-ca</language><copyright>© 2024 Bureau du Forestier en Chef du Québec</copyright>
     <image>
       <url>https://bureau-du-forestier-en-chef.github.io/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_512x512_fill_lanczos_center_3.png</url>
       <title>Machine learning</title>
@@ -919,10 +919,10 @@ classDiagram
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_5f93889ab7e34529d434e63eabfb8062.webp 400w,
+               /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_e3b9ff85ca4048c22dc52376a0ed5e39.webp 400w,
                /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_beeaedfc07926eed52174ed461600a2c.webp 760w,
                /FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_5f93889ab7e34529d434e63eabfb8062.webp&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/rencontre_250723/Figure3COS_huc38593ca9299726119cd9f451af314eb_369959_e3b9ff85ca4048c22dc52376a0ed5e39.webp&#34;
                width=&#34;90%&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1470,10 +1470,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_85bee0acfacfa332229a8bd691c5ee5e.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_76fa157b0bd5cb06fbfff8e3544b6eb2.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_0928915b1d5552b7dce147b81268d996.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_3da0477cc7c803d89a662eafdaae6891.webp 760w,
                /FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_85bee0acfacfa332229a8bd691c5ee5e.webp&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm1_hue6aa68ea8517246e97c8ca296cb4a5d9_115754_0928915b1d5552b7dce147b81268d996.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1515,10 +1515,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_aa226df720c2999b921683ef41723165.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_e88c780e690525b36b26e0646f3c243f.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_6fb94d2f16219a5398bac46742fbc3bf.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_d572bb6e58188a7d26f2cd8cc08fddf8.webp 760w,
                /FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_aa226df720c2999b921683ef41723165.webp&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/gcbm2_hu09e6139fcef839c46e62075f0afff6a6_58813_6fb94d2f16219a5398bac46742fbc3bf.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1542,10 +1542,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_0d4932d9643d541476458952d30a0339.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_f8d02c951d698c2f14d64a2a7bab20f4.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_05cd3bf8828b018b033e9b2fb7020065.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_788bb358c9ccfc72c0e6359e50af3865.webp 760w,
                /FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_0d4932d9643d541476458952d30a0339.webp&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/ml1_hu63ee8c4aec8d0e2cbafef2ff3f66604c_52904_05cd3bf8828b018b033e9b2fb7020065.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1569,10 +1569,10 @@ $( &#34;li&#34; ).addClass( &#34;fragment&#34; );
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_412653f6ec05365dd296287dea5a5a14.webp 400w,
-               /FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_643da09d1d664c85b6f6f39b08e328a3.webp 760w,
+               /FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_b095e5cc8533171b90ec1bf80d7ff7d7.webp 400w,
+               /FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_835122168dca681e2159370c3df29437.webp 760w,
                /FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_412653f6ec05365dd296287dea5a5a14.webp&#34;
+               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/fr/slides/fmt_carbone/m1_huf59a41d4f8475a9a965bb939b819f416_65651_b095e5cc8533171b90ec1bf80d7ff7d7.webp&#34;
                width=&#34;auto&#34;
                height=&#34;auto&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;

@@ -1,99 +1,37 @@
-<map id="C:/Temp/out/FMT/Include/FMTbasevertexproperties.hpp" name="C:/Temp/out/FMT/Include/FMTbasevertexproperties.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="3043,5,3238,48"/>
-<area shape="rect" id="Node000002" href="$FMTfuturdevelopment_8hpp.html" title=" " alt="" coords="2994,104,3164,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3128,50,3098,93,3094,90,3124,47"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="527,336,653,379"/>
-<area shape="poly" id="edge59_Node000001_Node000010" title=" " alt="" coords="3042,32,2523,44,2164,55,1783,71,1413,92,1085,118,948,133,834,150,747,169,691,189,657,216,632,251,613,288,601,322,596,321,608,286,627,248,654,212,688,184,745,164,833,145,947,128,1085,113,1412,86,1783,66,2164,50,2522,39,3042,27"/>
-<area shape="rect" id="Node000019" title=" " alt="" coords="1989,517,2057,544"/>
-<area shape="poly" id="edge62_Node000001_Node000019" title=" " alt="" coords="3155,47,3186,113,3199,155,3204,199,3204,359,3200,389,3189,411,3172,428,3150,440,3096,455,3033,472,2947,492,2831,507,2695,518,2550,525,2271,532,2072,532,2072,527,2271,526,2550,520,2695,512,2830,502,2946,487,3032,467,3094,450,3148,435,3169,424,3185,408,3195,387,3199,358,3199,199,3194,156,3181,115,3150,49"/>
-<area shape="rect" id="Node000033" href="$FMTactualdevelopment_8hpp.html" title=" " alt="" coords="2079,104,2258,131"/>
-<area shape="poly" id="edge54_Node000001_Node000033" title=" " alt="" coords="3042,40,2273,109,2272,104,3042,34"/>
-<area shape="rect" id="Node000034" title=" " alt="" coords="3239,96,3365,139"/>
-<area shape="poly" id="edge60_Node000001_Node000034" title=" " alt="" coords="3179,46,3253,86,3250,91,3177,51"/>
-<area shape="rect" id="Node000035" title=" " alt="" coords="3390,96,3518,139"/>
-<area shape="poly" id="edge61_Node000001_Node000035" title=" " alt="" coords="3215,46,3376,92,3375,97,3213,51"/>
-<area shape="rect" id="Node000003" href="$FMTdevelopment_8hpp.html" title=" " alt="" coords="2096,187,2241,213"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2994,129,2255,194,2255,188,2994,124"/>
-<area shape="poly" id="edge51_Node000002_Node000010" title=" " alt="" coords="2994,124,2509,143,1809,175,1456,195,1142,217,898,240,812,252,756,264,721,277,688,293,630,329,627,325,685,289,719,272,754,259,811,247,897,235,1141,211,1455,189,1809,170,2509,137,2994,119"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="1980,427,2106,469"/>
-<area shape="poly" id="edge53_Node000002_Node000013" title=" " alt="" coords="3084,131,3088,178,3086,246,3079,283,3068,319,3051,352,3026,381,3007,392,2976,401,2886,417,2767,428,2630,437,2346,446,2121,449,2121,444,2346,441,2630,432,2767,423,2885,411,2975,396,3004,387,3023,377,3046,349,3063,317,3074,282,3080,246,3082,178,3078,131"/>
-<area shape="poly" id="edge52_Node000002_Node000019" title=" " alt="" coords="3091,129,3110,154,3130,189,3147,230,3154,273,3154,359,3148,397,3131,424,3106,441,3073,450,2995,459,2952,464,2909,472,2833,486,2733,498,2491,515,2248,526,2072,531,2072,526,2248,521,2490,510,2732,492,2833,481,2908,467,2951,458,2994,454,3072,445,3103,436,3127,420,3143,395,3148,358,3148,274,3142,231,3125,191,3105,157,3087,133"/>
-<area shape="rect" id="Node000004" href="$FMTmask_8hpp.html" title=" " alt="" coords="1599,261,1703,288"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2096,214,1718,267,1718,261,2095,209"/>
-<area shape="poly" id="edge22_Node000003_Node000010" title=" " alt="" coords="2096,204,1829,206,1460,214,1092,232,939,246,824,264,654,332,652,328,822,259,938,241,1091,227,1460,209,1829,201,2096,199"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="2231,336,2357,379"/>
-<area shape="poly" id="edge23_Node000003_Node000012" title=" " alt="" coords="2181,212,2270,323,2266,326,2177,216"/>
-<area shape="poly" id="edge36_Node000003_Node000013" title=" " alt="" coords="2229,211,2317,236,2363,252,2404,272,2438,294,2460,320,2466,334,2466,349,2461,364,2450,380,2428,398,2396,412,2309,431,2211,443,2121,448,2121,442,2211,437,2308,426,2394,406,2425,393,2446,377,2456,362,2461,348,2460,335,2456,322,2435,298,2402,276,2361,257,2315,241,2228,217"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="2080,336,2206,379"/>
-<area shape="poly" id="edge24_Node000003_Node000014" title=" " alt="" coords="2169,214,2151,322,2146,321,2164,214"/>
-<area shape="poly" id="edge34_Node000003_Node000019" title=" " alt="" coords="2096,206,1815,218,1441,243,1258,260,1100,282,981,308,942,322,920,338,910,352,905,365,907,378,913,389,942,412,989,432,1052,450,1127,465,1304,490,1499,507,1691,517,1974,526,1974,531,1690,523,1499,512,1304,495,1126,471,1050,455,987,437,939,417,909,393,902,379,900,365,905,350,916,334,940,318,980,303,1099,277,1257,255,1440,237,1815,213,2095,201"/>
-<area shape="rect" id="Node000021" title=" " alt="" coords="2381,344,2436,371"/>
-<area shape="poly" id="edge35_Node000003_Node000021" title=" " alt="" coords="2189,212,2379,334,2376,338,2187,216"/>
-<area shape="rect" id="Node000022" href="$FMTobject_8hpp.html" title=" " alt="" coords="2521,261,2629,288"/>
-<area shape="poly" id="edge25_Node000003_Node000022" title=" " alt="" coords="2240,211,2507,259,2506,264,2239,217"/>
-<area shape="rect" id="Node000026" href="$FMTexceptionhandler_8hpp.html" title=" " alt="" coords="405,261,575,288"/>
-<area shape="poly" id="edge37_Node000003_Node000026" title=" " alt="" coords="2096,207,590,272,590,266,2096,202"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="1274,344,1444,371"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1606,291,1419,342,1418,337,1605,286"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="1468,344,1639,371"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1637,291,1581,337,1578,333,1634,286"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="1664,344,1835,371"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="1668,286,1725,333,1722,337,1665,291"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="1859,336,2006,379"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="1696,286,1847,329,1845,334,1694,291"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="930,344,1100,371"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="1599,283,1386,303,1113,339,1086,343,1085,338,1112,333,1385,298,1598,278"/>
-<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="1599,279,1441,281,1212,289,944,307,806,321,671,339,668,339,667,334,671,333,805,315,943,301,1211,283,1441,275,1599,273"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="1124,336,1250,379"/>
-<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="1599,285,1452,305,1265,338,1264,333,1451,300,1598,280"/>
-<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="1704,276,1923,294,2067,310,2216,333,2215,339,2067,316,1923,299,1704,282"/>
-<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="1704,275,1785,280,1878,290,1963,307,1996,319,2019,334,2033,351,2041,371,2047,411,2042,412,2036,372,2028,354,2016,338,1994,324,1962,312,1877,295,1784,285,1704,280"/>
-<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="1704,279,1865,301,2062,333,2065,334,2064,339,2061,339,1864,306,1703,285"/>
-<area shape="rect" id="Node000015" href="$FMTexception_8hpp.html" title=" " alt="" coords="626,435,754,461"/>
-<area shape="poly" id="edge14_Node000004_Node000015" title=" " alt="" coords="1599,280,1252,298,1058,315,978,326,918,339,862,358,808,382,722,429,720,425,806,377,860,353,917,333,977,321,1058,310,1251,293,1598,275"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="503,517,556,544"/>
-<area shape="poly" id="edge21_Node000004_Node000017" title=" " alt="" coords="1598,280,1429,285,1201,296,974,314,881,325,810,339,751,355,706,371,665,393,615,429,576,467,547,506,543,503,572,464,612,425,662,389,704,366,750,349,809,333,880,320,974,308,1200,291,1429,280,1598,275"/>
-<area shape="poly" id="edge20_Node000004_Node000021" title=" " alt="" coords="1704,275,2043,293,2232,310,2310,321,2369,333,2374,335,2373,340,2368,339,2309,326,2231,315,2043,298,1703,280"/>
-<area shape="rect" id="Node000016" title=" " alt="" coords="708,517,786,544"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="701,460,732,504,728,507,696,463"/>
-<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="666,464,569,513,566,508,663,459"/>
-<area shape="rect" id="Node000018" title=" " alt="" coords="810,517,881,544"/>
-<area shape="poly" id="edge17_Node000015_Node000018" title=" " alt="" coords="715,459,810,508,807,513,713,464"/>
-<area shape="poly" id="edge18_Node000015_Node000019" title=" " alt="" coords="735,459,773,467,884,479,1032,490,1387,507,1974,526,1974,531,1387,512,1032,495,884,484,772,472,734,465"/>
-<area shape="rect" id="Node000020" href="$FMTutility_8hpp.html" title=" " alt="" coords="581,517,684,544"/>
-<area shape="poly" id="edge19_Node000015_Node000020" title=" " alt="" coords="683,463,651,507,647,504,679,460"/>
-<area shape="poly" id="edge27_Node000022_Node000012" title=" " alt="" coords="2532,291,2372,337,2371,331,2530,286"/>
-<area shape="poly" id="edge28_Node000022_Node000013" title=" " alt="" coords="2578,289,2572,334,2562,359,2545,381,2513,399,2469,414,2416,425,2356,434,2231,444,2121,449,2121,443,2231,439,2355,428,2415,420,2468,408,2511,394,2541,377,2557,357,2566,332,2572,288"/>
-<area shape="poly" id="edge29_Node000022_Node000015" title=" " alt="" coords="2567,290,2520,337,2487,362,2449,381,2407,392,2344,401,2165,417,1932,429,1670,437,1145,447,769,449,769,444,1145,441,1670,432,1932,423,2164,412,2344,396,2406,387,2447,376,2484,357,2516,333,2563,287"/>
-<area shape="poly" id="edge30_Node000022_Node000019" title=" " alt="" coords="2629,277,2860,297,2968,313,3006,323,3026,334,3034,346,3036,357,3034,369,3026,380,2997,407,2956,429,2907,449,2849,467,2717,494,2570,512,2421,524,2281,530,2072,533,2072,527,2281,525,2421,518,2570,507,2716,488,2848,461,2905,444,2954,425,2993,402,3022,377,3029,367,3031,357,3029,348,3023,338,3004,328,2967,318,2859,302,2629,282"/>
-<area shape="poly" id="edge32_Node000022_Node000021" title=" " alt="" coords="2550,291,2448,340,2446,335,2548,286"/>
-<area shape="rect" id="Node000023" title=" " alt="" coords="2612,336,2738,379"/>
-<area shape="poly" id="edge26_Node000022_Node000023" title=" " alt="" coords="2592,286,2640,324,2636,328,2589,291"/>
-<area shape="rect" id="Node000024" title=" " alt="" coords="2762,344,2823,371"/>
-<area shape="poly" id="edge31_Node000022_Node000024" title=" " alt="" coords="2617,286,2751,334,2755,335,2753,340,2749,338,2615,291"/>
-<area shape="rect" id="Node000025" title=" " alt="" coords="2847,336,3013,379"/>
-<area shape="poly" id="edge33_Node000022_Node000025" title=" " alt="" coords="2630,286,2833,331,2831,337,2629,291"/>
-<area shape="poly" id="edge45_Node000026_Node000010" title=" " alt="" coords="507,286,554,324,551,328,504,291"/>
-<area shape="poly" id="edge46_Node000026_Node000012" title=" " alt="" coords="575,274,909,277,1377,286,1855,304,2058,317,2216,333,2216,339,2057,323,1855,310,1377,292,909,283,575,279"/>
-<area shape="poly" id="edge47_Node000026_Node000013" title=" " alt="" coords="528,286,678,332,775,356,874,376,1030,398,1190,415,1501,435,1772,444,1965,445,1965,450,1772,449,1501,441,1189,420,1029,403,873,381,774,362,676,337,526,291"/>
-<area shape="poly" id="edge48_Node000026_Node000019" title=" " alt="" coords="491,288,495,332,503,356,517,377,546,399,575,410,603,413,632,412,694,408,729,412,767,424,784,435,796,447,807,458,824,467,896,480,1020,492,1361,510,1721,521,1974,526,1974,531,1720,526,1360,515,1019,497,895,486,822,472,804,462,792,451,781,439,765,429,728,417,694,414,632,417,603,419,574,415,544,404,513,381,498,359,490,333,486,289"/>
-<area shape="rect" id="Node000027" href="$FMTlogger_8hpp.html" title=" " alt="" coords="5,344,113,371"/>
-<area shape="poly" id="edge38_Node000026_Node000027" title=" " alt="" coords="405,289,272,309,125,339,112,342,110,337,124,333,271,304,404,284"/>
-<area shape="rect" id="Node000030" title=" " alt="" coords="343,344,453,371"/>
-<area shape="poly" id="edge44_Node000026_Node000030" title=" " alt="" coords="477,291,424,336,421,332,474,286"/>
-<area shape="rect" id="Node000031" title=" " alt="" coords="137,344,176,371"/>
-<area shape="poly" id="edge49_Node000026_Node000031" title=" " alt="" coords="405,287,300,306,244,320,189,338,188,339,186,334,187,334,242,315,299,300,404,282"/>
-<area shape="rect" id="Node000032" title=" " alt="" coords="200,344,318,371"/>
-<area shape="poly" id="edge50_Node000026_Node000032" title=" " alt="" coords="454,291,309,341,308,336,453,286"/>
-<area shape="poly" id="edge39_Node000027_Node000013" title=" " alt="" coords="95,369,125,376,295,396,521,412,784,424,1064,433,1597,442,1965,444,1965,449,1596,447,1063,438,784,429,521,418,295,402,124,381,94,374"/>
-<area shape="poly" id="edge43_Node000027_Node000015" title=" " alt="" coords="97,369,125,376,258,400,391,418,611,439,610,444,390,423,257,405,124,381,95,374"/>
-<area shape="poly" id="edge42_Node000027_Node000017" title=" " alt="" coords="51,373,37,393,25,419,21,445,24,457,30,467,53,479,97,489,227,506,372,518,488,525,488,530,372,524,226,512,96,495,51,484,27,471,19,459,16,445,20,417,33,391,47,370"/>
-<area shape="rect" id="Node000028" title=" " alt="" coords="41,427,189,469"/>
-<area shape="poly" id="edge40_Node000027_Node000028" title=" " alt="" coords="69,370,97,413,92,416,65,373"/>
-<area shape="rect" id="Node000029" title=" " alt="" coords="214,435,278,461"/>
-<area shape="poly" id="edge41_Node000027_Node000029" title=" " alt="" coords="87,369,207,426,205,430,85,374"/>
-<area shape="poly" id="edge55_Node000033_Node000003" title=" " alt="" coords="2171,131,2171,172,2166,172,2166,131"/>
-<area shape="poly" id="edge56_Node000033_Node000010" title=" " alt="" coords="2078,121,1757,123,1331,132,1122,140,939,152,799,168,750,178,719,189,701,207,673,242,614,326,609,323,669,239,697,203,716,184,749,173,798,163,939,147,1122,135,1331,126,1757,118,2078,116"/>
-<area shape="poly" id="edge57_Node000033_Node000012" title=" " alt="" coords="2193,129,2225,152,2255,185,2272,219,2283,255,2294,321,2289,321,2278,256,2267,221,2250,188,2221,156,2190,133"/>
-<area shape="poly" id="edge58_Node000033_Node000013" title=" " alt="" coords="2078,123,1807,134,1635,147,1456,166,1282,194,1201,211,1126,231,1059,253,1001,278,954,307,920,338,913,348,911,358,913,367,919,377,933,383,963,390,1062,402,1361,421,1701,435,1965,442,1964,448,1701,440,1361,426,1061,407,962,395,932,388,916,381,908,369,906,358,908,346,916,334,951,302,998,274,1057,248,1124,226,1200,206,1281,189,1455,161,1635,142,1807,129,2078,117"/>
+<map id="D:/FMT/Include/FMTbasevertexproperties.hpp" name="D:/FMT/Include/FMTbasevertexproperties.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2999,5,3282,32"/>
+<area shape="rect" id="node2" href="$FMTfuturdevelopment_8hpp.html" title=" " alt="" coords="2994,88,3164,115"/>
+<area shape="rect" id="node10" title=" " alt="" coords="527,320,653,363"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1989,501,2057,528"/>
+<area shape="rect" id="node33" href="$FMTactualdevelopment_8hpp.html" title=" " alt="" coords="2079,88,2258,115"/>
+<area shape="rect" id="node34" title=" " alt="" coords="3239,80,3365,123"/>
+<area shape="rect" id="node35" title=" " alt="" coords="3390,80,3518,123"/>
+<area shape="rect" id="node3" href="$FMTdevelopment_8hpp.html" title=" " alt="" coords="2096,171,2241,197"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1980,411,2106,453"/>
+<area shape="rect" id="node4" href="$FMTmask_8hpp.html" title=" " alt="" coords="1599,245,1703,272"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2231,320,2357,363"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2080,320,2206,363"/>
+<area shape="rect" id="node21" title=" " alt="" coords="2381,328,2436,355"/>
+<area shape="rect" id="node22" href="$FMTobject_8hpp.html" title=" " alt="" coords="2521,245,2629,272"/>
+<area shape="rect" id="node26" href="$FMTexceptionhandler_8hpp.html" title=" " alt="" coords="405,245,575,272"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1274,328,1444,355"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1468,328,1639,355"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1664,328,1835,355"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1859,320,2006,363"/>
+<area shape="rect" id="node9" title=" " alt="" coords="930,328,1100,355"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1124,320,1250,363"/>
+<area shape="rect" id="node15" href="$FMTexception_8hpp.html" title=" " alt="" coords="626,419,754,445"/>
+<area shape="rect" id="node17" title=" " alt="" coords="503,501,556,528"/>
+<area shape="rect" id="node16" title=" " alt="" coords="708,501,786,528"/>
+<area shape="rect" id="node18" title=" " alt="" coords="810,501,881,528"/>
+<area shape="rect" id="node20" href="$FMTutility_8hpp.html" title=" " alt="" coords="581,501,684,528"/>
+<area shape="rect" id="node23" title=" " alt="" coords="2612,320,2738,363"/>
+<area shape="rect" id="node24" title=" " alt="" coords="2762,328,2823,355"/>
+<area shape="rect" id="node25" title=" " alt="" coords="2847,320,3013,363"/>
+<area shape="rect" id="node27" href="$FMTlogger_8hpp.html" title=" " alt="" coords="5,328,113,355"/>
+<area shape="rect" id="node30" title=" " alt="" coords="343,328,453,355"/>
+<area shape="rect" id="node31" title=" " alt="" coords="137,328,176,355"/>
+<area shape="rect" id="node32" title=" " alt="" coords="200,328,318,355"/>
+<area shape="rect" id="node28" title=" " alt="" coords="41,411,189,453"/>
+<area shape="rect" id="node29" title=" " alt="" coords="214,419,278,445"/>
 </map>

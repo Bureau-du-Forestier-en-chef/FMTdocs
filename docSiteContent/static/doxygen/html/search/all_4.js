@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data_0',['data',['../classCore_1_1FMTdata.html#a5bf7ff6a857411763e6694369d2c3c07',1,'Core::FMTdata::data'],['../classGraph_1_1FMTgraph.html#ad9f2c1451279bc4cdc6411a20b0efb2a',1,'Graph::FMTgraph::data']]],
+  ['data_0',['data',['../classCore_1_1FMTdata.html#a5bf7ff6a857411763e6694369d2c3c07',1,'Core::FMTdata::data()'],['../classGraph_1_1FMTgraph.html#ad9f2c1451279bc4cdc6411a20b0efb2a',1,'Graph::FMTgraph::data()']]],
   ['debug_5fmatrix_1',['DEBUG_MATRIX',['../namespaceModels.html#ae1d396c28f4bac89b223ca90afd49a1fa42b8736a5c087eacc045f625854c8a7d',1,'Models']]],
   ['decompose_2',['decompose',['../classCore_1_1FMTmask.html#af8ac62226d230af40c2361467099350c',1,'Core::FMTmask']]],
   ['defaultdeathaction_3',['defaultdeathaction',['../classModels_1_1FMTmodel.html#ace6502978ccd4737ee1dd0e7b1fc7bd1',1,'Models::FMTmodel']]],
@@ -15,7 +15,7 @@ var searchData=
   ['deleterow_12',['deleteRow',['../classModels_1_1FMTlpsolver.html#a6f2a88608de1480a941c9179b8ce72ca',1,'Models::FMTlpsolver::deleteRow()'],['../classModels_1_1FMTmatrixbuild.html#a131c78754611c4e686a811b36acbacd7',1,'Models::FMTmatrixbuild::deleteRow()']]],
   ['deleterows_13',['deleteRows',['../classModels_1_1FMTlpsolver.html#afca876ed8c6505186f4c1693286fdec9',1,'Models::FMTlpsolver']]],
   ['description_14',['description',['../classCore_1_1FMToutput.html#afb1676896d4016d8adfca1bb0dd4b0a9',1,'Core::FMToutput']]],
-  ['development_15',['development',['../classGraph_1_1FMTbasevertexproperties.html#af080b7046e1b3bcb2ce403c7825d5650',1,'Graph::FMTbasevertexproperties::development'],['../classCore_1_1FMTdevelopmentpath.html#a283499e8baa6d7e2f94a071189486757',1,'Core::FMTdevelopmentpath::development']]],
+  ['development_15',['development',['../classGraph_1_1FMTbasevertexproperties.html#af080b7046e1b3bcb2ce403c7825d5650',1,'Graph::FMTbasevertexproperties::development()'],['../classCore_1_1FMTdevelopmentpath.html#a283499e8baa6d7e2f94a071189486757',1,'Core::FMTdevelopmentpath::development()']]],
   ['developments_16',['developments',['../classGraph_1_1FMTgraph.html#adb899f0e1c8cbdfbdb0b3784a64f45b3',1,'Graph::FMTgraph']]],
   ['developpement_17',['developpement',['../namespaceCore.html#aea115282aa76a2c0ed357bd8a352e3c2a92f0d34b2a562017fa32b3f9f75c638f',1,'Core']]],
   ['disablematrixcaching_18',['disablematrixcaching',['../classModels_1_1FMTlpsolver.html#acb4146e66cc766bb5eed339ae6b31a36',1,'Models::FMTlpsolver']]],

@@ -1,5 +1,4 @@
 <map id="Core::FMTschedule" name="Core::FMTschedule">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,140,107"/>
-<area shape="rect" id="Node000002" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="14,5,131,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,47,75,80,70,80,70,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="14,5,131,32"/>
 </map>

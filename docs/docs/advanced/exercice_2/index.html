@@ -1066,8 +1066,7 @@ _NDY(oVolRec) 1.._LENGTH
 
 *FORMAT MOSEK
 
-</code></pre>
-</p>
+</code></pre></p>
 </details>
 <p>Then run a re-planning with the strategic model <code>Globalex2</code> and the tactical model <code>Localex1</code>, with the following command:</p>
 <pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex2 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX2 -rep 10 -len 20 -rel 20 -thr 2
@@ -1103,8 +1102,7 @@ oVolRec&lt;= 40272 1.._LENGTH _SETFROMGLOBAL(1)
 
 *FORMAT MOSEK
 
-</code></pre>
-</p>
+</code></pre></p>
 </details>
 <p>Then run a re-planning with the strategic model <code>Globalex1</code> and the tactical model <code>Localex3</code>, with the following command:</p>
 <pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex3 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX3 -rep 10 -len 20 -rel 20 -thr 2
@@ -1144,8 +1142,7 @@ oVolRecPEUPLEMENT2 &gt;= 0 1.._LENGTH _Goal(G4,9999) _REPLICATE(PEUPLEMENT2.csv)
 
 *FORMAT MOSEK
 
-</code></pre>
-</p>
+</code></pre></p>
 </details>
 <p>Then run a re-planning with the strategic model <code>Globalex1</code> and the tactical model <code>Localex4</code>, with the following command:</p>
 <pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex4 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT,OVOLRECPEUPLEMENT1,OVOLRECPEUPLEMENT2 -fol replanning_EX4 -rep 10 -len 20 -rel 20 -thr 2
@@ -1205,8 +1202,7 @@ osuppl &gt;= 90 1 _Goal(G1,9999) _REIGNORE(2)
 osuppl &lt;= 100 1 _Goal(G2,9999) _REIGNORE(2)
 
 *FORMAT MOSEK
-</code></pre>
-</p>
+</code></pre></p>
 </details>
 <p>Then run a re-planning with the strategic model <code>Globalex1</code> and the tactical model <code>Localex5</code>, with the following command:</p>
 <pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex5 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX5 -rep 10 -len 20 -rel 20 -thr 2
@@ -1266,8 +1262,7 @@ osuprec &gt;= 40272 1.._LENGTH _Goal(G2,9999) _SETFROMGLOBAL(0.99)
 
 *FORMAT MOSEK
 
-</code></pre>
-</p>
+</code></pre></p>
 </details>
 <p>Then run a re-plannibg with the strategic model <code>Globalex1</code> and the tactical model <code>Localex6</code>, with the following command:</p>
 <pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex1 -tac Localex6 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX6 -rep 10 -len 20 -rel 20 -thr 2
@@ -1304,8 +1299,7 @@ _NDY(oVolRec) 1.._LENGTH
 
 *FORMAT MOSEK
 
-</code></pre>
-</p>
+</code></pre></p>
 </details>
 <p>Then run a re-planning with the strategic model <code>Globalex7</code> and the tactical model <code>Localex1</code>, with the following command:</p>
 <pre><code class="language-shell">python Replanner.py -pri ../../Models/TWD_land/TWD_land.pri -str Globalex7 -tac Localex1 -sto Globalnofire -out OVOLREC,OSUPREC,OSUPPL,VOLINVENT -fol replanning_EX7 -rep 10 -len 20 -rel 20 -thr 2
@@ -1386,7 +1380,7 @@ _NDY(oVolRec) 1.._LENGTH
 
   
   <p class="powered-by">
-    © 2023 Bureau du Forestier en Chef du Québec
+    © 2024 Bureau du Forestier en Chef du Québec
   </p>
   
 
@@ -1551,7 +1545,7 @@ _NDY(oVolRec) 1.._LENGTH
       
     
     
-    <script src="/FMTdocs/en/js/wowchemy.min.b36873e4e886c7b03b21e4eb97d9b6d7.js"></script>
+    <script src="/FMTdocs/en/js/wowchemy.min.f7a5e0a5c39e010ad2fd6899a284771d.js"></script>
 
     
 

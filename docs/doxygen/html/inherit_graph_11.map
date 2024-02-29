@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,79,125,105"/>
-<area shape="rect" id="Node000001" href="$structboost_1_1serialization_1_1guid__defined_3_01Graph_1_1FMTgraph_3_01Graph_1_1FMTbasevertexprdd14c37bc0f9d034e731335d05f7ceb4.html" title=" " alt="" coords="173,5,464,80"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="139,75,172,69,173,74,140,80"/>
-<area shape="rect" id="Node000002" href="$structboost_1_1serialization_1_1guid__defined_3_01Graph_1_1FMTgraph_3_01Graph_1_1FMTvertexproper328e817819bf23326111401f0fa3ec45.html" title=" " alt="" coords="187,104,450,179"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="140,104,187,113,186,118,139,109"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,79,125,105"/>
+<area shape="rect" id="node2" href="$structboost_1_1serialization_1_1guid__defined_3_01Graph_1_1FMTgraph_3_01Graph_1_1FMTbasevertexprdd14c37bc0f9d034e731335d05f7ceb4.html" title=" " alt="" coords="173,5,464,80"/>
+<area shape="rect" id="node3" href="$structboost_1_1serialization_1_1guid__defined_3_01Graph_1_1FMTgraph_3_01Graph_1_1FMTvertexproper328e817819bf23326111401f0fa3ec45.html" title=" " alt="" coords="187,104,450,179"/>
 </map>

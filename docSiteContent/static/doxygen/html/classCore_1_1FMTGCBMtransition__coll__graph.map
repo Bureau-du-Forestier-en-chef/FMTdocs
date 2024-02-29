@@ -1,10 +1,6 @@
 <map id="Core::FMTGCBMtransition" name="Core::FMTGCBMtransition">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,311,180,337"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="131,204,278,247"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,258,109,312,105,308,168,254"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="53,97,132,124"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="91,139,86,189,86,247,93,310,88,311,81,247,81,189,86,139"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,133,186,202,182,205,113,136"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="30,5,155,48"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,63,95,97,90,97,90,63"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,311,180,337"/>
+<area shape="rect" id="node2" title=" " alt="" coords="131,204,278,247"/>
+<area shape="rect" id="node3" title=" " alt="" coords="53,97,132,124"/>
+<area shape="rect" id="node4" title=" " alt="" coords="30,5,155,48"/>
 </map>

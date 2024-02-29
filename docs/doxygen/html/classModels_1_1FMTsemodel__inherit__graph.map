@@ -1,11 +1,7 @@
 <map id="Models::FMTsemodel" name="Models::FMTsemodel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="92,155,238,181"/>
-<area shape="rect" id="Node000004" href="$classModels_1_1FMTsamodel.html" title=" " alt="" coords="5,229,152,256"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,193,95,231,92,227,137,189"/>
-<area shape="rect" id="Node000005" href="$classModels_1_1FMTsesmodel.html" title=" " alt="" coords="175,229,329,256"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="193,189,239,227,235,231,190,193"/>
-<area shape="rect" id="Node000002" href="$classModels_1_1FMTmodel.html" title=" " alt="" coords="99,80,231,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,122,168,154,163,154,163,122"/>
-<area shape="rect" id="Node000003" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="107,5,224,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,47,168,80,163,80,163,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="92,155,238,181"/>
+<area shape="rect" id="node4" href="$classModels_1_1FMTsamodel.html" title=" " alt="" coords="5,229,152,256"/>
+<area shape="rect" id="node5" href="$classModels_1_1FMTsesmodel.html" title=" " alt="" coords="175,229,329,256"/>
+<area shape="rect" id="node2" href="$classModels_1_1FMTmodel.html" title=" " alt="" coords="99,80,231,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="107,5,224,32"/>
 </map>

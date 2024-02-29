@@ -1,44 +1,23 @@
 <map id="Core::FMTdevelopmentpath" name="Core::FMTdevelopmentpath">
-<area shape="rect" id="Node000001" title=" " alt="" coords="212,1131,391,1157"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="228,1024,375,1067"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="304,1082,304,1130,299,1130,299,1082"/>
-<area shape="rect" id="Node000003" href="$classCore_1_1FMTdevelopment.html" title=" " alt="" coords="224,933,379,960"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,975,304,1023,299,1023,299,975"/>
-<area shape="rect" id="Node000004" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="243,857,360,884"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="304,899,304,933,299,933,299,899"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="326,751,504,793"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="382,805,318,859,314,855,378,801"/>
-<area shape="rect" id="Node000006" href="$classException_1_1FMTexceptionhandler.html" title=" " alt="" coords="337,660,549,687"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="438,702,423,751,418,749,433,700"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="178,553,343,596"/>
-<area shape="poly" id="edge21_Node000004_Node000007" title=" " alt="" coords="268,610,302,856,297,857,262,611"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="313,601,420,657,418,662,311,606"/>
-<area shape="rect" id="Node000008" href="$classLogging_1_1FMTlogger.html" title=" " alt="" coords="193,463,328,489"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="263,504,263,553,258,553,258,504"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="26,356,190,399"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="154,405,242,460,239,464,152,409"/>
-<area shape="rect" id="Node000010" href="$classLogging_1_1FMTsolverlogger.html" title=" " alt="" coords="5,257,174,284"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="97,298,107,355,102,356,92,299"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="17,165,162,192"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="92,207,92,257,87,257,87,207"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="221,364,300,391"/>
-<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="263,406,263,462,258,462,258,406"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="198,249,323,292"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="263,307,263,363,258,363,258,307"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="345,364,442,391"/>
-<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="366,402,312,441,280,464,276,460,309,437,363,397"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="347,249,483,292"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="410,307,399,364,393,363,405,306"/>
-<area shape="rect" id="Node000016" title=" " alt="" coords="349,157,481,200"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="418,215,418,249,412,249,412,215"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="338,81,492,108"/>
-<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="418,123,418,157,412,157,412,123"/>
-<area shape="rect" id="Node000018" title=" " alt="" coords="365,5,465,32"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="418,47,418,81,412,81,412,47"/>
-<area shape="rect" id="Node000019" title=" " alt="" coords="367,553,519,596"/>
-<area shape="poly" id="edge18_Node000006_Node000019" title=" " alt="" coords="446,611,446,660,440,660,440,611"/>
-<area shape="rect" id="Node000020" title=" " alt="" coords="542,553,696,596"/>
-<area shape="poly" id="edge19_Node000006_Node000020" title=" " alt="" coords="589,608,548,638,491,662,489,657,546,634,586,604"/>
-<area shape="rect" id="Node000021" title=" " alt="" coords="720,553,856,596"/>
-<area shape="poly" id="edge20_Node000006_Node000021" title=" " alt="" coords="749,607,719,624,686,639,618,657,549,668,548,662,617,652,685,633,717,619,747,602"/>
+<area shape="rect" id="node1" title=" " alt="" coords="212,1131,391,1157"/>
+<area shape="rect" id="node2" title=" " alt="" coords="228,1024,375,1067"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTdevelopment.html" title=" " alt="" coords="224,933,379,960"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="243,857,360,884"/>
+<area shape="rect" id="node5" title=" " alt="" coords="326,751,504,793"/>
+<area shape="rect" id="node6" href="$classException_1_1FMTexceptionhandler.html" title=" " alt="" coords="337,660,549,687"/>
+<area shape="rect" id="node7" title=" " alt="" coords="178,553,343,596"/>
+<area shape="rect" id="node8" href="$classLogging_1_1FMTlogger.html" title=" " alt="" coords="193,463,328,489"/>
+<area shape="rect" id="node9" title=" " alt="" coords="26,356,190,399"/>
+<area shape="rect" id="node10" href="$classLogging_1_1FMTsolverlogger.html" title=" " alt="" coords="5,257,174,284"/>
+<area shape="rect" id="node11" title=" " alt="" coords="17,165,162,192"/>
+<area shape="rect" id="node12" title=" " alt="" coords="221,364,300,391"/>
+<area shape="rect" id="node13" title=" " alt="" coords="198,249,323,292"/>
+<area shape="rect" id="node14" title=" " alt="" coords="345,364,442,391"/>
+<area shape="rect" id="node15" title=" " alt="" coords="347,249,483,292"/>
+<area shape="rect" id="node16" title=" " alt="" coords="349,157,481,200"/>
+<area shape="rect" id="node17" title=" " alt="" coords="338,81,492,108"/>
+<area shape="rect" id="node18" title=" " alt="" coords="365,5,465,32"/>
+<area shape="rect" id="node19" title=" " alt="" coords="367,553,519,596"/>
+<area shape="rect" id="node20" title=" " alt="" coords="542,553,696,596"/>
+<area shape="rect" id="node21" title=" " alt="" coords="720,553,856,596"/>
 </map>

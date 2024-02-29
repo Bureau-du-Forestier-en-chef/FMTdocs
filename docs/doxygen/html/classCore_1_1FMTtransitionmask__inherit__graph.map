@@ -1,7 +1,5 @@
 <map id="Core::FMTtransitionmask" name="Core::FMTtransitionmask">
-<area shape="rect" id="Node000001" title=" " alt="" coords="64,80,232,107"/>
-<area shape="rect" id="Node000002" href="$classCore_1_1FMTmaskfilter.html" title=" " alt="" coords="5,5,144,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,41,137,78,133,82,96,44"/>
-<area shape="rect" id="Node000003" href="$classCore_1_1FMTspec.html" title=" " alt="" coords="167,5,278,32"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,44,163,82,159,78,197,41"/>
+<area shape="rect" id="node1" title=" " alt="" coords="64,80,232,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTmaskfilter.html" title=" " alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTspec.html" title=" " alt="" coords="167,5,278,32"/>
 </map>

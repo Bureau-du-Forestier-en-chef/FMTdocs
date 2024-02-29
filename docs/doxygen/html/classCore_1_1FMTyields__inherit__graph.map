@@ -1,7 +1,5 @@
 <map id="Core::FMTyields" name="Core::FMTyields">
-<area shape="rect" id="Node000001" title=" " alt="" coords="57,171,174,197"/>
-<area shape="rect" id="Node000002" href="$classCore_1_1FMTlist.html" title=" " alt="" coords="5,80,226,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,138,118,170,113,170,113,138"/>
-<area shape="rect" id="Node000003" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="57,5,174,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,47,118,80,113,80,113,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="57,171,174,197"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTlist.html" title=" " alt="" coords="5,80,226,123"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="57,5,174,32"/>
 </map>

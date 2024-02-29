@@ -1,7 +1,5 @@
 <map id="Parser::FMTyieldparser" name="Parser::FMTyieldparser">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,155,162,181"/>
-<area shape="rect" id="Node000002" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="19,80,148,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,122,86,154,81,154,81,122"/>
-<area shape="rect" id="Node000003" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="25,5,142,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,47,86,80,81,80,81,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,162,181"/>
+<area shape="rect" id="node2" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="19,80,148,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="25,5,142,32"/>
 </map>

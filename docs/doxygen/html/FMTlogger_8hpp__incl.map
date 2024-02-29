@@ -1,22 +1,12 @@
-<map id="C:/Temp/out/FMT/Include/FMTlogger.hpp" name="C:/Temp/out/FMT/Include/FMTlogger.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="277,5,444,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,132,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,51,147,95,145,90,291,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="156,96,304,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,51,274,90,271,85,329,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="328,104,393,131"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="363,48,363,89,358,89,358,48"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="381,187,434,213"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="380,47,395,69,407,95,414,135,413,172,408,172,408,136,402,97,391,72,376,50"/>
-<area shape="rect" id="Node000006" href="$FMTexception_8hpp.html" title=" " alt="" coords="510,104,638,131"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="412,46,531,95,529,100,410,51"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="549,134,447,182,445,178,547,129"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="458,187,535,213"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="564,133,520,178,516,174,560,129"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="560,187,631,213"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="580,130,591,172,586,173,575,132"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="654,187,723,213"/>
-<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="593,129,661,176,658,180,590,133"/>
-<area shape="rect" id="Node000010" href="$FMTutility_8hpp.html" title=" " alt="" coords="746,187,850,213"/>
-<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="610,129,750,179,748,184,608,134"/>
+<map id="D:/FMT/Include/FMTlogger.hpp" name="D:/FMT/Include/FMTlogger.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="261,5,460,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,132,123"/>
+<area shape="rect" id="node3" title=" " alt="" coords="156,80,304,123"/>
+<area shape="rect" id="node4" title=" " alt="" coords="328,88,393,115"/>
+<area shape="rect" id="node5" title=" " alt="" coords="381,171,434,197"/>
+<area shape="rect" id="node6" href="$FMTexception_8hpp.html" title=" " alt="" coords="510,88,638,115"/>
+<area shape="rect" id="node7" title=" " alt="" coords="458,171,535,197"/>
+<area shape="rect" id="node8" title=" " alt="" coords="560,171,631,197"/>
+<area shape="rect" id="node9" title=" " alt="" coords="654,171,723,197"/>
+<area shape="rect" id="node10" href="$FMTutility_8hpp.html" title=" " alt="" coords="746,171,850,197"/>
 </map>

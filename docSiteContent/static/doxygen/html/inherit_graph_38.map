@@ -1,5 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classGraph_1_1FMTbaseedgeproperties.html" title=" " alt="" coords="5,5,209,32"/>
-<area shape="rect" id="Node000001" href="$classGraph_1_1FMTedgeproperties.html" title=" " alt="" coords="257,5,432,32"/>
-<area shape="poly" id="edge85_Node000000_Node000001" title=" " alt="" coords="224,16,256,16,256,21,224,21"/>
+<area shape="rect" id="node1" href="$classException_1_1FMTexceptionhandler.html" title=" " alt="" coords="5,81,217,108"/>
+<area shape="rect" id="node2" href="$classException_1_1FMTdebugexceptionhandler.html" title=" " alt="" coords="266,5,513,32"/>
+<area shape="rect" id="node3" href="$classException_1_1FMTdefaultexceptionhandler.html" title=" " alt="" coords="265,56,514,83"/>
+<area shape="rect" id="node4" href="$classException_1_1FMTfreeexceptionhandler.html" title=" " alt="" coords="273,107,506,133"/>
+<area shape="rect" id="node5" href="$classException_1_1FMTquietexceptionhandler.html" title=" " alt="" coords="270,157,509,184"/>
 </map>

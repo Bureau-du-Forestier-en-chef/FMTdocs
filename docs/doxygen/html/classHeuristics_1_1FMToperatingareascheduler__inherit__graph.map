@@ -1,9 +1,6 @@
 <map id="Heuristics::FMToperatingareascheduler" name="Heuristics::FMToperatingareascheduler">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,229,253,256"/>
-<area shape="rect" id="Node000002" href="$classHeuristics_1_1FMTlpheuristic.html" title=" " alt="" coords="43,155,215,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,196,132,229,126,229,126,196"/>
-<area shape="rect" id="Node000003" href="$classModels_1_1FMTlpsolver.html" title=" " alt="" coords="59,80,199,107"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,122,132,154,126,154,126,122"/>
-<area shape="rect" id="Node000004" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="70,5,188,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="132,47,132,80,126,80,126,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,253,256"/>
+<area shape="rect" id="node2" href="$classHeuristics_1_1FMTlpheuristic.html" title=" " alt="" coords="43,155,215,181"/>
+<area shape="rect" id="node3" href="$classModels_1_1FMTlpsolver.html" title=" " alt="" coords="59,80,199,107"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="70,5,188,32"/>
 </map>
