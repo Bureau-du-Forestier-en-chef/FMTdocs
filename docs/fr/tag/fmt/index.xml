@@ -887,6 +887,26 @@ section Générale
 Débogage                                                :       des3,2023-01-01,2024-10-30
 &lt;/div&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;intégration-de-marc-alexandre&#34;&gt;Intégration de Marc-Alexandre&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Objectifs
+&lt;ul&gt;
+&lt;li&gt;Libérer Guillaume des taches pouvant être délégués&lt;/li&gt;
+&lt;li&gt;Commencer à transmettre des connaissances liées a FMT&lt;/li&gt;
+&lt;li&gt;Permets de varier le travail de Marc-Alexandre&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Premier mandat d&amp;rsquo;exposer des fonctions dans le wrapper pour l&amp;rsquo;interface utilisateur&lt;/li&gt;
+&lt;li&gt;Pourquoi?
+&lt;ul&gt;
+&lt;li&gt;Permets d&amp;rsquo;utiliser les méthodes sans briser le code existant&lt;/li&gt;
+&lt;li&gt;Permets une familiarisation en encapsulant la porté du code&lt;/li&gt;
+&lt;li&gt;Permets une entrée en la matière du code C++ et ses utilisations spécifiques comme les pointeurs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Travaux liés à la spatialisation, l&amp;rsquo;adaptation de la TBE et au carbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;les-futurs-projets-potentiels&#34;&gt;Les futurs projets potentiels&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Diffusion du calcul (MJ)&lt;/li&gt;
