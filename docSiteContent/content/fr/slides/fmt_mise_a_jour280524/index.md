@@ -185,6 +185,21 @@ Débogage                                                :       des3,2023-01-01
 
 ---
 
+## Intégration de Marc-Alexandre
+
+- Objectifs
+    - Libérer Guillaume des taches pouvant être délégués
+    - Commencer à transmettre des connaissances liées a FMT
+    - Permets de varier le travail de Marc-Alexandre
+- Premier mandat d'exposer des fonctions dans le wrapper pour l'interface utilisateur
+- Pourquoi?
+    - Permets d'utiliser les méthodes sans briser le code existant
+    - Permets une familiarisation en encapsulant la porté du code
+    - Permets une entrée en la matière du code C++ et ses utilisations spécifiques comme les pointeurs 
+- Travaux liés à la spatialisation, l'adaptation de la TBE et au carbone 
+
+---
+
 ## Les futurs projets potentiels
 
 - Diffusion du calcul (MJ)
