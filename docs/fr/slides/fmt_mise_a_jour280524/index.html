@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.2.0 for Hugo">
+
+  
+    <link rel="manifest" href="/FMTdocs/fr/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/FMTdocs/media/icon_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/slides/fmt_mise_a_jour280524/">
+
+  <title>Les différents projets avec FMT | Documentation de FMT</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/theme/white.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/vs.min.css" crossorigin="anonymous" id="highlight-theme">
+
+  
+  
+  <link rel="stylesheet" href="/FMTdocs/css/reveal_custom.min.css">
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h1 id="fmt-où-en-somme-nous">FMT où en somme-nous?</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp"
+               width="40%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/Bureau-du-Forestier-en-chef/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="cest-quoi-fmt">C&rsquo;est quoi FMT?</h2>
+<div class=mermaid>
+graph TD;
+  2-->14;
+  1-->2-->5;
+  1-->3-->6;
+  1-->4-->7;
+  3-->8;
+  3-->12;
+  3-->15;
+  4-->13;
+  5-->9;
+  5-->10;
+  5-->11;
+  1["FMT API"];
+  2["C++"];
+  3["Python"];
+  4["Cran R"];
+  5["Interface"];
+  6["Replanification"];
+  7["Base de données"];
+  8["BFEC-GCBM"];
+  9["Planification"];
+  10["Spatialisation"];
+  11["BFECOPT"];
+  12["Analyses diverses"];
+  13["Autre"];
+  14["Tests"];
+  15["Machine Learning"];
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="comment-on-test-fmt-129-tests">Comment on test FMT (129 tests)?</h2>
+<div class=mermaid>
+pie title Les tests de FMT
+  "Syntaxe" : 5.42
+  "Unités spatiales" : 4.65
+  "Planification" : 44.18
+  "Écriture de modèles" : 10.85
+  "Interface" : 3.87
+  "Replanification" : 6.20
+  "Spatialisation" : 9.3
+  "Machine Learning" : 5.42
+  "Presolve" : 2.32
+  "Analyse de retrait" : 0.77
+  "Analyses autre" : 6.98
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="lévolution-des-versions">L&rsquo;évolution des versions</h2>
+<div class=mermaid>
+flowchart LR;
+13 --> 14 --> 19;
+13 --> 15 --> 19;
+13 --> 16 --> 19;
+13 --> 17 --> 19;
+13 --> 40 --> 19;
+19 --> 20 --> 27;
+19 --> 21 --> 27;
+19 --> 22 --> 27;
+19 --> 23 --> 27;
+19 -->24 --> 27;
+19 --> 25 --> 27;
+19 -->26 --> 27;
+27 --> 28 --> 39;
+27 --> 29 --> 39;
+27 --> 30 --> 39;
+27 --> 31 --> 39;
+27 --> 32 --> 39;
+27 --> 33 --> 39;
+27 --> 34 --> 39;
+27 --> 35 --> 39;
+27 --> 36 --> 39;
+27 --> 37 --> 39;
+27 --> 38 --> 39;
+13["0.9.6"]
+14["Développement SA spatialisation"]
+15["Juxtaposition"]
+16["Decision COS"]
+17["Yield Distance"]
+40["Atteinte 7m COS"]
+19["0.9.7"]
+20["Coverage"]
+21["Mosek 10"]
+22["Pas de choix FMTExcel"]
+23["Keyword TSLA"]
+24["Update Driver GDAL"]
+25["Update Interface COS"]
+26["Outils Rotation"]
+27["0.9.8"]
+28["Vitesse Presolve"]
+29["Aléatoire replanification"]
+30["Tests Stochastiques"]
+31["Theme FMTExcel"]
+32["VCPKG manifest mode GCBM"]
+33["Rtools 4.4"]
+34["Optimisation contraintes inventaires"]
+35["Spatialisation aggrégation"]
+36["Spatialisation séparation"]
+37["Spatialisation Optimisation"]
+38["Optimisation Replanification"]
+39["0.9.9 en développement"]
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="les-nouveautés-099">Les nouveautés 0.9.9</h2>
+<ul>
+<li>FMTExcel
+<ul>
+<li>Chantier COS</li>
+<li>Valideurs FMT (Rotations,Séries,non récolté)</li>
+</ul>
+</li>
+<li>Spatialisation
+<ul>
+<li>Agrégation des actions</li>
+<li>Division des actions</li>
+<li>Optimisation du temps de résolution</li>
+</ul>
+</li>
+<li>Replanification
+<ul>
+<li>+Vitesse</li>
+<li>Stochastiques (mots clés)</li>
+<li>Approche AWS</li>
+<li>Meilleure gestion de la mémoire</li>
+<li>Fichier .par utilisable par scénario</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="les-travaux">Les travaux</h2>
+<div class=mermaid>
+gantt
+dateFormat  YYYY-MM-DD
+title Les travaux dans FMT
+excludes weekends
+section Interface
+Modification BFECopt: done,des13,2023-05-01,2023-11-01
+Modification spatialisation: done,des14, 2023-10-01,2023-12-01
+Mise à jour interface: done,des15,2024-03-01,2024-05-01
+Adaptation carbone: active,des2, 2024-06-01,2024-08-15
+section Formations
+Formation Replanification(2) :done,des2,2024-02-27,2024-03-15
+section FMTExcel
+Développement outil de validation						:done,des2,2023-09-01,2024-01-15
+section Spatialisation
+Optimisation de la vitesse								:done,des2, 2024-06-01,2024-06-10
+Agrégation												:done,des2, 2024-01-15,2024-06-10
+Division												:done,des2, 2024-06-01,2024-06-10
+Statistique 											:active,des2, 2024-07-01,2024-08-01
+section CC
+Ajout Syntaxe Aléatoire									:done,des2, 2024-04-01,2024-06-01
+Optimisation de la mémoire								:active,des2, 2024-05-15,2024-06-01
+Optimisation de la vitesse								:crit,des2, 2024-06-01,2024-08-01
+Optimisation des contraintes d'inventaires				:active,des2, 2024-05-01,2024-08-01
+Migration AWS											:active,des2, 2024-05-01,2024-08-01
+Cédule carbone											:active,des2, 2024-07-01,2024-07-15
+section Carbone
+Adaptation modèle TBE									:active,des2, 2024-09-01,2024-09-15
+section Générale
+Débogage                                                :       des3,2023-01-01,2024-10-30
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="les-futurs-projets-potentiels">Les futurs projets potentiels</h2>
+<ul>
+<li>Diffusion du calcul (MJ)</li>
+<li>Retrait de superficie (MJ)</li>
+<li>Automatisation AWS</li>
+<li>Optimisation Spatialement explicite
+<ul>
+<li>Opérationalisation du calcul</li>
+</ul>
+</li>
+<li>Replanification spatialement explicite
+<ul>
+<li>Permettre d&rsquo;obtenir un effet de spatialisation à travers la replanification</li>
+<li>Utilisation d&rsquo;évènements stochastiques spatiaux</li>
+<li>Inclure les enjeux opérationels</li>
+<li>Changements climatique</li>
+</ul>
+</li>
+<li>Permettre l&rsquo;optimisation du bilan de carbone</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="des-questions">Des Questions?</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp 400w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_2fe5f05b9605c2f618440b5804db23bb.webp 760w,
+               /FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/FMTdocs/media/LogoFMT_huc6d37a7993bbbcfd0b9a96d08d6d7557_42395_c617663bf8d02ecd432b77158b9e3e0b.webp"
+               width="40%"
+               height="auto"
+               loading="eager" data-zoomable /></div>
+  </div></figure>
+<p><a href="https://github.com/Bureau-du-Forestier-en-chef/FMT" target="_blank" rel="noopener">Github</a> | <a href="https://bureau-du-forestier-en-chef.github.io/FMTdocs/" target="_blank" rel="noopener">Documentation</a></p>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+$( "li" ).addClass( "fragment" );
+// $( "p" ).addClass( "fragment" );
+</script>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/highlight/highlight.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>%!(EXTRA string=sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==)
+  
+
+  
+  
+  
+  <script>
+    Reveal.initialize({
+      highlight: {
+        beforeHighlight: hljs => hljs.registerLanguage("fmt", function (hljs) {
+          return {
+            case_insensitive: false,
+            contains: [
+              {
+                className: "string",
+                begin: /\?/, end: /[\s\t]/,
+                relevance: 0
+              },
+              hljs.COMMENT(
+                '{', 
+                '}', 
+                {
+                  contains: [
+                    {
+                      scope: 'doc', begin: '@\\w+'
+                    }
+                  ]
+                }
+              ),
+              hljs.COMMENT(
+                ';', 
+                '\n', 
+                {
+                  contains: [
+                    {
+                      scope: 'doc', begin: '@\\w+'
+                    }
+                  ]
+                }
+              ),
+              {
+                className: "number",
+                begin: String.raw`\b(\d*\.?\d+)\b`,
+                relevance: 0
+              },
+              {
+                className: 'number',
+                begin: String.raw`(#[\w]*)`,
+                relevance: 0
+              },
+              {
+                className: 'string',
+                begin: String.raw`(>=|<=|<|>|\+|\/)`,
+                relevance: 0
+              }
+            ],
+            keywords: {
+              $pattern: /\*\w+|_\w+/,
+              keyword: ["*A", "*AA", "_LOCK",
+                "*THEME", "*AGGREGATE",
+                "*ACTION", "*OPERABLE", "_LOCKEXEMPT", "_MAXAGE", "_AGE",
+                "*CASE", "*SOURCE", "*TARGET", "_REPLACE", "_DEATH",
+                "*OUTPUT", "@AGE", "@YLD", "_AREA", "_INVENT",
+                "*Y", "*YC", "*YM", "_PRED", "_EQUATION", "_SUM", "_RANGE",
+                "_MAX", "_MIN", "_MAXMIN", "_MINMAX", "_EVEN", "_SEQ", "_NDY",
+                "_AVG", "*OBJECTIVE", "*EXCLUDE", "*CONSTRAINTS", "_LENGTH", "_TH",
+                "_SETFROMLOCAL", "_SETFROMGLOBAL", "_REIGNORE", "_RANDOM", "_SIZE", "_REPLICATE",
+                "_PENALTY", "_GOAL", "*FORMAT", "_SETGLOBALSCHEDULE", "_ADJACENCY"]
+            },
+          }
+        })
+      },
+      plugins: [RevealMarkdown, RevealZoom, RevealSearch, RevealNotes, RevealMath, RevealHighlight],
+      slideNumber: true,
+      controlsLayout: 'edges',
+	  viewDistance: 1000
+    });
+  </script>
+
+</body>
+</html>
