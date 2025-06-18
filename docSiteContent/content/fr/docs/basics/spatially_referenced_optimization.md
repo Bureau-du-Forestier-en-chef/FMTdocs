@@ -1,6 +1,6 @@
 ---
-title: Optimisation spatiallement référencée
-linktitle: Optimisation spatiallement référencée
+title: Optimisation spatialement référencée
+linktitle: Optimisation spatialement référencée
 type: book
 date: "2019-05-05T00:00:00+01:00"
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)

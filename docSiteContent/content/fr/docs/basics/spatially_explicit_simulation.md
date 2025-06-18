@@ -17,7 +17,7 @@ On peut distinguer trois façons de prendre en compte l'espace dans un modèle :
 
 ## Le `FMTsesmodel`
 
-`FMTsesmodel` est un modèle particulier qui donne à l'utilisateur la possibilité de **spatialiser** les solutions provenant de n'importe quelle classe `FMTsrmodel`, qui sont les modèles spatialement référencés (voir [objets, lecture et interrogation de modèles](../objects_parsing_interrogation) et [optimisation spatiallement référencée](../spatially_referenced_optimization)).
+`FMTsesmodel` est un modèle particulier qui donne à l'utilisateur la possibilité de **spatialiser** les solutions provenant de n'importe quelle classe `FMTsrmodel`, qui sont les modèles spatialement référencés (voir [objets, lecture et interrogation de modèles](../objects_parsing_interrogation) et [Optimisation spatialement référencée](../spatially_referenced_optimization)).
 
 Notez que **nous ne parlons pas de l'optimisation d'un modèle spatialement explicite** ; c'est une tâche assez complexe qui est encore sur le plan de route de FMT (et qui est le but de la classe `FMTsamodel`).
 
@@ -47,7 +47,7 @@ Un `FMTlayer` peut être comparé à un fichier raster ordinaire dans lequel les
 
 Dans le `FMTsesmodel`, nous utilisons la classe `FMTspatialschedule` pour représenter une solution spatialement explicite, qui est elle-même une `FMTlayer` de `FMTlinegraph`.
 
-Chaque `FMTlinegraph` est une version linéaire du `FMTgraph` décrit dans [optimisation spatiallement référencée](../spatially_referenced_optimization). Cela signifie qu'ils montrent l'évolution du `FMTdevelopment` à l'intérieur du pixel du début à la fin des périodes que nous voulons prendre en compte.
+Chaque `FMTlinegraph` est une version linéaire du `FMTgraph` décrit dans [Optimisation spatialement référencée](../spatially_referenced_optimization). Cela signifie qu'ils montrent l'évolution du `FMTdevelopment` à l'intérieur du pixel du début à la fin des périodes que nous voulons prendre en compte.
 
 ## La classe `FMTspatialschedule`.
 

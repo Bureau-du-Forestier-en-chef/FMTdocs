@@ -1157,7 +1157,7 @@ _DEATH
     </item>
     
     <item>
-      <title>Optimisation spatiallement référencée</title>
+      <title>Optimisation spatialement référencée</title>
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/spatially_referenced_optimization/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/spatially_referenced_optimization/</guid>
@@ -2252,7 +2252,7 @@ from FMT import Version
 &lt;li&gt;Dans un modèle &lt;strong&gt;spatialement explicite&lt;/strong&gt;, les entités sont associées à des coordonnées précises dans l&amp;rsquo;espace, comme dans les pixels d&amp;rsquo;une carte matricielle.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;le-fmtsesmodel&#34;&gt;Le &lt;code&gt;FMTsesmodel&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel&lt;/code&gt; est un modèle particulier qui donne à l&amp;rsquo;utilisateur la possibilité de &lt;strong&gt;spatialiser&lt;/strong&gt; les solutions provenant de n&amp;rsquo;importe quelle classe &lt;code&gt;FMTsrmodel&lt;/code&gt;, qui sont les modèles spatialement référencés (voir &lt;a href=&#34;../objects_parsing_interrogation&#34;&gt;objets, lecture et interrogation de modèles&lt;/a&gt; et &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;optimisation spatiallement référencée&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTsesmodel&lt;/code&gt; est un modèle particulier qui donne à l&amp;rsquo;utilisateur la possibilité de &lt;strong&gt;spatialiser&lt;/strong&gt; les solutions provenant de n&amp;rsquo;importe quelle classe &lt;code&gt;FMTsrmodel&lt;/code&gt;, qui sont les modèles spatialement référencés (voir &lt;a href=&#34;../objects_parsing_interrogation&#34;&gt;objets, lecture et interrogation de modèles&lt;/a&gt; et &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;Optimisation spatialement référencée&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Notez que &lt;strong&gt;nous ne parlons pas de l&amp;rsquo;optimisation d&amp;rsquo;un modèle spatialement explicite&lt;/strong&gt; ; c&amp;rsquo;est une tâche assez complexe qui est encore sur le plan de route de FMT (et qui est le but de la classe &lt;code&gt;FMTsamodel&lt;/code&gt;).&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
 FMTmodel &amp;lt;|-- FMTsemodel
@@ -2270,7 +2270,7 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
 &lt;p&gt;FMT utilise des &lt;code&gt;FMTlayers&lt;/code&gt; pour représenter toute solution spatialement explicite.&lt;/p&gt;
 &lt;p&gt;Un &lt;code&gt;FMTlayer&lt;/code&gt; peut être comparé à un fichier raster ordinaire dans lequel les pixels peuvent contenir à peu près n&amp;rsquo;importe quel type ou classe de peuplement forestier.&lt;/p&gt;
 &lt;p&gt;Dans le &lt;code&gt;FMTsesmodel&lt;/code&gt;, nous utilisons la classe &lt;code&gt;FMTspatialschedule&lt;/code&gt; pour représenter une solution spatialement explicite, qui est elle-même une &lt;code&gt;FMTlayer&lt;/code&gt; de &lt;code&gt;FMTlinegraph&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Chaque &lt;code&gt;FMTlinegraph&lt;/code&gt; est une version linéaire du &lt;code&gt;FMTgraph&lt;/code&gt; décrit dans &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;optimisation spatiallement référencée&lt;/a&gt;. Cela signifie qu&amp;rsquo;ils montrent l&amp;rsquo;évolution du &lt;code&gt;FMTdevelopment&lt;/code&gt; à l&amp;rsquo;intérieur du pixel du début à la fin des périodes que nous voulons prendre en compte.&lt;/p&gt;
+&lt;p&gt;Chaque &lt;code&gt;FMTlinegraph&lt;/code&gt; est une version linéaire du &lt;code&gt;FMTgraph&lt;/code&gt; décrit dans &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;Optimisation spatialement référencée&lt;/a&gt;. Cela signifie qu&amp;rsquo;ils montrent l&amp;rsquo;évolution du &lt;code&gt;FMTdevelopment&lt;/code&gt; à l&amp;rsquo;intérieur du pixel du début à la fin des périodes que nous voulons prendre en compte.&lt;/p&gt;
 &lt;h2 id=&#34;la-classe-fmtspatialschedule&#34;&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt;.&lt;/h2&gt;
 &lt;p&gt;La classe &lt;code&gt;FMTspatialschedule&lt;/code&gt; contient une solution spatialement explicite sous la forme d&amp;rsquo;un &lt;code&gt;FMTlayer&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Elle contient une fonction importante, &lt;code&gt;FMTspatialschedule.getsolutionstatus()&lt;/code&gt;, qui imprime des informations importantes sur la façon dont la solution contenue dans le &lt;code&gt;FMTspatialschedule&lt;/code&gt; atteint l&amp;rsquo;objectif du modèle.&lt;/p&gt;
