@@ -1,6 +1,6 @@
 ---
-title: Simulation spatiallement explicite
-linktitle: Simulation spatiallement explicite
+title: Simulation spatialement explicite
+linktitle: Simulation spatialement explicite
 type: book
 date: "2019-05-05T00:00:00+01:00"
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)

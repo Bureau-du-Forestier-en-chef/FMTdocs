@@ -2240,7 +2240,7 @@ from FMT import Version
     </item>
     
     <item>
-      <title>Simulation spatiallement explicite</title>
+      <title>Simulation spatialement explicite</title>
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/spatially_explicit_simulation/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/fr/docs/basics/spatially_explicit_simulation/</guid>
