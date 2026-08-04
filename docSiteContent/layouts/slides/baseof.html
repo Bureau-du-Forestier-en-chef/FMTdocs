@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.Language.Lang | default "en-us" }}">
 <head>
 
   {{ $cdn_url_reveal := "https://cdn.jsdelivr.net/npm/reveal.js@4.2.1" }}
-  {{ $js := site.Data.assets.js }}
-  {{ $css := site.Data.assets.css }}
+  {{ $js := .Site.Data.assets.js }}
+  {{ $css := .Site.Data.assets.css }}
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Wowchemy {{ site.Data.wowchemy.version }} for Hugo">
+  <meta name="generator" content="Wowchemy {{ .Site.Data.wowchemy.version }} for Hugo">
 
   {{ with site.Home.OutputFormats.Get "WebAppManifest" }}
     <link rel="manifest" href="{{ .RelPermalink }}">

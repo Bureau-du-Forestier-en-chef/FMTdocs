@@ -1,0 +1,4 @@
+<map id="Spatial::FMTPatchRules" name="Spatial::FMTPatchRules">
+<area shape="rect" id="node1" title="Spatial patch rules used to evaluate and repair the size, adjacency and grouping of events in a spati..." alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="26,5,147,32"/>
+</map>

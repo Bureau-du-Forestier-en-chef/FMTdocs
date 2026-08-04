@@ -1,0 +1,4 @@
+<map id="Logging::FMTExcelLogger" name="Logging::FMTExcelLogger">
+<area shape="rect" id="node1" title="Logger used by the Excel add&#45;in that stores the output in a string instead of printing it." alt="" coords="5,80,178,107"/>
+<area shape="rect" id="node2" href="$classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT." alt="" coords="22,5,161,32"/>
+</map>

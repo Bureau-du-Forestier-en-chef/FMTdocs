@@ -1,6 +1,6 @@
-<map id="Exception::FMTexception" name="Exception::FMTexception">
-<area shape="rect" id="node1" title=" " alt="" coords="5,220,175,247"/>
-<area shape="rect" id="node2" title=" " alt="" coords="17,97,120,124"/>
-<area shape="rect" id="node3" title=" " alt="" coords="145,97,224,124"/>
-<area shape="rect" id="node4" title=" " alt="" coords="122,5,247,48"/>
+<map id="Exception::FMTException" name="Exception::FMTException">
+<area shape="rect" id="node1" title="Base exception class for FMT holding the type, section and message of a given exception." alt="" coords="5,220,177,247"/>
+<area shape="rect" id="node2" title=" " alt="" coords="18,97,121,124"/>
+<area shape="rect" id="node3" title=" " alt="" coords="146,97,225,124"/>
+<area shape="rect" id="node4" title=" " alt="" coords="123,5,248,48"/>
 </map>

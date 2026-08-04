@@ -1,5 +1,5 @@
-<map id="Parser::FMTlandscapeparser" name="Parser::FMTlandscapeparser">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,194,181"/>
-<area shape="rect" id="node2" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="35,80,164,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="41,5,158,32"/>
+<map id="Parser::FMTLandscapeParser" name="Parser::FMTLandscapeParser">
+<area shape="rect" id="node1" title="Parser reading and writing the landscape section, and generating themes from vector or raster files." alt="" coords="5,155,200,181"/>
+<area shape="rect" id="node2" href="$classParser_1_1FMTParser.html" title="Main parent class of all the parsers in FMT." alt="" coords="37,80,168,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="42,5,163,32"/>
 </map>

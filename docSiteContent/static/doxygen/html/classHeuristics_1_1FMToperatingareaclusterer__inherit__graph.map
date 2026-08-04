@@ -1,6 +1,6 @@
-<map id="Heuristics::FMToperatingareaclusterer" name="Heuristics::FMToperatingareaclusterer">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,247,256"/>
-<area shape="rect" id="node2" href="$classHeuristics_1_1FMTlpheuristic.html" title=" " alt="" coords="40,155,212,181"/>
-<area shape="rect" id="node3" href="$classModels_1_1FMTlpsolver.html" title=" " alt="" coords="56,80,196,107"/>
-<area shape="rect" id="node4" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="67,5,185,32"/>
+<map id="Heuristics::FMTOperatingAreaClusterer" name="Heuristics::FMTOperatingAreaClusterer">
+<area shape="rect" id="node1" title="Heuristic to do spatial clustering of operating areas across a landscape from a shapefile." alt="" coords="10,229,179,272"/>
+<area shape="rect" id="node2" href="$classHeuristics_1_1FMTLpHeuristic.html" title="Base class for solving LP and MIP problems using a heuristic, holding a random generator and its own ..." alt="" coords="5,155,184,181"/>
+<area shape="rect" id="node3" href="$classModels_1_1FMTLpSolver.html" title="Abstract class to ease the usage of the OsiSolverInterface in FMT for linear programming models." alt="" coords="21,80,168,107"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="34,5,155,32"/>
 </map>

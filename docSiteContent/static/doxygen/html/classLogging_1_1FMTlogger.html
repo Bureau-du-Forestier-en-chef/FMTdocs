@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Logging::FMTlogger Class Reference</title>
+<title>FMT: Logging::FMTLogger Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceLogging.html">Logging</a></li><li class="navelem"><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceLogging.html">Logging</a></li><li class="navelem"><a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,124 +80,159 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classLogging_1_1FMTlogger-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Logging::FMTlogger Class Reference</div></div>
+<a href="classLogging_1_1FMTLogger-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Logging::FMTLogger Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTlogger_8hpp_source.html">FMTlogger.hpp</a>&gt;</code></p>
+<p>Base class handling the level of information printed by FMT.  
+ <a href="classLogging_1_1FMTLogger.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTLogger_8h_source.html">FMTLogger.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Logging::FMTlogger:</div>
+Inheritance diagram for Logging::FMTLogger:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTlogger__inherit__graph.svg" width="368" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTLogger__inherit__graph.svg" width="378" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Logging::FMTlogger:</div>
+Collaboration diagram for Logging::FMTLogger:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTlogger__coll__graph.svg" width="498" height="495"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTLogger__coll__graph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab41f959ed2c3cde97c509226888083cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#ab41f959ed2c3cde97c509226888083cb">FMTlogger</a> ()</td></tr>
-<tr class="separator:ab41f959ed2c3cde97c509226888083cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3515766935d13905016c1b9ea87e35f8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a3515766935d13905016c1b9ea87e35f8">~FMTlogger</a> ()</td></tr>
-<tr class="separator:a3515766935d13905016c1b9ea87e35f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca74aabdde4278650e55eb09ea3ed4db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aca74aabdde4278650e55eb09ea3ed4db">FMTlogger</a> (const <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;rhs)</td></tr>
-<tr class="separator:aca74aabdde4278650e55eb09ea3ed4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb90b54a8ee08de1c8a8afd674713977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#abb90b54a8ee08de1c8a8afd674713977">redirectofile</a> (const std::string &amp;filename)</td></tr>
-<tr class="separator:abb90b54a8ee08de1c8a8afd674713977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98bbf482a5a0e1a0bfde58102f0554d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a98bbf482a5a0e1a0bfde58102f0554d7">closefilestream</a> ()</td></tr>
-<tr class="separator:a98bbf482a5a0e1a0bfde58102f0554d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d6e0c5efe8f382996632951cd250af8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a5d6e0c5efe8f382996632951cd250af8">operator=</a> (const <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;rhs)</td></tr>
-<tr class="separator:a5d6e0c5efe8f382996632951cd250af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11afe46d0b2eaf4ba0430095d3a1a08f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a11afe46d0b2eaf4ba0430095d3a1a08f">print</a> ()</td></tr>
-<tr class="separator:a11afe46d0b2eaf4ba0430095d3a1a08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad64a6ddf9a4e0c151d586f772c106674"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#ad64a6ddf9a4e0c151d586f772c106674">checkSeverity</a> ()</td></tr>
-<tr class="separator:ad64a6ddf9a4e0c151d586f772c106674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad81f0173e979a5f7be1d801c7f22d22"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aad81f0173e979a5f7be1d801c7f22d22">clone</a> () const</td></tr>
-<tr class="separator:aad81f0173e979a5f7be1d801c7f22d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd8c35e364437d92fd30f3ae03336509"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#afd8c35e364437d92fd30f3ae03336509">getlogstamp</a> () const</td></tr>
-<tr class="separator:afd8c35e364437d92fd30f3ae03336509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0219c6dfb71d22ae1181bdfd4f3b1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a1e0219c6dfb71d22ae1181bdfd4f3b1c">logstamp</a> ()</td></tr>
-<tr class="separator:a1e0219c6dfb71d22ae1181bdfd4f3b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbcbf0b178371f1eac9bbc3d1169514a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#acbcbf0b178371f1eac9bbc3d1169514a">logtime</a> ()</td></tr>
-<tr class="separator:acbcbf0b178371f1eac9bbc3d1169514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1b19f19ff8ee37e2eb04c41706b120d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aa1b19f19ff8ee37e2eb04c41706b120d">setstreamflush</a> (bool flush)</td></tr>
-<tr class="separator:aa1b19f19ff8ee37e2eb04c41706b120d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8f417e991f296ea481687e6fa2fdfd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a4e8f417e991f296ea481687e6fa2fdfd">operator&lt;&lt;</a> (const std::string &amp;msg)</td></tr>
-<tr class="separator:a4e8f417e991f296ea481687e6fa2fdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9333524482287b45914d1ee16ff9638"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#af9333524482287b45914d1ee16ff9638">operator&lt;&lt;</a> (const int &amp;msg)</td></tr>
-<tr class="separator:af9333524482287b45914d1ee16ff9638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefb1455dd83b46987f88c546759db49f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aefb1455dd83b46987f88c546759db49f">operator&lt;&lt;</a> (const double &amp;msg)</td></tr>
-<tr class="separator:aefb1455dd83b46987f88c546759db49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b64d84aa62d0dc48887b9a55c09ce58"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a2b64d84aa62d0dc48887b9a55c09ce58">operator&lt;&lt;</a> (const float &amp;msg)</td></tr>
-<tr class="separator:a2b64d84aa62d0dc48887b9a55c09ce58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a022bd7c72fffc7c8cf254317f28248f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a022bd7c72fffc7c8cf254317f28248f2">operator&lt;&lt;</a> (const std::time_t &amp;msg)</td></tr>
-<tr class="separator:a022bd7c72fffc7c8cf254317f28248f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372b8de1b1457f677e5ac6ba635a623f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a372b8de1b1457f677e5ac6ba635a623f">operator&lt;&lt;</a> (const size_t &amp;msg)</td></tr>
-<tr class="separator:a372b8de1b1457f677e5ac6ba635a623f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbdf6f66ab2f1b8b30612d023747fff6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#abbdf6f66ab2f1b8b30612d023747fff6">operator&lt;&lt;</a> (const unsigned int &amp;msg)</td></tr>
-<tr class="separator:abbdf6f66ab2f1b8b30612d023747fff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724a5f090605248bb22ab0f0792c8577"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a724a5f090605248bb22ab0f0792c8577">logwithlevel</a> (const std::string &amp;msg, const int &amp;messagelevel) const</td></tr>
-<tr class="separator:a724a5f090605248bb22ab0f0792c8577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c8bde269340dd5e34e75fa366c7c08"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aa6c8bde269340dd5e34e75fa366c7c08">getsolverlogger</a> ()</td></tr>
-<tr class="separator:aa6c8bde269340dd5e34e75fa366c7c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea0b588be94926978dfa1069a55b00e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a2ea0b588be94926978dfa1069a55b00e">FMTLogger</a> ()</td></tr>
+<tr class="memdesc:a2ea0b588be94926978dfa1069a55b00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:a2ea0b588be94926978dfa1069a55b00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39004fdb84b8e4cfc376bbb241aa0906"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a39004fdb84b8e4cfc376bbb241aa0906">~FMTLogger</a> ()</td></tr>
+<tr class="memdesc:a39004fdb84b8e4cfc376bbb241aa0906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:a39004fdb84b8e4cfc376bbb241aa0906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a9ec5a81c467a51329b63ac3354f22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ae0a9ec5a81c467a51329b63ac3354f22">FMTLogger</a> (const <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ae0a9ec5a81c467a51329b63ac3354f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:ae0a9ec5a81c467a51329b63ac3354f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb75cd07e0bf96dc2ebf211e949394fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#acb75cd07e0bf96dc2ebf211e949394fe">redirectToFile</a> (const std::string &amp;filename, bool <a class="el" href="classLogging_1_1FMTLogger.html#a92914149412e43497396521416bd6369">logStamp</a>=true)</td></tr>
+<tr class="memdesc:acb75cd07e0bf96dc2ebf211e949394fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect the log information to a file.  <br /></td></tr>
+<tr class="separator:acb75cd07e0bf96dc2ebf211e949394fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad758328f639eff57bac271bbd5bb1af4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ad758328f639eff57bac271bbd5bb1af4">closeFileStream</a> ()</td></tr>
+<tr class="memdesc:ad758328f639eff57bac271bbd5bb1af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the file stream.  <br /></td></tr>
+<tr class="separator:ad758328f639eff57bac271bbd5bb1af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951bedf023a42f5f2da63aec8cfe9486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a951bedf023a42f5f2da63aec8cfe9486">operator=</a> (const <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a951bedf023a42f5f2da63aec8cfe9486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:a951bedf023a42f5f2da63aec8cfe9486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054cffaa527ad06bdb245e9701fabfb2"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a054cffaa527ad06bdb245e9701fabfb2">print</a> ()</td></tr>
+<tr class="memdesc:a054cffaa527ad06bdb245e9701fabfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print function overloaded from CoinMessageHandler when using the OSI solver interface.  <br /></td></tr>
+<tr class="separator:a054cffaa527ad06bdb245e9701fabfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe8b8ea56b1b67524124da1dc97e48a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a2fe8b8ea56b1b67524124da1dc97e48a">checkSeverity</a> ()</td></tr>
+<tr class="memdesc:a2fe8b8ea56b1b67524124da1dc97e48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the severity of the message to be printed by the CoinMessageHandler base class.  <br /></td></tr>
+<tr class="separator:a2fe8b8ea56b1b67524124da1dc97e48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad316b697477a1d63a29af574a747d5cb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ad316b697477a1d63a29af574a747d5cb">clone</a> () const =0</td></tr>
+<tr class="memdesc:ad316b697477a1d63a29af574a747d5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone the logger, needed for the abstract CoinMessageHandler usage.  <br /></td></tr>
+<tr class="separator:ad316b697477a1d63a29af574a747d5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c40d6ac4b32906ae3a8f313a16cce1"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a49c40d6ac4b32906ae3a8f313a16cce1">getLogStamp</a> () const</td></tr>
+<tr class="memdesc:a49c40d6ac4b32906ae3a8f313a16cce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the basic log stamp as a string.  <br /></td></tr>
+<tr class="separator:a49c40d6ac4b32906ae3a8f313a16cce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92914149412e43497396521416bd6369"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a92914149412e43497396521416bd6369">logStamp</a> ()</td></tr>
+<tr class="memdesc:a92914149412e43497396521416bd6369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log information about the version of FMT and its build date.  <br /></td></tr>
+<tr class="separator:a92914149412e43497396521416bd6369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb07d4b2820f0055582e6f68129e4623"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#afb07d4b2820f0055582e6f68129e4623">logTime</a> ()</td></tr>
+<tr class="memdesc:afb07d4b2820f0055582e6f68129e4623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the actual time at which the function is called.  <br /></td></tr>
+<tr class="separator:afb07d4b2820f0055582e6f68129e4623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba30091c15ebab8138d53d1d99d83f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#aba30091c15ebab8138d53d1d99d83f9d">setStreamFlush</a> (bool flush)</td></tr>
+<tr class="memdesc:aba30091c15ebab8138d53d1d99d83f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the flushing of the file stream.  <br /></td></tr>
+<tr class="separator:aba30091c15ebab8138d53d1d99d83f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91d2eaa5a65917ff92c8eb670808c9c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ab91d2eaa5a65917ff92c8eb670808c9c">operator&lt;&lt;</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:ab91d2eaa5a65917ff92c8eb670808c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a string to the log.  <br /></td></tr>
+<tr class="separator:ab91d2eaa5a65917ff92c8eb670808c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119f5a50720ebfa74ffa08f8847b1352"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a119f5a50720ebfa74ffa08f8847b1352">operator&lt;&lt;</a> (const int &amp;msg)</td></tr>
+<tr class="memdesc:a119f5a50720ebfa74ffa08f8847b1352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append an int to the log.  <br /></td></tr>
+<tr class="separator:a119f5a50720ebfa74ffa08f8847b1352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20efa8674189387ad1b2436271b498de"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a20efa8674189387ad1b2436271b498de">operator&lt;&lt;</a> (const double &amp;msg)</td></tr>
+<tr class="memdesc:a20efa8674189387ad1b2436271b498de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a double to the log.  <br /></td></tr>
+<tr class="separator:a20efa8674189387ad1b2436271b498de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf08ad327236f562e18194772642cc7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a0cf08ad327236f562e18194772642cc7">operator&lt;&lt;</a> (const float &amp;msg)</td></tr>
+<tr class="memdesc:a0cf08ad327236f562e18194772642cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a float to the log.  <br /></td></tr>
+<tr class="separator:a0cf08ad327236f562e18194772642cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749d25abb82a781ede0df7ce1d82091b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a749d25abb82a781ede0df7ce1d82091b">operator&lt;&lt;</a> (const std::time_t &amp;msg)</td></tr>
+<tr class="memdesc:a749d25abb82a781ede0df7ce1d82091b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a std::time_t to the log.  <br /></td></tr>
+<tr class="separator:a749d25abb82a781ede0df7ce1d82091b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa529728ab0aaf2f18848642a54a9bfe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#aaa529728ab0aaf2f18848642a54a9bfe">operator&lt;&lt;</a> (const size_t &amp;msg)</td></tr>
+<tr class="memdesc:aaa529728ab0aaf2f18848642a54a9bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a size_t to the log.  <br /></td></tr>
+<tr class="separator:aaa529728ab0aaf2f18848642a54a9bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b264d4cccbb9a6d159b37c1807a888"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a33b264d4cccbb9a6d159b37c1807a888">operator&lt;&lt;</a> (const unsigned int &amp;msg)</td></tr>
+<tr class="memdesc:a33b264d4cccbb9a6d159b37c1807a888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append an unsigned int to the log.  <br /></td></tr>
+<tr class="separator:a33b264d4cccbb9a6d159b37c1807a888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ac5d2429f93f169970ee637f4442b1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ac8ac5d2429f93f169970ee637f4442b1">operator&lt;&lt;</a> (const void *&amp;msg)</td></tr>
+<tr class="memdesc:ac8ac5d2429f93f169970ee637f4442b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append the address of a void pointer to the log.  <br /></td></tr>
+<tr class="separator:ac8ac5d2429f93f169970ee637f4442b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c5b57fc7a2b5df3e1129e273437e9f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#af6c5b57fc7a2b5df3e1129e273437e9f">logWithLevel</a> (const std::string &amp;p_msg, const int &amp;p_messageLevel) const</td></tr>
+<tr class="memdesc:af6c5b57fc7a2b5df3e1129e273437e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message with a given message level if message level is greater of equal to the logger level then it will be printed.  <br /></td></tr>
+<tr class="separator:af6c5b57fc7a2b5df3e1129e273437e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3d00499f30cea92dcb3deef9d1af7e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a9a3d00499f30cea92dcb3deef9d1af7e">getSolverLogger</a> ()</td></tr>
+<tr class="memdesc:a9a3d00499f30cea92dcb3deef9d1af7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the abstract logger used by the OSI solver interface.  <br /></td></tr>
+<tr class="separator:a9a3d00499f30cea92dcb3deef9d1af7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589f8b7fa506b01b5789799154920e48"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a589f8b7fa506b01b5789799154920e48">Clone</a> () const =0</td></tr>
+<tr class="memdesc:a589f8b7fa506b01b5789799154920e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">clone the <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>  <br /></td></tr>
+<tr class="separator:a589f8b7fa506b01b5789799154920e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6fcb11e863dfe378bb6c1768513d0a8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a6fcb11e863dfe378bb6c1768513d0a8c">cout</a> (const char *message) const</td></tr>
-<tr class="separator:a6fcb11e863dfe378bb6c1768513d0a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85cbe7b65793195398ee76dc83492dce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a85cbe7b65793195398ee76dc83492dce">setlogginglevel</a> (const int &amp;level)</td></tr>
-<tr class="separator:a85cbe7b65793195398ee76dc83492dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeead41234024fe346e9729db40992270"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#aeead41234024fe346e9729db40992270">_cout</a> (const char *message) const</td></tr>
+<tr class="memdesc:aeead41234024fe346e9729db40992270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a message, sometimes needed on Windows with boost::python to print directly into the <a class="el" href="namespacePython.html">Python</a> window.  <br /></td></tr>
+<tr class="separator:aeead41234024fe346e9729db40992270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4caf0a35f7d3cb36ffe353c20d3fe6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a3f4caf0a35f7d3cb36ffe353c20d3fe6">_setLoggingLevel</a> (const int &amp;level)</td></tr>
+<tr class="memdesc:a3f4caf0a35f7d3cb36ffe353c20d3fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the solver logger logging level.  <br /></td></tr>
+<tr class="separator:a3f4caf0a35f7d3cb36ffe353c20d3fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a8d88e81c3f5fc4893732ae4c1cc990a2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a8d88e81c3f5fc4893732ae4c1cc990a2">solverref</a></td></tr>
-<tr class="separator:a8d88e81c3f5fc4893732ae4c1cc990a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2eddefdcebd3f98ed77cb704bf8e96"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a1a2eddefdcebd3f98ed77cb704bf8e96">filepath</a></td></tr>
-<tr class="memdesc:a1a2eddefdcebd3f98ed77cb704bf8e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">string path the the potential filestream  <br /></td></tr>
-<tr class="separator:a1a2eddefdcebd3f98ed77cb704bf8e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1904a8cc7af052a510b249cb8e83b3"><td class="memItemLeft" align="right" valign="top">std::ofstream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#adf1904a8cc7af052a510b249cb8e83b3">filestream</a></td></tr>
-<tr class="memdesc:adf1904a8cc7af052a510b249cb8e83b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">stream if the logger redirect the logging into somesort of file.  <br /></td></tr>
-<tr class="separator:adf1904a8cc7af052a510b249cb8e83b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33a805f9bbe2a32e2d7c891933fee34"><td class="memItemLeft" align="right" valign="top">boost::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#af33a805f9bbe2a32e2d7c891933fee34">mtx</a></td></tr>
-<tr class="memdesc:af33a805f9bbe2a32e2d7c891933fee34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for multi-threading.  <br /></td></tr>
-<tr class="separator:af33a805f9bbe2a32e2d7c891933fee34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177962b75eeb33fd7044baef82ac49bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a177962b75eeb33fd7044baef82ac49bf">flushstream</a></td></tr>
-<tr class="memdesc:a177962b75eeb33fd7044baef82ac49bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true will flush stream at each write.  <br /></td></tr>
-<tr class="separator:a177962b75eeb33fd7044baef82ac49bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef60a450f132dc62867f2bda14086fc"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#afef60a450f132dc62867f2bda14086fc">m_solverref</a></td></tr>
+<tr class="separator:afef60a450f132dc62867f2bda14086fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574a1fa8f9a3ee44d794d30664abc53c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a574a1fa8f9a3ee44d794d30664abc53c">m_filepath</a></td></tr>
+<tr class="memdesc:a574a1fa8f9a3ee44d794d30664abc53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">string path the the potential filestream  <br /></td></tr>
+<tr class="separator:a574a1fa8f9a3ee44d794d30664abc53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56c5acbbfd8367e2338b0527c657e3c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; std::ofstream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ad56c5acbbfd8367e2338b0527c657e3c">m_FileStream</a></td></tr>
+<tr class="memdesc:ad56c5acbbfd8367e2338b0527c657e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">stream if the logger redirect the logging into somesort of file.  <br /></td></tr>
+<tr class="separator:ad56c5acbbfd8367e2338b0527c657e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7737b761ae82032987811bbc9295c1c"><td class="memItemLeft" align="right" valign="top">boost::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#af7737b761ae82032987811bbc9295c1c">m_mtx</a></td></tr>
+<tr class="memdesc:af7737b761ae82032987811bbc9295c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for multi-threading.  <br /></td></tr>
+<tr class="separator:af7737b761ae82032987811bbc9295c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49aff89f1addbe5c8ee7b7c38e4af055"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a49aff89f1addbe5c8ee7b7c38e4af055">m_flushstream</a></td></tr>
+<tr class="memdesc:a49aff89f1addbe5c8ee7b7c38e4af055"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true will flush stream at each write.  <br /></td></tr>
+<tr class="separator:a49aff89f1addbe5c8ee7b7c38e4af055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> is a base class who handle the level of stuff printed with FMT. If FMT is compiled with Osisolverinterface then this class is going to be derived from the Coinmessagehandler class to help handling the log level of the solvers. </p>
+<div class="textblock"><p>Base class handling the level of information printed by FMT. </p>
+<p>When FMT is compiled with the OSI solver interface this class derives from CoinMessageHandler to help handle the log level of the solvers. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab41f959ed2c3cde97c509226888083cb" name="ab41f959ed2c3cde97c509226888083cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab41f959ed2c3cde97c509226888083cb">&#9670;&#160;</a></span>FMTlogger() <span class="overload">[1/2]</span></h2>
+<a id="a2ea0b588be94926978dfa1069a55b00e" name="a2ea0b588be94926978dfa1069a55b00e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea0b588be94926978dfa1069a55b00e">&#9670;&#160;</a></span>FMTLogger() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Logging::FMTlogger::FMTlogger </td>
+          <td class="memname">Logging::FMTLogger::FMTLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> default constructor. </p>
+
+<p>Default constructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </p>
 
 </div>
 </div>
-<a id="a3515766935d13905016c1b9ea87e35f8" name="a3515766935d13905016c1b9ea87e35f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3515766935d13905016c1b9ea87e35f8">&#9670;&#160;</a></span>~FMTlogger()</h2>
+<a id="a39004fdb84b8e4cfc376bbb241aa0906" name="a39004fdb84b8e4cfc376bbb241aa0906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39004fdb84b8e4cfc376bbb241aa0906">&#9670;&#160;</a></span>~FMTLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +241,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Logging::FMTlogger::~FMTlogger </td>
+          <td class="memname">virtual Logging::FMTLogger::~FMTLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -218,32 +253,40 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> default destructor. </p>
+
+<p>Default destructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </p>
 
 </div>
 </div>
-<a id="aca74aabdde4278650e55eb09ea3ed4db" name="aca74aabdde4278650e55eb09ea3ed4db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca74aabdde4278650e55eb09ea3ed4db">&#9670;&#160;</a></span>FMTlogger() <span class="overload">[2/2]</span></h2>
+<a id="ae0a9ec5a81c467a51329b63ac3354f22" name="ae0a9ec5a81c467a51329b63ac3354f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a9ec5a81c467a51329b63ac3354f22">&#9670;&#160;</a></span>FMTLogger() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Logging::FMTlogger::FMTlogger </td>
+          <td class="memname">Logging::FMTLogger::FMTLogger </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> copy constructor. </p>
+
+<p>Copy constructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad64a6ddf9a4e0c151d586f772c106674" name="ad64a6ddf9a4e0c151d586f772c106674"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad64a6ddf9a4e0c151d586f772c106674">&#9670;&#160;</a></span>checkSeverity()</h2>
+<a id="aeead41234024fe346e9729db40992270" name="aeead41234024fe346e9729db40992270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeead41234024fe346e9729db40992270">&#9670;&#160;</a></span>_cout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,81 +295,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Logging::FMTlogger::checkSeverity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> check the severity of the message to be print by the coinmessagehandler base class. </p>
-
-<p>Reimplemented in <a class="el" href="classLogging_1_1FMTdebuglogger.html#a2944ae7b0587d6d2d8eb8cb3f72a43d4">Logging::FMTdebuglogger</a>, <a class="el" href="classLogging_1_1FMTdefaultlogger.html#a2e29f5be006c09f3032f6d7fa6c1da6a">Logging::FMTdefaultlogger</a>, <a class="el" href="classLogging_1_1FMTquietlogger.html#a5f85d9d990c7de3242b89f8b4a40a7d8">Logging::FMTquietlogger</a>, and <a class="el" href="classLogging_1_1FMTtasklogger.html#a4df89d37465ebc766b1033d25744441d">Logging::FMTtasklogger</a>.</p>
-
-</div>
-</div>
-<a id="aad81f0173e979a5f7be1d801c7f22d22" name="aad81f0173e979a5f7be1d801c7f22d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad81f0173e979a5f7be1d801c7f22d22">&#9670;&#160;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> * Logging::FMTlogger::clone </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Clone function needed for the usage of abstract </p>
-
-<p>Reimplemented in <a class="el" href="classLogging_1_1FMTdebuglogger.html#a68ffaf17890cf265601d21656e1179fc">Logging::FMTdebuglogger</a>, <a class="el" href="classLogging_1_1FMTdefaultlogger.html#a34dca4ee83b4bddf4e791226a32b85e4">Logging::FMTdefaultlogger</a>, <a class="el" href="classLogging_1_1FMTquietlogger.html#aac01c61c78785ee6357038380e8c14b8">Logging::FMTquietlogger</a>, and <a class="el" href="classLogging_1_1FMTtasklogger.html#a88acabce9a1060f2813dbabce59b8b0c">Logging::FMTtasklogger</a>.</p>
-
-</div>
-</div>
-<a id="a98bbf482a5a0e1a0bfde58102f0554d7" name="a98bbf482a5a0e1a0bfde58102f0554d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98bbf482a5a0e1a0bfde58102f0554d7">&#9670;&#160;</a></span>closefilestream()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Logging::FMTlogger::closefilestream </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Close the file stream if error occured. </p>
-
-</div>
-</div>
-<a id="a6fcb11e863dfe378bb6c1768513d0a8c" name="a6fcb11e863dfe378bb6c1768513d0a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fcb11e863dfe378bb6c1768513d0a8c">&#9670;&#160;</a></span>cout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Logging::FMTlogger::cout </td>
+          <td class="memname">virtual void Logging::FMTLogger::_cout </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
@@ -339,14 +308,21 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>cout function of the logger sometimes on Windows if using boost::python the std::cout needs a little help to print directly into the python window. </p>
 
-<p>Reimplemented in <a class="el" href="classLogging_1_1FMTquietlogger.html#af57053982c08a0991ab13c8fa23c1eed">Logging::FMTquietlogger</a>.</p>
+<p>Output a message, sometimes needed on Windows with boost::python to print directly into the <a class="el" href="namespacePython.html">Python</a> window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>the message to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classLogging_1_1FMTExcelLogger.html#a4dab74fa301f3a7e744ba4e9c9b87dbd">Logging::FMTExcelLogger</a>, and <a class="el" href="classLogging_1_1FMTQuietLogger.html#a4be5a587bd89efb6806000a884316408">Logging::FMTQuietLogger</a>.</p>
 
 </div>
 </div>
-<a id="afd8c35e364437d92fd30f3ae03336509" name="afd8c35e364437d92fd30f3ae03336509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd8c35e364437d92fd30f3ae03336509">&#9670;&#160;</a></span>getlogstamp()</h2>
+<a id="a3f4caf0a35f7d3cb36ffe353c20d3fe6" name="a3f4caf0a35f7d3cb36ffe353c20d3fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f4caf0a35f7d3cb36ffe353c20d3fe6">&#9670;&#160;</a></span>_setLoggingLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,7 +331,149 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string Logging::FMTlogger::getlogstamp </td>
+          <td class="memname">virtual void Logging::FMTLogger::_setLoggingLevel </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the solver logger logging level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>the logging level to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2fe8b8ea56b1b67524124da1dc97e48a" name="a2fe8b8ea56b1b67524124da1dc97e48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe8b8ea56b1b67524124da1dc97e48a">&#9670;&#160;</a></span>checkSeverity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Logging::FMTLogger::checkSeverity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check the severity of the message to be printed by the CoinMessageHandler base class. </p>
+
+<p>Reimplemented in <a class="el" href="classLogging_1_1FMTDebugLogger.html#a4a2c217bf4e61227b6ecc5359d07b289">Logging::FMTDebugLogger</a>, <a class="el" href="classLogging_1_1FMTDefaultLogger.html#a47607e6446a1422629778aa2fb842363">Logging::FMTDefaultLogger</a>, <a class="el" href="classLogging_1_1FMTQuietLogger.html#a15f79a1fe0b76c53c58d1d0fa2de7d89">Logging::FMTQuietLogger</a>, and <a class="el" href="classLogging_1_1FMTTaskLogger.html#aa254fcc3d3337d5481bdb5326f0d8b68">Logging::FMTTaskLogger</a>.</p>
+
+</div>
+</div>
+<a id="ad316b697477a1d63a29af574a747d5cb" name="ad316b697477a1d63a29af574a747d5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad316b697477a1d63a29af574a747d5cb">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> * Logging::FMTLogger::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clone the logger, needed for the abstract CoinMessageHandler usage. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the cloned logger. </dd></dl>
+
+<p>Implemented in <a class="el" href="classLogging_1_1FMTExcelLogger.html#a82525336e6ee52ed1e1bc817572bbd5b">Logging::FMTExcelLogger</a>, <a class="el" href="classLogging_1_1FMTDebugLogger.html#adf219aeebe817faa5932c825b5e9d5c4">Logging::FMTDebugLogger</a>, <a class="el" href="classLogging_1_1FMTDefaultLogger.html#a994a0ebc049771c517ce6a73383dbac7">Logging::FMTDefaultLogger</a>, <a class="el" href="classLogging_1_1FMTQuietLogger.html#a8550324ef18334ba313d5b6c7ba6194c">Logging::FMTQuietLogger</a>, and <a class="el" href="classLogging_1_1FMTTaskLogger.html#a4d7c38970d80aea7794d38f9cf0dd5d6">Logging::FMTTaskLogger</a>.</p>
+
+</div>
+</div>
+<a id="a589f8b7fa506b01b5789799154920e48" name="a589f8b7fa506b01b5789799154920e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589f8b7fa506b01b5789799154920e48">&#9670;&#160;</a></span>Clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &gt; Logging::FMTLogger::Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clone the <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>a valid cloned <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classLogging_1_1FMTDebugLogger.html#a4379f460e47780ce70729ee7b24de107">Logging::FMTDebugLogger</a>, <a class="el" href="classLogging_1_1FMTDefaultLogger.html#a93c29b37968506d2aa4254210848a458">Logging::FMTDefaultLogger</a>, <a class="el" href="classLogging_1_1FMTExcelLogger.html#a7e5bb1e127690aa35b8dd54c56b25b0e">Logging::FMTExcelLogger</a>, <a class="el" href="classLogging_1_1FMTQuietLogger.html#a6ffd954c2a4ea176f1e0d65275d16021">Logging::FMTQuietLogger</a>, and <a class="el" href="classLogging_1_1FMTTaskLogger.html#a9e7bad6b692fac28e5d7371f38543855">Logging::FMTTaskLogger</a>.</p>
+
+</div>
+</div>
+<a id="ad758328f639eff57bac271bbd5bb1af4" name="ad758328f639eff57bac271bbd5bb1af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad758328f639eff57bac271bbd5bb1af4">&#9670;&#160;</a></span>closeFileStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Logging::FMTLogger::closeFileStream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the file stream. </p>
+
+</div>
+</div>
+<a id="a49c40d6ac4b32906ae3a8f313a16cce1" name="a49c40d6ac4b32906ae3a8f313a16cce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49c40d6ac4b32906ae3a8f313a16cce1">&#9670;&#160;</a></span>getLogStamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Logging::FMTLogger::getLogStamp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -367,12 +485,14 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the basic logstamp has a string. </p>
+
+<p>Return the basic log stamp as a string. </p>
+<dl class="section return"><dt>Returns</dt><dd>the log stamp. </dd></dl>
 
 </div>
 </div>
-<a id="aa6c8bde269340dd5e34e75fa366c7c08" name="aa6c8bde269340dd5e34e75fa366c7c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6c8bde269340dd5e34e75fa366c7c08">&#9670;&#160;</a></span>getsolverlogger()</h2>
+<a id="a9a3d00499f30cea92dcb3deef9d1af7e" name="a9a3d00499f30cea92dcb3deef9d1af7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a3d00499f30cea92dcb3deef9d1af7e">&#9670;&#160;</a></span>getSolverLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,7 +501,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> * Logging::FMTlogger::getsolverlogger </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> * Logging::FMTLogger::getSolverLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -393,12 +513,14 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the ABSTRACT logger used by osisolverinterface. </p>
+
+<p>Return the abstract logger used by the OSI solver interface. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the solver logger. </dd></dl>
 
 </div>
 </div>
-<a id="a1e0219c6dfb71d22ae1181bdfd4f3b1c" name="a1e0219c6dfb71d22ae1181bdfd4f3b1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e0219c6dfb71d22ae1181bdfd4f3b1c">&#9670;&#160;</a></span>logstamp()</h2>
+<a id="a92914149412e43497396521416bd6369" name="a92914149412e43497396521416bd6369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92914149412e43497396521416bd6369">&#9670;&#160;</a></span>logStamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +529,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Logging::FMTlogger::logstamp </td>
+          <td class="memname">virtual void Logging::FMTLogger::logStamp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -419,12 +541,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The logstramp function log information about the version of FMT and it's buildate. </p>
+
+<p>Log information about the version of FMT and its build date. </p>
 
 </div>
 </div>
-<a id="acbcbf0b178371f1eac9bbc3d1169514a" name="acbcbf0b178371f1eac9bbc3d1169514a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbcbf0b178371f1eac9bbc3d1169514a">&#9670;&#160;</a></span>logtime()</h2>
+<a id="afb07d4b2820f0055582e6f68129e4623" name="afb07d4b2820f0055582e6f68129e4623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb07d4b2820f0055582e6f68129e4623">&#9670;&#160;</a></span>logTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,7 +556,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Logging::FMTlogger::logtime </td>
+          <td class="memname">virtual void Logging::FMTLogger::logTime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -445,12 +568,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The logtime function log the actual time at which the function is called. </p>
+
+<p>Log the actual time at which the function is called. </p>
 
 </div>
 </div>
-<a id="a724a5f090605248bb22ab0f0792c8577" name="a724a5f090605248bb22ab0f0792c8577"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724a5f090605248bb22ab0f0792c8577">&#9670;&#160;</a></span>logwithlevel()</h2>
+<a id="af6c5b57fc7a2b5df3e1129e273437e9f" name="af6c5b57fc7a2b5df3e1129e273437e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c5b57fc7a2b5df3e1129e273437e9f">&#9670;&#160;</a></span>logWithLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,16 +583,16 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Logging::FMTlogger::logwithlevel </td>
+          <td class="memname">virtual bool Logging::FMTLogger::logWithLevel </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>msg</em>, </td>
+          <td class="paramname"><em>p_msg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>messagelevel</em>&#160;</td>
+          <td class="paramname"><em>p_messageLevel</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -482,12 +606,21 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Log a message with a given message level if message level is greater of equal to the logger level then it will be printed </p>
+
+<p>Log a message with a given message level if message level is greater of equal to the logger level then it will be printed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_msg</td><td>the message </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_messageLevel</td><td>message level </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if printed </dd></dl>
 
 </div>
 </div>
-<a id="aefb1455dd83b46987f88c546759db49f" name="aefb1455dd83b46987f88c546759db49f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefb1455dd83b46987f88c546759db49f">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[1/7]</span></h2>
+<a id="a20efa8674189387ad1b2436271b498de" name="a20efa8674189387ad1b2436271b498de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20efa8674189387ad1b2436271b498de">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,7 +629,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp; Logging::FMTlogger::operator&lt;&lt; </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const double &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
@@ -509,12 +642,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is the main function to add up double. </p>
+
+<p>Append a double to the log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the a double to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a2b64d84aa62d0dc48887b9a55c09ce58" name="a2b64d84aa62d0dc48887b9a55c09ce58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b64d84aa62d0dc48887b9a55c09ce58">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[2/7]</span></h2>
+<a id="a0cf08ad327236f562e18194772642cc7" name="a0cf08ad327236f562e18194772642cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf08ad327236f562e18194772642cc7">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -523,7 +664,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp; Logging::FMTlogger::operator&lt;&lt; </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const float &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
@@ -536,12 +677,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is the main function to add up float. </p>
+
+<p>Append a float to the log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the a float to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
 
 </div>
 </div>
-<a id="af9333524482287b45914d1ee16ff9638" name="af9333524482287b45914d1ee16ff9638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9333524482287b45914d1ee16ff9638">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[3/7]</span></h2>
+<a id="a119f5a50720ebfa74ffa08f8847b1352" name="a119f5a50720ebfa74ffa08f8847b1352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a119f5a50720ebfa74ffa08f8847b1352">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +699,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp; Logging::FMTlogger::operator&lt;&lt; </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
@@ -563,12 +712,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is the main function to add up int. </p>
+
+<p>Append an int to the log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the an int to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a372b8de1b1457f677e5ac6ba635a623f" name="a372b8de1b1457f677e5ac6ba635a623f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372b8de1b1457f677e5ac6ba635a623f">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[4/7]</span></h2>
+<a id="aaa529728ab0aaf2f18848642a54a9bfe" name="aaa529728ab0aaf2f18848642a54a9bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa529728ab0aaf2f18848642a54a9bfe">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -577,7 +734,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp; Logging::FMTlogger::operator&lt;&lt; </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
@@ -590,12 +747,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is the main function to add up size_t. </p>
+
+<p>Append a size_t to the log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the a size_t to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a4e8f417e991f296ea481687e6fa2fdfd" name="a4e8f417e991f296ea481687e6fa2fdfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e8f417e991f296ea481687e6fa2fdfd">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[5/7]</span></h2>
+<a id="ab91d2eaa5a65917ff92c8eb670808c9c" name="ab91d2eaa5a65917ff92c8eb670808c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91d2eaa5a65917ff92c8eb670808c9c">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -604,7 +769,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp; Logging::FMTlogger::operator&lt;&lt; </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
@@ -617,12 +782,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is the main function to add up string. </p>
+
+<p>Append a string to the log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the a string to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a022bd7c72fffc7c8cf254317f28248f2" name="a022bd7c72fffc7c8cf254317f28248f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a022bd7c72fffc7c8cf254317f28248f2">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[6/7]</span></h2>
+<a id="a749d25abb82a781ede0df7ce1d82091b" name="a749d25abb82a781ede0df7ce1d82091b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749d25abb82a781ede0df7ce1d82091b">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,7 +804,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp; Logging::FMTlogger::operator&lt;&lt; </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const std::time_t &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
@@ -644,12 +817,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is the main function to add up std::time_t. </p>
+
+<p>Append a std::time_t to the log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the a std::time_t to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
 
 </div>
 </div>
-<a id="abbdf6f66ab2f1b8b30612d023747fff6" name="abbdf6f66ab2f1b8b30612d023747fff6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbdf6f66ab2f1b8b30612d023747fff6">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[7/7]</span></h2>
+<a id="a33b264d4cccbb9a6d159b37c1807a888" name="a33b264d4cccbb9a6d159b37c1807a888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b264d4cccbb9a6d159b37c1807a888">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -658,7 +839,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp; Logging::FMTlogger::operator&lt;&lt; </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const unsigned int &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
@@ -671,31 +852,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is the main function to add up unsigned int. </p>
+
+<p>Append an unsigned int to the log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the an unsigned int to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a5d6e0c5efe8f382996632951cd250af8" name="a5d6e0c5efe8f382996632951cd250af8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d6e0c5efe8f382996632951cd250af8">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp; Logging::FMTlogger::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> copy assignment operator. </p>
-
-</div>
-</div>
-<a id="a11afe46d0b2eaf4ba0430095d3a1a08f" name="a11afe46d0b2eaf4ba0430095d3a1a08f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11afe46d0b2eaf4ba0430095d3a1a08f">&#9670;&#160;</a></span>print()</h2>
+<a id="ac8ac5d2429f93f169970ee637f4442b1" name="ac8ac5d2429f93f169970ee637f4442b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ac5d2429f93f169970ee637f4442b1">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -704,7 +874,69 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int Logging::FMTlogger::print </td>
+          <td class="memname">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const void *&amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Append the address of a void pointer to the log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the void pointer whose address is appended. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a951bedf023a42f5f2da63aec8cfe9486" name="a951bedf023a42f5f2da63aec8cfe9486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951bedf023a42f5f2da63aec8cfe9486">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp; Logging::FMTLogger::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy assignment operator for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a054cffaa527ad06bdb245e9701fabfb2" name="a054cffaa527ad06bdb245e9701fabfb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054cffaa527ad06bdb245e9701fabfb2">&#9670;&#160;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int Logging::FMTLogger::print </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -716,66 +948,59 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> print function if we are using Osisolverinterface the coinmessagehandler print function needs to be overloaded. </p>
 
-<p>Reimplemented in <a class="el" href="classLogging_1_1FMTdebuglogger.html#a10e720ec0fc21a1a5f5b05561a72c207">Logging::FMTdebuglogger</a>, <a class="el" href="classLogging_1_1FMTdefaultlogger.html#ab4cb7aaaafe37ef49ae8797ccfe69a85">Logging::FMTdefaultlogger</a>, <a class="el" href="classLogging_1_1FMTquietlogger.html#a1b92dc73c14fdfb9849f5dcff810f37c">Logging::FMTquietlogger</a>, and <a class="el" href="classLogging_1_1FMTtasklogger.html#a9780c9c302437c51f3a19b8bf0aaf07c">Logging::FMTtasklogger</a>.</p>
+<p>Print function overloaded from CoinMessageHandler when using the OSI solver interface. </p>
+<dl class="section return"><dt>Returns</dt><dd>the value returned by the print function. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classLogging_1_1FMTDebugLogger.html#a22df4f3482b80f408fbf364ddf9fca92">Logging::FMTDebugLogger</a>, <a class="el" href="classLogging_1_1FMTDefaultLogger.html#a07971e4788ee814fb8d05c7c0f46b043">Logging::FMTDefaultLogger</a>, <a class="el" href="classLogging_1_1FMTQuietLogger.html#a6c4e94ff1e1499c87351cff2f6d8d5b9">Logging::FMTQuietLogger</a>, and <a class="el" href="classLogging_1_1FMTTaskLogger.html#a260d0f078b39e9ce8d4e8a5812494229">Logging::FMTTaskLogger</a>.</p>
 
 </div>
 </div>
-<a id="abb90b54a8ee08de1c8a8afd674713977" name="abb90b54a8ee08de1c8a8afd674713977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb90b54a8ee08de1c8a8afd674713977">&#9670;&#160;</a></span>redirectofile()</h2>
+<a id="acb75cd07e0bf96dc2ebf211e949394fe" name="acb75cd07e0bf96dc2ebf211e949394fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb75cd07e0bf96dc2ebf211e949394fe">&#9670;&#160;</a></span>redirectToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Logging::FMTlogger::redirectofile </td>
+          <td class="memname">void Logging::FMTLogger::redirectToFile </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>logStamp</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Redirect the log information to a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>the file to redirect the log to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">logStamp</td><td>if true writes a log stamp. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a85cbe7b65793195398ee76dc83492dce" name="a85cbe7b65793195398ee76dc83492dce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85cbe7b65793195398ee76dc83492dce">&#9670;&#160;</a></span>setlogginglevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Logging::FMTlogger::setlogginglevel </td>
-          <td>(</td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the solverlogger logging level </p>
-
-</div>
-</div>
-<a id="aa1b19f19ff8ee37e2eb04c41706b120d" name="aa1b19f19ff8ee37e2eb04c41706b120d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1b19f19ff8ee37e2eb04c41706b120d">&#9670;&#160;</a></span>setstreamflush()</h2>
+<a id="aba30091c15ebab8138d53d1d99d83f9d" name="aba30091c15ebab8138d53d1d99d83f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba30091c15ebab8138d53d1d99d83f9d">&#9670;&#160;</a></span>setStreamFlush()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Logging::FMTlogger::setstreamflush </td>
+          <td class="memname">void Logging::FMTLogger::setStreamFlush </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>flush</em></td><td>)</td>
@@ -783,7 +1008,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Force the flushing on file stream </p>
+
+<p>Force the flushing of the file stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flush</td><td>if true flushes the stream at each write. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -811,8 +1043,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1a2eddefdcebd3f98ed77cb704bf8e96" name="a1a2eddefdcebd3f98ed77cb704bf8e96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a2eddefdcebd3f98ed77cb704bf8e96">&#9670;&#160;</a></span>filepath</h2>
+<a id="a574a1fa8f9a3ee44d794d30664abc53c" name="a574a1fa8f9a3ee44d794d30664abc53c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a574a1fa8f9a3ee44d794d30664abc53c">&#9670;&#160;</a></span>m_filepath</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -821,7 +1053,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Logging::FMTlogger::filepath</td>
+          <td class="memname">std::string Logging::FMTLogger::m_filepath</td>
         </tr>
       </table>
   </td>
@@ -835,8 +1067,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="adf1904a8cc7af052a510b249cb8e83b3" name="adf1904a8cc7af052a510b249cb8e83b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf1904a8cc7af052a510b249cb8e83b3">&#9670;&#160;</a></span>filestream</h2>
+<a id="ad56c5acbbfd8367e2338b0527c657e3c" name="ad56c5acbbfd8367e2338b0527c657e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad56c5acbbfd8367e2338b0527c657e3c">&#9670;&#160;</a></span>m_FileStream</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -845,7 +1077,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::ofstream* Logging::FMTlogger::filestream</td>
+          <td class="memname">std::unique_ptr&lt;std::ofstream&gt; Logging::FMTLogger::m_FileStream</td>
         </tr>
       </table>
   </td>
@@ -859,8 +1091,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a177962b75eeb33fd7044baef82ac49bf" name="a177962b75eeb33fd7044baef82ac49bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a177962b75eeb33fd7044baef82ac49bf">&#9670;&#160;</a></span>flushstream</h2>
+<a id="a49aff89f1addbe5c8ee7b7c38e4af055" name="a49aff89f1addbe5c8ee7b7c38e4af055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49aff89f1addbe5c8ee7b7c38e4af055">&#9670;&#160;</a></span>m_flushstream</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -869,7 +1101,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Logging::FMTlogger::flushstream</td>
+          <td class="memname">bool Logging::FMTLogger::m_flushstream</td>
         </tr>
       </table>
   </td>
@@ -883,8 +1115,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="af33a805f9bbe2a32e2d7c891933fee34" name="af33a805f9bbe2a32e2d7c891933fee34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af33a805f9bbe2a32e2d7c891933fee34">&#9670;&#160;</a></span>mtx</h2>
+<a id="af7737b761ae82032987811bbc9295c1c" name="af7737b761ae82032987811bbc9295c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7737b761ae82032987811bbc9295c1c">&#9670;&#160;</a></span>m_mtx</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -893,7 +1125,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::recursive_mutex Logging::FMTlogger::mtx</td>
+          <td class="memname">boost::recursive_mutex Logging::FMTLogger::m_mtx</td>
         </tr>
       </table>
   </td>
@@ -907,8 +1139,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a8d88e81c3f5fc4893732ae4c1cc990a2" name="a8d88e81c3f5fc4893732ae4c1cc990a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d88e81c3f5fc4893732ae4c1cc990a2">&#9670;&#160;</a></span>solverref</h2>
+<a id="afef60a450f132dc62867f2bda14086fc" name="afef60a450f132dc62867f2bda14086fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef60a450f132dc62867f2bda14086fc">&#9670;&#160;</a></span>m_solverref</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -917,7 +1149,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a>&gt; Logging::FMTlogger::solverref</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a>&gt; Logging::FMTLogger::m_solverref</td>
         </tr>
       </table>
   </td>
@@ -930,7 +1162,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTlogger_8hpp_source.html">FMTlogger.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTLogger_8h_source.html">FMTLogger.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

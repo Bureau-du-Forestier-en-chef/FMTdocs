@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Models::FMTmatrixbuild Class Reference</title>
+<title>FMT: Models::FMTMatrixBuild Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,141 +71,180 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceModels.html">Models</a></li><li class="navelem"><a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceModels.html">Models</a></li><li class="navelem"><a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classModels_1_1FMTmatrixbuild-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Models::FMTmatrixbuild Class Reference</div></div>
+<a href="classModels_1_1FMTMatrixBuild-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Models::FMTMatrixBuild Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTmatrixbuild_8hpp_source.html">FMTmatrixbuild.hpp</a>&gt;</code></p>
+<p>Helper caching rows and columns to add to a solver matrix in batch for efficiency.  
+ <a href="classModels_1_1FMTMatrixBuild.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTMatrixBuild_8h_source.html">FMTMatrixBuild.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a72c7f6daf62fc143d1c7f0e3dca2e2ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a72c7f6daf62fc143d1c7f0e3dca2e2ee">swap</a> (<a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> &amp;rhs)</td></tr>
-<tr class="separator:a72c7f6daf62fc143d1c7f0e3dca2e2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8db08a45dd4f2dbdc9e6c6765e8d6ceb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a8db08a45dd4f2dbdc9e6c6765e8d6ceb">getcolumnnames</a> ()</td></tr>
-<tr class="separator:a8db08a45dd4f2dbdc9e6c6765e8d6ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7accb5d7af07c813263e4669a6e37319"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a7accb5d7af07c813263e4669a6e37319">getrownames</a> ()</td></tr>
-<tr class="separator:a7accb5d7af07c813263e4669a6e37319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a3caaeab09ccb0fe8d219a0c3939b2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a3a3caaeab09ccb0fe8d219a0c3939b2b">formatallnames</a> (bool shortformat)</td></tr>
-<tr class="separator:a3a3caaeab09ccb0fe8d219a0c3939b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3de73deacc2087c2fbc94d834552b5cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a3de73deacc2087c2fbc94d834552b5cd">setcolname</a> (const std::string &amp;name, const int &amp;columnid)</td></tr>
-<tr class="separator:a3de73deacc2087c2fbc94d834552b5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c3dfe01c6989a42ba0395b7d1eb763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#af2c3dfe01c6989a42ba0395b7d1eb763">setrowname</a> (const std::string &amp;name, const int &amp;rowid)</td></tr>
-<tr class="separator:af2c3dfe01c6989a42ba0395b7d1eb763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25fd600faded2e7a32913e9a32241b54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a25fd600faded2e7a32913e9a32241b54">synchronize</a> (std::shared_ptr&lt; OsiSolverInterface &gt; solver)</td></tr>
-<tr class="separator:a25fd600faded2e7a32913e9a32241b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3acc0c91f7c7094f582762d9c71178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a6e3acc0c91f7c7094f582762d9c71178">FMTmatrixbuild</a> ()</td></tr>
-<tr class="separator:a6e3acc0c91f7c7094f582762d9c71178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1c2cedae931a21e098709a35fa5216f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#af1c2cedae931a21e098709a35fa5216f">FMTmatrixbuild</a> (const <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> &amp;rhs)</td></tr>
-<tr class="separator:af1c2cedae931a21e098709a35fa5216f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d17fd1ce873363f0d96433c424b98bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a6d17fd1ce873363f0d96433c424b98bd">operator=</a> (const <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> &amp;rhs)</td></tr>
-<tr class="separator:a6d17fd1ce873363f0d96433c424b98bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ecb1619f80748e4a0ebfac7aef04150"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a6ecb1619f80748e4a0ebfac7aef04150">~FMTmatrixbuild</a> ()</td></tr>
-<tr class="separator:a6ecb1619f80748e4a0ebfac7aef04150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3f0fd788c9f3ee1f0500c033c2bf2ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#ad3f0fd788c9f3ee1f0500c033c2bf2ad">addCol</a> (int numberInColumn, const int *rows, const double *elements, double columnLower=0.0, double columnUpper=std::numeric_limits&lt; double &gt;::max(), double objectiveValue=0.0)</td></tr>
-<tr class="separator:ad3f0fd788c9f3ee1f0500c033c2bf2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9dd62cebe4667c45d1720ee6a008c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#aab9dd62cebe4667c45d1720ee6a008c8">addRow</a> (int numberInRow, const int *columns, const double *elements, double rowLower=-std::numeric_limits&lt; double &gt;::max(), double rowUpper=std::numeric_limits&lt; double &gt;::max())</td></tr>
-<tr class="separator:aab9dd62cebe4667c45d1720ee6a008c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a131c78754611c4e686a811b36acbacd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a131c78754611c4e686a811b36acbacd7">deleteRow</a> (const int &amp;rowindex)</td></tr>
-<tr class="separator:a131c78754611c4e686a811b36acbacd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2fc2f9b6a2159904dd25e1c5754b4e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#af2fc2f9b6a2159904dd25e1c5754b4e6">deleteCol</a> (const int &amp;colindex)</td></tr>
-<tr class="separator:af2fc2f9b6a2159904dd25e1c5754b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa63fdbeef76c71674c98521c0219b183"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#aa63fdbeef76c71674c98521c0219b183">numbernewRows</a> () const</td></tr>
-<tr class="separator:aa63fdbeef76c71674c98521c0219b183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4405c3ca1d2f2633c14619bbfc0628a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#ad4405c3ca1d2f2633c14619bbfc0628a">numbernewCols</a> () const</td></tr>
-<tr class="separator:ad4405c3ca1d2f2633c14619bbfc0628a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba02e03c86649595bd2d5d059ae6ac1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#aba02e03c86649595bd2d5d059ae6ac1e">numberofdeletedRows</a> () const</td></tr>
-<tr class="separator:aba02e03c86649595bd2d5d059ae6ac1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812d182b38e0de3f62745788851c0f82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a812d182b38e0de3f62745788851c0f82">numberofdeletedCols</a> () const</td></tr>
-<tr class="separator:a812d182b38e0de3f62745788851c0f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00390adf38607346e2872c2661d7ea8c"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a00390adf38607346e2872c2661d7ea8c">getdeletedconstraints</a> () const</td></tr>
-<tr class="separator:a00390adf38607346e2872c2661d7ea8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d13b21dc8737b4ff175807abd8310b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a79d13b21dc8737b4ff175807abd8310b">getdeletedvariables</a> () const</td></tr>
-<tr class="separator:a79d13b21dc8737b4ff175807abd8310b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd04d774985a460aab0a4a4cc0f2eaaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#acd04d774985a460aab0a4a4cc0f2eaaf">sortandcleandeleted</a> ()</td></tr>
-<tr class="separator:acd04d774985a460aab0a4a4cc0f2eaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac775dc68301c66cb0e9809c61d41aadb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#ac775dc68301c66cb0e9809c61d41aadb">getrowstosynchronize</a> () const</td></tr>
-<tr class="separator:ac775dc68301c66cb0e9809c61d41aadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2356ceb87d5f6cbc24d888af36b48d67"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a2356ceb87d5f6cbc24d888af36b48d67">getcolstosynchronize</a> () const</td></tr>
-<tr class="separator:a2356ceb87d5f6cbc24d888af36b48d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a5cf1d9db9cfe697d2b83a958dfe25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#a20a5cf1d9db9cfe697d2b83a958dfe25">getrow</a> (int whichRow, double &amp;rowLower, double &amp;rowUpper, std::vector&lt; int &gt; &amp;indices, std::vector&lt; double &gt; &amp;elements) const</td></tr>
-<tr class="separator:a20a5cf1d9db9cfe697d2b83a958dfe25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb4e29d1a3961769ccdfe2632b0143a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmatrixbuild.html#aeb4e29d1a3961769ccdfe2632b0143a2">getcol</a> (int whichCol, double &amp;colLower, double &amp;colUpper, double &amp;objectiveValue, std::vector&lt; int &gt; &amp;indices, std::vector&lt; double &gt; &amp;elements) const</td></tr>
-<tr class="separator:aeb4e29d1a3961769ccdfe2632b0143a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbfca79b0f62bfdb4af23c24d6ddb4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a1bbfca79b0f62bfdb4af23c24d6ddb4e">swap</a> (<a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a1bbfca79b0f62bfdb4af23c24d6ddb4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap this <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a> with another.  <br /></td></tr>
+<tr class="separator:a1bbfca79b0f62bfdb4af23c24d6ddb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78da8501d0fabecbd02efe6abc01220"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#af78da8501d0fabecbd02efe6abc01220">getColumnNames</a> ()</td></tr>
+<tr class="memdesc:af78da8501d0fabecbd02efe6abc01220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the cached column names.  <br /></td></tr>
+<tr class="separator:af78da8501d0fabecbd02efe6abc01220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc19b2abb6068cafb565c62b7a8e87c6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#adc19b2abb6068cafb565c62b7a8e87c6">getRowNames</a> ()</td></tr>
+<tr class="memdesc:adc19b2abb6068cafb565c62b7a8e87c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the cached row names.  <br /></td></tr>
+<tr class="separator:adc19b2abb6068cafb565c62b7a8e87c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1279be7fa731ec8a9be4d864efb67d7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a1279be7fa731ec8a9be4d864efb67d7d">formatAllNames</a> (bool shortformat)</td></tr>
+<tr class="memdesc:a1279be7fa731ec8a9be4d864efb67d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format the cached row and column names.  <br /></td></tr>
+<tr class="separator:a1279be7fa731ec8a9be4d864efb67d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5431bf294fe5b79fbfebc4a0861bf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#afb5431bf294fe5b79fbfebc4a0861bf8">setColName</a> (const std::string &amp;name, const int &amp;columnid)</td></tr>
+<tr class="memdesc:afb5431bf294fe5b79fbfebc4a0861bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a column name.  <br /></td></tr>
+<tr class="separator:afb5431bf294fe5b79fbfebc4a0861bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3a50ca9ef6d2fe2d98cc9e5e779d46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#afb3a50ca9ef6d2fe2d98cc9e5e779d46">setRowName</a> (const std::string &amp;name, const int &amp;rowid)</td></tr>
+<tr class="memdesc:afb3a50ca9ef6d2fe2d98cc9e5e779d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a row name.  <br /></td></tr>
+<tr class="separator:afb3a50ca9ef6d2fe2d98cc9e5e779d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1146122261807fbe1fee020e9fb9e367"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a1146122261807fbe1fee020e9fb9e367">synchronize</a> (std::shared_ptr&lt; OsiSolverInterface &gt; solver)</td></tr>
+<tr class="memdesc:a1146122261807fbe1fee020e9fb9e367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the cached columns and rows with the solver matrix.  <br /></td></tr>
+<tr class="separator:a1146122261807fbe1fee020e9fb9e367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab1cbbb7cc6e9c76efb7210a7d61a4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#acab1cbbb7cc6e9c76efb7210a7d61a4b">FMTMatrixBuild</a> ()</td></tr>
+<tr class="memdesc:acab1cbbb7cc6e9c76efb7210a7d61a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>.  <br /></td></tr>
+<tr class="separator:acab1cbbb7cc6e9c76efb7210a7d61a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1290e9a6f2f61f71d5a0a89e2c000fdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a1290e9a6f2f61f71d5a0a89e2c000fdc">FMTMatrixBuild</a> (const <a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a1290e9a6f2f61f71d5a0a89e2c000fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>.  <br /></td></tr>
+<tr class="separator:a1290e9a6f2f61f71d5a0a89e2c000fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86ca4d933dffb1bc31c79bdd995b65a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#aa86ca4d933dffb1bc31c79bdd995b65a">operator=</a> (const <a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a> &amp;rhs)</td></tr>
+<tr class="memdesc:aa86ca4d933dffb1bc31c79bdd995b65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>.  <br /></td></tr>
+<tr class="separator:aa86ca4d933dffb1bc31c79bdd995b65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d233d3068b62562e5b48dc61e11d87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a33d233d3068b62562e5b48dc61e11d87">~FMTMatrixBuild</a> ()</td></tr>
+<tr class="memdesc:a33d233d3068b62562e5b48dc61e11d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>.  <br /></td></tr>
+<tr class="separator:a33d233d3068b62562e5b48dc61e11d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df55c241aec58286206710d8adbc378"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a6df55c241aec58286206710d8adbc378">addCol</a> (int numberInColumn, const int *rows, const double *elements, double columnLower=0.0, double columnUpper=std::numeric_limits&lt; double &gt;::max(), double objectiveValue=0.0)</td></tr>
+<tr class="memdesc:a6df55c241aec58286206710d8adbc378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a column to the cache to potentially synchronize it later.  <br /></td></tr>
+<tr class="separator:a6df55c241aec58286206710d8adbc378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e3c17a96286fe5b2f98679f6f95e34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#ae7e3c17a96286fe5b2f98679f6f95e34">addRow</a> (int numberInRow, const int *columns, const double *elements, double rowLower=-std::numeric_limits&lt; double &gt;::max(), double rowUpper=std::numeric_limits&lt; double &gt;::max())</td></tr>
+<tr class="memdesc:ae7e3c17a96286fe5b2f98679f6f95e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a row to the cache to potentially synchronize it later.  <br /></td></tr>
+<tr class="separator:ae7e3c17a96286fe5b2f98679f6f95e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc7f8edb05e9147deb115078c9a60c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#aacc7f8edb05e9147deb115078c9a60c6">deleteRow</a> (const int &amp;rowindex)</td></tr>
+<tr class="memdesc:aacc7f8edb05e9147deb115078c9a60c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a row from the matrix cache.  <br /></td></tr>
+<tr class="separator:aacc7f8edb05e9147deb115078c9a60c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7afd4cb75210f7f793c18bbda0f247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a1a7afd4cb75210f7f793c18bbda0f247">deleteCol</a> (const int &amp;colindex)</td></tr>
+<tr class="memdesc:a1a7afd4cb75210f7f793c18bbda0f247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a column from the matrix cache.  <br /></td></tr>
+<tr class="separator:a1a7afd4cb75210f7f793c18bbda0f247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32ebe7eb5b0b6eb8296d62cda6220e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#aa32ebe7eb5b0b6eb8296d62cda6220e2">numberNewRows</a> () const</td></tr>
+<tr class="memdesc:aa32ebe7eb5b0b6eb8296d62cda6220e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of newly added rows in the matrix cache.  <br /></td></tr>
+<tr class="separator:aa32ebe7eb5b0b6eb8296d62cda6220e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5951026d2eb6bb909dc80edb5b691787"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a5951026d2eb6bb909dc80edb5b691787">numberNewCols</a> () const</td></tr>
+<tr class="memdesc:a5951026d2eb6bb909dc80edb5b691787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of newly added columns in the matrix cache.  <br /></td></tr>
+<tr class="separator:a5951026d2eb6bb909dc80edb5b691787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24eb48bd8159856e94b129808066e633"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a24eb48bd8159856e94b129808066e633">numberOfDeletedRows</a> () const</td></tr>
+<tr class="memdesc:a24eb48bd8159856e94b129808066e633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of newly deleted rows in the matrix cache.  <br /></td></tr>
+<tr class="separator:a24eb48bd8159856e94b129808066e633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c5d5c165e4439b6218f659525e1dc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#af8c5d5c165e4439b6218f659525e1dc0">numberOfDeletedCols</a> () const</td></tr>
+<tr class="memdesc:af8c5d5c165e4439b6218f659525e1dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of newly deleted columns in the matrix cache.  <br /></td></tr>
+<tr class="separator:af8c5d5c165e4439b6218f659525e1dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9492a5d57504ec48cf0b8eeafd8ce22"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#ac9492a5d57504ec48cf0b8eeafd8ce22">getDeletedConstraints</a> () const</td></tr>
+<tr class="memdesc:ac9492a5d57504ec48cf0b8eeafd8ce22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the newly deleted rows in the matrix cache.  <br /></td></tr>
+<tr class="separator:ac9492a5d57504ec48cf0b8eeafd8ce22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd94a22d2a61afdada286fcced33f34"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#aedd94a22d2a61afdada286fcced33f34">getDeletedVariables</a> () const</td></tr>
+<tr class="memdesc:aedd94a22d2a61afdada286fcced33f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the newly deleted columns in the matrix cache.  <br /></td></tr>
+<tr class="separator:aedd94a22d2a61afdada286fcced33f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814a4395bdd8ed779e78655c0c5246e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a814a4395bdd8ed779e78655c0c5246e5">sortAndCleanDeleted</a> ()</td></tr>
+<tr class="memdesc:a814a4395bdd8ed779e78655c0c5246e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove duplicates from the deleted rows and columns and sort them.  <br /></td></tr>
+<tr class="separator:a814a4395bdd8ed779e78655c0c5246e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc42f094a3dacb6f83d8b2269a979708"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#adc42f094a3dacb6f83d8b2269a979708">getRowsToSynchronize</a> () const</td></tr>
+<tr class="memdesc:adc42f094a3dacb6f83d8b2269a979708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string of all the rows in the matrix cache, mainly for debugging.  <br /></td></tr>
+<tr class="separator:adc42f094a3dacb6f83d8b2269a979708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419e59e7d6f0b8ffd049a040ce75c472"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a419e59e7d6f0b8ffd049a040ce75c472">getColsToSynchronize</a> () const</td></tr>
+<tr class="memdesc:a419e59e7d6f0b8ffd049a040ce75c472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string of all the columns in the matrix cache, mainly for debugging.  <br /></td></tr>
+<tr class="separator:a419e59e7d6f0b8ffd049a040ce75c472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58733843c5e681f7a7d6fb1634d7c08a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a58733843c5e681f7a7d6fb1634d7c08a">getRow</a> (int whichRow, double &amp;rowLower, double &amp;rowUpper, std::vector&lt; int &gt; &amp;indices, std::vector&lt; double &gt; &amp;elements) const</td></tr>
+<tr class="memdesc:a58733843c5e681f7a7d6fb1634d7c08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill up the bounds, indices and elements of a given row present in the cache.  <br /></td></tr>
+<tr class="separator:a58733843c5e681f7a7d6fb1634d7c08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1754e5e6935e7dbc9f5f4247355d6955"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTMatrixBuild.html#a1754e5e6935e7dbc9f5f4247355d6955">getCol</a> (int whichCol, double &amp;colLower, double &amp;colUpper, double &amp;objectiveValue, std::vector&lt; int &gt; &amp;indices, std::vector&lt; double &gt; &amp;elements) const</td></tr>
+<tr class="memdesc:a1754e5e6935e7dbc9f5f4247355d6955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill up the bounds, objective, indices and elements of a given column present in the cache.  <br /></td></tr>
+<tr class="separator:a1754e5e6935e7dbc9f5f4247355d6955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Sometime adding constraints and/or variables one at a time to the matrix using osisolverinterface can be slow. CoinBuild object lets the user add row or variable to that class and then synchronize it with the matrix. This class keeps track of the last added columns and last added row to let the user virtualy add more stuff to the matrix (row and/or columns). This class is made for efficiency. </p>
+<div class="textblock"><p>Helper caching rows and columns to add to a solver matrix in batch for efficiency. </p>
+<p>CoinBuild lets the user add rows or columns and then synchronize them with the matrix. This class keeps track of the last added columns and rows to let the user virtually add more to the matrix. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6e3acc0c91f7c7094f582762d9c71178" name="a6e3acc0c91f7c7094f582762d9c71178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e3acc0c91f7c7094f582762d9c71178">&#9670;&#160;</a></span>FMTmatrixbuild() <span class="overload">[1/2]</span></h2>
+<a id="acab1cbbb7cc6e9c76efb7210a7d61a4b" name="acab1cbbb7cc6e9c76efb7210a7d61a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab1cbbb7cc6e9c76efb7210a7d61a4b">&#9670;&#160;</a></span>FMTMatrixBuild() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmatrixbuild::FMTmatrixbuild </td>
+          <td class="memname">Models::FMTMatrixBuild::FMTMatrixBuild </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default constructor of <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a>. </p>
+
+<p>Default constructor for <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>. </p>
 
 </div>
 </div>
-<a id="af1c2cedae931a21e098709a35fa5216f" name="af1c2cedae931a21e098709a35fa5216f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1c2cedae931a21e098709a35fa5216f">&#9670;&#160;</a></span>FMTmatrixbuild() <span class="overload">[2/2]</span></h2>
+<a id="a1290e9a6f2f61f71d5a0a89e2c000fdc" name="a1290e9a6f2f61f71d5a0a89e2c000fdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1290e9a6f2f61f71d5a0a89e2c000fdc">&#9670;&#160;</a></span>FMTMatrixBuild() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmatrixbuild::FMTmatrixbuild </td>
+          <td class="memname">Models::FMTMatrixBuild::FMTMatrixBuild </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy constructor of <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a>. </p>
+
+<p>Copy constructor for <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a6ecb1619f80748e4a0ebfac7aef04150" name="a6ecb1619f80748e4a0ebfac7aef04150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ecb1619f80748e4a0ebfac7aef04150">&#9670;&#160;</a></span>~FMTmatrixbuild()</h2>
+<a id="a33d233d3068b62562e5b48dc61e11d87" name="a33d233d3068b62562e5b48dc61e11d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d233d3068b62562e5b48dc61e11d87">&#9670;&#160;</a></span>~FMTMatrixBuild()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmatrixbuild::~FMTmatrixbuild </td>
+          <td class="memname">Models::FMTMatrixBuild::~FMTMatrixBuild </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destructor of <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a>. </p>
+
+<p>Destructor for <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad3f0fd788c9f3ee1f0500c033c2bf2ad" name="ad3f0fd788c9f3ee1f0500c033c2bf2ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3f0fd788c9f3ee1f0500c033c2bf2ad">&#9670;&#160;</a></span>addCol()</h2>
+<a id="a6df55c241aec58286206710d8adbc378" name="a6df55c241aec58286206710d8adbc378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df55c241aec58286206710d8adbc378">&#9670;&#160;</a></span>addCol()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::addCol </td>
+          <td class="memname">void Models::FMTMatrixBuild::addCol </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>numberInColumn</em>, </td>
@@ -247,18 +286,30 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a column to colsbuild to potentialy synchronize it with the synchronize function. </p>
+
+<p>Add a column to the cache to potentially synchronize it later. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">numberInColumn</td><td>the number of elements in the column. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rows</td><td>the row indices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements</td><td>the elements. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">columnLower</td><td>the column lower bound. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">columnUpper</td><td>the column upper bound. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectiveValue</td><td>the objective value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="aab9dd62cebe4667c45d1720ee6a008c8" name="aab9dd62cebe4667c45d1720ee6a008c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab9dd62cebe4667c45d1720ee6a008c8">&#9670;&#160;</a></span>addRow()</h2>
+<a id="ae7e3c17a96286fe5b2f98679f6f95e34" name="ae7e3c17a96286fe5b2f98679f6f95e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e3c17a96286fe5b2f98679f6f95e34">&#9670;&#160;</a></span>addRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::addRow </td>
+          <td class="memname">void Models::FMTMatrixBuild::addRow </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>numberInRow</em>, </td>
@@ -294,18 +345,29 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a row to rowbuild to potentialy synchronize it with the synchronize function. </p>
+
+<p>Add a row to the cache to potentially synchronize it later. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">numberInRow</td><td>the number of elements in the row. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">columns</td><td>the column indices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements</td><td>the elements. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowLower</td><td>the row lower bound. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowUpper</td><td>the row upper bound. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="af2fc2f9b6a2159904dd25e1c5754b4e6" name="af2fc2f9b6a2159904dd25e1c5754b4e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2fc2f9b6a2159904dd25e1c5754b4e6">&#9670;&#160;</a></span>deleteCol()</h2>
+<a id="a1a7afd4cb75210f7f793c18bbda0f247" name="a1a7afd4cb75210f7f793c18bbda0f247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7afd4cb75210f7f793c18bbda0f247">&#9670;&#160;</a></span>deleteCol()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::deleteCol </td>
+          <td class="memname">void Models::FMTMatrixBuild::deleteCol </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>colindex</em></td><td>)</td>
@@ -313,18 +375,25 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The function delete a column (colindex) from the matrix cache. </p>
+
+<p>Delete a column from the matrix cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colindex</td><td>the index of the column to delete. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a131c78754611c4e686a811b36acbacd7" name="a131c78754611c4e686a811b36acbacd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a131c78754611c4e686a811b36acbacd7">&#9670;&#160;</a></span>deleteRow()</h2>
+<a id="aacc7f8edb05e9147deb115078c9a60c6" name="aacc7f8edb05e9147deb115078c9a60c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc7f8edb05e9147deb115078c9a60c6">&#9670;&#160;</a></span>deleteRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::deleteRow </td>
+          <td class="memname">void Models::FMTMatrixBuild::deleteRow </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>rowindex</em></td><td>)</td>
@@ -332,18 +401,25 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The function delete a row (rowindex) from the matrix cache. </p>
+
+<p>Delete a row from the matrix cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowindex</td><td>the index of the row to delete. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a3a3caaeab09ccb0fe8d219a0c3939b2b" name="a3a3caaeab09ccb0fe8d219a0c3939b2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a3caaeab09ccb0fe8d219a0c3939b2b">&#9670;&#160;</a></span>formatallnames()</h2>
+<a id="a1279be7fa731ec8a9be4d864efb67d7d" name="a1279be7fa731ec8a9be4d864efb67d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1279be7fa731ec8a9be4d864efb67d7d">&#9670;&#160;</a></span>formatAllNames()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::formatallnames </td>
+          <td class="memname">void Models::FMTMatrixBuild::formatAllNames </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>shortformat</em></td><td>)</td>
@@ -351,18 +427,25 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Formats names of row and column in cache. </p>
+
+<p>Format the cached row and column names. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shortformat</td><td>if true uses a short format. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="aeb4e29d1a3961769ccdfe2632b0143a2" name="aeb4e29d1a3961769ccdfe2632b0143a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb4e29d1a3961769ccdfe2632b0143a2">&#9670;&#160;</a></span>getcol()</h2>
+<a id="a1754e5e6935e7dbc9f5f4247355d6955" name="a1754e5e6935e7dbc9f5f4247355d6955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1754e5e6935e7dbc9f5f4247355d6955">&#9670;&#160;</a></span>getCol()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmatrixbuild::getcol </td>
+          <td class="memname">int Models::FMTMatrixBuild::getCol </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>whichCol</em>, </td>
@@ -404,30 +487,45 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Given a col (whichCol) the function will fill up the column lower bound (colLower), the column upper bound (colUpper), the column's objective (objectiveValue), the column's (indicies) and the column's elements present in the cache. </p>
+
+<p>Fill up the bounds, objective, indices and elements of a given column present in the cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">whichCol</td><td>the column index. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colLower</td><td>the column lower bound. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colUpper</td><td>the column upper bound. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">objectiveValue</td><td>the objective value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>the column indices. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">elements</td><td>the column elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of elements in the column. </dd></dl>
 
 </div>
 </div>
-<a id="a2356ceb87d5f6cbc24d888af36b48d67" name="a2356ceb87d5f6cbc24d888af36b48d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2356ceb87d5f6cbc24d888af36b48d67">&#9670;&#160;</a></span>getcolstosynchronize()</h2>
+<a id="a419e59e7d6f0b8ffd049a040ce75c472" name="a419e59e7d6f0b8ffd049a040ce75c472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419e59e7d6f0b8ffd049a040ce75c472">&#9670;&#160;</a></span>getColsToSynchronize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Models::FMTmatrixbuild::getcolstosynchronize </td>
+          <td class="memname">std::string Models::FMTMatrixBuild::getColsToSynchronize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The function is mainly for debugging it returns a string of all the columns that are in the matrix cache. </p>
+
+<p>Return a string of all the columns in the matrix cache, mainly for debugging. </p>
+<dl class="section return"><dt>Returns</dt><dd>the columns to synchronize. </dd></dl>
 
 </div>
 </div>
-<a id="a8db08a45dd4f2dbdc9e6c6765e8d6ceb" name="a8db08a45dd4f2dbdc9e6c6765e8d6ceb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8db08a45dd4f2dbdc9e6c6765e8d6ceb">&#9670;&#160;</a></span>getcolumnnames()</h2>
+<a id="af78da8501d0fabecbd02efe6abc01220" name="af78da8501d0fabecbd02efe6abc01220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af78da8501d0fabecbd02efe6abc01220">&#9670;&#160;</a></span>getColumnNames()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,7 +534,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; &amp; Models::FMTmatrixbuild::getcolumnnames </td>
+          <td class="memname">std::vector&lt; std::string &gt; &amp; Models::FMTMatrixBuild::getColumnNames </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -448,12 +546,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return cached column names. </p>
+
+<p>Return the cached column names. </p>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the cached column names. </dd></dl>
 
 </div>
 </div>
-<a id="a00390adf38607346e2872c2661d7ea8c" name="a00390adf38607346e2872c2661d7ea8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00390adf38607346e2872c2661d7ea8c">&#9670;&#160;</a></span>getdeletedconstraints()</h2>
+<a id="ac9492a5d57504ec48cf0b8eeafd8ce22" name="ac9492a5d57504ec48cf0b8eeafd8ce22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9492a5d57504ec48cf0b8eeafd8ce22">&#9670;&#160;</a></span>getDeletedConstraints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +562,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; Models::FMTmatrixbuild::getdeletedconstraints </td>
+          <td class="memname">const std::vector&lt; int &gt; &amp; Models::FMTMatrixBuild::getDeletedConstraints </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -474,12 +574,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the newly deleted rows that are in the matrix cache. </p>
+
+<p>Return the newly deleted rows in the matrix cache. </p>
+<dl class="section return"><dt>Returns</dt><dd>the deleted constraints. </dd></dl>
 
 </div>
 </div>
-<a id="a79d13b21dc8737b4ff175807abd8310b" name="a79d13b21dc8737b4ff175807abd8310b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79d13b21dc8737b4ff175807abd8310b">&#9670;&#160;</a></span>getdeletedvariables()</h2>
+<a id="aedd94a22d2a61afdada286fcced33f34" name="aedd94a22d2a61afdada286fcced33f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd94a22d2a61afdada286fcced33f34">&#9670;&#160;</a></span>getDeletedVariables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +590,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; Models::FMTmatrixbuild::getdeletedvariables </td>
+          <td class="memname">const std::vector&lt; int &gt; &amp; Models::FMTMatrixBuild::getDeletedVariables </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -500,18 +602,20 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the newly deleted columns that are in the matrix cache. </p>
+
+<p>Return the newly deleted columns in the matrix cache. </p>
+<dl class="section return"><dt>Returns</dt><dd>the deleted variables. </dd></dl>
 
 </div>
 </div>
-<a id="a20a5cf1d9db9cfe697d2b83a958dfe25" name="a20a5cf1d9db9cfe697d2b83a958dfe25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20a5cf1d9db9cfe697d2b83a958dfe25">&#9670;&#160;</a></span>getrow()</h2>
+<a id="a58733843c5e681f7a7d6fb1634d7c08a" name="a58733843c5e681f7a7d6fb1634d7c08a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58733843c5e681f7a7d6fb1634d7c08a">&#9670;&#160;</a></span>getRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmatrixbuild::getrow </td>
+          <td class="memname">int Models::FMTMatrixBuild::getRow </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>whichRow</em>, </td>
@@ -547,12 +651,24 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Given a given row (whichRow) the function will fill up the row lower bound (rowLower), the row upper bound (rowUpper), the row's (indicies) and the row's elements present in the cache. </p>
+
+<p>Fill up the bounds, indices and elements of a given row present in the cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">whichRow</td><td>the row index. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rowLower</td><td>the row lower bound. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rowUpper</td><td>the row upper bound. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>the row indices. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">elements</td><td>the row elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of elements in the row. </dd></dl>
 
 </div>
 </div>
-<a id="a7accb5d7af07c813263e4669a6e37319" name="a7accb5d7af07c813263e4669a6e37319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7accb5d7af07c813263e4669a6e37319">&#9670;&#160;</a></span>getrownames()</h2>
+<a id="adc19b2abb6068cafb565c62b7a8e87c6" name="adc19b2abb6068cafb565c62b7a8e87c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc19b2abb6068cafb565c62b7a8e87c6">&#9670;&#160;</a></span>getRowNames()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,7 +677,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; &amp; Models::FMTmatrixbuild::getrownames </td>
+          <td class="memname">std::vector&lt; std::string &gt; &amp; Models::FMTMatrixBuild::getRowNames </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -573,30 +689,34 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return cached row names. </p>
+
+<p>Return the cached row names. </p>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the cached row names. </dd></dl>
 
 </div>
 </div>
-<a id="ac775dc68301c66cb0e9809c61d41aadb" name="ac775dc68301c66cb0e9809c61d41aadb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac775dc68301c66cb0e9809c61d41aadb">&#9670;&#160;</a></span>getrowstosynchronize()</h2>
+<a id="adc42f094a3dacb6f83d8b2269a979708" name="adc42f094a3dacb6f83d8b2269a979708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc42f094a3dacb6f83d8b2269a979708">&#9670;&#160;</a></span>getRowsToSynchronize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Models::FMTmatrixbuild::getrowstosynchronize </td>
+          <td class="memname">std::string Models::FMTMatrixBuild::getRowsToSynchronize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The function is mainly for debugging it returns a string of all the rows that are in the matrix cache. </p>
+
+<p>Return a string of all the rows in the matrix cache, mainly for debugging. </p>
+<dl class="section return"><dt>Returns</dt><dd>the rows to synchronize. </dd></dl>
 
 </div>
 </div>
-<a id="ad4405c3ca1d2f2633c14619bbfc0628a" name="ad4405c3ca1d2f2633c14619bbfc0628a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4405c3ca1d2f2633c14619bbfc0628a">&#9670;&#160;</a></span>numbernewCols()</h2>
+<a id="a5951026d2eb6bb909dc80edb5b691787" name="a5951026d2eb6bb909dc80edb5b691787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5951026d2eb6bb909dc80edb5b691787">&#9670;&#160;</a></span>numberNewCols()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +725,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmatrixbuild::numbernewCols </td>
+          <td class="memname">int Models::FMTMatrixBuild::numberNewCols </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -617,12 +737,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the number of newly added columns that are in the matrix cache. </p>
+
+<p>Return the number of newly added columns in the matrix cache. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of newly added columns. </dd></dl>
 
 </div>
 </div>
-<a id="aa63fdbeef76c71674c98521c0219b183" name="aa63fdbeef76c71674c98521c0219b183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa63fdbeef76c71674c98521c0219b183">&#9670;&#160;</a></span>numbernewRows()</h2>
+<a id="aa32ebe7eb5b0b6eb8296d62cda6220e2" name="aa32ebe7eb5b0b6eb8296d62cda6220e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa32ebe7eb5b0b6eb8296d62cda6220e2">&#9670;&#160;</a></span>numberNewRows()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,7 +753,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmatrixbuild::numbernewRows </td>
+          <td class="memname">int Models::FMTMatrixBuild::numberNewRows </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -643,12 +765,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the number of newly added rows that are in the matrix cache. </p>
+
+<p>Return the number of newly added rows in the matrix cache. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of newly added rows. </dd></dl>
 
 </div>
 </div>
-<a id="a812d182b38e0de3f62745788851c0f82" name="a812d182b38e0de3f62745788851c0f82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a812d182b38e0de3f62745788851c0f82">&#9670;&#160;</a></span>numberofdeletedCols()</h2>
+<a id="af8c5d5c165e4439b6218f659525e1dc0" name="af8c5d5c165e4439b6218f659525e1dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c5d5c165e4439b6218f659525e1dc0">&#9670;&#160;</a></span>numberOfDeletedCols()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,7 +781,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmatrixbuild::numberofdeletedCols </td>
+          <td class="memname">int Models::FMTMatrixBuild::numberOfDeletedCols </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -669,12 +793,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the number of newly deleted columns that are in the matrix cache. </p>
+
+<p>Return the number of newly deleted columns in the matrix cache. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of newly deleted columns. </dd></dl>
 
 </div>
 </div>
-<a id="aba02e03c86649595bd2d5d059ae6ac1e" name="aba02e03c86649595bd2d5d059ae6ac1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba02e03c86649595bd2d5d059ae6ac1e">&#9670;&#160;</a></span>numberofdeletedRows()</h2>
+<a id="a24eb48bd8159856e94b129808066e633" name="a24eb48bd8159856e94b129808066e633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24eb48bd8159856e94b129808066e633">&#9670;&#160;</a></span>numberOfDeletedRows()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -683,7 +809,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmatrixbuild::numberofdeletedRows </td>
+          <td class="memname">int Models::FMTMatrixBuild::numberOfDeletedRows </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -695,37 +821,47 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the number of newly deleted rows that are in the matrix cache. </p>
+
+<p>Return the number of newly deleted rows in the matrix cache. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of newly deleted rows. </dd></dl>
 
 </div>
 </div>
-<a id="a6d17fd1ce873363f0d96433c424b98bd" name="a6d17fd1ce873363f0d96433c424b98bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d17fd1ce873363f0d96433c424b98bd">&#9670;&#160;</a></span>operator=()</h2>
+<a id="aa86ca4d933dffb1bc31c79bdd995b65a" name="aa86ca4d933dffb1bc31c79bdd995b65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86ca4d933dffb1bc31c79bdd995b65a">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> &amp; Models::FMTmatrixbuild::operator= </td>
+          <td class="memname"><a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a> &amp; Models::FMTMatrixBuild::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy assignment of <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a>. </p>
+
+<p>Copy assignment operator for <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a3de73deacc2087c2fbc94d834552b5cd" name="a3de73deacc2087c2fbc94d834552b5cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3de73deacc2087c2fbc94d834552b5cd">&#9670;&#160;</a></span>setcolname()</h2>
+<a id="afb5431bf294fe5b79fbfebc4a0861bf8" name="afb5431bf294fe5b79fbfebc4a0861bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5431bf294fe5b79fbfebc4a0861bf8">&#9670;&#160;</a></span>setColName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::setcolname </td>
+          <td class="memname">void Models::FMTMatrixBuild::setColName </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -743,18 +879,26 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>set column name. </p>
+
+<p>Set a column name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>the name to set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">columnid</td><td>the column id. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="af2c3dfe01c6989a42ba0395b7d1eb763" name="af2c3dfe01c6989a42ba0395b7d1eb763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c3dfe01c6989a42ba0395b7d1eb763">&#9670;&#160;</a></span>setrowname()</h2>
+<a id="afb3a50ca9ef6d2fe2d98cc9e5e779d46" name="afb3a50ca9ef6d2fe2d98cc9e5e779d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3a50ca9ef6d2fe2d98cc9e5e779d46">&#9670;&#160;</a></span>setRowName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::setrowname </td>
+          <td class="memname">void Models::FMTMatrixBuild::setRowName </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -772,55 +916,71 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>set row name. </p>
+
+<p>Set a row name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>the name to set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowid</td><td>the row id. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="acd04d774985a460aab0a4a4cc0f2eaaf" name="acd04d774985a460aab0a4a4cc0f2eaaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd04d774985a460aab0a4a4cc0f2eaaf">&#9670;&#160;</a></span>sortandcleandeleted()</h2>
+<a id="a814a4395bdd8ed779e78655c0c5246e5" name="a814a4395bdd8ed779e78655c0c5246e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814a4395bdd8ed779e78655c0c5246e5">&#9670;&#160;</a></span>sortAndCleanDeleted()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::sortandcleandeleted </td>
+          <td class="memname">void Models::FMTMatrixBuild::sortAndCleanDeleted </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The function will remove duplicate from the deleted rows and columns elements and then sort the vector. </p>
+
+<p>Remove duplicates from the deleted rows and columns and sort them. </p>
 
 </div>
 </div>
-<a id="a72c7f6daf62fc143d1c7f0e3dca2e2ee" name="a72c7f6daf62fc143d1c7f0e3dca2e2ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72c7f6daf62fc143d1c7f0e3dca2e2ee">&#9670;&#160;</a></span>swap()</h2>
+<a id="a1bbfca79b0f62bfdb4af23c24d6ddb4e" name="a1bbfca79b0f62bfdb4af23c24d6ddb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bbfca79b0f62bfdb4af23c24d6ddb4e">&#9670;&#160;</a></span>swap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::swap </td>
+          <td class="memname">void Models::FMTMatrixBuild::swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classModels_1_1FMTMatrixBuild.html">FMTMatrixBuild</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Swap for <a class="el" href="classModels_1_1FMTmatrixbuild.html">FMTmatrixbuild</a> </p>
+
+<p>Swap this <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a> with another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">rhs</td><td>the <a class="el" href="classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency.">FMTMatrixBuild</a> to swap with. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a25fd600faded2e7a32913e9a32241b54" name="a25fd600faded2e7a32913e9a32241b54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25fd600faded2e7a32913e9a32241b54">&#9670;&#160;</a></span>synchronize()</h2>
+<a id="a1146122261807fbe1fee020e9fb9e367" name="a1146122261807fbe1fee020e9fb9e367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1146122261807fbe1fee020e9fb9e367">&#9670;&#160;</a></span>synchronize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTmatrixbuild::synchronize </td>
+          <td class="memname">void Models::FMTMatrixBuild::synchronize </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; OsiSolverInterface &gt;&#160;</td>
           <td class="paramname"><em>solver</em></td><td>)</td>
@@ -828,12 +988,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function synchronize the cols from colsbuild and the row of rowbuild with the Osisolverinterface matrix (solver) </p>
+
+<p>Synchronize the cached columns and rows with the solver matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">solver</td><td>the solver interface. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTmatrixbuild_8hpp_source.html">FMTmatrixbuild.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTMatrixBuild_8h_source.html">FMTMatrixBuild.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

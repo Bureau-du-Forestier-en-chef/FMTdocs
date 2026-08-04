@@ -1,5 +1,5 @@
-<map id="Parallel::FMTopareaschedulertask" name="Parallel::FMTopareaschedulertask">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,224,181"/>
-<area shape="rect" id="node2" href="$classParallel_1_1FMTtask.html" title=" " alt="" coords="53,80,176,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="56,5,173,32"/>
+<map id="Parallel::FMTOpAreaSchedulerTask" name="Parallel::FMTOpAreaSchedulerTask">
+<area shape="rect" id="node1" title="Task to find a suboptimal schedule for the operating areas of a FMTLpModel." alt="" coords="5,155,234,181"/>
+<area shape="rect" id="node2" href="$classParallel_1_1FMTTask.html" title="Task for parallel jobs." alt="" coords="56,80,183,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="59,5,180,32"/>
 </map>

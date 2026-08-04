@@ -1,5 +1,5 @@
-<map id="Parser::FMTyieldparser" name="Parser::FMTyieldparser">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,162,181"/>
-<area shape="rect" id="node2" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="19,80,148,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="25,5,142,32"/>
+<map id="Parser::FMTYieldParser" name="Parser::FMTYieldParser">
+<area shape="rect" id="node1" title="Parser reading and writing yield sections into a FMTYields object." alt="" coords="5,155,166,181"/>
+<area shape="rect" id="node2" href="$classParser_1_1FMTParser.html" title="Main parent class of all the parsers in FMT." alt="" coords="20,80,151,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="25,5,146,32"/>
 </map>

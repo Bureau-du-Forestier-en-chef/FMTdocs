@@ -1,4 +1,4 @@
-<map id="Logging::FMTquietlogger" name="Logging::FMTquietlogger">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,169,107"/>
-<area shape="rect" id="node2" href="$classLogging_1_1FMTlogger.html" title=" " alt="" coords="19,5,155,32"/>
+<map id="Logging::FMTQuietLogger" name="Logging::FMTQuietLogger">
+<area shape="rect" id="node1" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac..." alt="" coords="5,80,176,107"/>
+<area shape="rect" id="node2" href="$classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT." alt="" coords="21,5,160,32"/>
 </map>

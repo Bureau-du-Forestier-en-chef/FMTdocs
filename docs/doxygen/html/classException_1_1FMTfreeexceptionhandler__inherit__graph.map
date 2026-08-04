@@ -1,4 +1,4 @@
-<map id="Exception::FMTfreeexceptionhandler" name="Exception::FMTfreeexceptionhandler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,238,107"/>
-<area shape="rect" id="node2" href="$classException_1_1FMTexceptionhandler.html" title=" " alt="" coords="16,5,227,32"/>
+<map id="Exception::FMTFreeExceptionHandler" name="Exception::FMTFreeExceptionHandler">
+<area shape="rect" id="node1" title="Exception handler derived from FMTExceptionHandler that passes exceptions thrown by FMT directly to t..." alt="" coords="14,80,212,123"/>
+<area shape="rect" id="node2" href="$classException_1_1FMTExceptionHandler.html" title="Base class used to handle errors thrown in FMT." alt="" coords="5,5,221,32"/>
 </map>

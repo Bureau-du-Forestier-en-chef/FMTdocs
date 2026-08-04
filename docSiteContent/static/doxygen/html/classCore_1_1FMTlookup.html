@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTlookup&lt; inmemory, pointer &gt; Class Template Reference</title>
+<title>FMT: Core::FMTLookup&lt; inmemory, pointer &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,49 +71,70 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="classCore_1_1FMTlookup-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTlookup&lt; inmemory, pointer &gt; Class Template Reference</div></div>
+<a href="classCore_1_1FMTLookup-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTLookup&lt; inmemory, pointer &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTlookup_8hpp_source.html">FMTlookup.hpp</a>&gt;</code></p>
+<p>Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and comparison.  
+ <a href="classCore_1_1FMTLookup.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTLookup_8h_source.html">FMTLookup.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ddc2b06de0fecd99dc747b7c5b784f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a7ddc2b06de0fecd99dc747b7c5b784f7">FMTlookup</a> ()=default</td></tr>
-<tr class="separator:a7ddc2b06de0fecd99dc747b7c5b784f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94267cd262d8850c4b650257117308c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a94267cd262d8850c4b650257117308c2">~FMTlookup</a> ()=default</td></tr>
-<tr class="separator:a94267cd262d8850c4b650257117308c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2051e2c49d179c8ef8352e02e9634ba3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a2051e2c49d179c8ef8352e02e9634ba3">FMTlookup</a> (const pointer &amp;ptr)</td></tr>
-<tr class="separator:a2051e2c49d179c8ef8352e02e9634ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812b50fb88dfa92f7db23a5c28a1598a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a812b50fb88dfa92f7db23a5c28a1598a">FMTlookup</a> (const inmemory &amp;des, const pointer &amp;dev)</td></tr>
-<tr class="separator:a812b50fb88dfa92f7db23a5c28a1598a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f50cbc75847d26d9251c10c3bf09097"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a4f50cbc75847d26d9251c10c3bf09097">FMTlookup</a> (const <a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a> &amp;rhs)</td></tr>
-<tr class="separator:a4f50cbc75847d26d9251c10c3bf09097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f18f43a5746f453bb0c2c7423c3e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a98f18f43a5746f453bb0c2c7423c3e95">operator=</a> (const <a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a> &amp;rhs)</td></tr>
-<tr class="separator:a98f18f43a5746f453bb0c2c7423c3e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9a3cf7541242953685c3db15f40eb9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#af9a3cf7541242953685c3db15f40eb9e">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a> &amp;rhs) const</td></tr>
-<tr class="separator:af9a3cf7541242953685c3db15f40eb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8f99230d1a9e432dd876890064755d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a7a8f99230d1a9e432dd876890064755d">operator==</a> (const <a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a> &amp;rhs) const</td></tr>
-<tr class="separator:a7a8f99230d1a9e432dd876890064755d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60eea2330655e26040994ee6cf4689d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#a60eea2330655e26040994ee6cf4689d1">FMTLookup</a> ()=default</td></tr>
+<tr class="memdesc:a60eea2330655e26040994ee6cf4689d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>.  <br /></td></tr>
+<tr class="separator:a60eea2330655e26040994ee6cf4689d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8f6cb4354a18342261deacb5ffc864"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#aef8f6cb4354a18342261deacb5ffc864">~FMTLookup</a> ()=default</td></tr>
+<tr class="memdesc:aef8f6cb4354a18342261deacb5ffc864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>.  <br /></td></tr>
+<tr class="separator:aef8f6cb4354a18342261deacb5ffc864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67137a74ca9994772758a4cbb169304"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#ab67137a74ca9994772758a4cbb169304">FMTLookup</a> (const pointer &amp;ptr)</td></tr>
+<tr class="memdesc:ab67137a74ca9994772758a4cbb169304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a lookup for searching from a pointer.  <br /></td></tr>
+<tr class="separator:ab67137a74ca9994772758a4cbb169304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b3e906a7bedf28c171199fcb6c46a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#a93b3e906a7bedf28c171199fcb6c46a2">FMTLookup</a> (const inmemory &amp;des, const pointer &amp;dev)</td></tr>
+<tr class="memdesc:a93b3e906a7bedf28c171199fcb6c46a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a lookup for keeping from an in-memory object and a pointer.  <br /></td></tr>
+<tr class="separator:a93b3e906a7bedf28c171199fcb6c46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eef38ed0c1944f7bae5236bbafb81d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#a9eef38ed0c1944f7bae5236bbafb81d9">FMTLookup</a> (const <a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a9eef38ed0c1944f7bae5236bbafb81d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>.  <br /></td></tr>
+<tr class="separator:a9eef38ed0c1944f7bae5236bbafb81d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae787c33711b64920e5aba46fc1e75f2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#ae787c33711b64920e5aba46fc1e75f2d">operator=</a> (const <a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ae787c33711b64920e5aba46fc1e75f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>.  <br /></td></tr>
+<tr class="separator:ae787c33711b64920e5aba46fc1e75f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687710f6e74d000721ff5b286d6e9929"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#a687710f6e74d000721ff5b286d6e9929">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a687710f6e74d000721ff5b286d6e9929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than comparison operator of <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>.  <br /></td></tr>
+<tr class="separator:a687710f6e74d000721ff5b286d6e9929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4853328d745cbc68ff40de7e2685ff1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#a4853328d745cbc68ff40de7e2685ff1f">operator==</a> (const <a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a4853328d745cbc68ff40de7e2685ff1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator of <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>.  <br /></td></tr>
+<tr class="separator:a4853328d745cbc68ff40de7e2685ff1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a97b9fd521c5dc6c6c0b413c337cfc715"><td class="memItemLeft" align="right" valign="top">inmemory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a97b9fd521c5dc6c6c0b413c337cfc715">memoryobject</a></td></tr>
-<tr class="separator:a97b9fd521c5dc6c6c0b413c337cfc715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a079983a30ddd7443c922aaa86d8e75"><td class="memItemLeft" align="right" valign="top">const pointer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlookup.html#a7a079983a30ddd7443c922aaa86d8e75">pointerobject</a></td></tr>
-<tr class="separator:a7a079983a30ddd7443c922aaa86d8e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1be74e1cb9e915a48cc7702e73ed4b1"><td class="memItemLeft" align="right" valign="top">inmemory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#aa1be74e1cb9e915a48cc7702e73ed4b1">memoryobject</a></td></tr>
+<tr class="separator:aa1be74e1cb9e915a48cc7702e73ed4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389982bbe46c9991b20c703525a7e64a"><td class="memItemLeft" align="right" valign="top">const pointer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTLookup.html#a389982bbe46c9991b20c703525a7e64a">pointerobject</a></td></tr>
+<tr class="separator:a389982bbe46c9991b20c703525a7e64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7ddc2b06de0fecd99dc747b7c5b784f7" name="a7ddc2b06de0fecd99dc747b7c5b784f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ddc2b06de0fecd99dc747b7c5b784f7">&#9670;&#160;</a></span>FMTlookup() <span class="overload">[1/4]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class inmemory, class pointer&gt;<br />
+class Core::FMTLookup&lt; inmemory, pointer &gt;</div><p>Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and comparison. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">inmemory</td><td>the in-memory object type. </td></tr>
+    <tr><td class="paramname">pointer</td><td>the pointed object type. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a60eea2330655e26040994ee6cf4689d1" name="a60eea2330655e26040994ee6cf4689d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60eea2330655e26040994ee6cf4689d1">&#9670;&#160;</a></span>FMTLookup() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,7 +145,7 @@ template&lt;class inmemory , class pointer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::FMTlookup </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::FMTLookup </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -137,10 +158,12 @@ template&lt;class inmemory , class pointer &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>. </p>
+
 </div>
 </div>
-<a id="a94267cd262d8850c4b650257117308c2" name="a94267cd262d8850c4b650257117308c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94267cd262d8850c4b650257117308c2">&#9670;&#160;</a></span>~FMTlookup()</h2>
+<a id="aef8f6cb4354a18342261deacb5ffc864" name="aef8f6cb4354a18342261deacb5ffc864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8f6cb4354a18342261deacb5ffc864">&#9670;&#160;</a></span>~FMTLookup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +174,7 @@ template&lt;class inmemory , class pointer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::~<a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a> </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::~<a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -164,10 +187,12 @@ template&lt;class inmemory , class pointer &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Default destructor for <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>. </p>
+
 </div>
 </div>
-<a id="a2051e2c49d179c8ef8352e02e9634ba3" name="a2051e2c49d179c8ef8352e02e9634ba3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2051e2c49d179c8ef8352e02e9634ba3">&#9670;&#160;</a></span>FMTlookup() <span class="overload">[2/4]</span></h2>
+<a id="ab67137a74ca9994772758a4cbb169304" name="ab67137a74ca9994772758a4cbb169304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab67137a74ca9994772758a4cbb169304">&#9670;&#160;</a></span>FMTLookup() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +203,7 @@ template&lt;class inmemory , class pointer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::FMTlookup </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::FMTLookup </td>
           <td>(</td>
           <td class="paramtype">const pointer &amp;&#160;</td>
           <td class="paramname"><em>ptr</em></td><td>)</td>
@@ -192,10 +217,18 @@ template&lt;class inmemory , class pointer &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a lookup for searching from a pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>the pointed object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a812b50fb88dfa92f7db23a5c28a1598a" name="a812b50fb88dfa92f7db23a5c28a1598a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a812b50fb88dfa92f7db23a5c28a1598a">&#9670;&#160;</a></span>FMTlookup() <span class="overload">[3/4]</span></h2>
+<a id="a93b3e906a7bedf28c171199fcb6c46a2" name="a93b3e906a7bedf28c171199fcb6c46a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b3e906a7bedf28c171199fcb6c46a2">&#9670;&#160;</a></span>FMTLookup() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +239,7 @@ template&lt;class inmemory , class pointer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::FMTlookup </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::FMTLookup </td>
           <td>(</td>
           <td class="paramtype">const inmemory &amp;&#160;</td>
           <td class="paramname"><em>des</em>, </td>
@@ -230,10 +263,19 @@ template&lt;class inmemory , class pointer &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a lookup for keeping from an in-memory object and a pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">des</td><td>the in-memory object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>the pointed object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a4f50cbc75847d26d9251c10c3bf09097" name="a4f50cbc75847d26d9251c10c3bf09097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f50cbc75847d26d9251c10c3bf09097">&#9670;&#160;</a></span>FMTlookup() <span class="overload">[4/4]</span></h2>
+<a id="a9eef38ed0c1944f7bae5236bbafb81d9" name="a9eef38ed0c1944f7bae5236bbafb81d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eef38ed0c1944f7bae5236bbafb81d9">&#9670;&#160;</a></span>FMTLookup() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,9 +286,9 @@ template&lt;class inmemory , class pointer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::FMTlookup </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::FMTLookup </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a>&lt; inmemory, pointer &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a>&lt; inmemory, pointer &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -257,12 +299,20 @@ template&lt;class inmemory , class pointer &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af9a3cf7541242953685c3db15f40eb9e" name="af9a3cf7541242953685c3db15f40eb9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9a3cf7541242953685c3db15f40eb9e">&#9670;&#160;</a></span>operator&lt;()</h2>
+<a id="a687710f6e74d000721ff5b286d6e9929" name="a687710f6e74d000721ff5b286d6e9929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a687710f6e74d000721ff5b286d6e9929">&#9670;&#160;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,9 +323,9 @@ template&lt;class inmemory , class pointer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::operator&lt; </td>
+          <td class="memname">bool <a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a>&lt; inmemory, pointer &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a>&lt; inmemory, pointer &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -287,10 +337,19 @@ template&lt;class inmemory , class pointer &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Less than comparison operator of <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the lookup to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this lookup is less than rhs else false. </dd></dl>
+
 </div>
 </div>
-<a id="a98f18f43a5746f453bb0c2c7423c3e95" name="a98f18f43a5746f453bb0c2c7423c3e95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98f18f43a5746f453bb0c2c7423c3e95">&#9670;&#160;</a></span>operator=()</h2>
+<a id="ae787c33711b64920e5aba46fc1e75f2d" name="ae787c33711b64920e5aba46fc1e75f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae787c33711b64920e5aba46fc1e75f2d">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,9 +360,9 @@ template&lt;class inmemory , class pointer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a> &amp; <a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a> &amp; <a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a>&lt; inmemory, pointer &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a>&lt; inmemory, pointer &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -315,10 +374,19 @@ template&lt;class inmemory , class pointer &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>. </dd></dl>
+
 </div>
 </div>
-<a id="a7a8f99230d1a9e432dd876890064755d" name="a7a8f99230d1a9e432dd876890064755d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a8f99230d1a9e432dd876890064755d">&#9670;&#160;</a></span>operator==()</h2>
+<a id="a4853328d745cbc68ff40de7e2685ff1f" name="a4853328d745cbc68ff40de7e2685ff1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4853328d745cbc68ff40de7e2685ff1f">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,9 +397,9 @@ template&lt;class inmemory , class pointer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::operator== </td>
+          <td class="memname">bool <a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTlookup.html">FMTlookup</a>&lt; inmemory, pointer &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTLookup.html">FMTLookup</a>&lt; inmemory, pointer &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -343,11 +411,20 @@ template&lt;class inmemory , class pointer &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Equality comparison operator of <a class="el" href="classCore_1_1FMTLookup.html" title="Lookup helper holding an in-memory object and a pointer to a keyed object, used for hashing and compa...">FMTLookup</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the lookup to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both lookups are equal else false. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a97b9fd521c5dc6c6c0b413c337cfc715" name="a97b9fd521c5dc6c6c0b413c337cfc715"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97b9fd521c5dc6c6c0b413c337cfc715">&#9670;&#160;</a></span>memoryobject</h2>
+<a id="aa1be74e1cb9e915a48cc7702e73ed4b1" name="aa1be74e1cb9e915a48cc7702e73ed4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1be74e1cb9e915a48cc7702e73ed4b1">&#9670;&#160;</a></span>memoryobject</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,15 +432,15 @@ template&lt;class inmemory , class pointer &gt; </div>
 template&lt;class inmemory , class pointer &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">inmemory <a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::memoryobject</td>
+          <td class="memname">inmemory <a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::memoryobject</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7a079983a30ddd7443c922aaa86d8e75" name="a7a079983a30ddd7443c922aaa86d8e75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a079983a30ddd7443c922aaa86d8e75">&#9670;&#160;</a></span>pointerobject</h2>
+<a id="a389982bbe46c9991b20c703525a7e64a" name="a389982bbe46c9991b20c703525a7e64a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389982bbe46c9991b20c703525a7e64a">&#9670;&#160;</a></span>pointerobject</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,7 +448,7 @@ template&lt;class inmemory , class pointer &gt; </div>
 template&lt;class inmemory , class pointer &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const pointer* <a class="el" href="classCore_1_1FMTlookup.html">Core::FMTlookup</a>&lt; inmemory, pointer &gt;::pointerobject</td>
+          <td class="memname">const pointer* <a class="el" href="classCore_1_1FMTLookup.html">Core::FMTLookup</a>&lt; inmemory, pointer &gt;::pointerobject</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -379,7 +456,7 @@ template&lt;class inmemory , class pointer &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTlookup_8hpp_source.html">FMTlookup.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTLookup_8h_source.html">FMTLookup.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

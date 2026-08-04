@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTtransition Class Reference</title>
+<title>FMT: Core::FMTTransition Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,263 +79,134 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classCore_1_1FMTtransition-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTtransition Class Reference</div></div>
+<a href="classCore_1_1FMTTransition-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTTransition Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTtransition_8hpp_source.html">FMTtransition.hpp</a>&gt;</code></p>
+<p>List of <a class="el" href="classCore_1_1FMTFork.html" title="Fork of a transition, holding the transition masks (targets and proportions) applied to a development...">FMTFork</a> describing the transition of an action, disturbing a development to generate new development paths.  
+ <a href="classCore_1_1FMTTransition.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTTransition_8h_source.html">FMTTransition.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Core::FMTtransition:</div>
+Inheritance diagram for Core::FMTTransition:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTtransition__inherit__graph.svg" width="182" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTTransition__inherit__graph.svg" width="191" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Core::FMTtransition:</div>
+Collaboration diagram for Core::FMTTransition:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTtransition__coll__graph.svg" width="100%" height="533"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTTransition__coll__graph.svg" width="316" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d23d7724c5278ff654b04408dcb278e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a9d23d7724c5278ff654b04408dcb278e">operator+=</a> (const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;OtherTransition)</td></tr>
-<tr class="memdesc:a9d23d7724c5278ff654b04408dcb278e"><td class="mdescLeft">&#160;</td><td class="mdescRight">append OtherTransition to this transition needs to be unskrink or it will throw an exception.  <br /></td></tr>
-<tr class="separator:a9d23d7724c5278ff654b04408dcb278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ccbc6cedaa846531c62299e274d017"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#ad0ccbc6cedaa846531c62299e274d017">FMTtransition</a> ()</td></tr>
-<tr class="separator:ad0ccbc6cedaa846531c62299e274d017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a597d85a34a48c443154f11295ffdc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a7a597d85a34a48c443154f11295ffdc8">~FMTtransition</a> ()=default</td></tr>
-<tr class="separator:a7a597d85a34a48c443154f11295ffdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a188402929ef02daf01e5834b9eae9bd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a188402929ef02daf01e5834b9eae9bd0">FMTtransition</a> (const std::string &amp;lname)</td></tr>
-<tr class="separator:a188402929ef02daf01e5834b9eae9bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8d45197fbb52cf25cd057ca7bbac4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a2f8d45197fbb52cf25cd057ca7bbac4d">FMTtransition</a> (const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;rhs)</td></tr>
-<tr class="separator:a2f8d45197fbb52cf25cd057ca7bbac4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa12e305bb667a388b7a837a4eef5f11d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#aa12e305bb667a388b7a837a4eef5f11d">operator=</a> (const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;rhs)</td></tr>
-<tr class="separator:aa12e305bb667a388b7a837a4eef5f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1061daaf11c9b4c2b89381d5698d8904"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a1061daaf11c9b4c2b89381d5698d8904">operator std::string</a> () const</td></tr>
-<tr class="separator:a1061daaf11c9b4c2b89381d5698d8904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2dd9f88548b0d30e7313a3f9a3502a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#ae2dd9f88548b0d30e7313a3f9a3502a1">single</a> () const</td></tr>
-<tr class="separator:ae2dd9f88548b0d30e7313a3f9a3502a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d83fa5a4e83d1d75dbad39f51f45d83"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a7d83fa5a4e83d1d75dbad39f51f45d83">getname</a> () const</td></tr>
-<tr class="separator:a7d83fa5a4e83d1d75dbad39f51f45d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763a7ec88e099aba946a076b7b4f434b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a763a7ec88e099aba946a076b7b4f434b">isleaking</a> () const</td></tr>
-<tr class="separator:a763a7ec88e099aba946a076b7b4f434b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de73857936f35443729f0c0a3fa7edc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a5de73857936f35443729f0c0a3fa7edc">getfork</a> (const <a class="el" href="classCore_1_1FMTdevelopment.html">Core::FMTdevelopment</a> &amp;developement, const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;ylds) const</td></tr>
-<tr class="separator:a5de73857936f35443729f0c0a3fa7edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aa1f9ea4a8aacb45b24f28d4a9e1d95"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a4aa1f9ea4a8aacb45b24f28d4a9e1d95">getstaticthemes</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:a4aa1f9ea4a8aacb45b24f28d4a9e1d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dbc1601773fd01f827b65b08c7a5b9f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a3dbc1601773fd01f827b65b08c7a5b9f">canproduce</a> (const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;testmask, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:a3dbc1601773fd01f827b65b08c7a5b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ed13f6b6f8017ced7b0dd7835e4d6d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#af5ed13f6b6f8017ced7b0dd7835e4d6d">age_after</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &amp;devs, const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;action, const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;ylds, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:af5ed13f6b6f8017ced7b0dd7835e4d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bde0949f7bab07371833ddf8ed92c1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a8bde0949f7bab07371833ddf8ed92c1e">main_target</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &amp;devs, const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;ylds) const</td></tr>
-<tr class="separator:a8bde0949f7bab07371833ddf8ed92c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a585ab8d137202873b1a122c7a83e2cf6"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a585ab8d137202873b1a122c7a83e2cf6">attribute_targets</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &amp;devs, const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;ylds, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:a585ab8d137202873b1a122c7a83e2cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a014207fbab21d95a256a5dce216f9e97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a014207fbab21d95a256a5dce216f9e97">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;rhs) const</td></tr>
-<tr class="separator:a014207fbab21d95a256a5dce216f9e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448271a7d5a10970258402c87be0dc24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a448271a7d5a10970258402c87be0dc24">operator==</a> (const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;rhs) const</td></tr>
-<tr class="separator:a448271a7d5a10970258402c87be0dc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494cea2adb06eabca349c32b9e13ad75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#a494cea2adb06eabca349c32b9e13ad75">operator!=</a> (const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;rhs) const</td></tr>
-<tr class="separator:a494cea2adb06eabca349c32b9e13ad75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5cc3a15ee7f5deb3b681526265a0040"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#ae5cc3a15ee7f5deb3b681526265a0040">presolve</a> (const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;originalthemes, std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;newthemes, bool compressdata=false) const</td></tr>
-<tr class="separator:ae5cc3a15ee7f5deb3b681526265a0040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classCore_1_1FMTlist"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTlist')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTlist.html">Core::FMTlist&lt; FMTfork &gt;</a></td></tr>
-<tr class="memitem:a277f158d305df1c3a84b393da404b5b3 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTlist.html">Core::FMTlist</a>&lt; <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a277f158d305df1c3a84b393da404b5b3">operator+=</a> (const <a class="el" href="classCore_1_1FMTlist.html">Core::FMTlist</a>&lt; <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &amp;OtherList)</td></tr>
-<tr class="memdesc:a277f158d305df1c3a84b393da404b5b3 inherit pub_methods_classCore_1_1FMTlist"><td class="mdescLeft">&#160;</td><td class="mdescRight">append OtherList to this list actions both list had to be non shrinked, will throw exception if shrinked.  <br /></td></tr>
-<tr class="separator:a277f158d305df1c3a84b393da404b5b3 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50486377f33f538510c1f3ec90038a85 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a50486377f33f538510c1f3ec90038a85">swap</a> (<a class="el" href="classCore_1_1FMTlist.html">Core::FMTlist</a>&lt; <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:a50486377f33f538510c1f3ec90038a85 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b12a70592bd7b517597aa2b82b2f79b inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a9b12a70592bd7b517597aa2b82b2f79b">getunion</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:a9b12a70592bd7b517597aa2b82b2f79b inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aa2bc3576ffa05082e91b3c03e8291f inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a0aa2bc3576ffa05082e91b3c03e8291f">FMTlist</a> ()</td></tr>
-<tr class="separator:a0aa2bc3576ffa05082e91b3c03e8291f inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69d977dd09940d6fb31d0b9806da58b8 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a69d977dd09940d6fb31d0b9806da58b8">FMTlist</a> (const <a class="el" href="classCore_1_1FMTlist.html">FMTlist</a>&lt; <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:a69d977dd09940d6fb31d0b9806da58b8 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd13ad5e1f9ca853a34f68b2557c78cd inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTlist.html">FMTlist</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#acd13ad5e1f9ca853a34f68b2557c78cd">operator=</a> (const <a class="el" href="classCore_1_1FMTlist.html">FMTlist</a>&lt; <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:acd13ad5e1f9ca853a34f68b2557c78cd inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a801cf773347c9d03cb84660cdd31f369 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a801cf773347c9d03cb84660cdd31f369">operator==</a> (const <a class="el" href="classCore_1_1FMTlist.html">FMTlist</a>&lt; <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &amp;rhs) const</td></tr>
-<tr class="separator:a801cf773347c9d03cb84660cdd31f369 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133e1d47dc92ade9ec214588a336aa13 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a133e1d47dc92ade9ec214588a336aa13">~FMTlist</a> ()=default</td></tr>
-<tr class="separator:a133e1d47dc92ade9ec214588a336aa13 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87d6e05312569add72a8efd2ea45e04 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#ad87d6e05312569add72a8efd2ea45e04">empty</a> () const</td></tr>
-<tr class="separator:ad87d6e05312569add72a8efd2ea45e04 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb00d80d6a513ec6bcd7e0d4bcdbc30e inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#acb00d80d6a513ec6bcd7e0d4bcdbc30e">canshrink</a> () const</td></tr>
-<tr class="separator:acb00d80d6a513ec6bcd7e0d4bcdbc30e inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3f53266fb53357c4f6c48b0028a51f8 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#ad3f53266fb53357c4f6c48b0028a51f8">clearcache</a> ()</td></tr>
-<tr class="separator:ad3f53266fb53357c4f6c48b0028a51f8 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aebd55db390a0789f94c4a74e4c6e45 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a1aebd55db390a0789f94c4a74e4c6e45">size</a> () const</td></tr>
-<tr class="separator:a1aebd55db390a0789f94c4a74e4c6e45 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae15d3a30974095a39eace1f008178516 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#ae15d3a30974095a39eace1f008178516">findsets</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask) const</td></tr>
-<tr class="separator:ae15d3a30974095a39eace1f008178516 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad28203fff73a5038ef4f6a34bfd7b525 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#ad28203fff73a5038ef4f6a34bfd7b525">findsetswithfiltered</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;newkey) const</td></tr>
-<tr class="separator:ad28203fff73a5038ef4f6a34bfd7b525 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6df9dc9f8fae198803e7b20cbae78f inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#acf6df9dc9f8fae198803e7b20cbae78f">filtermask</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;basemask) const</td></tr>
-<tr class="separator:acf6df9dc9f8fae198803e7b20cbae78f inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40fadbda5321cf5c5d2098b96a6ea6bf inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a40fadbda5321cf5c5d2098b96a6ea6bf">shrink</a> ()</td></tr>
-<tr class="separator:a40fadbda5321cf5c5d2098b96a6ea6bf inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79caea00a8bcda01265ac0829b4f9ef6 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a79caea00a8bcda01265ac0829b4f9ef6">unshrink</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes)</td></tr>
-<tr class="separator:a79caea00a8bcda01265ac0829b4f9ef6 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bbb7cd2c16af5e2a4746f1b9f4ebd65 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a3bbb7cd2c16af5e2a4746f1b9f4ebd65">APIpush_back</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask, const <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &amp;value)</td></tr>
-<tr class="separator:a3bbb7cd2c16af5e2a4746f1b9f4ebd65 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3b161022ad333792e2cb41349046c2f inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#af3b161022ad333792e2cb41349046c2f">push_back</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask, const <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &amp;value)</td></tr>
-<tr class="separator:af3b161022ad333792e2cb41349046c2f inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427ce810316ce719213c1c80e5ce04bb inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a427ce810316ce719213c1c80e5ce04bb">push_back</a> (const <a class="el" href="classCore_1_1FMTlist.html">FMTlist</a>&lt; <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:a427ce810316ce719213c1c80e5ce04bb inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b0f477b1829e57dad483ed7c9202a6b inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a9b0f477b1829e57dad483ed7c9202a6b">push_back</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask, const std::unique_ptr&lt; <a class="el" href="classCore_1_1FMTyieldhandler.html">Core::FMTyieldhandler</a> &gt; &amp;value)</td></tr>
-<tr class="separator:a9b0f477b1829e57dad483ed7c9202a6b inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf875bf6254e98de8c74100f2b8fe85 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#aaaf875bf6254e98de8c74100f2b8fe85">update</a> ()</td></tr>
-<tr class="separator:aaaf875bf6254e98de8c74100f2b8fe85 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1fe4c86d8689e9409078444adb466cd inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#ae1fe4c86d8689e9409078444adb466cd">push_front</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask, const <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &amp;value)</td></tr>
-<tr class="separator:ae1fe4c86d8689e9409078444adb466cd inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a444e143d013feddb9b64d6146a435c5c inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a444e143d013feddb9b64d6146a435c5c">pop_back</a> ()</td></tr>
-<tr class="separator:a444e143d013feddb9b64d6146a435c5c inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a45828af45b287ab3d1ccb5453d4619 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a2a45828af45b287ab3d1ccb5453d4619">erase</a> (const size_t &amp;location)</td></tr>
-<tr class="separator:a2a45828af45b287ab3d1ccb5453d4619 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca90f6079959f2c744502ac9c5ba9e51 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#aca90f6079959f2c744502ac9c5ba9e51">insert</a> (const size_t &amp;location, const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask, const <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &amp;value)</td></tr>
-<tr class="separator:aca90f6079959f2c744502ac9c5ba9e51 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee81649a6fd88ac0582dafe2a2556074 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#aee81649a6fd88ac0582dafe2a2556074">insert</a> (const size_t &amp;location, const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask, const std::unique_ptr&lt; <a class="el" href="classCore_1_1FMTyieldhandler.html">Core::FMTyieldhandler</a> &gt; &amp;value)</td></tr>
-<tr class="separator:aee81649a6fd88ac0582dafe2a2556074 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7cc36e20d594e62e7e39ac03d02c205 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTlist.html#a5de5e0f86fdc83748badda121f62682a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#af7cc36e20d594e62e7e39ac03d02c205">begin</a> ()</td></tr>
-<tr class="separator:af7cc36e20d594e62e7e39ac03d02c205 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e76280942c397c36f27f6cd1d09daf0 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTlist.html#abb11c80f6144ccfa079315dbf9f1d7ed">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a0e76280942c397c36f27f6cd1d09daf0">begin</a> () const</td></tr>
-<tr class="separator:a0e76280942c397c36f27f6cd1d09daf0 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7490a06bd234a9c5f6204662aa844ca1 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTlist.html#a5de5e0f86fdc83748badda121f62682a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a7490a06bd234a9c5f6204662aa844ca1">end</a> ()</td></tr>
-<tr class="separator:a7490a06bd234a9c5f6204662aa844ca1 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1aca022c56f6dc69258690394f65574 inherit pub_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTlist.html#abb11c80f6144ccfa079315dbf9f1d7ed">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#af1aca022c56f6dc69258690394f65574">end</a> () const</td></tr>
-<tr class="separator:af1aca022c56f6dc69258690394f65574 inherit pub_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a892247268d4fed1aad568ef726b2bf1a">FMTobject</a> ()</td></tr>
-<tr class="separator:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aabbeb37f9454aaae7725341a4fc6b871">~FMTobject</a> ()</td></tr>
-<tr class="separator:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6f0d241beec60204ed8d14740a026058">FMTobject</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; exhandler)</td></tr>
-<tr class="separator:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acc66512952f3c5563d317d40f5d0bd5d">FMTobject</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
-<tr class="separator:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43beb96c44fa008bbcd475d367a67ab1 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a43beb96c44fa008bbcd475d367a67ab1">operator=</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
-<tr class="separator:a43beb96c44fa008bbcd475d367a67ab1 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36054757252bb5f8d1275789271c3e0 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af36054757252bb5f8d1275789271c3e0">passinlogger</a> (const std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt; &amp;logger)</td></tr>
-<tr class="separator:af36054757252bb5f8d1275789271c3e0 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ac96f87dd870a03c329ec7dd91c57e0f3">passinexceptionhandler</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; &amp;exhandler)</td></tr>
-<tr class="separator:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a45a5a60a8bed1b2c7fc3852a5140947f">redirectlogtofile</a> (const std::string &amp;location)</td></tr>
-<tr class="separator:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acb289903aad7488bb9d58a555325dbc6">setdefaultlogger</a> ()</td></tr>
-<tr class="separator:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a07f7d55431bdd4c885f84c70436dfeb8">setquietlogger</a> ()</td></tr>
-<tr class="separator:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6929adf1131bc31e51798859cb3b26f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af6929adf1131bc31e51798859cb3b26f">settasklogger</a> ()</td></tr>
-<tr class="separator:af6929adf1131bc31e51798859cb3b26f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af84f403de5cbb9676e5da79c8a1f0d74">setdebuglogger</a> ()</td></tr>
-<tr class="separator:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#adb70eea83ae75752e107358d7c47d775">setdefaultexceptionhandler</a> ()</td></tr>
-<tr class="separator:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab718aa354a7b395471a15d29f244477 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aab718aa354a7b395471a15d29f244477">setquietexceptionhandler</a> ()</td></tr>
-<tr class="separator:aab718aa354a7b395471a15d29f244477 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742cafbb0d8d5984e101f2cb2bd2c07e inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a742cafbb0d8d5984e101f2cb2bd2c07e">setdebugexceptionhandler</a> ()</td></tr>
-<tr class="separator:a742cafbb0d8d5984e101f2cb2bd2c07e inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add57ec6ca8cf94e10c56346054ab75d6 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#add57ec6ca8cf94e10c56346054ab75d6">setfreeexceptionhandler</a> ()</td></tr>
-<tr class="separator:add57ec6ca8cf94e10c56346054ab75d6 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6340513d0ff7a846c35165c2f9f67b8f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6340513d0ff7a846c35165c2f9f67b8f">disablenestedexceptions</a> ()</td></tr>
-<tr class="separator:a6340513d0ff7a846c35165c2f9f67b8f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f62b116025059f09987b35324fccd06 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a3f62b116025059f09987b35324fccd06">enablenestedexceptions</a> ()</td></tr>
-<tr class="separator:a3f62b116025059f09987b35324fccd06 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8388f4cbb465e0e0a4bc4369340f4d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a1c8388f4cbb465e0e0a4bc4369340f4d">seterrorstowarnings</a> (const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;errors)</td></tr>
-<tr class="separator:a1c8388f4cbb465e0e0a4bc4369340f4d inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ce9242830521f5d6cca21c179f4db5a inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a5ce9242830521f5d6cca21c179f4db5a">setmaxwarningsbeforesilenced</a> (const size_t &amp;maxwarningcount)</td></tr>
-<tr class="separator:a5ce9242830521f5d6cca21c179f4db5a inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1629b745a5643f0cecff7bba727ed8d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a1629b745a5643f0cecff7bba727ed8d9">operator+=</a> (const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;OtherTransition)</td></tr>
+<tr class="memdesc:a1629b745a5643f0cecff7bba727ed8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append another transition to this transition, which needs to be unshrunk otherwise an exception is thrown.  <br /></td></tr>
+<tr class="separator:a1629b745a5643f0cecff7bba727ed8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0387871e3e88e158a875c17b90016546"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a0387871e3e88e158a875c17b90016546">FMTTransition</a> ()</td></tr>
+<tr class="memdesc:a0387871e3e88e158a875c17b90016546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>.  <br /></td></tr>
+<tr class="separator:a0387871e3e88e158a875c17b90016546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9dc9999cba567038603818513f4fba2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ab9dc9999cba567038603818513f4fba2">~FMTTransition</a> ()=default</td></tr>
+<tr class="memdesc:ab9dc9999cba567038603818513f4fba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>.  <br /></td></tr>
+<tr class="separator:ab9dc9999cba567038603818513f4fba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141c71d2b141e89f5f74ed6011883d6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a141c71d2b141e89f5f74ed6011883d6e">FMTTransition</a> (const std::string &amp;lname)</td></tr>
+<tr class="memdesc:a141c71d2b141e89f5f74ed6011883d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a transition keeping only its name.  <br /></td></tr>
+<tr class="separator:a141c71d2b141e89f5f74ed6011883d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5288384101032861702ddb77bee45a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#af5288384101032861702ddb77bee45a2">FMTTransition</a> (const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;rhs)</td></tr>
+<tr class="memdesc:af5288384101032861702ddb77bee45a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>.  <br /></td></tr>
+<tr class="separator:af5288384101032861702ddb77bee45a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3bb955ceffb95ea926332a86fe40bcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ae3bb955ceffb95ea926332a86fe40bcf">operator=</a> (const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ae3bb955ceffb95ea926332a86fe40bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>.  <br /></td></tr>
+<tr class="separator:ae3bb955ceffb95ea926332a86fe40bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9cab23b03e3e60e15b343780451d2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#aba9cab23b03e3e60e15b343780451d2b">operator std::string</a> () const</td></tr>
+<tr class="memdesc:aba9cab23b03e3e60e15b343780451d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the transition to a string as in a transition file.  <br /></td></tr>
+<tr class="separator:aba9cab23b03e3e60e15b343780451d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1771a458a87705ef99f2476d3c84ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ab1771a458a87705ef99f2476d3c84ebc">single</a> () const</td></tr>
+<tr class="memdesc:ab1771a458a87705ef99f2476d3c84ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a transition that leads to a single development path, selecting the one with the highest area proportion, for cell based models.  <br /></td></tr>
+<tr class="separator:ab1771a458a87705ef99f2476d3c84ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21e0fe893b2e29e37a7ec6013af1627"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#aa21e0fe893b2e29e37a7ec6013af1627">getName</a> () const</td></tr>
+<tr class="memdesc:aa21e0fe893b2e29e37a7ec6013af1627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the transition.  <br /></td></tr>
+<tr class="separator:aa21e0fe893b2e29e37a7ec6013af1627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8186b21eedb1e0e05bae4467d7ec1e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a8186b21eedb1e0e05bae4467d7ec1e68">setName</a> (const std::string &amp;p_name)</td></tr>
+<tr class="memdesc:a8186b21eedb1e0e05bae4467d7ec1e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of the transition.  <br /></td></tr>
+<tr class="separator:a8186b21eedb1e0e05bae4467d7ec1e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e706888cad183d93df354a729e8b32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a15e706888cad183d93df354a729e8b32">isLeaking</a> () const</td></tr>
+<tr class="memdesc:a15e706888cad183d93df354a729e8b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if a fork has a total proportion different from 1.  <br /></td></tr>
+<tr class="separator:a15e706888cad183d93df354a729e8b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf5c62a2bfacfb7b6f8b041a8757b5e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTFork.html">FMTFork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a2cf5c62a2bfacfb7b6f8b041a8757b5e">getFork</a> (const <a class="el" href="classCore_1_1FMTDevelopment.html">Core::FMTDevelopment</a> &amp;development, const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;ylds) const</td></tr>
+<tr class="memdesc:a2cf5c62a2bfacfb7b6f8b041a8757b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first useful fork for which the development can be disturbed based on the yields.  <br /></td></tr>
+<tr class="separator:a2cf5c62a2bfacfb7b6f8b041a8757b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d451010bbd2073c687d164d4142a4f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a13d451010bbd2073c687d164d4142a4f">getStaticThemes</a> (const std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> * &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:a13d451010bbd2073c687d164d4142a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the themes that have no attribute change in the transition masks (static themes).  <br /></td></tr>
+<tr class="separator:a13d451010bbd2073c687d164d4142a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f27e96a72d3569f008f2b07b61f454"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ac0f27e96a72d3569f008f2b07b61f454">canProduce</a> (const <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;testmask, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:ac0f27e96a72d3569f008f2b07b61f454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all the source masks that can produce the given mask through the transition.  <br /></td></tr>
+<tr class="separator:ac0f27e96a72d3569f008f2b07b61f454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ab569fc9e09413697a2ac451ea79cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a26ab569fc9e09413697a2ac451ea79cb">ageAfter</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &amp;devs, const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;action, const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;ylds, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:a26ab569fc9e09413697a2ac451ea79cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the average age after disturbance across the developments, for GCBM.  <br /></td></tr>
+<tr class="separator:a26ab569fc9e09413697a2ac451ea79cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac464b96f383d42269cc76c39ec8e49cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ac464b96f383d42269cc76c39ec8e49cc">mainTarget</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &amp;devs, const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;ylds) const</td></tr>
+<tr class="memdesc:ac464b96f383d42269cc76c39ec8e49cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the most targeted mask across the developments based on the yields, for GCBM.  <br /></td></tr>
+<tr class="separator:ac464b96f383d42269cc76c39ec8e49cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b05f2770e6fbc5133ee2dfbaa6bc83"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ae4b05f2770e6fbc5133ee2dfbaa6bc83">attributeTargets</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &amp;devs, const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;ylds, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:ae4b05f2770e6fbc5133ee2dfbaa6bc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classify the developments by mask key based on the yields.  <br /></td></tr>
+<tr class="separator:ae4b05f2770e6fbc5133ee2dfbaa6bc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159b7677d5fb97d0ec7409115a6f43b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a159b7677d5fb97d0ec7409115a6f43b4">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a159b7677d5fb97d0ec7409115a6f43b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than comparison operator of <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>.  <br /></td></tr>
+<tr class="separator:a159b7677d5fb97d0ec7409115a6f43b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5845acd33659f769f9b24bde0784bab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ad5845acd33659f769f9b24bde0784bab">operator==</a> (const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:ad5845acd33659f769f9b24bde0784bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator of <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>, checking if they have the same name.  <br /></td></tr>
+<tr class="separator:ad5845acd33659f769f9b24bde0784bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058860ced9d412846c0b1efd6f2aaf5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a058860ced9d412846c0b1efd6f2aaf5e">operator!=</a> (const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a058860ced9d412846c0b1efd6f2aaf5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality comparison operator of <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>, checking if they have a different name.  <br /></td></tr>
+<tr class="separator:a058860ced9d412846c0b1efd6f2aaf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773e338a997d108371bdd42ea6b18b5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#a773e338a997d108371bdd42ea6b18b5c">preSolve</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;originalthemes, std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;newthemes, bool compressdata=false) const</td></tr>
+<tr class="memdesc:a773e338a997d108371bdd42ea6b18b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a presolved transition based on a filter, the original themes and the new presolved themes.  <br /></td></tr>
+<tr class="separator:a773e338a997d108371bdd42ea6b18b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac570900c5207055f76cd803f4d0717b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ac570900c5207055f76cd803f4d0717b4">preSolveRef</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;p_filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;p_originalThemes, std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;p_newthemes, bool p_compressdata=false)</td></tr>
+<tr class="memdesc:ac570900c5207055f76cd803f4d0717b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presolve the transition in place based on a filter, the original themes and the new presolved themes.  <br /></td></tr>
+<tr class="separator:ac570900c5207055f76cd803f4d0717b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aaf4952415c50ff211953ed380b254dda"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#aaf4952415c50ff211953ed380b254dda">name</a></td></tr>
-<tr class="memdesc:aaf4952415c50ff211953ed380b254dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the FMTtranstion same name seen in <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>  <br /></td></tr>
-<tr class="separator:aaf4952415c50ff211953ed380b254dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af486d877a07427cb110de8a2e05ecd47"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#af486d877a07427cb110de8a2e05ecd47">name</a></td></tr>
+<tr class="memdesc:af486d877a07427cb110de8a2e05ecd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the FMTtranstion same name seen in <a class="el" href="classCore_1_1FMTAction.html" title="List of specifications dictating the operability of a subset of developments to this action.">FMTAction</a>  <br /></td></tr>
+<tr class="separator:af486d877a07427cb110de8a2e05ecd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTtransition.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTTransition.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memdesc:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a> through its base <a class="el" href="classCore_1_1FMTList.html">FMTList&lt;FMTFork&gt;</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>).  <br /></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classCore_1_1FMTlist"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classCore_1_1FMTlist')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classCore_1_1FMTlist.html">Core::FMTlist&lt; FMTfork &gt;</a></td></tr>
-<tr class="memitem:a1d93da163c03124eb47add7355987d15 inherit pub_types_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair&lt; <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>, <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &gt;::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a1d93da163c03124eb47add7355987d15">value_type</a></td></tr>
-<tr class="memdesc:a1d93da163c03124eb47add7355987d15 inherit pub_types_classCore_1_1FMTlist"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value typedef of the <a class="el" href="classCore_1_1FMTlist.html">FMTlist</a>.  <br /></td></tr>
-<tr class="separator:a1d93da163c03124eb47add7355987d15 inherit pub_types_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de5e0f86fdc83748badda121f62682a inherit pub_types_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair&lt; <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>, <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a5de5e0f86fdc83748badda121f62682a">iterator</a></td></tr>
-<tr class="memdesc:a5de5e0f86fdc83748badda121f62682a inherit pub_types_classCore_1_1FMTlist"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator typedef of the <a class="el" href="classCore_1_1FMTlist.html">FMTlist</a>.  <br /></td></tr>
-<tr class="separator:a5de5e0f86fdc83748badda121f62682a inherit pub_types_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb11c80f6144ccfa079315dbf9f1d7ed inherit pub_types_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair&lt; <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>, <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#abb11c80f6144ccfa079315dbf9f1d7ed">const_iterator</a></td></tr>
-<tr class="memdesc:abb11c80f6144ccfa079315dbf9f1d7ed inherit pub_types_classCore_1_1FMTlist"><td class="mdescLeft">&#160;</td><td class="mdescRight">Const_Iterator typedef of the <a class="el" href="classCore_1_1FMTlist.html">FMTlist</a>.  <br /></td></tr>
-<tr class="separator:abb11c80f6144ccfa079315dbf9f1d7ed inherit pub_types_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a41e9c6a09ec5a8776a1783f50cd685c3">getruntimelocation</a> ()</td></tr>
-<tr class="separator:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a9e8ae1c63c33235ce7eec85e29f5b871">getavailablememory</a> ()</td></tr>
-<tr class="separator:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classCore_1_1FMTlist"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCore_1_1FMTlist')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTlist.html">Core::FMTlist&lt; FMTfork &gt;</a></td></tr>
-<tr class="memitem:a7813bb9e573f1b8ce1c942dcb0136514 inherit pro_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a7813bb9e573f1b8ce1c942dcb0136514">compressmasks</a> (std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;newthemes)</td></tr>
-<tr class="separator:a7813bb9e573f1b8ce1c942dcb0136514 inherit pro_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9eb63deab58302b91ef9bb8d69e8295 inherit pro_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#ad9eb63deab58302b91ef9bb8d69e8295">compressmasks</a> (std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;newthemes)</td></tr>
-<tr class="separator:ad9eb63deab58302b91ef9bb8d69e8295 inherit pro_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a8cea87fbac82f906222f31dac689cc inherit pro_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a3a8cea87fbac82f906222f31dac689cc">presolvelist</a> (const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;originalthemes, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;newthemes)</td></tr>
-<tr class="separator:a3a8cea87fbac82f906222f31dac689cc inherit pro_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae25c802fd6eeca31f0fb7d30650b57a4 inherit pro_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#ae25c802fd6eeca31f0fb7d30650b57a4">copydata</a> (const <a class="el" href="classCore_1_1FMTlist.html">Core::FMTlist</a>&lt; <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> &gt; &amp;rhs)</td></tr>
-<tr class="separator:ae25c802fd6eeca31f0fb7d30650b57a4 inherit pro_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b96090d451804d47f5b1f188446d38 inherit pro_methods_classCore_1_1FMTlist"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTlist.html#a97b96090d451804d47f5b1f188446d38">copydata</a> (const <a class="el" href="classCore_1_1FMTlist.html">FMTlist</a>&lt; std::unique_ptr&lt; <a class="el" href="classCore_1_1FMTyieldhandler.html">Core::FMTyieldhandler</a> &gt; &gt; &amp;rhs)</td></tr>
-<tr class="separator:a97b96090d451804d47f5b1f188446d38 inherit pro_methods_classCore_1_1FMTlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
-<tr class="memitem:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a055e793199bfade8b06bc4850068b9a1">forcesave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
-<tr class="separator:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
-<tr class="memitem:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae956a19b19717b32398b7f9964078a78">forceload</a> (Archive &amp;ar, const unsigned int version)</td></tr>
-<tr class="separator:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63052f0f74d5884e111d7dd9e8f0cc7d inherit pro_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a63052f0f74d5884e111d7dd9e8f0cc7d">checksignals</a> () const</td></tr>
-<tr class="separator:a63052f0f74d5884e111d7dd9e8f0cc7d inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6f90ea44d4007946cc7bf0e145f7b5 inherit pro_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#abf6f90ea44d4007946cc7bf0e145f7b5">setCPLhandler</a> ()</td></tr>
-<tr class="separator:abf6f90ea44d4007946cc7bf0e145f7b5 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ab87002d0212cf0b244771760a6ec56d1">getclock</a> ()</td></tr>
-<tr class="separator:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
-<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a4df7cf79433c24ff1f98a4521c02e155">getduration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
-<tr class="separator:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af08563fdef482c39ad0cbf3a5018bfa0">getdurationinseconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
-<tr class="separator:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae67617ff7aedd99989a071bcf11206f2">_exhandler</a></td></tr>
-<tr class="memdesc:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <br /></td></tr>
-<tr class="separator:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a52f73fe80b34fae5f277ec5135d1d22d">_logger</a></td></tr>
-<tr class="memdesc:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <br /></td></tr>
-<tr class="separator:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> is a list of <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> (<a class="el" href="classCore_1_1FMTspec.html">FMTspec</a>). Each <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> has it's <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a>. Using a <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> you can simulate the impact of harvesting that development with a <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a>. Each fork is a transition source and its linked targets. <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> test for operability and <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> only "disturb" the FMTdevelopement and generates new FMTdevelopementpath. </p>
+<div class="textblock"><p>List of <a class="el" href="classCore_1_1FMTFork.html" title="Fork of a transition, holding the transition masks (targets and proportions) applied to a development...">FMTFork</a> describing the transition of an action, disturbing a development to generate new development paths. </p>
+<p>Each <a class="el" href="classCore_1_1FMTAction.html" title="List of specifications dictating the operability of a subset of developments to this action.">FMTAction</a> has its <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>. Each fork is a transition source with its linked targets. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad0ccbc6cedaa846531c62299e274d017" name="ad0ccbc6cedaa846531c62299e274d017"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0ccbc6cedaa846531c62299e274d017">&#9670;&#160;</a></span>FMTtransition() <span class="overload">[1/3]</span></h2>
+<a id="a0387871e3e88e158a875c17b90016546" name="a0387871e3e88e158a875c17b90016546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0387871e3e88e158a875c17b90016546">&#9670;&#160;</a></span>FMTTransition() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTtransition::FMTtransition </td>
+          <td class="memname">Core::FMTTransition::FMTTransition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default constructor for <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> </p>
+
+<p>Default constructor for <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>. </p>
 
 </div>
 </div>
-<a id="a7a597d85a34a48c443154f11295ffdc8" name="a7a597d85a34a48c443154f11295ffdc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a597d85a34a48c443154f11295ffdc8">&#9670;&#160;</a></span>~FMTtransition()</h2>
+<a id="ab9dc9999cba567038603818513f4fba2" name="ab9dc9999cba567038603818513f4fba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9dc9999cba567038603818513f4fba2">&#9670;&#160;</a></span>~FMTTransition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +215,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTtransition::~FMTtransition </td>
+          <td class="memname">Core::FMTTransition::~FMTTransition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -356,18 +227,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Default destructor for <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> </p>
+
+<p>Default destructor for <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>. </p>
 
 </div>
 </div>
-<a id="a188402929ef02daf01e5834b9eae9bd0" name="a188402929ef02daf01e5834b9eae9bd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a188402929ef02daf01e5834b9eae9bd0">&#9670;&#160;</a></span>FMTtransition() <span class="overload">[2/3]</span></h2>
+<a id="a141c71d2b141e89f5f74ed6011883d6e" name="a141c71d2b141e89f5f74ed6011883d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141c71d2b141e89f5f74ed6011883d6e">&#9670;&#160;</a></span>FMTTransition() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTtransition::FMTtransition </td>
+          <td class="memname">Core::FMTTransition::FMTTransition </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>lname</em></td><td>)</td>
@@ -375,58 +247,72 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> constructor keeping only the name of the <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a>. </p>
+
+<p>Construct a transition keeping only its name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lname</td><td>the name of the transition. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a2f8d45197fbb52cf25cd057ca7bbac4d" name="a2f8d45197fbb52cf25cd057ca7bbac4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f8d45197fbb52cf25cd057ca7bbac4d">&#9670;&#160;</a></span>FMTtransition() <span class="overload">[3/3]</span></h2>
+<a id="af5288384101032861702ddb77bee45a2" name="af5288384101032861702ddb77bee45a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5288384101032861702ddb77bee45a2">&#9670;&#160;</a></span>FMTTransition() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTtransition::FMTtransition </td>
+          <td class="memname">Core::FMTTransition::FMTTransition </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> copy constructor. </p>
+
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5ed13f6b6f8017ced7b0dd7835e4d6d" name="af5ed13f6b6f8017ced7b0dd7835e4d6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ed13f6b6f8017ced7b0dd7835e4d6d">&#9670;&#160;</a></span>age_after()</h2>
+<a id="a26ab569fc9e09413697a2ac451ea79cb" name="a26ab569fc9e09413697a2ac451ea79cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ab569fc9e09413697a2ac451ea79cb">&#9670;&#160;</a></span>ageAfter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int Core::FMTtransition::age_after </td>
+          <td class="memname">unsigned int Core::FMTTransition::ageAfter </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>devs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>action</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;&#160;</td>
           <td class="paramname"><em>ylds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>&#160;</td>
         </tr>
         <tr>
@@ -436,32 +322,43 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>For GCBM a GCBMtransition is described by the age of the stand after the disturbance of the stand. Using a vector of FMTdevelopement (devs) this functions return the average age after disturbances optained calculating the return age for each FMTdevelopement in the list. </p>
+
+<p>Return the average age after disturbance across the developments, for GCBM. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">devs</td><td>the developments. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>the action. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ylds</td><td>the yields. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the average age after disturbance. </dd></dl>
 
 </div>
 </div>
-<a id="a585ab8d137202873b1a122c7a83e2cf6" name="a585ab8d137202873b1a122c7a83e2cf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a585ab8d137202873b1a122c7a83e2cf6">&#9670;&#160;</a></span>attribute_targets()</h2>
+<a id="ae4b05f2770e6fbc5133ee2dfbaa6bc83" name="ae4b05f2770e6fbc5133ee2dfbaa6bc83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b05f2770e6fbc5133ee2dfbaa6bc83">&#9670;&#160;</a></span>attributeTargets()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &gt; Core::FMTtransition::attribute_targets </td>
+          <td class="memname">std::map&lt; std::string, std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &gt; Core::FMTTransition::attributeTargets </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>devs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;&#160;</td>
           <td class="paramname"><em>ylds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>&#160;</td>
         </tr>
         <tr>
@@ -471,26 +368,36 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function classify the FMTdevelopement list (devs) by <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> key based on a <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> section (ylds). The returned map key is an <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> string separed by "-" </p>
+
+<p>Classify the developments by mask key based on the yields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">devs</td><td>the developments. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ylds</td><td>the yields. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a map of mask string (separated by -) to developments. </dd></dl>
 
 </div>
 </div>
-<a id="a3dbc1601773fd01f827b65b08c7a5b9f" name="a3dbc1601773fd01f827b65b08c7a5b9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dbc1601773fd01f827b65b08c7a5b9f">&#9670;&#160;</a></span>canproduce()</h2>
+<a id="ac0f27e96a72d3569f008f2b07b61f454" name="ac0f27e96a72d3569f008f2b07b61f454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f27e96a72d3569f008f2b07b61f454">&#9670;&#160;</a></span>canProduce()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &gt; Core::FMTtransition::canproduce </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &gt; Core::FMTTransition::canProduce </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>testmask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>&#160;</td>
         </tr>
         <tr>
@@ -500,26 +407,35 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The function return all the possibles masks, if pass as a source for the transition, that can produce the given(mask). </p>
+
+<p>Return all the source masks that can produce the given mask through the transition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">testmask</td><td>the mask to produce. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the source masks that can produce the mask. </dd></dl>
 
 </div>
 </div>
-<a id="a5de73857936f35443729f0c0a3fa7edc" name="a5de73857936f35443729f0c0a3fa7edc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5de73857936f35443729f0c0a3fa7edc">&#9670;&#160;</a></span>getfork()</h2>
+<a id="a2cf5c62a2bfacfb7b6f8b041a8757b5e" name="a2cf5c62a2bfacfb7b6f8b041a8757b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cf5c62a2bfacfb7b6f8b041a8757b5e">&#9670;&#160;</a></span>getFork()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> * Core::FMTtransition::getfork </td>
+          <td class="memname">const <a class="el" href="classCore_1_1FMTFork.html">FMTFork</a> * Core::FMTTransition::getFork </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTdevelopment.html">Core::FMTdevelopment</a> &amp;&#160;</td>
-          <td class="paramname"><em>developement</em>, </td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTDevelopment.html">Core::FMTDevelopment</a> &amp;&#160;</td>
+          <td class="paramname"><em>development</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;&#160;</td>
           <td class="paramname"><em>ylds</em>&#160;</td>
         </tr>
         <tr>
@@ -529,12 +445,21 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> pointer for which the <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> (dev) can be disturbed based on a given <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> section (ylds). Looking at every possible fork returns only the first usefull fork. </p>
+
+<p>Return the first useful fork for which the development can be disturbed based on the yields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">development</td><td>the development. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ylds</td><td>the yields. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the fork, or nullptr. </dd></dl>
 
 </div>
 </div>
-<a id="a7d83fa5a4e83d1d75dbad39f51f45d83" name="a7d83fa5a4e83d1d75dbad39f51f45d83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d83fa5a4e83d1d75dbad39f51f45d83">&#9670;&#160;</a></span>getname()</h2>
+<a id="aa21e0fe893b2e29e37a7ec6013af1627" name="aa21e0fe893b2e29e37a7ec6013af1627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21e0fe893b2e29e37a7ec6013af1627">&#9670;&#160;</a></span>getName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -543,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Core::FMTtransition::getname </td>
+          <td class="memname">std::string Core::FMTTransition::getName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -555,63 +480,75 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Getter for the <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> name </p>
+
+<p>Get the name of the transition. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the transition. </dd></dl>
 
 </div>
 </div>
-<a id="a4aa1f9ea4a8aacb45b24f28d4a9e1d95" name="a4aa1f9ea4a8aacb45b24f28d4a9e1d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aa1f9ea4a8aacb45b24f28d4a9e1d95">&#9670;&#160;</a></span>getstaticthemes()</h2>
+<a id="a13d451010bbd2073c687d164d4142a4f" name="a13d451010bbd2073c687d164d4142a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d451010bbd2073c687d164d4142a4f">&#9670;&#160;</a></span>getStaticThemes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; Core::FMTtransition::getstaticthemes </td>
+          <td class="memname">std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> * &gt; Core::FMTTransition::getStaticThemes </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Using a list of (themes) this function returns a subset of the theme list for which their's no attribute change in the <a class="el" href="classCore_1_1FMTtransitionmask.html">FMTtransitionmask</a> (what we call here static themes). </p>
+
+<p>Return the themes that have no attribute change in the transition masks (static themes). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes to filter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the static themes. </dd></dl>
 
 </div>
 </div>
-<a id="a763a7ec88e099aba946a076b7b4f434b" name="a763a7ec88e099aba946a076b7b4f434b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a763a7ec88e099aba946a076b7b4f434b">&#9670;&#160;</a></span>isleaking()</h2>
+<a id="a15e706888cad183d93df354a729e8b32" name="a15e706888cad183d93df354a729e8b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e706888cad183d93df354a729e8b32">&#9670;&#160;</a></span>isLeaking()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTtransition::isleaking </td>
+          <td class="memname">bool Core::FMTTransition::isLeaking </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function checks if each <a class="el" href="classCore_1_1FMTfork.html">FMTfork</a> has a total proportion equal to 1 if the transition proportion != 1 then isleaking returns true. </p>
+
+<p>Return true if a fork has a total proportion different from 1. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the transition is leaking else false. </dd></dl>
 
 </div>
 </div>
-<a id="a8bde0949f7bab07371833ddf8ed92c1e" name="a8bde0949f7bab07371833ddf8ed92c1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bde0949f7bab07371833ddf8ed92c1e">&#9670;&#160;</a></span>main_target()</h2>
+<a id="ac464b96f383d42269cc76c39ec8e49cc" name="ac464b96f383d42269cc76c39ec8e49cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac464b96f383d42269cc76c39ec8e49cc">&#9670;&#160;</a></span>mainTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTtransition::main_target </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTTransition::mainTarget </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>devs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;&#160;</td>
           <td class="paramname"><em>ylds</em>&#160;</td>
         </tr>
         <tr>
@@ -621,153 +558,196 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Again for GCBM each GCBMtransition needs to have only one possible mask target. So this function returns the most targeted <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> across the developements list (devs) based on a given yields section (ylds). </p>
+
+<p>Return the most targeted mask across the developments based on the yields, for GCBM. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">devs</td><td>the developments. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ylds</td><td>the yields. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the main target mask. </dd></dl>
 
 </div>
 </div>
-<a id="a1061daaf11c9b4c2b89381d5698d8904" name="a1061daaf11c9b4c2b89381d5698d8904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1061daaf11c9b4c2b89381d5698d8904">&#9670;&#160;</a></span>operator std::string()</h2>
+<a id="aba9cab23b03e3e60e15b343780451d2b" name="aba9cab23b03e3e60e15b343780451d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba9cab23b03e3e60e15b343780451d2b">&#9670;&#160;</a></span>operator std::string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTtransition::operator std::string </td>
+          <td class="memname">Core::FMTTransition::operator std::string </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> conversion to string value like into a transition file. </p>
+
+<p>Convert the transition to a string as in a transition file. </p>
+<dl class="section return"><dt>Returns</dt><dd>the string representation of the transition. </dd></dl>
 
 </div>
 </div>
-<a id="a494cea2adb06eabca349c32b9e13ad75" name="a494cea2adb06eabca349c32b9e13ad75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a494cea2adb06eabca349c32b9e13ad75">&#9670;&#160;</a></span>operator!=()</h2>
+<a id="a058860ced9d412846c0b1efd6f2aaf5e" name="a058860ced9d412846c0b1efd6f2aaf5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a058860ced9d412846c0b1efd6f2aaf5e">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTtransition::operator!= </td>
+          <td class="memname">bool Core::FMTTransition::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> nonequality operator check if <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> (rhs) have not the same name. </p>
+
+<p>Inequality comparison operator of <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>, checking if they have a different name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the transition to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both transitions have a different name else false. </dd></dl>
 
 </div>
 </div>
-<a id="a9d23d7724c5278ff654b04408dcb278e" name="a9d23d7724c5278ff654b04408dcb278e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d23d7724c5278ff654b04408dcb278e">&#9670;&#160;</a></span>operator+=()</h2>
+<a id="a1629b745a5643f0cecff7bba727ed8d9" name="a1629b745a5643f0cecff7bba727ed8d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1629b745a5643f0cecff7bba727ed8d9">&#9670;&#160;</a></span>operator+=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp; Core::FMTtransition::operator+= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp; Core::FMTTransition::operator+= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;&#160;</td>
           <td class="paramname"><em>OtherTransition</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>append OtherTransition to this transition needs to be unskrink or it will throw an exception. </p>
+<p>Append another transition to this transition, which needs to be unshrunk otherwise an exception is thrown. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">OtherTransition</td><td>the other transition to append to this one. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OtherTransition</td><td>the other transition to append to this one. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference the the newly appended transition. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this appended transition. </dd></dl>
 
 </div>
 </div>
-<a id="a014207fbab21d95a256a5dce216f9e97" name="a014207fbab21d95a256a5dce216f9e97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a014207fbab21d95a256a5dce216f9e97">&#9670;&#160;</a></span>operator&lt;()</h2>
+<a id="a159b7677d5fb97d0ec7409115a6f43b4" name="a159b7677d5fb97d0ec7409115a6f43b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159b7677d5fb97d0ec7409115a6f43b4">&#9670;&#160;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTtransition::operator&lt; </td>
+          <td class="memname">bool Core::FMTTransition::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> less than operator. </p>
+
+<p>Less than comparison operator of <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the transition to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this transition is less than rhs else false. </dd></dl>
 
 </div>
 </div>
-<a id="aa12e305bb667a388b7a837a4eef5f11d" name="aa12e305bb667a388b7a837a4eef5f11d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa12e305bb667a388b7a837a4eef5f11d">&#9670;&#160;</a></span>operator=()</h2>
+<a id="ae3bb955ceffb95ea926332a86fe40bcf" name="ae3bb955ceffb95ea926332a86fe40bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3bb955ceffb95ea926332a86fe40bcf">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp; Core::FMTtransition::operator= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp; Core::FMTTransition::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> assignment operator. </p>
+
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a448271a7d5a10970258402c87be0dc24" name="a448271a7d5a10970258402c87be0dc24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a448271a7d5a10970258402c87be0dc24">&#9670;&#160;</a></span>operator==()</h2>
+<a id="ad5845acd33659f769f9b24bde0784bab" name="ad5845acd33659f769f9b24bde0784bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5845acd33659f769f9b24bde0784bab">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTtransition::operator== </td>
+          <td class="memname">bool Core::FMTTransition::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> equality operator check if <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> (rhs) have the same name. </p>
+
+<p>Equality comparison operator of <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a>, checking if they have the same name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the transition to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both transitions have the same name else false. </dd></dl>
 
 </div>
 </div>
-<a id="ae5cc3a15ee7f5deb3b681526265a0040" name="ae5cc3a15ee7f5deb3b681526265a0040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5cc3a15ee7f5deb3b681526265a0040">&#9670;&#160;</a></span>presolve()</h2>
+<a id="a773e338a997d108371bdd42ea6b18b5c" name="a773e338a997d108371bdd42ea6b18b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773e338a997d108371bdd42ea6b18b5c">&#9670;&#160;</a></span>preSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> Core::FMTtransition::presolve </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> Core::FMTTransition::preSolve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
           <td class="paramname"><em>filter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>originalthemes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>newthemes</em>, </td>
         </tr>
         <tr>
@@ -783,25 +763,115 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a presolved <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> based on a (basemask), the actual model <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> (originalthemes), a (presolvedmask) and the new presolved themes list. </p>
+
+<p>Return a presolved transition based on a filter, the original themes and the new presolved themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">originalthemes</td><td>the original themes. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">newthemes</td><td>the presolved themes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compressdata</td><td>if true compresses the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the presolved transition. </dd></dl>
 
 </div>
 </div>
-<a id="ae2dd9f88548b0d30e7313a3f9a3502a1" name="ae2dd9f88548b0d30e7313a3f9a3502a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2dd9f88548b0d30e7313a3f9a3502a1">&#9670;&#160;</a></span>single()</h2>
+<a id="ac570900c5207055f76cd803f4d0717b4" name="ac570900c5207055f76cd803f4d0717b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac570900c5207055f76cd803f4d0717b4">&#9670;&#160;</a></span>preSolveRef()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> Core::FMTtransition::single </td>
+          <td class="memname">void Core::FMTTransition::preSolveRef </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_originalThemes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_newthemes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_compressdata</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Presolve the transition in place based on a filter, the original themes and the new presolved themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_originalThemes</td><td>the original themes. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p_newthemes</td><td>the presolved themes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_compressdata</td><td>if true compresses the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8186b21eedb1e0e05bae4467d7ec1e68" name="a8186b21eedb1e0e05bae4467d7ec1e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8186b21eedb1e0e05bae4467d7ec1e68">&#9670;&#160;</a></span>setName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::FMTTransition::setName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the name of the transition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_name</td><td>the name to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1771a458a87705ef99f2476d3c84ebc" name="ab1771a458a87705ef99f2476d3c84ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1771a458a87705ef99f2476d3c84ebc">&#9670;&#160;</a></span>single()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCore_1_1FMTTransition.html">FMTTransition</a> Core::FMTTransition::single </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A transition can lead to multiple FMTdevelopementpath but for cell basesd models the <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> should lead to only one futurdevelopementtype. Calling this function returns the a new <a class="el" href="classCore_1_1FMTtransition.html">FMTtransition</a> that does not allow multiple FMTdevelopementpath. It select the path where the area proportion is the higher. </p>
+
+<p>Return a transition that leads to a single development path, selecting the one with the highest area proportion, for cell based models. </p>
+<dl class="section return"><dt>Returns</dt><dd>the single path transition. </dd></dl>
 
 </div>
 </div>
@@ -825,13 +895,27 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>serialize function is for serialization, used to do multiprocessing across multiple cpus (pickle in Pyhton) </p>
+
+<p>Serialize the <a class="el" href="classCore_1_1FMTTransition.html" title="List of FMTFork describing the transition of an action, disturbing a development to generate new deve...">FMTTransition</a> through its base <a class="el" href="classCore_1_1FMTList.html">FMTList&lt;FMTFork&gt;</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>the archive type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ar</td><td>the archive to serialize to or from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>the serialization version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aaf4952415c50ff211953ed380b254dda" name="aaf4952415c50ff211953ed380b254dda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf4952415c50ff211953ed380b254dda">&#9670;&#160;</a></span>name</h2>
+<a id="af486d877a07427cb110de8a2e05ecd47" name="af486d877a07427cb110de8a2e05ecd47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af486d877a07427cb110de8a2e05ecd47">&#9670;&#160;</a></span>name</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -840,7 +924,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Core::FMTtransition::name</td>
+          <td class="memname">std::string Core::FMTTransition::name</td>
         </tr>
       </table>
   </td>
@@ -850,12 +934,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>name of the FMTtranstion same name seen in <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> </p>
+<p>name of the FMTtranstion same name seen in <a class="el" href="classCore_1_1FMTAction.html" title="List of specifications dictating the operability of a subset of developments to this action.">FMTAction</a> </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTtransition_8hpp_source.html">FMTtransition.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTTransition_8h_source.html">FMTTransition.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,4 @@
-<map id="Graph::FMTbaseedgeproperties" name="Graph::FMTbaseedgeproperties">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,209,32"/>
-<area shape="rect" id="node2" href="$classGraph_1_1FMTedgeproperties.html" title=" " alt="" coords="19,80,195,107"/>
+<map id="Graph::FMTBaseEdgeProperties" name="Graph::FMTBaseEdgeProperties">
+<area shape="rect" id="node1" title="Base edge properties of a FMTGraph, holding the action of the edge." alt="" coords="5,5,215,32"/>
+<area shape="rect" id="node2" href="$classGraph_1_1FMTEdgeProperties.html" title="Edge properties of a FMTGraph, extending the base edge properties with a variable id and a proportion..." alt="" coords="20,80,200,107"/>
 </map>

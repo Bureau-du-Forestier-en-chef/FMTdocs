@@ -1,4 +1,4 @@
-<map id="Core::FMTtheme" name="Core::FMTtheme">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="6,5,123,32"/>
+<map id="Core::FMTTheme" name="Core::FMTTheme">
+<area shape="rect" id="node1" title="Class holding the attributes and aggregates of a single theme, describing a part of a FMTMask." alt="" coords="5,80,127,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="6,5,126,32"/>
 </map>

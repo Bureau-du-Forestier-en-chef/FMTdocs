@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Graph::FMToutputnodecache&lt; tvdescriptor, titerator &gt; Class Template Reference</title>
+<title>FMT: Graph::FMTOutputNodeCache&lt; tvdescriptor, titerator &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,59 +71,89 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceGraph.html">Graph</a></li><li class="navelem"><a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceGraph.html">Graph</a></li><li class="navelem"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classGraph_1_1FMToutputnodecache-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Graph::FMToutputnodecache&lt; tvdescriptor, titerator &gt; Class Template Reference</div></div>
+<a href="classGraph_1_1FMTOutputNodeCache-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Graph::FMTOutputNodeCache&lt; tvdescriptor, titerator &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMToutputnodecache_8hpp_source.html">FMToutputnodecache.hpp</a>&gt;</code></p>
+<p>Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation on the graph.  
+ <a href="classGraph_1_1FMTOutputNodeCache.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTOutputNodeCache_8h_source.html">FMTOutputNodeCache.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af620fb1c6b1cb180569aacf2af13fc85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#af620fb1c6b1cb180569aacf2af13fc85">FMToutputnodecache</a> ()=default</td></tr>
-<tr class="separator:af620fb1c6b1cb180569aacf2af13fc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9305711772018f0cdae5ed33fa1294b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a9305711772018f0cdae5ed33fa1294b7">FMToutputnodecache</a> (const <a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a9305711772018f0cdae5ed33fa1294b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7005bee829a6e1bab346eb0681332afe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a7005bee829a6e1bab346eb0681332afe">operator=</a> (const <a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a7005bee829a6e1bab346eb0681332afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b00a6438214a940a757ad2c5269e70f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a5b00a6438214a940a757ad2c5269e70f">~FMToutputnodecache</a> ()=default</td></tr>
-<tr class="separator:a5b00a6438214a940a757ad2c5269e70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a3f01f5e773c52f7e71bc98011fcbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a72a3f01f5e773c52f7e71bc98011fcbf">FMToutputnodecache</a> (const std::vector&lt; tvdescriptor &gt; &amp;initialnodes)</td></tr>
-<tr class="separator:a72a3f01f5e773c52f7e71bc98011fcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9b4b4006e628a8d76ca6ba4ac499ef8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#ae9b4b4006e628a8d76ca6ba4ac499ef8">FMToutputnodecache</a> (const titerator &amp;first, const titerator &amp;last)</td></tr>
-<tr class="separator:ae9b4b4006e628a8d76ca6ba4ac499ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc9ea3d56956e6bfad9cc727a13c9593"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#adc9ea3d56956e6bfad9cc727a13c9593">erasenode</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">Core::FMToutputnode</a> &amp;node)</td></tr>
-<tr class="separator:adc9ea3d56956e6bfad9cc727a13c9593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af90e16f2fb7ecae6979f880ca5e42e30"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#af90e16f2fb7ecae6979f880ca5e42e30">removelargest</a> ()</td></tr>
-<tr class="separator:af90e16f2fb7ecae6979f880ca5e42e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0528db2d94493ad9e23d872a415acc0"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; tvdescriptor &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#af0528db2d94493ad9e23d872a415acc0">getverticies</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">Core::FMToutputnode</a> &amp;targetnode, const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;actions, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;themes, bool &amp;exactvecticies) const</td></tr>
-<tr class="separator:af0528db2d94493ad9e23d872a415acc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1607ecd8a462f7b83f7e126c0c47facd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a1607ecd8a462f7b83f7e126c0c47facd">setvalidverticies</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">Core::FMToutputnode</a> &amp;targetnode, const std::vector&lt; tvdescriptor &gt; &amp;verticies) const</td></tr>
-<tr class="separator:a1607ecd8a462f7b83f7e126c0c47facd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633e243b8db6876e466238552b94a2fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a633e243b8db6876e466238552b94a2fa">clear</a> ()</td></tr>
-<tr class="separator:a633e243b8db6876e466238552b94a2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60bc8fe434782b33524bb18bc46ff95f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a60bc8fe434782b33524bb18bc46ff95f">rebase</a> (const titerator &amp;beginofdevs, const titerator &amp;endofdevs)</td></tr>
-<tr class="separator:a60bc8fe434782b33524bb18bc46ff95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05c1146da3a163d42d1763906d7dbb11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a05c1146da3a163d42d1763906d7dbb11">insert</a> (const <a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a> &amp;rhs)</td></tr>
-<tr class="separator:a05c1146da3a163d42d1763906d7dbb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c74464cd440f96967c127892d84814d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#a5c74464cd440f96967c127892d84814d">pushtovector</a> (std::vector&lt; tvdescriptor &gt; &amp;refvecs) const</td></tr>
-<tr class="separator:a5c74464cd440f96967c127892d84814d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f3106127df512128162c278f9063a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a20f3106127df512128162c278f9063a9">FMTOutputNodeCache</a> ()=default</td></tr>
+<tr class="memdesc:a20f3106127df512128162c278f9063a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>.  <br /></td></tr>
+<tr class="separator:a20f3106127df512128162c278f9063a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa43c3b1f856fd7a57565b9fa1300c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a0aa43c3b1f856fd7a57565b9fa1300c0">FMTOutputNodeCache</a> (const <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a0aa43c3b1f856fd7a57565b9fa1300c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>.  <br /></td></tr>
+<tr class="separator:a0aa43c3b1f856fd7a57565b9fa1300c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349ad84cf12aef79d8cf9d821b55a25e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a349ad84cf12aef79d8cf9d821b55a25e">operator=</a> (const <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a349ad84cf12aef79d8cf9d821b55a25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>.  <br /></td></tr>
+<tr class="separator:a349ad84cf12aef79d8cf9d821b55a25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad217ffa918481b2560dd664b8912dae3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#ad217ffa918481b2560dd664b8912dae3">~FMTOutputNodeCache</a> ()=default</td></tr>
+<tr class="memdesc:ad217ffa918481b2560dd664b8912dae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>.  <br /></td></tr>
+<tr class="separator:ad217ffa918481b2560dd664b8912dae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed097784cb0d4f2aa2d9f92fbfd7d37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#aaed097784cb0d4f2aa2d9f92fbfd7d37">FMTOutputNodeCache</a> (const std::vector&lt; tvdescriptor &gt; &amp;initialnodes)</td></tr>
+<tr class="memdesc:aaed097784cb0d4f2aa2d9f92fbfd7d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a cache from an initial set of nodes.  <br /></td></tr>
+<tr class="separator:aaed097784cb0d4f2aa2d9f92fbfd7d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ddb5323875284b70dd7ac9a7b20de7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a35ddb5323875284b70dd7ac9a7b20de7">FMTOutputNodeCache</a> (const titerator &amp;first, const titerator &amp;last, std::allocator&lt; tvdescriptor &gt; &amp;p_allocator, const size_t &amp;p_reserve)</td></tr>
+<tr class="memdesc:a35ddb5323875284b70dd7ac9a7b20de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a cache from a range of nodes, an allocator and a reserve size.  <br /></td></tr>
+<tr class="separator:a35ddb5323875284b70dd7ac9a7b20de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431694055a29d8910ea92cd263c46d01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a431694055a29d8910ea92cd263c46d01">eraseNode</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">Core::FMTOutputNode</a> &amp;node)</td></tr>
+<tr class="memdesc:a431694055a29d8910ea92cd263c46d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase a node from the cache.  <br /></td></tr>
+<tr class="separator:a431694055a29d8910ea92cd263c46d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb80ecb09c3faf526b23208ac144b49b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#aeb80ecb09c3faf526b23208ac144b49b">contains</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">Core::FMTOutputNode</a> &amp;node) const</td></tr>
+<tr class="memdesc:aeb80ecb09c3faf526b23208ac144b49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the cache contains a node.  <br /></td></tr>
+<tr class="separator:aeb80ecb09c3faf526b23208ac144b49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328554669e0cee9620cf85171eeb7577"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a328554669e0cee9620cf85171eeb7577">removeLargest</a> ()</td></tr>
+<tr class="memdesc:a328554669e0cee9620cf85171eeb7577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the largest entry of the cache and return the freed memory.  <br /></td></tr>
+<tr class="separator:a328554669e0cee9620cf85171eeb7577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136a5f3c58f56a42685fcb17718e2ee3"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; tvdescriptor &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a136a5f3c58f56a42685fcb17718e2ee3">getVertices</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">Core::FMTOutputNode</a> &amp;targetnode, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;actions, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;themes, bool &amp;exactvecticies) const</td></tr>
+<tr class="memdesc:a136a5f3c58f56a42685fcb17718e2ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the vertices for a target node, using the cache.  <br /></td></tr>
+<tr class="separator:a136a5f3c58f56a42685fcb17718e2ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc33d8a11e07d22cb1becc766c3ebc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#acfc33d8a11e07d22cb1becc766c3ebc1">setValidVertices</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">Core::FMTOutputNode</a> &amp;targetnode, const std::vector&lt; tvdescriptor &gt; &amp;vertices) const</td></tr>
+<tr class="memdesc:acfc33d8a11e07d22cb1becc766c3ebc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the valid vertices for a target node in the cache.  <br /></td></tr>
+<tr class="separator:acfc33d8a11e07d22cb1becc766c3ebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b37cb32c22a4df370341b116608e5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a25b37cb32c22a4df370341b116608e5c">clear</a> ()</td></tr>
+<tr class="memdesc:a25b37cb32c22a4df370341b116608e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the cache.  <br /></td></tr>
+<tr class="separator:a25b37cb32c22a4df370341b116608e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade79f5aba6ae4dcd2efba00394c13b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#ade79f5aba6ae4dcd2efba00394c13b45">rebase</a> (const titerator &amp;beginofdevs, const titerator &amp;endofdevs)</td></tr>
+<tr class="memdesc:ade79f5aba6ae4dcd2efba00394c13b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebase the cache on a new range of developments.  <br /></td></tr>
+<tr class="separator:ade79f5aba6ae4dcd2efba00394c13b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0109f01d02420a0b3af6a4efd4c62e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#ad0109f01d02420a0b3af6a4efd4c62e5">insert</a> (const <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ad0109f01d02420a0b3af6a4efd4c62e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert the content of another cache into this cache.  <br /></td></tr>
+<tr class="separator:ad0109f01d02420a0b3af6a4efd4c62e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce0ea93e02691d716cc1dbc905ea2c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#a3ce0ea93e02691d716cc1dbc905ea2c4">_pushToVector</a> (std::vector&lt; tvdescriptor &gt; &amp;refvecs) const</td></tr>
+<tr class="memdesc:a3ce0ea93e02691d716cc1dbc905ea2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push the nodes of the cache into a vector.  <br /></td></tr>
+<tr class="separator:a3ce0ea93e02691d716cc1dbc905ea2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMToutputnodecache.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af620fb1c6b1cb180569aacf2af13fc85" name="af620fb1c6b1cb180569aacf2af13fc85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af620fb1c6b1cb180569aacf2af13fc85">&#9670;&#160;</a></span>FMToutputnodecache() <span class="overload">[1/4]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class tvdescriptor, class titerator&gt;<br />
+class Graph::FMTOutputNodeCache&lt; tvdescriptor, titerator &gt;</div><p>Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation on the graph. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">tvdescriptor</td><td>the vertex descriptor type. </td></tr>
+    <tr><td class="paramname">titerator</td><td>the iterator type over the vertices. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a20f3106127df512128162c278f9063a9" name="a20f3106127df512128162c278f9063a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f3106127df512128162c278f9063a9">&#9670;&#160;</a></span>FMTOutputNodeCache() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +164,7 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::FMToutputnodecache </td>
+          <td class="memname"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::FMTOutputNodeCache </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -147,10 +177,12 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>. </p>
+
 </div>
 </div>
-<a id="a9305711772018f0cdae5ed33fa1294b7" name="a9305711772018f0cdae5ed33fa1294b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9305711772018f0cdae5ed33fa1294b7">&#9670;&#160;</a></span>FMToutputnodecache() <span class="overload">[2/4]</span></h2>
+<a id="a0aa43c3b1f856fd7a57565b9fa1300c0" name="a0aa43c3b1f856fd7a57565b9fa1300c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa43c3b1f856fd7a57565b9fa1300c0">&#9670;&#160;</a></span>FMTOutputNodeCache() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,9 +193,9 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::FMToutputnodecache </td>
+          <td class="memname"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::FMTOutputNodeCache </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -175,10 +207,18 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Copy constructor for <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a5b00a6438214a940a757ad2c5269e70f" name="a5b00a6438214a940a757ad2c5269e70f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b00a6438214a940a757ad2c5269e70f">&#9670;&#160;</a></span>~FMToutputnodecache()</h2>
+<a id="ad217ffa918481b2560dd664b8912dae3" name="ad217ffa918481b2560dd664b8912dae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad217ffa918481b2560dd664b8912dae3">&#9670;&#160;</a></span>~FMTOutputNodeCache()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +229,7 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::~<a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a> </td>
+          <td class="memname"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::~<a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -202,10 +242,12 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Default destructor for <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>. </p>
+
 </div>
 </div>
-<a id="a72a3f01f5e773c52f7e71bc98011fcbf" name="a72a3f01f5e773c52f7e71bc98011fcbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72a3f01f5e773c52f7e71bc98011fcbf">&#9670;&#160;</a></span>FMToutputnodecache() <span class="overload">[3/4]</span></h2>
+<a id="aaed097784cb0d4f2aa2d9f92fbfd7d37" name="aaed097784cb0d4f2aa2d9f92fbfd7d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed097784cb0d4f2aa2d9f92fbfd7d37">&#9670;&#160;</a></span>FMTOutputNodeCache() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +258,7 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::FMToutputnodecache </td>
+          <td class="memname"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::FMTOutputNodeCache </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; tvdescriptor &gt; &amp;&#160;</td>
           <td class="paramname"><em>initialnodes</em></td><td>)</td>
@@ -230,10 +272,18 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a cache from an initial set of nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">initialnodes</td><td>the initial nodes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ae9b4b4006e628a8d76ca6ba4ac499ef8" name="ae9b4b4006e628a8d76ca6ba4ac499ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9b4b4006e628a8d76ca6ba4ac499ef8">&#9670;&#160;</a></span>FMToutputnodecache() <span class="overload">[4/4]</span></h2>
+<a id="a35ddb5323875284b70dd7ac9a7b20de7" name="a35ddb5323875284b70dd7ac9a7b20de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ddb5323875284b70dd7ac9a7b20de7">&#9670;&#160;</a></span>FMTOutputNodeCache() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +294,7 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::FMToutputnodecache </td>
+          <td class="memname"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::FMTOutputNodeCache </td>
           <td>(</td>
           <td class="paramtype">const titerator &amp;&#160;</td>
           <td class="paramname"><em>first</em>, </td>
@@ -253,7 +303,19 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const titerator &amp;&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::allocator&lt; tvdescriptor &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_allocator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>p_reserve</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -268,11 +330,22 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a cache from a range of nodes, an allocator and a reserve size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">first</td><td>the first iterator. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">last</td><td>the last iterator. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_allocator</td><td>the allocator. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_reserve</td><td>the reserve size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a633e243b8db6876e466238552b94a2fa" name="a633e243b8db6876e466238552b94a2fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a633e243b8db6876e466238552b94a2fa">&#9670;&#160;</a></span>clear()</h2>
+<a id="a3ce0ea93e02691d716cc1dbc905ea2c4" name="a3ce0ea93e02691d716cc1dbc905ea2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce0ea93e02691d716cc1dbc905ea2c4">&#9670;&#160;</a></span>_pushToVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +356,43 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::clear </td>
+          <td class="memname">void <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::_pushToVector </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; tvdescriptor &gt; &amp;&#160;</td>
+          <td class="paramname"><em>refvecs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Push the nodes of the cache into a vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">refvecs</td><td>the vector to push into. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25b37cb32c22a4df370341b116608e5c" name="a25b37cb32c22a4df370341b116608e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b37cb32c22a4df370341b116608e5c">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class tvdescriptor , class titerator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -296,10 +405,12 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Clear the cache. </p>
+
 </div>
 </div>
-<a id="adc9ea3d56956e6bfad9cc727a13c9593" name="adc9ea3d56956e6bfad9cc727a13c9593"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc9ea3d56956e6bfad9cc727a13c9593">&#9670;&#160;</a></span>erasenode()</h2>
+<a id="aeb80ecb09c3faf526b23208ac144b49b" name="aeb80ecb09c3faf526b23208ac144b49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb80ecb09c3faf526b23208ac144b49b">&#9670;&#160;</a></span>contains()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,9 +421,46 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::erasenode </td>
+          <td class="memname">bool <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::contains </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">Core::FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">Core::FMTOutputNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the cache contains a node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">node</td><td>the node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the cache contains the node else false. </dd></dl>
+
+</div>
+</div>
+<a id="a431694055a29d8910ea92cd263c46d01" name="a431694055a29d8910ea92cd263c46d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431694055a29d8910ea92cd263c46d01">&#9670;&#160;</a></span>eraseNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class tvdescriptor , class titerator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::eraseNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">Core::FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
           <td></td>
         </tr>
@@ -324,10 +472,18 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Erase a node from the cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">node</td><td>the node to erase. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="af0528db2d94493ad9e23d872a415acc0" name="af0528db2d94493ad9e23d872a415acc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0528db2d94493ad9e23d872a415acc0">&#9670;&#160;</a></span>getverticies()</h2>
+<a id="a136a5f3c58f56a42685fcb17718e2ee3" name="a136a5f3c58f56a42685fcb17718e2ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136a5f3c58f56a42685fcb17718e2ee3">&#9670;&#160;</a></span>getVertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,21 +494,21 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; tvdescriptor &gt; &amp; <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::getverticies </td>
+          <td class="memname">const std::vector&lt; tvdescriptor &gt; &amp; <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::getVertices </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">Core::FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">Core::FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>targetnode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">Core::FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>, </td>
         </tr>
         <tr>
@@ -374,10 +530,22 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Return the vertices for a target node, using the cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetnode</td><td>the target node. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">exactvecticies</td><td>true if the returned vertices are an exact match. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the vertices for the target node. </dd></dl>
+
 </div>
 </div>
-<a id="a05c1146da3a163d42d1763906d7dbb11" name="a05c1146da3a163d42d1763906d7dbb11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05c1146da3a163d42d1763906d7dbb11">&#9670;&#160;</a></span>insert()</h2>
+<a id="ad0109f01d02420a0b3af6a4efd4c62e5" name="ad0109f01d02420a0b3af6a4efd4c62e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0109f01d02420a0b3af6a4efd4c62e5">&#9670;&#160;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,9 +556,9 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::insert </td>
+          <td class="memname">void <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::insert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -402,10 +570,18 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Insert the content of another cache into this cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the cache to insert. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a7005bee829a6e1bab346eb0681332afe" name="a7005bee829a6e1bab346eb0681332afe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7005bee829a6e1bab346eb0681332afe">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a349ad84cf12aef79d8cf9d821b55a25e" name="a349ad84cf12aef79d8cf9d821b55a25e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349ad84cf12aef79d8cf9d821b55a25e">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,9 +592,9 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a> &amp; <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a> &amp; <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMToutputnodecache.html">FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -430,10 +606,19 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classGraph_1_1FMTOutputNodeCache.html" title="Cache of graph vertices for output nodes, keyed by output source, used to speed up output computation...">FMTOutputNodeCache</a>. </dd></dl>
+
 </div>
 </div>
-<a id="a5c74464cd440f96967c127892d84814d" name="a5c74464cd440f96967c127892d84814d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c74464cd440f96967c127892d84814d">&#9670;&#160;</a></span>pushtovector()</h2>
+<a id="ade79f5aba6ae4dcd2efba00394c13b45" name="ade79f5aba6ae4dcd2efba00394c13b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade79f5aba6ae4dcd2efba00394c13b45">&#9670;&#160;</a></span>rebase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,35 +629,7 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::pushtovector </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; tvdescriptor &gt; &amp;&#160;</td>
-          <td class="paramname"><em>refvecs</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a60bc8fe434782b33524bb18bc46ff95f" name="a60bc8fe434782b33524bb18bc46ff95f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60bc8fe434782b33524bb18bc46ff95f">&#9670;&#160;</a></span>rebase()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class tvdescriptor , class titerator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::rebase </td>
+          <td class="memname">void <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::rebase </td>
           <td>(</td>
           <td class="paramtype">const titerator &amp;&#160;</td>
           <td class="paramname"><em>beginofdevs</em>, </td>
@@ -496,10 +653,19 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Rebase the cache on a new range of developments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">beginofdevs</td><td>the first iterator. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endofdevs</td><td>the last iterator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="af90e16f2fb7ecae6979f880ca5e42e30" name="af90e16f2fb7ecae6979f880ca5e42e30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af90e16f2fb7ecae6979f880ca5e42e30">&#9670;&#160;</a></span>removelargest()</h2>
+<a id="a328554669e0cee9620cf85171eeb7577" name="a328554669e0cee9620cf85171eeb7577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328554669e0cee9620cf85171eeb7577">&#9670;&#160;</a></span>removeLargest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -510,7 +676,7 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long long <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::removelargest </td>
+          <td class="memname">unsigned long long <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::removeLargest </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -523,10 +689,13 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Remove the largest entry of the cache and return the freed memory. </p>
+<dl class="section return"><dt>Returns</dt><dd>the amount of freed memory in bytes. </dd></dl>
+
 </div>
 </div>
-<a id="a1607ecd8a462f7b83f7e126c0c47facd" name="a1607ecd8a462f7b83f7e126c0c47facd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1607ecd8a462f7b83f7e126c0c47facd">&#9670;&#160;</a></span>setvalidverticies()</h2>
+<a id="acfc33d8a11e07d22cb1becc766c3ebc1" name="acfc33d8a11e07d22cb1becc766c3ebc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc33d8a11e07d22cb1becc766c3ebc1">&#9670;&#160;</a></span>setValidVertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,16 +706,16 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classGraph_1_1FMToutputnodecache.html">Graph::FMToutputnodecache</a>&lt; tvdescriptor, titerator &gt;::setvalidverticies </td>
+          <td class="memname">void <a class="el" href="classGraph_1_1FMTOutputNodeCache.html">Graph::FMTOutputNodeCache</a>&lt; tvdescriptor, titerator &gt;::setValidVertices </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">Core::FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">Core::FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>targetnode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; tvdescriptor &gt; &amp;&#160;</td>
-          <td class="paramname"><em>verticies</em>&#160;</td>
+          <td class="paramname"><em>vertices</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -560,6 +729,15 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Set the valid vertices for a target node in the cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetnode</td><td>the target node. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>the vertices to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -589,7 +767,7 @@ template&lt;class tvdescriptor , class titerator &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMToutputnodecache_8hpp_source.html">FMToutputnodecache.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTOutputNodeCache_8h_source.html">FMTOutputNodeCache.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

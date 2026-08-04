@@ -1,6 +1,6 @@
-<map id="Core::FMTGCBMtransition" name="Core::FMTGCBMtransition">
-<area shape="rect" id="node1" title=" " alt="" coords="5,311,180,337"/>
-<area shape="rect" id="node2" title=" " alt="" coords="131,204,278,247"/>
-<area shape="rect" id="node3" title=" " alt="" coords="53,97,132,124"/>
-<area shape="rect" id="node4" title=" " alt="" coords="30,5,155,48"/>
+<map id="Core::FMTGCBMTransition" name="Core::FMTGCBMTransition">
+<area shape="rect" id="node1" title="Simple container for a GCBM transition, only useful when working with GCBM." alt="" coords="5,311,183,337"/>
+<area shape="rect" id="node2" title=" " alt="" coords="133,204,279,247"/>
+<area shape="rect" id="node3" title=" " alt="" coords="54,97,134,124"/>
+<area shape="rect" id="node4" title=" " alt="" coords="31,5,157,48"/>
 </map>

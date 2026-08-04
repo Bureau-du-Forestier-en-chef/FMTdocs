@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTmaskcomparator Class Reference</title>
+<title>FMT: Core::FMTMaskComparator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,70 +71,90 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTmaskcomparator.html">FMTmaskcomparator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTMaskComparator.html">FMTMaskComparator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classCore_1_1FMTmaskcomparator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTmaskcomparator Class Reference</div></div>
+<a href="classCore_1_1FMTMaskComparator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTMaskComparator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTmask_8hpp_source.html">FMTmask.hpp</a>&gt;</code></p>
+<p>Comparator used to check if a mask already exists in a std container.  
+ <a href="classCore_1_1FMTMaskComparator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTMask_8h_source.html">FMTMask.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7edc21dbb01233c05ce19fcf0ec0cbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmaskcomparator.html#ab7edc21dbb01233c05ce19fcf0ec0cbc">FMTmaskcomparator</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;lbase_mask)</td></tr>
-<tr class="separator:ab7edc21dbb01233c05ce19fcf0ec0cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5884b712aa59e774ea58f852be4876c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmaskcomparator.html#a5884b712aa59e774ea58f852be4876c4">operator()</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask) const</td></tr>
-<tr class="separator:a5884b712aa59e774ea58f852be4876c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a43e15da17b08b2358adc4aec1eec09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMaskComparator.html#a5a43e15da17b08b2358adc4aec1eec09">FMTMaskComparator</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;lbase_mask)</td></tr>
+<tr class="memdesc:a5a43e15da17b08b2358adc4aec1eec09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the comparator from the mask to match.  <br /></td></tr>
+<tr class="separator:a5a43e15da17b08b2358adc4aec1eec09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace114708929adc777c3f6cbb093f2b1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMaskComparator.html#ace114708929adc777c3f6cbb093f2b1e">operator()</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;mask) const</td></tr>
+<tr class="memdesc:ace114708929adc777c3f6cbb093f2b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matching test operator for the comparator.  <br /></td></tr>
+<tr class="separator:ace114708929adc777c3f6cbb093f2b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCore_1_1FMTmaskcomparator.html">FMTmaskcomparator</a> to check if the mask data already exist in a std container. </p>
+<div class="textblock"><p>Comparator used to check if a mask already exists in a std container. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab7edc21dbb01233c05ce19fcf0ec0cbc" name="ab7edc21dbb01233c05ce19fcf0ec0cbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7edc21dbb01233c05ce19fcf0ec0cbc">&#9670;&#160;</a></span>FMTmaskcomparator()</h2>
+<a id="a5a43e15da17b08b2358adc4aec1eec09" name="a5a43e15da17b08b2358adc4aec1eec09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a43e15da17b08b2358adc4aec1eec09">&#9670;&#160;</a></span>FMTMaskComparator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTmaskcomparator::FMTmaskcomparator </td>
+          <td class="memname">Core::FMTMaskComparator::FMTMaskComparator </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>lbase_mask</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTmaskcomparator.html">FMTmaskcomparator</a> constructor lbase_mask is the mask of that we want to match. </p>
+
+<p>Construct the comparator from the mask to match. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbase_mask</td><td>the mask to match. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5884b712aa59e774ea58f852be4876c4" name="a5884b712aa59e774ea58f852be4876c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5884b712aa59e774ea58f852be4876c4">&#9670;&#160;</a></span>operator()()</h2>
+<a id="ace114708929adc777c3f6cbb093f2b1e" name="ace114708929adc777c3f6cbb093f2b1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace114708929adc777c3f6cbb093f2b1e">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTmaskcomparator::operator() </td>
+          <td class="memname">bool Core::FMTMaskComparator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>mask</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Matching test operator for <a class="el" href="classCore_1_1FMTmaskcomparator.html">FMTmaskcomparator</a>. </p>
+
+<p>Matching test operator for the comparator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>the mask to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mask matches else false. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTmask_8hpp_source.html">FMTmask.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTMask_8h_source.html">FMTMask.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

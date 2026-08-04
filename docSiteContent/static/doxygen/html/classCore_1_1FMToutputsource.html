@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMToutputsource Class Reference</title>
+<title>FMT: Core::FMTOutputSource Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,245 +71,234 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classCore_1_1FMToutputsource-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMToutputsource Class Reference</div></div>
+<a href="classCore_1_1FMTOutputSource-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTOutputSource Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMToutputsource_8hpp_source.html">FMToutputsource.hpp</a>&gt;</code></p>
+<p>Source of an output holding a mask, a target and values, used to compute an output.  
+ <a href="classCore_1_1FMTOutputSource.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTOutputSource_8h_source.html">FMTOutputSource.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Core::FMToutputsource:</div>
+Inheritance diagram for Core::FMTOutputSource:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMToutputsource__inherit__graph.svg" width="168" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTOutputSource__inherit__graph.svg" width="174" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Core::FMToutputsource:</div>
+Collaboration diagram for Core::FMTOutputSource:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMToutputsource__coll__graph.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTOutputSource__coll__graph.svg" width="174" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec432639ffa28c55b553e21bbef45353"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aec432639ffa28c55b553e21bbef45353">FMToutputsource</a> ()</td></tr>
-<tr class="separator:aec432639ffa28c55b553e21bbef45353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6caeb8e8dc1a698ce470631c80f9af60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a6caeb8e8dc1a698ce470631c80f9af60">~FMToutputsource</a> ()=default</td></tr>
-<tr class="separator:a6caeb8e8dc1a698ce470631c80f9af60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a062c605dce5d2b5eafef9a0a71187"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a16a062c605dce5d2b5eafef9a0a71187">FMToutputsource</a> (const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> ltarget, double lvalue=0, std::string lyield=&quot;&quot;, std::string laction=&quot;&quot;, int origin=-1, int ttarget=-1)</td></tr>
-<tr class="separator:a16a062c605dce5d2b5eafef9a0a71187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e6ea2e601c5a2ad11059fbaca689ca5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a9e6ea2e601c5a2ad11059fbaca689ca5">FMToutputsource</a> (const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> ltarget, std::vector&lt; double &gt;lvalues, int origin=-1, int ttarget=-1, std::string llevelname=&quot;&quot;)</td></tr>
-<tr class="separator:a9e6ea2e601c5a2ad11059fbaca689ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa39b5443beae55c1e4dee1c46e902c0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aa39b5443beae55c1e4dee1c46e902c0c">FMToutputsource</a> (const <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;spec, const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;lmask, const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> ltarget, std::string lyield=&quot;&quot;, std::string laction=&quot;&quot;, int origin=-1, int ttarget=-1)</td></tr>
-<tr class="separator:aa39b5443beae55c1e4dee1c46e902c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5122b0f06ef7e62dc04d2022e7b8c69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aa5122b0f06ef7e62dc04d2022e7b8c69">FMToutputsource</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs)</td></tr>
-<tr class="separator:aa5122b0f06ef7e62dc04d2022e7b8c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1913a3b14ea32ac211d85a412c541003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a1913a3b14ea32ac211d85a412c541003">operator=</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs)</td></tr>
-<tr class="separator:a1913a3b14ea32ac211d85a412c541003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0409357afab351fc6ea9ade8756c24e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#ae0409357afab351fc6ea9ade8756c24e">operator std::string</a> () const override</td></tr>
-<tr class="separator:ae0409357afab351fc6ea9ade8756c24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f5f18ed51de37adcd6718748a989284"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a6f5f18ed51de37adcd6718748a989284">operator==</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs) const</td></tr>
-<tr class="separator:a6f5f18ed51de37adcd6718748a989284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5095da6e3ad723bb8738cc0457366115"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a5095da6e3ad723bb8738cc0457366115">operator!=</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs) const</td></tr>
-<tr class="separator:a5095da6e3ad723bb8738cc0457366115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11fd63b7c326146753044884151aef71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a11fd63b7c326146753044884151aef71">operator&lt;</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs) const</td></tr>
-<tr class="separator:a11fd63b7c326146753044884151aef71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2b71a003be817d1de7e1f763cd94cd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#ac2b71a003be817d1de7e1f763cd94cd6">getoutputorigin</a> () const</td></tr>
-<tr class="separator:ac2b71a003be817d1de7e1f763cd94cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8791bad95ed8c45b10a736e9d167b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aca8791bad95ed8c45b10a736e9d167b2">getthemetarget</a> () const</td></tr>
-<tr class="separator:aca8791bad95ed8c45b10a736e9d167b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab372e95558d92f96b3de2f065ecffaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aab372e95558d92f96b3de2f065ecffaf">isinaggregate</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs, const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;actions) const</td></tr>
-<tr class="separator:aab372e95558d92f96b3de2f065ecffaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d3eb9c42a7f5a5ba239a3658685b3b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a2d3eb9c42a7f5a5ba239a3658685b3b7">issubsetof</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs, const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;actions) const</td></tr>
-<tr class="separator:a2d3eb9c42a7f5a5ba239a3658685b3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe66b199fd9098bf48370bcb14671586"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#abe66b199fd9098bf48370bcb14671586">issubsetof</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs) const</td></tr>
-<tr class="separator:abe66b199fd9098bf48370bcb14671586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad70479b4501a44a1b200f541924be863"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#ad70479b4501a44a1b200f541924be863">issamebutdifferentaction</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs) const</td></tr>
-<tr class="separator:ad70479b4501a44a1b200f541924be863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40f4a0979bab48a22b5cf3481a55f56"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aa40f4a0979bab48a22b5cf3481a55f56">getmask</a> () const</td></tr>
-<tr class="separator:aa40f4a0979bab48a22b5cf3481a55f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28445ca52769e999edb3dd2d1676850b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a28445ca52769e999edb3dd2d1676850b">setmask</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;newmask)</td></tr>
-<tr class="separator:a28445ca52769e999edb3dd2d1676850b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f2115f85a2a262add849ccc537651d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aa8f2115f85a2a262add849ccc537651d">setaction</a> (const std::string &amp;actionname)</td></tr>
-<tr class="separator:aa8f2115f85a2a262add849ccc537651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cbbe768da5d03093b2b6111674d4b58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a4cbbe768da5d03093b2b6111674d4b58">settarget</a> (const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> &amp;newtype)</td></tr>
-<tr class="separator:a4cbbe768da5d03093b2b6111674d4b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57bccda0a6f87a94f69005da681af9d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a57bccda0a6f87a94f69005da681af9d2">setthemetarget</a> (const int &amp;newttarget)</td></tr>
-<tr class="separator:a57bccda0a6f87a94f69005da681af9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec06b46494329a96159b3fa360b56fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#acec06b46494329a96159b3fa360b56fb">setoutputorigin</a> (const int &amp;neworigin)</td></tr>
-<tr class="separator:acec06b46494329a96159b3fa360b56fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd89caa4160a753e45d2c785cb03d565"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#acd89caa4160a753e45d2c785cb03d565">resetvalues</a> (const <a class="el" href="classCore_1_1FMToperator.html">FMToperator</a> &amp;op, const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;other)</td></tr>
-<tr class="separator:acd89caa4160a753e45d2c785cb03d565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0424d48ba22dac898cab086f8ebfbb23"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a0424d48ba22dac898cab086f8ebfbb23">getaction</a> () const</td></tr>
-<tr class="separator:a0424d48ba22dac898cab086f8ebfbb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a029904d838f6d38eb2cdc99e95bdf6f0"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a029904d838f6d38eb2cdc99e95bdf6f0">getyield</a> () const</td></tr>
-<tr class="separator:a029904d838f6d38eb2cdc99e95bdf6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f645597f470c47a88d171c205b24917"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a2f645597f470c47a88d171c205b24917">gettarget</a> () const</td></tr>
-<tr class="separator:a2f645597f470c47a88d171c205b24917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a338a9e09807c9b79d02e84d37c7aea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a9a338a9e09807c9b79d02e84d37c7aea">getvalue</a> (int period=0) const</td></tr>
-<tr class="separator:a9a338a9e09807c9b79d02e84d37c7aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a2e576effadbae368f5a74474e5cfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a43a2e576effadbae368f5a74474e5cfb">isvariable</a> () const</td></tr>
-<tr class="separator:a43a2e576effadbae368f5a74474e5cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee4ccaa33c0caee26de2805ae975cfc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#afee4ccaa33c0caee26de2805ae975cfc">islevel</a> () const</td></tr>
-<tr class="separator:afee4ccaa33c0caee26de2805ae975cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4be0308644981a275e681f56f5d84c31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a4be0308644981a275e681f56f5d84c31">isconstant</a> () const</td></tr>
-<tr class="separator:a4be0308644981a275e681f56f5d84c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d0161b9a8aa544fb6f8827af02224f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a11d0161b9a8aa544fb6f8827af02224f">isvariablelevel</a> () const</td></tr>
-<tr class="separator:a11d0161b9a8aa544fb6f8827af02224f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59a98cca13898640df1b198bd6f52885"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a59a98cca13898640df1b198bd6f52885">getlevel</a> () const</td></tr>
-<tr class="separator:a59a98cca13898640df1b198bd6f52885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4ca314508560a078566a74572701f24"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aa4ca314508560a078566a74572701f24">getvalues</a> () const</td></tr>
-<tr class="separator:aa4ca314508560a078566a74572701f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e1430d353935368680f03c5ba99844"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a85e1430d353935368680f03c5ba99844">isnull</a> (const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;ylds) const</td></tr>
-<tr class="separator:a85e1430d353935368680f03c5ba99844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880dfaab194e1ec91159cad2d52f57c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a880dfaab194e1ec91159cad2d52f57c5">istimeyield</a> () const</td></tr>
-<tr class="separator:a880dfaab194e1ec91159cad2d52f57c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a101f5f6bba6ab758762de0e2e9943bc0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a101f5f6bba6ab758762de0e2e9943bc0">targets</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;actions) const</td></tr>
-<tr class="separator:a101f5f6bba6ab758762de0e2e9943bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b6f7d087c9c6e15082fc175df8b3bb"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a51b6f7d087c9c6e15082fc175df8b3bb">targetsset</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;actions) const</td></tr>
-<tr class="separator:a51b6f7d087c9c6e15082fc175df8b3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67e8490c58b1bb2cc66b07fbef32d8c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a67e8490c58b1bb2cc66b07fbef32d8c8">isinventory</a> () const</td></tr>
-<tr class="separator:a67e8490c58b1bb2cc66b07fbef32d8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a9f968997ed93873ba667526d7bf74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#ac0a9f968997ed93873ba667526d7bf74">useinedges</a> () const</td></tr>
-<tr class="separator:ac0a9f968997ed93873ba667526d7bf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73449caad3fec8fb682cf7ca4cdb6eca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a73449caad3fec8fb682cf7ca4cdb6eca">isnextperiod</a> () const</td></tr>
-<tr class="separator:a73449caad3fec8fb682cf7ca4cdb6eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd345c83a0329e85ff45d90b1e26f93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a9dd345c83a0329e85ff45d90b1e26f93">useoutedges</a> () const</td></tr>
-<tr class="separator:a9dd345c83a0329e85ff45d90b1e26f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d742fe41f5e24ead50b5e7ea5ddb89"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a38d742fe41f5e24ead50b5e7ea5ddb89">getcoef</a> (const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;development, const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;yields, const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">Graph::FMTgraphvertextoyield</a> *graphinfo=nullptr, std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopmentpath.html">FMTdevelopmentpath</a> &gt; const *paths=nullptr, <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> const *action=nullptr) const</td></tr>
-<tr class="separator:a38d742fe41f5e24ead50b5e7ea5ddb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac021b1c8619bce8ade4c452b26c26302"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#ac021b1c8619bce8ade4c452b26c26302">use</a> (const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;development, const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;ylds, const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">Graph::FMTgraphvertextoyield</a> *graphinfo=nullptr) const</td></tr>
-<tr class="separator:ac021b1c8619bce8ade4c452b26c26302"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b4e36c9cc09ab97c176cc380da2c79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a01b4e36c9cc09ab97c176cc380da2c79">presolve</a> (const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;newthemes) const</td></tr>
-<tr class="separator:a01b4e36c9cc09ab97c176cc380da2c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1983b430d653a7607f1c9ff02edf4bb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a1983b430d653a7607f1c9ff02edf4bb0">setaverage</a> ()</td></tr>
-<tr class="separator:a1983b430d653a7607f1c9ff02edf4bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa625342582ce0520974928b93f9494fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aa625342582ce0520974928b93f9494fd">isaverage</a> () const</td></tr>
-<tr class="separator:aa625342582ce0520974928b93f9494fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7921a9e3bffcfc4741da94c5c7bc4e8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a7921a9e3bffcfc4741da94c5c7bc4e8f">setsum</a> ()</td></tr>
-<tr class="separator:a7921a9e3bffcfc4741da94c5c7bc4e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fdd7efea7f5d80919ecb373c1345158"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a7fdd7efea7f5d80919ecb373c1345158">issum</a> () const</td></tr>
-<tr class="separator:a7fdd7efea7f5d80919ecb373c1345158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44aa7617535fef2508508c3b944a7ce5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a44aa7617535fef2508508c3b944a7ce5">canbededucedtoconstant</a> () const</td></tr>
-<tr class="separator:a44aa7617535fef2508508c3b944a7ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3803ff2bbc07f95d0fde06f8faabf6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a0e3803ff2bbc07f95d0fde06f8faabf6">getconstantvalue</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; &amp;area, const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;actions, const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;yields) const</td></tr>
-<tr class="separator:a0e3803ff2bbc07f95d0fde06f8faabf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54d62c8e476b4df46826c7d0f85f0000"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a54d62c8e476b4df46826c7d0f85f0000">hash</a> (int period=-1, bool withyield=false) const</td></tr>
-<tr class="separator:a54d62c8e476b4df46826c7d0f85f0000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc0dd90e5df6cb920efe484f96abcb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#abfc0dd90e5df6cb920efe484f96abcb8">fillhashmask</a> (<a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;basemask) const</td></tr>
-<tr class="separator:abfc0dd90e5df6cb920efe484f96abcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98d974a06242e0280a1533c5912a9547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a98d974a06242e0280a1533c5912a9547">fillhashspec</a> (<a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;basemask) const</td></tr>
-<tr class="separator:a98d974a06242e0280a1533c5912a9547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8a4127d720973e5124e6ac11ca63ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#adb8a4127d720973e5124e6ac11ca63ed">isequalbyvalue</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;rhs) const</td></tr>
-<tr class="separator:adb8a4127d720973e5124e6ac11ca63ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c5d25c4b4ae28960140c9074bd02a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#a02c5d25c4b4ae28960140c9074bd02a4">isaction</a> () const</td></tr>
-<tr class="separator:a02c5d25c4b4ae28960140c9074bd02a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classCore_1_1FMTspec"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTspec')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTspec.html">Core::FMTspec</a></td></tr>
-<tr class="memitem:a71534f8f3da6bcb01f63f1a4bdcf902c inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a71534f8f3da6bcb01f63f1a4bdcf902c">FMTspec</a> ()</td></tr>
-<tr class="separator:a71534f8f3da6bcb01f63f1a4bdcf902c inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab297136902dff0dde0d270e16d3087b8 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#ab297136902dff0dde0d270e16d3087b8">~FMTspec</a> ()=default</td></tr>
-<tr class="separator:ab297136902dff0dde0d270e16d3087b8 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792d8eb6837094478f9defbdc5f59991 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a792d8eb6837094478f9defbdc5f59991">FMTspec</a> (const <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;rhs)</td></tr>
-<tr class="separator:a792d8eb6837094478f9defbdc5f59991 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06810c1fce2f632dbb37f08686e88bab inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a06810c1fce2f632dbb37f08686e88bab">operator=</a> (const <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;rhs)</td></tr>
-<tr class="separator:a06810c1fce2f632dbb37f08686e88bab inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae182a90d0641c6e5fb57b9007a048fce inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#ae182a90d0641c6e5fb57b9007a048fce">add</a> (const <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;rhs)</td></tr>
-<tr class="separator:ae182a90d0641c6e5fb57b9007a048fce inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78b59521849417fec2341ccfa3714acf inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a78b59521849417fec2341ccfa3714acf">setbounds</a> (const <a class="el" href="classCore_1_1FMTperbounds.html">FMTperbounds</a> &amp;bound)</td></tr>
-<tr class="separator:a78b59521849417fec2341ccfa3714acf inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c277234471b924e0d75c49985f6b524 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a6c277234471b924e0d75c49985f6b524">addbounds</a> (const <a class="el" href="classCore_1_1FMTagebounds.html">FMTagebounds</a> &amp;bound)</td></tr>
-<tr class="separator:a6c277234471b924e0d75c49985f6b524 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c31250fdd8fcc05b1d5e2ce5c074b6a inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a4c31250fdd8fcc05b1d5e2ce5c074b6a">addbounds</a> (const <a class="el" href="classCore_1_1FMTyldbounds.html">FMTyldbounds</a> &amp;bound)</td></tr>
-<tr class="separator:a4c31250fdd8fcc05b1d5e2ce5c074b6a inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd0134b97fef8d8a0dee7228e088aaf4 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#afd0134b97fef8d8a0dee7228e088aaf4">addbounds</a> (const <a class="el" href="classCore_1_1FMTlockbounds.html">FMTlockbounds</a> &amp;bound)</td></tr>
-<tr class="separator:afd0134b97fef8d8a0dee7228e088aaf4 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c93e18aa783ab1901914e40dc238e3 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#ae2c93e18aa783ab1901914e40dc238e3">allowwithoutyield</a> (const int &amp;tperiod, const int &amp;tage, const int &amp;tlock) const</td></tr>
-<tr class="separator:ae2c93e18aa783ab1901914e40dc238e3 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a719922d57462e2d1b815771bdfebd59a inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTyldbounds.html">FMTyldbounds</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a719922d57462e2d1b815771bdfebd59a">getyieldbound</a> (const std::string &amp;name) const</td></tr>
-<tr class="separator:a719922d57462e2d1b815771bdfebd59a inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9126e6bfb184ef5475dc3601029ab4e4 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a9126e6bfb184ef5475dc3601029ab4e4">allowyields</a> (const std::vector&lt; double &gt; &amp;values) const</td></tr>
-<tr class="separator:a9126e6bfb184ef5475dc3601029ab4e4 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c314e0c3a500de8e96148bd1ba4a73 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#ab9c314e0c3a500de8e96148bd1ba4a73">allow</a> (const int &amp;tperiod, const int &amp;tage, const int &amp;tlock, const std::vector&lt; double &gt; &amp;values) const</td></tr>
-<tr class="separator:ab9c314e0c3a500de8e96148bd1ba4a73 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc02622ec626504a3acc422fe4457a9c inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#adc02622ec626504a3acc422fe4457a9c">getylds</a> () const</td></tr>
-<tr class="separator:adc02622ec626504a3acc422fe4457a9c inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a141fc0e507df925ec9d6f8130e3791d8 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classCore_1_1FMTyldbounds.html">FMTyldbounds</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a141fc0e507df925ec9d6f8130e3791d8">getyldbounds</a> () const</td></tr>
-<tr class="separator:a141fc0e507df925ec9d6f8130e3791d8 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9247bf17b50ce8b8dc4127dd5dc3d8d2 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a9247bf17b50ce8b8dc4127dd5dc3d8d2">operator std::string</a> () const</td></tr>
-<tr class="separator:a9247bf17b50ce8b8dc4127dd5dc3d8d2 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c55ccb21ac1833b9180d807cb0e49fd inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a8c55ccb21ac1833b9180d807cb0e49fd">operator==</a> (const <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;rhs) const</td></tr>
-<tr class="separator:a8c55ccb21ac1833b9180d807cb0e49fd inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399a5c902f01a0588807d8bbe0012c4f inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a399a5c902f01a0588807d8bbe0012c4f">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;rhs) const</td></tr>
-<tr class="separator:a399a5c902f01a0588807d8bbe0012c4f inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecc298f3f013891d8cbae3b50711d668 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#aecc298f3f013891d8cbae3b50711d668">hash</a> () const</td></tr>
-<tr class="separator:aecc298f3f013891d8cbae3b50711d668 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0482c07924a525c63187cc1c4548f98 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#ae0482c07924a525c63187cc1c4548f98">empty</a> () const</td></tr>
-<tr class="separator:ae0482c07924a525c63187cc1c4548f98 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8a5e2030d22703db2b27d881d98eac inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a2d8a5e2030d22703db2b27d881d98eac">emptyage</a> () const</td></tr>
-<tr class="separator:a2d8a5e2030d22703db2b27d881d98eac inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4296e279cbe7c2c6abc28f310779e41 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#af4296e279cbe7c2c6abc28f310779e41">emptyylds</a> () const</td></tr>
-<tr class="separator:af4296e279cbe7c2c6abc28f310779e41 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe23815ca5d1f1c99905549744fc090d inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#afe23815ca5d1f1c99905549744fc090d">emptyperiod</a> () const</td></tr>
-<tr class="separator:afe23815ca5d1f1c99905549744fc090d inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac655c3c1dd34f8518c0c88ef179eecd7 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#ac655c3c1dd34f8518c0c88ef179eecd7">emptylock</a> () const</td></tr>
-<tr class="separator:ac655c3c1dd34f8518c0c88ef179eecd7 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0780d0a5d04783b7a6d1e7f7d0a10c20 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a0780d0a5d04783b7a6d1e7f7d0a10c20">getageupperbound</a> () const</td></tr>
-<tr class="separator:a0780d0a5d04783b7a6d1e7f7d0a10c20 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb7e5248f699b8b59891494bf5bbf2c2 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#acb7e5248f699b8b59891494bf5bbf2c2">getagelowerbound</a> () const</td></tr>
-<tr class="separator:acb7e5248f699b8b59891494bf5bbf2c2 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ffca703f3e39eeccc589e7373a4ac9 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#ad7ffca703f3e39eeccc589e7373a4ac9">getperiodupperbound</a> () const</td></tr>
-<tr class="separator:ad7ffca703f3e39eeccc589e7373a4ac9 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6663e250457749037f3482d182330d17 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a6663e250457749037f3482d182330d17">getperiodlowerbound</a> () const</td></tr>
-<tr class="separator:a6663e250457749037f3482d182330d17 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22eac9906a2fce4abb6354bcc0bb42e6 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a22eac9906a2fce4abb6354bcc0bb42e6">getlockupperbound</a> () const</td></tr>
-<tr class="separator:a22eac9906a2fce4abb6354bcc0bb42e6 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f665ed35b7b3a83fdf151509d1614ec inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a3f665ed35b7b3a83fdf151509d1614ec">getlocklowerbound</a> () const</td></tr>
-<tr class="separator:a3f665ed35b7b3a83fdf151509d1614ec inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7279b98c75106de63aaf8567a54c94 inherit pub_methods_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a1a7279b98c75106de63aaf8567a54c94">issubsetof</a> (const <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;rhs) const</td></tr>
-<tr class="separator:a1a7279b98c75106de63aaf8567a54c94 inherit pub_methods_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67f64f8189c3735d544d3fd8247101e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#ad67f64f8189c3735d544d3fd8247101e">FMTOutputSource</a> ()</td></tr>
+<tr class="memdesc:ad67f64f8189c3735d544d3fd8247101e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>.  <br /></td></tr>
+<tr class="separator:ad67f64f8189c3735d544d3fd8247101e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4737c0182f211515082ede67f0b2b619"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a4737c0182f211515082ede67f0b2b619">~FMTOutputSource</a> ()=default</td></tr>
+<tr class="memdesc:a4737c0182f211515082ede67f0b2b619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>.  <br /></td></tr>
+<tr class="separator:a4737c0182f211515082ede67f0b2b619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f14146d5301122e60e2bb41df942bbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a0f14146d5301122e60e2bb41df942bbd">FMTOutputSource</a> (const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> ltarget, double lvalue=0, std::string lyield=&quot;&quot;, std::string laction=&quot;&quot;, int origin=-1, int ttarget=-1)</td></tr>
+<tr class="memdesc:a0f14146d5301122e60e2bb41df942bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an output source from a target and optional value, yield, action, origin and theme target.  <br /></td></tr>
+<tr class="separator:a0f14146d5301122e60e2bb41df942bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac170693ae233ab46447f5500af7107b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#ac170693ae233ab46447f5500af7107b6">FMTOutputSource</a> (const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> ltarget, std::vector&lt; double &gt;lvalues, int origin=-1, int ttarget=-1, std::string llevelname=&quot;&quot;)</td></tr>
+<tr class="memdesc:ac170693ae233ab46447f5500af7107b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an output source from a target and a vector of values.  <br /></td></tr>
+<tr class="separator:ac170693ae233ab46447f5500af7107b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87cec55a183e30bf698523ca6b214e86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a87cec55a183e30bf698523ca6b214e86">FMTOutputSource</a> (const FMTSpec &amp;spec, const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;lmask, const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> ltarget, std::string lyield=&quot;&quot;, std::string laction=&quot;&quot;, int origin=-1, int ttarget=-1)</td></tr>
+<tr class="memdesc:a87cec55a183e30bf698523ca6b214e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an output source from a specification, a mask and a target.  <br /></td></tr>
+<tr class="separator:a87cec55a183e30bf698523ca6b214e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14fb5319c3353d584a2091de15827cc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a14fb5319c3353d584a2091de15827cc6">FMTOutputSource</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a14fb5319c3353d584a2091de15827cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>.  <br /></td></tr>
+<tr class="separator:a14fb5319c3353d584a2091de15827cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184446d288a041e0ff8de7ee75a2d3de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a184446d288a041e0ff8de7ee75a2d3de">operator=</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a184446d288a041e0ff8de7ee75a2d3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>.  <br /></td></tr>
+<tr class="separator:a184446d288a041e0ff8de7ee75a2d3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574962b4f7807646bc2c5db2f180a2a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a574962b4f7807646bc2c5db2f180a2a0">operator std::string</a> () const override</td></tr>
+<tr class="memdesc:a574962b4f7807646bc2c5db2f180a2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the string representation of the output source.  <br /></td></tr>
+<tr class="separator:a574962b4f7807646bc2c5db2f180a2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f9eb191ff5566da727eebe5994ed7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a78f9eb191ff5566da727eebe5994ed7c">operator==</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a78f9eb191ff5566da727eebe5994ed7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator of <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>.  <br /></td></tr>
+<tr class="separator:a78f9eb191ff5566da727eebe5994ed7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcc9f281d136fc6363647d3263bb18a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a0dcc9f281d136fc6363647d3263bb18a">operator!=</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a0dcc9f281d136fc6363647d3263bb18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality comparison operator of <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>.  <br /></td></tr>
+<tr class="separator:a0dcc9f281d136fc6363647d3263bb18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a43d21b45d0b9c1fd32e5a5959a94b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#aa0a43d21b45d0b9c1fd32e5a5959a94b">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:aa0a43d21b45d0b9c1fd32e5a5959a94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than comparison operator of <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>.  <br /></td></tr>
+<tr class="separator:aa0a43d21b45d0b9c1fd32e5a5959a94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1672035fb9a027c120c0137cd3ebb9d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a1672035fb9a027c120c0137cd3ebb9d7">getOutputOrigin</a> () const</td></tr>
+<tr class="memdesc:a1672035fb9a027c120c0137cd3ebb9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the output origin.  <br /></td></tr>
+<tr class="separator:a1672035fb9a027c120c0137cd3ebb9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e49178f336cfe32ee49e03d0838d0d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a0e49178f336cfe32ee49e03d0838d0d3">getThemeTarget</a> () const</td></tr>
+<tr class="memdesc:a0e49178f336cfe32ee49e03d0838d0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the theme target.  <br /></td></tr>
+<tr class="separator:a0e49178f336cfe32ee49e03d0838d0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a240d039abf441e467980daef9fb8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#af9a240d039abf441e467980daef9fb8a">isInAggregate</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;actions) const</td></tr>
+<tr class="memdesc:af9a240d039abf441e467980daef9fb8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output source is in the same aggregate as another.  <br /></td></tr>
+<tr class="separator:af9a240d039abf441e467980daef9fb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860fcafe8067f7611688747c98be7267"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a860fcafe8067f7611688747c98be7267">isSubsetOf</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;actions) const</td></tr>
+<tr class="memdesc:a860fcafe8067f7611688747c98be7267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output source is a subset of another considering the actions.  <br /></td></tr>
+<tr class="separator:a860fcafe8067f7611688747c98be7267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719275763e0a12763c21e1a6eab406e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a719275763e0a12763c21e1a6eab406e5">isSubsetOf</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a719275763e0a12763c21e1a6eab406e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output source is a subset of another.  <br /></td></tr>
+<tr class="separator:a719275763e0a12763c21e1a6eab406e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297fcabd8de320821b831b247f6b1b5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a297fcabd8de320821b831b247f6b1b5f">isSameButDifferentAction</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a297fcabd8de320821b831b247f6b1b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output source is the same as another but with a different action.  <br /></td></tr>
+<tr class="separator:a297fcabd8de320821b831b247f6b1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f1f9956375f7bfd727930322df1b3a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#aa3f1f9956375f7bfd727930322df1b3a">getMask</a> () const</td></tr>
+<tr class="memdesc:aa3f1f9956375f7bfd727930322df1b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the mask of the output source.  <br /></td></tr>
+<tr class="separator:aa3f1f9956375f7bfd727930322df1b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3c5d7d3fae59bd7dab05b1a0841d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a3e3c5d7d3fae59bd7dab05b1a0841d08">setMask</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;newmask)</td></tr>
+<tr class="memdesc:a3e3c5d7d3fae59bd7dab05b1a0841d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mask of the output source.  <br /></td></tr>
+<tr class="separator:a3e3c5d7d3fae59bd7dab05b1a0841d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d71b7aa4e0f9b60369f8a6c05edcd52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a0d71b7aa4e0f9b60369f8a6c05edcd52">setAction</a> (const std::string &amp;actionname)</td></tr>
+<tr class="memdesc:a0d71b7aa4e0f9b60369f8a6c05edcd52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action of the output source.  <br /></td></tr>
+<tr class="separator:a0d71b7aa4e0f9b60369f8a6c05edcd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff00ace1a9c4c291ec4305ceeabeec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#adff00ace1a9c4c291ec4305ceeabeec0">setTarget</a> (const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> &amp;newtype)</td></tr>
+<tr class="memdesc:adff00ace1a9c4c291ec4305ceeabeec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the target of the output source.  <br /></td></tr>
+<tr class="separator:adff00ace1a9c4c291ec4305ceeabeec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8a6f3c52969079d29b69e1336ed0ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a6f8a6f3c52969079d29b69e1336ed0ed">setThemeTarget</a> (const int &amp;newttarget)</td></tr>
+<tr class="memdesc:a6f8a6f3c52969079d29b69e1336ed0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the theme target of the output source.  <br /></td></tr>
+<tr class="separator:a6f8a6f3c52969079d29b69e1336ed0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08ee4ad0153d7742e474f779945adbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#ae08ee4ad0153d7742e474f779945adbe">setOutputOrigin</a> (const int &amp;neworigin)</td></tr>
+<tr class="memdesc:ae08ee4ad0153d7742e474f779945adbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output origin of the output source.  <br /></td></tr>
+<tr class="separator:ae08ee4ad0153d7742e474f779945adbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea910cf710398c47511bc247f555190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a1ea910cf710398c47511bc247f555190">resetValues</a> (const <a class="el" href="classCore_1_1FMTOperator.html">FMTOperator</a> &amp;op, const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;other)</td></tr>
+<tr class="memdesc:a1ea910cf710398c47511bc247f555190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the values of the output source using an operator and another output source.  <br /></td></tr>
+<tr class="separator:a1ea910cf710398c47511bc247f555190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220fb2ae11b5beadd30cbf2e1ce23884"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a220fb2ae11b5beadd30cbf2e1ce23884">getAction</a> () const</td></tr>
+<tr class="memdesc:a220fb2ae11b5beadd30cbf2e1ce23884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the action of the output source.  <br /></td></tr>
+<tr class="separator:a220fb2ae11b5beadd30cbf2e1ce23884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e91cf020babe8a72ed21688fa971a9"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a90e91cf020babe8a72ed21688fa971a9">getYield</a> () const</td></tr>
+<tr class="memdesc:a90e91cf020babe8a72ed21688fa971a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the yield of the output source.  <br /></td></tr>
+<tr class="separator:a90e91cf020babe8a72ed21688fa971a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432eee2d9241d2f0020139f78fdf1511"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a432eee2d9241d2f0020139f78fdf1511">getTarget</a> () const</td></tr>
+<tr class="memdesc:a432eee2d9241d2f0020139f78fdf1511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the target of the output source.  <br /></td></tr>
+<tr class="separator:a432eee2d9241d2f0020139f78fdf1511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5440a37a347fd707d57a25231a4cf8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a6b5440a37a347fd707d57a25231a4cf8">getValue</a> (int period=0) const</td></tr>
+<tr class="memdesc:a6b5440a37a347fd707d57a25231a4cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the value of the output source for a given period.  <br /></td></tr>
+<tr class="separator:a6b5440a37a347fd707d57a25231a4cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e5a1688d3660730eda462ca32db3eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a24e5a1688d3660730eda462ca32db3eb">isVariable</a> () const</td></tr>
+<tr class="memdesc:a24e5a1688d3660730eda462ca32db3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is a variable.  <br /></td></tr>
+<tr class="separator:a24e5a1688d3660730eda462ca32db3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493bdd2024258d04f6ce5dd5443fcc4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a493bdd2024258d04f6ce5dd5443fcc4d">isLevel</a> () const</td></tr>
+<tr class="memdesc:a493bdd2024258d04f6ce5dd5443fcc4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is a level.  <br /></td></tr>
+<tr class="separator:a493bdd2024258d04f6ce5dd5443fcc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52a78d3affaa98f2b4d107e5405d6c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#af52a78d3affaa98f2b4d107e5405d6c9">isConstant</a> () const</td></tr>
+<tr class="memdesc:af52a78d3affaa98f2b4d107e5405d6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is a constant.  <br /></td></tr>
+<tr class="separator:af52a78d3affaa98f2b4d107e5405d6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b337e919a2bb29f41e132bc2a75ecf3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a4b337e919a2bb29f41e132bc2a75ecf3">isVariableLevel</a> () const</td></tr>
+<tr class="memdesc:a4b337e919a2bb29f41e132bc2a75ecf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is a variable level.  <br /></td></tr>
+<tr class="separator:a4b337e919a2bb29f41e132bc2a75ecf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6bdc89672b009fea3932f96665ac56"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#afc6bdc89672b009fea3932f96665ac56">getLevel</a> () const</td></tr>
+<tr class="memdesc:afc6bdc89672b009fea3932f96665ac56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the level of the output source.  <br /></td></tr>
+<tr class="separator:afc6bdc89672b009fea3932f96665ac56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0594dd495a64ff432c30f97f0e3af97d"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a0594dd495a64ff432c30f97f0e3af97d">getValues</a> () const</td></tr>
+<tr class="memdesc:a0594dd495a64ff432c30f97f0e3af97d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the values of the output source.  <br /></td></tr>
+<tr class="separator:a0594dd495a64ff432c30f97f0e3af97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df4c092f3bbbb27ecaf15343ecec5a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a0df4c092f3bbbb27ecaf15343ecec5a4">isNull</a> (const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;ylds) const</td></tr>
+<tr class="memdesc:a0df4c092f3bbbb27ecaf15343ecec5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is null.  <br /></td></tr>
+<tr class="separator:a0df4c092f3bbbb27ecaf15343ecec5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f250fb842ea256c096c404b897b5f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a67f250fb842ea256c096c404b897b5f1">isTimeYield</a> () const</td></tr>
+<tr class="memdesc:a67f250fb842ea256c096c404b897b5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is a time yield.  <br /></td></tr>
+<tr class="separator:a67f250fb842ea256c096c404b897b5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1fd2c97655c529019e04d16c15ea43"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#add1fd2c97655c529019e04d16c15ea43">targets</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;actions) const</td></tr>
+<tr class="memdesc:add1fd2c97655c529019e04d16c15ea43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the actions targeted by the output source.  <br /></td></tr>
+<tr class="separator:add1fd2c97655c529019e04d16c15ea43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039653175fde05d7d45cc31cb4f9c738"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a039653175fde05d7d45cc31cb4f9c738">targetsSet</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;actions) const</td></tr>
+<tr class="memdesc:a039653175fde05d7d45cc31cb4f9c738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the ids of the actions targeted by the output source.  <br /></td></tr>
+<tr class="separator:a039653175fde05d7d45cc31cb4f9c738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e148eca8db6061f80f6feaa90b960bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a7e148eca8db6061f80f6feaa90b960bd">isInventory</a> () const</td></tr>
+<tr class="memdesc:a7e148eca8db6061f80f6feaa90b960bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source targets the inventory.  <br /></td></tr>
+<tr class="separator:a7e148eca8db6061f80f6feaa90b960bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b30ac4e9fa6b40f9b4aa0537e00809"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a26b30ac4e9fa6b40f9b4aa0537e00809">useInEdges</a> () const</td></tr>
+<tr class="memdesc:a26b30ac4e9fa6b40f9b4aa0537e00809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source uses the in edges.  <br /></td></tr>
+<tr class="separator:a26b30ac4e9fa6b40f9b4aa0537e00809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d741180cff921fa515a508e8d85068"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a19d741180cff921fa515a508e8d85068">isNextPeriod</a> () const</td></tr>
+<tr class="memdesc:a19d741180cff921fa515a508e8d85068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source targets the next period.  <br /></td></tr>
+<tr class="separator:a19d741180cff921fa515a508e8d85068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160a634515e70559ed382bedb2520582"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a160a634515e70559ed382bedb2520582">useOutEdges</a> () const</td></tr>
+<tr class="memdesc:a160a634515e70559ed382bedb2520582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source uses the out edges.  <br /></td></tr>
+<tr class="separator:a160a634515e70559ed382bedb2520582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53629f4434684cbb77160c1b454538ab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a53629f4434684cbb77160c1b454538ab">getCoef</a> (const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;development, const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;yields, const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">Graph::FMTGraphVertexToYield</a> *graphinfo=nullptr, std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopmentPath.html">FMTDevelopmentPath</a> &gt; const *paths=nullptr, <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> const *p_action=nullptr) const</td></tr>
+<tr class="memdesc:a53629f4434684cbb77160c1b454538ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the coefficient of the output source for a development based on the yields.  <br /></td></tr>
+<tr class="separator:a53629f4434684cbb77160c1b454538ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93e5b8ecaf7bf3a965fd99ed1cc4fd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#ac93e5b8ecaf7bf3a965fd99ed1cc4fd5">use</a> (const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;development, const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;ylds, const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">Graph::FMTGraphVertexToYield</a> *graphinfo=nullptr) const</td></tr>
+<tr class="memdesc:ac93e5b8ecaf7bf3a965fd99ed1cc4fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is used by a development based on the yields.  <br /></td></tr>
+<tr class="separator:ac93e5b8ecaf7bf3a965fd99ed1cc4fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaed4de9ea40f904962ac01be10560f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#accaed4de9ea40f904962ac01be10560f">preSolve</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;newthemes) const</td></tr>
+<tr class="memdesc:accaed4de9ea40f904962ac01be10560f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a presolved copy of the output source.  <br /></td></tr>
+<tr class="separator:accaed4de9ea40f904962ac01be10560f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8138bc57a9595bf1f2ae13685b535fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a8138bc57a9595bf1f2ae13685b535fc7">setAverage</a> ()</td></tr>
+<tr class="memdesc:a8138bc57a9595bf1f2ae13685b535fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output source as an average.  <br /></td></tr>
+<tr class="separator:a8138bc57a9595bf1f2ae13685b535fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3267b8b251ac12a4daaaf77b7517f86b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a3267b8b251ac12a4daaaf77b7517f86b">isAverage</a> () const</td></tr>
+<tr class="memdesc:a3267b8b251ac12a4daaaf77b7517f86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is an average.  <br /></td></tr>
+<tr class="separator:a3267b8b251ac12a4daaaf77b7517f86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f7f6a1658512e1ca8f75d6859620eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#aa1f7f6a1658512e1ca8f75d6859620eb">setSum</a> ()</td></tr>
+<tr class="memdesc:aa1f7f6a1658512e1ca8f75d6859620eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output source as a sum.  <br /></td></tr>
+<tr class="separator:aa1f7f6a1658512e1ca8f75d6859620eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284ad89c3e2a09b226e817881a9d7d35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a284ad89c3e2a09b226e817881a9d7d35">isSum</a> () const</td></tr>
+<tr class="memdesc:a284ad89c3e2a09b226e817881a9d7d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is a sum.  <br /></td></tr>
+<tr class="separator:a284ad89c3e2a09b226e817881a9d7d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2834ef057256b9fffa6107fd97da2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#afb2834ef057256b9fffa6107fd97da2e">canBeDeducedToConstant</a> () const</td></tr>
+<tr class="memdesc:afb2834ef057256b9fffa6107fd97da2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source can be deduced to a constant.  <br /></td></tr>
+<tr class="separator:afb2834ef057256b9fffa6107fd97da2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c324e88ffee7f3d8d4fb9de696cf566"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a2c324e88ffee7f3d8d4fb9de696cf566">getConstantValue</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTActualDevelopment.html">Core::FMTActualDevelopment</a> &gt; &amp;area, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;actions, const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;yields) const</td></tr>
+<tr class="memdesc:a2c324e88ffee7f3d8d4fb9de696cf566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the constant value of the output source.  <br /></td></tr>
+<tr class="separator:a2c324e88ffee7f3d8d4fb9de696cf566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3daccfc828f87ab6be1a30cab6f42a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#ada3daccfc828f87ab6be1a30cab6f42a">hash</a> (int period=-1, bool withyield=false) const</td></tr>
+<tr class="memdesc:ada3daccfc828f87ab6be1a30cab6f42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the hash of the output source.  <br /></td></tr>
+<tr class="separator:ada3daccfc828f87ab6be1a30cab6f42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee246243aedbce10458f421d54da0c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a3ee246243aedbce10458f421d54da0c2">fillHashMask</a> (<a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;baseMask) const</td></tr>
+<tr class="memdesc:a3ee246243aedbce10458f421d54da0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a base mask with the hash mask of the output source.  <br /></td></tr>
+<tr class="separator:a3ee246243aedbce10458f421d54da0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de38b54c70d867936e5163d31661401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a0de38b54c70d867936e5163d31661401">fillHashSpec</a> (<a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;baseMask) const</td></tr>
+<tr class="memdesc:a0de38b54c70d867936e5163d31661401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a base mask with the hash specification of the output source.  <br /></td></tr>
+<tr class="separator:a0de38b54c70d867936e5163d31661401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6313c31c29b7d8c2d5bb5ca844466f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#ac6313c31c29b7d8c2d5bb5ca844466f2">isEqualByValue</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:ac6313c31c29b7d8c2d5bb5ca844466f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output source is equal by value to another.  <br /></td></tr>
+<tr class="separator:ac6313c31c29b7d8c2d5bb5ca844466f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad783d50e7b145756268133bf9f5a0aec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#ad783d50e7b145756268133bf9f5a0aec">isAction</a> () const</td></tr>
+<tr class="memdesc:ad783d50e7b145756268133bf9f5a0aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output source is an action.  <br /></td></tr>
+<tr class="separator:ad783d50e7b145756268133bf9f5a0aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4837639ed8fdc1c2287231ffaa3818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a3f4837639ed8fdc1c2287231ffaa3818">setYield</a> (const std::string &amp;p_Yield)</td></tr>
+<tr class="memdesc:a3f4837639ed8fdc1c2287231ffaa3818"><td class="mdescLeft">&#160;</td><td class="mdescRight">set Yield to the output source.  <br /></td></tr>
+<tr class="separator:a3f4837639ed8fdc1c2287231ffaa3818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5c744d5f74b1635ffd7c7b544c470729"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a5c744d5f74b1635ffd7c7b544c470729">trimDouble</a> (const std::string &amp;string_number)</td></tr>
+<tr class="memdesc:a5c744d5f74b1635ffd7c7b544c470729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim the trailing zeros of a number in string format, for example 1400.0000 to 1400 or 14.0300 to 14.03.  <br /></td></tr>
+<tr class="separator:a5c744d5f74b1635ffd7c7b544c470729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee8c87a34ddf600132dcecba7230bf7"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsource.html#aaee8c87a34ddf600132dcecba7230bf7">Parser::FMToutputparser</a></td></tr>
-<tr class="separator:aaee8c87a34ddf600132dcecba7230bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classCore_1_1FMTspec"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classCore_1_1FMTspec')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classCore_1_1FMTspec.html">Core::FMTspec</a></td></tr>
-<tr class="memitem:ac87dfb90c691cf570d4f966a367c9563 inherit pro_attribs_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTperbounds.html">FMTperbounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#ac87dfb90c691cf570d4f966a367c9563">per</a></td></tr>
-<tr class="memdesc:ac87dfb90c691cf570d4f966a367c9563 inherit pro_attribs_classCore_1_1FMTspec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Period bounds so lower &gt;= period &lt;= upper.  <br /></td></tr>
-<tr class="separator:ac87dfb90c691cf570d4f966a367c9563 inherit pro_attribs_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f1442e30d6a5e16bb09daf8ec1afd47 inherit pro_attribs_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTagebounds.html">FMTagebounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a7f1442e30d6a5e16bb09daf8ec1afd47">age</a></td></tr>
-<tr class="memdesc:a7f1442e30d6a5e16bb09daf8ec1afd47 inherit pro_attribs_classCore_1_1FMTspec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Age bounds so lower &gt;= age &lt;= upper.  <br /></td></tr>
-<tr class="separator:a7f1442e30d6a5e16bb09daf8ec1afd47 inherit pro_attribs_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e960b6dabb2bd11e9ed578f00404a22 inherit pro_attribs_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTlockbounds.html">FMTlockbounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a1e960b6dabb2bd11e9ed578f00404a22">lock</a></td></tr>
-<tr class="memdesc:a1e960b6dabb2bd11e9ed578f00404a22 inherit pro_attribs_classCore_1_1FMTspec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock bounds so lower &gt;= lock &lt;= upper.  <br /></td></tr>
-<tr class="separator:a1e960b6dabb2bd11e9ed578f00404a22 inherit pro_attribs_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a818080d9c390954bf22d6f3a1615e8ca inherit pro_attribs_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#a818080d9c390954bf22d6f3a1615e8ca">yieldnames</a></td></tr>
-<tr class="memdesc:a818080d9c390954bf22d6f3a1615e8ca inherit pro_attribs_classCore_1_1FMTspec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The names of each yield in the vector of yieldbounds.  <br /></td></tr>
-<tr class="separator:a818080d9c390954bf22d6f3a1615e8ca inherit pro_attribs_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af69e0bf8d93cf117d6f79136ab5dae29 inherit pro_attribs_classCore_1_1FMTspec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTyldbounds.html">FMTyldbounds</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTspec.html#af69e0bf8d93cf117d6f79136ab5dae29">yieldbounds</a></td></tr>
-<tr class="memdesc:af69e0bf8d93cf117d6f79136ab5dae29 inherit pro_attribs_classCore_1_1FMTspec"><td class="mdescLeft">&#160;</td><td class="mdescRight">the yields bounds vector lower&gt;=y1&lt;=upper,lower&gt;=y2&lt;=upper  <br /></td></tr>
-<tr class="separator:af69e0bf8d93cf117d6f79136ab5dae29 inherit pro_attribs_classCore_1_1FMTspec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a87216c4a74d234a69cbe38e906089"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSource.html#a16a87216c4a74d234a69cbe38e906089">Parser::FMTOutputParser</a></td></tr>
+<tr class="separator:a16a87216c4a74d234a69cbe38e906089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aec432639ffa28c55b553e21bbef45353" name="aec432639ffa28c55b553e21bbef45353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec432639ffa28c55b553e21bbef45353">&#9670;&#160;</a></span>FMToutputsource() <span class="overload">[1/5]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Source of an output holding a mask, a target and values, used to compute an output. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad67f64f8189c3735d544d3fd8247101e" name="ad67f64f8189c3735d544d3fd8247101e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad67f64f8189c3735d544d3fd8247101e">&#9670;&#160;</a></span>FMTOutputSource() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputsource::FMToutputsource </td>
+          <td class="memname">Core::FMTOutputSource::FMTOutputSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -317,10 +306,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>. </p>
+
 </div>
 </div>
-<a id="a6caeb8e8dc1a698ce470631c80f9af60" name="a6caeb8e8dc1a698ce470631c80f9af60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6caeb8e8dc1a698ce470631c80f9af60">&#9670;&#160;</a></span>~FMToutputsource()</h2>
+<a id="a4737c0182f211515082ede67f0b2b619" name="a4737c0182f211515082ede67f0b2b619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4737c0182f211515082ede67f0b2b619">&#9670;&#160;</a></span>~FMTOutputSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +320,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputsource::~FMToutputsource </td>
+          <td class="memname">Core::FMTOutputSource::~FMTOutputSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -342,16 +333,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default destructor for <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>. </p>
+
 </div>
 </div>
-<a id="a16a062c605dce5d2b5eafef9a0a71187" name="a16a062c605dce5d2b5eafef9a0a71187"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16a062c605dce5d2b5eafef9a0a71187">&#9670;&#160;</a></span>FMToutputsource() <span class="overload">[2/5]</span></h2>
+<a id="a0f14146d5301122e60e2bb41df942bbd" name="a0f14146d5301122e60e2bb41df942bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f14146d5301122e60e2bb41df942bbd">&#9670;&#160;</a></span>FMTOutputSource() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputsource::FMToutputsource </td>
+          <td class="memname">Core::FMTOutputSource::FMTOutputSource </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a>&#160;</td>
           <td class="paramname"><em>ltarget</em>, </td>
@@ -394,16 +387,29 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct an output source from a target and optional value, yield, action, origin and theme target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltarget</td><td>the output target. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lvalue</td><td>the value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lyield</td><td>the yield. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">laction</td><td>the action. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">origin</td><td>the output origin. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ttarget</td><td>the theme target. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a9e6ea2e601c5a2ad11059fbaca689ca5" name="a9e6ea2e601c5a2ad11059fbaca689ca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e6ea2e601c5a2ad11059fbaca689ca5">&#9670;&#160;</a></span>FMToutputsource() <span class="overload">[3/5]</span></h2>
+<a id="ac170693ae233ab46447f5500af7107b6" name="ac170693ae233ab46447f5500af7107b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac170693ae233ab46447f5500af7107b6">&#9670;&#160;</a></span>FMTOutputSource() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputsource::FMToutputsource </td>
+          <td class="memname">Core::FMTOutputSource::FMTOutputSource </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a>&#160;</td>
           <td class="paramname"><em>ltarget</em>, </td>
@@ -440,24 +446,36 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct an output source from a target and a vector of values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltarget</td><td>the output target. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lvalues</td><td>the values. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">origin</td><td>the output origin. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ttarget</td><td>the theme target. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">llevelname</td><td>the level name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aa39b5443beae55c1e4dee1c46e902c0c" name="aa39b5443beae55c1e4dee1c46e902c0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa39b5443beae55c1e4dee1c46e902c0c">&#9670;&#160;</a></span>FMToutputsource() <span class="overload">[4/5]</span></h2>
+<a id="a87cec55a183e30bf698523ca6b214e86" name="a87cec55a183e30bf698523ca6b214e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87cec55a183e30bf698523ca6b214e86">&#9670;&#160;</a></span>FMTOutputSource() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputsource::FMToutputsource </td>
+          <td class="memname">Core::FMTOutputSource::FMTOutputSource </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> &amp;&#160;</td>
+          <td class="paramtype">const FMTSpec &amp;&#160;</td>
           <td class="paramname"><em>spec</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>lmask</em>, </td>
         </tr>
         <tr>
@@ -498,35 +516,57 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct an output source from a specification, a mask and a target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">spec</td><td>the specification. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lmask</td><td>the mask. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltarget</td><td>the output target. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lyield</td><td>the yield. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">laction</td><td>the action. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">origin</td><td>the output origin. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ttarget</td><td>the theme target. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aa5122b0f06ef7e62dc04d2022e7b8c69" name="aa5122b0f06ef7e62dc04d2022e7b8c69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5122b0f06ef7e62dc04d2022e7b8c69">&#9670;&#160;</a></span>FMToutputsource() <span class="overload">[5/5]</span></h2>
+<a id="a14fb5319c3353d584a2091de15827cc6" name="a14fb5319c3353d584a2091de15827cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14fb5319c3353d584a2091de15827cc6">&#9670;&#160;</a></span>FMTOutputSource() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputsource::FMToutputsource </td>
+          <td class="memname">Core::FMTOutputSource::FMTOutputSource </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the output source to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a44aa7617535fef2508508c3b944a7ce5" name="a44aa7617535fef2508508c3b944a7ce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44aa7617535fef2508508c3b944a7ce5">&#9670;&#160;</a></span>canbededucedtoconstant()</h2>
+<a id="afb2834ef057256b9fffa6107fd97da2e" name="afb2834ef057256b9fffa6107fd97da2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2834ef057256b9fffa6107fd97da2e">&#9670;&#160;</a></span>canBeDeducedToConstant()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::canbededucedtoconstant </td>
+          <td class="memname">bool Core::FMTOutputSource::canBeDeducedToConstant </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -534,46 +574,65 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source can be deduced to a constant. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source can be deduced to a constant else false. </dd></dl>
+
 </div>
 </div>
-<a id="abfc0dd90e5df6cb920efe484f96abcb8" name="abfc0dd90e5df6cb920efe484f96abcb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfc0dd90e5df6cb920efe484f96abcb8">&#9670;&#160;</a></span>fillhashmask()</h2>
+<a id="a3ee246243aedbce10458f421d54da0c2" name="a3ee246243aedbce10458f421d54da0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee246243aedbce10458f421d54da0c2">&#9670;&#160;</a></span>fillHashMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::fillhashmask </td>
+          <td class="memname">void Core::FMTOutputSource::fillHashMask </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;&#160;</td>
-          <td class="paramname"><em>basemask</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>baseMask</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Fill a base mask with the hash mask of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">baseMask</td><td>the base mask to fill. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a98d974a06242e0280a1533c5912a9547" name="a98d974a06242e0280a1533c5912a9547"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98d974a06242e0280a1533c5912a9547">&#9670;&#160;</a></span>fillhashspec()</h2>
+<a id="a0de38b54c70d867936e5163d31661401" name="a0de38b54c70d867936e5163d31661401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de38b54c70d867936e5163d31661401">&#9670;&#160;</a></span>fillHashSpec()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::fillhashspec </td>
+          <td class="memname">void Core::FMTOutputSource::fillHashSpec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;&#160;</td>
-          <td class="paramname"><em>basemask</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>baseMask</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Fill a base mask with the hash specification of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">baseMask</td><td>the base mask to fill. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a0424d48ba22dac898cab086f8ebfbb23" name="a0424d48ba22dac898cab086f8ebfbb23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0424d48ba22dac898cab086f8ebfbb23">&#9670;&#160;</a></span>getaction()</h2>
+<a id="a220fb2ae11b5beadd30cbf2e1ce23884" name="a220fb2ae11b5beadd30cbf2e1ce23884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220fb2ae11b5beadd30cbf2e1ce23884">&#9670;&#160;</a></span>getAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -582,7 +641,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string &amp; Core::FMToutputsource::getaction </td>
+          <td class="memname">const std::string &amp; Core::FMTOutputSource::getAction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -595,43 +654,46 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return a const reference to the action of the output source. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the action. </dd></dl>
+
 </div>
 </div>
-<a id="a38d742fe41f5e24ead50b5e7ea5ddb89" name="a38d742fe41f5e24ead50b5e7ea5ddb89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d742fe41f5e24ead50b5e7ea5ddb89">&#9670;&#160;</a></span>getcoef()</h2>
+<a id="a53629f4434684cbb77160c1b454538ab" name="a53629f4434684cbb77160c1b454538ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53629f4434684cbb77160c1b454538ab">&#9670;&#160;</a></span>getCoef()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Core::FMToutputsource::getcoef </td>
+          <td class="memname">double Core::FMTOutputSource::getCoef </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;&#160;</td>
           <td class="paramname"><em>development</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;&#160;</td>
           <td class="paramname"><em>yields</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">Graph::FMTgraphvertextoyield</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">Graph::FMTGraphVertexToYield</a> *&#160;</td>
           <td class="paramname"><em>graphinfo</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classCore_1_1FMTdevelopmentpath.html">FMTdevelopmentpath</a> &gt; const *&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classCore_1_1FMTDevelopmentPath.html">FMTDevelopmentPath</a> &gt; const *&#160;</td>
           <td class="paramname"><em>paths</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> const *&#160;</td>
-          <td class="paramname"><em>action</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> const *&#160;</td>
+          <td class="paramname"><em>p_action</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -641,30 +703,43 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the coefficient of the output source for a development based on the yields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">development</td><td>the development. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yields</td><td>the yields. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">graphinfo</td><td>an optional graph vertex to yield. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">paths</td><td>optional development paths. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_action</td><td>an optional action. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the coefficient. </dd></dl>
+
 </div>
 </div>
-<a id="a0e3803ff2bbc07f95d0fde06f8faabf6" name="a0e3803ff2bbc07f95d0fde06f8faabf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e3803ff2bbc07f95d0fde06f8faabf6">&#9670;&#160;</a></span>getconstantvalue()</h2>
+<a id="a2c324e88ffee7f3d8d4fb9de696cf566" name="a2c324e88ffee7f3d8d4fb9de696cf566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c324e88ffee7f3d8d4fb9de696cf566">&#9670;&#160;</a></span>getConstantValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Core::FMToutputsource::getconstantvalue </td>
+          <td class="memname">double Core::FMTOutputSource::getConstantValue </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTactualdevelopment.html">Core::FMTactualdevelopment</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTActualDevelopment.html">Core::FMTActualDevelopment</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>area</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;&#160;</td>
           <td class="paramname"><em>yields</em>&#160;</td>
         </tr>
         <tr>
@@ -675,10 +750,21 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the constant value of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">area</td><td>the actual developments. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yields</td><td>the yields. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the constant value. </dd></dl>
+
 </div>
 </div>
-<a id="a59a98cca13898640df1b198bd6f52885" name="a59a98cca13898640df1b198bd6f52885"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59a98cca13898640df1b198bd6f52885">&#9670;&#160;</a></span>getlevel()</h2>
+<a id="afc6bdc89672b009fea3932f96665ac56" name="afc6bdc89672b009fea3932f96665ac56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6bdc89672b009fea3932f96665ac56">&#9670;&#160;</a></span>getLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -687,7 +773,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string &amp; Core::FMToutputsource::getlevel </td>
+          <td class="memname">const std::string &amp; Core::FMTOutputSource::getLevel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -700,10 +786,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return a const reference to the level of the output source. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the level. </dd></dl>
+
 </div>
 </div>
-<a id="aa40f4a0979bab48a22b5cf3481a55f56" name="aa40f4a0979bab48a22b5cf3481a55f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa40f4a0979bab48a22b5cf3481a55f56">&#9670;&#160;</a></span>getmask()</h2>
+<a id="aa3f1f9956375f7bfd727930322df1b3a" name="aa3f1f9956375f7bfd727930322df1b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f1f9956375f7bfd727930322df1b3a">&#9670;&#160;</a></span>getMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -712,7 +801,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp; Core::FMToutputsource::getmask </td>
+          <td class="memname">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp; Core::FMTOutputSource::getMask </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -725,10 +814,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return a const reference to the mask of the output source. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the mask. </dd></dl>
+
 </div>
 </div>
-<a id="ac2b71a003be817d1de7e1f763cd94cd6" name="ac2b71a003be817d1de7e1f763cd94cd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2b71a003be817d1de7e1f763cd94cd6">&#9670;&#160;</a></span>getoutputorigin()</h2>
+<a id="a1672035fb9a027c120c0137cd3ebb9d7" name="a1672035fb9a027c120c0137cd3ebb9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1672035fb9a027c120c0137cd3ebb9d7">&#9670;&#160;</a></span>getOutputOrigin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -737,7 +829,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Core::FMToutputsource::getoutputorigin </td>
+          <td class="memname">int Core::FMTOutputSource::getOutputOrigin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -750,10 +842,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the output origin. </p>
+<dl class="section return"><dt>Returns</dt><dd>the output origin. </dd></dl>
+
 </div>
 </div>
-<a id="a2f645597f470c47a88d171c205b24917" name="a2f645597f470c47a88d171c205b24917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f645597f470c47a88d171c205b24917">&#9670;&#160;</a></span>gettarget()</h2>
+<a id="a432eee2d9241d2f0020139f78fdf1511" name="a432eee2d9241d2f0020139f78fdf1511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432eee2d9241d2f0020139f78fdf1511">&#9670;&#160;</a></span>getTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -762,7 +857,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> &amp; Core::FMToutputsource::gettarget </td>
+          <td class="memname">const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> &amp; Core::FMTOutputSource::getTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -775,10 +870,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return a const reference to the target of the output source. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the target. </dd></dl>
+
 </div>
 </div>
-<a id="aca8791bad95ed8c45b10a736e9d167b2" name="aca8791bad95ed8c45b10a736e9d167b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca8791bad95ed8c45b10a736e9d167b2">&#9670;&#160;</a></span>getthemetarget()</h2>
+<a id="a0e49178f336cfe32ee49e03d0838d0d3" name="a0e49178f336cfe32ee49e03d0838d0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e49178f336cfe32ee49e03d0838d0d3">&#9670;&#160;</a></span>getThemeTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -787,7 +885,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Core::FMToutputsource::getthemetarget </td>
+          <td class="memname">int Core::FMTOutputSource::getThemeTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -800,16 +898,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the theme target. </p>
+<dl class="section return"><dt>Returns</dt><dd>the theme target. </dd></dl>
+
 </div>
 </div>
-<a id="a9a338a9e09807c9b79d02e84d37c7aea" name="a9a338a9e09807c9b79d02e84d37c7aea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a338a9e09807c9b79d02e84d37c7aea">&#9670;&#160;</a></span>getvalue()</h2>
+<a id="a6b5440a37a347fd707d57a25231a4cf8" name="a6b5440a37a347fd707d57a25231a4cf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5440a37a347fd707d57a25231a4cf8">&#9670;&#160;</a></span>getValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Core::FMToutputsource::getvalue </td>
+          <td class="memname">double Core::FMTOutputSource::getValue </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>period</em> = <code>0</code></td><td>)</td>
@@ -818,10 +919,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the value of the output source for a given period. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>the period. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value. </dd></dl>
+
 </div>
 </div>
-<a id="aa4ca314508560a078566a74572701f24" name="aa4ca314508560a078566a74572701f24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4ca314508560a078566a74572701f24">&#9670;&#160;</a></span>getvalues()</h2>
+<a id="a0594dd495a64ff432c30f97f0e3af97d" name="a0594dd495a64ff432c30f97f0e3af97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0594dd495a64ff432c30f97f0e3af97d">&#9670;&#160;</a></span>getValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -830,7 +940,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; double &gt; &amp; Core::FMToutputsource::getvalues </td>
+          <td class="memname">const std::vector&lt; double &gt; &amp; Core::FMTOutputSource::getValues </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -843,10 +953,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return a const reference to the values of the output source. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the values. </dd></dl>
+
 </div>
 </div>
-<a id="a029904d838f6d38eb2cdc99e95bdf6f0" name="a029904d838f6d38eb2cdc99e95bdf6f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a029904d838f6d38eb2cdc99e95bdf6f0">&#9670;&#160;</a></span>getyield()</h2>
+<a id="a90e91cf020babe8a72ed21688fa971a9" name="a90e91cf020babe8a72ed21688fa971a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e91cf020babe8a72ed21688fa971a9">&#9670;&#160;</a></span>getYield()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -855,7 +968,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string &amp; Core::FMToutputsource::getyield </td>
+          <td class="memname">const std::string &amp; Core::FMTOutputSource::getYield </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -868,16 +981,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return a const reference to the yield of the output source. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the yield. </dd></dl>
+
 </div>
 </div>
-<a id="a54d62c8e476b4df46826c7d0f85f0000" name="a54d62c8e476b4df46826c7d0f85f0000"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54d62c8e476b4df46826c7d0f85f0000">&#9670;&#160;</a></span>hash()</h2>
+<a id="ada3daccfc828f87ab6be1a30cab6f42a" name="ada3daccfc828f87ab6be1a30cab6f42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3daccfc828f87ab6be1a30cab6f42a">&#9670;&#160;</a></span>hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMToutputsource::hash </td>
+          <td class="memname">size_t Core::FMTOutputSource::hash </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>period</em> = <code>-1</code>, </td>
@@ -896,10 +1012,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the hash of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>the period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">withyield</td><td>if true includes the yield in the hash. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the hash value. </dd></dl>
+
 </div>
 </div>
-<a id="a02c5d25c4b4ae28960140c9074bd02a4" name="a02c5d25c4b4ae28960140c9074bd02a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02c5d25c4b4ae28960140c9074bd02a4">&#9670;&#160;</a></span>isaction()</h2>
+<a id="ad783d50e7b145756268133bf9f5a0aec" name="ad783d50e7b145756268133bf9f5a0aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad783d50e7b145756268133bf9f5a0aec">&#9670;&#160;</a></span>isAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -908,7 +1034,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isaction </td>
+          <td class="memname">bool Core::FMTOutputSource::isAction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -921,10 +1047,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is an action. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is an action else false. </dd></dl>
+
 </div>
 </div>
-<a id="aa625342582ce0520974928b93f9494fd" name="aa625342582ce0520974928b93f9494fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa625342582ce0520974928b93f9494fd">&#9670;&#160;</a></span>isaverage()</h2>
+<a id="a3267b8b251ac12a4daaaf77b7517f86b" name="a3267b8b251ac12a4daaaf77b7517f86b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3267b8b251ac12a4daaaf77b7517f86b">&#9670;&#160;</a></span>isAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -933,7 +1062,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isaverage </td>
+          <td class="memname">bool Core::FMTOutputSource::isAverage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -946,10 +1075,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is an average. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is an average else false. </dd></dl>
+
 </div>
 </div>
-<a id="a4be0308644981a275e681f56f5d84c31" name="a4be0308644981a275e681f56f5d84c31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4be0308644981a275e681f56f5d84c31">&#9670;&#160;</a></span>isconstant()</h2>
+<a id="af52a78d3affaa98f2b4d107e5405d6c9" name="af52a78d3affaa98f2b4d107e5405d6c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af52a78d3affaa98f2b4d107e5405d6c9">&#9670;&#160;</a></span>isConstant()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -958,7 +1090,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isconstant </td>
+          <td class="memname">bool Core::FMTOutputSource::isConstant </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -971,42 +1103,54 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is a constant. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is a constant else false. </dd></dl>
+
 </div>
 </div>
-<a id="adb8a4127d720973e5124e6ac11ca63ed" name="adb8a4127d720973e5124e6ac11ca63ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb8a4127d720973e5124e6ac11ca63ed">&#9670;&#160;</a></span>isequalbyvalue()</h2>
+<a id="ac6313c31c29b7d8c2d5bb5ca844466f2" name="ac6313c31c29b7d8c2d5bb5ca844466f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6313c31c29b7d8c2d5bb5ca844466f2">&#9670;&#160;</a></span>isEqualByValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isequalbyvalue </td>
+          <td class="memname">bool Core::FMTOutputSource::isEqualByValue </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output source is equal by value to another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output source. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if equal by value else false. </dd></dl>
+
 </div>
 </div>
-<a id="aab372e95558d92f96b3de2f065ecffaf" name="aab372e95558d92f96b3de2f065ecffaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab372e95558d92f96b3de2f065ecffaf">&#9670;&#160;</a></span>isinaggregate()</h2>
+<a id="af9a240d039abf441e467980daef9fb8a" name="af9a240d039abf441e467980daef9fb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a240d039abf441e467980daef9fb8a">&#9670;&#160;</a></span>isInAggregate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isinaggregate </td>
+          <td class="memname">bool Core::FMTOutputSource::isInAggregate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em>&#160;</td>
         </tr>
         <tr>
@@ -1017,10 +1161,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output source is in the same aggregate as another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output source. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if in the same aggregate else false. </dd></dl>
+
 </div>
 </div>
-<a id="a67e8490c58b1bb2cc66b07fbef32d8c8" name="a67e8490c58b1bb2cc66b07fbef32d8c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67e8490c58b1bb2cc66b07fbef32d8c8">&#9670;&#160;</a></span>isinventory()</h2>
+<a id="a7e148eca8db6061f80f6feaa90b960bd" name="a7e148eca8db6061f80f6feaa90b960bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e148eca8db6061f80f6feaa90b960bd">&#9670;&#160;</a></span>isInventory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1029,7 +1183,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isinventory </td>
+          <td class="memname">bool Core::FMTOutputSource::isInventory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1042,10 +1196,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source targets the inventory. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source targets the inventory else false. </dd></dl>
+
 </div>
 </div>
-<a id="afee4ccaa33c0caee26de2805ae975cfc" name="afee4ccaa33c0caee26de2805ae975cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afee4ccaa33c0caee26de2805ae975cfc">&#9670;&#160;</a></span>islevel()</h2>
+<a id="a493bdd2024258d04f6ce5dd5443fcc4d" name="a493bdd2024258d04f6ce5dd5443fcc4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493bdd2024258d04f6ce5dd5443fcc4d">&#9670;&#160;</a></span>isLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1054,7 +1211,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::islevel </td>
+          <td class="memname">bool Core::FMTOutputSource::isLevel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1067,10 +1224,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is a level. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is a level else false. </dd></dl>
+
 </div>
 </div>
-<a id="a73449caad3fec8fb682cf7ca4cdb6eca" name="a73449caad3fec8fb682cf7ca4cdb6eca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73449caad3fec8fb682cf7ca4cdb6eca">&#9670;&#160;</a></span>isnextperiod()</h2>
+<a id="a19d741180cff921fa515a508e8d85068" name="a19d741180cff921fa515a508e8d85068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d741180cff921fa515a508e8d85068">&#9670;&#160;</a></span>isNextPeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1079,7 +1239,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isnextperiod </td>
+          <td class="memname">bool Core::FMTOutputSource::isNextPeriod </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1092,78 +1252,108 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source targets the next period. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source targets the next period else false. </dd></dl>
+
 </div>
 </div>
-<a id="a85e1430d353935368680f03c5ba99844" name="a85e1430d353935368680f03c5ba99844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85e1430d353935368680f03c5ba99844">&#9670;&#160;</a></span>isnull()</h2>
+<a id="a0df4c092f3bbbb27ecaf15343ecec5a4" name="a0df4c092f3bbbb27ecaf15343ecec5a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df4c092f3bbbb27ecaf15343ecec5a4">&#9670;&#160;</a></span>isNull()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isnull </td>
+          <td class="memname">bool Core::FMTOutputSource::isNull </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;&#160;</td>
           <td class="paramname"><em>ylds</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is null. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ylds</td><td>the yields. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is null else false. </dd></dl>
+
 </div>
 </div>
-<a id="ad70479b4501a44a1b200f541924be863" name="ad70479b4501a44a1b200f541924be863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad70479b4501a44a1b200f541924be863">&#9670;&#160;</a></span>issamebutdifferentaction()</h2>
+<a id="a297fcabd8de320821b831b247f6b1b5f" name="a297fcabd8de320821b831b247f6b1b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297fcabd8de320821b831b247f6b1b5f">&#9670;&#160;</a></span>isSameButDifferentAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::issamebutdifferentaction </td>
+          <td class="memname">bool Core::FMTOutputSource::isSameButDifferentAction </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output source is the same as another but with a different action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output source. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if same but different action else false. </dd></dl>
+
 </div>
 </div>
-<a id="abe66b199fd9098bf48370bcb14671586" name="abe66b199fd9098bf48370bcb14671586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe66b199fd9098bf48370bcb14671586">&#9670;&#160;</a></span>issubsetof() <span class="overload">[1/2]</span></h2>
+<a id="a719275763e0a12763c21e1a6eab406e5" name="a719275763e0a12763c21e1a6eab406e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719275763e0a12763c21e1a6eab406e5">&#9670;&#160;</a></span>isSubsetOf() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::issubsetof </td>
+          <td class="memname">bool Core::FMTOutputSource::isSubsetOf </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output source is a subset of another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output source. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this output source is a subset of rhs else false. </dd></dl>
+
 </div>
 </div>
-<a id="a2d3eb9c42a7f5a5ba239a3658685b3b7" name="a2d3eb9c42a7f5a5ba239a3658685b3b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d3eb9c42a7f5a5ba239a3658685b3b7">&#9670;&#160;</a></span>issubsetof() <span class="overload">[2/2]</span></h2>
+<a id="a860fcafe8067f7611688747c98be7267" name="a860fcafe8067f7611688747c98be7267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860fcafe8067f7611688747c98be7267">&#9670;&#160;</a></span>isSubsetOf() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::issubsetof </td>
+          <td class="memname">bool Core::FMTOutputSource::isSubsetOf </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em>&#160;</td>
         </tr>
         <tr>
@@ -1174,10 +1364,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output source is a subset of another considering the actions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output source. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this output source is a subset of rhs else false. </dd></dl>
+
 </div>
 </div>
-<a id="a7fdd7efea7f5d80919ecb373c1345158" name="a7fdd7efea7f5d80919ecb373c1345158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fdd7efea7f5d80919ecb373c1345158">&#9670;&#160;</a></span>issum()</h2>
+<a id="a284ad89c3e2a09b226e817881a9d7d35" name="a284ad89c3e2a09b226e817881a9d7d35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a284ad89c3e2a09b226e817881a9d7d35">&#9670;&#160;</a></span>isSum()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1186,7 +1386,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::issum </td>
+          <td class="memname">bool Core::FMTOutputSource::isSum </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1199,10 +1399,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is a sum. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is a sum else false. </dd></dl>
+
 </div>
 </div>
-<a id="a880dfaab194e1ec91159cad2d52f57c5" name="a880dfaab194e1ec91159cad2d52f57c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880dfaab194e1ec91159cad2d52f57c5">&#9670;&#160;</a></span>istimeyield()</h2>
+<a id="a67f250fb842ea256c096c404b897b5f1" name="a67f250fb842ea256c096c404b897b5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f250fb842ea256c096c404b897b5f1">&#9670;&#160;</a></span>isTimeYield()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1211,7 +1414,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::istimeyield </td>
+          <td class="memname">bool Core::FMTOutputSource::isTimeYield </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1224,10 +1427,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is a time yield. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is a time yield else false. </dd></dl>
+
 </div>
 </div>
-<a id="a43a2e576effadbae368f5a74474e5cfb" name="a43a2e576effadbae368f5a74474e5cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43a2e576effadbae368f5a74474e5cfb">&#9670;&#160;</a></span>isvariable()</h2>
+<a id="a24e5a1688d3660730eda462ca32db3eb" name="a24e5a1688d3660730eda462ca32db3eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e5a1688d3660730eda462ca32db3eb">&#9670;&#160;</a></span>isVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1236,7 +1442,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isvariable </td>
+          <td class="memname">bool Core::FMTOutputSource::isVariable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1249,10 +1455,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is a variable. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is a variable else false. </dd></dl>
+
 </div>
 </div>
-<a id="a11d0161b9a8aa544fb6f8827af02224f" name="a11d0161b9a8aa544fb6f8827af02224f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11d0161b9a8aa544fb6f8827af02224f">&#9670;&#160;</a></span>isvariablelevel()</h2>
+<a id="a4b337e919a2bb29f41e132bc2a75ecf3" name="a4b337e919a2bb29f41e132bc2a75ecf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b337e919a2bb29f41e132bc2a75ecf3">&#9670;&#160;</a></span>isVariableLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1261,7 +1470,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::isvariablelevel </td>
+          <td class="memname">bool Core::FMTOutputSource::isVariableLevel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1274,10 +1483,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source is a variable level. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is a variable level else false. </dd></dl>
+
 </div>
 </div>
-<a id="ae0409357afab351fc6ea9ade8756c24e" name="ae0409357afab351fc6ea9ade8756c24e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0409357afab351fc6ea9ade8756c24e">&#9670;&#160;</a></span>operator std::string()</h2>
+<a id="a574962b4f7807646bc2c5db2f180a2a0" name="a574962b4f7807646bc2c5db2f180a2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a574962b4f7807646bc2c5db2f180a2a0">&#9670;&#160;</a></span>operator std::string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1286,7 +1498,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputsource::operator std::string </td>
+          <td class="memname">Core::FMTOutputSource::operator std::string </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1294,104 +1506,140 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the string reprensentation of the <a class="el" href="classCore_1_1FMTspec.html">FMTspec</a> like _age &gt;= lower and _Age &lt;= upper and .... </p>
 
-<p>Reimplemented from <a class="el" href="classCore_1_1FMTspec.html#a9247bf17b50ce8b8dc4127dd5dc3d8d2">Core::FMTspec</a>.</p>
+<p>Return the string representation of the output source. </p>
+<dl class="section return"><dt>Returns</dt><dd>the string representation of the output source. </dd></dl>
 
 </div>
 </div>
-<a id="a5095da6e3ad723bb8738cc0457366115" name="a5095da6e3ad723bb8738cc0457366115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5095da6e3ad723bb8738cc0457366115">&#9670;&#160;</a></span>operator!=()</h2>
+<a id="a0dcc9f281d136fc6363647d3263bb18a" name="a0dcc9f281d136fc6363647d3263bb18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dcc9f281d136fc6363647d3263bb18a">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::operator!= </td>
+          <td class="memname">bool Core::FMTOutputSource::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Inequality comparison operator of <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the output source to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both output sources are different else false. </dd></dl>
+
 </div>
 </div>
-<a id="a11fd63b7c326146753044884151aef71" name="a11fd63b7c326146753044884151aef71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11fd63b7c326146753044884151aef71">&#9670;&#160;</a></span>operator&lt;()</h2>
+<a id="aa0a43d21b45d0b9c1fd32e5a5959a94b" name="aa0a43d21b45d0b9c1fd32e5a5959a94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a43d21b45d0b9c1fd32e5a5959a94b">&#9670;&#160;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::operator&lt; </td>
+          <td class="memname">bool Core::FMTOutputSource::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Less than comparison operator of <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the output source to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this output source is less than rhs else false. </dd></dl>
+
 </div>
 </div>
-<a id="a1913a3b14ea32ac211d85a412c541003" name="a1913a3b14ea32ac211d85a412c541003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1913a3b14ea32ac211d85a412c541003">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a184446d288a041e0ff8de7ee75a2d3de" name="a184446d288a041e0ff8de7ee75a2d3de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184446d288a041e0ff8de7ee75a2d3de">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp; Core::FMToutputsource::operator= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp; Core::FMTOutputSource::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the output source to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>. </dd></dl>
+
 </div>
 </div>
-<a id="a6f5f18ed51de37adcd6718748a989284" name="a6f5f18ed51de37adcd6718748a989284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f5f18ed51de37adcd6718748a989284">&#9670;&#160;</a></span>operator==()</h2>
+<a id="a78f9eb191ff5566da727eebe5994ed7c" name="a78f9eb191ff5566da727eebe5994ed7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f9eb191ff5566da727eebe5994ed7c">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::operator== </td>
+          <td class="memname">bool Core::FMTOutputSource::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Equality comparison operator of <a class="el" href="classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output.">FMTOutputSource</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the output source to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both output sources are equal else false. </dd></dl>
+
 </div>
 </div>
-<a id="a01b4e36c9cc09ab97c176cc380da2c79" name="a01b4e36c9cc09ab97c176cc380da2c79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01b4e36c9cc09ab97c176cc380da2c79">&#9670;&#160;</a></span>presolve()</h2>
+<a id="accaed4de9ea40f904962ac01be10560f" name="accaed4de9ea40f904962ac01be10560f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accaed4de9ea40f904962ac01be10560f">&#9670;&#160;</a></span>preSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> Core::FMToutputsource::presolve </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> Core::FMTOutputSource::preSolve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
           <td class="paramname"><em>filter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>newthemes</em>&#160;</td>
         </tr>
         <tr>
@@ -1402,24 +1650,34 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a presolved copy of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newthemes</td><td>the presolved themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the presolved output source. </dd></dl>
+
 </div>
 </div>
-<a id="acd89caa4160a753e45d2c785cb03d565" name="acd89caa4160a753e45d2c785cb03d565"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd89caa4160a753e45d2c785cb03d565">&#9670;&#160;</a></span>resetvalues()</h2>
+<a id="a1ea910cf710398c47511bc247f555190" name="a1ea910cf710398c47511bc247f555190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea910cf710398c47511bc247f555190">&#9670;&#160;</a></span>resetValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::resetvalues </td>
+          <td class="memname">void Core::FMTOutputSource::resetValues </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToperator.html">FMToperator</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOperator.html">FMTOperator</a> &amp;&#160;</td>
           <td class="paramname"><em>op</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em>&#160;</td>
         </tr>
         <tr>
@@ -1430,16 +1688,25 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Reset the values of the output source using an operator and another output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>the operator. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>the other output source. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aa8f2115f85a2a262add849ccc537651d" name="aa8f2115f85a2a262add849ccc537651d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8f2115f85a2a262add849ccc537651d">&#9670;&#160;</a></span>setaction()</h2>
+<a id="a0d71b7aa4e0f9b60369f8a6c05edcd52" name="a0d71b7aa4e0f9b60369f8a6c05edcd52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d71b7aa4e0f9b60369f8a6c05edcd52">&#9670;&#160;</a></span>setAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::setaction </td>
+          <td class="memname">void Core::FMTOutputSource::setAction </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>actionname</em></td><td>)</td>
@@ -1448,16 +1715,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the action of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">actionname</td><td>the action to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a1983b430d653a7607f1c9ff02edf4bb0" name="a1983b430d653a7607f1c9ff02edf4bb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1983b430d653a7607f1c9ff02edf4bb0">&#9670;&#160;</a></span>setaverage()</h2>
+<a id="a8138bc57a9595bf1f2ae13685b535fc7" name="a8138bc57a9595bf1f2ae13685b535fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8138bc57a9595bf1f2ae13685b535fc7">&#9670;&#160;</a></span>setAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::setaverage </td>
+          <td class="memname">void Core::FMTOutputSource::setAverage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1465,34 +1740,44 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the output source as an average. </p>
+
 </div>
 </div>
-<a id="a28445ca52769e999edb3dd2d1676850b" name="a28445ca52769e999edb3dd2d1676850b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28445ca52769e999edb3dd2d1676850b">&#9670;&#160;</a></span>setmask()</h2>
+<a id="a3e3c5d7d3fae59bd7dab05b1a0841d08" name="a3e3c5d7d3fae59bd7dab05b1a0841d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3c5d7d3fae59bd7dab05b1a0841d08">&#9670;&#160;</a></span>setMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::setmask </td>
+          <td class="memname">void Core::FMTOutputSource::setMask </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>newmask</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the mask of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newmask</td><td>the mask to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="acec06b46494329a96159b3fa360b56fb" name="acec06b46494329a96159b3fa360b56fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acec06b46494329a96159b3fa360b56fb">&#9670;&#160;</a></span>setoutputorigin()</h2>
+<a id="ae08ee4ad0153d7742e474f779945adbe" name="ae08ee4ad0153d7742e474f779945adbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08ee4ad0153d7742e474f779945adbe">&#9670;&#160;</a></span>setOutputOrigin()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::setoutputorigin </td>
+          <td class="memname">void Core::FMTOutputSource::setOutputOrigin </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>neworigin</em></td><td>)</td>
@@ -1501,16 +1786,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the output origin of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">neworigin</td><td>the output origin to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a7921a9e3bffcfc4741da94c5c7bc4e8f" name="a7921a9e3bffcfc4741da94c5c7bc4e8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7921a9e3bffcfc4741da94c5c7bc4e8f">&#9670;&#160;</a></span>setsum()</h2>
+<a id="aa1f7f6a1658512e1ca8f75d6859620eb" name="aa1f7f6a1658512e1ca8f75d6859620eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f7f6a1658512e1ca8f75d6859620eb">&#9670;&#160;</a></span>setSum()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::setsum </td>
+          <td class="memname">void Core::FMTOutputSource::setSum </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1518,16 +1811,18 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the output source as a sum. </p>
+
 </div>
 </div>
-<a id="a4cbbe768da5d03093b2b6111674d4b58" name="a4cbbe768da5d03093b2b6111674d4b58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cbbe768da5d03093b2b6111674d4b58">&#9670;&#160;</a></span>settarget()</h2>
+<a id="adff00ace1a9c4c291ec4305ceeabeec0" name="adff00ace1a9c4c291ec4305ceeabeec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff00ace1a9c4c291ec4305ceeabeec0">&#9670;&#160;</a></span>setTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::settarget </td>
+          <td class="memname">void Core::FMTOutputSource::setTarget </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceCore.html#af202891860e714e2a80594b4ae626f71">FMTotar</a> &amp;&#160;</td>
           <td class="paramname"><em>newtype</em></td><td>)</td>
@@ -1536,16 +1831,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the target of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newtype</td><td>the target to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a57bccda0a6f87a94f69005da681af9d2" name="a57bccda0a6f87a94f69005da681af9d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57bccda0a6f87a94f69005da681af9d2">&#9670;&#160;</a></span>setthemetarget()</h2>
+<a id="a6f8a6f3c52969079d29b69e1336ed0ed" name="a6f8a6f3c52969079d29b69e1336ed0ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8a6f3c52969079d29b69e1336ed0ed">&#9670;&#160;</a></span>setThemeTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputsource::setthemetarget </td>
+          <td class="memname">void Core::FMTOutputSource::setThemeTarget </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>newttarget</em></td><td>)</td>
@@ -1554,46 +1857,98 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the theme target of the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newttarget</td><td>the theme target to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a101f5f6bba6ab758762de0e2e9943bc0" name="a101f5f6bba6ab758762de0e2e9943bc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a101f5f6bba6ab758762de0e2e9943bc0">&#9670;&#160;</a></span>targets()</h2>
+<a id="a3f4837639ed8fdc1c2287231ffaa3818" name="a3f4837639ed8fdc1c2287231ffaa3818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f4837639ed8fdc1c2287231ffaa3818">&#9670;&#160;</a></span>setYield()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> * &gt; Core::FMToutputsource::targets </td>
+          <td class="memname">void Core::FMTOutputSource::setYield </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_Yield</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set Yield to the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_Yield</td><td>the yield we want to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add1fd2c97655c529019e04d16c15ea43" name="add1fd2c97655c529019e04d16c15ea43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1fd2c97655c529019e04d16c15ea43">&#9670;&#160;</a></span>targets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> * &gt; Core::FMTOutputSource::targets </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the actions targeted by the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the targeted actions. </dd></dl>
+
 </div>
 </div>
-<a id="a51b6f7d087c9c6e15082fc175df8b3bb" name="a51b6f7d087c9c6e15082fc175df8b3bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51b6f7d087c9c6e15082fc175df8b3bb">&#9670;&#160;</a></span>targetsset()</h2>
+<a id="a039653175fde05d7d45cc31cb4f9c738" name="a039653175fde05d7d45cc31cb4f9c738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039653175fde05d7d45cc31cb4f9c738">&#9670;&#160;</a></span>targetsSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_set&lt; int &gt; Core::FMToutputsource::targetsset </td>
+          <td class="memname">std::unordered_set&lt; int &gt; Core::FMTOutputSource::targetsSet </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the ids of the actions targeted by the output source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the ids of the targeted actions. </dd></dl>
+
 </div>
 </div>
-<a id="ac021b1c8619bce8ade4c452b26c26302" name="ac021b1c8619bce8ade4c452b26c26302"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac021b1c8619bce8ade4c452b26c26302">&#9670;&#160;</a></span>use()</h2>
+<a id="a5c744d5f74b1635ffd7c7b544c470729" name="a5c744d5f74b1635ffd7c7b544c470729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c744d5f74b1635ffd7c7b544c470729">&#9670;&#160;</a></span>trimDouble()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1602,21 +1957,53 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::use </td>
+          <td class="memname">static std::string Core::FMTOutputSource::trimDouble </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>string_number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Trim the trailing zeros of a number in string format, for example 1400.0000 to 1400 or 14.0300 to 14.03. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string_number</td><td>the number in string format. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the trimmed value in string format. </dd></dl>
+
+</div>
+</div>
+<a id="ac93e5b8ecaf7bf3a965fd99ed1cc4fd5" name="ac93e5b8ecaf7bf3a965fd99ed1cc4fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93e5b8ecaf7bf3a965fd99ed1cc4fd5">&#9670;&#160;</a></span>use()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Core::FMTOutputSource::use </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;&#160;</td>
           <td class="paramname"><em>development</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a> &amp;&#160;</td>
           <td class="paramname"><em>ylds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">Graph::FMTgraphvertextoyield</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">Graph::FMTGraphVertexToYield</a> *&#160;</td>
           <td class="paramname"><em>graphinfo</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -1625,17 +2012,23 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Return true if the output source is used by a development based on the yields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">development</td><td>the development. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ylds</td><td>the yields. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">graphinfo</td><td>an optional graph vertex to yield. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source is used else false. </dd></dl>
 
 </div>
 </div>
-<a id="ac0a9f968997ed93873ba667526d7bf74" name="ac0a9f968997ed93873ba667526d7bf74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0a9f968997ed93873ba667526d7bf74">&#9670;&#160;</a></span>useinedges()</h2>
+<a id="a26b30ac4e9fa6b40f9b4aa0537e00809" name="a26b30ac4e9fa6b40f9b4aa0537e00809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b30ac4e9fa6b40f9b4aa0537e00809">&#9670;&#160;</a></span>useInEdges()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1644,7 +2037,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::useinedges </td>
+          <td class="memname">bool Core::FMTOutputSource::useInEdges </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1657,10 +2050,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output source uses the in edges. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source uses the in edges else false. </dd></dl>
+
 </div>
 </div>
-<a id="a9dd345c83a0329e85ff45d90b1e26f93" name="a9dd345c83a0329e85ff45d90b1e26f93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dd345c83a0329e85ff45d90b1e26f93">&#9670;&#160;</a></span>useoutedges()</h2>
+<a id="a160a634515e70559ed382bedb2520582" name="a160a634515e70559ed382bedb2520582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160a634515e70559ed382bedb2520582">&#9670;&#160;</a></span>useOutEdges()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1669,7 +2065,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsource::useoutedges </td>
+          <td class="memname">bool Core::FMTOutputSource::useOutEdges </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1681,6 +2077,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Return true if the output source uses the out edges. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source uses the out edges else false. </dd></dl>
 
 </div>
 </div>
@@ -1707,8 +2106,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aaee8c87a34ddf600132dcecba7230bf7" name="aaee8c87a34ddf600132dcecba7230bf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaee8c87a34ddf600132dcecba7230bf7">&#9670;&#160;</a></span>Parser::FMToutputparser</h2>
+<a id="a16a87216c4a74d234a69cbe38e906089" name="a16a87216c4a74d234a69cbe38e906089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a87216c4a74d234a69cbe38e906089">&#9670;&#160;</a></span>Parser::FMTOutputParser</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1717,7 +2116,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classParser_1_1FMToutputparser.html">Parser::FMToutputparser</a></td>
+          <td class="memname">friend class <a class="el" href="classParser_1_1FMTOutputParser.html">Parser::FMTOutputParser</a></td>
         </tr>
       </table>
   </td>
@@ -1730,7 +2129,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMToutputsource_8hpp_source.html">FMToutputsource.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTOutputSource_8h_source.html">FMTOutputSource.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

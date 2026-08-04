@@ -1,5 +1,5 @@
-<map id="Core::FMTyieldmodelTSLA" name="Core::FMTyieldmodelTSLA">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,182,181"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTyieldmodel.html" title=" " alt="" coords="21,80,166,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="35,5,152,32"/>
+<map id="Core::FMTYieldModelTsla" name="Core::FMTYieldModelTsla">
+<area shape="rect" id="node1" title="Yield model returning the time since last disturbance, always added by default by the yield parser." alt="" coords="5,155,176,181"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTYieldModel.html" title="Abstract class to be implemented as a machine learning yield model." alt="" coords="17,80,164,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="30,5,151,32"/>
 </map>

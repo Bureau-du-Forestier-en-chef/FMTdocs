@@ -1,7 +1,7 @@
-<map id="Parallel::FMTtask" name="Parallel::FMTtask">
-<area shape="rect" id="node1" title=" " alt="" coords="171,56,294,83"/>
-<area shape="rect" id="node3" href="$classParallel_1_1FMTopareaschedulertask.html" title=" " alt="" coords="342,5,560,32"/>
-<area shape="rect" id="node4" href="$classParallel_1_1FMTplanningtask.html" title=" " alt="" coords="366,56,537,83"/>
-<area shape="rect" id="node5" href="$classParallel_1_1FMTreplanningtask.html" title=" " alt="" coords="360,107,542,133"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="5,56,123,83"/>
+<map id="Parallel::FMTTask" name="Parallel::FMTTask">
+<area shape="rect" id="node1" title="Task for parallel jobs." alt="" coords="174,56,300,83"/>
+<area shape="rect" id="node3" href="$classParallel_1_1FMTOpAreaSchedulerTask.html" title="Task to find a suboptimal schedule for the operating areas of a FMTLpModel." alt="" coords="348,5,576,32"/>
+<area shape="rect" id="node4" href="$classParallel_1_1FMTPlanningTask.html" title="Task to carry multiple parallel optimizations of different FMTModel using the doPlanning function." alt="" coords="374,56,550,83"/>
+<area shape="rect" id="node5" href="$classParallel_1_1FMTReplanningTask.html" title="Replanning task using global, stochastic and local abstract models to simulate natural disturbances o..." alt="" coords="367,107,557,133"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="5,56,126,83"/>
 </map>

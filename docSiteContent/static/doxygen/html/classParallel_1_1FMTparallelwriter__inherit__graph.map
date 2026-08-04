@@ -1,6 +1,6 @@
-<map id="Parallel::FMTparallelwriter" name="Parallel::FMTparallelwriter">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,176,256"/>
-<area shape="rect" id="node2" href="$classParser_1_1FMTmodelparser.html" title=" " alt="" coords="8,155,173,181"/>
-<area shape="rect" id="node3" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="26,80,155,107"/>
-<area shape="rect" id="node4" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="32,5,149,32"/>
+<map id="Parallel::FMTParallelWriter" name="Parallel::FMTParallelWriter">
+<area shape="rect" id="node1" title="Writer used in concurrency to write multiple results in the same layer." alt="" coords="5,229,182,256"/>
+<area shape="rect" id="node2" href="$classParser_1_1FMTModelParser.html" title="Main parser reading and writing model files, for single or multiple scenarios, using all the other FM..." alt="" coords="10,155,177,181"/>
+<area shape="rect" id="node3" href="$classParser_1_1FMTParser.html" title="Main parent class of all the parsers in FMT." alt="" coords="28,80,159,107"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="33,5,154,32"/>
 </map>

@@ -6,13 +6,13 @@ toc: false
 
 **Welcome to the FMT documentation !**
 
-{{% callout note %}}
+{{< callout note >}}
 Before you start reading, know that **you can change the appearance of the documentation** (light or dark theme) using the little moon or sun icon at the top-right corner of the screen.
-{{% /callout %}}
+{{< /callout >}}
 
-{{% callout warning %}}
+{{< callout warning >}}
 **If you don't know anything about Woodstock models**, you should take some time to read about them before reading this documentation. You'll feel a bit lost if you don't.
-{{% /callout %}}
+{{< /callout >}}
 
 If you want to better understand what is FMT and what it does, you can starts with the basics :
 

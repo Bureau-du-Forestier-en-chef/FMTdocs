@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['fmtgraph_0',['FMTgraph',['../classModels_1_1FMTmodel.html#a9486066938d41d2605ceb78e31b29ee6',1,'Models::FMTmodel']]],
-  ['fmtgraphvertextoyield_1',['FMTgraphvertextoyield',['../classModels_1_1FMTmodel.html#a2934366323c3078f88816eb79382e405',1,'Models::FMTmodel']]],
-  ['fmtlinegraph_2',['FMTlinegraph',['../classModels_1_1FMTmodel.html#a58e5b3e990e8bb0a182cce5819b778f3',1,'Models::FMTmodel']]]
+  ['fmtmodel_0',['FMTModel',['../classCore_1_1FMTYields.html#a3d5ee695168a55695ee3ba3782199748',1,'Core::FMTYields']]],
+  ['fmtnssmodel_1',['FMTNssModel',['../classCore_1_1FMTYields.html#a0c05235ffa96854c5b6cbfe543821539',1,'Core::FMTYields']]]
 ];

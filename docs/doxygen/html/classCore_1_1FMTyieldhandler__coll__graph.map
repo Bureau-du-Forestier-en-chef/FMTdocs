@@ -1,24 +1,25 @@
-<map id="Core::FMTyieldhandler" name="Core::FMTyieldhandler">
-<area shape="rect" id="node1" title=" " alt="" coords="2520,323,2671,349"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="2315,237,2432,264"/>
-<area shape="rect" id="node3" title=" " alt="" coords="2020,156,2199,199"/>
-<area shape="rect" id="node4" href="$classException_1_1FMTexceptionhandler.html" title=" " alt="" coords="1715,147,1926,173"/>
-<area shape="rect" id="node5" title=" " alt="" coords="1371,205,1536,248"/>
-<area shape="rect" id="node6" href="$classLogging_1_1FMTlogger.html" title=" " alt="" coords="1058,212,1193,239"/>
-<area shape="rect" id="node7" title=" " alt="" coords="786,207,950,249"/>
-<area shape="rect" id="node8" href="$classLogging_1_1FMTsolverlogger.html" title=" " alt="" coords="550,215,719,241"/>
-<area shape="rect" id="node9" title=" " alt="" coords="357,215,501,241"/>
-<area shape="rect" id="node10" title=" " alt="" coords="828,284,908,311"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1217,293,1347,336"/>
-<area shape="rect" id="node11" title=" " alt="" coords="572,276,697,319"/>
-<area shape="rect" id="node12" title=" " alt="" coords="819,156,917,183"/>
-<area shape="rect" id="node13" title=" " alt="" coords="567,148,702,191"/>
-<area shape="rect" id="node14" title=" " alt="" coords="363,148,495,191"/>
-<area shape="rect" id="node15" title=" " alt="" coords="154,156,307,183"/>
-<area shape="rect" id="node16" title=" " alt="" coords="5,156,105,183"/>
-<area shape="rect" id="node17" title=" " alt="" coords="1378,139,1529,181"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1377,5,1530,48"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1385,72,1522,115"/>
-<area shape="rect" id="node20" href="$classCore_1_1FMTmask.html" title=" " alt="" coords="2316,348,2431,375"/>
-<area shape="rect" id="node21" title=" " alt="" coords="2314,399,2433,425"/>
+<map id="Core::FMTYieldHandler" name="Core::FMTYieldHandler">
+<area shape="rect" id="node1" title="Base class for yield handlers, holding a mask and the base ages of the yields." alt="" coords="2548,327,2704,353"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="2323,237,2443,264"/>
+<area shape="rect" id="node3" title=" " alt="" coords="2031,155,2208,197"/>
+<area shape="rect" id="node4" href="$classException_1_1FMTExceptionHandler.html" title="Base class used to handle errors thrown in FMT." alt="" coords="1603,145,1818,172"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1279,139,1416,181"/>
+<area shape="rect" id="node6" href="$classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT." alt="" coords="1278,208,1417,235"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1842,231,2007,273"/>
+<area shape="rect" id="node7" title=" " alt="" coords="973,205,1138,248"/>
+<area shape="rect" id="node8" href="$classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler)." alt="" coords="732,213,906,240"/>
+<area shape="rect" id="node9" title=" " alt="" coords="538,213,683,240"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1016,279,1095,305"/>
+<area shape="rect" id="node23" title=" " alt="" coords="1449,293,1578,336"/>
+<area shape="rect" id="node11" title=" " alt="" coords="757,271,882,313"/>
+<area shape="rect" id="node12" title=" " alt="" coords="987,139,1124,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="771,147,868,173"/>
+<area shape="rect" id="node14" title=" " alt="" coords="543,139,678,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="357,139,489,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="154,147,307,173"/>
+<area shape="rect" id="node17" title=" " alt="" coords="5,147,105,173"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1272,5,1423,48"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1271,72,1424,115"/>
+<area shape="rect" id="node21" href="$classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask." alt="" coords="2326,352,2440,379"/>
+<area shape="rect" id="node22" title=" " alt="" coords="2324,403,2443,429"/>
 </map>

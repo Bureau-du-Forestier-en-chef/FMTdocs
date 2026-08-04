@@ -1,4 +1,4 @@
-<map id="Models::FMTmodelparameters" name="Models::FMTmodelparameters">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,203,107"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="45,5,163,32"/>
+<map id="Models::FMTModelParameters" name="Models::FMTModelParameters">
+<area shape="rect" id="node1" title="Class containing all the parameters a model needs to be solved by the different types of FMTModel." alt="" coords="5,80,205,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="45,5,165,32"/>
 </map>

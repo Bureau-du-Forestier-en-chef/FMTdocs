@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Heuristics::FMTlpheuristicmthandler Class Reference</title>
+<title>FMT: Heuristics::FMTLpHeuristicMtHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,41 +71,51 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceHeuristics.html">Heuristics</a></li><li class="navelem"><a class="el" href="classHeuristics_1_1FMTlpheuristicmthandler.html">FMTlpheuristicmthandler</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceHeuristics.html">Heuristics</a></li><li class="navelem"><a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html">FMTLpHeuristicMtHandler</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classHeuristics_1_1FMTlpheuristicmthandler-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Heuristics::FMTlpheuristicmthandler Class Reference</div></div>
+<a href="classHeuristics_1_1FMTLpHeuristicMtHandler-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Heuristics::FMTLpHeuristicMtHandler Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTlpheuristicmthandler_8hpp_source.html">FMTlpheuristicmthandler.hpp</a>&gt;</code></p>
+<p>Multithreading handler running several LP heuristics in parallel and keeping the best solution.  
+ <a href="classHeuristics_1_1FMTLpHeuristicMtHandler.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTLpHeuristicMtHandler_8h_source.html">FMTLpHeuristicMtHandler.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af0cdfabc54b205eb3cae195c4fee7502"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTlpheuristicmthandler.html#af0cdfabc54b205eb3cae195c4fee7502">FMTlpheuristicmthandler</a> ()</td></tr>
-<tr class="separator:af0cdfabc54b205eb3cae195c4fee7502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43cdc43ed9b3cabc0a3775df347cb2b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTlpheuristicmthandler.html#a43cdc43ed9b3cabc0a3775df347cb2b8">FMTlpheuristicmthandler</a> (std::vector&lt; <a class="el" href="classHeuristics_1_1FMToperatingareascheduler.html">FMToperatingareascheduler</a> &gt; &amp;lheuristics, const double &amp;linitialsolution)</td></tr>
-<tr class="separator:a43cdc43ed9b3cabc0a3775df347cb2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f54682d0a585cca7c71ae8c03f9b6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTlpheuristicmthandler.html#a34f54682d0a585cca7c71ae8c03f9b6e">FMTlpheuristicmthandler</a> (std::vector&lt; <a class="el" href="classHeuristics_1_1FMToperatingareaclusterer.html">FMToperatingareaclusterer</a> &gt; &amp;lheuristics, const double &amp;linitialsolution)</td></tr>
-<tr class="separator:a34f54682d0a585cca7c71ae8c03f9b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe62db2d67ec9e51da5c74bd7b8ee8f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTlpheuristicmthandler.html#abe62db2d67ec9e51da5c74bd7b8ee8f8">initialsolve</a> () const</td></tr>
-<tr class="separator:abe62db2d67ec9e51da5c74bd7b8ee8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af23c619b84d0775fdcce033300286f16"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTlpheuristicmthandler.html#af23c619b84d0775fdcce033300286f16">greedysolve</a> (const unsigned int &amp;iterations, const double &amp;maxtime) const</td></tr>
-<tr class="separator:af23c619b84d0775fdcce033300286f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1344d54dfeabd58c71a6b90321a1093a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html#a1344d54dfeabd58c71a6b90321a1093a">FMTLpHeuristicMtHandler</a> ()</td></tr>
+<tr class="memdesc:a1344d54dfeabd58c71a6b90321a1093a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html" title="Multithreading handler running several LP heuristics in parallel and keeping the best solution.">FMTLpHeuristicMtHandler</a>.  <br /></td></tr>
+<tr class="separator:a1344d54dfeabd58c71a6b90321a1093a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7277a4eeed54c01a1b9bf7ea0e8afce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html#af7277a4eeed54c01a1b9bf7ea0e8afce">FMTLpHeuristicMtHandler</a> (std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaScheduler.html">FMTOperatingAreaScheduler</a> &gt; &amp;lheuristics, const double &amp;linitialsolution)</td></tr>
+<tr class="memdesc:af7277a4eeed54c01a1b9bf7ea0e8afce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html" title="Multithreading handler running several LP heuristics in parallel and keeping the best solution.">FMTLpHeuristicMtHandler</a> from operating area schedulers and an initial solution.  <br /></td></tr>
+<tr class="separator:af7277a4eeed54c01a1b9bf7ea0e8afce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9225322a31140d63319acea7b2522690"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html#a9225322a31140d63319acea7b2522690">FMTLpHeuristicMtHandler</a> (std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaClusterer.html">FMTOperatingAreaClusterer</a> &gt; &amp;lheuristics, const double &amp;linitialsolution)</td></tr>
+<tr class="memdesc:a9225322a31140d63319acea7b2522690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html" title="Multithreading handler running several LP heuristics in parallel and keeping the best solution.">FMTLpHeuristicMtHandler</a> from operating area clusterers and an initial solution.  <br /></td></tr>
+<tr class="separator:a9225322a31140d63319acea7b2522690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220dc4fa3bdbe5c78d4b1074cb72c088"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html#a220dc4fa3bdbe5c78d4b1074cb72c088">initialSolve</a> () const</td></tr>
+<tr class="memdesc:a220dc4fa3bdbe5c78d4b1074cb72c088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve each heuristic in parallel to find an initial solution and return the index of the best one.  <br /></td></tr>
+<tr class="separator:a220dc4fa3bdbe5c78d4b1074cb72c088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525e38380cc14716de74cb256549acf8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html#a525e38380cc14716de74cb256549acf8">greedySolve</a> (const unsigned int &amp;iterations, const double &amp;maxtime) const</td></tr>
+<tr class="memdesc:a525e38380cc14716de74cb256549acf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Improve the solution of each heuristic in parallel with greedy passes and return the index of the best one.  <br /></td></tr>
+<tr class="separator:a525e38380cc14716de74cb256549acf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af0cdfabc54b205eb3cae195c4fee7502" name="af0cdfabc54b205eb3cae195c4fee7502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0cdfabc54b205eb3cae195c4fee7502">&#9670;&#160;</a></span>FMTlpheuristicmthandler() <span class="overload">[1/3]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Multithreading handler running several LP heuristics in parallel and keeping the best solution. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1344d54dfeabd58c71a6b90321a1093a" name="a1344d54dfeabd58c71a6b90321a1093a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1344d54dfeabd58c71a6b90321a1093a">&#9670;&#160;</a></span>FMTLpHeuristicMtHandler() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Heuristics::FMTlpheuristicmthandler::FMTlpheuristicmthandler </td>
+          <td class="memname">Heuristics::FMTLpHeuristicMtHandler::FMTLpHeuristicMtHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -113,18 +123,20 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html" title="Multithreading handler running several LP heuristics in parallel and keeping the best solution.">FMTLpHeuristicMtHandler</a>. </p>
+
 </div>
 </div>
-<a id="a43cdc43ed9b3cabc0a3775df347cb2b8" name="a43cdc43ed9b3cabc0a3775df347cb2b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43cdc43ed9b3cabc0a3775df347cb2b8">&#9670;&#160;</a></span>FMTlpheuristicmthandler() <span class="overload">[2/3]</span></h2>
+<a id="af7277a4eeed54c01a1b9bf7ea0e8afce" name="af7277a4eeed54c01a1b9bf7ea0e8afce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7277a4eeed54c01a1b9bf7ea0e8afce">&#9670;&#160;</a></span>FMTLpHeuristicMtHandler() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Heuristics::FMTlpheuristicmthandler::FMTlpheuristicmthandler </td>
+          <td class="memname">Heuristics::FMTLpHeuristicMtHandler::FMTLpHeuristicMtHandler </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classHeuristics_1_1FMToperatingareascheduler.html">FMToperatingareascheduler</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaScheduler.html">FMTOperatingAreaScheduler</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>lheuristics</em>, </td>
         </tr>
         <tr>
@@ -141,18 +153,27 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html" title="Multithreading handler running several LP heuristics in parallel and keeping the best solution.">FMTLpHeuristicMtHandler</a> from operating area schedulers and an initial solution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lheuristics</td><td>the scheduler heuristics. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linitialsolution</td><td>the initial solution value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a34f54682d0a585cca7c71ae8c03f9b6e" name="a34f54682d0a585cca7c71ae8c03f9b6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f54682d0a585cca7c71ae8c03f9b6e">&#9670;&#160;</a></span>FMTlpheuristicmthandler() <span class="overload">[3/3]</span></h2>
+<a id="a9225322a31140d63319acea7b2522690" name="a9225322a31140d63319acea7b2522690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9225322a31140d63319acea7b2522690">&#9670;&#160;</a></span>FMTLpHeuristicMtHandler() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Heuristics::FMTlpheuristicmthandler::FMTlpheuristicmthandler </td>
+          <td class="memname">Heuristics::FMTLpHeuristicMtHandler::FMTLpHeuristicMtHandler </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classHeuristics_1_1FMToperatingareaclusterer.html">FMToperatingareaclusterer</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaClusterer.html">FMTOperatingAreaClusterer</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>lheuristics</em>, </td>
         </tr>
         <tr>
@@ -168,18 +189,27 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classHeuristics_1_1FMTLpHeuristicMtHandler.html" title="Multithreading handler running several LP heuristics in parallel and keeping the best solution.">FMTLpHeuristicMtHandler</a> from operating area clusterers and an initial solution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lheuristics</td><td>the clusterer heuristics. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linitialsolution</td><td>the initial solution value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af23c619b84d0775fdcce033300286f16" name="af23c619b84d0775fdcce033300286f16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af23c619b84d0775fdcce033300286f16">&#9670;&#160;</a></span>greedysolve()</h2>
+<a id="a525e38380cc14716de74cb256549acf8" name="a525e38380cc14716de74cb256549acf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525e38380cc14716de74cb256549acf8">&#9670;&#160;</a></span>greedySolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Heuristics::FMTlpheuristicmthandler::greedysolve </td>
+          <td class="memname">size_t Heuristics::FMTLpHeuristicMtHandler::greedySolve </td>
           <td>(</td>
           <td class="paramtype">const unsigned int &amp;&#160;</td>
           <td class="paramname"><em>iterations</em>, </td>
@@ -198,16 +228,26 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Improve the solution of each heuristic in parallel with greedy passes and return the index of the best one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td>the number of iterations. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxtime</td><td>the maximum time. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the best heuristic index. </dd></dl>
+
 </div>
 </div>
-<a id="abe62db2d67ec9e51da5c74bd7b8ee8f8" name="abe62db2d67ec9e51da5c74bd7b8ee8f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe62db2d67ec9e51da5c74bd7b8ee8f8">&#9670;&#160;</a></span>initialsolve()</h2>
+<a id="a220dc4fa3bdbe5c78d4b1074cb72c088" name="a220dc4fa3bdbe5c78d4b1074cb72c088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220dc4fa3bdbe5c78d4b1074cb72c088">&#9670;&#160;</a></span>initialSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Heuristics::FMTlpheuristicmthandler::initialsolve </td>
+          <td class="memname">size_t Heuristics::FMTLpHeuristicMtHandler::initialSolve </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -215,10 +255,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Solve each heuristic in parallel to find an initial solution and return the index of the best one. </p>
+<dl class="section return"><dt>Returns</dt><dd>the best heuristic index. </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTlpheuristicmthandler_8hpp_source.html">FMTlpheuristicmthandler.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTLpHeuristicMtHandler_8h_source.html">FMTLpHeuristicMtHandler.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

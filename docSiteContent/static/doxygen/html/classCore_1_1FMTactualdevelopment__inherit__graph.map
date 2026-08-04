@@ -1,5 +1,5 @@
-<map id="Core::FMTactualdevelopment" name="Core::FMTactualdevelopment">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,195,181"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTdevelopment.html" title=" " alt="" coords="23,80,177,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="41,5,159,32"/>
+<map id="Core::FMTActualDevelopment" name="Core::FMTActualDevelopment">
+<area shape="rect" id="node1" title="Child class of FMTDevelopment representing an actual forest stand, holding the area of the stand." alt="" coords="5,155,199,181"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTDevelopment.html" title="Base class of FMTActualDevelopment and FMTFuturDevelopment representing a forest stand." alt="" coords="24,80,180,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="42,5,162,32"/>
 </map>

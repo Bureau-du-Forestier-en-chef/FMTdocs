@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Spatial::FMTbindingspatialaction Class Reference</title>
+<title>FMT: Spatial::FMTBindingSpatialAction Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,61 +71,84 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceSpatial.html">Spatial</a></li><li class="navelem"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html">FMTbindingspatialaction</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceSpatial.html">Spatial</a></li><li class="navelem"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html">FMTBindingSpatialAction</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classSpatial_1_1FMTbindingspatialaction-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Spatial::FMTbindingspatialaction Class Reference</div></div>
+<a href="classSpatial_1_1FMTBindingSpatialAction-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Spatial::FMTBindingSpatialAction Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTbindingspatialaction_8hpp_source.html">FMTbindingspatialaction.hpp</a>&gt;</code></p>
+<p><a class="el" href="namespaceSpatial.html">Spatial</a> binding of an action, holding the green up, adjacency, size and neighbors constraints used to test spatial operability.  
+ <a href="classSpatial_1_1FMTBindingSpatialAction.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTBindingSpatialAction_8h_source.html">FMTBindingSpatialAction.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aef6420de9475ba3e1f84fbc2668c3293"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#aef6420de9475ba3e1f84fbc2668c3293">FMTbindingspatialaction</a> ()=default</td></tr>
-<tr class="separator:aef6420de9475ba3e1f84fbc2668c3293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4673a2a496a28089cb94f7b099669268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a4673a2a496a28089cb94f7b099669268">FMTbindingspatialaction</a> (const <a class="el" href="classSpatial_1_1FMTbindingspatialaction.html">FMTbindingspatialaction</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a4673a2a496a28089cb94f7b099669268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5efdeba2ade9a8d4761bc6cc3adc8044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html">FMTbindingspatialaction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a5efdeba2ade9a8d4761bc6cc3adc8044">operator=</a> (const <a class="el" href="classSpatial_1_1FMTbindingspatialaction.html">FMTbindingspatialaction</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a5efdeba2ade9a8d4761bc6cc3adc8044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeebe504aa84088e3ee27b5b4e36ab45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#afeebe504aa84088e3ee27b5b4e36ab45">FMTbindingspatialaction</a> (const std::vector&lt; int &gt; &amp;lneighbors, const size_t &amp;mingreenup, const size_t &amp;maxgreenup, const size_t &amp;minadjacency, const size_t &amp;maxadjacency, const size_t &amp;minsize, const size_t &amp;maxsize, const size_t &amp;minnsize, const size_t &amp;maxnsize)</td></tr>
-<tr class="separator:afeebe504aa84088e3ee27b5b4e36ab45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3fd3861e696384ebfbb6983315229a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#aa3fd3861e696384ebfbb6983315229a0">isspatialybinding</a> () const</td></tr>
-<tr class="separator:aa3fd3861e696384ebfbb6983315229a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b1810ab3fecb6a19e5d2bf005b951fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a4b1810ab3fecb6a19e5d2bf005b951fb">isspatialyareabinding</a> () const</td></tr>
-<tr class="separator:a4b1810ab3fecb6a19e5d2bf005b951fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c902f85d040508b093f62d191d911b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a8c902f85d040508b093f62d191d911b6">isspatialyadjacencybinding</a> () const</td></tr>
-<tr class="separator:a8c902f85d040508b093f62d191d911b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a881af56217f2721350c539edceece179"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a881af56217f2721350c539edceece179">testminimaladjacency</a> () const</td></tr>
-<tr class="separator:a881af56217f2721350c539edceece179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e072f64a9eedec5daa3ab9540a1e8a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a0e072f64a9eedec5daa3ab9540a1e8a8">testmaximaladjacency</a> () const</td></tr>
-<tr class="separator:a0e072f64a9eedec5daa3ab9540a1e8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c315a47be57db2253a9d3b0c3b47e7"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a26c315a47be57db2253a9d3b0c3b47e7">getneighbors</a> () const</td></tr>
-<tr class="separator:a26c315a47be57db2253a9d3b0c3b47e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08f731e8a086a5c71ccc79a94c46deeb"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a08f731e8a086a5c71ccc79a94c46deeb">getminimalgreenup</a> () const</td></tr>
-<tr class="separator:a08f731e8a086a5c71ccc79a94c46deeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07eca24d0dfa72b934746f1afff5553f"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a07eca24d0dfa72b934746f1afff5553f">getmaximalgreenup</a> () const</td></tr>
-<tr class="separator:a07eca24d0dfa72b934746f1afff5553f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4593ec59a1b1382936ffabcf8663b3"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a1a4593ec59a1b1382936ffabcf8663b3">getminimaladjacency</a> () const</td></tr>
-<tr class="separator:a1a4593ec59a1b1382936ffabcf8663b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22600c40b659124801eb7dd7943bb295"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a22600c40b659124801eb7dd7943bb295">getmaximaladjacency</a> () const</td></tr>
-<tr class="separator:a22600c40b659124801eb7dd7943bb295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a445d2a9eaaf478c426ffcee757d71367"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a445d2a9eaaf478c426ffcee757d71367">getminimalsize</a> () const</td></tr>
-<tr class="separator:a445d2a9eaaf478c426ffcee757d71367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07e9b5c881f1af5576bd60e61787ea92"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a07e9b5c881f1af5576bd60e61787ea92">getmaximalsize</a> () const</td></tr>
-<tr class="separator:a07e9b5c881f1af5576bd60e61787ea92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc30bf24b6fdf96dcf3d6ee5eaa1089"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#abfc30bf24b6fdf96dcf3d6ee5eaa1089">getminimalneighborsize</a> () const</td></tr>
-<tr class="separator:abfc30bf24b6fdf96dcf3d6ee5eaa1089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54684d93c1a006a9a3e3599f03736f8d"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html#a54684d93c1a006a9a3e3599f03736f8d">getmaximalneighborsize</a> () const</td></tr>
-<tr class="separator:a54684d93c1a006a9a3e3599f03736f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab081ac0e1aaae7bcb01c95c0b1804d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#ab081ac0e1aaae7bcb01c95c0b1804d28">FMTBindingSpatialAction</a> ()=default</td></tr>
+<tr class="memdesc:ab081ac0e1aaae7bcb01c95c0b1804d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a>.  <br /></td></tr>
+<tr class="separator:ab081ac0e1aaae7bcb01c95c0b1804d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6528323ec46c5a3aa0e5f810a1af36c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a6528323ec46c5a3aa0e5f810a1af36c1">FMTBindingSpatialAction</a> (const <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html">FMTBindingSpatialAction</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a6528323ec46c5a3aa0e5f810a1af36c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a>.  <br /></td></tr>
+<tr class="separator:a6528323ec46c5a3aa0e5f810a1af36c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d47b7aba78a91ee62f499e133e0ff3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html">FMTBindingSpatialAction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a5d47b7aba78a91ee62f499e133e0ff3c">operator=</a> (const <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html">FMTBindingSpatialAction</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a5d47b7aba78a91ee62f499e133e0ff3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a>.  <br /></td></tr>
+<tr class="separator:a5d47b7aba78a91ee62f499e133e0ff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08024408b30e56c18f1a03c5139f3d14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a08024408b30e56c18f1a03c5139f3d14">FMTBindingSpatialAction</a> (const std::vector&lt; int &gt; &amp;lneighbors, const size_t &amp;mingreenup, const size_t &amp;maxgreenup, const size_t &amp;minadjacency, const size_t &amp;maxadjacency, const size_t &amp;minsize, const size_t &amp;maxsize, const size_t &amp;minnsize, const size_t &amp;maxnsize)</td></tr>
+<tr class="memdesc:a08024408b30e56c18f1a03c5139f3d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a> from its neighbors and its green up, adjacency, size and neighbor size bounds.  <br /></td></tr>
+<tr class="separator:a08024408b30e56c18f1a03c5139f3d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a3f181a5bd3401ee3dfb73120edff7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a90a3f181a5bd3401ee3dfb73120edff7">isSpatiallyBinding</a> () const</td></tr>
+<tr class="memdesc:a90a3f181a5bd3401ee3dfb73120edff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the action is spatially binding.  <br /></td></tr>
+<tr class="separator:a90a3f181a5bd3401ee3dfb73120edff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f14027547ec393a39dfb568b09a2270"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a6f14027547ec393a39dfb568b09a2270">isSpatiallyAreaBinding</a> () const</td></tr>
+<tr class="memdesc:a6f14027547ec393a39dfb568b09a2270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the action is spatially binding on the area (size).  <br /></td></tr>
+<tr class="separator:a6f14027547ec393a39dfb568b09a2270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abac1b6c470cdfc46e290f05a90cbb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a4abac1b6c470cdfc46e290f05a90cbb0">isSpatiallyAdjacencyBinding</a> () const</td></tr>
+<tr class="memdesc:a4abac1b6c470cdfc46e290f05a90cbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the action is spatially binding on the adjacency.  <br /></td></tr>
+<tr class="separator:a4abac1b6c470cdfc46e290f05a90cbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c61c791b3fa20706e98aa7ffd0e2699"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a1c61c791b3fa20706e98aa7ffd0e2699">testMinimalAdjacency</a> () const</td></tr>
+<tr class="memdesc:a1c61c791b3fa20706e98aa7ffd0e2699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if a minimal adjacency is set.  <br /></td></tr>
+<tr class="separator:a1c61c791b3fa20706e98aa7ffd0e2699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f6255744151b16384d53b77fc204fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#af3f6255744151b16384d53b77fc204fd">testMaximalAdjacency</a> () const</td></tr>
+<tr class="memdesc:af3f6255744151b16384d53b77fc204fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if a maximal adjacency is set.  <br /></td></tr>
+<tr class="separator:af3f6255744151b16384d53b77fc204fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e5480ba8ce16f5721e37c009288d8f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#ac5e5480ba8ce16f5721e37c009288d8f">getNeighbors</a> () const</td></tr>
+<tr class="memdesc:ac5e5480ba8ce16f5721e37c009288d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the neighbors of the action.  <br /></td></tr>
+<tr class="separator:ac5e5480ba8ce16f5721e37c009288d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaba5f57f69917b3ee034770ac32405d"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#aaaba5f57f69917b3ee034770ac32405d">getMinimalGreenUp</a> () const</td></tr>
+<tr class="memdesc:aaaba5f57f69917b3ee034770ac32405d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the minimal green up.  <br /></td></tr>
+<tr class="separator:aaaba5f57f69917b3ee034770ac32405d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa683f0f3a8f0e9e55de3af1d3cd004"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#aefa683f0f3a8f0e9e55de3af1d3cd004">getMaximalGreenUp</a> () const</td></tr>
+<tr class="memdesc:aefa683f0f3a8f0e9e55de3af1d3cd004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximal green up.  <br /></td></tr>
+<tr class="separator:aefa683f0f3a8f0e9e55de3af1d3cd004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de2372847b0f9dde5ce0264b91b5a2f"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a3de2372847b0f9dde5ce0264b91b5a2f">getMinimalAdjacency</a> () const</td></tr>
+<tr class="memdesc:a3de2372847b0f9dde5ce0264b91b5a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the minimal adjacency.  <br /></td></tr>
+<tr class="separator:a3de2372847b0f9dde5ce0264b91b5a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41190d77f0f76296ab0ff31c6534be8"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#af41190d77f0f76296ab0ff31c6534be8">getMaximalAdjacency</a> () const</td></tr>
+<tr class="memdesc:af41190d77f0f76296ab0ff31c6534be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximal adjacency.  <br /></td></tr>
+<tr class="separator:af41190d77f0f76296ab0ff31c6534be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88b657fd846e794daafaa7517279e6f"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#aa88b657fd846e794daafaa7517279e6f">getMinimalSize</a> () const</td></tr>
+<tr class="memdesc:aa88b657fd846e794daafaa7517279e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the minimal size.  <br /></td></tr>
+<tr class="separator:aa88b657fd846e794daafaa7517279e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea7b9d42659ba157f93a6a9d21b6257"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#aeea7b9d42659ba157f93a6a9d21b6257">getMaximalSize</a> () const</td></tr>
+<tr class="memdesc:aeea7b9d42659ba157f93a6a9d21b6257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximal size.  <br /></td></tr>
+<tr class="separator:aeea7b9d42659ba157f93a6a9d21b6257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5cc6465e77a737e5a808137930c113"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a7f5cc6465e77a737e5a808137930c113">getMinimalNeighborSize</a> () const</td></tr>
+<tr class="memdesc:a7f5cc6465e77a737e5a808137930c113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the minimal neighbors size.  <br /></td></tr>
+<tr class="separator:a7f5cc6465e77a737e5a808137930c113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d785c4c2a4d092aaa182fdac76766f"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html#a67d785c4c2a4d092aaa182fdac76766f">getMaximalNeighborSize</a> () const</td></tr>
+<tr class="memdesc:a67d785c4c2a4d092aaa182fdac76766f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximal neighbors size.  <br /></td></tr>
+<tr class="separator:a67d785c4c2a4d092aaa182fdac76766f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aef6420de9475ba3e1f84fbc2668c3293" name="aef6420de9475ba3e1f84fbc2668c3293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6420de9475ba3e1f84fbc2668c3293">&#9670;&#160;</a></span>FMTbindingspatialaction() <span class="overload">[1/3]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="namespaceSpatial.html">Spatial</a> binding of an action, holding the green up, adjacency, size and neighbors constraints used to test spatial operability. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab081ac0e1aaae7bcb01c95c0b1804d28" name="ab081ac0e1aaae7bcb01c95c0b1804d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab081ac0e1aaae7bcb01c95c0b1804d28">&#9670;&#160;</a></span>FMTBindingSpatialAction() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +157,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Spatial::FMTbindingspatialaction::FMTbindingspatialaction </td>
+          <td class="memname">Spatial::FMTBindingSpatialAction::FMTBindingSpatialAction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -147,10 +170,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a>. </p>
+
 </div>
 </div>
-<a id="a4673a2a496a28089cb94f7b099669268" name="a4673a2a496a28089cb94f7b099669268"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4673a2a496a28089cb94f7b099669268">&#9670;&#160;</a></span>FMTbindingspatialaction() <span class="overload">[2/3]</span></h2>
+<a id="a6528323ec46c5a3aa0e5f810a1af36c1" name="a6528323ec46c5a3aa0e5f810a1af36c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6528323ec46c5a3aa0e5f810a1af36c1">&#9670;&#160;</a></span>FMTBindingSpatialAction() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,9 +184,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Spatial::FMTbindingspatialaction::FMTbindingspatialaction </td>
+          <td class="memname">Spatial::FMTBindingSpatialAction::FMTBindingSpatialAction </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTbindingspatialaction.html">FMTbindingspatialaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html">FMTBindingSpatialAction</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -173,16 +198,24 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copy constructor for <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="afeebe504aa84088e3ee27b5b4e36ab45" name="afeebe504aa84088e3ee27b5b4e36ab45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afeebe504aa84088e3ee27b5b4e36ab45">&#9670;&#160;</a></span>FMTbindingspatialaction() <span class="overload">[3/3]</span></h2>
+<a id="a08024408b30e56c18f1a03c5139f3d14" name="a08024408b30e56c18f1a03c5139f3d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08024408b30e56c18f1a03c5139f3d14">&#9670;&#160;</a></span>FMTBindingSpatialAction() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Spatial::FMTbindingspatialaction::FMTbindingspatialaction </td>
+          <td class="memname">Spatial::FMTBindingSpatialAction::FMTBindingSpatialAction </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
           <td class="paramname"><em>lneighbors</em>, </td>
@@ -243,11 +276,27 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a> from its neighbors and its green up, adjacency, size and neighbor size bounds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lneighbors</td><td>the neighbors. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mingreenup</td><td>the minimal green up. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxgreenup</td><td>the maximal green up. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minadjacency</td><td>the minimal adjacency. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxadjacency</td><td>the maximal adjacency. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minsize</td><td>the minimal size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxsize</td><td>the maximal size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minnsize</td><td>the minimal neighbors size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxnsize</td><td>the maximal neighbors size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a22600c40b659124801eb7dd7943bb295" name="a22600c40b659124801eb7dd7943bb295"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22600c40b659124801eb7dd7943bb295">&#9670;&#160;</a></span>getmaximaladjacency()</h2>
+<a id="af41190d77f0f76296ab0ff31c6534be8" name="af41190d77f0f76296ab0ff31c6534be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41190d77f0f76296ab0ff31c6534be8">&#9670;&#160;</a></span>getMaximalAdjacency()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +305,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t &amp; Spatial::FMTbindingspatialaction::getmaximaladjacency </td>
+          <td class="memname">const size_t &amp; Spatial::FMTBindingSpatialAction::getMaximalAdjacency </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -269,10 +318,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the maximal adjacency. </p>
+<dl class="section return"><dt>Returns</dt><dd>the maximal adjacency. </dd></dl>
+
 </div>
 </div>
-<a id="a07eca24d0dfa72b934746f1afff5553f" name="a07eca24d0dfa72b934746f1afff5553f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07eca24d0dfa72b934746f1afff5553f">&#9670;&#160;</a></span>getmaximalgreenup()</h2>
+<a id="aefa683f0f3a8f0e9e55de3af1d3cd004" name="aefa683f0f3a8f0e9e55de3af1d3cd004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa683f0f3a8f0e9e55de3af1d3cd004">&#9670;&#160;</a></span>getMaximalGreenUp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +333,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t &amp; Spatial::FMTbindingspatialaction::getmaximalgreenup </td>
+          <td class="memname">const size_t &amp; Spatial::FMTBindingSpatialAction::getMaximalGreenUp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -294,10 +346,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the maximal green up. </p>
+<dl class="section return"><dt>Returns</dt><dd>the maximal green up. </dd></dl>
+
 </div>
 </div>
-<a id="a54684d93c1a006a9a3e3599f03736f8d" name="a54684d93c1a006a9a3e3599f03736f8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54684d93c1a006a9a3e3599f03736f8d">&#9670;&#160;</a></span>getmaximalneighborsize()</h2>
+<a id="a67d785c4c2a4d092aaa182fdac76766f" name="a67d785c4c2a4d092aaa182fdac76766f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d785c4c2a4d092aaa182fdac76766f">&#9670;&#160;</a></span>getMaximalNeighborSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +361,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t &amp; Spatial::FMTbindingspatialaction::getmaximalneighborsize </td>
+          <td class="memname">const size_t &amp; Spatial::FMTBindingSpatialAction::getMaximalNeighborSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -319,10 +374,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the maximal neighbors size. </p>
+<dl class="section return"><dt>Returns</dt><dd>the maximal neighbors size. </dd></dl>
+
 </div>
 </div>
-<a id="a07e9b5c881f1af5576bd60e61787ea92" name="a07e9b5c881f1af5576bd60e61787ea92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07e9b5c881f1af5576bd60e61787ea92">&#9670;&#160;</a></span>getmaximalsize()</h2>
+<a id="aeea7b9d42659ba157f93a6a9d21b6257" name="aeea7b9d42659ba157f93a6a9d21b6257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea7b9d42659ba157f93a6a9d21b6257">&#9670;&#160;</a></span>getMaximalSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +389,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t &amp; Spatial::FMTbindingspatialaction::getmaximalsize </td>
+          <td class="memname">const size_t &amp; Spatial::FMTBindingSpatialAction::getMaximalSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -344,10 +402,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the maximal size. </p>
+<dl class="section return"><dt>Returns</dt><dd>the maximal size. </dd></dl>
+
 </div>
 </div>
-<a id="a1a4593ec59a1b1382936ffabcf8663b3" name="a1a4593ec59a1b1382936ffabcf8663b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a4593ec59a1b1382936ffabcf8663b3">&#9670;&#160;</a></span>getminimaladjacency()</h2>
+<a id="a3de2372847b0f9dde5ce0264b91b5a2f" name="a3de2372847b0f9dde5ce0264b91b5a2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de2372847b0f9dde5ce0264b91b5a2f">&#9670;&#160;</a></span>getMinimalAdjacency()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,7 +417,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t &amp; Spatial::FMTbindingspatialaction::getminimaladjacency </td>
+          <td class="memname">const size_t &amp; Spatial::FMTBindingSpatialAction::getMinimalAdjacency </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -369,10 +430,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the minimal adjacency. </p>
+<dl class="section return"><dt>Returns</dt><dd>the minimal adjacency. </dd></dl>
+
 </div>
 </div>
-<a id="a08f731e8a086a5c71ccc79a94c46deeb" name="a08f731e8a086a5c71ccc79a94c46deeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08f731e8a086a5c71ccc79a94c46deeb">&#9670;&#160;</a></span>getminimalgreenup()</h2>
+<a id="aaaba5f57f69917b3ee034770ac32405d" name="aaaba5f57f69917b3ee034770ac32405d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaba5f57f69917b3ee034770ac32405d">&#9670;&#160;</a></span>getMinimalGreenUp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,7 +445,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t &amp; Spatial::FMTbindingspatialaction::getminimalgreenup </td>
+          <td class="memname">const size_t &amp; Spatial::FMTBindingSpatialAction::getMinimalGreenUp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -394,10 +458,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the minimal green up. </p>
+<dl class="section return"><dt>Returns</dt><dd>the minimal green up. </dd></dl>
+
 </div>
 </div>
-<a id="abfc30bf24b6fdf96dcf3d6ee5eaa1089" name="abfc30bf24b6fdf96dcf3d6ee5eaa1089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfc30bf24b6fdf96dcf3d6ee5eaa1089">&#9670;&#160;</a></span>getminimalneighborsize()</h2>
+<a id="a7f5cc6465e77a737e5a808137930c113" name="a7f5cc6465e77a737e5a808137930c113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5cc6465e77a737e5a808137930c113">&#9670;&#160;</a></span>getMinimalNeighborSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +473,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t &amp; Spatial::FMTbindingspatialaction::getminimalneighborsize </td>
+          <td class="memname">const size_t &amp; Spatial::FMTBindingSpatialAction::getMinimalNeighborSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -419,10 +486,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the minimal neighbors size. </p>
+<dl class="section return"><dt>Returns</dt><dd>the minimal neighbors size. </dd></dl>
+
 </div>
 </div>
-<a id="a445d2a9eaaf478c426ffcee757d71367" name="a445d2a9eaaf478c426ffcee757d71367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a445d2a9eaaf478c426ffcee757d71367">&#9670;&#160;</a></span>getminimalsize()</h2>
+<a id="aa88b657fd846e794daafaa7517279e6f" name="aa88b657fd846e794daafaa7517279e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88b657fd846e794daafaa7517279e6f">&#9670;&#160;</a></span>getMinimalSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,7 +501,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t &amp; Spatial::FMTbindingspatialaction::getminimalsize </td>
+          <td class="memname">const size_t &amp; Spatial::FMTBindingSpatialAction::getMinimalSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -444,10 +514,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the minimal size. </p>
+<dl class="section return"><dt>Returns</dt><dd>the minimal size. </dd></dl>
+
 </div>
 </div>
-<a id="a26c315a47be57db2253a9d3b0c3b47e7" name="a26c315a47be57db2253a9d3b0c3b47e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26c315a47be57db2253a9d3b0c3b47e7">&#9670;&#160;</a></span>getneighbors()</h2>
+<a id="ac5e5480ba8ce16f5721e37c009288d8f" name="ac5e5480ba8ce16f5721e37c009288d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e5480ba8ce16f5721e37c009288d8f">&#9670;&#160;</a></span>getNeighbors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,7 +529,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; Spatial::FMTbindingspatialaction::getneighbors </td>
+          <td class="memname">const std::vector&lt; int &gt; &amp; Spatial::FMTBindingSpatialAction::getNeighbors </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -469,16 +542,19 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the neighbors of the action. </p>
+<dl class="section return"><dt>Returns</dt><dd>the neighbors. </dd></dl>
+
 </div>
 </div>
-<a id="a8c902f85d040508b093f62d191d911b6" name="a8c902f85d040508b093f62d191d911b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c902f85d040508b093f62d191d911b6">&#9670;&#160;</a></span>isspatialyadjacencybinding()</h2>
+<a id="a4abac1b6c470cdfc46e290f05a90cbb0" name="a4abac1b6c470cdfc46e290f05a90cbb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abac1b6c470cdfc46e290f05a90cbb0">&#9670;&#160;</a></span>isSpatiallyAdjacencyBinding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTbindingspatialaction::isspatialyadjacencybinding </td>
+          <td class="memname">bool Spatial::FMTBindingSpatialAction::isSpatiallyAdjacencyBinding </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -486,16 +562,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the action is spatially binding on the adjacency. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the action is adjacency binding else false. </dd></dl>
+
 </div>
 </div>
-<a id="a4b1810ab3fecb6a19e5d2bf005b951fb" name="a4b1810ab3fecb6a19e5d2bf005b951fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b1810ab3fecb6a19e5d2bf005b951fb">&#9670;&#160;</a></span>isspatialyareabinding()</h2>
+<a id="a6f14027547ec393a39dfb568b09a2270" name="a6f14027547ec393a39dfb568b09a2270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f14027547ec393a39dfb568b09a2270">&#9670;&#160;</a></span>isSpatiallyAreaBinding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTbindingspatialaction::isspatialyareabinding </td>
+          <td class="memname">bool Spatial::FMTBindingSpatialAction::isSpatiallyAreaBinding </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -503,16 +582,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the action is spatially binding on the area (size). </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the action is area binding else false. </dd></dl>
+
 </div>
 </div>
-<a id="aa3fd3861e696384ebfbb6983315229a0" name="aa3fd3861e696384ebfbb6983315229a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3fd3861e696384ebfbb6983315229a0">&#9670;&#160;</a></span>isspatialybinding()</h2>
+<a id="a90a3f181a5bd3401ee3dfb73120edff7" name="a90a3f181a5bd3401ee3dfb73120edff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a3f181a5bd3401ee3dfb73120edff7">&#9670;&#160;</a></span>isSpatiallyBinding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTbindingspatialaction::isspatialybinding </td>
+          <td class="memname">bool Spatial::FMTBindingSpatialAction::isSpatiallyBinding </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -520,10 +602,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the action is spatially binding. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the action is spatially binding else false. </dd></dl>
+
 </div>
 </div>
-<a id="a5efdeba2ade9a8d4761bc6cc3adc8044" name="a5efdeba2ade9a8d4761bc6cc3adc8044"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5efdeba2ade9a8d4761bc6cc3adc8044">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a5d47b7aba78a91ee62f499e133e0ff3c" name="a5d47b7aba78a91ee62f499e133e0ff3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d47b7aba78a91ee62f499e133e0ff3c">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,9 +617,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html">FMTbindingspatialaction</a> &amp; Spatial::FMTbindingspatialaction::operator= </td>
+          <td class="memname"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html">FMTBindingSpatialAction</a> &amp; Spatial::FMTBindingSpatialAction::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTbindingspatialaction.html">FMTbindingspatialaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html">FMTBindingSpatialAction</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -546,16 +631,25 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html" title="Spatial binding of an action, holding the green up, adjacency, size and neighbors constraints used to...">FMTBindingSpatialAction</a>. </dd></dl>
+
 </div>
 </div>
-<a id="a0e072f64a9eedec5daa3ab9540a1e8a8" name="a0e072f64a9eedec5daa3ab9540a1e8a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e072f64a9eedec5daa3ab9540a1e8a8">&#9670;&#160;</a></span>testmaximaladjacency()</h2>
+<a id="af3f6255744151b16384d53b77fc204fd" name="af3f6255744151b16384d53b77fc204fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f6255744151b16384d53b77fc204fd">&#9670;&#160;</a></span>testMaximalAdjacency()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTbindingspatialaction::testmaximaladjacency </td>
+          <td class="memname">bool Spatial::FMTBindingSpatialAction::testMaximalAdjacency </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -563,27 +657,33 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if a maximal adjacency is set. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if a maximal adjacency is set else false. </dd></dl>
+
 </div>
 </div>
-<a id="a881af56217f2721350c539edceece179" name="a881af56217f2721350c539edceece179"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a881af56217f2721350c539edceece179">&#9670;&#160;</a></span>testminimaladjacency()</h2>
+<a id="a1c61c791b3fa20706e98aa7ffd0e2699" name="a1c61c791b3fa20706e98aa7ffd0e2699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c61c791b3fa20706e98aa7ffd0e2699">&#9670;&#160;</a></span>testMinimalAdjacency()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTbindingspatialaction::testminimaladjacency </td>
+          <td class="memname">bool Spatial::FMTBindingSpatialAction::testMinimalAdjacency </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return true if a minimal adjacency is set. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if a minimal adjacency is set else false. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTbindingspatialaction_8hpp_source.html">FMTbindingspatialaction.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTBindingSpatialAction_8h_source.html">FMTBindingSpatialAction.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

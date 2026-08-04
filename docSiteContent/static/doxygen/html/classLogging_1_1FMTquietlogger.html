@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Logging::FMTquietlogger Class Reference</title>
+<title>FMT: Logging::FMTQuietLogger Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,147 +71,193 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceLogging.html">Logging</a></li><li class="navelem"><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceLogging.html">Logging</a></li><li class="navelem"><a class="el" href="classLogging_1_1FMTQuietLogger.html">FMTQuietLogger</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classLogging_1_1FMTquietlogger-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Logging::FMTquietlogger Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+<a href="classLogging_1_1FMTQuietLogger-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Logging::FMTQuietLogger Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTquietlogger_8hpp_source.html">FMTquietlogger.hpp</a>&gt;</code></p>
+<p>Logger derived from <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> that does not print any solver information from the OSI solver interface.  
+ <a href="classLogging_1_1FMTQuietLogger.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTQuietLogger_8h_source.html">FMTQuietLogger.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Logging::FMTquietlogger:</div>
+Inheritance diagram for Logging::FMTQuietLogger:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTquietlogger__inherit__graph.svg" width="175" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTQuietLogger__inherit__graph.svg" width="182" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Logging::FMTquietlogger:</div>
+Collaboration diagram for Logging::FMTQuietLogger:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTquietlogger__coll__graph.svg" width="498" height="571"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTQuietLogger__coll__graph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae33e4f8a351a35b9821bef07790a00b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#ae33e4f8a351a35b9821bef07790a00b1">FMTquietlogger</a> ()</td></tr>
-<tr class="separator:ae33e4f8a351a35b9821bef07790a00b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaced78998ee158be46a46a7ac757513b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#aaced78998ee158be46a46a7ac757513b">FMTquietlogger</a> (const <a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> &amp;)=default</td></tr>
-<tr class="separator:aaced78998ee158be46a46a7ac757513b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ac04205ad4e9775862460af2dd0c631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#a3ac04205ad4e9775862460af2dd0c631">operator=</a> (const <a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> &amp;)=default</td></tr>
-<tr class="separator:a3ac04205ad4e9775862460af2dd0c631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6f3f07069b94d7c363530d563e0899c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#ad6f3f07069b94d7c363530d563e0899c">~FMTquietlogger</a> ()=default</td></tr>
-<tr class="separator:ad6f3f07069b94d7c363530d563e0899c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b92dc73c14fdfb9849f5dcff810f37c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#a1b92dc73c14fdfb9849f5dcff810f37c">print</a> () override</td></tr>
-<tr class="separator:a1b92dc73c14fdfb9849f5dcff810f37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f85d9d990c7de3242b89f8b4a40a7d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#a5f85d9d990c7de3242b89f8b4a40a7d8">checkSeverity</a> () override</td></tr>
-<tr class="separator:a5f85d9d990c7de3242b89f8b4a40a7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac01c61c78785ee6357038380e8c14b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#aac01c61c78785ee6357038380e8c14b8">clone</a> () const override</td></tr>
-<tr class="separator:aac01c61c78785ee6357038380e8c14b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57053982c08a0991ab13c8fa23c1eed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#af57053982c08a0991ab13c8fa23c1eed">cout</a> (const char *message) const override</td></tr>
-<tr class="separator:af57053982c08a0991ab13c8fa23c1eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classLogging_1_1FMTlogger"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLogging_1_1FMTlogger')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a></td></tr>
-<tr class="memitem:ab41f959ed2c3cde97c509226888083cb inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#ab41f959ed2c3cde97c509226888083cb">FMTlogger</a> ()</td></tr>
-<tr class="separator:ab41f959ed2c3cde97c509226888083cb inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3515766935d13905016c1b9ea87e35f8 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a3515766935d13905016c1b9ea87e35f8">~FMTlogger</a> ()</td></tr>
-<tr class="separator:a3515766935d13905016c1b9ea87e35f8 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca74aabdde4278650e55eb09ea3ed4db inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aca74aabdde4278650e55eb09ea3ed4db">FMTlogger</a> (const <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;rhs)</td></tr>
-<tr class="separator:aca74aabdde4278650e55eb09ea3ed4db inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb90b54a8ee08de1c8a8afd674713977 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#abb90b54a8ee08de1c8a8afd674713977">redirectofile</a> (const std::string &amp;filename)</td></tr>
-<tr class="separator:abb90b54a8ee08de1c8a8afd674713977 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98bbf482a5a0e1a0bfde58102f0554d7 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a98bbf482a5a0e1a0bfde58102f0554d7">closefilestream</a> ()</td></tr>
-<tr class="separator:a98bbf482a5a0e1a0bfde58102f0554d7 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d6e0c5efe8f382996632951cd250af8 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a5d6e0c5efe8f382996632951cd250af8">operator=</a> (const <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;rhs)</td></tr>
-<tr class="separator:a5d6e0c5efe8f382996632951cd250af8 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11afe46d0b2eaf4ba0430095d3a1a08f inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a11afe46d0b2eaf4ba0430095d3a1a08f">print</a> ()</td></tr>
-<tr class="separator:a11afe46d0b2eaf4ba0430095d3a1a08f inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad64a6ddf9a4e0c151d586f772c106674 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#ad64a6ddf9a4e0c151d586f772c106674">checkSeverity</a> ()</td></tr>
-<tr class="separator:ad64a6ddf9a4e0c151d586f772c106674 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad81f0173e979a5f7be1d801c7f22d22 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aad81f0173e979a5f7be1d801c7f22d22">clone</a> () const</td></tr>
-<tr class="separator:aad81f0173e979a5f7be1d801c7f22d22 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd8c35e364437d92fd30f3ae03336509 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#afd8c35e364437d92fd30f3ae03336509">getlogstamp</a> () const</td></tr>
-<tr class="separator:afd8c35e364437d92fd30f3ae03336509 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0219c6dfb71d22ae1181bdfd4f3b1c inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a1e0219c6dfb71d22ae1181bdfd4f3b1c">logstamp</a> ()</td></tr>
-<tr class="separator:a1e0219c6dfb71d22ae1181bdfd4f3b1c inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbcbf0b178371f1eac9bbc3d1169514a inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#acbcbf0b178371f1eac9bbc3d1169514a">logtime</a> ()</td></tr>
-<tr class="separator:acbcbf0b178371f1eac9bbc3d1169514a inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1b19f19ff8ee37e2eb04c41706b120d inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aa1b19f19ff8ee37e2eb04c41706b120d">setstreamflush</a> (bool flush)</td></tr>
-<tr class="separator:aa1b19f19ff8ee37e2eb04c41706b120d inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8f417e991f296ea481687e6fa2fdfd inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a4e8f417e991f296ea481687e6fa2fdfd">operator&lt;&lt;</a> (const std::string &amp;msg)</td></tr>
-<tr class="separator:a4e8f417e991f296ea481687e6fa2fdfd inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9333524482287b45914d1ee16ff9638 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#af9333524482287b45914d1ee16ff9638">operator&lt;&lt;</a> (const int &amp;msg)</td></tr>
-<tr class="separator:af9333524482287b45914d1ee16ff9638 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefb1455dd83b46987f88c546759db49f inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aefb1455dd83b46987f88c546759db49f">operator&lt;&lt;</a> (const double &amp;msg)</td></tr>
-<tr class="separator:aefb1455dd83b46987f88c546759db49f inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b64d84aa62d0dc48887b9a55c09ce58 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a2b64d84aa62d0dc48887b9a55c09ce58">operator&lt;&lt;</a> (const float &amp;msg)</td></tr>
-<tr class="separator:a2b64d84aa62d0dc48887b9a55c09ce58 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a022bd7c72fffc7c8cf254317f28248f2 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a022bd7c72fffc7c8cf254317f28248f2">operator&lt;&lt;</a> (const std::time_t &amp;msg)</td></tr>
-<tr class="separator:a022bd7c72fffc7c8cf254317f28248f2 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372b8de1b1457f677e5ac6ba635a623f inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a372b8de1b1457f677e5ac6ba635a623f">operator&lt;&lt;</a> (const size_t &amp;msg)</td></tr>
-<tr class="separator:a372b8de1b1457f677e5ac6ba635a623f inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbdf6f66ab2f1b8b30612d023747fff6 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#abbdf6f66ab2f1b8b30612d023747fff6">operator&lt;&lt;</a> (const unsigned int &amp;msg)</td></tr>
-<tr class="separator:abbdf6f66ab2f1b8b30612d023747fff6 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724a5f090605248bb22ab0f0792c8577 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a724a5f090605248bb22ab0f0792c8577">logwithlevel</a> (const std::string &amp;msg, const int &amp;messagelevel) const</td></tr>
-<tr class="separator:a724a5f090605248bb22ab0f0792c8577 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c8bde269340dd5e34e75fa366c7c08 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#aa6c8bde269340dd5e34e75fa366c7c08">getsolverlogger</a> ()</td></tr>
-<tr class="separator:aa6c8bde269340dd5e34e75fa366c7c08 inherit pub_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2b5f71acfd2ba462de87c49aaa23ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#acf2b5f71acfd2ba462de87c49aaa23ba">FMTQuietLogger</a> ()</td></tr>
+<tr class="memdesc:acf2b5f71acfd2ba462de87c49aaa23ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>.  <br /></td></tr>
+<tr class="separator:acf2b5f71acfd2ba462de87c49aaa23ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc5b73078a25ec52def60478de236a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#addc5b73078a25ec52def60478de236a9">FMTQuietLogger</a> (const <a class="el" href="classLogging_1_1FMTQuietLogger.html">FMTQuietLogger</a> &amp;)=default</td></tr>
+<tr class="memdesc:addc5b73078a25ec52def60478de236a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default copy constructor for <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>.  <br /></td></tr>
+<tr class="separator:addc5b73078a25ec52def60478de236a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6170a937042e8cd1ba25231c9683d4d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTQuietLogger.html">FMTQuietLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#a6170a937042e8cd1ba25231c9683d4d1">operator=</a> (const <a class="el" href="classLogging_1_1FMTQuietLogger.html">FMTQuietLogger</a> &amp;)=default</td></tr>
+<tr class="memdesc:a6170a937042e8cd1ba25231c9683d4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default copy assignment operator for <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>.  <br /></td></tr>
+<tr class="separator:a6170a937042e8cd1ba25231c9683d4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845ce98610599401cfe05b2742a89551"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#a845ce98610599401cfe05b2742a89551">~FMTQuietLogger</a> ()=default</td></tr>
+<tr class="memdesc:a845ce98610599401cfe05b2742a89551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>.  <br /></td></tr>
+<tr class="separator:a845ce98610599401cfe05b2742a89551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4e94ff1e1499c87351cff2f6d8d5b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#a6c4e94ff1e1499c87351cff2f6d8d5b9">print</a> () override</td></tr>
+<tr class="memdesc:a6c4e94ff1e1499c87351cff2f6d8d5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print nothing with the OSI solver interface. See <a class="el" href="classLogging_1_1FMTLogger.html#a054cffaa527ad06bdb245e9701fabfb2" title="Print function overloaded from CoinMessageHandler when using the OSI solver interface.">FMTLogger::print</a>.  <br /></td></tr>
+<tr class="separator:a6c4e94ff1e1499c87351cff2f6d8d5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f79a1fe0b76c53c58d1d0fa2de7d89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#a15f79a1fe0b76c53c58d1d0fa2de7d89">checkSeverity</a> () override</td></tr>
+<tr class="memdesc:a15f79a1fe0b76c53c58d1d0fa2de7d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the severity of the message. See <a class="el" href="classLogging_1_1FMTLogger.html#a2fe8b8ea56b1b67524124da1dc97e48a" title="Check the severity of the message to be printed by the CoinMessageHandler base class.">FMTLogger::checkSeverity</a>.  <br /></td></tr>
+<tr class="separator:a15f79a1fe0b76c53c58d1d0fa2de7d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8550324ef18334ba313d5b6c7ba6194c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#a8550324ef18334ba313d5b6c7ba6194c">clone</a> () const override</td></tr>
+<tr class="memdesc:a8550324ef18334ba313d5b6c7ba6194c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone the logger for the OSI solver interface. See <a class="el" href="classLogging_1_1FMTLogger.html#ad316b697477a1d63a29af574a747d5cb" title="Clone the logger, needed for the abstract CoinMessageHandler usage.">FMTLogger::clone</a>.  <br /></td></tr>
+<tr class="separator:a8550324ef18334ba313d5b6c7ba6194c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be5a587bd89efb6806000a884316408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#a4be5a587bd89efb6806000a884316408">_cout</a> (const char *message) const override</td></tr>
+<tr class="memdesc:a4be5a587bd89efb6806000a884316408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output nothing. See FMTLogger::cout.  <br /></td></tr>
+<tr class="separator:a4be5a587bd89efb6806000a884316408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffd954c2a4ea176f1e0d65275d16021"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#a6ffd954c2a4ea176f1e0d65275d16021">Clone</a> () const</td></tr>
+<tr class="memdesc:a6ffd954c2a4ea176f1e0d65275d16021"><td class="mdescLeft">&#160;</td><td class="mdescRight">clone the <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>  <br /></td></tr>
+<tr class="separator:a6ffd954c2a4ea176f1e0d65275d16021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classLogging_1_1FMTLogger"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLogging_1_1FMTLogger')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a></td></tr>
+<tr class="memitem:a2ea0b588be94926978dfa1069a55b00e inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a2ea0b588be94926978dfa1069a55b00e">FMTLogger</a> ()</td></tr>
+<tr class="memdesc:a2ea0b588be94926978dfa1069a55b00e inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:a2ea0b588be94926978dfa1069a55b00e inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39004fdb84b8e4cfc376bbb241aa0906 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a39004fdb84b8e4cfc376bbb241aa0906">~FMTLogger</a> ()</td></tr>
+<tr class="memdesc:a39004fdb84b8e4cfc376bbb241aa0906 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:a39004fdb84b8e4cfc376bbb241aa0906 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a9ec5a81c467a51329b63ac3354f22 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ae0a9ec5a81c467a51329b63ac3354f22">FMTLogger</a> (const <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ae0a9ec5a81c467a51329b63ac3354f22 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:ae0a9ec5a81c467a51329b63ac3354f22 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb75cd07e0bf96dc2ebf211e949394fe inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#acb75cd07e0bf96dc2ebf211e949394fe">redirectToFile</a> (const std::string &amp;filename, bool <a class="el" href="classLogging_1_1FMTLogger.html#a92914149412e43497396521416bd6369">logStamp</a>=true)</td></tr>
+<tr class="memdesc:acb75cd07e0bf96dc2ebf211e949394fe inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect the log information to a file.  <br /></td></tr>
+<tr class="separator:acb75cd07e0bf96dc2ebf211e949394fe inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad758328f639eff57bac271bbd5bb1af4 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ad758328f639eff57bac271bbd5bb1af4">closeFileStream</a> ()</td></tr>
+<tr class="memdesc:ad758328f639eff57bac271bbd5bb1af4 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the file stream.  <br /></td></tr>
+<tr class="separator:ad758328f639eff57bac271bbd5bb1af4 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951bedf023a42f5f2da63aec8cfe9486 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a951bedf023a42f5f2da63aec8cfe9486">operator=</a> (const <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a951bedf023a42f5f2da63aec8cfe9486 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:a951bedf023a42f5f2da63aec8cfe9486 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054cffaa527ad06bdb245e9701fabfb2 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a054cffaa527ad06bdb245e9701fabfb2">print</a> ()</td></tr>
+<tr class="memdesc:a054cffaa527ad06bdb245e9701fabfb2 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print function overloaded from CoinMessageHandler when using the OSI solver interface.  <br /></td></tr>
+<tr class="separator:a054cffaa527ad06bdb245e9701fabfb2 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe8b8ea56b1b67524124da1dc97e48a inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a2fe8b8ea56b1b67524124da1dc97e48a">checkSeverity</a> ()</td></tr>
+<tr class="memdesc:a2fe8b8ea56b1b67524124da1dc97e48a inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the severity of the message to be printed by the CoinMessageHandler base class.  <br /></td></tr>
+<tr class="separator:a2fe8b8ea56b1b67524124da1dc97e48a inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad316b697477a1d63a29af574a747d5cb inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ad316b697477a1d63a29af574a747d5cb">clone</a> () const =0</td></tr>
+<tr class="memdesc:ad316b697477a1d63a29af574a747d5cb inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone the logger, needed for the abstract CoinMessageHandler usage.  <br /></td></tr>
+<tr class="separator:ad316b697477a1d63a29af574a747d5cb inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c40d6ac4b32906ae3a8f313a16cce1 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a49c40d6ac4b32906ae3a8f313a16cce1">getLogStamp</a> () const</td></tr>
+<tr class="memdesc:a49c40d6ac4b32906ae3a8f313a16cce1 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the basic log stamp as a string.  <br /></td></tr>
+<tr class="separator:a49c40d6ac4b32906ae3a8f313a16cce1 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92914149412e43497396521416bd6369 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a92914149412e43497396521416bd6369">logStamp</a> ()</td></tr>
+<tr class="memdesc:a92914149412e43497396521416bd6369 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log information about the version of FMT and its build date.  <br /></td></tr>
+<tr class="separator:a92914149412e43497396521416bd6369 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb07d4b2820f0055582e6f68129e4623 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#afb07d4b2820f0055582e6f68129e4623">logTime</a> ()</td></tr>
+<tr class="memdesc:afb07d4b2820f0055582e6f68129e4623 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the actual time at which the function is called.  <br /></td></tr>
+<tr class="separator:afb07d4b2820f0055582e6f68129e4623 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba30091c15ebab8138d53d1d99d83f9d inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#aba30091c15ebab8138d53d1d99d83f9d">setStreamFlush</a> (bool flush)</td></tr>
+<tr class="memdesc:aba30091c15ebab8138d53d1d99d83f9d inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the flushing of the file stream.  <br /></td></tr>
+<tr class="separator:aba30091c15ebab8138d53d1d99d83f9d inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91d2eaa5a65917ff92c8eb670808c9c inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ab91d2eaa5a65917ff92c8eb670808c9c">operator&lt;&lt;</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:ab91d2eaa5a65917ff92c8eb670808c9c inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a string to the log.  <br /></td></tr>
+<tr class="separator:ab91d2eaa5a65917ff92c8eb670808c9c inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119f5a50720ebfa74ffa08f8847b1352 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a119f5a50720ebfa74ffa08f8847b1352">operator&lt;&lt;</a> (const int &amp;msg)</td></tr>
+<tr class="memdesc:a119f5a50720ebfa74ffa08f8847b1352 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append an int to the log.  <br /></td></tr>
+<tr class="separator:a119f5a50720ebfa74ffa08f8847b1352 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20efa8674189387ad1b2436271b498de inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a20efa8674189387ad1b2436271b498de">operator&lt;&lt;</a> (const double &amp;msg)</td></tr>
+<tr class="memdesc:a20efa8674189387ad1b2436271b498de inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a double to the log.  <br /></td></tr>
+<tr class="separator:a20efa8674189387ad1b2436271b498de inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf08ad327236f562e18194772642cc7 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a0cf08ad327236f562e18194772642cc7">operator&lt;&lt;</a> (const float &amp;msg)</td></tr>
+<tr class="memdesc:a0cf08ad327236f562e18194772642cc7 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a float to the log.  <br /></td></tr>
+<tr class="separator:a0cf08ad327236f562e18194772642cc7 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749d25abb82a781ede0df7ce1d82091b inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a749d25abb82a781ede0df7ce1d82091b">operator&lt;&lt;</a> (const std::time_t &amp;msg)</td></tr>
+<tr class="memdesc:a749d25abb82a781ede0df7ce1d82091b inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a std::time_t to the log.  <br /></td></tr>
+<tr class="separator:a749d25abb82a781ede0df7ce1d82091b inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa529728ab0aaf2f18848642a54a9bfe inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#aaa529728ab0aaf2f18848642a54a9bfe">operator&lt;&lt;</a> (const size_t &amp;msg)</td></tr>
+<tr class="memdesc:aaa529728ab0aaf2f18848642a54a9bfe inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a size_t to the log.  <br /></td></tr>
+<tr class="separator:aaa529728ab0aaf2f18848642a54a9bfe inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b264d4cccbb9a6d159b37c1807a888 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a33b264d4cccbb9a6d159b37c1807a888">operator&lt;&lt;</a> (const unsigned int &amp;msg)</td></tr>
+<tr class="memdesc:a33b264d4cccbb9a6d159b37c1807a888 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append an unsigned int to the log.  <br /></td></tr>
+<tr class="separator:a33b264d4cccbb9a6d159b37c1807a888 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ac5d2429f93f169970ee637f4442b1 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ac8ac5d2429f93f169970ee637f4442b1">operator&lt;&lt;</a> (const void *&amp;msg)</td></tr>
+<tr class="memdesc:ac8ac5d2429f93f169970ee637f4442b1 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append the address of a void pointer to the log.  <br /></td></tr>
+<tr class="separator:ac8ac5d2429f93f169970ee637f4442b1 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c5b57fc7a2b5df3e1129e273437e9f inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#af6c5b57fc7a2b5df3e1129e273437e9f">logWithLevel</a> (const std::string &amp;p_msg, const int &amp;p_messageLevel) const</td></tr>
+<tr class="memdesc:af6c5b57fc7a2b5df3e1129e273437e9f inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message with a given message level if message level is greater of equal to the logger level then it will be printed.  <br /></td></tr>
+<tr class="separator:af6c5b57fc7a2b5df3e1129e273437e9f inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3d00499f30cea92dcb3deef9d1af7e inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a9a3d00499f30cea92dcb3deef9d1af7e">getSolverLogger</a> ()</td></tr>
+<tr class="memdesc:a9a3d00499f30cea92dcb3deef9d1af7e inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the abstract logger used by the OSI solver interface.  <br /></td></tr>
+<tr class="separator:a9a3d00499f30cea92dcb3deef9d1af7e inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589f8b7fa506b01b5789799154920e48 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a589f8b7fa506b01b5789799154920e48">Clone</a> () const =0</td></tr>
+<tr class="memdesc:a589f8b7fa506b01b5789799154920e48 inherit pub_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">clone the <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>  <br /></td></tr>
+<tr class="separator:a589f8b7fa506b01b5789799154920e48 inherit pub_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTquietlogger.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTQuietLogger.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memdesc:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a> through its base <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>).  <br /></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classLogging_1_1FMTlogger"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classLogging_1_1FMTlogger')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a></td></tr>
-<tr class="memitem:a6fcb11e863dfe378bb6c1768513d0a8c inherit pro_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a6fcb11e863dfe378bb6c1768513d0a8c">cout</a> (const char *message) const</td></tr>
-<tr class="separator:a6fcb11e863dfe378bb6c1768513d0a8c inherit pro_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85cbe7b65793195398ee76dc83492dce inherit pro_methods_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a85cbe7b65793195398ee76dc83492dce">setlogginglevel</a> (const int &amp;level)</td></tr>
-<tr class="separator:a85cbe7b65793195398ee76dc83492dce inherit pro_methods_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classLogging_1_1FMTlogger"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classLogging_1_1FMTlogger')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a></td></tr>
-<tr class="memitem:a8d88e81c3f5fc4893732ae4c1cc990a2 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a8d88e81c3f5fc4893732ae4c1cc990a2">solverref</a></td></tr>
-<tr class="separator:a8d88e81c3f5fc4893732ae4c1cc990a2 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2eddefdcebd3f98ed77cb704bf8e96 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a1a2eddefdcebd3f98ed77cb704bf8e96">filepath</a></td></tr>
-<tr class="memdesc:a1a2eddefdcebd3f98ed77cb704bf8e96 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">string path the the potential filestream  <br /></td></tr>
-<tr class="separator:a1a2eddefdcebd3f98ed77cb704bf8e96 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1904a8cc7af052a510b249cb8e83b3 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">std::ofstream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#adf1904a8cc7af052a510b249cb8e83b3">filestream</a></td></tr>
-<tr class="memdesc:adf1904a8cc7af052a510b249cb8e83b3 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">stream if the logger redirect the logging into somesort of file.  <br /></td></tr>
-<tr class="separator:adf1904a8cc7af052a510b249cb8e83b3 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33a805f9bbe2a32e2d7c891933fee34 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">boost::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#af33a805f9bbe2a32e2d7c891933fee34">mtx</a></td></tr>
-<tr class="memdesc:af33a805f9bbe2a32e2d7c891933fee34 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for multi-threading.  <br /></td></tr>
-<tr class="separator:af33a805f9bbe2a32e2d7c891933fee34 inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177962b75eeb33fd7044baef82ac49bf inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTlogger.html#a177962b75eeb33fd7044baef82ac49bf">flushstream</a></td></tr>
-<tr class="memdesc:a177962b75eeb33fd7044baef82ac49bf inherit pro_attribs_classLogging_1_1FMTlogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true will flush stream at each write.  <br /></td></tr>
-<tr class="separator:a177962b75eeb33fd7044baef82ac49bf inherit pro_attribs_classLogging_1_1FMTlogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classLogging_1_1FMTLogger"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classLogging_1_1FMTLogger')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a></td></tr>
+<tr class="memitem:aeead41234024fe346e9729db40992270 inherit pro_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#aeead41234024fe346e9729db40992270">_cout</a> (const char *message) const</td></tr>
+<tr class="memdesc:aeead41234024fe346e9729db40992270 inherit pro_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a message, sometimes needed on Windows with boost::python to print directly into the <a class="el" href="namespacePython.html">Python</a> window.  <br /></td></tr>
+<tr class="separator:aeead41234024fe346e9729db40992270 inherit pro_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4caf0a35f7d3cb36ffe353c20d3fe6 inherit pro_methods_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a3f4caf0a35f7d3cb36ffe353c20d3fe6">_setLoggingLevel</a> (const int &amp;level)</td></tr>
+<tr class="memdesc:a3f4caf0a35f7d3cb36ffe353c20d3fe6 inherit pro_methods_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the solver logger logging level.  <br /></td></tr>
+<tr class="separator:a3f4caf0a35f7d3cb36ffe353c20d3fe6 inherit pro_methods_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classLogging_1_1FMTLogger"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classLogging_1_1FMTLogger')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a></td></tr>
+<tr class="memitem:afef60a450f132dc62867f2bda14086fc inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#afef60a450f132dc62867f2bda14086fc">m_solverref</a></td></tr>
+<tr class="separator:afef60a450f132dc62867f2bda14086fc inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574a1fa8f9a3ee44d794d30664abc53c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a574a1fa8f9a3ee44d794d30664abc53c">m_filepath</a></td></tr>
+<tr class="memdesc:a574a1fa8f9a3ee44d794d30664abc53c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">string path the the potential filestream  <br /></td></tr>
+<tr class="separator:a574a1fa8f9a3ee44d794d30664abc53c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56c5acbbfd8367e2338b0527c657e3c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; std::ofstream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#ad56c5acbbfd8367e2338b0527c657e3c">m_FileStream</a></td></tr>
+<tr class="memdesc:ad56c5acbbfd8367e2338b0527c657e3c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">stream if the logger redirect the logging into somesort of file.  <br /></td></tr>
+<tr class="separator:ad56c5acbbfd8367e2338b0527c657e3c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7737b761ae82032987811bbc9295c1c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">boost::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#af7737b761ae82032987811bbc9295c1c">m_mtx</a></td></tr>
+<tr class="memdesc:af7737b761ae82032987811bbc9295c1c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for multi-threading.  <br /></td></tr>
+<tr class="separator:af7737b761ae82032987811bbc9295c1c inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49aff89f1addbe5c8ee7b7c38e4af055 inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTLogger.html#a49aff89f1addbe5c8ee7b7c38e4af055">m_flushstream</a></td></tr>
+<tr class="memdesc:a49aff89f1addbe5c8ee7b7c38e4af055 inherit pro_attribs_classLogging_1_1FMTLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true will flush stream at each write.  <br /></td></tr>
+<tr class="separator:a49aff89f1addbe5c8ee7b7c38e4af055 inherit pro_attribs_classLogging_1_1FMTLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> will not print any solver informations from osisolverinterface. </p>
+<div class="textblock"><p>Logger derived from <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> that does not print any solver information from the OSI solver interface. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae33e4f8a351a35b9821bef07790a00b1" name="ae33e4f8a351a35b9821bef07790a00b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae33e4f8a351a35b9821bef07790a00b1">&#9670;&#160;</a></span>FMTquietlogger() <span class="overload">[1/2]</span></h2>
+<a id="acf2b5f71acfd2ba462de87c49aaa23ba" name="acf2b5f71acfd2ba462de87c49aaa23ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2b5f71acfd2ba462de87c49aaa23ba">&#9670;&#160;</a></span>FMTQuietLogger() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Logging::FMTquietlogger::FMTquietlogger </td>
+          <td class="memname">Logging::FMTQuietLogger::FMTQuietLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> default constructor. </p>
+
+<p>Default constructor for <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>. </p>
 
 </div>
 </div>
-<a id="aaced78998ee158be46a46a7ac757513b" name="aaced78998ee158be46a46a7ac757513b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaced78998ee158be46a46a7ac757513b">&#9670;&#160;</a></span>FMTquietlogger() <span class="overload">[2/2]</span></h2>
+<a id="addc5b73078a25ec52def60478de236a9" name="addc5b73078a25ec52def60478de236a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc5b73078a25ec52def60478de236a9">&#9670;&#160;</a></span>FMTQuietLogger() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,9 +266,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Logging::FMTquietlogger::FMTquietlogger </td>
+          <td class="memname">Logging::FMTQuietLogger::FMTQuietLogger </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTQuietLogger.html">FMTQuietLogger</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -233,12 +279,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> default copy constructor. </p>
+
+<p>Default copy constructor for <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>. </p>
 
 </div>
 </div>
-<a id="ad6f3f07069b94d7c363530d563e0899c" name="ad6f3f07069b94d7c363530d563e0899c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6f3f07069b94d7c363530d563e0899c">&#9670;&#160;</a></span>~FMTquietlogger()</h2>
+<a id="a845ce98610599401cfe05b2742a89551" name="a845ce98610599401cfe05b2742a89551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a845ce98610599401cfe05b2742a89551">&#9670;&#160;</a></span>~FMTQuietLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +294,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Logging::FMTquietlogger::~FMTquietlogger </td>
+          <td class="memname">Logging::FMTQuietLogger::~FMTQuietLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -259,13 +306,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> default destructor. </p>
+
+<p>Default destructor for <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5f85d9d990c7de3242b89f8b4a40a7d8" name="a5f85d9d990c7de3242b89f8b4a40a7d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f85d9d990c7de3242b89f8b4a40a7d8">&#9670;&#160;</a></span>checkSeverity()</h2>
+<a id="a4be5a587bd89efb6806000a884316408" name="a4be5a587bd89efb6806000a884316408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be5a587bd89efb6806000a884316408">&#9670;&#160;</a></span>_cout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,63 +322,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Logging::FMTquietlogger::checkSeverity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>See <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> checkSeverity function. </p>
-
-<p>Reimplemented from <a class="el" href="classLogging_1_1FMTlogger.html#ad64a6ddf9a4e0c151d586f772c106674">Logging::FMTlogger</a>.</p>
-
-</div>
-</div>
-<a id="aac01c61c78785ee6357038380e8c14b8" name="aac01c61c78785ee6357038380e8c14b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac01c61c78785ee6357038380e8c14b8">&#9670;&#160;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> * Logging::FMTquietlogger::clone </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>See <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> clone function. </p>
-
-<p>Reimplemented from <a class="el" href="classLogging_1_1FMTlogger.html#aad81f0173e979a5f7be1d801c7f22d22">Logging::FMTlogger</a>.</p>
-
-</div>
-</div>
-<a id="af57053982c08a0991ab13c8fa23c1eed" name="af57053982c08a0991ab13c8fa23c1eed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af57053982c08a0991ab13c8fa23c1eed">&#9670;&#160;</a></span>cout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Logging::FMTquietlogger::cout </td>
+          <td class="memname">void Logging::FMTQuietLogger::_cout </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
@@ -343,14 +335,21 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>See <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> cout function that does nothing. </p>
 
-<p>Reimplemented from <a class="el" href="classLogging_1_1FMTlogger.html#a6fcb11e863dfe378bb6c1768513d0a8c">Logging::FMTlogger</a>.</p>
+<p>Output nothing. See FMTLogger::cout. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>the message to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classLogging_1_1FMTLogger.html#aeead41234024fe346e9729db40992270">Logging::FMTLogger</a>.</p>
 
 </div>
 </div>
-<a id="a3ac04205ad4e9775862460af2dd0c631" name="a3ac04205ad4e9775862460af2dd0c631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ac04205ad4e9775862460af2dd0c631">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a15f79a1fe0b76c53c58d1d0fa2de7d89" name="a15f79a1fe0b76c53c58d1d0fa2de7d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f79a1fe0b76c53c58d1d0fa2de7d89">&#9670;&#160;</a></span>checkSeverity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,34 +358,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> &amp; Logging::FMTquietlogger::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> default copy assignment. </p>
-
-</div>
-</div>
-<a id="a1b92dc73c14fdfb9849f5dcff810f37c" name="a1b92dc73c14fdfb9849f5dcff810f37c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b92dc73c14fdfb9849f5dcff810f37c">&#9670;&#160;</a></span>print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Logging::FMTquietlogger::print </td>
+          <td class="memname">void Logging::FMTQuietLogger::checkSeverity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -398,9 +370,129 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTquietlogger.html">FMTquietlogger</a> print nothing with osisolverinterface. See <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> print function. </p>
 
-<p>Reimplemented from <a class="el" href="classLogging_1_1FMTlogger.html#a11afe46d0b2eaf4ba0430095d3a1a08f">Logging::FMTlogger</a>.</p>
+<p>Check the severity of the message. See <a class="el" href="classLogging_1_1FMTLogger.html#a2fe8b8ea56b1b67524124da1dc97e48a" title="Check the severity of the message to be printed by the CoinMessageHandler base class.">FMTLogger::checkSeverity</a>. </p>
+
+<p>Reimplemented from <a class="el" href="classLogging_1_1FMTLogger.html#a2fe8b8ea56b1b67524124da1dc97e48a">Logging::FMTLogger</a>.</p>
+
+</div>
+</div>
+<a id="a6ffd954c2a4ea176f1e0d65275d16021" name="a6ffd954c2a4ea176f1e0d65275d16021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ffd954c2a4ea176f1e0d65275d16021">&#9670;&#160;</a></span>Clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &gt; Logging::FMTQuietLogger::Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clone the <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>a valid cloned <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a> </dd></dl>
+
+<p>Implements <a class="el" href="classLogging_1_1FMTLogger.html#a589f8b7fa506b01b5789799154920e48">Logging::FMTLogger</a>.</p>
+
+</div>
+</div>
+<a id="a8550324ef18334ba313d5b6c7ba6194c" name="a8550324ef18334ba313d5b6c7ba6194c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8550324ef18334ba313d5b6c7ba6194c">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> * Logging::FMTQuietLogger::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clone the logger for the OSI solver interface. See <a class="el" href="classLogging_1_1FMTLogger.html#ad316b697477a1d63a29af574a747d5cb" title="Clone the logger, needed for the abstract CoinMessageHandler usage.">FMTLogger::clone</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the cloned logger. </dd></dl>
+
+<p>Implements <a class="el" href="classLogging_1_1FMTLogger.html#ad316b697477a1d63a29af574a747d5cb">Logging::FMTLogger</a>.</p>
+
+</div>
+</div>
+<a id="a6170a937042e8cd1ba25231c9683d4d1" name="a6170a937042e8cd1ba25231c9683d4d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6170a937042e8cd1ba25231c9683d4d1">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLogging_1_1FMTQuietLogger.html">FMTQuietLogger</a> &amp; Logging::FMTQuietLogger::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTQuietLogger.html">FMTQuietLogger</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default copy assignment operator for <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a6c4e94ff1e1499c87351cff2f6d8d5b9" name="a6c4e94ff1e1499c87351cff2f6d8d5b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4e94ff1e1499c87351cff2f6d8d5b9">&#9670;&#160;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Logging::FMTQuietLogger::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print nothing with the OSI solver interface. See <a class="el" href="classLogging_1_1FMTLogger.html#a054cffaa527ad06bdb245e9701fabfb2" title="Print function overloaded from CoinMessageHandler when using the OSI solver interface.">FMTLogger::print</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>the value returned by the print function. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classLogging_1_1FMTLogger.html#a054cffaa527ad06bdb245e9701fabfb2">Logging::FMTLogger</a>.</p>
 
 </div>
 </div>
@@ -424,12 +516,26 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Serialize function is for serialization, used to do multiprocessing across multiple cpus (pickle in Pyhton) </p>
+
+<p>Serialize the <a class="el" href="classLogging_1_1FMTQuietLogger.html" title="Logger derived from FMTLogger that does not print any solver information from the OSI solver interfac...">FMTQuietLogger</a> through its base <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>the archive type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ar</td><td>the archive to serialize to or from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>the serialization version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTquietlogger_8hpp_source.html">FMTquietlogger.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTQuietLogger_8h_source.html">FMTQuietLogger.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

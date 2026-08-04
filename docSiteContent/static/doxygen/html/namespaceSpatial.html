@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -77,59 +77,79 @@ $(function() {
   <div class="headertitle"><div class="title">Spatial Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The spatial namespace provides classes for spatialy explicit simulation/optimization based on raster files.  
-<a href="namespaceSpatial.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTbindingspatialaction.html">FMTbindingspatialaction</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTBindingSpatialAction.html">FMTBindingSpatialAction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceSpatial.html">Spatial</a> binding of an action, holding the green up, adjacency, size and neighbors constraints used to test spatial operability.  <a href="classSpatial_1_1FMTBindingSpatialAction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatially referenced coordinate holding an x and y position on a raster grid.  <a href="classSpatial_1_1FMTCoordinate.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for a spatial event (FMTsaevent or FMTsesevent): a set of <a class="el" href="classSpatial_1_1FMTCoordinate.html" title="Spatially referenced coordinate holding an x and y position on a raster grid.">FMTCoordinate</a> corresponding to the coordinates present in the event.  <a href="classSpatial_1_1FMTEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTeventcontainer.html">FMTeventcontainer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEventContainer.html">FMTEventContainer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container of <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a> handling event comparison and distance calculation efficiently, allowing the user to get events by period, action id and coordinates.  <a href="classSpatial_1_1FMTEventContainer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTeventrelation.html">FMTeventrelation</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEventRelation.html">FMTEventRelation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relation between two spatial events, holding the from and to action, period and coordinate of the closest points.  <a href="classSpatial_1_1FMTEventRelation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTexponentialschedule.html">FMTexponentialschedule</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTExponentialSchedule.html">FMTExponentialSchedule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exponential cooling schedule for simulated annealing, reducing the temperature by a constant annealing rate.  <a href="classSpatial_1_1FMTExponentialSchedule.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTforest.html">FMTforest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTForest.html">FMTForest</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatially referenced layer of <a class="el" href="classCore_1_1FMTDevelopment.html" title="Base class of FMTActualDevelopment and FMTFuturDevelopment representing a forest stand.">Core::FMTDevelopment</a> representing the forest.  <a href="classSpatial_1_1FMTForest.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTlayer.html">FMTlayer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTGraphInfo.html">FMTGraphInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a spatial line graph: its id and the interned constraint values shared across identical graphs.  <a href="classSpatial_1_1FMTGraphInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html">FMTsaschedule</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTGraphValues.html">FMTGraphValues</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around a vector of constraint values, hashable and comparable so that identical value vectors can be interned and shared.  <a href="classSpatial_1_1FMTGraphValues.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTspatialnodescache.html">FMTspatialnodescache</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTLayer.html">FMTLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTspatialschedule.html">FMTspatialschedule</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTPatchRules.html">FMTPatchRules</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceSpatial.html">Spatial</a> patch rules used to evaluate and repair the size, adjacency and grouping of events in a spatial schedule.  <a href="classSpatial_1_1FMTPatchRules.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html">FMTSaSchedule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class for a simulated annealing cooling schedule.  <a href="classSpatial_1_1FMTSaSchedule.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSolutionTracker.html">FMTSolutionTracker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Track the constraint values of a spatial solution as line graphs are added to or removed from the solution, per constraint family.  <a href="classSpatial_1_1FMTSolutionTracker.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSpatialGraphs.html">FMTSpatialGraphs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container of the line graphs of a spatially explicit model, organized by constraint family, with a base solution tracker.  <a href="classSpatial_1_1FMTSpatialGraphs.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSpatialSchedule.html">FMTSpatialSchedule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map containing a line graph for each cell, representing the stand, the action and the transition at each period for the cell.  <a href="classSpatial_1_1FMTSpatialSchedule.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTVirtualLineGraph.html">FMTVirtualLineGraph</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lightweight handle to a line graph stored in a <a class="el" href="classSpatial_1_1FMTSpatialGraphs.html" title="Container of the line graphs of a spatially explicit model, organized by constraint family,...">FMTSpatialGraphs</a>, forwarding output and solution operations to the underlying graph.  <a href="classSpatial_1_1FMTVirtualLineGraph.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:affa960272585194982c588cff09baad8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSpatial.html#affa960272585194982c588cff09baad8">FMTspatialscheduletype</a> { <a class="el" href="namespaceSpatial.html#affa960272585194982c588cff09baad8a3e6fe41d77dba261d935148049bd50e7">FMTcomplete</a> = 1
-, <a class="el" href="namespaceSpatial.html#affa960272585194982c588cff09baad8aea2df0cf43ab7943a66ec579b1913eb4">FMTpartial</a> = 2
+<tr class="memitem:a3c9f619a71499045edb7d0dfa704d623"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSpatial.html#a3c9f619a71499045edb7d0dfa704d623">FMTSpatialScheduletype</a> { <a class="el" href="namespaceSpatial.html#a3c9f619a71499045edb7d0dfa704d623a3e6fe41d77dba261d935148049bd50e7">FMTcomplete</a> = 1
+, <a class="el" href="namespaceSpatial.html#a3c9f619a71499045edb7d0dfa704d623aea2df0cf43ab7943a66ec579b1913eb4">FMTpartial</a> = 2
  }</td></tr>
-<tr class="separator:affa960272585194982c588cff09baad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3c9f619a71499045edb7d0dfa704d623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The spatial namespace provides classes for spatialy explicit simulation/optimization based on raster files. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="affa960272585194982c588cff09baad8" name="affa960272585194982c588cff09baad8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affa960272585194982c588cff09baad8">&#9670;&#160;</a></span>FMTspatialscheduletype</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a3c9f619a71499045edb7d0dfa704d623" name="a3c9f619a71499045edb7d0dfa704d623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c9f619a71499045edb7d0dfa704d623">&#9670;&#160;</a></span>FMTSpatialScheduletype</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespaceSpatial.html#affa960272585194982c588cff09baad8">Spatial::FMTspatialscheduletype</a></td>
+          <td class="memname">enum <a class="el" href="namespaceSpatial.html#a3c9f619a71499045edb7d0dfa704d623">Spatial::FMTSpatialScheduletype</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="affa960272585194982c588cff09baad8a3e6fe41d77dba261d935148049bd50e7" name="affa960272585194982c588cff09baad8a3e6fe41d77dba261d935148049bd50e7"></a>FMTcomplete&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="affa960272585194982c588cff09baad8aea2df0cf43ab7943a66ec579b1913eb4" name="affa960272585194982c588cff09baad8aea2df0cf43ab7943a66ec579b1913eb4"></a>FMTpartial&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c9f619a71499045edb7d0dfa704d623a3e6fe41d77dba261d935148049bd50e7" name="a3c9f619a71499045edb7d0dfa704d623a3e6fe41d77dba261d935148049bd50e7"></a>FMTcomplete&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c9f619a71499045edb7d0dfa704d623aea2df0cf43ab7943a66ec579b1913eb4" name="a3c9f619a71499045edb7d0dfa704d623aea2df0cf43ab7943a66ec579b1913eb4"></a>FMTpartial&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

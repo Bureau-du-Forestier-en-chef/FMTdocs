@@ -1,4 +1,4 @@
-<map id="Heuristics::FMToperatingareaclusterbinary" name="Heuristics::FMToperatingareaclusterbinary">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,271,107"/>
-<area shape="rect" id="node2" href="$classHeuristics_1_1FMToperatingarea.html" title=" " alt="" coords="42,5,234,32"/>
+<map id="Heuristics::FMTOperatingAreaClusterBinary" name="Heuristics::FMTOperatingAreaClusterBinary">
+<area shape="rect" id="node1" title="Definition of a non clustered operating area, used by the FMTOperatingAreaCluster." alt="" coords="19,80,188,123"/>
+<area shape="rect" id="node2" href="$classHeuristics_1_1FMTOperatingArea.html" title="Operating area giving information about its mask, neighbors and neighbors perimeter." alt="" coords="5,5,202,32"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTthemecomparator Class Reference</title>
+<title>FMT: Core::FMTThemeComparator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,46 +71,51 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTthemecomparator.html">FMTthemecomparator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTThemeComparator.html">FMTThemeComparator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classCore_1_1FMTthemecomparator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTthemecomparator Class Reference</div></div>
+<a href="classCore_1_1FMTThemeComparator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTThemeComparator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTtheme_8hpp_source.html">FMTtheme.hpp</a>&gt;</code></p>
+<p>Comparator used to check if two themes are the same.  
+ <a href="classCore_1_1FMTThemeComparator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTTheme_8h_source.html">FMTTheme.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad8dd1238b2d8352c8198aefa11cb4eb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTthemecomparator.html#ad8dd1238b2d8352c8198aefa11cb4eb6">FMTthemecomparator</a> (const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;lbase_theme, const bool &amp;lcomparedwithpresolved=false)</td></tr>
-<tr class="separator:ad8dd1238b2d8352c8198aefa11cb4eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46da52451892111e45809b001d37f06b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTthemecomparator.html#a46da52451892111e45809b001d37f06b">operator()</a> (const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;theme) const</td></tr>
-<tr class="separator:a46da52451892111e45809b001d37f06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5980688428cf0454175801c576956711"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTThemeComparator.html#a5980688428cf0454175801c576956711">FMTThemeComparator</a> (const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;p_lbase_theme, const bool &amp;p_lcomparedwithpresolved=false)</td></tr>
+<tr class="memdesc:a5980688428cf0454175801c576956711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the comparator from the theme to match.  <br /></td></tr>
+<tr class="separator:a5980688428cf0454175801c576956711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe395ffb25399516814c2940517304a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTThemeComparator.html#aebe395ffb25399516814c2940517304a">operator()</a> (const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;p_theme) const</td></tr>
+<tr class="memdesc:aebe395ffb25399516814c2940517304a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matching test operator for the comparator.  <br /></td></tr>
+<tr class="separator:aebe395ffb25399516814c2940517304a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCore_1_1FMTthemecomparator.html">FMTthemecomparator</a> to check two themes are the same. </p>
+<div class="textblock"><p>Comparator used to check if two themes are the same. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad8dd1238b2d8352c8198aefa11cb4eb6" name="ad8dd1238b2d8352c8198aefa11cb4eb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8dd1238b2d8352c8198aefa11cb4eb6">&#9670;&#160;</a></span>FMTthemecomparator()</h2>
+<a id="a5980688428cf0454175801c576956711" name="a5980688428cf0454175801c576956711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5980688428cf0454175801c576956711">&#9670;&#160;</a></span>FMTThemeComparator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTthemecomparator::FMTthemecomparator </td>
+          <td class="memname">Core::FMTThemeComparator::FMTThemeComparator </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;&#160;</td>
-          <td class="paramname"><em>lbase_theme</em>, </td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_lbase_theme</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const bool &amp;&#160;</td>
-          <td class="paramname"><em>lcomparedwithpresolved</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>p_lcomparedwithpresolved</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -119,32 +124,48 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTthemecomparator.html">FMTthemecomparator</a> constructor ltheme_mask is the theme of that we want to match. </p>
+
+<p>Construct the comparator from the theme to match. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_lbase_theme</td><td>the theme to match. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_lcomparedwithpresolved</td><td>if true compares with the presolved theme. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a46da52451892111e45809b001d37f06b" name="a46da52451892111e45809b001d37f06b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46da52451892111e45809b001d37f06b">&#9670;&#160;</a></span>operator()()</h2>
+<a id="aebe395ffb25399516814c2940517304a" name="aebe395ffb25399516814c2940517304a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebe395ffb25399516814c2940517304a">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTthemecomparator::operator() </td>
+          <td class="memname">bool Core::FMTThemeComparator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;&#160;</td>
-          <td class="paramname"><em>theme</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_theme</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Matching test operator for <a class="el" href="classCore_1_1FMTthemecomparator.html">FMTthemecomparator</a>. </p>
+
+<p>Matching test operator for the comparator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_theme</td><td>the theme to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the theme matches else false. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTtheme_8hpp_source.html">FMTtheme.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTTheme_8h_source.html">FMTTheme.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

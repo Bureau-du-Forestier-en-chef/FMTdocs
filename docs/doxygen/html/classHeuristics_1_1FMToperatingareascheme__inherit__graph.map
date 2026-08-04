@@ -1,4 +1,5 @@
-<map id="Heuristics::FMToperatingareascheme" name="Heuristics::FMToperatingareascheme">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,243,107"/>
-<area shape="rect" id="node2" href="$classHeuristics_1_1FMToperatingarea.html" title=" " alt="" coords="28,5,220,32"/>
+<map id="Heuristics::FMTOperatingAreaScheme" name="Heuristics::FMTOperatingAreaScheme">
+<area shape="rect" id="node1" title="Operating area scheme giving information about its opening time, green up and return time." alt="" coords="110,80,279,123"/>
+<area shape="rect" id="node2" href="$classHeuristics_1_1FMTOperatingArea.html" title="Operating area giving information about its mask, neighbors and neighbors perimeter." alt="" coords="5,5,202,32"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="226,5,346,32"/>
 </map>

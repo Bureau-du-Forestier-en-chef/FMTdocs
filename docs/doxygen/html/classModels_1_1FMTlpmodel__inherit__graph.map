@@ -1,6 +1,6 @@
-<map id="Models::FMTlpmodel" name="Models::FMTlpmodel">
-<area shape="rect" id="node1" title=" " alt="" coords="6,229,148,256"/>
-<area shape="rect" id="node2" href="$classModels_1_1FMTsrmodel.html" title=" " alt="" coords="5,155,149,181"/>
-<area shape="rect" id="node3" href="$classModels_1_1FMTmodel.html" title=" " alt="" coords="11,80,143,107"/>
-<area shape="rect" id="node4" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="18,5,136,32"/>
+<map id="Models::FMTLpModel" name="Models::FMTLpModel">
+<area shape="rect" id="node1" title="Type III LP forest planning model, with the graph divided per period." alt="" coords="5,229,152,256"/>
+<area shape="rect" id="node2" href="$classModels_1_1FMTSrModel.html" title="Base class holding the attributes and methods shared between the spatially referenced models (FMTLpMo..." alt="" coords="6,155,151,181"/>
+<area shape="rect" id="node3" href="$classModels_1_1FMTModel.html" title="Base class for the different models in FMT." alt="" coords="12,80,145,107"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="18,5,139,32"/>
 </map>

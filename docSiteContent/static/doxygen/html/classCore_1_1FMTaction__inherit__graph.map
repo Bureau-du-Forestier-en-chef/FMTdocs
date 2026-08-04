@@ -1,5 +1,4 @@
-<map id="Core::FMTaction" name="Core::FMTaction">
-<area shape="rect" id="node1" title=" " alt="" coords="35,155,153,181"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTlist.html" title=" " alt="" coords="5,80,183,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="35,5,153,32"/>
+<map id="Core::FMTAction" name="Core::FMTAction">
+<area shape="rect" id="node1" title="List of specifications dictating the operability of a subset of developments to this action." alt="" coords="37,80,157,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTList.html" title=" " alt="" coords="5,5,189,32"/>
 </map>

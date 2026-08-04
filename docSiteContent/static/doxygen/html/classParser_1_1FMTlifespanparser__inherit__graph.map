@@ -1,5 +1,5 @@
-<map id="Parser::FMTlifespanparser" name="Parser::FMTlifespanparser">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,179,181"/>
-<area shape="rect" id="node2" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="27,80,157,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="33,5,151,32"/>
+<map id="Parser::FMTLifespanParser" name="Parser::FMTLifespanParser">
+<area shape="rect" id="node1" title="Parser reading and writing the lifespan section of the model." alt="" coords="5,155,185,181"/>
+<area shape="rect" id="node2" href="$classParser_1_1FMTParser.html" title="Main parent class of all the parsers in FMT." alt="" coords="29,80,161,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="35,5,155,32"/>
 </map>

@@ -1,9 +1,11 @@
-<map id="Core::FMTyieldmodel" name="Core::FMTyieldmodel">
-<area shape="rect" id="node1" title=" " alt="" coords="241,80,386,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTyieldmodelTSLA.html" title=" " alt="" coords="5,155,182,181"/>
-<area shape="rect" id="node4" href="$classCore_1_1FMTyieldmodeldecisiontree.html" title=" " alt="" coords="206,155,421,181"/>
-<area shape="rect" id="node5" href="$classCore_1_1FMTyieldmodelnn.html" title=" " alt="" coords="445,155,603,181"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="255,5,372,32"/>
-<area shape="rect" id="node6" href="$classCore_1_1FMTyieldmodelnep.html" title=" " alt="" coords="344,229,510,256"/>
-<area shape="rect" id="node7" href="$classCore_1_1FMTyieldmodelpools.html" title=" " alt="" coords="534,229,709,256"/>
+<map id="Core::FMTYieldModel" name="Core::FMTYieldModel">
+<area shape="rect" id="node1" title="Abstract class to be implemented as a machine learning yield model." alt="" coords="174,107,320,133"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTYieldModelDecisionTree.html" title="Yield model using a decision tree based on the growth outputs of the model to get yield values." alt="" coords="369,5,590,32"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTYieldModelNn.html" title="Abstract machine learning yield model based on a neural network." alt="" coords="398,56,560,83"/>
+<area shape="rect" id="node7" href="$classCore_1_1FMTYieldModelRandom.html" title=" " alt="" coords="382,107,576,133"/>
+<area shape="rect" id="node8" href="$classCore_1_1FMTYieldModelTsla.html" title="Yield model returning the time since last disturbance, always added by default by the yield parser." alt="" coords="394,157,564,184"/>
+<area shape="rect" id="node9" href="$classCore_1_1FMTYieldModelUnitCoverage.html" title="Yield model calculating the sum of a yield value over a spatial unit at period 0." alt="" coords="368,208,590,235"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="5,107,126,133"/>
+<area shape="rect" id="node5" href="$classCore_1_1FMTYieldModelNep.html" title="Machine learning yield model predicting carbon NEP." alt="" coords="643,31,813,57"/>
+<area shape="rect" id="node6" href="$classCore_1_1FMTYieldModelPools.html" title="Machine learning yield model predicting carbon pools." alt="" coords="638,81,818,108"/>
 </map>

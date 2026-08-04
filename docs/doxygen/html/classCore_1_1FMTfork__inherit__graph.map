@@ -1,5 +1,5 @@
-<map id="Core::FMTfork" name="Core::FMTfork">
-<area shape="rect" id="node1" title=" " alt="" coords="77,80,180,107"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTspec.html" title=" " alt="" coords="5,5,116,32"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="139,5,257,32"/>
+<map id="Core::FMTFork" name="Core::FMTFork">
+<area shape="rect" id="node1" title="Fork of a transition, holding the transition masks (targets and proportions) applied to a development..." alt="" coords="51,80,160,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,83,32"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="107,5,227,32"/>
 </map>

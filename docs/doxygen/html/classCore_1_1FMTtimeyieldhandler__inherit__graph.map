@@ -1,5 +1,5 @@
-<map id="Core::FMTtimeyieldhandler" name="Core::FMTtimeyieldhandler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,182,181"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTyieldhandler.html" title=" " alt="" coords="18,80,169,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="35,5,152,32"/>
+<map id="Core::FMTTimeYieldHandler" name="Core::FMTTimeYieldHandler">
+<area shape="rect" id="node1" title="Yield handler for time based yields, indexed by period." alt="" coords="5,155,189,181"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTYieldHandler.html" title="Base class for yield handlers, holding a mask and the base ages of the yields." alt="" coords="19,80,175,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="37,5,157,32"/>
 </map>

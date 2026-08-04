@@ -1,5 +1,5 @@
-<map id="Core::FMTtransitionmask" name="Core::FMTtransitionmask">
-<area shape="rect" id="node1" title=" " alt="" coords="64,80,232,107"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTmaskfilter.html" title=" " alt="" coords="5,5,144,32"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTspec.html" title=" " alt="" coords="167,5,278,32"/>
+<map id="Core::FMTTransitionMask" name="Core::FMTTransitionMask">
+<area shape="rect" id="node1" title="Transition mask holding a target mask and a proportion, used to disturb a development in a transition..." alt="" coords="59,80,229,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTMaskFilter.html" title="Filter built from masks used to preSolve and postsolve FMTMask objects." alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="173,5,250,32"/>
 </map>

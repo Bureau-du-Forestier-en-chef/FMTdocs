@@ -1,6 +1,6 @@
-<map id="Core::FMTyieldmodelpools" name="Core::FMTyieldmodelpools">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,181,256"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTyieldmodelnn.html" title=" " alt="" coords="14,155,172,181"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTyieldmodel.html" title=" " alt="" coords="21,80,165,107"/>
-<area shape="rect" id="node4" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="34,5,152,32"/>
+<map id="Core::FMTYieldModelPools" name="Core::FMTYieldModelPools">
+<area shape="rect" id="node1" title="Machine learning yield model predicting carbon pools." alt="" coords="5,229,185,256"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTYieldModelNn.html" title="Abstract machine learning yield model based on a neural network." alt="" coords="14,155,176,181"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTYieldModel.html" title="Abstract class to be implemented as a machine learning yield model." alt="" coords="22,80,168,107"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="35,5,155,32"/>
 </map>

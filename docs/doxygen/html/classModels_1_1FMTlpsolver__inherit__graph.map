@@ -1,7 +1,7 @@
-<map id="Models::FMTlpsolver" name="Models::FMTlpsolver">
-<area shape="rect" id="node1" title=" " alt="" coords="189,80,330,107"/>
-<area shape="rect" id="node3" href="$classHeuristics_1_1FMTlpheuristic.html" title=" " alt="" coords="173,155,346,181"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="201,5,318,32"/>
-<area shape="rect" id="node4" href="$classHeuristics_1_1FMToperatingareaclusterer.html" title=" " alt="" coords="5,229,247,256"/>
-<area shape="rect" id="node5" href="$classHeuristics_1_1FMToperatingareascheduler.html" title=" " alt="" coords="270,229,518,256"/>
+<map id="Models::FMTLpSolver" name="Models::FMTLpSolver">
+<area shape="rect" id="node1" title="Abstract class to ease the usage of the OsiSolverInterface in FMT for linear programming models." alt="" coords="113,80,259,107"/>
+<area shape="rect" id="node3" href="$classHeuristics_1_1FMTLpHeuristic.html" title="Base class for solving LP and MIP problems using a heuristic, holding a random generator and its own ..." alt="" coords="97,155,275,181"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="126,5,246,32"/>
+<area shape="rect" id="node4" href="$classHeuristics_1_1FMTOperatingAreaClusterer.html" title="Heuristic to do spatial clustering of operating areas across a landscape from a shapefile." alt="" coords="5,229,175,272"/>
+<area shape="rect" id="node5" href="$classHeuristics_1_1FMTOperatingAreaScheduler.html" title="Heuristic to solve the spatialization problem across a landscape for multiple operating areas." alt="" coords="199,229,368,272"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Models::FMTmodelcomparator Class Reference</title>
+<title>FMT: Models::FMTModelComparator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,69 +71,90 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceModels.html">Models</a></li><li class="navelem"><a class="el" href="classModels_1_1FMTmodelcomparator.html">FMTmodelcomparator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceModels.html">Models</a></li><li class="navelem"><a class="el" href="classModels_1_1FMTModelComparator.html">FMTModelComparator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classModels_1_1FMTmodelcomparator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Models::FMTmodelcomparator Class Reference</div></div>
+<a href="classModels_1_1FMTModelComparator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Models::FMTModelComparator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTmodel_8hpp_source.html">FMTmodel.hpp</a>&gt;</code></p>
+<p>Comparator used to compare <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a> with std::find_if when models are in a stl container.  
+ <a href="classModels_1_1FMTModelComparator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTModel_8h_source.html">FMTModel.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60a8d254531b82aef9d27654219284fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelcomparator.html#a60a8d254531b82aef9d27654219284fb">FMTmodelcomparator</a> (std::string name)</td></tr>
-<tr class="separator:a60a8d254531b82aef9d27654219284fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca3a9c0fe09949bd266b3bded2ba89c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelcomparator.html#aca3a9c0fe09949bd266b3bded2ba89c0">operator()</a> (const <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &amp;model) const</td></tr>
-<tr class="separator:aca3a9c0fe09949bd266b3bded2ba89c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90672346f9622a46a9c8fd28e559c561"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelComparator.html#a90672346f9622a46a9c8fd28e559c561">FMTModelComparator</a> (std::string p_name)</td></tr>
+<tr class="memdesc:a90672346f9622a46a9c8fd28e559c561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the comparator.  <br /></td></tr>
+<tr class="separator:a90672346f9622a46a9c8fd28e559c561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d37cd7e66ca7da988a913bd2a6c476"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelComparator.html#af7d37cd7e66ca7da988a913bd2a6c476">operator()</a> (const <a class="el" href="classModels_1_1FMTModel.html">FMTModel</a> &amp;model) const</td></tr>
+<tr class="memdesc:af7d37cd7e66ca7da988a913bd2a6c476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the given model matches the name held by the comparator.  <br /></td></tr>
+<tr class="separator:af7d37cd7e66ca7da988a913bd2a6c476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class is made to compare <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> using the std::find_if() function when FMTmodels are in a stl container. </p>
+<div class="textblock"><p>Comparator used to compare <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a> with std::find_if when models are in a stl container. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a60a8d254531b82aef9d27654219284fb" name="a60a8d254531b82aef9d27654219284fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60a8d254531b82aef9d27654219284fb">&#9670;&#160;</a></span>FMTmodelcomparator()</h2>
+<a id="a90672346f9622a46a9c8fd28e559c561" name="a90672346f9622a46a9c8fd28e559c561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90672346f9622a46a9c8fd28e559c561">&#9670;&#160;</a></span>FMTModelComparator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmodelcomparator::FMTmodelcomparator </td>
+          <td class="memname">Models::FMTModelComparator::FMTModelComparator </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"><em>p_name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy constructor class, (name) is the name of the model that we wish to check if it's in the stl container. </p>
+
+<p>Constructor of the comparator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_name</td><td>the name of the model to check for in the stl container. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aca3a9c0fe09949bd266b3bded2ba89c0" name="aca3a9c0fe09949bd266b3bded2ba89c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca3a9c0fe09949bd266b3bded2ba89c0">&#9670;&#160;</a></span>operator()()</h2>
+<a id="af7d37cd7e66ca7da988a913bd2a6c476" name="af7d37cd7e66ca7da988a913bd2a6c476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d37cd7e66ca7da988a913bd2a6c476">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Models::FMTmodelcomparator::operator() </td>
+          <td class="memname">bool Models::FMTModelComparator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModel.html">FMTModel</a> &amp;&#160;</td>
           <td class="paramname"><em>model</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the given model matches the name held by the comparator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">model</td><td>the model to compare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the model name matches else false. </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTmodel_8hpp_source.html">FMTmodel.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTModel_8h_source.html">FMTModel.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

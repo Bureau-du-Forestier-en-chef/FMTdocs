@@ -1,6 +1,6 @@
-<map id="Core::FMTconstraint" name="Core::FMTconstraint">
-<area shape="rect" id="node1" title=" " alt="" coords="64,155,204,181"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMToutput.html" title=" " alt="" coords="5,80,124,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="6,5,123,32"/>
-<area shape="rect" id="node4" href="$classCore_1_1FMTspec.html" title=" " alt="" coords="148,80,258,107"/>
+<map id="Core::FMTConstraint" name="Core::FMTConstraint">
+<area shape="rect" id="node1" title="Representation of a line in the optimize section, an objective being considered a constraint." alt="" coords="57,155,198,181"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTOutput.html" title="Class letting the user formulate a constraint in the optimize section or collect data across the grap..." alt="" coords="5,80,127,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="6,5,126,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="151,80,229,107"/>
 </map>

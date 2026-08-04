@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMToutputnode Class Reference</title>
+<title>FMT: Core::FMTOutputNode Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,103 +71,136 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="classCore_1_1FMToutputnode-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMToutputnode Class Reference</div></div>
+<a href="classCore_1_1FMTOutputNode-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTOutputNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMToutputnode_8hpp_source.html">FMToutputnode.hpp</a>&gt;</code></p>
+<p>Node of an output representing a set of developments in the graph, holding a source, a factor and a constant.  
+ <a href="classCore_1_1FMTOutputNode.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTOutputNode_8h_source.html">FMTOutputNode.h</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for Core::FMToutputnode:</div>
+Collaboration diagram for Core::FMTOutputNode:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMToutputnode__coll__graph.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTOutputNode__coll__graph.svg" width="174" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0569ea18c0437c01236d47518ee1f457"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a0569ea18c0437c01236d47518ee1f457">FMToutputnode</a> ()</td></tr>
-<tr class="separator:a0569ea18c0437c01236d47518ee1f457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0672c02375ccaf265cb145b1e7dfce3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a0672c02375ccaf265cb145b1e7dfce3f">FMToutputnode</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;lsource, const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;lfactor, const double &amp;lconstant)</td></tr>
-<tr class="separator:a0672c02375ccaf265cb145b1e7dfce3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a119c12e2f2eb2ac63f5e89aafac4ba85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a119c12e2f2eb2ac63f5e89aafac4ba85">FMToutputnode</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;rhs)</td></tr>
-<tr class="separator:a119c12e2f2eb2ac63f5e89aafac4ba85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a108a3148e1e4e987314471e466e68364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a108a3148e1e4e987314471e466e68364">FMToutputnode</a> (const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;generalmask, const std::string &amp;actionaggregate)</td></tr>
-<tr class="separator:a108a3148e1e4e987314471e466e68364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe03d0c2ca1a9b42c0282c6fbf039771"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#afe03d0c2ca1a9b42c0282c6fbf039771">hash</a> () const</td></tr>
-<tr class="separator:afe03d0c2ca1a9b42c0282c6fbf039771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea1fcc1f7c070fd1d0ff21d6951e5f6c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#aea1fcc1f7c070fd1d0ff21d6951e5f6c">hashforvalue</a> () const</td></tr>
-<tr class="separator:aea1fcc1f7c070fd1d0ff21d6951e5f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac0598c137f644686a97ffda8df04d9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#aac0598c137f644686a97ffda8df04d9b">allowcashdeduction</a> () const</td></tr>
-<tr class="separator:aac0598c137f644686a97ffda8df04d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e49caadb47b846627a311a96f744a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#ad7e49caadb47b846627a311a96f744a4">singleperiod</a> () const</td></tr>
-<tr class="separator:ad7e49caadb47b846627a311a96f744a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e83d865427ab21d29228792a6f5e0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#aa0e83d865427ab21d29228792a6f5e0c">multiperiod</a> () const</td></tr>
-<tr class="separator:aa0e83d865427ab21d29228792a6f5e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c0a4b0df47fcb79e7c581a39203bcc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a6c0a4b0df47fcb79e7c581a39203bcc4">ispastperiod</a> () const</td></tr>
-<tr class="separator:a6c0a4b0df47fcb79e7c581a39203bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc4b50e7bbd5e50514815fff71652c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#afbc4b50e7bbd5e50514815fff71652c9">isnull</a> () const</td></tr>
-<tr class="separator:afbc4b50e7bbd5e50514815fff71652c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d6617dc5d7c32a4f689e5d7fb46d45f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a8d6617dc5d7c32a4f689e5d7fb46d45f">operator&lt;</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;rhs) const</td></tr>
-<tr class="separator:a8d6617dc5d7c32a4f689e5d7fb46d45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aa76577c210dc3cf9eb70a2db51e3c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a4aa76577c210dc3cf9eb70a2db51e3c2">operator==</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;rhs) const</td></tr>
-<tr class="separator:a4aa76577c210dc3cf9eb70a2db51e3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a162b8f9b7cb38635e3f1553d20b103"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a1a162b8f9b7cb38635e3f1553d20b103">issubsetof</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;rhs) const</td></tr>
-<tr class="separator:a1a162b8f9b7cb38635e3f1553d20b103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ee49416ad65f53081d92df553159b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a41ee49416ad65f53081d92df553159b0">issubsetof</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;rhs, const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;actions) const</td></tr>
-<tr class="separator:a41ee49416ad65f53081d92df553159b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a079411b305df6d93e6d4707fa5946fb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a079411b305df6d93e6d4707fa5946fb8">issamebutdifferentaction</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;rhs) const</td></tr>
-<tr class="separator:a079411b305df6d93e6d4707fa5946fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae692f5f55ebf5f03e2ecd7758291ed32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#ae692f5f55ebf5f03e2ecd7758291ed32">getoutputid</a> () const</td></tr>
-<tr class="separator:ae692f5f55ebf5f03e2ecd7758291ed32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba2818fe6bc367a36b3ece526f61ecfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#aba2818fe6bc367a36b3ece526f61ecfe">isactionbased</a> () const</td></tr>
-<tr class="separator:aba2818fe6bc367a36b3ece526f61ecfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4227be9554bee573a5672082ed9ee44f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a4227be9554bee573a5672082ed9ee44f">issamevalues</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;rhs) const</td></tr>
-<tr class="separator:a4227be9554bee573a5672082ed9ee44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c4cdb54d7caf543558fde6743f1578"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a38c4cdb54d7caf543558fde6743f1578">operator std::string</a> () const</td></tr>
-<tr class="separator:a38c4cdb54d7caf543558fde6743f1578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c76e1287eec16d53b3a29da576ae5e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a0c76e1287eec16d53b3a29da576ae5e0">gethashstring</a> () const</td></tr>
-<tr class="separator:a0c76e1287eec16d53b3a29da576ae5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f3f62c300e45671f449f13a1fd67e3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a5f3f62c300e45671f449f13a1fd67e3b">gethashmask</a> () const</td></tr>
-<tr class="separator:a5f3f62c300e45671f449f13a1fd67e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be1a1e8e91002487c69e9b7e18244eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a3be1a1e8e91002487c69e9b7e18244eb">fillhashmaskspec</a> (<a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;basemask) const</td></tr>
-<tr class="separator:a3be1a1e8e91002487c69e9b7e18244eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c7071f7bb5806c566ca5be9fc7314b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a4c7071f7bb5806c566ca5be9fc7314b5">setperiod</a> (int period) const</td></tr>
-<tr class="separator:a4c7071f7bb5806c566ca5be9fc7314b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1400f57b156dcfc9ed3381947d07be4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a1400f57b156dcfc9ed3381947d07be4b">operator=</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;rhs)</td></tr>
-<tr class="separator:a1400f57b156dcfc9ed3381947d07be4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a68a99e0cb321dac67600d2f8547906"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a8a68a99e0cb321dac67600d2f8547906">settograph</a> (std::vector&lt; int &gt; &amp;targetedperiods, int period, int max_period)</td></tr>
-<tr class="separator:a8a68a99e0cb321dac67600d2f8547906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7145babeb324453aff8ed1cb4d759ea6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a7145babeb324453aff8ed1cb4d759ea6">~FMToutputnode</a> ()=default</td></tr>
-<tr class="separator:a7145babeb324453aff8ed1cb4d759ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab17295e61d43dcd7436e74b4ca110bdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#ab17295e61d43dcd7436e74b4ca110bdd">fillupequation</a> (std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &amp;allequations, const std::map&lt; std::string, double &gt; &amp;graphvalues, const std::vector&lt; std::string &gt; &amp;equation, const size_t &amp;nodeid) const</td></tr>
-<tr class="separator:ab17295e61d43dcd7436e74b4ca110bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f1a1a5dd84e8a21ddda787ef8b02cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#aa0f1a1a5dd84e8a21ddda787ef8b02cb">FMTOutputNode</a> ()</td></tr>
+<tr class="memdesc:aa0f1a1a5dd84e8a21ddda787ef8b02cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>.  <br /></td></tr>
+<tr class="separator:aa0f1a1a5dd84e8a21ddda787ef8b02cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a6c2081bfe02406fc6ba949faa87fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#ad1a6c2081bfe02406fc6ba949faa87fd">FMTOutputNode</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;lsource, const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;lfactor, const double &amp;lconstant)</td></tr>
+<tr class="memdesc:ad1a6c2081bfe02406fc6ba949faa87fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an output node from a source, a factor and a constant.  <br /></td></tr>
+<tr class="separator:ad1a6c2081bfe02406fc6ba949faa87fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70010a78e40d47e732fd00a88c7192d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a70010a78e40d47e732fd00a88c7192d5">FMTOutputNode</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a70010a78e40d47e732fd00a88c7192d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>.  <br /></td></tr>
+<tr class="separator:a70010a78e40d47e732fd00a88c7192d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3547925a592f65cc720152f011a27dd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a3547925a592f65cc720152f011a27dd8">FMTOutputNode</a> (const <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;generalmask, const std::string &amp;actionaggregate)</td></tr>
+<tr class="memdesc:a3547925a592f65cc720152f011a27dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a general node targeting an action name or actions aggregate, for use with the scheduler heuristic.  <br /></td></tr>
+<tr class="separator:a3547925a592f65cc720152f011a27dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2cc2344d7f66962710ec944b34cd4d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#aed2cc2344d7f66962710ec944b34cd4d">hash</a> () const</td></tr>
+<tr class="memdesc:aed2cc2344d7f66962710ec944b34cd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the hash of the output node.  <br /></td></tr>
+<tr class="separator:aed2cc2344d7f66962710ec944b34cd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ec91202b7b3ee04495f9bcd6b94acd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a45ec91202b7b3ee04495f9bcd6b94acd">hashForValue</a> () const</td></tr>
+<tr class="memdesc:a45ec91202b7b3ee04495f9bcd6b94acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the hash of the output node for its value.  <br /></td></tr>
+<tr class="separator:a45ec91202b7b3ee04495f9bcd6b94acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90abc0122fe736843128708252206764"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a90abc0122fe736843128708252206764">allowCashDeduction</a> () const</td></tr>
+<tr class="memdesc:a90abc0122fe736843128708252206764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output node allows cache deduction.  <br /></td></tr>
+<tr class="separator:a90abc0122fe736843128708252206764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9802194f8d6cd35728749ab8c72c0e3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a9802194f8d6cd35728749ab8c72c0e3c">singlePeriod</a> () const</td></tr>
+<tr class="memdesc:a9802194f8d6cd35728749ab8c72c0e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output node covers a single period.  <br /></td></tr>
+<tr class="separator:a9802194f8d6cd35728749ab8c72c0e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf55fe385d0e452f5040ab1d086afe39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#adf55fe385d0e452f5040ab1d086afe39">multiPeriod</a> () const</td></tr>
+<tr class="memdesc:adf55fe385d0e452f5040ab1d086afe39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output node covers multiple periods.  <br /></td></tr>
+<tr class="separator:adf55fe385d0e452f5040ab1d086afe39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2cc146fb3f5e423bd8368389b47b80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a3f2cc146fb3f5e423bd8368389b47b80">isPastPeriod</a> () const</td></tr>
+<tr class="memdesc:a3f2cc146fb3f5e423bd8368389b47b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output node targets a past period.  <br /></td></tr>
+<tr class="separator:a3f2cc146fb3f5e423bd8368389b47b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb6de9de3976b86a23793e2d7b0e994"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#acbb6de9de3976b86a23793e2d7b0e994">isNull</a> () const</td></tr>
+<tr class="memdesc:acbb6de9de3976b86a23793e2d7b0e994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output node is null.  <br /></td></tr>
+<tr class="separator:acbb6de9de3976b86a23793e2d7b0e994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3fda7ae5caf5474b0f41830c1ce251"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a8c3fda7ae5caf5474b0f41830c1ce251">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a8c3fda7ae5caf5474b0f41830c1ce251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than comparison operator of <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>.  <br /></td></tr>
+<tr class="separator:a8c3fda7ae5caf5474b0f41830c1ce251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28445f51bf100207f2f40ce2e4e0727b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a28445f51bf100207f2f40ce2e4e0727b">operator==</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a28445f51bf100207f2f40ce2e4e0727b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator of <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>.  <br /></td></tr>
+<tr class="separator:a28445f51bf100207f2f40ce2e4e0727b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef9d8c5be1ee24e08a10d9e434eda8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a6ef9d8c5be1ee24e08a10d9e434eda8c">isSubsetOf</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a6ef9d8c5be1ee24e08a10d9e434eda8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output node is a subset of another.  <br /></td></tr>
+<tr class="separator:a6ef9d8c5be1ee24e08a10d9e434eda8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab406c9023324722fb8b036c2e44ff0e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#ab406c9023324722fb8b036c2e44ff0e8">isSubsetOf</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;rhs, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;actions) const</td></tr>
+<tr class="memdesc:ab406c9023324722fb8b036c2e44ff0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output node is a subset of another considering the actions.  <br /></td></tr>
+<tr class="separator:ab406c9023324722fb8b036c2e44ff0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9703e7ca2d6401959e5874a5d15b469e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a9703e7ca2d6401959e5874a5d15b469e">isSameButDifferentAction</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a9703e7ca2d6401959e5874a5d15b469e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output node is the same as another but with a different action.  <br /></td></tr>
+<tr class="separator:a9703e7ca2d6401959e5874a5d15b469e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b107cbe4fa545aa1b3c8583da577460"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a3b107cbe4fa545aa1b3c8583da577460">getOutputId</a> () const</td></tr>
+<tr class="memdesc:a3b107cbe4fa545aa1b3c8583da577460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the output id of the output node.  <br /></td></tr>
+<tr class="separator:a3b107cbe4fa545aa1b3c8583da577460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1962ee2a98a6e2e029705539f0d68fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#aa1962ee2a98a6e2e029705539f0d68fc">isActionBased</a> () const</td></tr>
+<tr class="memdesc:aa1962ee2a98a6e2e029705539f0d68fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the output node is action based.  <br /></td></tr>
+<tr class="separator:aa1962ee2a98a6e2e029705539f0d68fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9a5400b04ae31ccd34d59a30ca934c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#aff9a5400b04ae31ccd34d59a30ca934c">isSameValues</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:aff9a5400b04ae31ccd34d59a30ca934c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this output node has the same values as another.  <br /></td></tr>
+<tr class="separator:aff9a5400b04ae31ccd34d59a30ca934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ce34ef73b7b24b71d57bda036957d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#ac9ce34ef73b7b24b71d57bda036957d5">operator std::string</a> () const</td></tr>
+<tr class="memdesc:ac9ce34ef73b7b24b71d57bda036957d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the string representation of the output node.  <br /></td></tr>
+<tr class="separator:ac9ce34ef73b7b24b71d57bda036957d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d46d48d2ede2940aeb204e19f3df3f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a9d46d48d2ede2940aeb204e19f3df3f0">getHashString</a> () const</td></tr>
+<tr class="memdesc:a9d46d48d2ede2940aeb204e19f3df3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the hash string of the output node.  <br /></td></tr>
+<tr class="separator:a9d46d48d2ede2940aeb204e19f3df3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c0e57f03a37981f8cc4c63c86e0bdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#ae1c0e57f03a37981f8cc4c63c86e0bdb">getHashMask</a> () const</td></tr>
+<tr class="memdesc:ae1c0e57f03a37981f8cc4c63c86e0bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the hash mask of the output node.  <br /></td></tr>
+<tr class="separator:ae1c0e57f03a37981f8cc4c63c86e0bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13b94affa3c0f4cd21d8b1bb4ff4906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#ac13b94affa3c0f4cd21d8b1bb4ff4906">fillHashMaskSpec</a> (<a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;baseMask) const</td></tr>
+<tr class="memdesc:ac13b94affa3c0f4cd21d8b1bb4ff4906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a base mask with the hash mask specification of the output node.  <br /></td></tr>
+<tr class="separator:ac13b94affa3c0f4cd21d8b1bb4ff4906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b017b03b3a4b43d0dc622cdfed7e7f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a8b017b03b3a4b43d0dc622cdfed7e7f6">setPeriod</a> (int period) const</td></tr>
+<tr class="memdesc:a8b017b03b3a4b43d0dc622cdfed7e7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a copy of the output node set to a given period.  <br /></td></tr>
+<tr class="separator:a8b017b03b3a4b43d0dc622cdfed7e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e27af30912ef0f9ef37afd41c89d3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a85e27af30912ef0f9ef37afd41c89d3b">operator=</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a85e27af30912ef0f9ef37afd41c89d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>.  <br /></td></tr>
+<tr class="separator:a85e27af30912ef0f9ef37afd41c89d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3cf26155c849cd309d5123787a2ee4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#aa3cf26155c849cd309d5123787a2ee4a">setToGraph</a> (std::vector&lt; int &gt; &amp;targetedperiods, int period, int max_period)</td></tr>
+<tr class="memdesc:aa3cf26155c849cd309d5123787a2ee4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output node to the graph for the targeted periods.  <br /></td></tr>
+<tr class="separator:aa3cf26155c849cd309d5123787a2ee4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d88d546acc2c4ea4bf043885c044167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a1d88d546acc2c4ea4bf043885c044167">~FMTOutputNode</a> ()=default</td></tr>
+<tr class="memdesc:a1d88d546acc2c4ea4bf043885c044167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>.  <br /></td></tr>
+<tr class="separator:a1d88d546acc2c4ea4bf043885c044167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8a0805784cff60e59b235ee47d88e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a1f8a0805784cff60e59b235ee47d88e1">fillUpEquation</a> (std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &amp;allequations, const std::map&lt; std::string, double &gt; &amp;graphvalues, const std::vector&lt; std::string &gt; &amp;equation, const size_t &amp;nodeid) const</td></tr>
+<tr class="memdesc:a1f8a0805784cff60e59b235ee47d88e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill up the equation of the output node.  <br /></td></tr>
+<tr class="separator:a1f8a0805784cff60e59b235ee47d88e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aac608cd9090252316cbb7d3d1a895bae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#aac608cd9090252316cbb7d3d1a895bae">source</a></td></tr>
-<tr class="separator:aac608cd9090252316cbb7d3d1a895bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dc93c8531f19cbfe6483ee98d8c09e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a9dc93c8531f19cbfe6483ee98d8c09e4">factor</a></td></tr>
-<tr class="separator:a9dc93c8531f19cbfe6483ee98d8c09e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e6e1277a4a1bf9c0018d7c907105bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnode.html#a21e6e1277a4a1bf9c0018d7c907105bd">constant</a></td></tr>
-<tr class="separator:a21e6e1277a4a1bf9c0018d7c907105bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad0bdfb9e23751297d65354433da749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#aaad0bdfb9e23751297d65354433da749">source</a></td></tr>
+<tr class="separator:aaad0bdfb9e23751297d65354433da749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8835a09439dc00d701aca5b850679c52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#a8835a09439dc00d701aca5b850679c52">factor</a></td></tr>
+<tr class="separator:a8835a09439dc00d701aca5b850679c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff77050ceeccead7743834d25bf1502"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNode.html#aaff77050ceeccead7743834d25bf1502">constant</a></td></tr>
+<tr class="separator:aaff77050ceeccead7743834d25bf1502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0569ea18c0437c01236d47518ee1f457" name="a0569ea18c0437c01236d47518ee1f457"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0569ea18c0437c01236d47518ee1f457">&#9670;&#160;</a></span>FMToutputnode() <span class="overload">[1/4]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Node of an output representing a set of developments in the graph, holding a source, a factor and a constant. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa0f1a1a5dd84e8a21ddda787ef8b02cb" name="aa0f1a1a5dd84e8a21ddda787ef8b02cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f1a1a5dd84e8a21ddda787ef8b02cb">&#9670;&#160;</a></span>FMTOutputNode() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputnode::FMToutputnode </td>
+          <td class="memname">Core::FMTOutputNode::FMTOutputNode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -175,24 +208,26 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>. </p>
+
 </div>
 </div>
-<a id="a0672c02375ccaf265cb145b1e7dfce3f" name="a0672c02375ccaf265cb145b1e7dfce3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0672c02375ccaf265cb145b1e7dfce3f">&#9670;&#160;</a></span>FMToutputnode() <span class="overload">[2/4]</span></h2>
+<a id="ad1a6c2081bfe02406fc6ba949faa87fd" name="ad1a6c2081bfe02406fc6ba949faa87fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a6c2081bfe02406fc6ba949faa87fd">&#9670;&#160;</a></span>FMTOutputNode() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputnode::FMToutputnode </td>
+          <td class="memname">Core::FMTOutputNode::FMTOutputNode </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>lsource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>lfactor</em>, </td>
         </tr>
         <tr>
@@ -209,36 +244,54 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct an output node from a source, a factor and a constant. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lsource</td><td>the output source. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lfactor</td><td>the factor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lconstant</td><td>the constant. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a119c12e2f2eb2ac63f5e89aafac4ba85" name="a119c12e2f2eb2ac63f5e89aafac4ba85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a119c12e2f2eb2ac63f5e89aafac4ba85">&#9670;&#160;</a></span>FMToutputnode() <span class="overload">[3/4]</span></h2>
+<a id="a70010a78e40d47e732fd00a88c7192d5" name="a70010a78e40d47e732fd00a88c7192d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70010a78e40d47e732fd00a88c7192d5">&#9670;&#160;</a></span>FMTOutputNode() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputnode::FMToutputnode </td>
+          <td class="memname">Core::FMTOutputNode::FMTOutputNode </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a108a3148e1e4e987314471e466e68364" name="a108a3148e1e4e987314471e466e68364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a108a3148e1e4e987314471e466e68364">&#9670;&#160;</a></span>FMToutputnode() <span class="overload">[4/4]</span></h2>
+<a id="a3547925a592f65cc720152f011a27dd8" name="a3547925a592f65cc720152f011a27dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3547925a592f65cc720152f011a27dd8">&#9670;&#160;</a></span>FMTOutputNode() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputnode::FMToutputnode </td>
+          <td class="memname">Core::FMTOutputNode::FMTOutputNode </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>generalmask</em>, </td>
         </tr>
         <tr>
@@ -254,12 +307,20 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This constructor will create a general node targeting an action name or actions aggregate. It meant to be used with the scheduler heuristic. </p>
+
+<p>Construct a general node targeting an action name or actions aggregate, for use with the scheduler heuristic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">generalmask</td><td>the general mask. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">actionaggregate</td><td>the action name or aggregate. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a7145babeb324453aff8ed1cb4d759ea6" name="a7145babeb324453aff8ed1cb4d759ea6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7145babeb324453aff8ed1cb4d759ea6">&#9670;&#160;</a></span>~FMToutputnode()</h2>
+<a id="a1d88d546acc2c4ea4bf043885c044167" name="a1d88d546acc2c4ea4bf043885c044167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d88d546acc2c4ea4bf043885c044167">&#9670;&#160;</a></span>~FMTOutputNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +329,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputnode::~FMToutputnode </td>
+          <td class="memname">Core::FMTOutputNode::~FMTOutputNode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -281,17 +342,19 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default destructor for <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aac0598c137f644686a97ffda8df04d9b" name="aac0598c137f644686a97ffda8df04d9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac0598c137f644686a97ffda8df04d9b">&#9670;&#160;</a></span>allowcashdeduction()</h2>
+<a id="a90abc0122fe736843128708252206764" name="a90abc0122fe736843128708252206764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90abc0122fe736843128708252206764">&#9670;&#160;</a></span>allowCashDeduction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::allowcashdeduction </td>
+          <td class="memname">bool Core::FMTOutputNode::allowCashDeduction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -299,34 +362,45 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the output node allows cache deduction. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output node allows cache deduction else false. </dd></dl>
+
 </div>
 </div>
-<a id="a3be1a1e8e91002487c69e9b7e18244eb" name="a3be1a1e8e91002487c69e9b7e18244eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3be1a1e8e91002487c69e9b7e18244eb">&#9670;&#160;</a></span>fillhashmaskspec()</h2>
+<a id="ac13b94affa3c0f4cd21d8b1bb4ff4906" name="ac13b94affa3c0f4cd21d8b1bb4ff4906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13b94affa3c0f4cd21d8b1bb4ff4906">&#9670;&#160;</a></span>fillHashMaskSpec()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputnode::fillhashmaskspec </td>
+          <td class="memname">void Core::FMTOutputNode::fillHashMaskSpec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;&#160;</td>
-          <td class="paramname"><em>basemask</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>baseMask</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Fill a base mask with the hash mask specification of the output node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">baseMask</td><td>the base mask to fill. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ab17295e61d43dcd7436e74b4ca110bdd" name="ab17295e61d43dcd7436e74b4ca110bdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab17295e61d43dcd7436e74b4ca110bdd">&#9670;&#160;</a></span>fillupequation()</h2>
+<a id="a1f8a0805784cff60e59b235ee47d88e1" name="a1f8a0805784cff60e59b235ee47d88e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8a0805784cff60e59b235ee47d88e1">&#9670;&#160;</a></span>fillUpEquation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMToutputnode::fillupequation </td>
+          <td class="memname">void Core::FMTOutputNode::fillUpEquation </td>
           <td>(</td>
           <td class="paramtype">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>allequations</em>, </td>
@@ -357,16 +431,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Fill up the equation of the output node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">allequations</td><td>the equations. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">graphvalues</td><td>the graph values. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">equation</td><td>the equation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nodeid</td><td>the node id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a5f3f62c300e45671f449f13a1fd67e3b" name="a5f3f62c300e45671f449f13a1fd67e3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f3f62c300e45671f449f13a1fd67e3b">&#9670;&#160;</a></span>gethashmask()</h2>
+<a id="ae1c0e57f03a37981f8cc4c63c86e0bdb" name="ae1c0e57f03a37981f8cc4c63c86e0bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c0e57f03a37981f8cc4c63c86e0bdb">&#9670;&#160;</a></span>getHashMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> Core::FMToutputnode::gethashmask </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> Core::FMTOutputNode::getHashMask </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -374,16 +459,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the hash mask of the output node. </p>
+<dl class="section return"><dt>Returns</dt><dd>the hash mask. </dd></dl>
+
 </div>
 </div>
-<a id="a0c76e1287eec16d53b3a29da576ae5e0" name="a0c76e1287eec16d53b3a29da576ae5e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c76e1287eec16d53b3a29da576ae5e0">&#9670;&#160;</a></span>gethashstring()</h2>
+<a id="a9d46d48d2ede2940aeb204e19f3df3f0" name="a9d46d48d2ede2940aeb204e19f3df3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d46d48d2ede2940aeb204e19f3df3f0">&#9670;&#160;</a></span>getHashString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Core::FMToutputnode::gethashstring </td>
+          <td class="memname">std::string Core::FMTOutputNode::getHashString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -391,10 +479,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the hash string of the output node. </p>
+<dl class="section return"><dt>Returns</dt><dd>the hash string. </dd></dl>
+
 </div>
 </div>
-<a id="ae692f5f55ebf5f03e2ecd7758291ed32" name="ae692f5f55ebf5f03e2ecd7758291ed32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae692f5f55ebf5f03e2ecd7758291ed32">&#9670;&#160;</a></span>getoutputid()</h2>
+<a id="a3b107cbe4fa545aa1b3c8583da577460" name="a3b107cbe4fa545aa1b3c8583da577460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b107cbe4fa545aa1b3c8583da577460">&#9670;&#160;</a></span>getOutputId()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +494,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Core::FMToutputnode::getoutputid </td>
+          <td class="memname">int Core::FMTOutputNode::getOutputId </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -416,16 +507,19 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return the output id of the output node. </p>
+<dl class="section return"><dt>Returns</dt><dd>the output id. </dd></dl>
+
 </div>
 </div>
-<a id="afe03d0c2ca1a9b42c0282c6fbf039771" name="afe03d0c2ca1a9b42c0282c6fbf039771"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe03d0c2ca1a9b42c0282c6fbf039771">&#9670;&#160;</a></span>hash()</h2>
+<a id="aed2cc2344d7f66962710ec944b34cd4d" name="aed2cc2344d7f66962710ec944b34cd4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2cc2344d7f66962710ec944b34cd4d">&#9670;&#160;</a></span>hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMToutputnode::hash </td>
+          <td class="memname">size_t Core::FMTOutputNode::hash </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -433,16 +527,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the hash of the output node. </p>
+<dl class="section return"><dt>Returns</dt><dd>the hash value. </dd></dl>
+
 </div>
 </div>
-<a id="aea1fcc1f7c070fd1d0ff21d6951e5f6c" name="aea1fcc1f7c070fd1d0ff21d6951e5f6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea1fcc1f7c070fd1d0ff21d6951e5f6c">&#9670;&#160;</a></span>hashforvalue()</h2>
+<a id="a45ec91202b7b3ee04495f9bcd6b94acd" name="a45ec91202b7b3ee04495f9bcd6b94acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ec91202b7b3ee04495f9bcd6b94acd">&#9670;&#160;</a></span>hashForValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMToutputnode::hashforvalue </td>
+          <td class="memname">size_t Core::FMTOutputNode::hashForValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -450,10 +547,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the hash of the output node for its value. </p>
+<dl class="section return"><dt>Returns</dt><dd>the hash value. </dd></dl>
+
 </div>
 </div>
-<a id="aba2818fe6bc367a36b3ece526f61ecfe" name="aba2818fe6bc367a36b3ece526f61ecfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba2818fe6bc367a36b3ece526f61ecfe">&#9670;&#160;</a></span>isactionbased()</h2>
+<a id="aa1962ee2a98a6e2e029705539f0d68fc" name="aa1962ee2a98a6e2e029705539f0d68fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1962ee2a98a6e2e029705539f0d68fc">&#9670;&#160;</a></span>isActionBased()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +562,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::isactionbased </td>
+          <td class="memname">bool Core::FMTOutputNode::isActionBased </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -475,16 +575,19 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return true if the output node is action based. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output node is action based else false. </dd></dl>
+
 </div>
 </div>
-<a id="afbc4b50e7bbd5e50514815fff71652c9" name="afbc4b50e7bbd5e50514815fff71652c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbc4b50e7bbd5e50514815fff71652c9">&#9670;&#160;</a></span>isnull()</h2>
+<a id="acbb6de9de3976b86a23793e2d7b0e994" name="acbb6de9de3976b86a23793e2d7b0e994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb6de9de3976b86a23793e2d7b0e994">&#9670;&#160;</a></span>isNull()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::isnull </td>
+          <td class="memname">bool Core::FMTOutputNode::isNull </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -492,16 +595,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the output node is null. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output node is null else false. </dd></dl>
+
 </div>
 </div>
-<a id="a6c0a4b0df47fcb79e7c581a39203bcc4" name="a6c0a4b0df47fcb79e7c581a39203bcc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c0a4b0df47fcb79e7c581a39203bcc4">&#9670;&#160;</a></span>ispastperiod()</h2>
+<a id="a3f2cc146fb3f5e423bd8368389b47b80" name="a3f2cc146fb3f5e423bd8368389b47b80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2cc146fb3f5e423bd8368389b47b80">&#9670;&#160;</a></span>isPastPeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::ispastperiod </td>
+          <td class="memname">bool Core::FMTOutputNode::isPastPeriod </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -509,78 +615,108 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the output node targets a past period. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output node targets a past period else false. </dd></dl>
+
 </div>
 </div>
-<a id="a079411b305df6d93e6d4707fa5946fb8" name="a079411b305df6d93e6d4707fa5946fb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a079411b305df6d93e6d4707fa5946fb8">&#9670;&#160;</a></span>issamebutdifferentaction()</h2>
+<a id="a9703e7ca2d6401959e5874a5d15b469e" name="a9703e7ca2d6401959e5874a5d15b469e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9703e7ca2d6401959e5874a5d15b469e">&#9670;&#160;</a></span>isSameButDifferentAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::issamebutdifferentaction </td>
+          <td class="memname">bool Core::FMTOutputNode::isSameButDifferentAction </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output node is the same as another but with a different action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if same but different action else false. </dd></dl>
+
 </div>
 </div>
-<a id="a4227be9554bee573a5672082ed9ee44f" name="a4227be9554bee573a5672082ed9ee44f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4227be9554bee573a5672082ed9ee44f">&#9670;&#160;</a></span>issamevalues()</h2>
+<a id="aff9a5400b04ae31ccd34d59a30ca934c" name="aff9a5400b04ae31ccd34d59a30ca934c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff9a5400b04ae31ccd34d59a30ca934c">&#9670;&#160;</a></span>isSameValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::issamevalues </td>
+          <td class="memname">bool Core::FMTOutputNode::isSameValues </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output node has the same values as another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if same values else false. </dd></dl>
+
 </div>
 </div>
-<a id="a1a162b8f9b7cb38635e3f1553d20b103" name="a1a162b8f9b7cb38635e3f1553d20b103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a162b8f9b7cb38635e3f1553d20b103">&#9670;&#160;</a></span>issubsetof() <span class="overload">[1/2]</span></h2>
+<a id="a6ef9d8c5be1ee24e08a10d9e434eda8c" name="a6ef9d8c5be1ee24e08a10d9e434eda8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef9d8c5be1ee24e08a10d9e434eda8c">&#9670;&#160;</a></span>isSubsetOf() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::issubsetof </td>
+          <td class="memname">bool Core::FMTOutputNode::isSubsetOf </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output node is a subset of another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this output node is a subset of rhs else false. </dd></dl>
+
 </div>
 </div>
-<a id="a41ee49416ad65f53081d92df553159b0" name="a41ee49416ad65f53081d92df553159b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41ee49416ad65f53081d92df553159b0">&#9670;&#160;</a></span>issubsetof() <span class="overload">[2/2]</span></h2>
+<a id="ab406c9023324722fb8b036c2e44ff0e8" name="ab406c9023324722fb8b036c2e44ff0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab406c9023324722fb8b036c2e44ff0e8">&#9670;&#160;</a></span>isSubsetOf() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::issubsetof </td>
+          <td class="memname">bool Core::FMTOutputNode::isSubsetOf </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em>&#160;</td>
         </tr>
         <tr>
@@ -591,16 +727,26 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if this output node is a subset of another considering the actions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other output node. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this output node is a subset of rhs else false. </dd></dl>
+
 </div>
 </div>
-<a id="aa0e83d865427ab21d29228792a6f5e0c" name="aa0e83d865427ab21d29228792a6f5e0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0e83d865427ab21d29228792a6f5e0c">&#9670;&#160;</a></span>multiperiod()</h2>
+<a id="adf55fe385d0e452f5040ab1d086afe39" name="adf55fe385d0e452f5040ab1d086afe39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf55fe385d0e452f5040ab1d086afe39">&#9670;&#160;</a></span>multiPeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::multiperiod </td>
+          <td class="memname">bool Core::FMTOutputNode::multiPeriod </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -608,16 +754,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the output node covers multiple periods. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output node covers multiple periods else false. </dd></dl>
+
 </div>
 </div>
-<a id="a38c4cdb54d7caf543558fde6743f1578" name="a38c4cdb54d7caf543558fde6743f1578"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38c4cdb54d7caf543558fde6743f1578">&#9670;&#160;</a></span>operator std::string()</h2>
+<a id="ac9ce34ef73b7b24b71d57bda036957d5" name="ac9ce34ef73b7b24b71d57bda036957d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ce34ef73b7b24b71d57bda036957d5">&#9670;&#160;</a></span>operator std::string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputnode::operator std::string </td>
+          <td class="memname">Core::FMTOutputNode::operator std::string </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -625,70 +774,100 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the string representation of the output node. </p>
+<dl class="section return"><dt>Returns</dt><dd>the string representation of the output node. </dd></dl>
+
 </div>
 </div>
-<a id="a8d6617dc5d7c32a4f689e5d7fb46d45f" name="a8d6617dc5d7c32a4f689e5d7fb46d45f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d6617dc5d7c32a4f689e5d7fb46d45f">&#9670;&#160;</a></span>operator&lt;()</h2>
+<a id="a8c3fda7ae5caf5474b0f41830c1ce251" name="a8c3fda7ae5caf5474b0f41830c1ce251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3fda7ae5caf5474b0f41830c1ce251">&#9670;&#160;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::operator&lt; </td>
+          <td class="memname">bool Core::FMTOutputNode::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Less than comparison operator of <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the output node to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this output node is less than rhs else false. </dd></dl>
+
 </div>
 </div>
-<a id="a1400f57b156dcfc9ed3381947d07be4b" name="a1400f57b156dcfc9ed3381947d07be4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1400f57b156dcfc9ed3381947d07be4b">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a85e27af30912ef0f9ef37afd41c89d3b" name="a85e27af30912ef0f9ef37afd41c89d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85e27af30912ef0f9ef37afd41c89d3b">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp; Core::FMToutputnode::operator= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp; Core::FMTOutputNode::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>. </dd></dl>
+
 </div>
 </div>
-<a id="a4aa76577c210dc3cf9eb70a2db51e3c2" name="a4aa76577c210dc3cf9eb70a2db51e3c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aa76577c210dc3cf9eb70a2db51e3c2">&#9670;&#160;</a></span>operator==()</h2>
+<a id="a28445f51bf100207f2f40ce2e4e0727b" name="a28445f51bf100207f2f40ce2e4e0727b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28445f51bf100207f2f40ce2e4e0727b">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::operator== </td>
+          <td class="memname">bool Core::FMTOutputNode::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Equality comparison operator of <a class="el" href="classCore_1_1FMTOutputNode.html" title="Node of an output representing a set of developments in the graph, holding a source,...">FMTOutputNode</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the output node to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both output nodes are equal else false. </dd></dl>
+
 </div>
 </div>
-<a id="a4c7071f7bb5806c566ca5be9fc7314b5" name="a4c7071f7bb5806c566ca5be9fc7314b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c7071f7bb5806c566ca5be9fc7314b5">&#9670;&#160;</a></span>setperiod()</h2>
+<a id="a8b017b03b3a4b43d0dc622cdfed7e7f6" name="a8b017b03b3a4b43d0dc622cdfed7e7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b017b03b3a4b43d0dc622cdfed7e7f6">&#9670;&#160;</a></span>setPeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> Core::FMToutputnode::setperiod </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> Core::FMTOutputNode::setPeriod </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>period</em></td><td>)</td>
@@ -697,16 +876,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a copy of the output node set to a given period. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>the period. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the output node set to the period. </dd></dl>
+
 </div>
 </div>
-<a id="a8a68a99e0cb321dac67600d2f8547906" name="a8a68a99e0cb321dac67600d2f8547906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a68a99e0cb321dac67600d2f8547906">&#9670;&#160;</a></span>settograph()</h2>
+<a id="aa3cf26155c849cd309d5123787a2ee4a" name="aa3cf26155c849cd309d5123787a2ee4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3cf26155c849cd309d5123787a2ee4a">&#9670;&#160;</a></span>setToGraph()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Core::FMToutputnode::settograph </td>
+          <td class="memname">int Core::FMTOutputNode::setToGraph </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
           <td class="paramname"><em>targetedperiods</em>, </td>
@@ -731,16 +919,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the output node to the graph for the targeted periods. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">targetedperiods</td><td>the targeted periods. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>the period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_period</td><td>the maximum period. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting value. </dd></dl>
+
 </div>
 </div>
-<a id="ad7e49caadb47b846627a311a96f744a4" name="ad7e49caadb47b846627a311a96f744a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7e49caadb47b846627a311a96f744a4">&#9670;&#160;</a></span>singleperiod()</h2>
+<a id="a9802194f8d6cd35728749ab8c72c0e3c" name="a9802194f8d6cd35728749ab8c72c0e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9802194f8d6cd35728749ab8c72c0e3c">&#9670;&#160;</a></span>singlePeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputnode::singleperiod </td>
+          <td class="memname">bool Core::FMTOutputNode::singlePeriod </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -748,45 +947,48 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return true if the output node covers a single period. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the output node covers a single period else false. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a21e6e1277a4a1bf9c0018d7c907105bd" name="a21e6e1277a4a1bf9c0018d7c907105bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e6e1277a4a1bf9c0018d7c907105bd">&#9670;&#160;</a></span>constant</h2>
+<a id="aaff77050ceeccead7743834d25bf1502" name="aaff77050ceeccead7743834d25bf1502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff77050ceeccead7743834d25bf1502">&#9670;&#160;</a></span>constant</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Core::FMToutputnode::constant</td>
+          <td class="memname">double Core::FMTOutputNode::constant</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9dc93c8531f19cbfe6483ee98d8c09e4" name="a9dc93c8531f19cbfe6483ee98d8c09e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dc93c8531f19cbfe6483ee98d8c09e4">&#9670;&#160;</a></span>factor</h2>
+<a id="a8835a09439dc00d701aca5b850679c52" name="a8835a09439dc00d701aca5b850679c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8835a09439dc00d701aca5b850679c52">&#9670;&#160;</a></span>factor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> Core::FMToutputnode::factor</td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> Core::FMTOutputNode::factor</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aac608cd9090252316cbb7d3d1a895bae" name="aac608cd9090252316cbb7d3d1a895bae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac608cd9090252316cbb7d3d1a895bae">&#9670;&#160;</a></span>source</h2>
+<a id="aaad0bdfb9e23751297d65354433da749" name="aaad0bdfb9e23751297d65354433da749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad0bdfb9e23751297d65354433da749">&#9670;&#160;</a></span>source</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> Core::FMToutputnode::source</td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> Core::FMTOutputNode::source</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -794,7 +996,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMToutputnode_8hpp_source.html">FMToutputnode.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTOutputNode_8h_source.html">FMTOutputNode.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

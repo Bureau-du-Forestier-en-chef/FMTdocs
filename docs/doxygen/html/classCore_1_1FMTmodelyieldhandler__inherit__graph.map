@@ -1,5 +1,5 @@
-<map id="Core::FMTmodelyieldhandler" name="Core::FMTmodelyieldhandler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,192,181"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTyieldhandler.html" title=" " alt="" coords="23,80,174,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="40,5,157,32"/>
+<map id="Core::FMTModelYieldHandler" name="Core::FMTModelYieldHandler">
+<area shape="rect" id="node1" title="Yield handler wrapping machine learning yield models." alt="" coords="5,155,196,181"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTYieldHandler.html" title="Base class for yield handlers, holding a mask and the base ages of the yields." alt="" coords="23,80,178,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="40,5,161,32"/>
 </map>

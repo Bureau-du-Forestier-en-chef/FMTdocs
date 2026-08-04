@@ -1,4 +1,4 @@
-<map id="Core::FMTconstants" name="Core::FMTconstants">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,145,107"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="16,5,134,32"/>
+<map id="Core::FMTConstants" name="Core::FMTConstants">
+<area shape="rect" id="node1" title="Class holding the constants defined in the constants section of a model, used by the parsers." alt="" coords="5,80,147,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="16,5,136,32"/>
 </map>

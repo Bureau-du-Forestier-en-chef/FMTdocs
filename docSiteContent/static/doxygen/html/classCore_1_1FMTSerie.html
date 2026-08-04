@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -82,40 +82,86 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The class keep information of a serie of actions in a given order.  
+<p>Class keeping the information of a serie of actions in a given order.  
  <a href="classCore_1_1FMTSerie.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="FMTSerie_8hpp_source.html">FMTSerie.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="FMTSerie_8h_source.html">FMTSerie.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac77548b34413e7e61d0415557a8de292"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#ac77548b34413e7e61d0415557a8de292">FMTSerie</a> ()</td></tr>
+<tr class="memdesc:ac77548b34413e7e61d0415557a8de292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>.  <br /></td></tr>
+<tr class="separator:ac77548b34413e7e61d0415557a8de292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1728cea09cbd04dc11c3ec776b53f12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#ac1728cea09cbd04dc11c3ec776b53f12">FMTSerie</a> (const std::string &amp;p_serie, int p_length)</td></tr>
-<tr class="memdesc:ac1728cea09cbd04dc11c3ec776b53f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="classCore_1_1FMTSerie.html" title="The class keep information of a serie of actions in a given order.">FMTSerie</a> using the string description and the length of the serie.  <br /></td></tr>
+<tr class="memdesc:ac1728cea09cbd04dc11c3ec776b53f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serie from a string description.  <br /></td></tr>
 <tr class="separator:ac1728cea09cbd04dc11c3ec776b53f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f4a2bdcbd434f5d17a184c2acfd120"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#a85f4a2bdcbd434f5d17a184c2acfd120">FMTSerie</a> (const std::vector&lt; std::string &gt; &amp;p_serie, int p_length)</td></tr>
+<tr class="memdesc:a85f4a2bdcbd434f5d17a184c2acfd120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serie from a vector of strings.  <br /></td></tr>
+<tr class="separator:a85f4a2bdcbd434f5d17a184c2acfd120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7e0354d234be1177956c22ab95d5c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#aef7e0354d234be1177956c22ab95d5c7">FMTSerie</a> (const std::vector&lt; std::string &gt; &amp;p_serie, bool p_asap, bool p_alap)</td></tr>
+<tr class="memdesc:aef7e0354d234be1177956c22ab95d5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serie from a vector of strings with ASAP and ALAP flags.  <br /></td></tr>
+<tr class="separator:aef7e0354d234be1177956c22ab95d5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcdc80e81d5e09c8ea33c244f2a2e17b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#adcdc80e81d5e09c8ea33c244f2a2e17b">getLength</a> () const</td></tr>
 <tr class="memdesc:adcdc80e81d5e09c8ea33c244f2a2e17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the length of the serie.  <br /></td></tr>
 <tr class="separator:adcdc80e81d5e09c8ea33c244f2a2e17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2761075d86fc1ab8b1e414d4e7c86c63"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#a2761075d86fc1ab8b1e414d4e7c86c63">getSerie</a> () const</td></tr>
-<tr class="memdesc:a2761075d86fc1ab8b1e414d4e7c86c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the string of the serie.  <br /></td></tr>
-<tr class="separator:a2761075d86fc1ab8b1e414d4e7c86c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399dec428dac63621f02016d3ba60f12"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#a399dec428dac63621f02016d3ba60f12">getActions</a> () const</td></tr>
+<tr class="memdesc:a399dec428dac63621f02016d3ba60f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the actions of the serie.  <br /></td></tr>
+<tr class="separator:a399dec428dac63621f02016d3ba60f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6c35535b10b8e4ab20936180c5ab22"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#a9d6c35535b10b8e4ab20936180c5ab22">getSerie</a> () const</td></tr>
+<tr class="memdesc:a9d6c35535b10b8e4ab20936180c5ab22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the string of the serie.  <br /></td></tr>
+<tr class="separator:a9d6c35535b10b8e4ab20936180c5ab22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d77b6d3b330c31cf6ac4055f1ad4eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#ad7d77b6d3b330c31cf6ac4055f1ad4eb">operator std::string</a> () const</td></tr>
+<tr class="memdesc:ad7d77b6d3b330c31cf6ac4055f1ad4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">return in string format  <br /></td></tr>
+<tr class="separator:ad7d77b6d3b330c31cf6ac4055f1ad4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f40bca391fc469b8769a6a43e63b007"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#a3f40bca391fc469b8769a6a43e63b007">operator==</a> (const <a class="el" href="classCore_1_1FMTSerie.html">FMTSerie</a> &amp;p_RHS) const</td></tr>
-<tr class="memdesc:a3f40bca391fc469b8769a6a43e63b007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two series are equal.  <br /></td></tr>
+<tr class="memdesc:a3f40bca391fc469b8769a6a43e63b007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator of <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>.  <br /></td></tr>
 <tr class="separator:a3f40bca391fc469b8769a6a43e63b007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25f93aa7c6bfc5227a5f7d0993f08a51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#a25f93aa7c6bfc5227a5f7d0993f08a51">operator!=</a> (const <a class="el" href="classCore_1_1FMTSerie.html">FMTSerie</a> &amp;p_RHS) const</td></tr>
-<tr class="memdesc:a25f93aa7c6bfc5227a5f7d0993f08a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two series are not equal.  <br /></td></tr>
+<tr class="memdesc:a25f93aa7c6bfc5227a5f7d0993f08a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality comparison operator of <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>.  <br /></td></tr>
 <tr class="separator:a25f93aa7c6bfc5227a5f7d0993f08a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8242fc91515bca01ff7c017aa050b426"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#a8242fc91515bca01ff7c017aa050b426">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTSerie.html">FMTSerie</a> &amp;p_RHS) const</td></tr>
-<tr class="memdesc:a8242fc91515bca01ff7c017aa050b426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this serie is less then the p_RHS serie.  <br /></td></tr>
+<tr class="memdesc:a8242fc91515bca01ff7c017aa050b426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than comparison operator of <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>.  <br /></td></tr>
 <tr class="separator:a8242fc91515bca01ff7c017aa050b426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3699fa0e9db251590da39ecaa084abd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#ad3699fa0e9db251590da39ecaa084abd">operator&gt;</a> (const <a class="el" href="classCore_1_1FMTSerie.html">FMTSerie</a> &amp;p_RHS) const</td></tr>
-<tr class="memdesc:ad3699fa0e9db251590da39ecaa084abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this serie is greater then the p_RHS serie.  <br /></td></tr>
+<tr class="memdesc:ad3699fa0e9db251590da39ecaa084abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greater than comparison operator of <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>.  <br /></td></tr>
 <tr class="separator:ad3699fa0e9db251590da39ecaa084abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed01804e06d3f4f275847aad6e653c11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#aed01804e06d3f4f275847aad6e653c11">isASAP</a> () const</td></tr>
+<tr class="memdesc:aed01804e06d3f4f275847aad6e653c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the serie is as soon as possible.  <br /></td></tr>
+<tr class="separator:aed01804e06d3f4f275847aad6e653c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4dfc5f6295d7ce931155574965c36f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#aa4dfc5f6295d7ce931155574965c36f4">isALAP</a> () const</td></tr>
+<tr class="memdesc:aa4dfc5f6295d7ce931155574965c36f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the serie is as late as possible.  <br /></td></tr>
+<tr class="separator:aa4dfc5f6295d7ce931155574965c36f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cc14fd678f3934b4b3ae69192c13a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#a38cc14fd678f3934b4b3ae69192c13a5">isAllowedInSerie</a> (const std::vector&lt; std::string &gt; &amp;p_SerieMask) const</td></tr>
+<tr class="memdesc:a38cc14fd678f3934b4b3ae69192c13a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the given actions are allowed in the serie.  <br /></td></tr>
+<tr class="separator:a38cc14fd678f3934b4b3ae69192c13a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf2dd736b077d9e0e1558392fd362b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSerie.html#afbf2dd736b077d9e0e1558392fd362b1">isEmpty</a> () const</td></tr>
+<tr class="memdesc:afbf2dd736b077d9e0e1558392fd362b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the serie is empty.  <br /></td></tr>
+<tr class="separator:afbf2dd736b077d9e0e1558392fd362b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The class keep information of a serie of actions in a given order. </p>
+<div class="textblock"><p>Class keeping the information of a serie of actions in a given order. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac77548b34413e7e61d0415557a8de292" name="ac77548b34413e7e61d0415557a8de292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77548b34413e7e61d0415557a8de292">&#9670;&#160;</a></span>FMTSerie() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::FMTSerie::FMTSerie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor for <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>. </p>
+
+</div>
+</div>
 <a id="ac1728cea09cbd04dc11c3ec776b53f12" name="ac1728cea09cbd04dc11c3ec776b53f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1728cea09cbd04dc11c3ec776b53f12">&#9670;&#160;</a></span>FMTSerie()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1728cea09cbd04dc11c3ec776b53f12">&#9670;&#160;</a></span>FMTSerie() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,11 +186,92 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a <a class="el" href="classCore_1_1FMTSerie.html" title="The class keep information of a serie of actions in a given order.">FMTSerie</a> using the string description and the length of the serie. </p>
+<p>Initialize a serie from a string description. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_serie</td><td>the string of the serie </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_length</td><td>the length of the serie in period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_serie</td><td>the serie string. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_length</td><td>the length of the serie in periods. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a85f4a2bdcbd434f5d17a184c2acfd120" name="a85f4a2bdcbd434f5d17a184c2acfd120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f4a2bdcbd434f5d17a184c2acfd120">&#9670;&#160;</a></span>FMTSerie() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::FMTSerie::FMTSerie </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_serie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a serie from a vector of strings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_serie</td><td>the serie strings. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_length</td><td>the length of the serie in periods. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef7e0354d234be1177956c22ab95d5c7" name="aef7e0354d234be1177956c22ab95d5c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7e0354d234be1177956c22ab95d5c7">&#9670;&#160;</a></span>FMTSerie() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::FMTSerie::FMTSerie </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_serie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_asap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_alap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a serie from a vector of strings with ASAP and ALAP flags. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_serie</td><td>the serie strings. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_asap</td><td>if true the serie is as soon as possible. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_alap</td><td>if true the serie is as late as possible. </td></tr>
   </table>
   </dd>
 </dl>
@@ -152,6 +279,26 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a399dec428dac63621f02016d3ba60f12" name="a399dec428dac63621f02016d3ba60f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399dec428dac63621f02016d3ba60f12">&#9670;&#160;</a></span>getActions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::string &gt; &amp; Core::FMTSerie::getActions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the actions of the serie. </p>
+<dl class="section return"><dt>Returns</dt><dd>the actions of the serie. </dd></dl>
+
+</div>
+</div>
 <a id="adcdc80e81d5e09c8ea33c244f2a2e17b" name="adcdc80e81d5e09c8ea33c244f2a2e17b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcdc80e81d5e09c8ea33c244f2a2e17b">&#9670;&#160;</a></span>getLength()</h2>
 
@@ -168,18 +315,18 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the length of the serie. </p>
-<dl class="section return"><dt>Returns</dt><dd>Return the length of the serie. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the serie. </dd></dl>
 
 </div>
 </div>
-<a id="a2761075d86fc1ab8b1e414d4e7c86c63" name="a2761075d86fc1ab8b1e414d4e7c86c63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2761075d86fc1ab8b1e414d4e7c86c63">&#9670;&#160;</a></span>getSerie()</h2>
+<a id="a9d6c35535b10b8e4ab20936180c5ab22" name="a9d6c35535b10b8e4ab20936180c5ab22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6c35535b10b8e4ab20936180c5ab22">&#9670;&#160;</a></span>getSerie()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Core::FMTSerie::getSerie </td>
+          <td class="memname">const std::string Core::FMTSerie::getSerie </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -188,7 +335,114 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the string of the serie. </p>
-<dl class="section return"><dt>Returns</dt><dd>Return the string of the serie. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the string of the serie. </dd></dl>
+
+</div>
+</div>
+<a id="aa4dfc5f6295d7ce931155574965c36f4" name="aa4dfc5f6295d7ce931155574965c36f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4dfc5f6295d7ce931155574965c36f4">&#9670;&#160;</a></span>isALAP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Core::FMTSerie::isALAP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the serie is as late as possible. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the serie is as late as possible else false. </dd></dl>
+
+</div>
+</div>
+<a id="a38cc14fd678f3934b4b3ae69192c13a5" name="a38cc14fd678f3934b4b3ae69192c13a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cc14fd678f3934b4b3ae69192c13a5">&#9670;&#160;</a></span>isAllowedInSerie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Core::FMTSerie::isAllowedInSerie </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_SerieMask</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the given actions are allowed in the serie. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_SerieMask</td><td>the serie mask. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the actions are allowed in the serie else false. </dd></dl>
+
+</div>
+</div>
+<a id="aed01804e06d3f4f275847aad6e653c11" name="aed01804e06d3f4f275847aad6e653c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed01804e06d3f4f275847aad6e653c11">&#9670;&#160;</a></span>isASAP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Core::FMTSerie::isASAP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the serie is as soon as possible. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the serie is as soon as possible else false. </dd></dl>
+
+</div>
+</div>
+<a id="afbf2dd736b077d9e0e1558392fd362b1" name="afbf2dd736b077d9e0e1558392fd362b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf2dd736b077d9e0e1558392fd362b1">&#9670;&#160;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Core::FMTSerie::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the serie is empty. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the serie is empty else false. </dd></dl>
+
+</div>
+</div>
+<a id="ad7d77b6d3b330c31cf6ac4055f1ad4eb" name="ad7d77b6d3b330c31cf6ac4055f1ad4eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d77b6d3b330c31cf6ac4055f1ad4eb">&#9670;&#160;</a></span>operator std::string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::FMTSerie::operator std::string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return in string format </p>
+<dl class="section return"><dt>Returns</dt><dd>string formated with _ASAP _ALAP </dd></dl>
 
 </div>
 </div>
@@ -208,8 +462,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if two series are not equal. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if 2 series are nor equal. </dd></dl>
+<p>Inequality comparison operator of <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_RHS</td><td>the serie to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both series are different else false. </dd></dl>
 
 </div>
 </div>
@@ -229,8 +489,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if this serie is less then the p_RHS serie. </p>
-<dl class="section return"><dt>Returns</dt><dd>true this serie is less then the p_RHS serie. </dd></dl>
+<p>Less than comparison operator of <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_RHS</td><td>the serie to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this serie is less than p_RHS else false. </dd></dl>
 
 </div>
 </div>
@@ -250,8 +516,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if two series are equal. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if 2 series are equal. </dd></dl>
+<p>Equality comparison operator of <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_RHS</td><td>the serie to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both series are equal else false. </dd></dl>
 
 </div>
 </div>
@@ -271,13 +543,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if this serie is greater then the p_RHS serie. </p>
-<dl class="section return"><dt>Returns</dt><dd>true this serie is less then the p_RHS serie. </dd></dl>
+<p>Greater than comparison operator of <a class="el" href="classCore_1_1FMTSerie.html" title="Class keeping the information of a serie of actions in a given order.">FMTSerie</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_RHS</td><td>the serie to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this serie is greater than p_RHS else false. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTSerie_8hpp_source.html">FMTSerie.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTSerie_8h_source.html">FMTSerie.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

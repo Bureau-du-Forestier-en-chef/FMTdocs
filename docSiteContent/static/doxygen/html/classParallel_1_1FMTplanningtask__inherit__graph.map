@@ -1,5 +1,5 @@
-<map id="Parallel::FMTplanningtask" name="Parallel::FMTplanningtask">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,177,181"/>
-<area shape="rect" id="node2" href="$classParallel_1_1FMTtask.html" title=" " alt="" coords="29,80,153,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="32,5,150,32"/>
+<map id="Parallel::FMTPlanningTask" name="Parallel::FMTPlanningTask">
+<area shape="rect" id="node1" title="Task to carry multiple parallel optimizations of different FMTModel using the doPlanning function." alt="" coords="5,155,182,181"/>
+<area shape="rect" id="node2" href="$classParallel_1_1FMTTask.html" title="Task for parallel jobs." alt="" coords="30,80,157,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="33,5,154,32"/>
 </map>

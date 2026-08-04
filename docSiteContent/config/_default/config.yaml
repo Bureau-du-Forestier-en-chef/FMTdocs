@@ -74,6 +74,11 @@ related:
     - name: categories
       weight: 70
 security:
+  exec:
+    allow:
+      - '^go$'
+      - '^npx$'
+      - '^postcss$'
   funcs:
     getenv:
       - ^HUGO_

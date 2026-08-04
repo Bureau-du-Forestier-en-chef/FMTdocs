@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Spatial::FMTsaschedule Class Reference</title>
+<title>FMT: Spatial::FMTSaSchedule Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,75 +71,93 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceSpatial.html">Spatial</a></li><li class="navelem"><a class="el" href="classSpatial_1_1FMTsaschedule.html">FMTsaschedule</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceSpatial.html">Spatial</a></li><li class="navelem"><a class="el" href="classSpatial_1_1FMTSaSchedule.html">FMTSaSchedule</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="classSpatial_1_1FMTsaschedule-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Spatial::FMTsaschedule Class Reference</div></div>
+<a href="classSpatial_1_1FMTSaSchedule-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Spatial::FMTSaSchedule Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTsaschedule_8hpp_source.html">FMTsaschedule.hpp</a>&gt;</code></p>
+<p>Abstract class for a simulated annealing cooling schedule.  
+ <a href="classSpatial_1_1FMTSaSchedule.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTSaSchedule_8h_source.html">FMTSaSchedule.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Spatial::FMTsaschedule:</div>
+Inheritance diagram for Spatial::FMTSaSchedule:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSpatial_1_1FMTsaschedule__inherit__graph.svg" width="224" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSpatial_1_1FMTSaSchedule__inherit__graph.svg" width="228" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Spatial::FMTsaschedule:</div>
+Collaboration diagram for Spatial::FMTSaSchedule:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSpatial_1_1FMTsaschedule__coll__graph.svg" width="178" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSpatial_1_1FMTSaSchedule__coll__graph.svg" width="198" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa178cb65cfecb37516bd80ada67fe0d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#aa178cb65cfecb37516bd80ada67fe0d9">FMTsaschedule</a> (const std::string &amp;typesc)</td></tr>
-<tr class="separator:aa178cb65cfecb37516bd80ada67fe0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c492ec023c1067b07baa233b683541d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a2c492ec023c1067b07baa233b683541d">FMTsaschedule</a> ()</td></tr>
-<tr class="separator:a2c492ec023c1067b07baa233b683541d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37e0eb0245ad8d5469441e3f521cbbfb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a37e0eb0245ad8d5469441e3f521cbbfb">GetScheduleType</a> () const</td></tr>
-<tr class="separator:a37e0eb0245ad8d5469441e3f521cbbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b18c49ecde6bd3e4499cbee702aec8d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a0b18c49ecde6bd3e4499cbee702aec8d">GetLevel</a> () const</td></tr>
-<tr class="separator:a0b18c49ecde6bd3e4499cbee702aec8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aeda9d82fbd7c195f40d64c5541a6b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a9aeda9d82fbd7c195f40d64c5541a6b4">SetInitialTemperature</a> (const double &amp;Temp)</td></tr>
-<tr class="separator:a9aeda9d82fbd7c195f40d64c5541a6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53dfacc7a5b6ede872ae8ab90620e24b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a53dfacc7a5b6ede872ae8ab90620e24b">~FMTsaschedule</a> ()</td></tr>
-<tr class="separator:a53dfacc7a5b6ede872ae8ab90620e24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcdbc95cf0a8be0d7b4c334c14fbb68f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#afcdbc95cf0a8be0d7b4c334c14fbb68f">ReduceTemp</a> ()</td></tr>
-<tr class="separator:afcdbc95cf0a8be0d7b4c334c14fbb68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fae99e27050282231e4537f7ede508a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a6fae99e27050282231e4537f7ede508a">GetTemp</a> () const</td></tr>
-<tr class="separator:a6fae99e27050282231e4537f7ede508a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf1e44bfb7c4b88601f038a708f9863"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a8cf1e44bfb7c4b88601f038a708f9863">GetInitialTemp</a> () const</td></tr>
-<tr class="separator:a8cf1e44bfb7c4b88601f038a708f9863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9255063d8c2972e6c5442bf624a7bc7"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classSpatial_1_1FMTsaschedule.html">FMTsaschedule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#ae9255063d8c2972e6c5442bf624a7bc7">Clone</a> () const</td></tr>
-<tr class="separator:ae9255063d8c2972e6c5442bf624a7bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63eb3ae3ba5e5e5fba469b403025c923"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#a63eb3ae3ba5e5e5fba469b403025c923">FMTSaSchedule</a> (const std::string &amp;typesc)</td></tr>
+<tr class="memdesc:a63eb3ae3ba5e5e5fba469b403025c923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule.">FMTSaSchedule</a> from a schedule type.  <br /></td></tr>
+<tr class="separator:a63eb3ae3ba5e5e5fba469b403025c923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7884a99b3f1abeaacb876edf19f55535"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#a7884a99b3f1abeaacb876edf19f55535">FMTSaSchedule</a> ()=default</td></tr>
+<tr class="memdesc:a7884a99b3f1abeaacb876edf19f55535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule.">FMTSaSchedule</a>.  <br /></td></tr>
+<tr class="separator:a7884a99b3f1abeaacb876edf19f55535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35d3e08a0db7ebc9d075acf4e7029ad"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#af35d3e08a0db7ebc9d075acf4e7029ad">getScheduleType</a> () const</td></tr>
+<tr class="memdesc:af35d3e08a0db7ebc9d075acf4e7029ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the schedule type.  <br /></td></tr>
+<tr class="separator:af35d3e08a0db7ebc9d075acf4e7029ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2f4911f971f713a64e7674cdecda75"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#abc2f4911f971f713a64e7674cdecda75">getLevel</a> () const</td></tr>
+<tr class="memdesc:abc2f4911f971f713a64e7674cdecda75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the level of the schedule.  <br /></td></tr>
+<tr class="separator:abc2f4911f971f713a64e7674cdecda75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1425bcfe521d2af3fc88f71e5c73d4cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#a1425bcfe521d2af3fc88f71e5c73d4cc">setInitialTemperature</a> (const double &amp;Temp)</td></tr>
+<tr class="memdesc:a1425bcfe521d2af3fc88f71e5c73d4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial temperature.  <br /></td></tr>
+<tr class="separator:a1425bcfe521d2af3fc88f71e5c73d4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca42d6c62c83421ac399fa9ec75301de"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#aca42d6c62c83421ac399fa9ec75301de">~FMTSaSchedule</a> ()</td></tr>
+<tr class="memdesc:aca42d6c62c83421ac399fa9ec75301de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule.">FMTSaSchedule</a>.  <br /></td></tr>
+<tr class="separator:aca42d6c62c83421ac399fa9ec75301de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b415e5a6a731f2db2428e9370d99c00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#a2b415e5a6a731f2db2428e9370d99c00">reduceTemp</a> ()</td></tr>
+<tr class="memdesc:a2b415e5a6a731f2db2428e9370d99c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce the temperature according to the cooling schedule.  <br /></td></tr>
+<tr class="separator:a2b415e5a6a731f2db2428e9370d99c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa351ff1eeb508348b7b4f06ec07bb5e8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#aa351ff1eeb508348b7b4f06ec07bb5e8">getTemp</a> () const</td></tr>
+<tr class="memdesc:aa351ff1eeb508348b7b4f06ec07bb5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current temperature.  <br /></td></tr>
+<tr class="separator:aa351ff1eeb508348b7b4f06ec07bb5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aea2764d4d0b6684b6cc72083a438a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#a0aea2764d4d0b6684b6cc72083a438a7">setTemp</a> (double p_Temp)</td></tr>
+<tr class="memdesc:a0aea2764d4d0b6684b6cc72083a438a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current temperature.  <br /></td></tr>
+<tr class="separator:a0aea2764d4d0b6684b6cc72083a438a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55afabf3f34db2556b9e4ea6f822b3fa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#a55afabf3f34db2556b9e4ea6f822b3fa">getInitialTemp</a> () const</td></tr>
+<tr class="memdesc:a55afabf3f34db2556b9e4ea6f822b3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the initial temperature.  <br /></td></tr>
+<tr class="separator:a55afabf3f34db2556b9e4ea6f822b3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7abdcf9b673511e72a7fb2a8295fd2bf"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classSpatial_1_1FMTSaSchedule.html">FMTSaSchedule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#a7abdcf9b673511e72a7fb2a8295fd2bf">clone</a> () const</td></tr>
+<tr class="memdesc:a7abdcf9b673511e72a7fb2a8295fd2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a clone of the <a class="el" href="classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule.">FMTSaSchedule</a>.  <br /></td></tr>
+<tr class="separator:a7abdcf9b673511e72a7fb2a8295fd2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a0196b970d88e1d1ef00af0e275bd6b5f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a0196b970d88e1d1ef00af0e275bd6b5f">ScheduleType</a></td></tr>
-<tr class="separator:a0196b970d88e1d1ef00af0e275bd6b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0930fb56694becfabeea5290272ac9f5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a0930fb56694becfabeea5290272ac9f5">Level</a></td></tr>
-<tr class="separator:a0930fb56694becfabeea5290272ac9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d6b2441ce6dc96a96d7ae268896665"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a28d6b2441ce6dc96a96d7ae268896665">Temperature</a></td></tr>
-<tr class="separator:a28d6b2441ce6dc96a96d7ae268896665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149244b5381c95a0d8a8cf14b9fb0b40"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTsaschedule.html#a149244b5381c95a0d8a8cf14b9fb0b40">InitialTemperature</a></td></tr>
-<tr class="separator:a149244b5381c95a0d8a8cf14b9fb0b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e4f57d7ceaab505e0f2efda0acf8bb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#ae9e4f57d7ceaab505e0f2efda0acf8bb">m_ScheduleType</a></td></tr>
+<tr class="separator:ae9e4f57d7ceaab505e0f2efda0acf8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77422dca57a6abbd3f725b80b6e58f9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#af77422dca57a6abbd3f725b80b6e58f9">m_Level</a></td></tr>
+<tr class="separator:af77422dca57a6abbd3f725b80b6e58f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92245937d6802719bfd069a9b1199dd8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#a92245937d6802719bfd069a9b1199dd8">m_Temperature</a></td></tr>
+<tr class="separator:a92245937d6802719bfd069a9b1199dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35e2a9a629c52b0e6a27c287d48d441"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTSaSchedule.html#ac35e2a9a629c52b0e6a27c287d48d441">m_InitialTemperature</a></td></tr>
+<tr class="separator:ac35e2a9a629c52b0e6a27c287d48d441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa178cb65cfecb37516bd80ada67fe0d9" name="aa178cb65cfecb37516bd80ada67fe0d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa178cb65cfecb37516bd80ada67fe0d9">&#9670;&#160;</a></span>FMTsaschedule() <span class="overload">[1/2]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract class for a simulated annealing cooling schedule. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a63eb3ae3ba5e5e5fba469b403025c923" name="a63eb3ae3ba5e5e5fba469b403025c923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63eb3ae3ba5e5e5fba469b403025c923">&#9670;&#160;</a></span>FMTSaSchedule() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Spatial::FMTsaschedule::FMTsaschedule </td>
+          <td class="memname">Spatial::FMTSaSchedule::FMTSaSchedule </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>typesc</em></td><td>)</td>
@@ -148,16 +166,51 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule.">FMTSaSchedule</a> from a schedule type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">typesc</td><td>the schedule type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a2c492ec023c1067b07baa233b683541d" name="a2c492ec023c1067b07baa233b683541d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c492ec023c1067b07baa233b683541d">&#9670;&#160;</a></span>FMTsaschedule() <span class="overload">[2/2]</span></h2>
+<a id="a7884a99b3f1abeaacb876edf19f55535" name="a7884a99b3f1abeaacb876edf19f55535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7884a99b3f1abeaacb876edf19f55535">&#9670;&#160;</a></span>FMTSaSchedule() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Spatial::FMTSaSchedule::FMTSaSchedule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor for <a class="el" href="classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule.">FMTSaSchedule</a>. </p>
+
+</div>
+</div>
+<a id="aca42d6c62c83421ac399fa9ec75301de" name="aca42d6c62c83421ac399fa9ec75301de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca42d6c62c83421ac399fa9ec75301de">&#9670;&#160;</a></span>~FMTSaSchedule()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Spatial::FMTsaschedule::FMTsaschedule </td>
+          <td class="memname">virtual Spatial::FMTSaSchedule::~FMTSaSchedule </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -165,28 +218,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a53dfacc7a5b6ede872ae8ab90620e24b" name="a53dfacc7a5b6ede872ae8ab90620e24b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53dfacc7a5b6ede872ae8ab90620e24b">&#9670;&#160;</a></span>~FMTsaschedule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Spatial::FMTsaschedule::~FMTsaschedule </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Virtual destructor for <a class="el" href="classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule.">FMTSaSchedule</a>. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae9255063d8c2972e6c5442bf624a7bc7" name="ae9255063d8c2972e6c5442bf624a7bc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9255063d8c2972e6c5442bf624a7bc7">&#9670;&#160;</a></span>Clone()</h2>
+<a id="a7abdcf9b673511e72a7fb2a8295fd2bf" name="a7abdcf9b673511e72a7fb2a8295fd2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7abdcf9b673511e72a7fb2a8295fd2bf">&#9670;&#160;</a></span>clone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +233,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classSpatial_1_1FMTsaschedule.html">FMTsaschedule</a> &gt; Spatial::FMTsaschedule::Clone </td>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classSpatial_1_1FMTSaSchedule.html">FMTSaSchedule</a> &gt; Spatial::FMTSaSchedule::clone </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -208,18 +246,21 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classSpatial_1_1FMTexponentialschedule.html#a1f2f32c3c5d07aa95271fd8d0abebd83">Spatial::FMTexponentialschedule</a>.</p>
+<p>Return a clone of the <a class="el" href="classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule.">FMTSaSchedule</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer to the cloned schedule. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classSpatial_1_1FMTExponentialSchedule.html#a52d52fb07209813f10083b5e1f5a880d">Spatial::FMTExponentialSchedule</a>.</p>
 
 </div>
 </div>
-<a id="a8cf1e44bfb7c4b88601f038a708f9863" name="a8cf1e44bfb7c4b88601f038a708f9863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cf1e44bfb7c4b88601f038a708f9863">&#9670;&#160;</a></span>GetInitialTemp()</h2>
+<a id="a55afabf3f34db2556b9e4ea6f822b3fa" name="a55afabf3f34db2556b9e4ea6f822b3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55afabf3f34db2556b9e4ea6f822b3fa">&#9670;&#160;</a></span>getInitialTemp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Spatial::FMTsaschedule::GetInitialTemp </td>
+          <td class="memname">double Spatial::FMTSaSchedule::getInitialTemp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -227,16 +268,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the initial temperature. </p>
+<dl class="section return"><dt>Returns</dt><dd>the initial temperature. </dd></dl>
+
 </div>
 </div>
-<a id="a0b18c49ecde6bd3e4499cbee702aec8d" name="a0b18c49ecde6bd3e4499cbee702aec8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b18c49ecde6bd3e4499cbee702aec8d">&#9670;&#160;</a></span>GetLevel()</h2>
+<a id="abc2f4911f971f713a64e7674cdecda75" name="abc2f4911f971f713a64e7674cdecda75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2f4911f971f713a64e7674cdecda75">&#9670;&#160;</a></span>getLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Spatial::FMTsaschedule::GetLevel </td>
+          <td class="memname">size_t Spatial::FMTSaSchedule::getLevel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -244,16 +288,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the level of the schedule. </p>
+<dl class="section return"><dt>Returns</dt><dd>the level. </dd></dl>
+
 </div>
 </div>
-<a id="a37e0eb0245ad8d5469441e3f521cbbfb" name="a37e0eb0245ad8d5469441e3f521cbbfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37e0eb0245ad8d5469441e3f521cbbfb">&#9670;&#160;</a></span>GetScheduleType()</h2>
+<a id="af35d3e08a0db7ebc9d075acf4e7029ad" name="af35d3e08a0db7ebc9d075acf4e7029ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35d3e08a0db7ebc9d075acf4e7029ad">&#9670;&#160;</a></span>getScheduleType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Spatial::FMTsaschedule::GetScheduleType </td>
+          <td class="memname">std::string Spatial::FMTSaSchedule::getScheduleType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -261,16 +308,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the schedule type. </p>
+<dl class="section return"><dt>Returns</dt><dd>the schedule type. </dd></dl>
+
 </div>
 </div>
-<a id="a6fae99e27050282231e4537f7ede508a" name="a6fae99e27050282231e4537f7ede508a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fae99e27050282231e4537f7ede508a">&#9670;&#160;</a></span>GetTemp()</h2>
+<a id="aa351ff1eeb508348b7b4f06ec07bb5e8" name="aa351ff1eeb508348b7b4f06ec07bb5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa351ff1eeb508348b7b4f06ec07bb5e8">&#9670;&#160;</a></span>getTemp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Spatial::FMTsaschedule::GetTemp </td>
+          <td class="memname">double Spatial::FMTSaSchedule::getTemp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -278,10 +328,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the current temperature. </p>
+<dl class="section return"><dt>Returns</dt><dd>the current temperature. </dd></dl>
+
 </div>
 </div>
-<a id="afcdbc95cf0a8be0d7b4c334c14fbb68f" name="afcdbc95cf0a8be0d7b4c334c14fbb68f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcdbc95cf0a8be0d7b4c334c14fbb68f">&#9670;&#160;</a></span>ReduceTemp()</h2>
+<a id="a2b415e5a6a731f2db2428e9370d99c00" name="a2b415e5a6a731f2db2428e9370d99c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b415e5a6a731f2db2428e9370d99c00">&#9670;&#160;</a></span>reduceTemp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +343,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Spatial::FMTsaschedule::ReduceTemp </td>
+          <td class="memname">virtual void Spatial::FMTSaSchedule::reduceTemp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -303,18 +356,20 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classSpatial_1_1FMTexponentialschedule.html#a67edbe2aca8b2d50dfeab286e55f27ea">Spatial::FMTexponentialschedule</a>.</p>
+<p>Reduce the temperature according to the cooling schedule. </p>
+
+<p>Reimplemented in <a class="el" href="classSpatial_1_1FMTExponentialSchedule.html#a84f971a9122268ae7f923ab42970ecbd">Spatial::FMTExponentialSchedule</a>.</p>
 
 </div>
 </div>
-<a id="a9aeda9d82fbd7c195f40d64c5541a6b4" name="a9aeda9d82fbd7c195f40d64c5541a6b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aeda9d82fbd7c195f40d64c5541a6b4">&#9670;&#160;</a></span>SetInitialTemperature()</h2>
+<a id="a1425bcfe521d2af3fc88f71e5c73d4cc" name="a1425bcfe521d2af3fc88f71e5c73d4cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1425bcfe521d2af3fc88f71e5c73d4cc">&#9670;&#160;</a></span>setInitialTemperature()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Spatial::FMTsaschedule::SetInitialTemperature </td>
+          <td class="memname">void Spatial::FMTSaSchedule::setInitialTemperature </td>
           <td>(</td>
           <td class="paramtype">const double &amp;&#160;</td>
           <td class="paramname"><em>Temp</em></td><td>)</td>
@@ -323,11 +378,45 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the initial temperature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Temp</td><td>the initial temperature. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0aea2764d4d0b6684b6cc72083a438a7" name="a0aea2764d4d0b6684b6cc72083a438a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aea2764d4d0b6684b6cc72083a438a7">&#9670;&#160;</a></span>setTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Spatial::FMTSaSchedule::setTemp </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p_Temp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the current temperature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_Temp</td><td>the temperature. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a149244b5381c95a0d8a8cf14b9fb0b40" name="a149244b5381c95a0d8a8cf14b9fb0b40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a149244b5381c95a0d8a8cf14b9fb0b40">&#9670;&#160;</a></span>InitialTemperature</h2>
+<a id="ac35e2a9a629c52b0e6a27c287d48d441" name="ac35e2a9a629c52b0e6a27c287d48d441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35e2a9a629c52b0e6a27c287d48d441">&#9670;&#160;</a></span>m_InitialTemperature</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +425,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Spatial::FMTsaschedule::InitialTemperature</td>
+          <td class="memname">double Spatial::FMTSaSchedule::m_InitialTemperature</td>
         </tr>
       </table>
   </td>
@@ -348,8 +437,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0930fb56694becfabeea5290272ac9f5" name="a0930fb56694becfabeea5290272ac9f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0930fb56694becfabeea5290272ac9f5">&#9670;&#160;</a></span>Level</h2>
+<a id="af77422dca57a6abbd3f725b80b6e58f9" name="af77422dca57a6abbd3f725b80b6e58f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77422dca57a6abbd3f725b80b6e58f9">&#9670;&#160;</a></span>m_Level</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -358,7 +447,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Spatial::FMTsaschedule::Level</td>
+          <td class="memname">size_t Spatial::FMTSaSchedule::m_Level</td>
         </tr>
       </table>
   </td>
@@ -370,8 +459,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0196b970d88e1d1ef00af0e275bd6b5f" name="a0196b970d88e1d1ef00af0e275bd6b5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0196b970d88e1d1ef00af0e275bd6b5f">&#9670;&#160;</a></span>ScheduleType</h2>
+<a id="ae9e4f57d7ceaab505e0f2efda0acf8bb" name="ae9e4f57d7ceaab505e0f2efda0acf8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e4f57d7ceaab505e0f2efda0acf8bb">&#9670;&#160;</a></span>m_ScheduleType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +469,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Spatial::FMTsaschedule::ScheduleType</td>
+          <td class="memname">std::string Spatial::FMTSaSchedule::m_ScheduleType</td>
         </tr>
       </table>
   </td>
@@ -392,8 +481,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a28d6b2441ce6dc96a96d7ae268896665" name="a28d6b2441ce6dc96a96d7ae268896665"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28d6b2441ce6dc96a96d7ae268896665">&#9670;&#160;</a></span>Temperature</h2>
+<a id="a92245937d6802719bfd069a9b1199dd8" name="a92245937d6802719bfd069a9b1199dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92245937d6802719bfd069a9b1199dd8">&#9670;&#160;</a></span>m_Temperature</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -402,7 +491,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Spatial::FMTsaschedule::Temperature</td>
+          <td class="memname">double Spatial::FMTSaSchedule::m_Temperature</td>
         </tr>
       </table>
   </td>
@@ -415,7 +504,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTsaschedule_8hpp_source.html">FMTsaschedule.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTSaSchedule_8h_source.html">FMTSaSchedule.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

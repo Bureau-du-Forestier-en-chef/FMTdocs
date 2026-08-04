@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTactioncomparator Class Reference</title>
+<title>FMT: Core::FMTActionComparator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,44 +71,51 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTactioncomparator.html">FMTactioncomparator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTActionComparator.html">FMTActionComparator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classCore_1_1FMTactioncomparator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTactioncomparator Class Reference</div></div>
+<a href="classCore_1_1FMTActionComparator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTActionComparator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTaction_8hpp_source.html">FMTaction.hpp</a>&gt;</code></p>
+<p>Comparator used to check if an action name (or aggregate) already exists in a std container.  
+ <a href="classCore_1_1FMTActionComparator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTAction_8h_source.html">FMTAction.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afad58ff10b7cb782396b73151722e378"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTactioncomparator.html#afad58ff10b7cb782396b73151722e378">FMTactioncomparator</a> (std::string name, bool lcheckaggregate=false)</td></tr>
-<tr class="separator:afad58ff10b7cb782396b73151722e378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bfa7d29812da4dd7b8f9fe4031bb5f0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTactioncomparator.html#a2bfa7d29812da4dd7b8f9fe4031bb5f0">getallaggregates</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;actions, bool aggregateonly=false) const</td></tr>
-<tr class="separator:a2bfa7d29812da4dd7b8f9fe4031bb5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99871387339cd0fdb13aa2e959fb4947"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTactioncomparator.html#a99871387339cd0fdb13aa2e959fb4947">getallaggregatesset</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;actions, bool aggregateonly=false) const</td></tr>
-<tr class="separator:a99871387339cd0fdb13aa2e959fb4947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1e5d301e363b56995c5924687ad0a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTactioncomparator.html#adf1e5d301e363b56995c5924687ad0a3">operator()</a> (const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;action) const</td></tr>
-<tr class="separator:adf1e5d301e363b56995c5924687ad0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a642d1a5432607ce103794c845b7fa9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTActionComparator.html#a2a642d1a5432607ce103794c845b7fa9">FMTActionComparator</a> (std::string p_name, bool lcheckaggregate=false)</td></tr>
+<tr class="memdesc:a2a642d1a5432607ce103794c845b7fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the comparator from the action name to match.  <br /></td></tr>
+<tr class="separator:a2a642d1a5432607ce103794c845b7fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0b740db679f953c9a525d174425faa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTActionComparator.html#aee0b740db679f953c9a525d174425faa">getAllAggregates</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;actions, bool aggregateonly=false) const</td></tr>
+<tr class="memdesc:aee0b740db679f953c9a525d174425faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the actions matching the action name, or only the matching aggregates.  <br /></td></tr>
+<tr class="separator:aee0b740db679f953c9a525d174425faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79988b966542ea6f12c9c38780ec9fd6"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTActionComparator.html#a79988b966542ea6f12c9c38780ec9fd6">getAllAggregatesSet</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;actions, bool aggregateonly=false) const</td></tr>
+<tr class="memdesc:a79988b966542ea6f12c9c38780ec9fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the ids of the actions matching the action name, or only the matching aggregates.  <br /></td></tr>
+<tr class="separator:a79988b966542ea6f12c9c38780ec9fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e2a7f69247db1a677ce31ff4461a8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTActionComparator.html#ab9e2a7f69247db1a677ce31ff4461a8d">operator()</a> (const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;action) const</td></tr>
+<tr class="memdesc:ab9e2a7f69247db1a677ce31ff4461a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matching test operator for the comparator.  <br /></td></tr>
+<tr class="separator:ab9e2a7f69247db1a677ce31ff4461a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCore_1_1FMTactioncomparator.html">FMTactioncomparator</a> to check if the action_name already exist in a std container. It can also check for aggregates. </p>
+<div class="textblock"><p>Comparator used to check if an action name (or aggregate) already exists in a std container. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afad58ff10b7cb782396b73151722e378" name="afad58ff10b7cb782396b73151722e378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afad58ff10b7cb782396b73151722e378">&#9670;&#160;</a></span>FMTactioncomparator()</h2>
+<a id="a2a642d1a5432607ce103794c845b7fa9" name="a2a642d1a5432607ce103794c845b7fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a642d1a5432607ce103794c845b7fa9">&#9670;&#160;</a></span>FMTActionComparator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTactioncomparator::FMTactioncomparator </td>
+          <td class="memname">Core::FMTActionComparator::FMTActionComparator </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramname"><em>p_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -123,21 +130,29 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTactioncomparator.html">FMTactioncomparator</a> constructor name is the name of the action we want to match if checkaggregate = true it will also return actions within the named aggregate. </p>
+
+<p>Construct the comparator from the action name to match. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_name</td><td>the name of the action to match. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lcheckaggregate</td><td>if true also returns actions within the named aggregate. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2bfa7d29812da4dd7b8f9fe4031bb5f0" name="a2bfa7d29812da4dd7b8f9fe4031bb5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bfa7d29812da4dd7b8f9fe4031bb5f0">&#9670;&#160;</a></span>getallaggregates()</h2>
+<a id="aee0b740db679f953c9a525d174425faa" name="aee0b740db679f953c9a525d174425faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0b740db679f953c9a525d174425faa">&#9670;&#160;</a></span>getAllAggregates()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> * &gt; Core::FMTactioncomparator::getallaggregates </td>
+          <td class="memname">std::vector&lt; const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> * &gt; Core::FMTActionComparator::getAllAggregates </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em>, </td>
         </tr>
         <tr>
@@ -153,20 +168,29 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Looking at the actions vector if aggregateonly = false it will returns actions mathching the action_name if aggregateonly = true it will return only matching aggregates. </p>
+
+<p>Return the actions matching the action name, or only the matching aggregates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions to search. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggregateonly</td><td>if true only returns matching aggregates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the matching actions. </dd></dl>
 
 </div>
 </div>
-<a id="a99871387339cd0fdb13aa2e959fb4947" name="a99871387339cd0fdb13aa2e959fb4947"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99871387339cd0fdb13aa2e959fb4947">&#9670;&#160;</a></span>getallaggregatesset()</h2>
+<a id="a79988b966542ea6f12c9c38780ec9fd6" name="a79988b966542ea6f12c9c38780ec9fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79988b966542ea6f12c9c38780ec9fd6">&#9670;&#160;</a></span>getAllAggregatesSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_set&lt; int &gt; Core::FMTactioncomparator::getallaggregatesset </td>
+          <td class="memname">std::unordered_set&lt; int &gt; Core::FMTActionComparator::getAllAggregatesSet </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em>, </td>
         </tr>
         <tr>
@@ -182,31 +206,48 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Looking at the actions vector if aggregateonly = false it will returns actions ids mathching the action_name if aggregateonly = true it will return only matching aggregates. </p>
+
+<p>Return the ids of the actions matching the action name, or only the matching aggregates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions to search. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggregateonly</td><td>if true only returns matching aggregates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the ids of the matching actions. </dd></dl>
 
 </div>
 </div>
-<a id="adf1e5d301e363b56995c5924687ad0a3" name="adf1e5d301e363b56995c5924687ad0a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf1e5d301e363b56995c5924687ad0a3">&#9670;&#160;</a></span>operator()()</h2>
+<a id="ab9e2a7f69247db1a677ce31ff4461a8d" name="ab9e2a7f69247db1a677ce31ff4461a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e2a7f69247db1a677ce31ff4461a8d">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTactioncomparator::operator() </td>
+          <td class="memname">bool Core::FMTActionComparator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>action</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Matching test operator for <a class="el" href="classCore_1_1FMTactioncomparator.html">FMTactioncomparator</a>. </p>
+
+<p>Matching test operator for the comparator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>the action to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the action matches else false. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTaction_8hpp_source.html">FMTaction.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTAction_8h_source.html">FMTAction.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

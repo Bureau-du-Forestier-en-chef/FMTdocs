@@ -1,4 +1,4 @@
-<map id="Logging::FMTtasklogger" name="Logging::FMTtasklogger">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,166,107"/>
-<area shape="rect" id="node2" href="$classLogging_1_1FMTlogger.html" title=" " alt="" coords="18,5,153,32"/>
+<map id="Logging::FMTTaskLogger" name="Logging::FMTTaskLogger">
+<area shape="rect" id="node1" title="Logger derived from FMTLogger that does not print solver information nor default logging,..." alt="" coords="5,80,173,107"/>
+<area shape="rect" id="node2" href="$classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT." alt="" coords="19,5,159,32"/>
 </map>

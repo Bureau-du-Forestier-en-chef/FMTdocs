@@ -1,5 +1,5 @@
-<map id="Parser::FMTactionparser" name="Parser::FMTactionparser">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,170,181"/>
-<area shape="rect" id="node2" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="23,80,152,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="29,5,146,32"/>
+<map id="Parser::FMTActionParser" name="Parser::FMTActionParser">
+<area shape="rect" id="node1" title="Parser reading and writing actions from or into action files, also used by the model parser." alt="" coords="5,155,174,181"/>
+<area shape="rect" id="node2" href="$classParser_1_1FMTParser.html" title="Main parent class of all the parsers in FMT." alt="" coords="24,80,155,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="29,5,150,32"/>
 </map>

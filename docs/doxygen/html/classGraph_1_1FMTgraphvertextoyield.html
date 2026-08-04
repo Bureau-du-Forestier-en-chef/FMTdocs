@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Graph::FMTgraphvertextoyield Class Reference</title>
+<title>FMT: Graph::FMTGraphVertexToYield Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,57 +71,71 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceGraph.html">Graph</a></li><li class="navelem"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">FMTgraphvertextoyield</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceGraph.html">Graph</a></li><li class="navelem"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">FMTGraphVertexToYield</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classGraph_1_1FMTgraphvertextoyield-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Graph::FMTgraphvertextoyield Class Reference</div></div>
+<a href="classGraph_1_1FMTGraphVertexToYield-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Graph::FMTGraphVertexToYield Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTgraphvertextoyield_8hpp_source.html">FMTgraphvertextoyield.hpp</a>&gt;</code></p>
+<p>Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic yield request that depends on the graph.  
+ <a href="classGraph_1_1FMTGraphVertexToYield.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTGraphVertexToYield_8h_source.html">FMTGraphVertexToYield.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab9525b3cea85809d25cb5bf777dab412"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#ab9525b3cea85809d25cb5bf777dab412">FMTgraphvertextoyield</a> (const <a class="el" href="classModels_1_1FMTmodel.html">Models::FMTmodel</a> &amp;model, const <a class="el" href="classGraph_1_1FMTgraph.html">FMTgraph</a>&lt; <a class="el" href="classGraph_1_1FMTbasevertexproperties.html">FMTbasevertexproperties</a>, <a class="el" href="classGraph_1_1FMTbaseedgeproperties.html">FMTbaseedgeproperties</a> &gt; &amp;linegraph, const void *lvertex)</td></tr>
-<tr class="separator:ab9525b3cea85809d25cb5bf777dab412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa767f486107e0ddac76af005997abc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#aaa767f486107e0ddac76af005997abc7">FMTgraphvertextoyield</a> (const <a class="el" href="classModels_1_1FMTmodel.html">Models::FMTmodel</a> &amp;model, const <a class="el" href="classGraph_1_1FMTgraph.html">FMTgraph</a>&lt; <a class="el" href="classGraph_1_1FMTvertexproperties.html">FMTvertexproperties</a>, <a class="el" href="classGraph_1_1FMTedgeproperties.html">FMTedgeproperties</a> &gt; &amp;fullgraph, const void *lvertex)</td></tr>
-<tr class="separator:aaa767f486107e0ddac76af005997abc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bf1283ec1721d57ef6619c74933985"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#a83bf1283ec1721d57ef6619c74933985">FMTgraphvertextoyield</a> ()</td></tr>
-<tr class="separator:a83bf1283ec1721d57ef6619c74933985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87a03fc2ac9b191af145d4ecbc119546"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#a87a03fc2ac9b191af145d4ecbc119546">FMTgraphvertextoyield</a> (const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">FMTgraphvertextoyield</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a87a03fc2ac9b191af145d4ecbc119546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b877080d0bb1b4969da8a60bdad90d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">FMTgraphvertextoyield</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#a54b877080d0bb1b4969da8a60bdad90d">operator=</a> (const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">FMTgraphvertextoyield</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a54b877080d0bb1b4969da8a60bdad90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c093130a950069e953f61a705e5227"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classGraph_1_1FMTgraph.html">FMTgraph</a>&lt; <a class="el" href="classGraph_1_1FMTbasevertexproperties.html">FMTbasevertexproperties</a>, <a class="el" href="classGraph_1_1FMTbaseedgeproperties.html">FMTbaseedgeproperties</a> &gt; *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#a56c093130a950069e953f61a705e5227">getlinegraph</a> () const</td></tr>
-<tr class="separator:a56c093130a950069e953f61a705e5227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af62876faf66165b24bed5af9149f32c9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classGraph_1_1FMTgraph.html">FMTgraph</a>&lt; <a class="el" href="classGraph_1_1FMTvertexproperties.html">FMTvertexproperties</a>, <a class="el" href="classGraph_1_1FMTedgeproperties.html">FMTedgeproperties</a> &gt; *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#af62876faf66165b24bed5af9149f32c9">getfullgraph</a> () const</td></tr>
-<tr class="separator:af62876faf66165b24bed5af9149f32c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add0e88a721539e9573a0d9e77b5eac7c"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#add0e88a721539e9573a0d9e77b5eac7c">getvertexptr</a> () const</td></tr>
-<tr class="separator:add0e88a721539e9573a0d9e77b5eac7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af233b1af1103f48e79fa877ffc8c41ae"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classModels_1_1FMTmodel.html">Models::FMTmodel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html#af233b1af1103f48e79fa877ffc8c41ae">getmodel</a> () const</td></tr>
-<tr class="separator:af233b1af1103f48e79fa877ffc8c41ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d658451967067cd60dfea81883ac8cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#a1d658451967067cd60dfea81883ac8cc">FMTGraphVertexToYield</a> (const <a class="el" href="classModels_1_1FMTModel.html">Models::FMTModel</a> &amp;model, const <a class="el" href="classGraph_1_1FMTGraph.html">FMTGraph</a>&lt; <a class="el" href="classGraph_1_1FMTBaseVertexProperties.html">FMTBaseVertexProperties</a>, <a class="el" href="classGraph_1_1FMTBaseEdgeProperties.html">FMTBaseEdgeProperties</a> &gt; &amp;linegraph, const void *lvertex)</td></tr>
+<tr class="memdesc:a1d658451967067cd60dfea81883ac8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a> from a model, a line graph and a vertex.  <br /></td></tr>
+<tr class="separator:a1d658451967067cd60dfea81883ac8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49456547e0e1593d7e93c7c3d3edcd52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#a49456547e0e1593d7e93c7c3d3edcd52">FMTGraphVertexToYield</a> (const <a class="el" href="classModels_1_1FMTModel.html">Models::FMTModel</a> &amp;model, const <a class="el" href="classGraph_1_1FMTGraph.html">FMTGraph</a>&lt; <a class="el" href="classGraph_1_1FMTVertexProperties.html">FMTVertexProperties</a>, <a class="el" href="classGraph_1_1FMTEdgeProperties.html">FMTEdgeProperties</a> &gt; &amp;fullgraph, const void *lvertex)</td></tr>
+<tr class="memdesc:a49456547e0e1593d7e93c7c3d3edcd52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a> from a model, a full graph and a vertex.  <br /></td></tr>
+<tr class="separator:a49456547e0e1593d7e93c7c3d3edcd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4f7056aeb8aa7b5c953dc5d4b1e884"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#adc4f7056aeb8aa7b5c953dc5d4b1e884">FMTGraphVertexToYield</a> ()</td></tr>
+<tr class="memdesc:adc4f7056aeb8aa7b5c953dc5d4b1e884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a>.  <br /></td></tr>
+<tr class="separator:adc4f7056aeb8aa7b5c953dc5d4b1e884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac739a8c35ae4df883bd265945813dbd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#ac739a8c35ae4df883bd265945813dbd2">FMTGraphVertexToYield</a> (const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">FMTGraphVertexToYield</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:ac739a8c35ae4df883bd265945813dbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a>.  <br /></td></tr>
+<tr class="separator:ac739a8c35ae4df883bd265945813dbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93eeaae6ef023ce7698ecff45057e91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">FMTGraphVertexToYield</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#aa93eeaae6ef023ce7698ecff45057e91">operator=</a> (const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">FMTGraphVertexToYield</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:aa93eeaae6ef023ce7698ecff45057e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a>.  <br /></td></tr>
+<tr class="separator:aa93eeaae6ef023ce7698ecff45057e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c3a966aaf312caf78032fe3b11c3c9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classGraph_1_1FMTGraph.html">FMTGraph</a>&lt; <a class="el" href="classGraph_1_1FMTBaseVertexProperties.html">FMTBaseVertexProperties</a>, <a class="el" href="classGraph_1_1FMTBaseEdgeProperties.html">FMTBaseEdgeProperties</a> &gt; *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#a82c3a966aaf312caf78032fe3b11c3c9">getLineGraph</a> () const</td></tr>
+<tr class="memdesc:a82c3a966aaf312caf78032fe3b11c3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the line graph, or nullptr if the adapter points to a full graph.  <br /></td></tr>
+<tr class="separator:a82c3a966aaf312caf78032fe3b11c3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7452cd9ef6af25118ad762ed7019508"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classGraph_1_1FMTGraph.html">FMTGraph</a>&lt; <a class="el" href="classGraph_1_1FMTVertexProperties.html">FMTVertexProperties</a>, <a class="el" href="classGraph_1_1FMTEdgeProperties.html">FMTEdgeProperties</a> &gt; *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#ae7452cd9ef6af25118ad762ed7019508">getFullGraph</a> () const</td></tr>
+<tr class="memdesc:ae7452cd9ef6af25118ad762ed7019508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the full graph, or nullptr if the adapter points to a line graph.  <br /></td></tr>
+<tr class="separator:ae7452cd9ef6af25118ad762ed7019508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1b89d5b393d4a6a56e5a759cf9fbbb"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#a4d1b89d5b393d4a6a56e5a759cf9fbbb">getVertexPtr</a> () const</td></tr>
+<tr class="memdesc:a4d1b89d5b393d4a6a56e5a759cf9fbbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the vertex.  <br /></td></tr>
+<tr class="separator:a4d1b89d5b393d4a6a56e5a759cf9fbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cfaa2a8e6bb7aab22d24107f5ed0755"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classModels_1_1FMTModel.html">Models::FMTModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html#a2cfaa2a8e6bb7aab22d24107f5ed0755">getModel</a> () const</td></tr>
+<tr class="memdesc:a2cfaa2a8e6bb7aab22d24107f5ed0755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the model.  <br /></td></tr>
+<tr class="separator:a2cfaa2a8e6bb7aab22d24107f5ed0755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab9525b3cea85809d25cb5bf777dab412" name="ab9525b3cea85809d25cb5bf777dab412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9525b3cea85809d25cb5bf777dab412">&#9670;&#160;</a></span>FMTgraphvertextoyield() <span class="overload">[1/4]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic yield request that depends on the graph. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1d658451967067cd60dfea81883ac8cc" name="a1d658451967067cd60dfea81883ac8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d658451967067cd60dfea81883ac8cc">&#9670;&#160;</a></span>FMTGraphVertexToYield() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Graph::FMTgraphvertextoyield::FMTgraphvertextoyield </td>
+          <td class="memname">Graph::FMTGraphVertexToYield::FMTGraphVertexToYield </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodel.html">Models::FMTmodel</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModel.html">Models::FMTModel</a> &amp;&#160;</td>
           <td class="paramname"><em>model</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTgraph.html">FMTgraph</a>&lt; <a class="el" href="classGraph_1_1FMTbasevertexproperties.html">FMTbasevertexproperties</a>, <a class="el" href="classGraph_1_1FMTbaseedgeproperties.html">FMTbaseedgeproperties</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTGraph.html">FMTGraph</a>&lt; <a class="el" href="classGraph_1_1FMTBaseVertexProperties.html">FMTBaseVertexProperties</a>, <a class="el" href="classGraph_1_1FMTBaseEdgeProperties.html">FMTBaseEdgeProperties</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>linegraph</em>, </td>
         </tr>
         <tr>
@@ -138,24 +152,34 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a> from a model, a line graph and a vertex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">model</td><td>the model. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linegraph</td><td>the line graph. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lvertex</td><td>the vertex. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aaa767f486107e0ddac76af005997abc7" name="aaa767f486107e0ddac76af005997abc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa767f486107e0ddac76af005997abc7">&#9670;&#160;</a></span>FMTgraphvertextoyield() <span class="overload">[2/4]</span></h2>
+<a id="a49456547e0e1593d7e93c7c3d3edcd52" name="a49456547e0e1593d7e93c7c3d3edcd52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49456547e0e1593d7e93c7c3d3edcd52">&#9670;&#160;</a></span>FMTGraphVertexToYield() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Graph::FMTgraphvertextoyield::FMTgraphvertextoyield </td>
+          <td class="memname">Graph::FMTGraphVertexToYield::FMTGraphVertexToYield </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodel.html">Models::FMTmodel</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModel.html">Models::FMTModel</a> &amp;&#160;</td>
           <td class="paramname"><em>model</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTgraph.html">FMTgraph</a>&lt; <a class="el" href="classGraph_1_1FMTvertexproperties.html">FMTvertexproperties</a>, <a class="el" href="classGraph_1_1FMTedgeproperties.html">FMTedgeproperties</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTGraph.html">FMTGraph</a>&lt; <a class="el" href="classGraph_1_1FMTVertexProperties.html">FMTVertexProperties</a>, <a class="el" href="classGraph_1_1FMTEdgeProperties.html">FMTEdgeProperties</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>fullgraph</em>, </td>
         </tr>
         <tr>
@@ -172,16 +196,26 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a> from a model, a full graph and a vertex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">model</td><td>the model. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fullgraph</td><td>the full graph. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lvertex</td><td>the vertex. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a83bf1283ec1721d57ef6619c74933985" name="a83bf1283ec1721d57ef6619c74933985"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83bf1283ec1721d57ef6619c74933985">&#9670;&#160;</a></span>FMTgraphvertextoyield() <span class="overload">[3/4]</span></h2>
+<a id="adc4f7056aeb8aa7b5c953dc5d4b1e884" name="adc4f7056aeb8aa7b5c953dc5d4b1e884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc4f7056aeb8aa7b5c953dc5d4b1e884">&#9670;&#160;</a></span>FMTGraphVertexToYield() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Graph::FMTgraphvertextoyield::FMTgraphvertextoyield </td>
+          <td class="memname">Graph::FMTGraphVertexToYield::FMTGraphVertexToYield </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -189,10 +223,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a>. </p>
+
 </div>
 </div>
-<a id="a87a03fc2ac9b191af145d4ecbc119546" name="a87a03fc2ac9b191af145d4ecbc119546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87a03fc2ac9b191af145d4ecbc119546">&#9670;&#160;</a></span>FMTgraphvertextoyield() <span class="overload">[4/4]</span></h2>
+<a id="ac739a8c35ae4df883bd265945813dbd2" name="ac739a8c35ae4df883bd265945813dbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac739a8c35ae4df883bd265945813dbd2">&#9670;&#160;</a></span>FMTGraphVertexToYield() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,9 +237,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Graph::FMTgraphvertextoyield::FMTgraphvertextoyield </td>
+          <td class="memname">Graph::FMTGraphVertexToYield::FMTGraphVertexToYield </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">FMTgraphvertextoyield</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">FMTGraphVertexToYield</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -215,17 +251,25 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copy constructor for <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af62876faf66165b24bed5af9149f32c9" name="af62876faf66165b24bed5af9149f32c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af62876faf66165b24bed5af9149f32c9">&#9670;&#160;</a></span>getfullgraph()</h2>
+<a id="ae7452cd9ef6af25118ad762ed7019508" name="ae7452cd9ef6af25118ad762ed7019508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7452cd9ef6af25118ad762ed7019508">&#9670;&#160;</a></span>getFullGraph()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classGraph_1_1FMTgraph.html">FMTgraph</a>&lt; <a class="el" href="classGraph_1_1FMTvertexproperties.html">FMTvertexproperties</a>, <a class="el" href="classGraph_1_1FMTedgeproperties.html">FMTedgeproperties</a> &gt; *const Graph::FMTgraphvertextoyield::getfullgraph </td>
+          <td class="memname">const <a class="el" href="classGraph_1_1FMTGraph.html">FMTGraph</a>&lt; <a class="el" href="classGraph_1_1FMTVertexProperties.html">FMTVertexProperties</a>, <a class="el" href="classGraph_1_1FMTEdgeProperties.html">FMTEdgeProperties</a> &gt; *const Graph::FMTGraphVertexToYield::getFullGraph </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -233,16 +277,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the full graph, or nullptr if the adapter points to a line graph. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the full graph. </dd></dl>
+
 </div>
 </div>
-<a id="a56c093130a950069e953f61a705e5227" name="a56c093130a950069e953f61a705e5227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56c093130a950069e953f61a705e5227">&#9670;&#160;</a></span>getlinegraph()</h2>
+<a id="a82c3a966aaf312caf78032fe3b11c3c9" name="a82c3a966aaf312caf78032fe3b11c3c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c3a966aaf312caf78032fe3b11c3c9">&#9670;&#160;</a></span>getLineGraph()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classGraph_1_1FMTgraph.html">FMTgraph</a>&lt; <a class="el" href="classGraph_1_1FMTbasevertexproperties.html">FMTbasevertexproperties</a>, <a class="el" href="classGraph_1_1FMTbaseedgeproperties.html">FMTbaseedgeproperties</a> &gt; *const Graph::FMTgraphvertextoyield::getlinegraph </td>
+          <td class="memname">const <a class="el" href="classGraph_1_1FMTGraph.html">FMTGraph</a>&lt; <a class="el" href="classGraph_1_1FMTBaseVertexProperties.html">FMTBaseVertexProperties</a>, <a class="el" href="classGraph_1_1FMTBaseEdgeProperties.html">FMTBaseEdgeProperties</a> &gt; *const Graph::FMTGraphVertexToYield::getLineGraph </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -250,16 +297,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the line graph, or nullptr if the adapter points to a full graph. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the line graph. </dd></dl>
+
 </div>
 </div>
-<a id="af233b1af1103f48e79fa877ffc8c41ae" name="af233b1af1103f48e79fa877ffc8c41ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af233b1af1103f48e79fa877ffc8c41ae">&#9670;&#160;</a></span>getmodel()</h2>
+<a id="a2cfaa2a8e6bb7aab22d24107f5ed0755" name="a2cfaa2a8e6bb7aab22d24107f5ed0755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cfaa2a8e6bb7aab22d24107f5ed0755">&#9670;&#160;</a></span>getModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classModels_1_1FMTmodel.html">Models::FMTmodel</a> * Graph::FMTgraphvertextoyield::getmodel </td>
+          <td class="memname">const <a class="el" href="classModels_1_1FMTModel.html">Models::FMTModel</a> * Graph::FMTGraphVertexToYield::getModel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -267,10 +317,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the model. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the model. </dd></dl>
+
 </div>
 </div>
-<a id="add0e88a721539e9573a0d9e77b5eac7c" name="add0e88a721539e9573a0d9e77b5eac7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add0e88a721539e9573a0d9e77b5eac7c">&#9670;&#160;</a></span>getvertexptr()</h2>
+<a id="a4d1b89d5b393d4a6a56e5a759cf9fbbb" name="a4d1b89d5b393d4a6a56e5a759cf9fbbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1b89d5b393d4a6a56e5a759cf9fbbb">&#9670;&#160;</a></span>getVertexPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +332,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const void * Graph::FMTgraphvertextoyield::getvertexptr </td>
+          <td class="memname">const void * Graph::FMTGraphVertexToYield::getVertexPtr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -292,10 +345,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return a pointer to the vertex. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the vertex. </dd></dl>
+
 </div>
 </div>
-<a id="a54b877080d0bb1b4969da8a60bdad90d" name="a54b877080d0bb1b4969da8a60bdad90d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54b877080d0bb1b4969da8a60bdad90d">&#9670;&#160;</a></span>operator=()</h2>
+<a id="aa93eeaae6ef023ce7698ecff45057e91" name="aa93eeaae6ef023ce7698ecff45057e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93eeaae6ef023ce7698ecff45057e91">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,9 +360,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">FMTgraphvertextoyield</a> &amp; Graph::FMTgraphvertextoyield::operator= </td>
+          <td class="memname"><a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">FMTGraphVertexToYield</a> &amp; Graph::FMTGraphVertexToYield::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">FMTgraphvertextoyield</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">FMTGraphVertexToYield</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -318,10 +374,19 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html" title="Adapter pointing to a vertex of a line graph or a full graph and its model, used to answer a generic ...">FMTGraphVertexToYield</a>. </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTgraphvertextoyield_8hpp_source.html">FMTgraphvertextoyield.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTGraphVertexToYield_8h_source.html">FMTGraphVertexToYield.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

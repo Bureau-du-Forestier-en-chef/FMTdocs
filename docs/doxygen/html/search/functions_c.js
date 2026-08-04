@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['naturalgrowth_0',['naturalgrowth',['../classGraph_1_1FMTgraph.html#afedda0a7d0fb1931bf9636e85c23d263',1,'Graph::FMTgraph']]],
-  ['nedges_1',['nedges',['../classGraph_1_1FMTgraph.html#a5174a95d5ea48285e24d7e8e3e5d6f8e',1,'Graph::FMTgraph']]],
-  ['needsrefactortorization_2',['needsrefactortorization',['../classSpatial_1_1FMTspatialschedule.html#a5a7e315743cc4676766ea6d4c30baec9',1,'Spatial::FMTspatialschedule']]],
-  ['needtorethrow_3',['needtorethrow',['../classException_1_1FMTexceptionhandler.html#ad8ba3a8ae1af51e2acc8932059e82064',1,'Exception::FMTexceptionhandler']]],
-  ['nochoice_4',['nochoice',['../classGraph_1_1FMTgraph.html#aed95aa20bc3b3463eed36e9884f11b52',1,'Graph::FMTgraph']]],
-  ['nulldata_5',['nulldata',['../classCore_1_1FMTdata.html#a5bae68d8dfac438bb3f176ac5c691285',1,'Core::FMTdata']]],
-  ['numbernewcols_6',['numbernewCols',['../classModels_1_1FMTmatrixbuild.html#ad4405c3ca1d2f2633c14619bbfc0628a',1,'Models::FMTmatrixbuild']]],
-  ['numbernewrows_7',['numbernewRows',['../classModels_1_1FMTmatrixbuild.html#aa63fdbeef76c71674c98521c0219b183',1,'Models::FMTmatrixbuild']]],
-  ['numberofdeletedcols_8',['numberofdeletedCols',['../classModels_1_1FMTmatrixbuild.html#a812d182b38e0de3f62745788851c0f82',1,'Models::FMTmatrixbuild']]],
-  ['numberofdeletedrows_9',['numberofdeletedRows',['../classModels_1_1FMTmatrixbuild.html#aba02e03c86649595bd2d5d059ae6ac1e',1,'Models::FMTmatrixbuild']]]
+  ['needsrefactorization_0',['needsRefactorization',['../classSpatial_1_1FMTSpatialSchedule.html#a6440dfbef355a8e14585ca0368d98d5d',1,'Spatial::FMTSpatialSchedule']]],
+  ['notuse_1',['notUse',['../classCore_1_1FMTAction.html#a606e45cf1aa487cc3472c2790126ae4d',1,'Core::FMTAction']]],
+  ['nulldata_2',['nullData',['../classCore_1_1FMTData.html#a74ef772208f8efae134687b0d0c8d419',1,'Core::FMTData']]],
+  ['numbernewcols_3',['numberNewCols',['../classModels_1_1FMTMatrixBuild.html#a5951026d2eb6bb909dc80edb5b691787',1,'Models::FMTMatrixBuild']]],
+  ['numbernewrows_4',['numberNewRows',['../classModels_1_1FMTMatrixBuild.html#aa32ebe7eb5b0b6eb8296d62cda6220e2',1,'Models::FMTMatrixBuild']]],
+  ['numberofdeletedcols_5',['numberOfDeletedCols',['../classModels_1_1FMTMatrixBuild.html#af8c5d5c165e4439b6218f659525e1dc0',1,'Models::FMTMatrixBuild']]],
+  ['numberofdeletedrows_6',['numberOfDeletedRows',['../classModels_1_1FMTMatrixBuild.html#a24eb48bd8159856e94b129808066e633',1,'Models::FMTMatrixBuild']]]
 ];

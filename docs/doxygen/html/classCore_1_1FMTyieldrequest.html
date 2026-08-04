@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTyieldrequest Class Reference</title>
+<title>FMT: Core::FMTYieldRequest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,154 +71,245 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classCore_1_1FMTyieldrequest-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTyieldrequest Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+<a href="classCore_1_1FMTYieldRequest-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTYieldRequest Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTyieldrequest_8hpp_source.html">FMTyieldrequest.hpp</a>&gt;</code></p>
+<p>Request for yield values using a development and optionally a graph vertex.  
+ <a href="classCore_1_1FMTYieldRequest.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTYieldRequest_8h_source.html">FMTYieldRequest.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Core::FMTyieldrequest:</div>
+Inheritance diagram for Core::FMTYieldRequest:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTyieldrequest__inherit__graph.svg" width="163" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTYieldRequest__inherit__graph.svg" width="171" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Core::FMTyieldrequest:</div>
+Collaboration diagram for Core::FMTYieldRequest:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTyieldrequest__coll__graph.svg" width="100%" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTYieldRequest__coll__graph.svg" width="100%" height="537"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6c1e2825bbfe35c1afee70b394069f01"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair&lt; <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>, std::unique_ptr&lt; <a class="el" href="classCore_1_1FMTYieldHandler.html">FMTYieldHandler</a> &gt; &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a6c1e2825bbfe35c1afee70b394069f01">const_iterator</a></td></tr>
+<tr class="separator:a6c1e2825bbfe35c1afee70b394069f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3904893038483be7f502f76ba3d2a59a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#a3904893038483be7f502f76ba3d2a59a">FMTyieldrequest</a> (const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;ldevelopment, const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">Graph::FMTgraphvertextoyield</a> &amp;lgraphvertex)</td></tr>
-<tr class="separator:a3904893038483be7f502f76ba3d2a59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30721eb3c97e09c18eb82be42a309743"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#a30721eb3c97e09c18eb82be42a309743">FMTyieldrequest</a> (const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;ldevelopment, const <a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a> &amp;oldrequest)</td></tr>
-<tr class="separator:a30721eb3c97e09c18eb82be42a309743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bea6c94f33a921783f39b98c7e58160"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#a2bea6c94f33a921783f39b98c7e58160">FMTyieldrequest</a> (const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;ldevelopment)</td></tr>
-<tr class="separator:a2bea6c94f33a921783f39b98c7e58160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7a6e3484dc262e7c581dba4781cf8c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#aa7a6e3484dc262e7c581dba4781cf8c5">FMTyieldrequest</a> ()=default</td></tr>
-<tr class="separator:aa7a6e3484dc262e7c581dba4781cf8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673ffddb25fe046c2960ced267884aef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#a673ffddb25fe046c2960ced267884aef">FMTyieldrequest</a> (const <a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a673ffddb25fe046c2960ced267884aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3c19a681db240b1cae9fa44bc88625"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#a8d3c19a681db240b1cae9fa44bc88625">operator=</a> (const <a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a8d3c19a681db240b1cae9fa44bc88625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdfea84b2972ae569f6677b949be71a6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#acdfea84b2972ae569f6677b949be71a6">getdevelopment</a> () const</td></tr>
-<tr class="separator:acdfea84b2972ae569f6677b949be71a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf07445d65abc768f759b56d811768c"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; const std::unique_ptr&lt; <a class="el" href="classCore_1_1FMTyieldhandler.html">FMTyieldhandler</a> &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#aabf07445d65abc768f759b56d811768c">getdatas</a> () const</td></tr>
-<tr class="separator:aabf07445d65abc768f759b56d811768c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b696f8f08eb0ec453afc856171369a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#a60b696f8f08eb0ec453afc856171369a">getresumemask</a> () const</td></tr>
-<tr class="separator:a60b696f8f08eb0ec453afc856171369a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3a3ff0270c34eb8ce8560f930c647f3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">Graph::FMTgraphvertextoyield</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#aa3a3ff0270c34eb8ce8560f930c647f3">getvertexgraphinfo</a> () const</td></tr>
-<tr class="separator:aa3a3ff0270c34eb8ce8560f930c647f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a892247268d4fed1aad568ef726b2bf1a">FMTobject</a> ()</td></tr>
-<tr class="separator:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aabbeb37f9454aaae7725341a4fc6b871">~FMTobject</a> ()</td></tr>
-<tr class="separator:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6f0d241beec60204ed8d14740a026058">FMTobject</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; exhandler)</td></tr>
-<tr class="separator:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acc66512952f3c5563d317d40f5d0bd5d">FMTobject</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
-<tr class="separator:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43beb96c44fa008bbcd475d367a67ab1 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a43beb96c44fa008bbcd475d367a67ab1">operator=</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
-<tr class="separator:a43beb96c44fa008bbcd475d367a67ab1 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36054757252bb5f8d1275789271c3e0 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af36054757252bb5f8d1275789271c3e0">passinlogger</a> (const std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt; &amp;logger)</td></tr>
-<tr class="separator:af36054757252bb5f8d1275789271c3e0 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ac96f87dd870a03c329ec7dd91c57e0f3">passinexceptionhandler</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; &amp;exhandler)</td></tr>
-<tr class="separator:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a45a5a60a8bed1b2c7fc3852a5140947f">redirectlogtofile</a> (const std::string &amp;location)</td></tr>
-<tr class="separator:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acb289903aad7488bb9d58a555325dbc6">setdefaultlogger</a> ()</td></tr>
-<tr class="separator:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a07f7d55431bdd4c885f84c70436dfeb8">setquietlogger</a> ()</td></tr>
-<tr class="separator:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6929adf1131bc31e51798859cb3b26f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af6929adf1131bc31e51798859cb3b26f">settasklogger</a> ()</td></tr>
-<tr class="separator:af6929adf1131bc31e51798859cb3b26f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af84f403de5cbb9676e5da79c8a1f0d74">setdebuglogger</a> ()</td></tr>
-<tr class="separator:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#adb70eea83ae75752e107358d7c47d775">setdefaultexceptionhandler</a> ()</td></tr>
-<tr class="separator:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab718aa354a7b395471a15d29f244477 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aab718aa354a7b395471a15d29f244477">setquietexceptionhandler</a> ()</td></tr>
-<tr class="separator:aab718aa354a7b395471a15d29f244477 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742cafbb0d8d5984e101f2cb2bd2c07e inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a742cafbb0d8d5984e101f2cb2bd2c07e">setdebugexceptionhandler</a> ()</td></tr>
-<tr class="separator:a742cafbb0d8d5984e101f2cb2bd2c07e inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add57ec6ca8cf94e10c56346054ab75d6 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#add57ec6ca8cf94e10c56346054ab75d6">setfreeexceptionhandler</a> ()</td></tr>
-<tr class="separator:add57ec6ca8cf94e10c56346054ab75d6 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6340513d0ff7a846c35165c2f9f67b8f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6340513d0ff7a846c35165c2f9f67b8f">disablenestedexceptions</a> ()</td></tr>
-<tr class="separator:a6340513d0ff7a846c35165c2f9f67b8f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f62b116025059f09987b35324fccd06 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a3f62b116025059f09987b35324fccd06">enablenestedexceptions</a> ()</td></tr>
-<tr class="separator:a3f62b116025059f09987b35324fccd06 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8388f4cbb465e0e0a4bc4369340f4d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a1c8388f4cbb465e0e0a4bc4369340f4d">seterrorstowarnings</a> (const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;errors)</td></tr>
-<tr class="separator:a1c8388f4cbb465e0e0a4bc4369340f4d inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ce9242830521f5d6cca21c179f4db5a inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a5ce9242830521f5d6cca21c179f4db5a">setmaxwarningsbeforesilenced</a> (const size_t &amp;maxwarningcount)</td></tr>
-<tr class="separator:a5ce9242830521f5d6cca21c179f4db5a inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295580d479fc9051db1f6eabea8f5b69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a295580d479fc9051db1f6eabea8f5b69">FMTYieldRequest</a> (const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;ldevelopment, const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">Graph::FMTGraphVertexToYield</a> &amp;lgraphvertex)</td></tr>
+<tr class="memdesc:a295580d479fc9051db1f6eabea8f5b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a yield request from a development and a graph vertex.  <br /></td></tr>
+<tr class="separator:a295580d479fc9051db1f6eabea8f5b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21dcc66f7d980bf32c51a649b14385b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a21dcc66f7d980bf32c51a649b14385b3">FMTYieldRequest</a> (const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;ldevelopment, const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;oldrequest)</td></tr>
+<tr class="memdesc:a21dcc66f7d980bf32c51a649b14385b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a yield request from a development and a previous request.  <br /></td></tr>
+<tr class="separator:a21dcc66f7d980bf32c51a649b14385b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7c30e2743988665f82846b99152159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#aed7c30e2743988665f82846b99152159">FMTYieldRequest</a> (const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;ldevelopment)</td></tr>
+<tr class="memdesc:aed7c30e2743988665f82846b99152159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a yield request from a development, without reference to a graph.  <br /></td></tr>
+<tr class="separator:aed7c30e2743988665f82846b99152159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9035ac4cc320396b7016ed750e7d535b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a9035ac4cc320396b7016ed750e7d535b">FMTYieldRequest</a> ()=default</td></tr>
+<tr class="memdesc:a9035ac4cc320396b7016ed750e7d535b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a>.  <br /></td></tr>
+<tr class="separator:a9035ac4cc320396b7016ed750e7d535b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9785c3b46e38fa61d04964a999b9e7e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a9785c3b46e38fa61d04964a999b9e7e2">FMTYieldRequest</a> (const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a9785c3b46e38fa61d04964a999b9e7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a>.  <br /></td></tr>
+<tr class="separator:a9785c3b46e38fa61d04964a999b9e7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ceb1aad03902c7f2e45be75901e528"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a87ceb1aad03902c7f2e45be75901e528">operator=</a> (const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a87ceb1aad03902c7f2e45be75901e528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a>.  <br /></td></tr>
+<tr class="separator:a87ceb1aad03902c7f2e45be75901e528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a8381014edce909b91e5cd6dfeac22"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#af8a8381014edce909b91e5cd6dfeac22">getDevelopment</a> () const</td></tr>
+<tr class="memdesc:af8a8381014edce909b91e5cd6dfeac22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the development of the request.  <br /></td></tr>
+<tr class="separator:af8a8381014edce909b91e5cd6dfeac22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844b54e97dedc02854cc41ac9edbb585"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classCore_1_1FMTYieldRequest.html#a6c1e2825bbfe35c1afee70b394069f01">const_iterator</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a844b54e97dedc02854cc41ac9edbb585">getDatas</a> () const</td></tr>
+<tr class="memdesc:a844b54e97dedc02854cc41ac9edbb585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the yield data iterators of the request.  <br /></td></tr>
+<tr class="separator:a844b54e97dedc02854cc41ac9edbb585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9a4802a1ce690530455b33282b163f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#acc9a4802a1ce690530455b33282b163f">getResumeMask</a> () const</td></tr>
+<tr class="memdesc:acc9a4802a1ce690530455b33282b163f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the resume mask of the request.  <br /></td></tr>
+<tr class="separator:acc9a4802a1ce690530455b33282b163f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee00ff489f3764611b4526e8e6fa0297"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">Graph::FMTGraphVertexToYield</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#aee00ff489f3764611b4526e8e6fa0297">getVertexGraphInfo</a> () const</td></tr>
+<tr class="memdesc:aee00ff489f3764611b4526e8e6fa0297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the graph vertex information of the request.  <br /></td></tr>
+<tr class="separator:aee00ff489f3764611b4526e8e6fa0297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736e5cc89ad1dfcac9043a1271107135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTYieldRequest.html#a6c1e2825bbfe35c1afee70b394069f01">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a736e5cc89ad1dfcac9043a1271107135">getFirstSeen</a> (const std::string &amp;p_yield) const</td></tr>
+<tr class="memdesc:a736e5cc89ad1dfcac9043a1271107135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first data iterator for a given yield.  <br /></td></tr>
+<tr class="separator:a736e5cc89ad1dfcac9043a1271107135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a5989964c8bdbc4650e238ceba3415f4b inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5989964c8bdbc4650e238ceba3415f4b">FMTObject</a> ()</td></tr>
+<tr class="memdesc:a5989964c8bdbc4650e238ceba3415f4b inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a5989964c8bdbc4650e238ceba3415f4b inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab955c1638c5971685437e031dface505 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ab955c1638c5971685437e031dface505">~FMTObject</a> ()</td></tr>
+<tr class="memdesc:ab955c1638c5971685437e031dface505 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default virtual destructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ab955c1638c5971685437e031dface505 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8697555450e32d14ac2aca96c970e1e1 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8697555450e32d14ac2aca96c970e1e1">FMTObject</a> (const std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt; exhandler)</td></tr>
+<tr class="memdesc:a8697555450e32d14ac2aca96c970e1e1 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> passing in the exception handler of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a8697555450e32d14ac2aca96c970e1e1 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e850d7a3cc1b15284cae261cb795807 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6e850d7a3cc1b15284cae261cb795807">FMTObject</a> (const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a6e850d7a3cc1b15284cae261cb795807 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a6e850d7a3cc1b15284cae261cb795807 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce285348228339cd64ee518af1f1a79 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a2ce285348228339cd64ee518af1f1a79">operator=</a> (const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a2ce285348228339cd64ee518af1f1a79 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a2ce285348228339cd64ee518af1f1a79 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40cb486c0035d4378f9f8292990bc3a inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae40cb486c0035d4378f9f8292990bc3a">passInLogger</a> (const std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> &gt; &amp;logger)</td></tr>
+<tr class="memdesc:ae40cb486c0035d4378f9f8292990bc3a inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in the logger of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ae40cb486c0035d4378f9f8292990bc3a inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a87b73d1ec28b2c15ad3534fa116d6a inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a4a87b73d1ec28b2c15ad3534fa116d6a">passInExceptionHandler</a> (const std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt; &amp;exhandler)</td></tr>
+<tr class="memdesc:a4a87b73d1ec28b2c15ad3534fa116d6a inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in the exception handler of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a4a87b73d1ec28b2c15ad3534fa116d6a inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66db881eed723c434a95abb7a2229c6b inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a66db881eed723c434a95abb7a2229c6b">redirectLogToFile</a> (const std::string &amp;location)</td></tr>
+<tr class="memdesc:a66db881eed723c434a95abb7a2229c6b inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect the log to a specific file, appending to it.  <br /></td></tr>
+<tr class="separator:a66db881eed723c434a95abb7a2229c6b inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dca4d93c27fc39d0cb69ad1706bb810 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5dca4d93c27fc39d0cb69ad1706bb810">setDefaultLogger</a> ()</td></tr>
+<tr class="memdesc:a5dca4d93c27fc39d0cb69ad1706bb810 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a default logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a5dca4d93c27fc39d0cb69ad1706bb810 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae177a4815e2cc6ee213c33a84b232341 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae177a4815e2cc6ee213c33a84b232341">setQuietLogger</a> ()</td></tr>
+<tr class="memdesc:ae177a4815e2cc6ee213c33a84b232341 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a quiet logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ae177a4815e2cc6ee213c33a84b232341 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce57b52ae4dad4e732828865eef9fc0 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6ce57b52ae4dad4e732828865eef9fc0">setTaskLogger</a> ()</td></tr>
+<tr class="memdesc:a6ce57b52ae4dad4e732828865eef9fc0 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a task logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a6ce57b52ae4dad4e732828865eef9fc0 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250d795d6a207b8908e66469d4d40d2d inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a250d795d6a207b8908e66469d4d40d2d">setDebugLogger</a> ()</td></tr>
+<tr class="memdesc:a250d795d6a207b8908e66469d4d40d2d inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a debug logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a250d795d6a207b8908e66469d4d40d2d inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e828d3cce573889111b5a8807be8420 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a9e828d3cce573889111b5a8807be8420">setDefaultExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a9e828d3cce573889111b5a8807be8420 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a default exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a9e828d3cce573889111b5a8807be8420 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0645f42b4e16e0129a255502c619e763 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a0645f42b4e16e0129a255502c619e763">setQuietExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a0645f42b4e16e0129a255502c619e763 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a quiet exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a0645f42b4e16e0129a255502c619e763 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef2e1a565e81d4801dad5aa755a0331 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#afef2e1a565e81d4801dad5aa755a0331">setDebugExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:afef2e1a565e81d4801dad5aa755a0331 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a debug exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:afef2e1a565e81d4801dad5aa755a0331 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541d8bc7ad3b4daf0c3bd940ab3657fb inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a541d8bc7ad3b4daf0c3bd940ab3657fb">setFreeExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a541d8bc7ad3b4daf0c3bd940ab3657fb inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a free exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a541d8bc7ad3b4daf0c3bd940ab3657fb inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2556e9eb9800e31966c291c5e58c3d8 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae2556e9eb9800e31966c291c5e58c3d8">disableNestedExceptions</a> ()</td></tr>
+<tr class="memdesc:ae2556e9eb9800e31966c291c5e58c3d8 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the nested exception throw of the exception handler.  <br /></td></tr>
+<tr class="separator:ae2556e9eb9800e31966c291c5e58c3d8 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5666a3ee1b26fd5adffa35cead4ec98e inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5666a3ee1b26fd5adffa35cead4ec98e">enableNestedExceptions</a> ()</td></tr>
+<tr class="memdesc:a5666a3ee1b26fd5adffa35cead4ec98e inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the nested exception throw of the exception handler.  <br /></td></tr>
+<tr class="separator:a5666a3ee1b26fd5adffa35cead4ec98e inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42040b7eee6eeb90bb8ae2d4c8eb8fc inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ad42040b7eee6eeb90bb8ae2d4c8eb8fc">setErrorsToWarnings</a> (const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;errors)</td></tr>
+<tr class="memdesc:ad42040b7eee6eeb90bb8ae2d4c8eb8fc inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a list of errors to be cast to warnings on the exception handler.  <br /></td></tr>
+<tr class="separator:ad42040b7eee6eeb90bb8ae2d4c8eb8fc inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33a4b0a35f673fbf5b36767d2309359 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#af33a4b0a35f673fbf5b36767d2309359">setMaxWarningsBeforeSilenced</a> (const size_t &amp;maxwarningcount)</td></tr>
+<tr class="memdesc:af33a4b0a35f673fbf5b36767d2309359 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of warnings raised before being silenced.  <br /></td></tr>
+<tr class="separator:af33a4b0a35f673fbf5b36767d2309359 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3976d191c15cdf6d244041617b9e5c inherit pub_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:aba3976d191c15cdf6d244041617b9e5c inherit pub_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#aba3976d191c15cdf6d244041617b9e5c">serialize</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="separator:aba3976d191c15cdf6d244041617b9e5c inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a7ef3ec3ddca2ab0692f5b193f07521ef"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTyieldrequest.html#a7ef3ec3ddca2ab0692f5b193f07521ef">FMTyields</a></td></tr>
-<tr class="separator:a7ef3ec3ddca2ab0692f5b193f07521ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17bc6db66ab6a379db3dff83457c27ab"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldRequest.html#a17bc6db66ab6a379db3dff83457c27ab">FMTYields</a></td></tr>
+<tr class="separator:a17bc6db66ab6a379db3dff83457c27ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a41e9c6a09ec5a8776a1783f50cd685c3">getruntimelocation</a> ()</td></tr>
-<tr class="separator:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a9e8ae1c63c33235ce7eec85e29f5b871">getavailablememory</a> ()</td></tr>
-<tr class="separator:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
-<tr class="memitem:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a055e793199bfade8b06bc4850068b9a1">forcesave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
-<tr class="separator:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
-<tr class="memitem:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae956a19b19717b32398b7f9964078a78">forceload</a> (Archive &amp;ar, const unsigned int version)</td></tr>
-<tr class="separator:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63052f0f74d5884e111d7dd9e8f0cc7d inherit pro_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a63052f0f74d5884e111d7dd9e8f0cc7d">checksignals</a> () const</td></tr>
-<tr class="separator:a63052f0f74d5884e111d7dd9e8f0cc7d inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6f90ea44d4007946cc7bf0e145f7b5 inherit pro_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#abf6f90ea44d4007946cc7bf0e145f7b5">setCPLhandler</a> ()</td></tr>
-<tr class="separator:abf6f90ea44d4007946cc7bf0e145f7b5 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ab87002d0212cf0b244771760a6ec56d1">getclock</a> ()</td></tr>
-<tr class="separator:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
-<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a4df7cf79433c24ff1f98a4521c02e155">getduration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
-<tr class="separator:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af08563fdef482c39ad0cbf3a5018bfa0">getdurationinseconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
-<tr class="separator:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae67617ff7aedd99989a071bcf11206f2">_exhandler</a></td></tr>
-<tr class="memdesc:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <br /></td></tr>
-<tr class="separator:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a52f73fe80b34fae5f277ec5135d1d22d">_logger</a></td></tr>
-<tr class="memdesc:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <br /></td></tr>
-<tr class="separator:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a1093d2ceaa87c08bc17c3d8f9df16f91 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a1093d2ceaa87c08bc17c3d8f9df16f91">getLogger</a> ()</td></tr>
+<tr class="memdesc:a1093d2ceaa87c08bc17c3d8f9df16f91 inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to the actual logger.  <br /></td></tr>
+<tr class="separator:a1093d2ceaa87c08bc17c3d8f9df16f91 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c4fc499c4a6ca29d12d3631a27a85f inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a24c4fc499c4a6ca29d12d3631a27a85f">getExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a24c4fc499c4a6ca29d12d3631a27a85f inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to the actual exception handler.  <br /></td></tr>
+<tr class="separator:a24c4fc499c4a6ca29d12d3631a27a85f inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820b103f83923fe3868af1addd493a07 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a820b103f83923fe3868af1addd493a07">getRuntimeLocation</a> ()</td></tr>
+<tr class="memdesc:a820b103f83923fe3868af1addd493a07 inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the location of the FMT shared library.  <br /></td></tr>
+<tr class="separator:a820b103f83923fe3868af1addd493a07 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8594b45558117e221cddcc22d5b391b4 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8594b45558117e221cddcc22d5b391b4">getAvailableMemory</a> ()</td></tr>
+<tr class="memdesc:a8594b45558117e221cddcc22d5b391b4 inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the available memory in bytes.  <br /></td></tr>
+<tr class="separator:a8594b45558117e221cddcc22d5b391b4 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12becc87d9673dbed45fede598e1159 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#af12becc87d9673dbed45fede598e1159">setTerminateStack</a> ()</td></tr>
+<tr class="memdesc:af12becc87d9673dbed45fede598e1159 inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">will write the stack in the log when terminate called and raise a function failed.  <br /></td></tr>
+<tr class="separator:af12becc87d9673dbed45fede598e1159 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3459117ab05b91a388d9038861612ef inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ac3459117ab05b91a388d9038861612ef">setAbortStack</a> ()</td></tr>
+<tr class="memdesc:ac3459117ab05b91a388d9038861612ef inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">will write the stack in the log when abort called with SIGABRT and raise a function failed.  <br /></td></tr>
+<tr class="separator:ac3459117ab05b91a388d9038861612ef inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a18b765e433d09e77e6ba0b71b878aa17">forceSave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
+<tr class="memdesc:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the serialization to save useful information, which the default <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> serialization does not.  <br /></td></tr>
+<tr class="separator:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f86594af021e33785e50f02d9e0dc2d inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:a2f86594af021e33785e50f02d9e0dc2d inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a2f86594af021e33785e50f02d9e0dc2d">forceLoad</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="memdesc:a2f86594af021e33785e50f02d9e0dc2d inherit pro_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the serialization to load useful information, which the default <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> serialization does not.  <br /></td></tr>
+<tr class="separator:a2f86594af021e33785e50f02d9e0dc2d inherit pro_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715adec36e069e8da16e6b654036c1d3 inherit pro_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a715adec36e069e8da16e6b654036c1d3">checkSignals</a> () const</td></tr>
+<tr class="memdesc:a715adec36e069e8da16e6b654036c1d3 inherit pro_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the user has sent a ctrl-c signal using boost::python to FMT.  <br /></td></tr>
+<tr class="separator:a715adec36e069e8da16e6b654036c1d3 inherit pro_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfd3485fef202f7761386c5da8616dd inherit pro_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a4bfd3485fef202f7761386c5da8616dd">setCplHandler</a> ()</td></tr>
+<tr class="memdesc:a4bfd3485fef202f7761386c5da8616dd inherit pro_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the FMT exception handler to the GDAL exception handler (GDAL only).  <br /></td></tr>
+<tr class="separator:a4bfd3485fef202f7761386c5da8616dd inherit pro_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a6af49a6bea8633e43e507b22af0058bd inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6af49a6bea8633e43e507b22af0058bd">getClock</a> ()</td></tr>
+<tr class="memdesc:a6af49a6bea8633e43e507b22af0058bd inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a clock of the current time.  <br /></td></tr>
+<tr class="separator:a6af49a6bea8633e43e507b22af0058bd inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8346ffb6063935898bf385f9c045922c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
+<tr class="memitem:a8346ffb6063935898bf385f9c045922c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8346ffb6063935898bf385f9c045922c">getDuration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="memdesc:a8346ffb6063935898bf385f9c045922c inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time elapsed since a start clock as a double.  <br /></td></tr>
+<tr class="separator:a8346ffb6063935898bf385f9c045922c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00269b861be5d6f63d9063d3b0f9dc53 inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a00269b861be5d6f63d9063d3b0f9dc53">getDurationInSeconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="memdesc:a00269b861be5d6f63d9063d3b0f9dc53 inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time elapsed since a start clock in seconds as a string.  <br /></td></tr>
+<tr class="separator:a00269b861be5d6f63d9063d3b0f9dc53 inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadaa40fdf3ad161e50ffde0da75b45a inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#abadaa40fdf3ad161e50ffde0da75b45a">_logStack</a> ()</td></tr>
+<tr class="memdesc:abadaa40fdf3ad161e50ffde0da75b45a inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the stack trace...  <br /></td></tr>
+<tr class="separator:abadaa40fdf3ad161e50ffde0da75b45a inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa580ed0261751bf0c893fa624ad9477c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#aa580ed0261751bf0c893fa624ad9477c">_terminate</a> ()</td></tr>
+<tr class="memdesc:aa580ed0261751bf0c893fa624ad9477c inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise an error with the boost stacktrace.  <br /></td></tr>
+<tr class="separator:aa580ed0261751bf0c893fa624ad9477c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad585fe664920bb6246fe453242e4cd3d inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ad585fe664920bb6246fe453242e4cd3d">_abort</a> (int p_signal)</td></tr>
+<tr class="memdesc:ad585fe664920bb6246fe453242e4cd3d inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise an error with the boost stacktrace on abort.  <br /></td></tr>
+<tr class="separator:ad585fe664920bb6246fe453242e4cd3d inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a540a432760681024cf9a5e15956613a2 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a540a432760681024cf9a5e15956613a2">_exhandler</a></td></tr>
+<tr class="memdesc:a540a432760681024cf9a5e15956613a2 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <br /></td></tr>
+<tr class="separator:a540a432760681024cf9a5e15956613a2 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c5f2112616efab38c81ad16f93a364 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a44c5f2112616efab38c81ad16f93a364">_logger</a></td></tr>
+<tr class="memdesc:a44c5f2112616efab38c81ad16f93a364 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <br /></td></tr>
+<tr class="separator:a44c5f2112616efab38c81ad16f93a364 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Using a pointer to a given graph and a FMTdevelopement you can create thise class to request yield values. The yield will be calculated using the <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a> class but also using the FMTgraph so the location of the actual state of the FMTdevelopement.You can also build a yield request without anyreference to a graph for calculatin yield values. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3904893038483be7f502f76ba3d2a59a" name="a3904893038483be7f502f76ba3d2a59a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3904893038483be7f502f76ba3d2a59a">&#9670;&#160;</a></span>FMTyieldrequest() <span class="overload">[1/5]</span></h2>
+<div class="textblock"><p>Request for yield values using a development and optionally a graph vertex. </p>
+<p>The yield is calculated using the <a class="el" href="classCore_1_1FMTYields.html" title="FMTList containing multiple yield handlers as seen in the yield section, holding the information rela...">FMTYields</a> class and the graph to locate the actual state of the development. A request can also be built without any reference to a graph. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6c1e2825bbfe35c1afee70b394069f01" name="a6c1e2825bbfe35c1afee70b394069f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1e2825bbfe35c1afee70b394069f01">&#9670;&#160;</a></span>const_iterator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTyieldrequest::FMTyieldrequest </td>
+          <td class="memname">typedef std::vector&lt;std::pair&lt;<a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>,std::unique_ptr&lt;<a class="el" href="classCore_1_1FMTYieldHandler.html">FMTYieldHandler</a>&gt;&gt;&gt;::const_iterator <a class="el" href="classCore_1_1FMTYieldRequest.html#a6c1e2825bbfe35c1afee70b394069f01">Core::FMTYieldRequest::const_iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a295580d479fc9051db1f6eabea8f5b69" name="a295580d479fc9051db1f6eabea8f5b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295580d479fc9051db1f6eabea8f5b69">&#9670;&#160;</a></span>FMTYieldRequest() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::FMTYieldRequest::FMTYieldRequest </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;&#160;</td>
           <td class="paramname"><em>ldevelopment</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">Graph::FMTgraphvertextoyield</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">Graph::FMTGraphVertexToYield</a> &amp;&#160;</td>
           <td class="paramname"><em>lgraphvertex</em>&#160;</td>
         </tr>
         <tr>
@@ -229,24 +320,33 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a yield request from a development and a graph vertex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ldevelopment</td><td>the development. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lgraphvertex</td><td>the graph vertex to yield. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a30721eb3c97e09c18eb82be42a309743" name="a30721eb3c97e09c18eb82be42a309743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30721eb3c97e09c18eb82be42a309743">&#9670;&#160;</a></span>FMTyieldrequest() <span class="overload">[2/5]</span></h2>
+<a id="a21dcc66f7d980bf32c51a649b14385b3" name="a21dcc66f7d980bf32c51a649b14385b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21dcc66f7d980bf32c51a649b14385b3">&#9670;&#160;</a></span>FMTYieldRequest() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTyieldrequest::FMTyieldrequest </td>
+          <td class="memname">Core::FMTYieldRequest::FMTYieldRequest </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;&#160;</td>
           <td class="paramname"><em>ldevelopment</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;&#160;</td>
           <td class="paramname"><em>oldrequest</em>&#160;</td>
         </tr>
         <tr>
@@ -257,28 +357,45 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a yield request from a development and a previous request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ldevelopment</td><td>the development. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oldrequest</td><td>the previous request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a2bea6c94f33a921783f39b98c7e58160" name="a2bea6c94f33a921783f39b98c7e58160"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bea6c94f33a921783f39b98c7e58160">&#9670;&#160;</a></span>FMTyieldrequest() <span class="overload">[3/5]</span></h2>
+<a id="aed7c30e2743988665f82846b99152159" name="aed7c30e2743988665f82846b99152159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7c30e2743988665f82846b99152159">&#9670;&#160;</a></span>FMTYieldRequest() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTyieldrequest::FMTyieldrequest </td>
+          <td class="memname">Core::FMTYieldRequest::FMTYieldRequest </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;&#160;</td>
           <td class="paramname"><em>ldevelopment</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a yield request from a development, without reference to a graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ldevelopment</td><td>the development. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aa7a6e3484dc262e7c581dba4781cf8c5" name="aa7a6e3484dc262e7c581dba4781cf8c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7a6e3484dc262e7c581dba4781cf8c5">&#9670;&#160;</a></span>FMTyieldrequest() <span class="overload">[4/5]</span></h2>
+<a id="a9035ac4cc320396b7016ed750e7d535b" name="a9035ac4cc320396b7016ed750e7d535b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9035ac4cc320396b7016ed750e7d535b">&#9670;&#160;</a></span>FMTYieldRequest() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +404,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTyieldrequest::FMTyieldrequest </td>
+          <td class="memname">Core::FMTYieldRequest::FMTYieldRequest </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -300,10 +417,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a>. </p>
+
 </div>
 </div>
-<a id="a673ffddb25fe046c2960ced267884aef" name="a673ffddb25fe046c2960ced267884aef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a673ffddb25fe046c2960ced267884aef">&#9670;&#160;</a></span>FMTyieldrequest() <span class="overload">[5/5]</span></h2>
+<a id="a9785c3b46e38fa61d04964a999b9e7e2" name="a9785c3b46e38fa61d04964a999b9e7e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9785c3b46e38fa61d04964a999b9e7e2">&#9670;&#160;</a></span>FMTYieldRequest() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,9 +431,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTyieldrequest::FMTyieldrequest </td>
+          <td class="memname">Core::FMTYieldRequest::FMTYieldRequest </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -325,18 +444,26 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aabf07445d65abc768f759b56d811768c" name="aabf07445d65abc768f759b56d811768c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabf07445d65abc768f759b56d811768c">&#9670;&#160;</a></span>getdatas()</h2>
+<a id="a844b54e97dedc02854cc41ac9edbb585" name="a844b54e97dedc02854cc41ac9edbb585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844b54e97dedc02854cc41ac9edbb585">&#9670;&#160;</a></span>getDatas()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; const std::unique_ptr&lt; <a class="el" href="classCore_1_1FMTyieldhandler.html">FMTyieldhandler</a> &gt; * &gt; &amp; Core::FMTyieldrequest::getdatas </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="classCore_1_1FMTYieldRequest.html#a6c1e2825bbfe35c1afee70b394069f01">const_iterator</a> &gt; &amp; Core::FMTYieldRequest::getDatas </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -344,16 +471,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the yield data iterators of the request. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the yield data iterators. </dd></dl>
+
 </div>
 </div>
-<a id="acdfea84b2972ae569f6677b949be71a6" name="acdfea84b2972ae569f6677b949be71a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdfea84b2972ae569f6677b949be71a6">&#9670;&#160;</a></span>getdevelopment()</h2>
+<a id="af8a8381014edce909b91e5cd6dfeac22" name="af8a8381014edce909b91e5cd6dfeac22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a8381014edce909b91e5cd6dfeac22">&#9670;&#160;</a></span>getDevelopment()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp; Core::FMTyieldrequest::getdevelopment </td>
+          <td class="memname">const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp; Core::FMTYieldRequest::getDevelopment </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -361,16 +491,46 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the development of the request. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the development. </dd></dl>
+
 </div>
 </div>
-<a id="a60b696f8f08eb0ec453afc856171369a" name="a60b696f8f08eb0ec453afc856171369a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60b696f8f08eb0ec453afc856171369a">&#9670;&#160;</a></span>getresumemask()</h2>
+<a id="a736e5cc89ad1dfcac9043a1271107135" name="a736e5cc89ad1dfcac9043a1271107135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a736e5cc89ad1dfcac9043a1271107135">&#9670;&#160;</a></span>getFirstSeen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp; Core::FMTyieldrequest::getresumemask </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTYieldRequest.html#a6c1e2825bbfe35c1afee70b394069f01">const_iterator</a> Core::FMTYieldRequest::getFirstSeen </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_yield</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the first data iterator for a given yield. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_yield</td><td>the yield name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the first data iterator for the yield. </dd></dl>
+
+</div>
+</div>
+<a id="acc9a4802a1ce690530455b33282b163f" name="acc9a4802a1ce690530455b33282b163f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc9a4802a1ce690530455b33282b163f">&#9670;&#160;</a></span>getResumeMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp; Core::FMTYieldRequest::getResumeMask </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -378,16 +538,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the resume mask of the request. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the resume mask. </dd></dl>
+
 </div>
 </div>
-<a id="aa3a3ff0270c34eb8ce8560f930c647f3" name="aa3a3ff0270c34eb8ce8560f930c647f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3a3ff0270c34eb8ce8560f930c647f3">&#9670;&#160;</a></span>getvertexgraphinfo()</h2>
+<a id="aee00ff489f3764611b4526e8e6fa0297" name="aee00ff489f3764611b4526e8e6fa0297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee00ff489f3764611b4526e8e6fa0297">&#9670;&#160;</a></span>getVertexGraphInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classGraph_1_1FMTgraphvertextoyield.html">Graph::FMTgraphvertextoyield</a> * Core::FMTyieldrequest::getvertexgraphinfo </td>
+          <td class="memname">const <a class="el" href="classGraph_1_1FMTGraphVertexToYield.html">Graph::FMTGraphVertexToYield</a> * Core::FMTYieldRequest::getVertexGraphInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -395,10 +558,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the graph vertex information of the request. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the graph vertex to yield. </dd></dl>
+
 </div>
 </div>
-<a id="a8d3c19a681db240b1cae9fa44bc88625" name="a8d3c19a681db240b1cae9fa44bc88625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d3c19a681db240b1cae9fa44bc88625">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a87ceb1aad03902c7f2e45be75901e528" name="a87ceb1aad03902c7f2e45be75901e528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ceb1aad03902c7f2e45be75901e528">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,9 +573,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a> &amp; Core::FMTyieldrequest::operator= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp; Core::FMTYieldRequest::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTyieldrequest.html">FMTyieldrequest</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -421,11 +587,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex.">FMTYieldRequest</a>. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a7ef3ec3ddca2ab0692f5b193f07521ef" name="a7ef3ec3ddca2ab0692f5b193f07521ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ef3ec3ddca2ab0692f5b193f07521ef">&#9670;&#160;</a></span>FMTyields</h2>
+<a id="a17bc6db66ab6a379db3dff83457c27ab" name="a17bc6db66ab6a379db3dff83457c27ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17bc6db66ab6a379db3dff83457c27ab">&#9670;&#160;</a></span>FMTYields</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,7 +609,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classCore_1_1FMTyields.html">FMTyields</a></td>
+          <td class="memname">friend class <a class="el" href="classCore_1_1FMTYields.html">FMTYields</a></td>
         </tr>
       </table>
   </td>
@@ -447,7 +622,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTyieldrequest_8hpp_source.html">FMTyieldrequest.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTYieldRequest_8h_source.html">FMTYieldRequest.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

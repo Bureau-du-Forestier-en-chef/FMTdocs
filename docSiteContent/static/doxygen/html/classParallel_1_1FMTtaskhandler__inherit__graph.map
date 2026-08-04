@@ -1,4 +1,4 @@
-<map id="Parallel::FMTtaskhandler" name="Parallel::FMTtaskhandler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,171,107"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="29,5,147,32"/>
+<map id="Parallel::FMTTaskHandler" name="Parallel::FMTTaskHandler">
+<area shape="rect" id="node1" title="Main class for running concurrent tasks at the same time." alt="" coords="5,80,176,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="30,5,151,32"/>
 </map>

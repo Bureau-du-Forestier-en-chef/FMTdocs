@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classHeuristics_1_1FMToperatingarea.html" title=" " alt="" coords="5,31,197,57"/>
-<area shape="rect" id="node2" href="$classHeuristics_1_1FMToperatingareaclusterbinary.html" title=" " alt="" coords="245,5,510,32"/>
-<area shape="rect" id="node3" href="$classHeuristics_1_1FMToperatingareascheme.html" title=" " alt="" coords="259,56,496,83"/>
+<area shape="rect" id="node1" href="$classGraph_1_1FMTGraph.html" title=" " alt="" coords="5,5,218,64"/>
+<area shape="rect" id="node2" href="$classGraph_1_1FMTLineGraph.html" title="Simple graph where each action generates a single new vertex (0&#45;—0&#45;—0&#45;—0), used with FMTLayer to simu..." alt="" coords="266,21,415,48"/>
 </map>

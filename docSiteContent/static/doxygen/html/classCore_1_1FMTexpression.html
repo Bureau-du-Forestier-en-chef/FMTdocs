@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTexpression Class Reference</title>
+<title>FMT: Core::FMTExpression Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,51 +71,66 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classCore_1_1FMTexpression-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTexpression Class Reference</div></div>
+<a href="classCore_1_1FMTExpression-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTExpression Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTexpression_8hpp_source.html">FMTexpression.hpp</a>&gt;</code></p>
+<p>Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.  
+ <a href="classCore_1_1FMTExpression.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTExpression_8h_source.html">FMTExpression.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e48d377811d4bb8db6623b04c00928f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#a1e48d377811d4bb8db6623b04c00928f">FMTexpression</a> ()</td></tr>
-<tr class="separator:a1e48d377811d4bb8db6623b04c00928f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff9c89b513c21a5981bffa9b21ec2c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#a6ff9c89b513c21a5981bffa9b21ec2c8">FMTexpression</a> (const std::vector&lt; std::string &gt; &amp;lsources)</td></tr>
-<tr class="separator:a6ff9c89b513c21a5981bffa9b21ec2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d6580cf005ffc676f6590ae7941c121"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#a9d6580cf005ffc676f6590ae7941c121">FMTexpression</a> (const <a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a> &amp;rhs)</td></tr>
-<tr class="separator:a9d6580cf005ffc676f6590ae7941c121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaad6a9d730eb1d599985b93fbaf1d9b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#aaad6a9d730eb1d599985b93fbaf1d9b2">simplify</a> (std::map&lt; std::string, double &gt; &amp;values) const</td></tr>
-<tr class="separator:aaad6a9d730eb1d599985b93fbaf1d9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9280ac9e20e752e60fc020aab6537158"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#a9280ac9e20e752e60fc020aab6537158">getvariables</a> () const</td></tr>
-<tr class="separator:a9280ac9e20e752e60fc020aab6537158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab43345e9d96d86150353a8c3a7783779"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#ab43345e9d96d86150353a8c3a7783779">shuntingyard</a> (const std::map&lt; std::string, double &gt; &amp;mapping) const</td></tr>
-<tr class="separator:ab43345e9d96d86150353a8c3a7783779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a949373d81b88ff5c2718ad624a145144"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#a949373d81b88ff5c2718ad624a145144">getinfix</a> () const</td></tr>
-<tr class="separator:a949373d81b88ff5c2718ad624a145144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65063276ab67ca8fb15f002cc2c6524c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#a65063276ab67ca8fb15f002cc2c6524c">operator std::string</a> () const</td></tr>
-<tr class="separator:a65063276ab67ca8fb15f002cc2c6524c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a882e6727552a01dc99a02958f2b30b6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#a882e6727552a01dc99a02958f2b30b6c">operator=</a> (const <a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a> &amp;rhs)</td></tr>
-<tr class="separator:a882e6727552a01dc99a02958f2b30b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb643da757ebbdfc99c7b5a77f3871ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTexpression.html#aeb643da757ebbdfc99c7b5a77f3871ed">~FMTexpression</a> ()=default</td></tr>
-<tr class="separator:aeb643da757ebbdfc99c7b5a77f3871ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9e9b15a5cba23d0cbc5c4260799f55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#a5a9e9b15a5cba23d0cbc5c4260799f55">FMTExpression</a> ()</td></tr>
+<tr class="memdesc:a5a9e9b15a5cba23d0cbc5c4260799f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>.  <br /></td></tr>
+<tr class="separator:a5a9e9b15a5cba23d0cbc5c4260799f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31759002aad77c6ccf40ba33a455302"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#aa31759002aad77c6ccf40ba33a455302">FMTExpression</a> (const std::vector&lt; std::string &gt; &amp;lsources)</td></tr>
+<tr class="memdesc:aa31759002aad77c6ccf40ba33a455302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a> from a vector of tokens.  <br /></td></tr>
+<tr class="separator:aa31759002aad77c6ccf40ba33a455302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c64f798557f59314c9fcbbab7f23b16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#a9c64f798557f59314c9fcbbab7f23b16">FMTExpression</a> (const <a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a9c64f798557f59314c9fcbbab7f23b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>.  <br /></td></tr>
+<tr class="separator:a9c64f798557f59314c9fcbbab7f23b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f53b515bd2a8590306282e27f91f49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#a31f53b515bd2a8590306282e27f91f49">simplify</a> (std::map&lt; std::string, double &gt; &amp;values) const</td></tr>
+<tr class="memdesc:a31f53b515bd2a8590306282e27f91f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a simplified expression using the given variable values.  <br /></td></tr>
+<tr class="separator:a31f53b515bd2a8590306282e27f91f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5627059b9575e96b79b91c0a99394a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#acf5627059b9575e96b79b91c0a99394a">getVariables</a> () const</td></tr>
+<tr class="memdesc:acf5627059b9575e96b79b91c0a99394a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the variables of the expression.  <br /></td></tr>
+<tr class="separator:acf5627059b9575e96b79b91c0a99394a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3196c4e2ca31e62fc7773eee838fc3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#add3196c4e2ca31e62fc7773eee838fc3">shuntingYard</a> (const std::map&lt; std::string, double &gt; &amp;mapping) const</td></tr>
+<tr class="memdesc:add3196c4e2ca31e62fc7773eee838fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the expression using the shunting yard algorithm.  <br /></td></tr>
+<tr class="separator:add3196c4e2ca31e62fc7773eee838fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba08596cf2481ccb40063dc5edef9c5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#a7ba08596cf2481ccb40063dc5edef9c5">getInFix</a> () const</td></tr>
+<tr class="memdesc:a7ba08596cf2481ccb40063dc5edef9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the infix expression.  <br /></td></tr>
+<tr class="separator:a7ba08596cf2481ccb40063dc5edef9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61fec3f3751911efcdd2f55141a73512"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#a61fec3f3751911efcdd2f55141a73512">operator std::string</a> () const</td></tr>
+<tr class="memdesc:a61fec3f3751911efcdd2f55141a73512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the expression to its string representation.  <br /></td></tr>
+<tr class="separator:a61fec3f3751911efcdd2f55141a73512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab026a81698c6c596a178680c10f0e1da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#ab026a81698c6c596a178680c10f0e1da">operator=</a> (const <a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ab026a81698c6c596a178680c10f0e1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>.  <br /></td></tr>
+<tr class="separator:ab026a81698c6c596a178680c10f0e1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0ae57961db26e42dbc7f8b57537fe2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTExpression.html#a3e0ae57961db26e42dbc7f8b57537fe2">~FMTExpression</a> ()=default</td></tr>
+<tr class="memdesc:a3e0ae57961db26e42dbc7f8b57537fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>.  <br /></td></tr>
+<tr class="separator:a3e0ae57961db26e42dbc7f8b57537fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1e48d377811d4bb8db6623b04c00928f" name="a1e48d377811d4bb8db6623b04c00928f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e48d377811d4bb8db6623b04c00928f">&#9670;&#160;</a></span>FMTexpression() <span class="overload">[1/3]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5a9e9b15a5cba23d0cbc5c4260799f55" name="a5a9e9b15a5cba23d0cbc5c4260799f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9e9b15a5cba23d0cbc5c4260799f55">&#9670;&#160;</a></span>FMTExpression() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTexpression::FMTexpression </td>
+          <td class="memname">Core::FMTExpression::FMTExpression </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -123,16 +138,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Default constructor for <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>. </p>
+
 </div>
 </div>
-<a id="a6ff9c89b513c21a5981bffa9b21ec2c8" name="a6ff9c89b513c21a5981bffa9b21ec2c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff9c89b513c21a5981bffa9b21ec2c8">&#9670;&#160;</a></span>FMTexpression() <span class="overload">[2/3]</span></h2>
+<a id="aa31759002aad77c6ccf40ba33a455302" name="aa31759002aad77c6ccf40ba33a455302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31759002aad77c6ccf40ba33a455302">&#9670;&#160;</a></span>FMTExpression() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTexpression::FMTexpression </td>
+          <td class="memname">Core::FMTExpression::FMTExpression </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>lsources</em></td><td>)</td>
@@ -141,28 +158,44 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a> from a vector of tokens. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lsources</td><td>the tokens of the expression. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a9d6580cf005ffc676f6590ae7941c121" name="a9d6580cf005ffc676f6590ae7941c121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d6580cf005ffc676f6590ae7941c121">&#9670;&#160;</a></span>FMTexpression() <span class="overload">[3/3]</span></h2>
+<a id="a9c64f798557f59314c9fcbbab7f23b16" name="a9c64f798557f59314c9fcbbab7f23b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c64f798557f59314c9fcbbab7f23b16">&#9670;&#160;</a></span>FMTExpression() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTexpression::FMTexpression </td>
+          <td class="memname">Core::FMTExpression::FMTExpression </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aeb643da757ebbdfc99c7b5a77f3871ed" name="aeb643da757ebbdfc99c7b5a77f3871ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb643da757ebbdfc99c7b5a77f3871ed">&#9670;&#160;</a></span>~FMTexpression()</h2>
+<a id="a3e0ae57961db26e42dbc7f8b57537fe2" name="a3e0ae57961db26e42dbc7f8b57537fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0ae57961db26e42dbc7f8b57537fe2">&#9670;&#160;</a></span>~FMTExpression()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +204,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTexpression::~FMTexpression </td>
+          <td class="memname">Core::FMTExpression::~FMTExpression </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -184,17 +217,19 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default destructor for <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a949373d81b88ff5c2718ad624a145144" name="a949373d81b88ff5c2718ad624a145144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a949373d81b88ff5c2718ad624a145144">&#9670;&#160;</a></span>getinfix()</h2>
+<a id="a7ba08596cf2481ccb40063dc5edef9c5" name="a7ba08596cf2481ccb40063dc5edef9c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba08596cf2481ccb40063dc5edef9c5">&#9670;&#160;</a></span>getInFix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; Core::FMTexpression::getinfix </td>
+          <td class="memname">std::vector&lt; std::string &gt; Core::FMTExpression::getInFix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -202,16 +237,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the infix expression. </p>
+<dl class="section return"><dt>Returns</dt><dd>the infix expression. </dd></dl>
+
 </div>
 </div>
-<a id="a9280ac9e20e752e60fc020aab6537158" name="a9280ac9e20e752e60fc020aab6537158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9280ac9e20e752e60fc020aab6537158">&#9670;&#160;</a></span>getvariables()</h2>
+<a id="acf5627059b9575e96b79b91c0a99394a" name="acf5627059b9575e96b79b91c0a99394a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5627059b9575e96b79b91c0a99394a">&#9670;&#160;</a></span>getVariables()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; Core::FMTexpression::getvariables </td>
+          <td class="memname">std::vector&lt; std::string &gt; Core::FMTExpression::getVariables </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -219,16 +257,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the variables of the expression. </p>
+<dl class="section return"><dt>Returns</dt><dd>the variables of the expression. </dd></dl>
+
 </div>
 </div>
-<a id="a65063276ab67ca8fb15f002cc2c6524c" name="a65063276ab67ca8fb15f002cc2c6524c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65063276ab67ca8fb15f002cc2c6524c">&#9670;&#160;</a></span>operator std::string()</h2>
+<a id="a61fec3f3751911efcdd2f55141a73512" name="a61fec3f3751911efcdd2f55141a73512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61fec3f3751911efcdd2f55141a73512">&#9670;&#160;</a></span>operator std::string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTexpression::operator std::string </td>
+          <td class="memname">Core::FMTExpression::operator std::string </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -236,34 +277,46 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Convert the expression to its string representation. </p>
+<dl class="section return"><dt>Returns</dt><dd>the string representation of the expression. </dd></dl>
+
 </div>
 </div>
-<a id="a882e6727552a01dc99a02958f2b30b6c" name="a882e6727552a01dc99a02958f2b30b6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a882e6727552a01dc99a02958f2b30b6c">&#9670;&#160;</a></span>operator=()</h2>
+<a id="ab026a81698c6c596a178680c10f0e1da" name="ab026a81698c6c596a178680c10f0e1da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab026a81698c6c596a178680c10f0e1da">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a> &amp; Core::FMTexpression::operator= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a> &amp; Core::FMTExpression::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTExpression.html" title="Mathematical expression evaluated with the shunting yard algorithm, used in yields and outputs.">FMTExpression</a>. </dd></dl>
+
 </div>
 </div>
-<a id="ab43345e9d96d86150353a8c3a7783779" name="ab43345e9d96d86150353a8c3a7783779"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab43345e9d96d86150353a8c3a7783779">&#9670;&#160;</a></span>shuntingyard()</h2>
+<a id="add3196c4e2ca31e62fc7773eee838fc3" name="add3196c4e2ca31e62fc7773eee838fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3196c4e2ca31e62fc7773eee838fc3">&#9670;&#160;</a></span>shuntingYard()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Core::FMTexpression::shuntingyard </td>
+          <td class="memname">double Core::FMTExpression::shuntingYard </td>
           <td>(</td>
           <td class="paramtype">const std::map&lt; std::string, double &gt; &amp;&#160;</td>
           <td class="paramname"><em>mapping</em></td><td>)</td>
@@ -272,16 +325,25 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Evaluate the expression using the shunting yard algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mapping</td><td>the values of the variables. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of the expression. </dd></dl>
+
 </div>
 </div>
-<a id="aaad6a9d730eb1d599985b93fbaf1d9b2" name="aaad6a9d730eb1d599985b93fbaf1d9b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaad6a9d730eb1d599985b93fbaf1d9b2">&#9670;&#160;</a></span>simplify()</h2>
+<a id="a31f53b515bd2a8590306282e27f91f49" name="a31f53b515bd2a8590306282e27f91f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f53b515bd2a8590306282e27f91f49">&#9670;&#160;</a></span>simplify()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTexpression.html">FMTexpression</a> Core::FMTexpression::simplify </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTExpression.html">FMTExpression</a> Core::FMTExpression::simplify </td>
           <td>(</td>
           <td class="paramtype">std::map&lt; std::string, double &gt; &amp;&#160;</td>
           <td class="paramname"><em>values</em></td><td>)</td>
@@ -290,10 +352,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a simplified expression using the given variable values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">values</td><td>the values of the variables. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the simplified expression. </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTexpression_8hpp_source.html">FMTexpression.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTExpression_8h_source.html">FMTExpression.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

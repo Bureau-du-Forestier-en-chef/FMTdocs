@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Models::FMTserializablematrix Class Reference</title>
+<title>FMT: Models::FMTSerializableMatrix Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,88 +71,107 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceModels.html">Models</a></li><li class="navelem"><a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceModels.html">Models</a></li><li class="navelem"><a class="el" href="classModels_1_1FMTSerializableMatrix.html">FMTSerializableMatrix</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classModels_1_1FMTserializablematrix-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Models::FMTserializablematrix Class Reference</div></div>
+<a href="classModels_1_1FMTSerializableMatrix-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Models::FMTSerializableMatrix Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTserializablematrix_8hpp_source.html">FMTserializablematrix.hpp</a>&gt;</code></p>
+<p>Helper for the serialization of an OSI solver interface matrix.  
+ <a href="classModels_1_1FMTSerializableMatrix.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTSerializableMatrix_8h_source.html">FMTSerializableMatrix.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afab964b7256c8e01dfa6945ca97dba7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTserializablematrix.html#afab964b7256c8e01dfa6945ca97dba7a">FMTserializablematrix</a> ()</td></tr>
-<tr class="separator:afab964b7256c8e01dfa6945ca97dba7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8621590430f1516d5da4fa8626edea21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTserializablematrix.html#a8621590430f1516d5da4fa8626edea21">FMTserializablematrix</a> (const <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> &amp;rhs)</td></tr>
-<tr class="separator:a8621590430f1516d5da4fa8626edea21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f36335c4cb7ed1462e50b03fa28e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTserializablematrix.html#a96f36335c4cb7ed1462e50b03fa28e49">operator=</a> (const <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> &amp;rhs)</td></tr>
-<tr class="separator:a96f36335c4cb7ed1462e50b03fa28e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc6719f7c9083a88706c71d26264f6be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTserializablematrix.html#adc6719f7c9083a88706c71d26264f6be">FMTserializablematrix</a> (const std::shared_ptr&lt; OsiSolverInterface &gt; &amp;solverinterface)</td></tr>
-<tr class="separator:adc6719f7c9083a88706c71d26264f6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68d426b58a45cf099f4097f4a4a1aecd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTserializablematrix.html#a68d426b58a45cf099f4097f4a4a1aecd">setmatrix</a> (std::shared_ptr&lt; OsiSolverInterface &gt; &amp;solverinterface) const</td></tr>
-<tr class="separator:a68d426b58a45cf099f4097f4a4a1aecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1c45b5a4cdc739e5c2d48818a8e15b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTserializablematrix.html#afe1c45b5a4cdc739e5c2d48818a8e15b">~FMTserializablematrix</a> ()</td></tr>
-<tr class="separator:afe1c45b5a4cdc739e5c2d48818a8e15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5577e0cc28b0794cf8988debd6858f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTSerializableMatrix.html#a8b5577e0cc28b0794cf8988debd6858f">FMTSerializableMatrix</a> ()</td></tr>
+<tr class="memdesc:a8b5577e0cc28b0794cf8988debd6858f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>.  <br /></td></tr>
+<tr class="separator:a8b5577e0cc28b0794cf8988debd6858f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a227fafb65818e798aa2f52ff20212"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTSerializableMatrix.html#a30a227fafb65818e798aa2f52ff20212">FMTSerializableMatrix</a> (const <a class="el" href="classModels_1_1FMTSerializableMatrix.html">FMTSerializableMatrix</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a30a227fafb65818e798aa2f52ff20212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>.  <br /></td></tr>
+<tr class="separator:a30a227fafb65818e798aa2f52ff20212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b561b91ccb7843d2c7b0cba623bce2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTSerializableMatrix.html">FMTSerializableMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTSerializableMatrix.html#a44b561b91ccb7843d2c7b0cba623bce2">operator=</a> (const <a class="el" href="classModels_1_1FMTSerializableMatrix.html">FMTSerializableMatrix</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a44b561b91ccb7843d2c7b0cba623bce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>.  <br /></td></tr>
+<tr class="separator:a44b561b91ccb7843d2c7b0cba623bce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5549bbc028572f538855cd7c29145889"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTSerializableMatrix.html#a5549bbc028572f538855cd7c29145889">FMTSerializableMatrix</a> (const std::shared_ptr&lt; OsiSolverInterface &gt; &amp;solverinterface)</td></tr>
+<tr class="memdesc:a5549bbc028572f538855cd7c29145889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a serializable matrix from a solver interface, normally used during the saving part of serialization.  <br /></td></tr>
+<tr class="separator:a5549bbc028572f538855cd7c29145889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab539f3f9eefd4affc73f4d6f1ed5b9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTSerializableMatrix.html#ab539f3f9eefd4affc73f4d6f1ed5b9de">setMatrix</a> (std::shared_ptr&lt; OsiSolverInterface &gt; &amp;solverinterface) const</td></tr>
+<tr class="memdesc:ab539f3f9eefd4affc73f4d6f1ed5b9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the content of a solver interface matrix, used during the loading part of serialization.  <br /></td></tr>
+<tr class="separator:ab539f3f9eefd4affc73f4d6f1ed5b9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af757f71d714ec27c7cfd1520cf7d9d19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTSerializableMatrix.html#af757f71d714ec27c7cfd1520cf7d9d19">~FMTSerializableMatrix</a> ()</td></tr>
+<tr class="memdesc:af757f71d714ec27c7cfd1520cf7d9d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>.  <br /></td></tr>
+<tr class="separator:af757f71d714ec27c7cfd1520cf7d9d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTserializablematrix.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTSerializableMatrix.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memdesc:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the matrix by extracting the OSI solver interface matrix into vectors, for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>).  <br /></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> is made for the serialization of osisolverinterface matrix. Osisolverinterface matrix is a abstract class pointing on multiple solvertype. The goal of that class is to get the informations from osisolverinterface class into multiple vectors (solutions,bounds,etc...) to permit the synchronization. Also this class is usefull when copying osisolverinterface with the FMTsolverinterface type. </p>
+<div class="textblock"><p>Helper for the serialization of an OSI solver interface matrix. </p>
+<p>Extracts the information from the OSI solver interface matrix into vectors (solutions, bounds, etc.) to allow synchronization, also useful when copying an OSI solver interface with the FMTsolverinterface type. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afab964b7256c8e01dfa6945ca97dba7a" name="afab964b7256c8e01dfa6945ca97dba7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afab964b7256c8e01dfa6945ca97dba7a">&#9670;&#160;</a></span>FMTserializablematrix() <span class="overload">[1/3]</span></h2>
+<a id="a8b5577e0cc28b0794cf8988debd6858f" name="a8b5577e0cc28b0794cf8988debd6858f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5577e0cc28b0794cf8988debd6858f">&#9670;&#160;</a></span>FMTSerializableMatrix() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTserializablematrix::FMTserializablematrix </td>
+          <td class="memname">Models::FMTSerializableMatrix::FMTSerializableMatrix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default constructor of <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> </p>
+
+<p>Default constructor for <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>. </p>
 
 </div>
 </div>
-<a id="a8621590430f1516d5da4fa8626edea21" name="a8621590430f1516d5da4fa8626edea21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8621590430f1516d5da4fa8626edea21">&#9670;&#160;</a></span>FMTserializablematrix() <span class="overload">[2/3]</span></h2>
+<a id="a30a227fafb65818e798aa2f52ff20212" name="a30a227fafb65818e798aa2f52ff20212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a227fafb65818e798aa2f52ff20212">&#9670;&#160;</a></span>FMTSerializableMatrix() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTserializablematrix::FMTserializablematrix </td>
+          <td class="memname">Models::FMTSerializableMatrix::FMTSerializableMatrix </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTSerializableMatrix.html">FMTSerializableMatrix</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy constructor of <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> </p>
+
+<p>Copy constructor for <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="adc6719f7c9083a88706c71d26264f6be" name="adc6719f7c9083a88706c71d26264f6be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc6719f7c9083a88706c71d26264f6be">&#9670;&#160;</a></span>FMTserializablematrix() <span class="overload">[3/3]</span></h2>
+<a id="a5549bbc028572f538855cd7c29145889" name="a5549bbc028572f538855cd7c29145889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5549bbc028572f538855cd7c29145889">&#9670;&#160;</a></span>FMTSerializableMatrix() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTserializablematrix::FMTserializablematrix </td>
+          <td class="memname">Models::FMTSerializableMatrix::FMTSerializableMatrix </td>
           <td>(</td>
           <td class="paramtype">const std::shared_ptr&lt; OsiSolverInterface &gt; &amp;&#160;</td>
           <td class="paramname"><em>solverinterface</em></td><td>)</td>
@@ -160,56 +179,73 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor of <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> with the solverinterface and the solvertype used. Normaly used during the saving part of serialization. </p>
+
+<p>Construct a serializable matrix from a solver interface, normally used during the saving part of serialization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">solverinterface</td><td>the solver interface. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="afe1c45b5a4cdc739e5c2d48818a8e15b" name="afe1c45b5a4cdc739e5c2d48818a8e15b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe1c45b5a4cdc739e5c2d48818a8e15b">&#9670;&#160;</a></span>~FMTserializablematrix()</h2>
+<a id="af757f71d714ec27c7cfd1520cf7d9d19" name="af757f71d714ec27c7cfd1520cf7d9d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af757f71d714ec27c7cfd1520cf7d9d19">&#9670;&#160;</a></span>~FMTSerializableMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTserializablematrix::~FMTserializablematrix </td>
+          <td class="memname">Models::FMTSerializableMatrix::~FMTSerializableMatrix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Function used to build a shared pointer of a solverinterface passing the message handler to the pointer. Function used to copy a shared pointer of a solverinterface passing the message handler to the pointer to a other shared pointer. Default destructor of <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> </p>
+
+<p>Destructor for <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>. </p>
+<p>Function used to build a shared pointer of a solverinterface passing the message handler to the pointer. Function used to copy a shared pointer of a solverinterface passing the message handler to the pointer to a other shared pointer. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a96f36335c4cb7ed1462e50b03fa28e49" name="a96f36335c4cb7ed1462e50b03fa28e49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96f36335c4cb7ed1462e50b03fa28e49">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a44b561b91ccb7843d2c7b0cba623bce2" name="a44b561b91ccb7843d2c7b0cba623bce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b561b91ccb7843d2c7b0cba623bce2">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> &amp; Models::FMTserializablematrix::operator= </td>
+          <td class="memname"><a class="el" href="classModels_1_1FMTSerializableMatrix.html">FMTSerializableMatrix</a> &amp; Models::FMTSerializableMatrix::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTSerializableMatrix.html">FMTSerializableMatrix</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy assignment of <a class="el" href="classModels_1_1FMTserializablematrix.html">FMTserializablematrix</a> </p>
+
+<p>Copy assignment operator for <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classModels_1_1FMTSerializableMatrix.html" title="Helper for the serialization of an OSI solver interface matrix.">FMTSerializableMatrix</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a68d426b58a45cf099f4097f4a4a1aecd" name="a68d426b58a45cf099f4097f4a4a1aecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68d426b58a45cf099f4097f4a4a1aecd">&#9670;&#160;</a></span>setmatrix()</h2>
+<a id="ab539f3f9eefd4affc73f4d6f1ed5b9de" name="ab539f3f9eefd4affc73f4d6f1ed5b9de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab539f3f9eefd4affc73f4d6f1ed5b9de">&#9670;&#160;</a></span>setMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Models::FMTserializablematrix::setmatrix </td>
+          <td class="memname">void Models::FMTSerializableMatrix::setMatrix </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; OsiSolverInterface &gt; &amp;&#160;</td>
           <td class="paramname"><em>solverinterface</em></td><td>)</td>
@@ -217,7 +253,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Setter of the solvertype of the serializable matrix. This function will set it's contain to a solverinterface matrix, used during the loading part of serialization. </p>
+
+<p>Set the content of a solver interface matrix, used during the loading part of serialization. </p>
+<p>Setter of the solvertype of the serializable matrix. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">solverinterface</td><td>the solver interface. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -241,12 +284,26 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Save and load functions are for serialization, used to do multiprocessing across multiple cpus (pickle in Pyhton) </p>
+
+<p>Serialize the matrix by extracting the OSI solver interface matrix into vectors, for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>the archive type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ar</td><td>the archive to serialize to or from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>the serialization version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTserializablematrix_8hpp_source.html">FMTserializablematrix.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTSerializableMatrix_8h_source.html">FMTSerializableMatrix.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,8 +1,8 @@
-<map id="Core::FMTyieldhandler" name="Core::FMTyieldhandler">
-<area shape="rect" id="node1" title=" " alt="" coords="171,81,322,108"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTageyieldhandler.html" title=" " alt="" coords="384,5,556,32"/>
-<area shape="rect" id="node4" href="$classCore_1_1FMTcomplexyieldhandler.html" title=" " alt="" coords="370,56,570,83"/>
-<area shape="rect" id="node5" href="$classCore_1_1FMTmodelyieldhandler.html" title=" " alt="" coords="377,107,563,133"/>
-<area shape="rect" id="node6" href="$classCore_1_1FMTtimeyieldhandler.html" title=" " alt="" coords="382,157,558,184"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="5,81,123,108"/>
+<map id="Core::FMTYieldHandler" name="Core::FMTYieldHandler">
+<area shape="rect" id="node1" title="Base class for yield handlers, holding a mask and the base ages of the yields." alt="" coords="174,81,329,108"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTAgeYieldHandler.html" title="Yield handler for age based yields, as seen in the yield section with _AGE." alt="" coords="391,5,569,32"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTComplexYieldHandler.html" title="Yield handler for complex yields computed from other yields using operators, as seen in the yield sec..." alt="" coords="377,56,583,83"/>
+<area shape="rect" id="node5" href="$classCore_1_1FMTModelYieldHandler.html" title="Yield handler wrapping machine learning yield models." alt="" coords="385,107,575,133"/>
+<area shape="rect" id="node6" href="$classCore_1_1FMTTimeYieldHandler.html" title="Yield handler for time based yields, indexed by period." alt="" coords="389,157,572,184"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="5,81,126,108"/>
 </map>

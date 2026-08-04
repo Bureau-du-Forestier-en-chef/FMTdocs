@@ -1,5 +1,5 @@
-<map id="Parser::FMToptimizationparser" name="Parser::FMToptimizationparser">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,205,181"/>
-<area shape="rect" id="node2" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="40,80,170,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="46,5,164,32"/>
+<map id="Parser::FMTOptimizationParser" name="Parser::FMTOptimizationParser">
+<area shape="rect" id="node1" title="Parser reading and writing optimization sections into constraints and objectives." alt="" coords="5,155,210,181"/>
+<area shape="rect" id="node2" href="$classParser_1_1FMTParser.html" title="Main parent class of all the parsers in FMT." alt="" coords="42,80,173,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="47,5,168,32"/>
 </map>

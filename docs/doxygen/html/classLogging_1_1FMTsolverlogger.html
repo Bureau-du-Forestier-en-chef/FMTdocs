@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Logging::FMTsolverlogger Class Reference</title>
+<title>FMT: Logging::FMTSolverLogger Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,100 +71,120 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceLogging.html">Logging</a></li><li class="navelem"><a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceLogging.html">Logging</a></li><li class="navelem"><a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classLogging_1_1FMTsolverlogger-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Logging::FMTsolverlogger Class Reference</div></div>
+<a href="classLogging_1_1FMTSolverLogger-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Logging::FMTSolverLogger Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTsolverlogger_8hpp_source.html">FMTsolverlogger.hpp</a>&gt;</code></p>
+<p>Abstract logger used with the OSI solver interface (CoinMessageHandler).  
+ <a href="classLogging_1_1FMTSolverLogger.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTSolverLogger_8h_source.html">FMTSolverLogger.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Logging::FMTsolverlogger:</div>
+Inheritance diagram for Logging::FMTSolverLogger:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTsolverlogger__inherit__graph.svg" width="179" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTSolverLogger__inherit__graph.svg" width="186" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Logging::FMTsolverlogger:</div>
+Collaboration diagram for Logging::FMTSolverLogger:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTsolverlogger__coll__graph.svg" width="179" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classLogging_1_1FMTSolverLogger__coll__graph.svg" width="186" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6d787ad9fa1405c1f563144da0ed4b17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#a6d787ad9fa1405c1f563144da0ed4b17">FMTsolverlogger</a> (<a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;baselogger)</td></tr>
-<tr class="separator:a6d787ad9fa1405c1f563144da0ed4b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51dd6f4c3645a0978e12663b96cb195"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#ac51dd6f4c3645a0978e12663b96cb195">FMTsolverlogger</a> ()</td></tr>
-<tr class="separator:ac51dd6f4c3645a0978e12663b96cb195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da04d8f287d576521fe7e0c052c3cb6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#a5da04d8f287d576521fe7e0c052c3cb6">~FMTsolverlogger</a> ()</td></tr>
-<tr class="separator:a5da04d8f287d576521fe7e0c052c3cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e57fe0fa336c5f4cf591c9ff1a0897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#a88e57fe0fa336c5f4cf591c9ff1a0897">FMTsolverlogger</a> (const <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> &amp;rhs)</td></tr>
-<tr class="separator:a88e57fe0fa336c5f4cf591c9ff1a0897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae683e6ca41fef2a2a93e405717c22e2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#ae683e6ca41fef2a2a93e405717c22e2d">operator=</a> (const <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> &amp;rhs)</td></tr>
-<tr class="separator:ae683e6ca41fef2a2a93e405717c22e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8912984a72dd759946996c74695b2089"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#a8912984a72dd759946996c74695b2089">print</a> () override</td></tr>
-<tr class="separator:a8912984a72dd759946996c74695b2089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aada065f9e534458dca9c46494fb879d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#aada065f9e534458dca9c46494fb879d8">checkSeverity</a> () override</td></tr>
-<tr class="separator:aada065f9e534458dca9c46494fb879d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8906d78d3f777a87151eb5e5a4f6dd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#af8906d78d3f777a87151eb5e5a4f6dd5">checkcoinSeverity</a> ()</td></tr>
-<tr class="separator:af8906d78d3f777a87151eb5e5a4f6dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce1b37c482f9e0eb0605acee41faf7a"><td class="memItemLeft" align="right" valign="top">CoinMessageHandler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#adce1b37c482f9e0eb0605acee41faf7a">clone</a> () const override</td></tr>
-<tr class="separator:adce1b37c482f9e0eb0605acee41faf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb23dc9f576867cd7b1c3be90bbdf4b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#abb23dc9f576867cd7b1c3be90bbdf4b5">FMTSolverLogger</a> (<a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;baselogger)</td></tr>
+<tr class="memdesc:abb23dc9f576867cd7b1c3be90bbdf4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a solver logger from a <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>.  <br /></td></tr>
+<tr class="separator:abb23dc9f576867cd7b1c3be90bbdf4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557c34e3b617d2c0cf7b05e9ce171733"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#a557c34e3b617d2c0cf7b05e9ce171733">FMTSolverLogger</a> ()</td></tr>
+<tr class="memdesc:a557c34e3b617d2c0cf7b05e9ce171733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>.  <br /></td></tr>
+<tr class="separator:a557c34e3b617d2c0cf7b05e9ce171733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8769d8d20e6db5fa19a0883d99f381c3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#a8769d8d20e6db5fa19a0883d99f381c3">~FMTSolverLogger</a> ()</td></tr>
+<tr class="memdesc:a8769d8d20e6db5fa19a0883d99f381c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>.  <br /></td></tr>
+<tr class="separator:a8769d8d20e6db5fa19a0883d99f381c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e096873d1a062f79dacd14a063103bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#a7e096873d1a062f79dacd14a063103bf">FMTSolverLogger</a> (const <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a7e096873d1a062f79dacd14a063103bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default copy constructor for <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>.  <br /></td></tr>
+<tr class="separator:a7e096873d1a062f79dacd14a063103bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39aaededb8e9139a79da41d2cfdd8acc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#a39aaededb8e9139a79da41d2cfdd8acc">operator=</a> (const <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a39aaededb8e9139a79da41d2cfdd8acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>.  <br /></td></tr>
+<tr class="separator:a39aaededb8e9139a79da41d2cfdd8acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a071476ca0b88e69807729248b475eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#a4a071476ca0b88e69807729248b475eb">print</a> () override</td></tr>
+<tr class="memdesc:a4a071476ca0b88e69807729248b475eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the CoinMessageHandler print function used with the OSI solver interface.  <br /></td></tr>
+<tr class="separator:a4a071476ca0b88e69807729248b475eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66e6899508369e07db6123fada00411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#ab66e6899508369e07db6123fada00411">checkSeverity</a> () override</td></tr>
+<tr class="memdesc:ab66e6899508369e07db6123fada00411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the severity of the message to be printed by the CoinMessageHandler base class.  <br /></td></tr>
+<tr class="separator:ab66e6899508369e07db6123fada00411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67ed315cfddd8719486683b8f4f4a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#ab67ed315cfddd8719486683b8f4f4a2d">checkcoinSeverity</a> ()</td></tr>
+<tr class="memdesc:ab67ed315cfddd8719486683b8f4f4a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the severity of the coin message to be printed by the CoinMessageHandler base class.  <br /></td></tr>
+<tr class="separator:ab67ed315cfddd8719486683b8f4f4a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927562d72af8dac1f4df6ea4aefd1529"><td class="memItemLeft" align="right" valign="top">CoinMessageHandler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#a927562d72af8dac1f4df6ea4aefd1529">clone</a> () const override</td></tr>
+<tr class="memdesc:a927562d72af8dac1f4df6ea4aefd1529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone the logger, needed for the abstract CoinMessageHandler class.  <br /></td></tr>
+<tr class="separator:a927562d72af8dac1f4df6ea4aefd1529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:afbff3523b08070fed3dd54baa400b3b2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTsolverlogger.html#afbff3523b08070fed3dd54baa400b3b2">FMTlogger</a></td></tr>
-<tr class="separator:afbff3523b08070fed3dd54baa400b3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a3aa57b8121a1db90cce40076d7427"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogging_1_1FMTSolverLogger.html#a91a3aa57b8121a1db90cce40076d7427">FMTLogger</a></td></tr>
+<tr class="separator:a91a3aa57b8121a1db90cce40076d7427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Abstract class for usage in Osisolverinterface. </p>
+<div class="textblock"><p>Abstract logger used with the OSI solver interface (CoinMessageHandler). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6d787ad9fa1405c1f563144da0ed4b17" name="a6d787ad9fa1405c1f563144da0ed4b17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d787ad9fa1405c1f563144da0ed4b17">&#9670;&#160;</a></span>FMTsolverlogger() <span class="overload">[1/3]</span></h2>
+<a id="abb23dc9f576867cd7b1c3be90bbdf4b5" name="abb23dc9f576867cd7b1c3be90bbdf4b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb23dc9f576867cd7b1c3be90bbdf4b5">&#9670;&#160;</a></span>FMTSolverLogger() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Logging::FMTsolverlogger::FMTsolverlogger </td>
+          <td class="memname">Logging::FMTSolverLogger::FMTSolverLogger </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a> &amp;&#160;</td>
           <td class="paramname"><em>baselogger</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constuct a logger using an abstrsact <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a>. </p>
+
+<p>Construct a solver logger from a <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">baselogger</td><td>the base <a class="el" href="classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT.">FMTLogger</a> to use. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ac51dd6f4c3645a0978e12663b96cb195" name="ac51dd6f4c3645a0978e12663b96cb195"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac51dd6f4c3645a0978e12663b96cb195">&#9670;&#160;</a></span>FMTsolverlogger() <span class="overload">[2/3]</span></h2>
+<a id="a557c34e3b617d2c0cf7b05e9ce171733" name="a557c34e3b617d2c0cf7b05e9ce171733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557c34e3b617d2c0cf7b05e9ce171733">&#9670;&#160;</a></span>FMTSolverLogger() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Logging::FMTsolverlogger::FMTsolverlogger </td>
+          <td class="memname">Logging::FMTSolverLogger::FMTSolverLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> default constructor. </p>
+
+<p>Default constructor for <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>. </p>
 
 </div>
 </div>
-<a id="a5da04d8f287d576521fe7e0c052c3cb6" name="a5da04d8f287d576521fe7e0c052c3cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5da04d8f287d576521fe7e0c052c3cb6">&#9670;&#160;</a></span>~FMTsolverlogger()</h2>
+<a id="a8769d8d20e6db5fa19a0883d99f381c3" name="a8769d8d20e6db5fa19a0883d99f381c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8769d8d20e6db5fa19a0883d99f381c3">&#9670;&#160;</a></span>~FMTSolverLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +193,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Logging::FMTsolverlogger::~FMTsolverlogger </td>
+          <td class="memname">virtual Logging::FMTSolverLogger::~FMTSolverLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -185,50 +205,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>FMTsolverlogge default destructor. </p>
+
+<p>Default destructor for <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>. </p>
 
 </div>
 </div>
-<a id="a88e57fe0fa336c5f4cf591c9ff1a0897" name="a88e57fe0fa336c5f4cf591c9ff1a0897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88e57fe0fa336c5f4cf591c9ff1a0897">&#9670;&#160;</a></span>FMTsolverlogger() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Logging::FMTsolverlogger::FMTsolverlogger </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> copy constructor. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af8906d78d3f777a87151eb5e5a4f6dd5" name="af8906d78d3f777a87151eb5e5a4f6dd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8906d78d3f777a87151eb5e5a4f6dd5">&#9670;&#160;</a></span>checkcoinSeverity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Logging::FMTsolverlogger::checkcoinSeverity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>FMTsolverlogge check the severity of the coin message to be print by the coinmessagehandler base class. </p>
-
-</div>
-</div>
-<a id="aada065f9e534458dca9c46494fb879d8" name="aada065f9e534458dca9c46494fb879d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aada065f9e534458dca9c46494fb879d8">&#9670;&#160;</a></span>checkSeverity()</h2>
+<a id="a7e096873d1a062f79dacd14a063103bf" name="a7e096873d1a062f79dacd14a063103bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e096873d1a062f79dacd14a063103bf">&#9670;&#160;</a></span>FMTSolverLogger() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +220,61 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Logging::FMTsolverlogger::checkSeverity </td>
+          <td class="memname">Logging::FMTSolverLogger::FMTSolverLogger </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default copy constructor for <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab67ed315cfddd8719486683b8f4f4a2d" name="ab67ed315cfddd8719486683b8f4f4a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab67ed315cfddd8719486683b8f4f4a2d">&#9670;&#160;</a></span>checkcoinSeverity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Logging::FMTSolverLogger::checkcoinSeverity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the severity of the coin message to be printed by the CoinMessageHandler base class. </p>
+
+</div>
+</div>
+<a id="ab66e6899508369e07db6123fada00411" name="ab66e6899508369e07db6123fada00411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66e6899508369e07db6123fada00411">&#9670;&#160;</a></span>checkSeverity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Logging::FMTSolverLogger::checkSeverity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -249,12 +286,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>FMTsolverlogge check the severity of the message to be print by the coinmessagehandler base class. </p>
+
+<p>Check the severity of the message to be printed by the CoinMessageHandler base class. </p>
 
 </div>
 </div>
-<a id="adce1b37c482f9e0eb0605acee41faf7a" name="adce1b37c482f9e0eb0605acee41faf7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adce1b37c482f9e0eb0605acee41faf7a">&#9670;&#160;</a></span>clone()</h2>
+<a id="a927562d72af8dac1f4df6ea4aefd1529" name="a927562d72af8dac1f4df6ea4aefd1529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927562d72af8dac1f4df6ea4aefd1529">&#9670;&#160;</a></span>clone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +301,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CoinMessageHandler * Logging::FMTsolverlogger::clone </td>
+          <td class="memname">CoinMessageHandler * Logging::FMTSolverLogger::clone </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -275,31 +313,14 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clone function needed for the usage of abstract coingmessagehandler class. </p>
+
+<p>Clone the logger, needed for the abstract CoinMessageHandler class. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the cloned CoinMessageHandler. </dd></dl>
 
 </div>
 </div>
-<a id="ae683e6ca41fef2a2a93e405717c22e2d" name="ae683e6ca41fef2a2a93e405717c22e2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae683e6ca41fef2a2a93e405717c22e2d">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> &amp; Logging::FMTsolverlogger::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTsolverlogger.html">FMTsolverlogger</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>FMTsolverlogge copy assignment operator. </p>
-
-</div>
-</div>
-<a id="a8912984a72dd759946996c74695b2089" name="a8912984a72dd759946996c74695b2089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8912984a72dd759946996c74695b2089">&#9670;&#160;</a></span>print()</h2>
+<a id="a39aaededb8e9139a79da41d2cfdd8acc" name="a39aaededb8e9139a79da41d2cfdd8acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39aaededb8e9139a79da41d2cfdd8acc">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +329,42 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Logging::FMTsolverlogger::print </td>
+          <td class="memname"><a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> &amp; Logging::FMTSolverLogger::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classLogging_1_1FMTSolverLogger.html">FMTSolverLogger</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy assignment operator for <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler).">FMTSolverLogger</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4a071476ca0b88e69807729248b475eb" name="a4a071476ca0b88e69807729248b475eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a071476ca0b88e69807729248b475eb">&#9670;&#160;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Logging::FMTSolverLogger::print </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -320,13 +376,15 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>FMTsolverlogge print function if we are using Osisolverinterface the coinmessagehandler print function needs to be overloaded. </p>
+
+<p>Override the CoinMessageHandler print function used with the OSI solver interface. </p>
+<dl class="section return"><dt>Returns</dt><dd>the value returned by the print function. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="afbff3523b08070fed3dd54baa400b3b2" name="afbff3523b08070fed3dd54baa400b3b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbff3523b08070fed3dd54baa400b3b2">&#9670;&#160;</a></span>FMTlogger</h2>
+<a id="a91a3aa57b8121a1db90cce40076d7427" name="a91a3aa57b8121a1db90cce40076d7427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a3aa57b8121a1db90cce40076d7427">&#9670;&#160;</a></span>FMTLogger</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +393,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classLogging_1_1FMTlogger.html">FMTlogger</a></td>
+          <td class="memname">friend class <a class="el" href="classLogging_1_1FMTLogger.html">FMTLogger</a></td>
         </tr>
       </table>
   </td>
@@ -348,7 +406,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTsolverlogger_8hpp_source.html">FMTsolverlogger.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTSolverLogger_8h_source.html">FMTSolverLogger.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

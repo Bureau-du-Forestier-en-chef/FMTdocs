@@ -1,5 +1,5 @@
-<map id="Parser::FMTareaparser" name="Parser::FMTareaparser">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,160,181"/>
-<area shape="rect" id="node2" href="$classParser_1_1FMTparser.html" title=" " alt="" coords="18,80,147,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="24,5,141,32"/>
+<map id="Parser::FMTAreaParser" name="Parser::FMTAreaParser">
+<area shape="rect" id="node1" title="Parser dealing with the spatial aspects used in multiple FMTModel children, reading and writing the a..." alt="" coords="5,155,164,181"/>
+<area shape="rect" id="node2" href="$classParser_1_1FMTParser.html" title="Main parent class of all the parsers in FMT." alt="" coords="19,80,150,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="24,5,145,32"/>
 </map>

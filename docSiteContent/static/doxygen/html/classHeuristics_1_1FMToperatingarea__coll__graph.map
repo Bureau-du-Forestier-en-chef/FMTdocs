@@ -1,5 +1,5 @@
-<map id="Heuristics::FMToperatingarea" name="Heuristics::FMToperatingarea">
-<area shape="rect" id="node1" title=" " alt="" coords="5,203,197,229"/>
-<area shape="rect" id="node2" href="$classCore_1_1FMTmask.html" title=" " alt="" coords="44,5,158,32"/>
-<area shape="rect" id="node3" title=" " alt="" coords="140,96,268,139"/>
+<map id="Heuristics::FMTOperatingArea" name="Heuristics::FMTOperatingArea">
+<area shape="rect" id="node1" title="Operating area giving information about its mask, neighbors and neighbors perimeter." alt="" coords="5,203,202,229"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask." alt="" coords="46,5,161,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="161,96,289,139"/>
 </map>

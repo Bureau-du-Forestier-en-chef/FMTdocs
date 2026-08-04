@@ -1,0 +1,4 @@
+<map id="Spatial::FMTSolutionTracker" name="Spatial::FMTSolutionTracker">
+<area shape="rect" id="node1" title="Track the constraint values of a spatial solution as line graphs are added to or removed from the sol..." alt="" coords="5,80,191,107"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="38,5,158,32"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Heuristics::FMToperatingareacomparator Class Reference</title>
+<title>FMT: Heuristics::FMTOperatingAreaComparator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,91 +71,119 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceHeuristics.html">Heuristics</a></li><li class="navelem"><a class="el" href="classHeuristics_1_1FMToperatingareacomparator.html">FMToperatingareacomparator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceHeuristics.html">Heuristics</a></li><li class="navelem"><a class="el" href="classHeuristics_1_1FMTOperatingAreaComparator.html">FMTOperatingAreaComparator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classHeuristics_1_1FMToperatingareacomparator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Heuristics::FMToperatingareacomparator Class Reference</div></div>
+<a href="classHeuristics_1_1FMTOperatingAreaComparator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Heuristics::FMTOperatingAreaComparator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMToperatingarea_8hpp_source.html">FMToperatingarea.hpp</a>&gt;</code></p>
+<p>Comparator to find a <a class="el" href="classHeuristics_1_1FMTOperatingArea.html" title="Operating area giving information about its mask, neighbors and neighbors perimeter.">FMTOperatingArea</a> with std::find_if when operating areas are in an stl container.  
+ <a href="classHeuristics_1_1FMTOperatingAreaComparator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTOperatingArea_8h_source.html">FMTOperatingArea.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa7d3288bef3bc28a5bf96ff7f72151c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMToperatingareacomparator.html#aa7d3288bef3bc28a5bf96ff7f72151c4">FMToperatingareacomparator</a> (const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;lmask)</td></tr>
-<tr class="separator:aa7d3288bef3bc28a5bf96ff7f72151c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a761c5c613f39185a3646310bd426e10b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMToperatingareacomparator.html#a761c5c613f39185a3646310bd426e10b">FMToperatingareacomparator</a> (const <a class="el" href="classHeuristics_1_1FMToperatingarea.html">FMToperatingarea</a> &amp;oparea)</td></tr>
-<tr class="separator:a761c5c613f39185a3646310bd426e10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb62cfcef7228f180cf4e31c34425c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMToperatingareacomparator.html#a7bb62cfcef7228f180cf4e31c34425c9">operator()</a> (const <a class="el" href="classHeuristics_1_1FMToperatingarea.html">FMToperatingarea</a> &amp;oparea) const</td></tr>
-<tr class="separator:a7bb62cfcef7228f180cf4e31c34425c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47ef76eea4f03710c187b8c103bab83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaComparator.html#ac47ef76eea4f03710c187b8c103bab83">FMTOperatingAreaComparator</a> (const <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;lmask)</td></tr>
+<tr class="memdesc:ac47ef76eea4f03710c187b8c103bab83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the comparator from a mask reference.  <br /></td></tr>
+<tr class="separator:ac47ef76eea4f03710c187b8c103bab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec574ac7327630f193d8169a43c35f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaComparator.html#a0ec574ac7327630f193d8169a43c35f3">FMTOperatingAreaComparator</a> (const <a class="el" href="classHeuristics_1_1FMTOperatingArea.html">FMTOperatingArea</a> &amp;oparea)</td></tr>
+<tr class="memdesc:a0ec574ac7327630f193d8169a43c35f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the comparator from an operating area.  <br /></td></tr>
+<tr class="separator:a0ec574ac7327630f193d8169a43c35f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0964096980223f167dae7112f998e3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaComparator.html#ac0964096980223f167dae7112f998e3b">operator()</a> (const <a class="el" href="classHeuristics_1_1FMTOperatingArea.html">FMTOperatingArea</a> &amp;oparea) const</td></tr>
+<tr class="memdesc:ac0964096980223f167dae7112f998e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator for <a class="el" href="classHeuristics_1_1FMTOperatingArea.html" title="Operating area giving information about its mask, neighbors and neighbors perimeter.">FMTOperatingArea</a>.  <br /></td></tr>
+<tr class="separator:ac0964096980223f167dae7112f998e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class is made to compare <a class="el" href="classHeuristics_1_1FMToperatingarea.html">FMToperatingarea</a> using the std::find_if() function when <a class="el" href="classHeuristics_1_1FMToperatingarea.html">FMToperatingarea</a> are in a stl container. </p>
+<div class="textblock"><p>Comparator to find a <a class="el" href="classHeuristics_1_1FMTOperatingArea.html" title="Operating area giving information about its mask, neighbors and neighbors perimeter.">FMTOperatingArea</a> with std::find_if when operating areas are in an stl container. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa7d3288bef3bc28a5bf96ff7f72151c4" name="aa7d3288bef3bc28a5bf96ff7f72151c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7d3288bef3bc28a5bf96ff7f72151c4">&#9670;&#160;</a></span>FMToperatingareacomparator() <span class="overload">[1/2]</span></h2>
+<a id="ac47ef76eea4f03710c187b8c103bab83" name="ac47ef76eea4f03710c187b8c103bab83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47ef76eea4f03710c187b8c103bab83">&#9670;&#160;</a></span>FMTOperatingAreaComparator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Heuristics::FMToperatingareacomparator::FMToperatingareacomparator </td>
+          <td class="memname">Heuristics::FMTOperatingAreaComparator::FMTOperatingAreaComparator </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">Core::FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">Core::FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>lmask</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor of the comparator using the FMTmask as reference. </p>
+
+<p>Construct the comparator from a mask reference. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lmask</td><td>the mask. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a761c5c613f39185a3646310bd426e10b" name="a761c5c613f39185a3646310bd426e10b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a761c5c613f39185a3646310bd426e10b">&#9670;&#160;</a></span>FMToperatingareacomparator() <span class="overload">[2/2]</span></h2>
+<a id="a0ec574ac7327630f193d8169a43c35f3" name="a0ec574ac7327630f193d8169a43c35f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec574ac7327630f193d8169a43c35f3">&#9670;&#160;</a></span>FMTOperatingAreaComparator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Heuristics::FMToperatingareacomparator::FMToperatingareacomparator </td>
+          <td class="memname">Heuristics::FMTOperatingAreaComparator::FMTOperatingAreaComparator </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classHeuristics_1_1FMToperatingarea.html">FMToperatingarea</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classHeuristics_1_1FMTOperatingArea.html">FMTOperatingArea</a> &amp;&#160;</td>
           <td class="paramname"><em>oparea</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor of the comparator using the operating area. </p>
+
+<p>Construct the comparator from an operating area. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oparea</td><td>the operating area. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7bb62cfcef7228f180cf4e31c34425c9" name="a7bb62cfcef7228f180cf4e31c34425c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bb62cfcef7228f180cf4e31c34425c9">&#9670;&#160;</a></span>operator()()</h2>
+<a id="ac0964096980223f167dae7112f998e3b" name="ac0964096980223f167dae7112f998e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0964096980223f167dae7112f998e3b">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Heuristics::FMToperatingareacomparator::operator() </td>
+          <td class="memname">bool Heuristics::FMTOperatingAreaComparator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classHeuristics_1_1FMToperatingarea.html">FMToperatingarea</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classHeuristics_1_1FMTOperatingArea.html">FMTOperatingArea</a> &amp;&#160;</td>
           <td class="paramname"><em>oparea</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Comparator for FMToperating area. </p>
+
+<p>Comparator for <a class="el" href="classHeuristics_1_1FMTOperatingArea.html" title="Operating area giving information about its mask, neighbors and neighbors perimeter.">FMTOperatingArea</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oparea</td><td>the operating area to compare to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the operating area matches else false. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMToperatingarea_8hpp_source.html">FMToperatingarea.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTOperatingArea_8h_source.html">FMTOperatingArea.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,3 +1,68 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classCore_1_1FMToutputnodehasher.html" title=" " alt="" coords="5,5,191,32"/>
+<area shape="rect" id="node1" href="$classCore_1_1FMTMaskFilter.html" title="Filter built from masks used to preSolve and postsolve FMTMask objects." alt="" coords="32,5,175,32"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTTransitionMask.html" title="Transition mask holding a target mask and a proportion, used to disturb a development in a transition..." alt="" coords="264,5,435,32"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="43,715,164,741"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTConstants.html" title="Class holding the constants defined in the constants section of a model, used by the parsers." alt="" coords="279,208,420,235"/>
+<area shape="rect" id="node5" href="$classCore_1_1FMTDevelopment.html" title="Base class of FMTActualDevelopment and FMTFuturDevelopment representing a forest stand." alt="" coords="271,309,428,336"/>
+<area shape="rect" id="node8" href="$classCore_1_1FMTFork.html" title="Fork of a transition, holding the transition masks (targets and proportions) applied to a development..." alt="" coords="295,157,404,184"/>
+<area shape="rect" id="node9" href="$classCore_1_1FMTOutput.html" title="Class letting the user formulate a constraint in the optimize section or collect data across the grap..." alt="" coords="289,259,410,285"/>
+<area shape="rect" id="node11" href="$classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated..." alt="" coords="281,360,418,387"/>
+<area shape="rect" id="node12" href="$classCore_1_1FMTTheme.html" title="Class holding the attributes and aggregates of a single theme, describing a part of a FMTMask." alt="" coords="289,411,410,437"/>
+<area shape="rect" id="node13" href="$classCore_1_1FMTYieldHandler.html" title="Base class for yield handlers, holding a mask and the base ages of the yields." alt="" coords="272,461,427,488"/>
+<area shape="rect" id="node18" href="$classCore_1_1FMTYieldModel.html" title="Abstract class to be implemented as a machine learning yield model." alt="" coords="276,537,423,564"/>
+<area shape="rect" id="node26" href="$classCore_1_1FMTYieldRequest.html" title="Request for yield values using a development and optionally a graph vertex." alt="" coords="270,613,429,640"/>
+<area shape="rect" id="node27" href="$classHeuristics_1_1FMTOperatingAreaScheme.html" title="Operating area scheme giving information about its opening time, green up and return time." alt="" coords="265,1348,434,1391"/>
+<area shape="rect" id="node28" href="$classModels_1_1FMTLpSolver.html" title="Abstract class to ease the usage of the OsiSolverInterface in FMT for linear programming models." alt="" coords="276,664,423,691"/>
+<area shape="rect" id="node32" href="$classModels_1_1FMTModel.html" title="Base class for the different models in FMT." alt="" coords="283,715,416,741"/>
+<area shape="rect" id="node39" href="$classModels_1_1FMTModelParameters.html" title="Class containing all the parameters a model needs to be solved by the different types of FMTModel." alt="" coords="250,765,449,792"/>
+<area shape="rect" id="node40" href="$classParallel_1_1FMTTask.html" title="Task for parallel jobs." alt="" coords="286,816,413,843"/>
+<area shape="rect" id="node44" href="$classParallel_1_1FMTTaskHandler.html" title="Main class for running concurrent tasks at the same time." alt="" coords="264,867,435,893"/>
+<area shape="rect" id="node45" href="$classParser_1_1FMTParser.html" title="Main parent class of all the parsers in FMT." alt="" coords="284,1044,415,1071"/>
+<area shape="rect" id="node58" href="$classSpatial_1_1FMTEventContainer.html" title="Container of FMTEvent handling event comparison and distance calculation efficiently,..." alt="" coords="258,1095,441,1121"/>
+<area shape="rect" id="node59" href="$classSpatial_1_1FMTPatchRules.html" title="Spatial patch rules used to evaluate and repair the size, adjacency and grouping of events in a spati..." alt="" coords="268,1145,431,1172"/>
+<area shape="rect" id="node60" href="$classSpatial_1_1FMTSolutionTracker.html" title="Track the constraint values of a spatial solution as line graphs are added to or removed from the sol..." alt="" coords="257,1196,442,1223"/>
+<area shape="rect" id="node61" href="$classSpatial_1_1FMTSpatialGraphs.html" title="Container of the line graphs of a spatially explicit model, organized by constraint family,..." alt="" coords="261,1247,438,1273"/>
+<area shape="rect" id="node62" href="$classVersion_1_1FMTVersion.html" title="Class exposing the version of FMT, its build date and the available features." alt="" coords="278,1297,421,1324"/>
+<area shape="rect" id="node6" href="$classCore_1_1FMTActualDevelopment.html" title="Child class of FMTDevelopment representing an actual forest stand, holding the area of the stand." alt="" coords="515,107,708,133"/>
+<area shape="rect" id="node7" href="$classCore_1_1FMTFuturDevelopment.html" title="Child class of FMTDevelopment representing a future stand generated by growth or transition,..." alt="" coords="518,157,704,184"/>
+<area shape="rect" id="node10" href="$classCore_1_1FMTConstraint.html" title="Representation of a line in the optimize section, an objective being considered a constraint." alt="" coords="541,56,682,83"/>
+<area shape="rect" id="node14" href="$classCore_1_1FMTAgeYieldHandler.html" title="Yield handler for age based yields, as seen in the yield section with _AGE." alt="" coords="522,208,700,235"/>
+<area shape="rect" id="node15" href="$classCore_1_1FMTComplexYieldHandler.html" title="Yield handler for complex yields computed from other yields using operators, as seen in the yield sec..." alt="" coords="508,259,714,285"/>
+<area shape="rect" id="node16" href="$classCore_1_1FMTModelYieldHandler.html" title="Yield handler wrapping machine learning yield models." alt="" coords="516,309,706,336"/>
+<area shape="rect" id="node17" href="$classCore_1_1FMTTimeYieldHandler.html" title="Yield handler for time based yields, indexed by period." alt="" coords="520,360,703,387"/>
+<area shape="rect" id="node19" href="$classCore_1_1FMTYieldModelDecisionTree.html" title="Yield model using a decision tree based on the growth outputs of the model to get yield values." alt="" coords="501,411,722,437"/>
+<area shape="rect" id="node20" href="$classCore_1_1FMTYieldModelNn.html" title="Abstract machine learning yield model based on a neural network." alt="" coords="530,461,692,488"/>
+<area shape="rect" id="node23" href="$classCore_1_1FMTYieldModelRandom.html" title=" " alt="" coords="514,512,708,539"/>
+<area shape="rect" id="node24" href="$classCore_1_1FMTYieldModelTsla.html" title="Yield model returning the time since last disturbance, always added by default by the yield parser." alt="" coords="526,563,696,589"/>
+<area shape="rect" id="node25" href="$classCore_1_1FMTYieldModelUnitCoverage.html" title="Yield model calculating the sum of a yield value over a spatial unit at period 0." alt="" coords="500,613,722,640"/>
+<area shape="rect" id="node21" href="$classCore_1_1FMTYieldModelNep.html" title="Machine learning yield model predicting carbon NEP." alt="" coords="778,441,948,468"/>
+<area shape="rect" id="node22" href="$classCore_1_1FMTYieldModelPools.html" title="Machine learning yield model predicting carbon pools." alt="" coords="773,492,953,519"/>
+<area shape="rect" id="node29" href="$classHeuristics_1_1FMTLpHeuristic.html" title="Base class for solving LP and MIP problems using a heuristic, holding a random generator and its own ..." alt="" coords="522,664,700,691"/>
+<area shape="rect" id="node30" href="$classHeuristics_1_1FMTOperatingAreaClusterer.html" title="Heuristic to do spatial clustering of operating areas across a landscape from a shapefile." alt="" coords="778,552,948,595"/>
+<area shape="rect" id="node31" href="$classHeuristics_1_1FMTOperatingAreaScheduler.html" title="Heuristic to solve the spatialization problem across a landscape for multiple operating areas." alt="" coords="778,619,948,661"/>
+<area shape="rect" id="node33" href="$classModels_1_1FMTSeModel.html" title="Abstract class for spatially explicit models, parent of FMTSesModel and FMTSaModel." alt="" coords="537,715,685,741"/>
+<area shape="rect" id="node36" href="$classModels_1_1FMTSrModel.html" title="Base class holding the attributes and methods shared between the spatially referenced models (FMTLpMo..." alt="" coords="539,765,684,792"/>
+<area shape="rect" id="node34" href="$classModels_1_1FMTSaModel.html" title="Area restricted model (ARM) using the simulated annealing meta&#45;heuristic to solve the spatial optimiz..." alt="" coords="789,685,937,712"/>
+<area shape="rect" id="node35" href="$classModels_1_1FMTSesModel.html" title="Spatially explicit simulation model using a cellular automaton to simulate actions on a raster stack ..." alt="" coords="785,736,941,763"/>
+<area shape="rect" id="node37" href="$classModels_1_1FMTLpModel.html" title="Type III LP forest planning model, with the graph divided per period." alt="" coords="790,787,936,813"/>
+<area shape="rect" id="node38" href="$classModels_1_1FMTNssModel.html" title="Non spatial simulation model, mainly used to simulate stochastic actions during the local replanning ..." alt="" coords="785,837,941,864"/>
+<area shape="rect" id="node41" href="$classParallel_1_1FMTOpAreaSchedulerTask.html" title="Task to find a suboptimal schedule for the operating areas of a FMTLpModel." alt="" coords="497,816,725,843"/>
+<area shape="rect" id="node42" href="$classParallel_1_1FMTPlanningTask.html" title="Task to carry multiple parallel optimizations of different FMTModel using the doPlanning function." alt="" coords="523,867,699,893"/>
+<area shape="rect" id="node43" href="$classParallel_1_1FMTReplanningTask.html" title="Replanning task using global, stochastic and local abstract models to simulate natural disturbances o..." alt="" coords="516,917,706,944"/>
+<area shape="rect" id="node46" href="$classParser_1_1FMTActionParser.html" title="Parser reading and writing actions from or into action files, also used by the model parser." alt="" coords="527,968,695,995"/>
+<area shape="rect" id="node47" href="$classParser_1_1FMTAreaParser.html" title="Parser dealing with the spatial aspects used in multiple FMTModel children, reading and writing the a..." alt="" coords="532,1019,690,1045"/>
+<area shape="rect" id="node48" href="$classParser_1_1FMTConstantParser.html" title="Parser reading and writing constants, used by the model parser." alt="" coords="520,1069,703,1096"/>
+<area shape="rect" id="node49" href="$classParser_1_1FMTLandscapeParser.html" title="Parser reading and writing the landscape section, and generating themes from vector or raster files." alt="" coords="514,1120,708,1147"/>
+<area shape="rect" id="node50" href="$classParser_1_1FMTLifespanParser.html" title="Parser reading and writing the lifespan section of the model." alt="" coords="522,1171,701,1197"/>
+<area shape="rect" id="node51" href="$classParser_1_1FMTModelParser.html" title="Main parser reading and writing model files, for single or multiple scenarios, using all the other FM..." alt="" coords="528,1221,694,1248"/>
+<area shape="rect" id="node53" href="$classParser_1_1FMTOptimizationParser.html" title="Parser reading and writing optimization sections into constraints and objectives." alt="" coords="509,1272,713,1299"/>
+<area shape="rect" id="node54" href="$classParser_1_1FMTOutputParser.html" title="Parser reading and writing a vector of FMTOutput from or into a file." alt="" coords="526,1323,696,1349"/>
+<area shape="rect" id="node55" href="$classParser_1_1FMTScheduleParser.html" title="Parser reading and writing vectors of schedules, also used by the model parser." alt="" coords="519,1373,704,1400"/>
+<area shape="rect" id="node56" href="$classParser_1_1FMTTransitionParser.html" title="Parser reading and writing transition sections into a vector of FMTTransition." alt="" coords="518,1424,705,1451"/>
+<area shape="rect" id="node57" href="$classParser_1_1FMTYieldParser.html" title="Parser reading and writing yield sections into a FMTYields object." alt="" coords="531,1475,691,1501"/>
+<area shape="rect" id="node52" href="$classParallel_1_1FMTParallelWriter.html" title="Writer used in concurrency to write multiple results in the same layer." alt="" coords="775,1221,951,1248"/>
+<area shape="rect" id="node63" href="$classHeuristics_1_1FMTOperatingArea.html" title="Operating area giving information about its mask, neighbors and neighbors perimeter." alt="" coords="5,1389,202,1416"/>
+<area shape="rect" id="node64" href="$classHeuristics_1_1FMTOperatingAreaClusterBinary.html" title="Definition of a non clustered operating area, used by the FMTOperatingAreaCluster." alt="" coords="265,1415,434,1457"/>
+<area shape="rect" id="node65" title=" " alt="" coords="65,81,142,108"/>
+<area shape="rect" id="node66" href="$classCore_1_1FMTOutputSource.html" title="Source of an output holding a mask, a target and values, used to compute an output." alt="" coords="268,107,431,133"/>
 </map>

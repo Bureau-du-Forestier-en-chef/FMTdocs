@@ -1,6 +1,6 @@
-<map id="Exception::FMTexception" name="Exception::FMTexception">
-<area shape="rect" id="node1" title=" " alt="" coords="76,80,245,107"/>
-<area shape="rect" id="node3" href="$classException_1_1FMTerror.html" title=" " alt="" coords="5,155,145,181"/>
-<area shape="rect" id="node4" href="$classException_1_1FMTwarning.html" title=" " alt="" coords="168,155,326,181"/>
-<area shape="rect" id="node2" title=" " alt="" coords="109,5,212,32"/>
+<map id="Exception::FMTException" name="Exception::FMTException">
+<area shape="rect" id="node1" title="Base exception class for FMT holding the type, section and message of a given exception." alt="" coords="78,80,250,107"/>
+<area shape="rect" id="node3" href="$classException_1_1FMTError.html" title="Exception class derived from FMTException for errors thrown in FMT." alt="" coords="5,155,147,181"/>
+<area shape="rect" id="node4" href="$classException_1_1FMTWarning.html" title="Exception class derived from FMTException for warnings in FMT." alt="" coords="171,155,333,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="112,5,216,32"/>
 </map>

@@ -1,7 +1,7 @@
-<map id="Models::FMTsemodel" name="Models::FMTsemodel">
-<area shape="rect" id="node1" title=" " alt="" coords="92,155,238,181"/>
-<area shape="rect" id="node4" href="$classModels_1_1FMTsamodel.html" title=" " alt="" coords="5,229,152,256"/>
-<area shape="rect" id="node5" href="$classModels_1_1FMTsesmodel.html" title=" " alt="" coords="175,229,329,256"/>
-<area shape="rect" id="node2" href="$classModels_1_1FMTmodel.html" title=" " alt="" coords="99,80,231,107"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="107,5,224,32"/>
+<map id="Models::FMTSeModel" name="Models::FMTSeModel">
+<area shape="rect" id="node1" title="Abstract class for spatially explicit models, parent of FMTSesModel and FMTSaModel." alt="" coords="93,155,242,181"/>
+<area shape="rect" id="node4" href="$classModels_1_1FMTSaModel.html" title="Area restricted model (ARM) using the simulated annealing meta&#45;heuristic to solve the spatial optimiz..." alt="" coords="5,229,154,256"/>
+<area shape="rect" id="node5" href="$classModels_1_1FMTSesModel.html" title="Spatially explicit simulation model using a cellular automaton to simulate actions on a raster stack ..." alt="" coords="178,229,333,256"/>
+<area shape="rect" id="node2" href="$classModels_1_1FMTModel.html" title="Base class for the different models in FMT." alt="" coords="101,80,234,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="107,5,228,32"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Spatial::FMTevent Class Reference</title>
+<title>FMT: Spatial::FMTEvent Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,135 +71,162 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceSpatial.html">Spatial</a></li><li class="navelem"><a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceSpatial.html">Spatial</a></li><li class="navelem"><a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classSpatial_1_1FMTevent-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Spatial::FMTevent Class Reference</div></div>
+<a href="classSpatial_1_1FMTEvent-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Spatial::FMTEvent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTevent_8hpp_source.html">FMTevent.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Spatial::FMTevent:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSpatial_1_1FMTevent__coll__graph.svg" width="167" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<p>Base class for a spatial event (FMTsaevent or FMTsesevent): a set of <a class="el" href="classSpatial_1_1FMTCoordinate.html" title="Spatially referenced coordinate holding an x and y position on a raster grid.">FMTCoordinate</a> corresponding to the coordinates present in the event.  
+ <a href="classSpatial_1_1FMTEvent.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTEvent_8h_source.html">FMTEvent.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae34a44b4a32fdcefad577ec79578e0f4"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ae34a44b4a32fdcefad577ec79578e0f4">midposition</a> () const</td></tr>
-<tr class="separator:ae34a44b4a32fdcefad577ec79578e0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4165c8479fa41aa8502d0aabd12948fa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a4165c8479fa41aa8502d0aabd12948fa">~FMTevent</a> ()=default</td></tr>
-<tr class="separator:a4165c8479fa41aa8502d0aabd12948fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1a03f1cfd209936a637637c83841a34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ad1a03f1cfd209936a637637c83841a34">FMTevent</a> ()</td></tr>
-<tr class="separator:ad1a03f1cfd209936a637637c83841a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad66bfa1e8301a5c9bc4436df939beb87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ad66bfa1e8301a5c9bc4436df939beb87">FMTevent</a> (const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;location, const int &amp;laction_id, const int &amp;lperiod)</td></tr>
-<tr class="separator:ad66bfa1e8301a5c9bc4436df939beb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4566e3c652f6f3f55cbda0dfac784c1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a4566e3c652f6f3f55cbda0dfac784c1e">FMTevent</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs)</td></tr>
-<tr class="separator:a4566e3c652f6f3f55cbda0dfac784c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ee36619dfc63a604d52282da152340f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a1ee36619dfc63a604d52282da152340f">operator=</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs)</td></tr>
-<tr class="separator:a1ee36619dfc63a604d52282da152340f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce4d2b2c3650c81730a8d60770a4662"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a3ce4d2b2c3650c81730a8d60770a4662">empty</a> () const</td></tr>
-<tr class="separator:a3ce4d2b2c3650c81730a8d60770a4662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190505ac853c1e8e3bd84577a2589af6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a190505ac853c1e8e3bd84577a2589af6">size</a> () const</td></tr>
-<tr class="separator:a190505ac853c1e8e3bd84577a2589af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267939ff801888d09bacd95578e117ee"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a267939ff801888d09bacd95578e117ee">hash</a> () const</td></tr>
-<tr class="separator:a267939ff801888d09bacd95578e117ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01120913122596ab9061f9312ef9154b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatial_1_1FMTeventrelation.html">FMTeventrelation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a01120913122596ab9061f9312ef9154b">getrelation</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs) const</td></tr>
-<tr class="separator:a01120913122596ab9061f9312ef9154b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa313a9d7b12c5ba9629e056cc10bf8db"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#aa313a9d7b12c5ba9629e056cc10bf8db">operator==</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs) const</td></tr>
-<tr class="separator:aa313a9d7b12c5ba9629e056cc10bf8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5cd868fb1b18cec567c743ddd89230"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a4f5cd868fb1b18cec567c743ddd89230">operator!=</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs) const</td></tr>
-<tr class="separator:a4f5cd868fb1b18cec567c743ddd89230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a2d770f90c8e821ce881f9adaa84d2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a13a2d770f90c8e821ce881f9adaa84d2">operator&lt;</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs) const</td></tr>
-<tr class="separator:a13a2d770f90c8e821ce881f9adaa84d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc479a216ca4ce327c38de66f1baa35"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a4fc479a216ca4ce327c38de66f1baa35">perimeter</a> () const</td></tr>
-<tr class="separator:a4fc479a216ca4ce327c38de66f1baa35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad2fe9af38198cc7131fb53e229a37d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a2ad2fe9af38198cc7131fb53e229a37d">height</a> () const</td></tr>
-<tr class="separator:a2ad2fe9af38198cc7131fb53e229a37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac880ef55ece5ca1a99dab99e78862d69"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ac880ef55ece5ca1a99dab99e78862d69">width</a> () const</td></tr>
-<tr class="separator:ac880ef55ece5ca1a99dab99e78862d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f205bde07cf67638364ccb106197d6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a4f205bde07cf67638364ccb106197d6e">averagecentroid</a> () const</td></tr>
-<tr class="separator:a4f205bde07cf67638364ccb106197d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0264b459c9a4490b3bb14f6c22e1d1cc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a0264b459c9a4490b3bb14f6c22e1d1cc">getstats</a> () const</td></tr>
-<tr class="separator:a0264b459c9a4490b3bb14f6c22e1d1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92140e096700766429a182687ba8909f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a92140e096700766429a182687ba8909f">erase</a> (const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;newlocation)</td></tr>
-<tr class="separator:a92140e096700766429a182687ba8909f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc1fecb341a918814acc0402db4b02a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#afc1fecb341a918814acc0402db4b02a5">merge</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;event)</td></tr>
-<tr class="separator:afc1fecb341a918814acc0402db4b02a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d6d9c67a8fe4009f00066c3d8ff64b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a2d6d9c67a8fe4009f00066c3d8ff64b2">insert</a> (const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;newlocation)</td></tr>
-<tr class="separator:a2d6d9c67a8fe4009f00066c3d8ff64b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0859856d6c53dc290e7df71769b97cc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a0859856d6c53dc290e7df71769b97cc7">setactionid</a> (const int &amp;laction_id)</td></tr>
-<tr class="separator:a0859856d6c53dc290e7df71769b97cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abefa40e88a5be0e3385b91d5e6dbaf51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#abefa40e88a5be0e3385b91d5e6dbaf51">setperiod</a> (const int &amp;lperiod)</td></tr>
-<tr class="separator:abefa40e88a5be0e3385b91d5e6dbaf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac80754842d9f871c14b564538eaabb59"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ac80754842d9f871c14b564538eaabb59">getactionid</a> () const</td></tr>
-<tr class="separator:ac80754842d9f871c14b564538eaabb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a188b15a224b6a905bb443db98e3a8fc2"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a188b15a224b6a905bb443db98e3a8fc2">getperiod</a> () const</td></tr>
-<tr class="separator:a188b15a224b6a905bb443db98e3a8fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a483e8a74310bf52895e255b27a6da5e2"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a483e8a74310bf52895e255b27a6da5e2">ignit</a> (const size_t &amp;eventmaximalsize, const std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &amp;ignit, const int &amp;laction_id, const int &amp;lperiod)</td></tr>
-<tr class="separator:a483e8a74310bf52895e255b27a6da5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f16978bdc9f4225654e09e79ec4d51b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a5f16978bdc9f4225654e09e79ec4d51b">spread</a> (const size_t &amp;eventminimalsize, const size_t &amp;eventmaximalsize, const size_t &amp;neighboringsize, const std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt; &amp;territory, std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &gt; active)</td></tr>
-<tr class="separator:a5f16978bdc9f4225654e09e79ec4d51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa87c834480312e3943f6f7e5741d0b09"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#aa87c834480312e3943f6f7e5741d0b09">distance</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs) const</td></tr>
-<tr class="separator:aa87c834480312e3943f6f7e5741d0b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7c8cce752a44a7d8bc0a4e321518ee7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae7c8cce752a44a7d8bc0a4e321518ee7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ae7c8cce752a44a7d8bc0a4e321518ee7">within</a> (const T &amp;dist, const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs) const</td></tr>
-<tr class="separator:ae7c8cce752a44a7d8bc0a4e321518ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e93c52b56ff336bb20dabd9b97b6fd1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1e93c52b56ff336bb20dabd9b97b6fd1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a1e93c52b56ff336bb20dabd9b97b6fd1">within</a> (const T &amp;dist, const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;location) const</td></tr>
-<tr class="separator:a1e93c52b56ff336bb20dabd9b97b6fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab06fbeb5f4614f953e725f637c22b1b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ab06fbeb5f4614f953e725f637c22b1b2">contain</a> (const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;coord) const</td></tr>
-<tr class="separator:ab06fbeb5f4614f953e725f637c22b1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a816bee97716e9041008412835acff994"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a816bee97716e9041008412835acff994">potentialysplitevent</a> (const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;coord) const</td></tr>
-<tr class="separator:a816bee97716e9041008412835acff994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af56df84fe8d82ef1e6a0e661bb3b65fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#af56df84fe8d82ef1e6a0e661bb3b65fa">splitevent</a> (const unsigned int &amp;ldistance, std::vector&lt; <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &gt; &amp;splittedevents) const</td></tr>
-<tr class="separator:af56df84fe8d82ef1e6a0e661bb3b65fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac335f10aa52db434e99be7b6981fd510"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ac335f10aa52db434e99be7b6981fd510">getterritory</a> (const size_t &amp;<a class="el" href="classSpatial_1_1FMTevent.html#aa87c834480312e3943f6f7e5741d0b09">distance</a>) const</td></tr>
-<tr class="separator:ac335f10aa52db434e99be7b6981fd510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6141a4cb5a5fde6da42da23d3debb7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#abf6141a4cb5a5fde6da42da23d3debb7">getborders</a> () const</td></tr>
-<tr class="separator:abf6141a4cb5a5fde6da42da23d3debb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f2ef984587d3f2b607dd60f459619cc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a6f2ef984587d3f2b607dd60f459619cc">getenveloppe</a> () const</td></tr>
-<tr class="separator:a6f2ef984587d3f2b607dd60f459619cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20f0fb55530939fa1c46f4633af6a54c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a20f0fb55530939fa1c46f4633af6a54c">getclosescoordinates</a> (const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;rhs, std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &amp;thiscoordinate, std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &amp;rhscoordinate) const</td></tr>
-<tr class="separator:a20f0fb55530939fa1c46f4633af6a54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720e902aa9158de0e7c06a1081fa66d5"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a720e902aa9158de0e7c06a1081fa66d5">midPosition</a> () const</td></tr>
+<tr class="memdesc:a720e902aa9158de0e7c06a1081fa66d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mid point of the elements of the event.  <br /></td></tr>
+<tr class="separator:a720e902aa9158de0e7c06a1081fa66d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcd6f95414d2cb47753b0dddaea9574"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a3fcd6f95414d2cb47753b0dddaea9574">~FMTEvent</a> ()=default</td></tr>
+<tr class="memdesc:a3fcd6f95414d2cb47753b0dddaea9574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>.  <br /></td></tr>
+<tr class="separator:a3fcd6f95414d2cb47753b0dddaea9574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc03d4767fbf618b30a84de4bfb3d2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a2fc03d4767fbf618b30a84de4bfb3d2b">FMTEvent</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:a2fc03d4767fbf618b30a84de4bfb3d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>.  <br /></td></tr>
+<tr class="separator:a2fc03d4767fbf618b30a84de4bfb3d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea782adb54b4e12554b4f8ba6a23f6de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#aea782adb54b4e12554b4f8ba6a23f6de">operator=</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:aea782adb54b4e12554b4f8ba6a23f6de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>.  <br /></td></tr>
+<tr class="separator:aea782adb54b4e12554b4f8ba6a23f6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e7b88378b5a42fce18d629a3e4f25d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a19e7b88378b5a42fce18d629a3e4f25d">FMTEvent</a> ()=default</td></tr>
+<tr class="memdesc:a19e7b88378b5a42fce18d629a3e4f25d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>.  <br /></td></tr>
+<tr class="separator:a19e7b88378b5a42fce18d629a3e4f25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c052f266b8fb839247f1a9e7849f34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a02c052f266b8fb839247f1a9e7849f34">FMTEvent</a> (const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;p_location, int p_actionId, int p_period, size_t p_centroidGraphFamily)</td></tr>
+<tr class="memdesc:a02c052f266b8fb839247f1a9e7849f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a> from a location, an action id, a period and a centroid graph family.  <br /></td></tr>
+<tr class="separator:a02c052f266b8fb839247f1a9e7849f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84ae8decb5724519fb0295156de7d99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#ab84ae8decb5724519fb0295156de7d99">empty</a> () const</td></tr>
+<tr class="memdesc:ab84ae8decb5724519fb0295156de7d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether the event is empty.  <br /></td></tr>
+<tr class="separator:ab84ae8decb5724519fb0295156de7d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98d56e34e854c496ccc30a5a905bb68"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#ac98d56e34e854c496ccc30a5a905bb68">size</a> () const</td></tr>
+<tr class="memdesc:ac98d56e34e854c496ccc30a5a905bb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the event.  <br /></td></tr>
+<tr class="separator:ac98d56e34e854c496ccc30a5a905bb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8edb0307fcde26a3481237dc8bc803"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#afd8edb0307fcde26a3481237dc8bc803">hash</a> () const</td></tr>
+<tr class="memdesc:afd8edb0307fcde26a3481237dc8bc803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash the event.  <br /></td></tr>
+<tr class="separator:afd8edb0307fcde26a3481237dc8bc803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15d50c08ff3c1184c137569223e78d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatial_1_1FMTEventRelation.html">FMTEventRelation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#ac15d50c08ff3c1184c137569223e78d3">getRelation</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:ac15d50c08ff3c1184c137569223e78d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the relation between this event and another one.  <br /></td></tr>
+<tr class="separator:ac15d50c08ff3c1184c137569223e78d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab184510146f0dc83573da2fa2d1f24de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#ab184510146f0dc83573da2fa2d1f24de">operator==</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:ab184510146f0dc83573da2fa2d1f24de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>.  <br /></td></tr>
+<tr class="separator:ab184510146f0dc83573da2fa2d1f24de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3e056016734e239e943c0ad667b697"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a2c3e056016734e239e943c0ad667b697">operator!=</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a2c3e056016734e239e943c0ad667b697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>.  <br /></td></tr>
+<tr class="separator:a2c3e056016734e239e943c0ad667b697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ab1a9205df2d7e02f8959c98a84d1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a53ab1a9205df2d7e02f8959c98a84d1f">operator&lt;</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a53ab1a9205df2d7e02f8959c98a84d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than operator for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>.  <br /></td></tr>
+<tr class="separator:a53ab1a9205df2d7e02f8959c98a84d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d2d914ca4d2856f55c57ac07d88cdf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#ac3d2d914ca4d2856f55c57ac07d88cdf">perimeter</a> () const</td></tr>
+<tr class="memdesc:ac3d2d914ca4d2856f55c57ac07d88cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the perimeter of the event, including any internal holes.  <br /></td></tr>
+<tr class="separator:ac3d2d914ca4d2856f55c57ac07d88cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1137782a1b01f091e0dd6bcfd7cd85a0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a1137782a1b01f091e0dd6bcfd7cd85a0">height</a> () const</td></tr>
+<tr class="memdesc:a1137782a1b01f091e0dd6bcfd7cd85a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the height of the event.  <br /></td></tr>
+<tr class="separator:a1137782a1b01f091e0dd6bcfd7cd85a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea79ddb591d6f33cd6670e44a351d720"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#aea79ddb591d6f33cd6670e44a351d720">width</a> () const</td></tr>
+<tr class="memdesc:aea79ddb591d6f33cd6670e44a351d720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the width of the event.  <br /></td></tr>
+<tr class="separator:aea79ddb591d6f33cd6670e44a351d720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9d97604df2084717411dbcbb745ac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a4a9d97604df2084717411dbcbb745ac4">averageCentroid</a> () const</td></tr>
+<tr class="memdesc:a4a9d97604df2084717411dbcbb745ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the centroid based on the envelope of the event.  <br /></td></tr>
+<tr class="separator:a4a9d97604df2084717411dbcbb745ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8896c530e6d2f0c3bb12a525e9780d81"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a8896c530e6d2f0c3bb12a525e9780d81">getStats</a> () const</td></tr>
+<tr class="memdesc:a8896c530e6d2f0c3bb12a525e9780d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the patch stats (size, perimeter, height and width) as a string.  <br /></td></tr>
+<tr class="separator:a8896c530e6d2f0c3bb12a525e9780d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d166c312ae2b9bd3de4df7fe8c0bd01"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a6d166c312ae2b9bd3de4df7fe8c0bd01">erase</a> (const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;newlocation)</td></tr>
+<tr class="memdesc:a6d166c312ae2b9bd3de4df7fe8c0bd01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase a coordinate from the event.  <br /></td></tr>
+<tr class="separator:a6d166c312ae2b9bd3de4df7fe8c0bd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf63d22028dd1862e141f546822b5b2a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#aaf63d22028dd1862e141f546822b5b2a">merge</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;event)</td></tr>
+<tr class="memdesc:aaf63d22028dd1862e141f546822b5b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge another event into this one.  <br /></td></tr>
+<tr class="separator:aaf63d22028dd1862e141f546822b5b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08346d76006852226d833919f01aeab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#ab08346d76006852226d833919f01aeab">insert</a> (const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;newlocation)</td></tr>
+<tr class="memdesc:ab08346d76006852226d833919f01aeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a coordinate in the event.  <br /></td></tr>
+<tr class="separator:ab08346d76006852226d833919f01aeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4332683b21afb8c9f176d2b55f78359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#aa4332683b21afb8c9f176d2b55f78359">setActionId</a> (const int &amp;laction_id)</td></tr>
+<tr class="memdesc:aa4332683b21afb8c9f176d2b55f78359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action id of the event.  <br /></td></tr>
+<tr class="separator:aa4332683b21afb8c9f176d2b55f78359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b41265523f63ade37219f0f3baf6e35"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a5b41265523f63ade37219f0f3baf6e35">getActionId</a> () const</td></tr>
+<tr class="memdesc:a5b41265523f63ade37219f0f3baf6e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the action id of the event.  <br /></td></tr>
+<tr class="separator:a5b41265523f63ade37219f0f3baf6e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55e7e953b94115d342c5d59f695ee83"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#ab55e7e953b94115d342c5d59f695ee83">getPeriod</a> () const</td></tr>
+<tr class="memdesc:ab55e7e953b94115d342c5d59f695ee83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the period of the event.  <br /></td></tr>
+<tr class="separator:ab55e7e953b94115d342c5d59f695ee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be353578192d2d7f85affbe5acca5af"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a1be353578192d2d7f85affbe5acca5af">getGraphFamily</a> () const</td></tr>
+<tr class="memdesc:a1be353578192d2d7f85affbe5acca5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the graph family of the event.  <br /></td></tr>
+<tr class="separator:a1be353578192d2d7f85affbe5acca5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25afd6645c4a493c53cd3eacbc28d61c"><td class="memItemLeft" align="right" valign="top">const std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a25afd6645c4a493c53cd3eacbc28d61c">getElements</a> () const</td></tr>
+<tr class="memdesc:a25afd6645c4a493c53cd3eacbc28d61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the elements (coordinates) of the event.  <br /></td></tr>
+<tr class="separator:a25afd6645c4a493c53cd3eacbc28d61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ff03c2815f36b01c6b2e2a31cbc227"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a25ff03c2815f36b01c6b2e2a31cbc227">ignit</a> (const size_t &amp;eventmaximalsize, const std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &amp;ignit, int p_actionId, int p_period, size_t p_GraphFamily)</td></tr>
+<tr class="memdesc:a25ff03c2815f36b01c6b2e2a31cbc227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignite the event at a coordinate for an action, a period and a graph family, up to a maximal size.  <br /></td></tr>
+<tr class="separator:a25ff03c2815f36b01c6b2e2a31cbc227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522a11f0954a5a21d8e26c1b203976f3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a522a11f0954a5a21d8e26c1b203976f3">spread</a> (const size_t &amp;eventminimalsize, const size_t &amp;eventmaximalsize, const size_t &amp;neighboringsize, const std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt; &amp;territory, std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &gt; active)</td></tr>
+<tr class="memdesc:a522a11f0954a5a21d8e26c1b203976f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spread the event within a territory from the active coordinates, respecting the size bounds.  <br /></td></tr>
+<tr class="separator:a522a11f0954a5a21d8e26c1b203976f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a1896aba558029a8b885b0ec3e3e36"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a28a1896aba558029a8b885b0ec3e3e36">distance</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a28a1896aba558029a8b885b0ec3e3e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the distance between this event and another one.  <br /></td></tr>
+<tr class="separator:a28a1896aba558029a8b885b0ec3e3e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c80475ae90612f63e8d18b6ce38cec"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a57c80475ae90612f63e8d18b6ce38cec"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a57c80475ae90612f63e8d18b6ce38cec">within</a> (const T &amp;dist, const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a57c80475ae90612f63e8d18b6ce38cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the event is within a distance of another event's envelope.  <br /></td></tr>
+<tr class="separator:a57c80475ae90612f63e8d18b6ce38cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3778e51381a968d7a047b5cc993820c4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3778e51381a968d7a047b5cc993820c4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a3778e51381a968d7a047b5cc993820c4">within</a> (const T &amp;dist, const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;location) const</td></tr>
+<tr class="memdesc:a3778e51381a968d7a047b5cc993820c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if a coordinate is within a distance of the event's coordinates.  <br /></td></tr>
+<tr class="separator:a3778e51381a968d7a047b5cc993820c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18487554e908a59bd0ed4f795904302a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a18487554e908a59bd0ed4f795904302a">contain</a> (const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;coord) const</td></tr>
+<tr class="memdesc:a18487554e908a59bd0ed4f795904302a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if a coordinate is in the elements of the event.  <br /></td></tr>
+<tr class="separator:a18487554e908a59bd0ed4f795904302a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6629a8e89ab4c1626bf0a3834d69c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#add6629a8e89ab4c1626bf0a3834d69c7">willSplitEvent</a> (const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;p_coordinate) const</td></tr>
+<tr class="memdesc:add6629a8e89ab4c1626bf0a3834d69c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if removing a coordinate will split the event.  <br /></td></tr>
+<tr class="separator:add6629a8e89ab4c1626bf0a3834d69c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316fc9e383d4dd655779033f507da4b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a316fc9e383d4dd655779033f507da4b9">splitEvent</a> (std::vector&lt; <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &gt; &amp;splittedevents) const</td></tr>
+<tr class="memdesc:a316fc9e383d4dd655779033f507da4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split the event, filling a vector with the split events and removing the elements from the current event.  <br /></td></tr>
+<tr class="separator:a316fc9e383d4dd655779033f507da4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105604a9896f8b224057137c47b7ec45"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a105604a9896f8b224057137c47b7ec45">getTerritory</a> (const size_t &amp;<a class="el" href="classSpatial_1_1FMTEvent.html#a28a1896aba558029a8b885b0ec3e3e36">distance</a>) const</td></tr>
+<tr class="memdesc:a105604a9896f8b224057137c47b7ec45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the adjacent territory of the event based on a distance.  <br /></td></tr>
+<tr class="separator:a105604a9896f8b224057137c47b7ec45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e63da27a62203eca4805f043386379a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a6e63da27a62203eca4805f043386379a">getBorders</a> () const</td></tr>
+<tr class="memdesc:a6e63da27a62203eca4805f043386379a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the coordinates of the border of the event.  <br /></td></tr>
+<tr class="separator:a6e63da27a62203eca4805f043386379a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10530d2ba70a34ac2e84c2d29e936dfd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a>, <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a10530d2ba70a34ac2e84c2d29e936dfd">getOutsideBordersPair</a> () const</td></tr>
+<tr class="memdesc:a10530d2ba70a34ac2e84c2d29e936dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the outside borders of the event as pairs of coordinates.  <br /></td></tr>
+<tr class="separator:a10530d2ba70a34ac2e84c2d29e936dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779f5d4d6a06c5de8bd9889ad79a9d84"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a779f5d4d6a06c5de8bd9889ad79a9d84">getEnveloppe</a> () const</td></tr>
+<tr class="memdesc:a779f5d4d6a06c5de8bd9889ad79a9d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the four coordinates that create the envelope of the event.  <br /></td></tr>
+<tr class="separator:a779f5d4d6a06c5de8bd9889ad79a9d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e70f5e65a5f19f32ce5ee84c8a7b03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a79e70f5e65a5f19f32ce5ee84c8a7b03">getClosesCoordinates</a> (const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;rhs, std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &amp;thiscoordinate, std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &amp;rhscoordinate) const</td></tr>
+<tr class="memdesc:a79e70f5e65a5f19f32ce5ee84c8a7b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the closest coordinates between this event and another one.  <br /></td></tr>
+<tr class="separator:a79e70f5e65a5f19f32ce5ee84c8a7b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9f3c08ebef7ffccc9e2918281fedfcaf"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a9f3c08ebef7ffccc9e2918281fedfcaf">getstatsheader</a> ()</td></tr>
-<tr class="separator:a9f3c08ebef7ffccc9e2918281fedfcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a9c39a57f33efbd6341be88dcbf443765"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a9c39a57f33efbd6341be88dcbf443765">elements</a></td></tr>
-<tr class="separator:a9c39a57f33efbd6341be88dcbf443765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a94b6e81593be7d7dd46af8c9beebcd55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a94b6e81593be7d7dd46af8c9beebcd55">action_id</a></td></tr>
-<tr class="separator:a94b6e81593be7d7dd46af8c9beebcd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6258eda3ccb3be107087814a6ac7efc3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#a6258eda3ccb3be107087814a6ac7efc3">period</a></td></tr>
-<tr class="separator:a6258eda3ccb3be107087814a6ac7efc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db9c71dadb9f6f05ad2bc8f3a41dd5a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#a6db9c71dadb9f6f05ad2bc8f3a41dd5a">getStatsHeader</a> ()</td></tr>
+<tr class="memdesc:a6db9c71dadb9f6f05ad2bc8f3a41dd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the header of the patch stats (size, perimeter, height and width).  <br /></td></tr>
+<tr class="separator:a6db9c71dadb9f6f05ad2bc8f3a41dd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTevent.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatial_1_1FMTEvent.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is the base class use to create FMTsaevent or FMTsesevent. It is a set of <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> (elements) corresponding to the FMTcoordinates presents in the event. </p>
+<div class="textblock"><p>Base class for a spatial event (FMTsaevent or FMTsesevent): a set of <a class="el" href="classSpatial_1_1FMTCoordinate.html" title="Spatially referenced coordinate holding an x and y position on a raster grid.">FMTCoordinate</a> corresponding to the coordinates present in the event. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4165c8479fa41aa8502d0aabd12948fa" name="a4165c8479fa41aa8502d0aabd12948fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4165c8479fa41aa8502d0aabd12948fa">&#9670;&#160;</a></span>~FMTevent()</h2>
+<a id="a3fcd6f95414d2cb47753b0dddaea9574" name="a3fcd6f95414d2cb47753b0dddaea9574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcd6f95414d2cb47753b0dddaea9574">&#9670;&#160;</a></span>~FMTEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,7 +235,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Spatial::FMTevent::~FMTevent </td>
+          <td class="memname">Spatial::FMTEvent::~FMTEvent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -216,55 +243,105 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Destructor </p>
+
+<p>Default destructor for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>. </p>
 
 </div>
 </div>
-<a id="ad1a03f1cfd209936a637637c83841a34" name="ad1a03f1cfd209936a637637c83841a34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1a03f1cfd209936a637637c83841a34">&#9670;&#160;</a></span>FMTevent() <span class="overload">[1/3]</span></h2>
+<a id="a2fc03d4767fbf618b30a84de4bfb3d2b" name="a2fc03d4767fbf618b30a84de4bfb3d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc03d4767fbf618b30a84de4bfb3d2b">&#9670;&#160;</a></span>FMTEvent() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Spatial::FMTevent::FMTevent </td>
+          <td class="memname">Spatial::FMTEvent::FMTEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy constructor for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a19e7b88378b5a42fce18d629a3e4f25d" name="a19e7b88378b5a42fce18d629a3e4f25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e7b88378b5a42fce18d629a3e4f25d">&#9670;&#160;</a></span>FMTEvent() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Spatial::FMTEvent::FMTEvent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Constructor </p>
+
+<p>Default constructor for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>. </p>
 
 </div>
 </div>
-<a id="ad66bfa1e8301a5c9bc4436df939beb87" name="ad66bfa1e8301a5c9bc4436df939beb87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad66bfa1e8301a5c9bc4436df939beb87">&#9670;&#160;</a></span>FMTevent() <span class="overload">[2/3]</span></h2>
+<a id="a02c052f266b8fb839247f1a9e7849f34" name="a02c052f266b8fb839247f1a9e7849f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c052f266b8fb839247f1a9e7849f34">&#9670;&#160;</a></span>FMTEvent() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Spatial::FMTevent::FMTevent </td>
+          <td class="memname">Spatial::FMTEvent::FMTEvent </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>location</em>, </td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_location</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>laction_id</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p_actionId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>lperiod</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p_period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>p_centroidGraphFamily</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -273,114 +350,117 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor with coordinate, action_id and period </p>
 
-</div>
-</div>
-<a id="a4566e3c652f6f3f55cbda0dfac784c1e" name="a4566e3c652f6f3f55cbda0dfac784c1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4566e3c652f6f3f55cbda0dfac784c1e">&#9670;&#160;</a></span>FMTevent() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Spatial::FMTevent::FMTevent </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Copy constructor </p>
+<p>Construct a <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a> from a location, an action id, a period and a centroid graph family. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_location</td><td>the location. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_actionId</td><td>the action id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_period</td><td>the period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_centroidGraphFamily</td><td>the centroid graph family. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4f205bde07cf67638364ccb106197d6e" name="a4f205bde07cf67638364ccb106197d6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f205bde07cf67638364ccb106197d6e">&#9670;&#160;</a></span>averagecentroid()</h2>
+<a id="a4a9d97604df2084717411dbcbb745ac4" name="a4a9d97604df2084717411dbcbb745ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9d97604df2084717411dbcbb745ac4">&#9670;&#160;</a></span>averageCentroid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> Spatial::FMTevent::averagecentroid </td>
+          <td class="memname"><a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> Spatial::FMTEvent::averageCentroid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return centroid based on the envelope of the event </p>
+
+<p>Return the centroid based on the envelope of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the average centroid. </dd></dl>
 
 </div>
 </div>
-<a id="ab06fbeb5f4614f953e725f637c22b1b2" name="ab06fbeb5f4614f953e725f637c22b1b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab06fbeb5f4614f953e725f637c22b1b2">&#9670;&#160;</a></span>contain()</h2>
+<a id="a18487554e908a59bd0ed4f795904302a" name="a18487554e908a59bd0ed4f795904302a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18487554e908a59bd0ed4f795904302a">&#9670;&#160;</a></span>contain()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTevent::contain </td>
+          <td class="memname">bool Spatial::FMTEvent::contain </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>coord</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true if coordinate is in elements </p>
+
+<p>Return true if a coordinate is in the elements of the event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">coord</td><td>the coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the coordinate is in the event else false. </dd></dl>
 
 </div>
 </div>
-<a id="aa87c834480312e3943f6f7e5741d0b09" name="aa87c834480312e3943f6f7e5741d0b09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa87c834480312e3943f6f7e5741d0b09">&#9670;&#160;</a></span>distance()</h2>
+<a id="a28a1896aba558029a8b885b0ec3e3e36" name="a28a1896aba558029a8b885b0ec3e3e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a1896aba558029a8b885b0ec3e3e36">&#9670;&#160;</a></span>distance()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Spatial::FMTevent::distance </td>
+          <td class="memname">double Spatial::FMTEvent::distance </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the distance between this event and the event pass as argument </p>
+
+<p>Return the distance between this event and another one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other event. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the distance. </dd></dl>
 
 </div>
 </div>
-<a id="a3ce4d2b2c3650c81730a8d60770a4662" name="a3ce4d2b2c3650c81730a8d60770a4662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ce4d2b2c3650c81730a8d60770a4662">&#9670;&#160;</a></span>empty()</h2>
+<a id="ab84ae8decb5724519fb0295156de7d99" name="ab84ae8decb5724519fb0295156de7d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84ae8decb5724519fb0295156de7d99">&#9670;&#160;</a></span>empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTevent::empty </td>
+          <td class="memname">bool Spatial::FMTEvent::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Test whether event is empty </p>
+
+<p>Test whether the event is empty. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the event is empty else false. </dd></dl>
 
 </div>
 </div>
-<a id="a92140e096700766429a182687ba8909f" name="a92140e096700766429a182687ba8909f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92140e096700766429a182687ba8909f">&#9670;&#160;</a></span>erase()</h2>
+<a id="a6d166c312ae2b9bd3de4df7fe8c0bd01" name="a6d166c312ae2b9bd3de4df7fe8c0bd01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d166c312ae2b9bd3de4df7fe8c0bd01">&#9670;&#160;</a></span>erase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,9 +469,9 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Spatial::FMTevent::erase </td>
+          <td class="memname">virtual void Spatial::FMTEvent::erase </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>newlocation</em></td><td>)</td>
           <td></td>
         </tr>
@@ -402,76 +482,79 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Erase coordinate from event </p>
+
+<p>Erase a coordinate from the event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newlocation</td><td>the coordinate to erase. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ac80754842d9f871c14b564538eaabb59" name="ac80754842d9f871c14b564538eaabb59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac80754842d9f871c14b564538eaabb59">&#9670;&#160;</a></span>getactionid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int &amp; Spatial::FMTevent::getactionid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Getter of the action id </p>
-
-</div>
-</div>
-<a id="abf6141a4cb5a5fde6da42da23d3debb7" name="abf6141a4cb5a5fde6da42da23d3debb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf6141a4cb5a5fde6da42da23d3debb7">&#9670;&#160;</a></span>getborders()</h2>
+<a id="a5b41265523f63ade37219f0f3baf6e35" name="a5b41265523f63ade37219f0f3baf6e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b41265523f63ade37219f0f3baf6e35">&#9670;&#160;</a></span>getActionId()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &gt; Spatial::FMTevent::getborders </td>
+          <td class="memname">const int &amp; Spatial::FMTEvent::getActionId </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns coordinate of the border of the even </p>
+
+<p>Return the action id of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the action id. </dd></dl>
 
 </div>
 </div>
-<a id="a20f0fb55530939fa1c46f4633af6a54c" name="a20f0fb55530939fa1c46f4633af6a54c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20f0fb55530939fa1c46f4633af6a54c">&#9670;&#160;</a></span>getclosescoordinates()</h2>
+<a id="a6e63da27a62203eca4805f043386379a" name="a6e63da27a62203eca4805f043386379a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e63da27a62203eca4805f043386379a">&#9670;&#160;</a></span>getBorders()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Spatial::FMTevent::getclosescoordinates </td>
+          <td class="memname">std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &gt; Spatial::FMTEvent::getBorders </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the coordinates of the border of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the border coordinates. </dd></dl>
+
+</div>
+</div>
+<a id="a79e70f5e65a5f19f32ce5ee84c8a7b03" name="a79e70f5e65a5f19f32ce5ee84c8a7b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e70f5e65a5f19f32ce5ee84c8a7b03">&#9670;&#160;</a></span>getClosesCoordinates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Spatial::FMTEvent::getClosesCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &amp;&#160;</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &amp;&#160;</td>
           <td class="paramname"><em>thiscoordinate</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &amp;&#160;</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &amp;&#160;</td>
           <td class="paramname"><em>rhscoordinate</em>&#160;</td>
         </tr>
         <tr>
@@ -481,93 +564,168 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the closes coordinate between two <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> </p>
+
+<p>Return the closest coordinates between this event and another one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other event. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">thiscoordinate</td><td>the closest coordinate of this event. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rhscoordinate</td><td>the closest coordinate of the other event. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a6f2ef984587d3f2b607dd60f459619cc" name="a6f2ef984587d3f2b607dd60f459619cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f2ef984587d3f2b607dd60f459619cc">&#9670;&#160;</a></span>getenveloppe()</h2>
+<a id="a25afd6645c4a493c53cd3eacbc28d61c" name="a25afd6645c4a493c53cd3eacbc28d61c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25afd6645c4a493c53cd3eacbc28d61c">&#9670;&#160;</a></span>getElements()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt; Spatial::FMTevent::getenveloppe </td>
+          <td class="memname">const std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt; &amp; Spatial::FMTEvent::getElements </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">    Coordinates that create the envelope of the event
-</pre><p> 0//-//1// -//-//-// 2//-//3// Returns coordinate of the enveloppe </p>
+
+<p>Return the elements (coordinates) of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the event elements. </dd></dl>
 
 </div>
 </div>
-<a id="a188b15a224b6a905bb443db98e3a8fc2" name="a188b15a224b6a905bb443db98e3a8fc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a188b15a224b6a905bb443db98e3a8fc2">&#9670;&#160;</a></span>getperiod()</h2>
+<a id="a779f5d4d6a06c5de8bd9889ad79a9d84" name="a779f5d4d6a06c5de8bd9889ad79a9d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779f5d4d6a06c5de8bd9889ad79a9d84">&#9670;&#160;</a></span>getEnveloppe()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int &amp; Spatial::FMTevent::getperiod </td>
+          <td class="memname">std::array&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a>, 4 &gt; Spatial::FMTEvent::getEnveloppe </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Getter of the period </p>
+
+<p>Return the four coordinates that create the envelope of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the envelope coordinates. </dd></dl>
 
 </div>
 </div>
-<a id="a01120913122596ab9061f9312ef9154b" name="a01120913122596ab9061f9312ef9154b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01120913122596ab9061f9312ef9154b">&#9670;&#160;</a></span>getrelation()</h2>
+<a id="a1be353578192d2d7f85affbe5acca5af" name="a1be353578192d2d7f85affbe5acca5af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be353578192d2d7f85affbe5acca5af">&#9670;&#160;</a></span>getGraphFamily()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSpatial_1_1FMTeventrelation.html">FMTeventrelation</a> Spatial::FMTevent::getrelation </td>
+          <td class="memname">const size_t &amp; Spatial::FMTEvent::getGraphFamily </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the graph family of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the graph family. </dd></dl>
+
+</div>
+</div>
+<a id="a10530d2ba70a34ac2e84c2d29e936dfd" name="a10530d2ba70a34ac2e84c2d29e936dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10530d2ba70a34ac2e84c2d29e936dfd">&#9670;&#160;</a></span>getOutsideBordersPair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a>, <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt; &gt; Spatial::FMTEvent::getOutsideBordersPair </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the outside borders of the event as pairs of coordinates. </p>
+<dl class="section return"><dt>Returns</dt><dd>the outside border pairs. </dd></dl>
+
+</div>
+</div>
+<a id="ab55e7e953b94115d342c5d59f695ee83" name="ab55e7e953b94115d342c5d59f695ee83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55e7e953b94115d342c5d59f695ee83">&#9670;&#160;</a></span>getPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int &amp; Spatial::FMTEvent::getPeriod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the period of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the period. </dd></dl>
+
+</div>
+</div>
+<a id="ac15d50c08ff3c1184c137569223e78d3" name="ac15d50c08ff3c1184c137569223e78d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac15d50c08ff3c1184c137569223e78d3">&#9670;&#160;</a></span>getRelation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpatial_1_1FMTEventRelation.html">FMTEventRelation</a> Spatial::FMTEvent::getRelation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the relation between this event and another one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other event. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the event relation. </dd></dl>
+
 </div>
 </div>
-<a id="a0264b459c9a4490b3bb14f6c22e1d1cc" name="a0264b459c9a4490b3bb14f6c22e1d1cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0264b459c9a4490b3bb14f6c22e1d1cc">&#9670;&#160;</a></span>getstats()</h2>
+<a id="a8896c530e6d2f0c3bb12a525e9780d81" name="a8896c530e6d2f0c3bb12a525e9780d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8896c530e6d2f0c3bb12a525e9780d81">&#9670;&#160;</a></span>getStats()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Spatial::FMTevent::getstats </td>
+          <td class="memname">std::string Spatial::FMTEvent::getStats </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return string containing size, perimeter, height and width </p>
+
+<p>Return the patch stats (size, perimeter, height and width) as a string. </p>
+<dl class="section return"><dt>Returns</dt><dd>the stats. </dd></dl>
 
 </div>
 </div>
-<a id="a9f3c08ebef7ffccc9e2918281fedfcaf" name="a9f3c08ebef7ffccc9e2918281fedfcaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f3c08ebef7ffccc9e2918281fedfcaf">&#9670;&#160;</a></span>getstatsheader()</h2>
+<a id="a6db9c71dadb9f6f05ad2bc8f3a41dd5a" name="a6db9c71dadb9f6f05ad2bc8f3a41dd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db9c71dadb9f6f05ad2bc8f3a41dd5a">&#9670;&#160;</a></span>getStatsHeader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -576,7 +734,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::string Spatial::FMTevent::getstatsheader </td>
+          <td class="memname">static std::string Spatial::FMTEvent::getStatsHeader </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -588,18 +746,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the header of the patch stats (size, perimeter, height and width) </p>
+
+<p>Return the header of the patch stats (size, perimeter, height and width). </p>
+<dl class="section return"><dt>Returns</dt><dd>the stats header. </dd></dl>
 
 </div>
 </div>
-<a id="ac335f10aa52db434e99be7b6981fd510" name="ac335f10aa52db434e99be7b6981fd510"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac335f10aa52db434e99be7b6981fd510">&#9670;&#160;</a></span>getterritory()</h2>
+<a id="a105604a9896f8b224057137c47b7ec45" name="a105604a9896f8b224057137c47b7ec45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105604a9896f8b224057137c47b7ec45">&#9670;&#160;</a></span>getTerritory()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt; Spatial::FMTevent::getterritory </td>
+          <td class="memname">std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt; Spatial::FMTEvent::getTerritory </td>
           <td>(</td>
           <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>distance</em></td><td>)</td>
@@ -607,18 +767,26 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the adjacent territory of the event base on a distance. </p>
+
+<p>Return the adjacent territory of the event based on a distance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>the distance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the territory coordinates. </dd></dl>
 
 </div>
 </div>
-<a id="a267939ff801888d09bacd95578e117ee" name="a267939ff801888d09bacd95578e117ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a267939ff801888d09bacd95578e117ee">&#9670;&#160;</a></span>hash()</h2>
+<a id="afd8edb0307fcde26a3481237dc8bc803" name="afd8edb0307fcde26a3481237dc8bc803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd8edb0307fcde26a3481237dc8bc803">&#9670;&#160;</a></span>hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Spatial::FMTevent::hash </td>
+          <td class="memname">size_t Spatial::FMTEvent::hash </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -626,28 +794,33 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Hash the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the hash of the event. </dd></dl>
+
 </div>
 </div>
-<a id="a2ad2fe9af38198cc7131fb53e229a37d" name="a2ad2fe9af38198cc7131fb53e229a37d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad2fe9af38198cc7131fb53e229a37d">&#9670;&#160;</a></span>height()</h2>
+<a id="a1137782a1b01f091e0dd6bcfd7cd85a0" name="a1137782a1b01f091e0dd6bcfd7cd85a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1137782a1b01f091e0dd6bcfd7cd85a0">&#9670;&#160;</a></span>height()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Spatial::FMTevent::height </td>
+          <td class="memname">size_t Spatial::FMTEvent::height </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return height of the event </p>
+
+<p>Return the height of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the height. </dd></dl>
 
 </div>
 </div>
-<a id="a483e8a74310bf52895e255b27a6da5e2" name="a483e8a74310bf52895e255b27a6da5e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a483e8a74310bf52895e255b27a6da5e2">&#9670;&#160;</a></span>ignit()</h2>
+<a id="a25ff03c2815f36b01c6b2e2a31cbc227" name="a25ff03c2815f36b01c6b2e2a31cbc227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ff03c2815f36b01c6b2e2a31cbc227">&#9670;&#160;</a></span>ignit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -656,7 +829,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &gt; Spatial::FMTevent::ignit </td>
+          <td class="memname">virtual std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &gt; Spatial::FMTEvent::ignit </td>
           <td>(</td>
           <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>eventmaximalsize</em>, </td>
@@ -664,20 +837,26 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &amp;&#160;</td>
+          <td class="paramtype">const std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &amp;&#160;</td>
           <td class="paramname"><em>ignit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>laction_id</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p_actionId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>lperiod</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p_period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>p_GraphFamily</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -692,10 +871,23 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Ignite the event at a coordinate for an action, a period and a graph family, up to a maximal size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eventmaximalsize</td><td>the maximal event size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ignit</td><td>the ignition coordinate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_actionId</td><td>the action id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_period</td><td>the period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_GraphFamily</td><td>the graph family. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the active coordinates. </dd></dl>
+
 </div>
 </div>
-<a id="a2d6d9c67a8fe4009f00066c3d8ff64b2" name="a2d6d9c67a8fe4009f00066c3d8ff64b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d6d9c67a8fe4009f00066c3d8ff64b2">&#9670;&#160;</a></span>insert()</h2>
+<a id="ab08346d76006852226d833919f01aeab" name="ab08346d76006852226d833919f01aeab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08346d76006852226d833919f01aeab">&#9670;&#160;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -704,9 +896,9 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Spatial::FMTevent::insert </td>
+          <td class="memname">virtual void Spatial::FMTEvent::insert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>newlocation</em></td><td>)</td>
           <td></td>
         </tr>
@@ -717,12 +909,19 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Insert coordinate in the event </p>
+
+<p>Insert a coordinate in the event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newlocation</td><td>the coordinate to insert. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="afc1fecb341a918814acc0402db4b02a5" name="afc1fecb341a918814acc0402db4b02a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc1fecb341a918814acc0402db4b02a5">&#9670;&#160;</a></span>merge()</h2>
+<a id="aaf63d22028dd1862e141f546822b5b2a" name="aaf63d22028dd1862e141f546822b5b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf63d22028dd1862e141f546822b5b2a">&#9670;&#160;</a></span>merge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -731,9 +930,9 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Spatial::FMTevent::merge </td>
+          <td class="memname">virtual void Spatial::FMTEvent::merge </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
           <td></td>
         </tr>
@@ -744,57 +943,93 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Merge two events </p>
+
+<p>Merge another event into this one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>the event to merge. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ae34a44b4a32fdcefad577ec79578e0f4" name="ae34a44b4a32fdcefad577ec79578e0f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae34a44b4a32fdcefad577ec79578e0f4">&#9670;&#160;</a></span>midposition()</h2>
+<a id="a720e902aa9158de0e7c06a1081fa66d5" name="a720e902aa9158de0e7c06a1081fa66d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720e902aa9158de0e7c06a1081fa66d5">&#9670;&#160;</a></span>midPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator Spatial::FMTevent::midposition </td>
+          <td class="memname">std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator Spatial::FMTEvent::midPosition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Get mid point of elements. </p>
+
+<p>Get the mid point of the elements of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>an iterator to the mid coordinate. </dd></dl>
 
 </div>
 </div>
-<a id="a4f5cd868fb1b18cec567c743ddd89230" name="a4f5cd868fb1b18cec567c743ddd89230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f5cd868fb1b18cec567c743ddd89230">&#9670;&#160;</a></span>operator!=()</h2>
+<a id="a2c3e056016734e239e943c0ad667b697" name="a2c3e056016734e239e943c0ad667b697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3e056016734e239e943c0ad667b697">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTevent::operator!= </td>
+          <td class="memname">bool Spatial::FMTEvent::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Comparison operator different than </p>
+
+<p>Comparison operator for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a> to compare to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both events are different else false. </dd></dl>
 
 </div>
 </div>
-<a id="a13a2d770f90c8e821ce881f9adaa84d2" name="a13a2d770f90c8e821ce881f9adaa84d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13a2d770f90c8e821ce881f9adaa84d2">&#9670;&#160;</a></span>operator&lt;()</h2>
+<a id="a53ab1a9205df2d7e02f8959c98a84d1f" name="a53ab1a9205df2d7e02f8959c98a84d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ab1a9205df2d7e02f8959c98a84d1f">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Spatial::FMTEvent::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Less than operator for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a> to compare to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this event is less than the other else false. </dd></dl>
+
+</div>
+</div>
+<a id="aea782adb54b4e12554b4f8ba6a23f6de" name="aea782adb54b4e12554b4f8ba6a23f6de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea782adb54b4e12554b4f8ba6a23f6de">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -803,217 +1038,153 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Spatial::FMTevent::operator&lt; </td>
+          <td class="memname"><a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp; Spatial::FMTEvent::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Comparison operator less than </p>
-
-</div>
-</div>
-<a id="a1ee36619dfc63a604d52282da152340f" name="a1ee36619dfc63a604d52282da152340f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ee36619dfc63a604d52282da152340f">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp; Spatial::FMTevent::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Copy assignment operator </p>
+
+<p>Copy assignment operator for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>. </dd></dl>
 
 </div>
 </div>
-<a id="aa313a9d7b12c5ba9629e056cc10bf8db" name="aa313a9d7b12c5ba9629e056cc10bf8db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa313a9d7b12c5ba9629e056cc10bf8db">&#9670;&#160;</a></span>operator==()</h2>
+<a id="ab184510146f0dc83573da2fa2d1f24de" name="ab184510146f0dc83573da2fa2d1f24de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab184510146f0dc83573da2fa2d1f24de">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Spatial::FMTevent::operator== </td>
+          <td class="memname">bool Spatial::FMTEvent::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Comparison operator equal to </p>
+
+<p>Comparison operator for <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t...">FMTEvent</a> to compare to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both events are equal else false. </dd></dl>
 
 </div>
 </div>
-<a id="a4fc479a216ca4ce327c38de66f1baa35" name="a4fc479a216ca4ce327c38de66f1baa35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fc479a216ca4ce327c38de66f1baa35">&#9670;&#160;</a></span>perimeter()</h2>
+<a id="ac3d2d914ca4d2856f55c57ac07d88cdf" name="ac3d2d914ca4d2856f55c57ac07d88cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d2d914ca4d2856f55c57ac07d88cdf">&#9670;&#160;</a></span>perimeter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Spatial::FMTevent::perimeter </td>
+          <td class="memname">size_t Spatial::FMTEvent::perimeter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The perimeter of the event, including any internal holes in the event. </p>
+
+<p>Return the perimeter of the event, including any internal holes. </p>
+<dl class="section return"><dt>Returns</dt><dd>the perimeter. </dd></dl>
 
 </div>
 </div>
-<a id="a816bee97716e9041008412835acff994" name="a816bee97716e9041008412835acff994"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a816bee97716e9041008412835acff994">&#9670;&#160;</a></span>potentialysplitevent()</h2>
+<a id="aa4332683b21afb8c9f176d2b55f78359" name="aa4332683b21afb8c9f176d2b55f78359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4332683b21afb8c9f176d2b55f78359">&#9670;&#160;</a></span>setActionId()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTevent::potentialysplitevent </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>coord</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Fastest way to evaluate if an event will be split after erasing a coordinate. Only when neighbors the 4 around the pixel </p>
-
-</div>
-</div>
-<a id="a0859856d6c53dc290e7df71769b97cc7" name="a0859856d6c53dc290e7df71769b97cc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0859856d6c53dc290e7df71769b97cc7">&#9670;&#160;</a></span>setactionid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Spatial::FMTevent::setactionid </td>
+          <td class="memname">void Spatial::FMTEvent::setActionId </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>laction_id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Setter for action id </p>
+
+<p>Set the action id of the event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">laction_id</td><td>the action id. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="abefa40e88a5be0e3385b91d5e6dbaf51" name="abefa40e88a5be0e3385b91d5e6dbaf51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abefa40e88a5be0e3385b91d5e6dbaf51">&#9670;&#160;</a></span>setperiod()</h2>
+<a id="ac98d56e34e854c496ccc30a5a905bb68" name="ac98d56e34e854c496ccc30a5a905bb68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98d56e34e854c496ccc30a5a905bb68">&#9670;&#160;</a></span>size()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Spatial::FMTevent::setperiod </td>
-          <td>(</td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>lperiod</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Setter for period </p>
-
-</div>
-</div>
-<a id="a190505ac853c1e8e3bd84577a2589af6" name="a190505ac853c1e8e3bd84577a2589af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a190505ac853c1e8e3bd84577a2589af6">&#9670;&#160;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Spatial::FMTevent::size </td>
+          <td class="memname">size_t Spatial::FMTEvent::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Return event size </p>
+
+<p>Return the size of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the event size. </dd></dl>
 
 </div>
 </div>
-<a id="af56df84fe8d82ef1e6a0e661bb3b65fa" name="af56df84fe8d82ef1e6a0e661bb3b65fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af56df84fe8d82ef1e6a0e661bb3b65fa">&#9670;&#160;</a></span>splitevent()</h2>
+<a id="a316fc9e383d4dd655779033f507da4b9" name="a316fc9e383d4dd655779033f507da4b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316fc9e383d4dd655779033f507da4b9">&#9670;&#160;</a></span>splitEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTevent::splitevent </td>
+          <td class="memname">bool Spatial::FMTEvent::splitEvent </td>
           <td>(</td>
-          <td class="paramtype">const unsigned int &amp;&#160;</td>
-          <td class="paramname"><em>ldistance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>splittedevents</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>splittedevents</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if events are split and fill vector of split events Remove all elements from the current event and put it in the events in splittedevents </p>
+
+<p>Split the event, filling a vector with the split events and removing the elements from the current event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">splittedevents</td><td>the split events. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the event was split else false. </dd></dl>
 
 </div>
 </div>
-<a id="a5f16978bdc9f4225654e09e79ec4d51b" name="a5f16978bdc9f4225654e09e79ec4d51b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f16978bdc9f4225654e09e79ec4d51b">&#9670;&#160;</a></span>spread()</h2>
+<a id="a522a11f0954a5a21d8e26c1b203976f3" name="a522a11f0954a5a21d8e26c1b203976f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522a11f0954a5a21d8e26c1b203976f3">&#9670;&#160;</a></span>spread()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1022,7 +1193,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Spatial::FMTevent::spread </td>
+          <td class="memname">virtual bool Spatial::FMTEvent::spread </td>
           <td>(</td>
           <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>eventminimalsize</em>, </td>
@@ -1042,13 +1213,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>territory</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &gt;::const_iterator &gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::set&lt; <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &gt;::const_iterator &gt;&#160;</td>
           <td class="paramname"><em>active</em>&#160;</td>
         </tr>
         <tr>
@@ -1064,28 +1235,70 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Spread the event within a territory from the active coordinates, respecting the size bounds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eventminimalsize</td><td>the minimal event size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eventmaximalsize</td><td>the maximal event size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">neighboringsize</td><td>the neighboring size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">territory</td><td>the territory to spread in. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">active</td><td>the active coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the event spread within the bounds else false. </dd></dl>
+
 </div>
 </div>
-<a id="ac880ef55ece5ca1a99dab99e78862d69" name="ac880ef55ece5ca1a99dab99e78862d69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac880ef55ece5ca1a99dab99e78862d69">&#9670;&#160;</a></span>width()</h2>
+<a id="aea79ddb591d6f33cd6670e44a351d720" name="aea79ddb591d6f33cd6670e44a351d720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea79ddb591d6f33cd6670e44a351d720">&#9670;&#160;</a></span>width()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Spatial::FMTevent::width </td>
+          <td class="memname">size_t Spatial::FMTEvent::width </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return width of the event </p>
+
+<p>Return the width of the event. </p>
+<dl class="section return"><dt>Returns</dt><dd>the width. </dd></dl>
 
 </div>
 </div>
-<a id="a1e93c52b56ff336bb20dabd9b97b6fd1" name="a1e93c52b56ff336bb20dabd9b97b6fd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e93c52b56ff336bb20dabd9b97b6fd1">&#9670;&#160;</a></span>within() <span class="overload">[1/2]</span></h2>
+<a id="add6629a8e89ab4c1626bf0a3834d69c7" name="add6629a8e89ab4c1626bf0a3834d69c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6629a8e89ab4c1626bf0a3834d69c7">&#9670;&#160;</a></span>willSplitEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Spatial::FMTEvent::willSplitEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_coordinate</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if removing a coordinate will split the event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_coordinate</td><td>the coordinate that will be removed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it will split the event else false. </dd></dl>
+
+</div>
+</div>
+<a id="a3778e51381a968d7a047b5cc993820c4" name="a3778e51381a968d7a047b5cc993820c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3778e51381a968d7a047b5cc993820c4">&#9670;&#160;</a></span>within() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1093,7 +1306,7 @@ Friends</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTevent::within </td>
+          <td class="memname">bool Spatial::FMTEvent::within </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>dist</em>, </td>
@@ -1101,7 +1314,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTCoordinate.html">FMTCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>location</em>&#160;</td>
         </tr>
         <tr>
@@ -1111,12 +1324,27 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true if coordinate is within specified distance of the coordinates </p>
+
+<p>Return true if a coordinate is within a distance of the event's coordinates. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>the distance type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dist</td><td>the distance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">location</td><td>the coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the coordinate is within the distance else false. </dd></dl>
 
 </div>
 </div>
-<a id="ae7c8cce752a44a7d8bc0a4e321518ee7" name="ae7c8cce752a44a7d8bc0a4e321518ee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7c8cce752a44a7d8bc0a4e321518ee7">&#9670;&#160;</a></span>within() <span class="overload">[2/2]</span></h2>
+<a id="a57c80475ae90612f63e8d18b6ce38cec" name="a57c80475ae90612f63e8d18b6ce38cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c80475ae90612f63e8d18b6ce38cec">&#9670;&#160;</a></span>within() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1124,7 +1352,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool Spatial::FMTevent::within </td>
+          <td class="memname">bool Spatial::FMTEvent::within </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>dist</em>, </td>
@@ -1132,7 +1360,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTevent.html">FMTevent</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classSpatial_1_1FMTEvent.html">FMTEvent</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -1142,7 +1370,22 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true if the event is within specified distance of the envelope </p>
+
+<p>Return true if the event is within a distance of another event's envelope. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>the distance type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dist</td><td>the distance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other event. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the event is within the distance else false. </dd></dl>
 
 </div>
 </div>
@@ -1169,70 +1412,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a94b6e81593be7d7dd46af8c9beebcd55" name="a94b6e81593be7d7dd46af8c9beebcd55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94b6e81593be7d7dd46af8c9beebcd55">&#9670;&#160;</a></span>action_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Spatial::FMTevent::action_id</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Coordinate where the event started Used in spread, the active coordinate are the next to spread. Action id from the FMTmodel. </p>
-
-</div>
-</div>
-<a id="a9c39a57f33efbd6341be88dcbf443765" name="a9c39a57f33efbd6341be88dcbf443765"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c39a57f33efbd6341be88dcbf443765">&#9670;&#160;</a></span>elements</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::set&lt;<a class="el" href="classSpatial_1_1FMTcoordinate.html">FMTcoordinate</a>&gt; Spatial::FMTevent::elements</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Coordinates presents in the event </p>
-
-</div>
-</div>
-<a id="a6258eda3ccb3be107087814a6ac7efc3" name="a6258eda3ccb3be107087814a6ac7efc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6258eda3ccb3be107087814a6ac7efc3">&#9670;&#160;</a></span>period</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Spatial::FMTevent::period</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Period at which the event take place </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTevent_8hpp_source.html">FMTevent.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTEvent_8h_source.html">FMTEvent.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

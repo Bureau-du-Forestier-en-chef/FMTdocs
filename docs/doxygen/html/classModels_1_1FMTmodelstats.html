@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Models::FMTmodelstats Class Reference</title>
+<title>FMT: Models::FMTModelStats Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceModels.html">Models</a></li><li class="navelem"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceModels.html">Models</a></li><li class="navelem"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,95 +79,111 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classModels_1_1FMTmodelstats-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Models::FMTmodelstats Class Reference</div></div>
+<a href="classModels_1_1FMTModelStats-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Models::FMTModelStats Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTmodelstats_8hpp_source.html">FMTmodelstats.hpp</a>&gt;</code></p>
+<p>Class reporting the statistics of a <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>, used with the preSolve and postsolve functions.  
+ <a href="classModels_1_1FMTModelStats.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTModelStats_8h_source.html">FMTModelStats.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a485ac7077184d0b50aaee7a02ddcb131"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a485ac7077184d0b50aaee7a02ddcb131">FMTmodelstats</a> (const size_t &amp;lthemes, const size_t &amp;lthemesdata, const size_t &amp;lactions, const size_t &amp;lactionsdata, const size_t &amp;ltransitions, const size_t &amp;ltransitionsdata, const size_t &amp;lyieldsdata, const size_t &amp;llifespansdata, const size_t &amp;loutputs, const size_t &amp;loutputsdata, const size_t &amp;lconstraints, const size_t &amp;lconstraintsdata)</td></tr>
-<tr class="separator:a485ac7077184d0b50aaee7a02ddcb131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc501f766aaedd05eda0f45fdea71d08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#afc501f766aaedd05eda0f45fdea71d08">FMTmodelstats</a> ()=default</td></tr>
-<tr class="separator:afc501f766aaedd05eda0f45fdea71d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5cb53b6b475c2ffcda621c092bd76a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#afc5cb53b6b475c2ffcda621c092bd76a">FMTmodelstats</a> (const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;rhs)=default</td></tr>
-<tr class="separator:afc5cb53b6b475c2ffcda621c092bd76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59a3d324410d9d6f903f705e2b9c5b48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a59a3d324410d9d6f903f705e2b9c5b48">~FMTmodelstats</a> ()=default</td></tr>
-<tr class="separator:a59a3d324410d9d6f903f705e2b9c5b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64bf8f2a850e839949c42921b85da9d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a64bf8f2a850e839949c42921b85da9d2">operator=</a> (const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;rhs)=default</td></tr>
-<tr class="separator:a64bf8f2a850e839949c42921b85da9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b411906821940b2ff66fc19b0a25c90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a0b411906821940b2ff66fc19b0a25c90">operator+=</a> (const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;rhs)</td></tr>
-<tr class="separator:a0b411906821940b2ff66fc19b0a25c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162e8344eb6f7a1d8f08245cd4ae40f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a162e8344eb6f7a1d8f08245cd4ae40f2">operator-=</a> (const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;rhs)</td></tr>
-<tr class="separator:a162e8344eb6f7a1d8f08245cd4ae40f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01936ef6495213e8aa7481a2680acbd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a01936ef6495213e8aa7481a2680acbd6">operator+</a> (const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;rhs)</td></tr>
-<tr class="separator:a01936ef6495213e8aa7481a2680acbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef35edb05db3d6c2bca8f95d746446ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#aef35edb05db3d6c2bca8f95d746446ca">operator-</a> (const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;rhs)</td></tr>
-<tr class="separator:aef35edb05db3d6c2bca8f95d746446ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ebff77d0490993e429b2530a186c60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a37ebff77d0490993e429b2530a186c60">operator==</a> (const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;rhs) const</td></tr>
-<tr class="separator:a37ebff77d0490993e429b2530a186c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f1697fa6d3c45017c54a62c1303801"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a52f1697fa6d3c45017c54a62c1303801">operator!=</a> (const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;rhs) const</td></tr>
-<tr class="separator:a52f1697fa6d3c45017c54a62c1303801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c3e2f0ec4ec3d38a15b35e7720fc0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#ac4c3e2f0ec4ec3d38a15b35e7720fc0c">operator std::string</a> () const</td></tr>
-<tr class="separator:ac4c3e2f0ec4ec3d38a15b35e7720fc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9d3002bca5ed93be301d2f80e0295b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#afb9d3002bca5ed93be301d2f80e0295b">FMTModelStats</a> (const size_t &amp;lthemes, const size_t &amp;lthemesdata, const size_t &amp;lactions, const size_t &amp;lactionsdata, const size_t &amp;ltransitions, const size_t &amp;ltransitionsdata, const size_t &amp;lyieldsdata, const size_t &amp;llifespansdata, const size_t &amp;loutputs, const size_t &amp;loutputsdata, const size_t &amp;lconstraints, const size_t &amp;lconstraintsdata)</td></tr>
+<tr class="memdesc:afb9d3002bca5ed93be301d2f80e0295b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for complete stats.  <br /></td></tr>
+<tr class="separator:afb9d3002bca5ed93be301d2f80e0295b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c843909aadf798bcc68da2b210d807"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a10c843909aadf798bcc68da2b210d807">FMTModelStats</a> ()=default</td></tr>
+<tr class="memdesc:a10c843909aadf798bcc68da2b210d807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:a10c843909aadf798bcc68da2b210d807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd128de9003798ed06748c15fee3ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#aebd128de9003798ed06748c15fee3ee5">FMTModelStats</a> (const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:aebd128de9003798ed06748c15fee3ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:aebd128de9003798ed06748c15fee3ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdffc6417545c225ea4bf7f890954088"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#abdffc6417545c225ea4bf7f890954088">~FMTModelStats</a> ()=default</td></tr>
+<tr class="memdesc:abdffc6417545c225ea4bf7f890954088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:abdffc6417545c225ea4bf7f890954088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcae3206745ec3d4bf22d035217edfb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#abcae3206745ec3d4bf22d035217edfb8">operator=</a> (const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;rhs)=default</td></tr>
+<tr class="memdesc:abcae3206745ec3d4bf22d035217edfb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:abcae3206745ec3d4bf22d035217edfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f38dc179de7d9a3ef97e825a08f0d17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a7f38dc179de7d9a3ef97e825a08f0d17">operator+=</a> (const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a7f38dc179de7d9a3ef97e825a08f0d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition assignment operator with another <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:a7f38dc179de7d9a3ef97e825a08f0d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19ccd48243b6aa0e15a89f46ba8e6ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#ac19ccd48243b6aa0e15a89f46ba8e6ad">operator-=</a> (const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ac19ccd48243b6aa0e15a89f46ba8e6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction assignment operator with another <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:ac19ccd48243b6aa0e15a89f46ba8e6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7090093f3e02138a9f5f42b1a003d113"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a7090093f3e02138a9f5f42b1a003d113">operator+</a> (const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a7090093f3e02138a9f5f42b1a003d113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition operator with another <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:a7090093f3e02138a9f5f42b1a003d113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f845f38b328f8b755e9976a053c833c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a4f845f38b328f8b755e9976a053c833c">operator-</a> (const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a4f845f38b328f8b755e9976a053c833c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator with another <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:a4f845f38b328f8b755e9976a053c833c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d7d23b0a027019775930758589cc61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a31d7d23b0a027019775930758589cc61">operator==</a> (const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a31d7d23b0a027019775930758589cc61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator of <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:a31d7d23b0a027019775930758589cc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdd1f9775dfebfb088d7fbbc5144363"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a3fdd1f9775dfebfb088d7fbbc5144363">operator!=</a> (const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a3fdd1f9775dfebfb088d7fbbc5144363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality comparison operator of <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>.  <br /></td></tr>
+<tr class="separator:a3fdd1f9775dfebfb088d7fbbc5144363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae9434fdb9f4b993cef9b538c63bdb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a4ae9434fdb9f4b993cef9b538c63bdb3">operator std::string</a> () const</td></tr>
+<tr class="memdesc:a4ae9434fdb9f4b993cef9b538c63bdb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the string representation of the stats.  <br /></td></tr>
+<tr class="separator:a4ae9434fdb9f4b993cef9b538c63bdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4a9453d0fcf390b80a7e6e4ad47c08ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a4a9453d0fcf390b80a7e6e4ad47c08ce">themes</a></td></tr>
-<tr class="memdesc:a4a9453d0fcf390b80a7e6e4ad47c08ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of themes the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>.  <br /></td></tr>
-<tr class="separator:a4a9453d0fcf390b80a7e6e4ad47c08ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed7a7520c0d5ba9d9545ab89c4e3ae2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#aed7a7520c0d5ba9d9545ab89c4e3ae2b">themesdata</a></td></tr>
-<tr class="memdesc:aed7a7520c0d5ba9d9545ab89c4e3ae2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The themes's data size.  <br /></td></tr>
-<tr class="separator:aed7a7520c0d5ba9d9545ab89c4e3ae2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bdb125d44995f6dc548c38081d5f579"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a4bdb125d44995f6dc548c38081d5f579">actions</a></td></tr>
-<tr class="memdesc:a4bdb125d44995f6dc548c38081d5f579"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of actions of the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>.  <br /></td></tr>
-<tr class="separator:a4bdb125d44995f6dc548c38081d5f579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bde78dfeeb9f7983dee55425ef83c8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a2bde78dfeeb9f7983dee55425ef83c8f">actionsdata</a></td></tr>
-<tr class="memdesc:a2bde78dfeeb9f7983dee55425ef83c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actions's data size.  <br /></td></tr>
-<tr class="separator:a2bde78dfeeb9f7983dee55425ef83c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63aca0dad2aa39442a6010b784f50fe6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a63aca0dad2aa39442a6010b784f50fe6">transitions</a></td></tr>
-<tr class="memdesc:a63aca0dad2aa39442a6010b784f50fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of transitions of the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>.  <br /></td></tr>
-<tr class="separator:a63aca0dad2aa39442a6010b784f50fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c95091108942d4238a431bd3bb5d30d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a2c95091108942d4238a431bd3bb5d30d">transitionsdata</a></td></tr>
-<tr class="memdesc:a2c95091108942d4238a431bd3bb5d30d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transitions's data size.  <br /></td></tr>
-<tr class="separator:a2c95091108942d4238a431bd3bb5d30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6018b7098a4a5f522f2e97df19f6c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#aef6018b7098a4a5f522f2e97df19f6c7">yieldsdata</a></td></tr>
-<tr class="memdesc:aef6018b7098a4a5f522f2e97df19f6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The yields's data size.  <br /></td></tr>
-<tr class="separator:aef6018b7098a4a5f522f2e97df19f6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56b4f1d8b46db1066493aadd4c4da1e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a56b4f1d8b46db1066493aadd4c4da1e1">lifespansdata</a></td></tr>
-<tr class="memdesc:a56b4f1d8b46db1066493aadd4c4da1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lifespans's data size.  <br /></td></tr>
-<tr class="separator:a56b4f1d8b46db1066493aadd4c4da1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e0d1a6bd330c6ff57face68fcebc2e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a2e0d1a6bd330c6ff57face68fcebc2e4">outputs</a></td></tr>
-<tr class="memdesc:a2e0d1a6bd330c6ff57face68fcebc2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of outputs of the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>.  <br /></td></tr>
-<tr class="separator:a2e0d1a6bd330c6ff57face68fcebc2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95fec5c308eba7b63c73f608d6c62a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#ac95fec5c308eba7b63c73f608d6c62a2">outputsdata</a></td></tr>
-<tr class="memdesc:ac95fec5c308eba7b63c73f608d6c62a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The outputsdata's data size.  <br /></td></tr>
-<tr class="separator:ac95fec5c308eba7b63c73f608d6c62a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6acc4ea1fa13180ff419ba30cb8d2318"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a6acc4ea1fa13180ff419ba30cb8d2318">constraints</a></td></tr>
-<tr class="memdesc:a6acc4ea1fa13180ff419ba30cb8d2318"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of constraints of the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>.  <br /></td></tr>
-<tr class="separator:a6acc4ea1fa13180ff419ba30cb8d2318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306a313584eee0a25d065d1f578f8ca6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#a306a313584eee0a25d065d1f578f8ca6">constraintsdata</a></td></tr>
-<tr class="memdesc:a306a313584eee0a25d065d1f578f8ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constraintsdata's data size.  <br /></td></tr>
-<tr class="separator:a306a313584eee0a25d065d1f578f8ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3a2de40839b2d30c4c443b323e3617"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a3c3a2de40839b2d30c4c443b323e3617">themes</a></td></tr>
+<tr class="memdesc:a3c3a2de40839b2d30c4c443b323e3617"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of themes the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>.  <br /></td></tr>
+<tr class="separator:a3c3a2de40839b2d30c4c443b323e3617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6032123a2ef8227a7a996a2667b56c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#aa6032123a2ef8227a7a996a2667b56c9">themesdata</a></td></tr>
+<tr class="memdesc:aa6032123a2ef8227a7a996a2667b56c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The themes's data size.  <br /></td></tr>
+<tr class="separator:aa6032123a2ef8227a7a996a2667b56c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3951fa481264404d90d01e43679ce143"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a3951fa481264404d90d01e43679ce143">actions</a></td></tr>
+<tr class="memdesc:a3951fa481264404d90d01e43679ce143"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of actions of the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>.  <br /></td></tr>
+<tr class="separator:a3951fa481264404d90d01e43679ce143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cfe1d3715ec814eba74de08b825135"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a06cfe1d3715ec814eba74de08b825135">actionsdata</a></td></tr>
+<tr class="memdesc:a06cfe1d3715ec814eba74de08b825135"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actions's data size.  <br /></td></tr>
+<tr class="separator:a06cfe1d3715ec814eba74de08b825135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1684cd76709ec28414cb24316e310f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#adc1684cd76709ec28414cb24316e310f">transitions</a></td></tr>
+<tr class="memdesc:adc1684cd76709ec28414cb24316e310f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of transitions of the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>.  <br /></td></tr>
+<tr class="separator:adc1684cd76709ec28414cb24316e310f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed530866742764281953f9c68a68a6e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a6ed530866742764281953f9c68a68a6e">transitionsdata</a></td></tr>
+<tr class="memdesc:a6ed530866742764281953f9c68a68a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transitions's data size.  <br /></td></tr>
+<tr class="separator:a6ed530866742764281953f9c68a68a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c221a70e8d0b40f180c16b72ecd41d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a33c221a70e8d0b40f180c16b72ecd41d">yieldsdata</a></td></tr>
+<tr class="memdesc:a33c221a70e8d0b40f180c16b72ecd41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The yields's data size.  <br /></td></tr>
+<tr class="separator:a33c221a70e8d0b40f180c16b72ecd41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d0a7b7af6e2ba98d4feaf8c5992f46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#ac9d0a7b7af6e2ba98d4feaf8c5992f46">lifespansdata</a></td></tr>
+<tr class="memdesc:ac9d0a7b7af6e2ba98d4feaf8c5992f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lifespans's data size.  <br /></td></tr>
+<tr class="separator:ac9d0a7b7af6e2ba98d4feaf8c5992f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371c006d8fec4365880d0c9f4787bf26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a371c006d8fec4365880d0c9f4787bf26">outputs</a></td></tr>
+<tr class="memdesc:a371c006d8fec4365880d0c9f4787bf26"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of outputs of the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>.  <br /></td></tr>
+<tr class="separator:a371c006d8fec4365880d0c9f4787bf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb69fba08d434e15373c07841e5e716"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#adcb69fba08d434e15373c07841e5e716">outputsdata</a></td></tr>
+<tr class="memdesc:adcb69fba08d434e15373c07841e5e716"><td class="mdescLeft">&#160;</td><td class="mdescRight">The outputsdata's data size.  <br /></td></tr>
+<tr class="separator:adcb69fba08d434e15373c07841e5e716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fdeb8810fd4052e3e43e1e0b10e904"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#a71fdeb8810fd4052e3e43e1e0b10e904">constraints</a></td></tr>
+<tr class="memdesc:a71fdeb8810fd4052e3e43e1e0b10e904"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of constraints of the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>.  <br /></td></tr>
+<tr class="separator:a71fdeb8810fd4052e3e43e1e0b10e904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b2cd9d06b618e75105ac029dd60dff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#aa2b2cd9d06b618e75105ac029dd60dff">constraintsdata</a></td></tr>
+<tr class="memdesc:aa2b2cd9d06b618e75105ac029dd60dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constraintsdata's data size.  <br /></td></tr>
+<tr class="separator:aa2b2cd9d06b618e75105ac029dd60dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTmodelstats.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModels_1_1FMTModelStats.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class is used to report the stats of a <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>. Used alot with the presolve and postsolve functions. Calling presolve or postsolve will changes the model stats. </p>
+<div class="textblock"><p>Class reporting the statistics of a <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>, used with the preSolve and postsolve functions. </p>
+<p>Calling preSolve or postsolve changes the model stats. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a485ac7077184d0b50aaee7a02ddcb131" name="a485ac7077184d0b50aaee7a02ddcb131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a485ac7077184d0b50aaee7a02ddcb131">&#9670;&#160;</a></span>FMTmodelstats() <span class="overload">[1/3]</span></h2>
+<a id="afb9d3002bca5ed93be301d2f80e0295b" name="afb9d3002bca5ed93be301d2f80e0295b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9d3002bca5ed93be301d2f80e0295b">&#9670;&#160;</a></span>FMTModelStats() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmodelstats::FMTmodelstats </td>
+          <td class="memname">Models::FMTModelStats::FMTModelStats </td>
           <td>(</td>
           <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>lthemes</em>, </td>
@@ -245,12 +261,30 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> constructor for complete stats. </p>
+
+<p>Constructor for complete stats. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lthemes</td><td>the number of themes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lthemesdata</td><td>the themes data size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lactions</td><td>the number of actions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lactionsdata</td><td>the actions data size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltransitions</td><td>the number of transitions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltransitionsdata</td><td>the transitions data size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lyieldsdata</td><td>the yields data size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">llifespansdata</td><td>the lifespans data size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">loutputs</td><td>the number of outputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">loutputsdata</td><td>the outputs data size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lconstraints</td><td>the number of constraints. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lconstraintsdata</td><td>the constraints data size. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="afc501f766aaedd05eda0f45fdea71d08" name="afc501f766aaedd05eda0f45fdea71d08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc501f766aaedd05eda0f45fdea71d08">&#9670;&#160;</a></span>FMTmodelstats() <span class="overload">[2/3]</span></h2>
+<a id="a10c843909aadf798bcc68da2b210d807" name="a10c843909aadf798bcc68da2b210d807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c843909aadf798bcc68da2b210d807">&#9670;&#160;</a></span>FMTModelStats() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +293,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmodelstats::FMTmodelstats </td>
+          <td class="memname">Models::FMTModelStats::FMTModelStats </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -271,12 +305,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> default constructor. </p>
+
+<p>Default constructor for <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
 
 </div>
 </div>
-<a id="afc5cb53b6b475c2ffcda621c092bd76a" name="afc5cb53b6b475c2ffcda621c092bd76a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc5cb53b6b475c2ffcda621c092bd76a">&#9670;&#160;</a></span>FMTmodelstats() <span class="overload">[3/3]</span></h2>
+<a id="aebd128de9003798ed06748c15fee3ee5" name="aebd128de9003798ed06748c15fee3ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd128de9003798ed06748c15fee3ee5">&#9670;&#160;</a></span>FMTModelStats() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,9 +320,9 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmodelstats::FMTmodelstats </td>
+          <td class="memname">Models::FMTModelStats::FMTModelStats </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -298,12 +333,19 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> default copy constructor. </p>
+
+<p>Copy constructor for <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a59a3d324410d9d6f903f705e2b9c5b48" name="a59a3d324410d9d6f903f705e2b9c5b48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59a3d324410d9d6f903f705e2b9c5b48">&#9670;&#160;</a></span>~FMTmodelstats()</h2>
+<a id="abdffc6417545c225ea4bf7f890954088" name="abdffc6417545c225ea4bf7f890954088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdffc6417545c225ea4bf7f890954088">&#9670;&#160;</a></span>~FMTModelStats()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +354,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmodelstats::~FMTmodelstats </td>
+          <td class="memname">Models::FMTModelStats::~FMTModelStats </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -324,126 +366,169 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> destructor. </p>
+
+<p>Default destructor for <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac4c3e2f0ec4ec3d38a15b35e7720fc0c" name="ac4c3e2f0ec4ec3d38a15b35e7720fc0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4c3e2f0ec4ec3d38a15b35e7720fc0c">&#9670;&#160;</a></span>operator std::string()</h2>
+<a id="a4ae9434fdb9f4b993cef9b538c63bdb3" name="a4ae9434fdb9f4b993cef9b538c63bdb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae9434fdb9f4b993cef9b538c63bdb3">&#9670;&#160;</a></span>operator std::string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Models::FMTmodelstats::operator std::string </td>
+          <td class="memname">Models::FMTModelStats::operator std::string </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> to string operator. </p>
+
+<p>Return the string representation of the stats. </p>
+<dl class="section return"><dt>Returns</dt><dd>the string representation of the stats. </dd></dl>
 
 </div>
 </div>
-<a id="a52f1697fa6d3c45017c54a62c1303801" name="a52f1697fa6d3c45017c54a62c1303801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52f1697fa6d3c45017c54a62c1303801">&#9670;&#160;</a></span>operator!=()</h2>
+<a id="a3fdd1f9775dfebfb088d7fbbc5144363" name="a3fdd1f9775dfebfb088d7fbbc5144363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fdd1f9775dfebfb088d7fbbc5144363">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Models::FMTmodelstats::operator!= </td>
+          <td class="memname">bool Models::FMTModelStats::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> non equality operator. </p>
+
+<p>Inequality comparison operator of <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the stats to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both stats are different else false. </dd></dl>
 
 </div>
 </div>
-<a id="a01936ef6495213e8aa7481a2680acbd6" name="a01936ef6495213e8aa7481a2680acbd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01936ef6495213e8aa7481a2680acbd6">&#9670;&#160;</a></span>operator+()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> Models::FMTmodelstats::operator+ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> copy addition assignment with an other <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> (rhs) </p>
-
-</div>
-</div>
-<a id="a0b411906821940b2ff66fc19b0a25c90" name="a0b411906821940b2ff66fc19b0a25c90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b411906821940b2ff66fc19b0a25c90">&#9670;&#160;</a></span>operator+=()</h2>
+<a id="a7090093f3e02138a9f5f42b1a003d113" name="a7090093f3e02138a9f5f42b1a003d113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7090093f3e02138a9f5f42b1a003d113">&#9670;&#160;</a></span>operator+()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp; Models::FMTmodelstats::operator+= </td>
+          <td class="memname"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> Models::FMTModelStats::operator+ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> addition assignment with an other <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> (rhs) </p>
+
+<p>Addition operator with another <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the stats to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </dd></dl>
 
 </div>
 </div>
-<a id="aef35edb05db3d6c2bca8f95d746446ca" name="aef35edb05db3d6c2bca8f95d746446ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef35edb05db3d6c2bca8f95d746446ca">&#9670;&#160;</a></span>operator-()</h2>
+<a id="a7f38dc179de7d9a3ef97e825a08f0d17" name="a7f38dc179de7d9a3ef97e825a08f0d17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f38dc179de7d9a3ef97e825a08f0d17">&#9670;&#160;</a></span>operator+=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> Models::FMTmodelstats::operator- </td>
+          <td class="memname"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp; Models::FMTModelStats::operator+= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> copy substraction assignment with an other <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> (rhs) </p>
+
+<p>Addition assignment operator with another <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the stats to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a162e8344eb6f7a1d8f08245cd4ae40f2" name="a162e8344eb6f7a1d8f08245cd4ae40f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a162e8344eb6f7a1d8f08245cd4ae40f2">&#9670;&#160;</a></span>operator-=()</h2>
+<a id="a4f845f38b328f8b755e9976a053c833c" name="a4f845f38b328f8b755e9976a053c833c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f845f38b328f8b755e9976a053c833c">&#9670;&#160;</a></span>operator-()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp; Models::FMTmodelstats::operator-= </td>
+          <td class="memname"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> Models::FMTModelStats::operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> substraction assignment with an other <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> (rhs) </p>
+
+<p>Subtraction operator with another <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the stats to subtract. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a64bf8f2a850e839949c42921b85da9d2" name="a64bf8f2a850e839949c42921b85da9d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64bf8f2a850e839949c42921b85da9d2">&#9670;&#160;</a></span>operator=()</h2>
+<a id="ac19ccd48243b6aa0e15a89f46ba8e6ad" name="ac19ccd48243b6aa0e15a89f46ba8e6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19ccd48243b6aa0e15a89f46ba8e6ad">&#9670;&#160;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp; Models::FMTModelStats::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subtraction assignment operator with another <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the stats to subtract. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </dd></dl>
+
+</div>
+</div>
+<a id="abcae3206745ec3d4bf22d035217edfb8" name="abcae3206745ec3d4bf22d035217edfb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcae3206745ec3d4bf22d035217edfb8">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,9 +537,9 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp; Models::FMTmodelstats::operator= </td>
+          <td class="memname"><a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp; Models::FMTModelStats::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -465,26 +550,42 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> default copy assignment. </p>
+
+<p>Copy assignment operator for <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a37ebff77d0490993e429b2530a186c60" name="a37ebff77d0490993e429b2530a186c60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37ebff77d0490993e429b2530a186c60">&#9670;&#160;</a></span>operator==()</h2>
+<a id="a31d7d23b0a027019775930758589cc61" name="a31d7d23b0a027019775930758589cc61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d7d23b0a027019775930758589cc61">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Models::FMTmodelstats::operator== </td>
+          <td class="memname">bool Models::FMTModelStats::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModels_1_1FMTModelStats.html">FMTModelStats</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classModels_1_1FMTmodelstats.html">FMTmodelstats</a> equality operator. </p>
+
+<p>Equality comparison operator of <a class="el" href="classModels_1_1FMTModelStats.html" title="Class reporting the statistics of a FMTModel, used with the preSolve and postsolve functions.">FMTModelStats</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the stats to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both stats are equal else false. </dd></dl>
 
 </div>
 </div>
@@ -512,30 +613,30 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4bdb125d44995f6dc548c38081d5f579" name="a4bdb125d44995f6dc548c38081d5f579"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bdb125d44995f6dc548c38081d5f579">&#9670;&#160;</a></span>actions</h2>
+<a id="a3951fa481264404d90d01e43679ce143" name="a3951fa481264404d90d01e43679ce143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3951fa481264404d90d01e43679ce143">&#9670;&#160;</a></span>actions</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::actions</td>
+          <td class="memname">int Models::FMTModelStats::actions</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of actions of the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>. </p>
+<p>The number of actions of the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>. </p>
 
 </div>
 </div>
-<a id="a2bde78dfeeb9f7983dee55425ef83c8f" name="a2bde78dfeeb9f7983dee55425ef83c8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bde78dfeeb9f7983dee55425ef83c8f">&#9670;&#160;</a></span>actionsdata</h2>
+<a id="a06cfe1d3715ec814eba74de08b825135" name="a06cfe1d3715ec814eba74de08b825135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06cfe1d3715ec814eba74de08b825135">&#9670;&#160;</a></span>actionsdata</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::actionsdata</td>
+          <td class="memname">int Models::FMTModelStats::actionsdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -544,30 +645,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a6acc4ea1fa13180ff419ba30cb8d2318" name="a6acc4ea1fa13180ff419ba30cb8d2318"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6acc4ea1fa13180ff419ba30cb8d2318">&#9670;&#160;</a></span>constraints</h2>
+<a id="a71fdeb8810fd4052e3e43e1e0b10e904" name="a71fdeb8810fd4052e3e43e1e0b10e904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fdeb8810fd4052e3e43e1e0b10e904">&#9670;&#160;</a></span>constraints</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::constraints</td>
+          <td class="memname">int Models::FMTModelStats::constraints</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of constraints of the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>. </p>
+<p>The number of constraints of the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>. </p>
 
 </div>
 </div>
-<a id="a306a313584eee0a25d065d1f578f8ca6" name="a306a313584eee0a25d065d1f578f8ca6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a306a313584eee0a25d065d1f578f8ca6">&#9670;&#160;</a></span>constraintsdata</h2>
+<a id="aa2b2cd9d06b618e75105ac029dd60dff" name="aa2b2cd9d06b618e75105ac029dd60dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b2cd9d06b618e75105ac029dd60dff">&#9670;&#160;</a></span>constraintsdata</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::constraintsdata</td>
+          <td class="memname">int Models::FMTModelStats::constraintsdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -576,14 +677,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a56b4f1d8b46db1066493aadd4c4da1e1" name="a56b4f1d8b46db1066493aadd4c4da1e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56b4f1d8b46db1066493aadd4c4da1e1">&#9670;&#160;</a></span>lifespansdata</h2>
+<a id="ac9d0a7b7af6e2ba98d4feaf8c5992f46" name="ac9d0a7b7af6e2ba98d4feaf8c5992f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d0a7b7af6e2ba98d4feaf8c5992f46">&#9670;&#160;</a></span>lifespansdata</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::lifespansdata</td>
+          <td class="memname">int Models::FMTModelStats::lifespansdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -592,30 +693,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a2e0d1a6bd330c6ff57face68fcebc2e4" name="a2e0d1a6bd330c6ff57face68fcebc2e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e0d1a6bd330c6ff57face68fcebc2e4">&#9670;&#160;</a></span>outputs</h2>
+<a id="a371c006d8fec4365880d0c9f4787bf26" name="a371c006d8fec4365880d0c9f4787bf26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a371c006d8fec4365880d0c9f4787bf26">&#9670;&#160;</a></span>outputs</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::outputs</td>
+          <td class="memname">int Models::FMTModelStats::outputs</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of outputs of the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>. </p>
+<p>The number of outputs of the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>. </p>
 
 </div>
 </div>
-<a id="ac95fec5c308eba7b63c73f608d6c62a2" name="ac95fec5c308eba7b63c73f608d6c62a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac95fec5c308eba7b63c73f608d6c62a2">&#9670;&#160;</a></span>outputsdata</h2>
+<a id="adcb69fba08d434e15373c07841e5e716" name="adcb69fba08d434e15373c07841e5e716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb69fba08d434e15373c07841e5e716">&#9670;&#160;</a></span>outputsdata</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::outputsdata</td>
+          <td class="memname">int Models::FMTModelStats::outputsdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -624,30 +725,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a9453d0fcf390b80a7e6e4ad47c08ce" name="a4a9453d0fcf390b80a7e6e4ad47c08ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a9453d0fcf390b80a7e6e4ad47c08ce">&#9670;&#160;</a></span>themes</h2>
+<a id="a3c3a2de40839b2d30c4c443b323e3617" name="a3c3a2de40839b2d30c4c443b323e3617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3a2de40839b2d30c4c443b323e3617">&#9670;&#160;</a></span>themes</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::themes</td>
+          <td class="memname">int Models::FMTModelStats::themes</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of themes the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>. </p>
+<p>The number of themes the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>. </p>
 
 </div>
 </div>
-<a id="aed7a7520c0d5ba9d9545ab89c4e3ae2b" name="aed7a7520c0d5ba9d9545ab89c4e3ae2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed7a7520c0d5ba9d9545ab89c4e3ae2b">&#9670;&#160;</a></span>themesdata</h2>
+<a id="aa6032123a2ef8227a7a996a2667b56c9" name="aa6032123a2ef8227a7a996a2667b56c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6032123a2ef8227a7a996a2667b56c9">&#9670;&#160;</a></span>themesdata</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::themesdata</td>
+          <td class="memname">int Models::FMTModelStats::themesdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -656,30 +757,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a63aca0dad2aa39442a6010b784f50fe6" name="a63aca0dad2aa39442a6010b784f50fe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63aca0dad2aa39442a6010b784f50fe6">&#9670;&#160;</a></span>transitions</h2>
+<a id="adc1684cd76709ec28414cb24316e310f" name="adc1684cd76709ec28414cb24316e310f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc1684cd76709ec28414cb24316e310f">&#9670;&#160;</a></span>transitions</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::transitions</td>
+          <td class="memname">int Models::FMTModelStats::transitions</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of transitions of the <a class="el" href="classModels_1_1FMTmodel.html">FMTmodel</a>. </p>
+<p>The number of transitions of the <a class="el" href="classModels_1_1FMTModel.html" title="Base class for the different models in FMT.">FMTModel</a>. </p>
 
 </div>
 </div>
-<a id="a2c95091108942d4238a431bd3bb5d30d" name="a2c95091108942d4238a431bd3bb5d30d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c95091108942d4238a431bd3bb5d30d">&#9670;&#160;</a></span>transitionsdata</h2>
+<a id="a6ed530866742764281953f9c68a68a6e" name="a6ed530866742764281953f9c68a68a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed530866742764281953f9c68a68a6e">&#9670;&#160;</a></span>transitionsdata</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::transitionsdata</td>
+          <td class="memname">int Models::FMTModelStats::transitionsdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -688,14 +789,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="aef6018b7098a4a5f522f2e97df19f6c7" name="aef6018b7098a4a5f522f2e97df19f6c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6018b7098a4a5f522f2e97df19f6c7">&#9670;&#160;</a></span>yieldsdata</h2>
+<a id="a33c221a70e8d0b40f180c16b72ecd41d" name="a33c221a70e8d0b40f180c16b72ecd41d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c221a70e8d0b40f180c16b72ecd41d">&#9670;&#160;</a></span>yieldsdata</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Models::FMTmodelstats::yieldsdata</td>
+          <td class="memname">int Models::FMTModelStats::yieldsdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -705,7 +806,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTmodelstats_8hpp_source.html">FMTmodelstats.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTModelStats_8h_source.html">FMTModelStats.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

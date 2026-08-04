@@ -1,0 +1,5 @@
+<map id="Core::FMTYieldModelUnitCoverage" name="Core::FMTYieldModelUnitCoverage">
+<area shape="rect" id="node1" title="Yield model calculating the sum of a yield value over a spatial unit at period 0." alt="" coords="5,155,228,181"/>
+<area shape="rect" id="node2" href="$classCore_1_1FMTYieldModel.html" title="Abstract class to be implemented as a machine learning yield model." alt="" coords="43,80,190,107"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="56,5,177,32"/>
+</map>

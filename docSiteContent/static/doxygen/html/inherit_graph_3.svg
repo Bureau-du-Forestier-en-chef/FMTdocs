@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="structboost_1_1hash_3_01Core_1_1FMTmask_01_4.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="structboost_1_1hash_3_01Core_1_1FMTMask_01_4.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="102.25,-32 0,-32 0,0 102.25,0 102.25,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">boost::hash&lt; Core::</text>
-<text text-anchor="middle" x="51.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">FMTmask &gt;</text>
+<text text-anchor="middle" x="51.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">FMTMask &gt;</text>
 </a>
 </g>
 </g>

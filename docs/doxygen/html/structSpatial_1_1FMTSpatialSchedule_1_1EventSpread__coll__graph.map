@@ -1,0 +1,5 @@
+<map id="Spatial::FMTSpatialSchedule::EventSpread" name="Spatial::FMTSpatialSchedule::EventSpread">
+<area shape="rect" id="node1" title="Helper holding the input iterator, output iterator and event of an event spread move." alt="" coords="5,187,195,229"/>
+<area shape="rect" id="node2" title=" " alt="" coords="26,96,174,123"/>
+<area shape="rect" id="node3" href="$classSpatial_1_1FMTEvent.html" title="Base class for a spatial event (FMTsaevent or FMTsesevent): a set of FMTCoordinate corresponding to t..." alt="" coords="36,5,164,32"/>
+</map>

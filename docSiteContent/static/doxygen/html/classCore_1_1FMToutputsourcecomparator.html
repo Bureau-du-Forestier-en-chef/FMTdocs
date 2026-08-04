@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMToutputsourcecomparator Class Reference</title>
+<title>FMT: Core::FMTOutputSourceComparator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,35 +71,42 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMToutputsourcecomparator.html">FMToutputsourcecomparator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTOutputSourceComparator.html">FMTOutputSourceComparator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classCore_1_1FMToutputsourcecomparator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMToutputsourcecomparator Class Reference</div></div>
+<a href="classCore_1_1FMTOutputSourceComparator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTOutputSourceComparator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMToutputsource_8hpp_source.html">FMToutputsource.hpp</a>&gt;</code></p>
+<p>Comparator used to match output sources by whether they are variable.  
+ <a href="classCore_1_1FMTOutputSourceComparator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTOutputSource_8h_source.html">FMTOutputSource.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a02388a321631045ef9fa400abcdf2449"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsourcecomparator.html#a02388a321631045ef9fa400abcdf2449">FMToutputsourcecomparator</a> (bool lvariable)</td></tr>
-<tr class="separator:a02388a321631045ef9fa400abcdf2449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab68ec0a668db69ad60b79ded22311ca9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputsourcecomparator.html#ab68ec0a668db69ad60b79ded22311ca9">operator()</a> (const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;source) const</td></tr>
-<tr class="separator:ab68ec0a668db69ad60b79ded22311ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e68d855676fd29b20b1aa451c97e42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSourceComparator.html#a20e68d855676fd29b20b1aa451c97e42">FMTOutputSourceComparator</a> (bool lvariable)</td></tr>
+<tr class="memdesc:a20e68d855676fd29b20b1aa451c97e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the comparator.  <br /></td></tr>
+<tr class="separator:a20e68d855676fd29b20b1aa451c97e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea168dc2f2171088ad2523189e023a28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputSourceComparator.html#aea168dc2f2171088ad2523189e023a28">operator()</a> (const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;source) const</td></tr>
+<tr class="memdesc:aea168dc2f2171088ad2523189e023a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matching test operator for the comparator.  <br /></td></tr>
+<tr class="separator:aea168dc2f2171088ad2523189e023a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a02388a321631045ef9fa400abcdf2449" name="a02388a321631045ef9fa400abcdf2449"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02388a321631045ef9fa400abcdf2449">&#9670;&#160;</a></span>FMToutputsourcecomparator()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Comparator used to match output sources by whether they are variable. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a20e68d855676fd29b20b1aa451c97e42" name="a20e68d855676fd29b20b1aa451c97e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e68d855676fd29b20b1aa451c97e42">&#9670;&#160;</a></span>FMTOutputSourceComparator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMToutputsourcecomparator::FMToutputsourcecomparator </td>
+          <td class="memname">Core::FMTOutputSourceComparator::FMTOutputSourceComparator </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>lvariable</em></td><td>)</td>
@@ -108,29 +115,46 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct the comparator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lvariable</td><td>if true matches variable output sources. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab68ec0a668db69ad60b79ded22311ca9" name="ab68ec0a668db69ad60b79ded22311ca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab68ec0a668db69ad60b79ded22311ca9">&#9670;&#160;</a></span>operator()()</h2>
+<a id="aea168dc2f2171088ad2523189e023a28" name="aea168dc2f2171088ad2523189e023a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea168dc2f2171088ad2523189e023a28">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMToutputsourcecomparator::operator() </td>
+          <td class="memname">bool Core::FMTOutputSourceComparator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputsource.html">FMToutputsource</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputSource.html">FMTOutputSource</a> &amp;&#160;</td>
           <td class="paramname"><em>source</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Matching test operator for the comparator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>the output source to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the output source matches else false. </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMToutputsource_8hpp_source.html">FMToutputsource.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTOutputSource_8h_source.html">FMTOutputSource.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

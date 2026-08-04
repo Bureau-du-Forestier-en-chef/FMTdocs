@@ -4,12 +4,12 @@
 
 # Default language
 en:
-  languageCode: en-us
+  locale: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/en
 
 fr:
-  languageCode: fr-ca
+  locale: fr-ca
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/fr
   title: Documentation de FMT
@@ -29,7 +29,7 @@ fr:
 
 # Uncomment the lines below to configure your website in a second language.
 #zh:
-#  languageCode: zh-Hans
+#  locale: zh-Hans
 #  contentDir: content/zh
 #  title: Chinese website title...
 #  params:

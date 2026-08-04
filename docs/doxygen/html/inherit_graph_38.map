@@ -1,7 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classException_1_1FMTexceptionhandler.html" title=" " alt="" coords="5,81,217,108"/>
-<area shape="rect" id="node2" href="$classException_1_1FMTdebugexceptionhandler.html" title=" " alt="" coords="266,5,513,32"/>
-<area shape="rect" id="node3" href="$classException_1_1FMTdefaultexceptionhandler.html" title=" " alt="" coords="265,56,514,83"/>
-<area shape="rect" id="node4" href="$classException_1_1FMTfreeexceptionhandler.html" title=" " alt="" coords="273,107,506,133"/>
-<area shape="rect" id="node5" href="$classException_1_1FMTquietexceptionhandler.html" title=" " alt="" coords="270,157,509,184"/>
+<area shape="rect" id="node1" href="$classCore_1_1FMTOutputSourceComparator.html" title="Comparator used to match output sources by whether they are variable." alt="" coords="5,5,235,32"/>
 </map>

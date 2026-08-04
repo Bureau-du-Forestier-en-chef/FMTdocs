@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTmask Class Reference</title>
+<title>FMT: Core::FMTMask Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,170 +71,215 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classCore_1_1FMTmask-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTmask Class Reference</div></div>
+<a href="classCore_1_1FMTMask-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTMask Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTmask_8hpp_source.html">FMTmask.hpp</a>&gt;</code></p>
+<p><a class="el" href="namespaceCore.html" title="The Core namespace provides classes for simulating stands/strata growth/harvest through time.">Core</a> class holding, as a boost dynamic bitset, which theme attributes are part of a mask.  
+ <a href="classCore_1_1FMTMask.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTMask_8h_source.html">FMTMask.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5a609374f7aa89d3bfb97ff260eed954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a5a609374f7aa89d3bfb97ff260eed954">swap</a> (<a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs)</td></tr>
-<tr class="separator:a5a609374f7aa89d3bfb97ff260eed954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb91a51248a2c418425c1c89895fa8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#accb91a51248a2c418425c1c89895fa8e">FMTmask</a> ()</td></tr>
-<tr class="separator:accb91a51248a2c418425c1c89895fa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16f02f49e62bca1ada3534266d93a60b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a16f02f49e62bca1ada3534266d93a60b">FMTmask</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs)</td></tr>
-<tr class="separator:a16f02f49e62bca1ada3534266d93a60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba8628c04362ca050a527ccf212954d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a6ba8628c04362ca050a527ccf212954d">~FMTmask</a> ()=default</td></tr>
-<tr class="separator:a6ba8628c04362ca050a527ccf212954d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d2c3554def898715a4e931263e12d82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a0d2c3554def898715a4e931263e12d82">FMTmask</a> (const boost::dynamic_bitset&lt;&gt; &amp;bits)</td></tr>
-<tr class="separator:a0d2c3554def898715a4e931263e12d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe59d5400c944ce0c8a9e913e734f43f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#abe59d5400c944ce0c8a9e913e734f43f">operator bool</a> () const</td></tr>
-<tr class="separator:abe59d5400c944ce0c8a9e913e734f43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a00ad2c9758a860bb54d2c7d7a0ba8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a2a00ad2c9758a860bb54d2c7d7a0ba8a">FMTmask</a> (const std::string &amp;mask, const boost::dynamic_bitset&lt;&gt; &amp;bits)</td></tr>
-<tr class="separator:a2a00ad2c9758a860bb54d2c7d7a0ba8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32b25f813e5b778a087b606e87df82c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a32b25f813e5b778a087b606e87df82c6">FMTmask</a> (const std::string &amp;mask, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes)</td></tr>
-<tr class="separator:a32b25f813e5b778a087b606e87df82c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d7ec77a4bf0a814f88fa1555d3790ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a2d7ec77a4bf0a814f88fa1555d3790ca">FMTmask</a> (const std::vector&lt; std::string &gt; &amp;values, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes)</td></tr>
-<tr class="separator:a2d7ec77a4bf0a814f88fa1555d3790ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16c9420e90cb92d0fd6bff2026a73a16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a16c9420e90cb92d0fd6bff2026a73a16">FMTmask</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes)</td></tr>
-<tr class="separator:a16c9420e90cb92d0fd6bff2026a73a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cee4c9b5fafed3acf0a1dbacf941ecf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a7cee4c9b5fafed3acf0a1dbacf941ecf">clear</a> ()</td></tr>
-<tr class="separator:a7cee4c9b5fafed3acf0a1dbacf941ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f29bfda43aac550175cf3cc450ca7b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a92f29bfda43aac550175cf3cc450ca7b">size</a> () const</td></tr>
-<tr class="separator:a92f29bfda43aac550175cf3cc450ca7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc12a5f1420037c1ead1fc14ef5b1e9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a9cc12a5f1420037c1ead1fc14ef5b1e9">count</a> () const</td></tr>
-<tr class="separator:a9cc12a5f1420037c1ead1fc14ef5b1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14075747ef33856ed522f38966faa092"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a14075747ef33856ed522f38966faa092">get</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:a14075747ef33856ed522f38966faa092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a560b7cf6bc775fbada55623a6091e5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a2a560b7cf6bc775fbada55623a6091e5">get</a> (const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;theme) const</td></tr>
-<tr class="separator:a2a560b7cf6bc775fbada55623a6091e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed211731c4c5bfcfb2b9e8771853e50f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#aed211731c4c5bfcfb2b9e8771853e50f">getsubsetcount</a> (const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;theme) const</td></tr>
-<tr class="separator:aed211731c4c5bfcfb2b9e8771853e50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42d53367d86c77ede7f8dc908a8dae74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a42d53367d86c77ede7f8dc908a8dae74">set</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes, const std::string &amp;value)</td></tr>
-<tr class="separator:a42d53367d86c77ede7f8dc908a8dae74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a02cf6e182a041c7dd3af2070923ecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a6a02cf6e182a041c7dd3af2070923ecb">set</a> (const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;theme, const std::string &amp;value)</td></tr>
-<tr class="separator:a6a02cf6e182a041c7dd3af2070923ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a039f672ab1b40e1f23b7b1bbec39abf4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a039f672ab1b40e1f23b7b1bbec39abf4">getstaticthemes</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:a039f672ab1b40e1f23b7b1bbec39abf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af12c27f341ae87522bba1cef6f5911e0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#af12c27f341ae87522bba1cef6f5911e0">getselectedthemes</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:af12c27f341ae87522bba1cef6f5911e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af31adf90e39ae67cc2d524db7b56c104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#af31adf90e39ae67cc2d524db7b56c104">isnotthemessubset</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:af31adf90e39ae67cc2d524db7b56c104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd0021955bfe5826dc9277c41bba1d54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#acd0021955bfe5826dc9277c41bba1d54">removeaggregates</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes, bool questionmarkonly=false) const</td></tr>
-<tr class="separator:acd0021955bfe5826dc9277c41bba1d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f80acad5e5afed17229b8e298bb833b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a9f80acad5e5afed17229b8e298bb833b">empty</a> () const</td></tr>
-<tr class="separator:a9f80acad5e5afed17229b8e298bb833b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8c985412c9904dcc74b4218f59514a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#ab8c985412c9904dcc74b4218f59514a8">update</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes)</td></tr>
-<tr class="separator:ab8c985412c9904dcc74b4218f59514a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ac62226d230af40c2361467099350c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#af8ac62226d230af40c2361467099350c">decompose</a> (const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;theme) const</td></tr>
-<tr class="separator:af8ac62226d230af40c2361467099350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed70fff3c7e73a635e1ed748ff1e04f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#aed70fff3c7e73a635e1ed748ff1e04f0">append</a> (const boost::dynamic_bitset&lt;&gt; &amp;bits)</td></tr>
-<tr class="separator:aed70fff3c7e73a635e1ed748ff1e04f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54c15206a0455ed3b529b42005f0c3f7"><td class="memTemplParams" colspan="2">template&lt;class typetobinarize &gt; </td></tr>
-<tr class="memitem:a54c15206a0455ed3b529b42005f0c3f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a54c15206a0455ed3b529b42005f0c3f7">binarizedappend</a> (const typetobinarize &amp;element)</td></tr>
-<tr class="separator:a54c15206a0455ed3b529b42005f0c3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db4dd6d4bfc73fc9dde77a5a0c81908"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a9db4dd6d4bfc73fc9dde77a5a0c81908">getunion</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs) const</td></tr>
-<tr class="separator:a9db4dd6d4bfc73fc9dde77a5a0c81908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a913d8afbc81c57b66f39e1254e2806ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a913d8afbc81c57b66f39e1254e2806ad">getintersect</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs) const</td></tr>
-<tr class="separator:a913d8afbc81c57b66f39e1254e2806ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add07fcff500097bf6b5a43a0f3bf8ec7"><td class="memItemLeft" align="right" valign="top">boost::dynamic_bitset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#add07fcff500097bf6b5a43a0f3bf8ec7">getbitsetintersect</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs) const</td></tr>
-<tr class="separator:add07fcff500097bf6b5a43a0f3bf8ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40db78d3e4390aa9b023b1fa7f84eed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#ad40db78d3e4390aa9b023b1fa7f84eed">operator=</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs)</td></tr>
-<tr class="separator:ad40db78d3e4390aa9b023b1fa7f84eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0de9d5a0831776fe549d40a676ec643"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#af0de9d5a0831776fe549d40a676ec643">operator!=</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs) const</td></tr>
-<tr class="separator:af0de9d5a0831776fe549d40a676ec643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8455b13dd90b74fd0e61a9ed4af530ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a8455b13dd90b74fd0e61a9ed4af530ce">operator==</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs) const</td></tr>
-<tr class="separator:a8455b13dd90b74fd0e61a9ed4af530ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f495efee48229e6b7abec1747b9697"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#af7f495efee48229e6b7abec1747b9697">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs) const</td></tr>
-<tr class="separator:af7f495efee48229e6b7abec1747b9697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c6225789e23b967453a549927faa7e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a2c6225789e23b967453a549927faa7e7">resume</a> (const boost::dynamic_bitset&lt;&gt; &amp;rhs) const</td></tr>
-<tr class="separator:a2c6225789e23b967453a549927faa7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd0af4796db0034f2dee05d883c2b768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#acd0af4796db0034f2dee05d883c2b768">resume</a> (const std::vector&lt; size_t &gt; &amp;indexes) const</td></tr>
-<tr class="separator:acd0af4796db0034f2dee05d883c2b768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2603d2e3d38e02fb131dff47041554d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#af2603d2e3d38e02fb131dff47041554d">hash</a> () const</td></tr>
-<tr class="separator:af2603d2e3d38e02fb131dff47041554d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06dae19c2cb362ba15700517413984b6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a06dae19c2cb362ba15700517413984b6">getbitsstring</a> () const</td></tr>
-<tr class="separator:a06dae19c2cb362ba15700517413984b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a817bd2cac5fb7e5f199d5a3c5f53c6d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a817bd2cac5fb7e5f199d5a3c5f53c6d2">operator std::string</a> () const</td></tr>
-<tr class="separator:a817bd2cac5fb7e5f199d5a3c5f53c6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45f813156d4cca94ba20df0bd2a3a5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#ab45f813156d4cca94ba20df0bd2a3a5c">issubsetof</a> (const boost::dynamic_bitset&lt;&gt; &amp;rhs) const</td></tr>
-<tr class="separator:ab45f813156d4cca94ba20df0bd2a3a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e75dec09870af57764e41ddb8588d7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a3e75dec09870af57764e41ddb8588d7a">issubsetof</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;rhs) const</td></tr>
-<tr class="separator:a3e75dec09870af57764e41ddb8588d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a87cca2c5ee7b5d7a91257fd4b678a7"><td class="memItemLeft" align="right" valign="top">const boost::dynamic_bitset &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a4a87cca2c5ee7b5d7a91257fd4b678a7">getbitsetreference</a> () const</td></tr>
-<tr class="separator:a4a87cca2c5ee7b5d7a91257fd4b678a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821f43d91adb53332e9b6e2e327b1650"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a821f43d91adb53332e9b6e2e327b1650">getstringreference</a> () const</td></tr>
-<tr class="separator:a821f43d91adb53332e9b6e2e327b1650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa042ba631baaf1252de0cc9eca89b928"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#aa042ba631baaf1252de0cc9eca89b928">refine</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:aa042ba631baaf1252de0cc9eca89b928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace5c7530dfb614710a6f08f3584ca220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#ace5c7530dfb614710a6f08f3584ca220">getpostsolvemask</a> (const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;mask, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;themes) const</td></tr>
-<tr class="separator:ace5c7530dfb614710a6f08f3584ca220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a87eb012715ebae6c92922784656e60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#a4a87eb012715ebae6c92922784656e60">presolve</a> (const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;presolvedthemes) const</td></tr>
-<tr class="separator:a4a87eb012715ebae6c92922784656e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af056812998d0871f33464f5d68b9ed62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#af056812998d0871f33464f5d68b9ed62">postsolve</a> (const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;basethemes) const</td></tr>
-<tr class="separator:af056812998d0871f33464f5d68b9ed62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2da045081884474c6a884b8de136379"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:aa2da045081884474c6a884b8de136379"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#aa2da045081884474c6a884b8de136379">binarizedappend</a> (const double &amp;element)</td></tr>
-<tr class="separator:aa2da045081884474c6a884b8de136379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36034f0ce740bc3f9908bc28476de2e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a36034f0ce740bc3f9908bc28476de2e2">FMTMask</a> (<a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="memdesc:a36034f0ce740bc3f9908bc28476de2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move copy constructor.  <br /></td></tr>
+<tr class="separator:a36034f0ce740bc3f9908bc28476de2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf084bc58144db093ffa5654dc79313"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a9bf084bc58144db093ffa5654dc79313">operator=</a> (<a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="memdesc:a9bf084bc58144db093ffa5654dc79313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>.  <br /></td></tr>
+<tr class="separator:a9bf084bc58144db093ffa5654dc79313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59888e6d5970b63ec63f66c24452b882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a59888e6d5970b63ec63f66c24452b882">swap</a> (<a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a59888e6d5970b63ec63f66c24452b882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap this mask with another.  <br /></td></tr>
+<tr class="separator:a59888e6d5970b63ec63f66c24452b882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a48c9f16260fb6d7944adb3345856d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ad1a48c9f16260fb6d7944adb3345856d">FMTMask</a> ()</td></tr>
+<tr class="memdesc:ad1a48c9f16260fb6d7944adb3345856d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>.  <br /></td></tr>
+<tr class="separator:ad1a48c9f16260fb6d7944adb3345856d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46df6388be635df59c4a5885861276e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ab46df6388be635df59c4a5885861276e">FMTMask</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ab46df6388be635df59c4a5885861276e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>.  <br /></td></tr>
+<tr class="separator:ab46df6388be635df59c4a5885861276e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c69e5f92faf4740fc0a25bab67d8ac3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a6c69e5f92faf4740fc0a25bab67d8ac3">~FMTMask</a> ()=default</td></tr>
+<tr class="memdesc:a6c69e5f92faf4740fc0a25bab67d8ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default virtual destructor for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>.  <br /></td></tr>
+<tr class="separator:a6c69e5f92faf4740fc0a25bab67d8ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8649fa81db322d98c5c001a7b42bf30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ad8649fa81db322d98c5c001a7b42bf30">FMTMask</a> (const boost::dynamic_bitset&lt; uint8_t &gt; &amp;bits)</td></tr>
+<tr class="memdesc:ad8649fa81db322d98c5c001a7b42bf30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a mask setting only the bitset data member.  <br /></td></tr>
+<tr class="separator:ad8649fa81db322d98c5c001a7b42bf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6596c480e270da2f706508d400ea402e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a6596c480e270da2f706508d400ea402e">operator bool</a> () const</td></tr>
+<tr class="memdesc:a6596c480e270da2f706508d400ea402e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the mask is not empty by looking at the data bitset.  <br /></td></tr>
+<tr class="separator:a6596c480e270da2f706508d400ea402e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de0beaa385f726882f5bb5da13f9217"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a5de0beaa385f726882f5bb5da13f9217">FMTMask</a> (const std::string &amp;mask, const boost::dynamic_bitset&lt; uint8_t &gt; &amp;bits)</td></tr>
+<tr class="memdesc:a5de0beaa385f726882f5bb5da13f9217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a mask from an already set bitset and a string mask used as name.  <br /></td></tr>
+<tr class="separator:a5de0beaa385f726882f5bb5da13f9217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3848eed176cb1b78fb435f439ef159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#aaa3848eed176cb1b78fb435f439ef159">FMTMask</a> (const std::string &amp;mask, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes)</td></tr>
+<tr class="memdesc:aaa3848eed176cb1b78fb435f439ef159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a complete mask from a string and sorted themes.  <br /></td></tr>
+<tr class="separator:aaa3848eed176cb1b78fb435f439ef159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc94746168687ace9848ee21260febf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#adcc94746168687ace9848ee21260febf">FMTMask</a> (const std::vector&lt; std::string &gt; &amp;values, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes)</td></tr>
+<tr class="memdesc:adcc94746168687ace9848ee21260febf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a mask from a vector of attribute strings and sorted themes.  <br /></td></tr>
+<tr class="separator:adcc94746168687ace9848ee21260febf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ec75a03f62e669a6b1d0d8783f0f81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ad6ec75a03f62e669a6b1d0d8783f0f81">FMTMask</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes)</td></tr>
+<tr class="memdesc:ad6ec75a03f62e669a6b1d0d8783f0f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty mask sized for the given themes.  <br /></td></tr>
+<tr class="separator:ad6ec75a03f62e669a6b1d0d8783f0f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4ab8b607fa7fe493b580407caa8131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a8c4ab8b607fa7fe493b580407caa8131">clear</a> ()</td></tr>
+<tr class="memdesc:a8c4ab8b607fa7fe493b580407caa8131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the data and name members.  <br /></td></tr>
+<tr class="separator:a8c4ab8b607fa7fe493b580407caa8131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca81026d8e8bb246758725032af14185"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#aca81026d8e8bb246758725032af14185">size</a> () const</td></tr>
+<tr class="memdesc:aca81026d8e8bb246758725032af14185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the bitset data member.  <br /></td></tr>
+<tr class="separator:aca81026d8e8bb246758725032af14185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0529498aeaab38d714856f52c955b383"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a0529498aeaab38d714856f52c955b383">count</a> () const</td></tr>
+<tr class="memdesc:a0529498aeaab38d714856f52c955b383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of bits set.  <br /></td></tr>
+<tr class="separator:a0529498aeaab38d714856f52c955b383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422fc01af3e647386b87932f5f5e2836"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a422fc01af3e647386b87932f5f5e2836">get</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:a422fc01af3e647386b87932f5f5e2836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the string mask name based on the bitset data and sorted themes.  <br /></td></tr>
+<tr class="separator:a422fc01af3e647386b87932f5f5e2836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e3079e62bd1791e45022ebdbdbc273"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a38e3079e62bd1791e45022ebdbdbc273">get</a> (const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;theme) const</td></tr>
+<tr class="memdesc:a38e3079e62bd1791e45022ebdbdbc273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the attribute of the mask for a given theme.  <br /></td></tr>
+<tr class="separator:a38e3079e62bd1791e45022ebdbdbc273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2dec75df5037c691cecea25b8a0075"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#abf2dec75df5037c691cecea25b8a0075">getAttribute</a> (const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;p_theme) const</td></tr>
+<tr class="memdesc:abf2dec75df5037c691cecea25b8a0075"><td class="mdescLeft">&#160;</td><td class="mdescRight">When you deal with <a class="el" href="classCore_1_1FMTDevelopment.html" title="Base class of FMTActualDevelopment and FMTFuturDevelopment representing a forest stand.">FMTDevelopment</a> you can directly call this to get a reference to the attribute string.  <br /></td></tr>
+<tr class="separator:abf2dec75df5037c691cecea25b8a0075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f228f9426141c11975b49d239bd70ee"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a8f228f9426141c11975b49d239bd70ee">getSubsetCount</a> (const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;theme) const</td></tr>
+<tr class="memdesc:a8f228f9426141c11975b49d239bd70ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of bits set for the given theme subset.  <br /></td></tr>
+<tr class="separator:a8f228f9426141c11975b49d239bd70ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d9f4d91f2ca80aa7e0396f91a554c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a86d9f4d91f2ca80aa7e0396f91a554c8">set</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes, const std::string &amp;value)</td></tr>
+<tr class="memdesc:a86d9f4d91f2ca80aa7e0396f91a554c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bitset data for some themes from a mask string.  <br /></td></tr>
+<tr class="separator:a86d9f4d91f2ca80aa7e0396f91a554c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eedf9e24dffafea23581ff8a8aa6a2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a2eedf9e24dffafea23581ff8a8aa6a2e">setExclusiveBits</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;p_mask, const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;p_theme)</td></tr>
+<tr class="memdesc:a2eedf9e24dffafea23581ff8a8aa6a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flip only the theme subset and clear the mask of the intersection with another mask.  <br /></td></tr>
+<tr class="separator:a2eedf9e24dffafea23581ff8a8aa6a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5f20addb0efc4fe78f483f3d3e068d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a8a5f20addb0efc4fe78f483f3d3e068d">getNonFullBlocks</a> () const</td></tr>
+<tr class="memdesc:a8a5f20addb0efc4fe78f483f3d3e068d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the indexes of the blocks that contain a 0.  <br /></td></tr>
+<tr class="separator:a8a5f20addb0efc4fe78f483f3d3e068d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630b6e12997cb2ca8296502ffe51178d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a630b6e12997cb2ca8296502ffe51178d">isSubsetOf</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;p_mask, const std::vector&lt; size_t &gt; &amp;p_subset) const</td></tr>
+<tr class="memdesc:a630b6e12997cb2ca8296502ffe51178d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this mask is a subset of another mask by looking at a block subset.  <br /></td></tr>
+<tr class="separator:a630b6e12997cb2ca8296502ffe51178d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e708942d22bf51b1458f63d75d9b14d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a8e708942d22bf51b1458f63d75d9b14d">set</a> (const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;theme, const std::string &amp;value)</td></tr>
+<tr class="memdesc:a8e708942d22bf51b1458f63d75d9b14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bitset data for a given theme from an attribute.  <br /></td></tr>
+<tr class="separator:a8e708942d22bf51b1458f63d75d9b14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade792e90528c15a57d07a0cfd0488455"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ade792e90528c15a57d07a0cfd0488455">getStaticThemes</a> (const std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> * &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:ade792e90528c15a57d07a0cfd0488455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the themes that only use aggregates or a question mark for the mask.  <br /></td></tr>
+<tr class="separator:ade792e90528c15a57d07a0cfd0488455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d7c5ecd175d3dfe6e4742ccf3fb576"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a33d7c5ecd175d3dfe6e4742ccf3fb576">getSelectedThemes</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:a33d7c5ecd175d3dfe6e4742ccf3fb576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the themes that have any bit set in the mask.  <br /></td></tr>
+<tr class="separator:a33d7c5ecd175d3dfe6e4742ccf3fb576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c1d0f5870eff3614221230db8922f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#aa7c1d0f5870eff3614221230db8922f8">isNotThemesSubset</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs, const std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> * &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:aa7c1d0f5870eff3614221230db8922f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this mask is not part of rhs based on the sorted themes.  <br /></td></tr>
+<tr class="separator:aa7c1d0f5870eff3614221230db8922f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8a43d5864614aa8701ee4d83ec2122"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a0f8a43d5864614aa8701ee4d83ec2122">isNotThemesSubset</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:a0f8a43d5864614aa8701ee4d83ec2122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this mask is not part of rhs based on the sorted themes.  <br /></td></tr>
+<tr class="separator:a0f8a43d5864614aa8701ee4d83ec2122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a93a66076952609b05a6ab6cb9408c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a4a93a66076952609b05a6ab6cb9408c2">removeAggregates</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes, bool questionmarkonly=false) const</td></tr>
+<tr class="memdesc:a4a93a66076952609b05a6ab6cb9408c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new mask with the bits of aggregates or question marks unset for the given themes.  <br /></td></tr>
+<tr class="separator:a4a93a66076952609b05a6ab6cb9408c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550dfd39eed40156014d3ae3f912561b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a550dfd39eed40156014d3ae3f912561b">empty</a> () const</td></tr>
+<tr class="memdesc:a550dfd39eed40156014d3ae3f912561b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the data member is empty.  <br /></td></tr>
+<tr class="separator:a550dfd39eed40156014d3ae3f912561b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae5d544bcb71e2cc99a67caf805179d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a8ae5d544bcb71e2cc99a67caf805179d">update</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes)</td></tr>
+<tr class="memdesc:a8ae5d544bcb71e2cc99a67caf805179d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the name member from the bitset data using a sorted list of themes.  <br /></td></tr>
+<tr class="separator:a8ae5d544bcb71e2cc99a67caf805179d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae173cabf8e728e3704ed996161fe2220"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ae173cabf8e728e3704ed996161fe2220">decompose</a> (const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;theme) const</td></tr>
+<tr class="memdesc:ae173cabf8e728e3704ed996161fe2220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disaggregate the attribute of a theme from the mask into a vector of masks, one per possible attribute.  <br /></td></tr>
+<tr class="separator:ae173cabf8e728e3704ed996161fe2220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf540459117b102081a89b50b6aeaf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a7cf540459117b102081a89b50b6aeaf4">append</a> (const boost::dynamic_bitset&lt; uint8_t &gt; &amp;bits)</td></tr>
+<tr class="memdesc:a7cf540459117b102081a89b50b6aeaf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a bitset to the bitset data member of the mask.  <br /></td></tr>
+<tr class="separator:a7cf540459117b102081a89b50b6aeaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc3ffd38c2823c3557f1541d18fef7d"><td class="memTemplParams" colspan="2">template&lt;class typetobinarize &gt; </td></tr>
+<tr class="memitem:aadc3ffd38c2823c3557f1541d18fef7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#aadc3ffd38c2823c3557f1541d18fef7d">binarizedAppend</a> (const typetobinarize &amp;element)</td></tr>
+<tr class="memdesc:aadc3ffd38c2823c3557f1541d18fef7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binarize an element and append it to the mask.  <br /></td></tr>
+<tr class="separator:aadc3ffd38c2823c3557f1541d18fef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992d74462ee5c8f280029c55f313928c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a992d74462ee5c8f280029c55f313928c">getUnion</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a992d74462ee5c8f280029c55f313928c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the union of this mask and another mask.  <br /></td></tr>
+<tr class="separator:a992d74462ee5c8f280029c55f313928c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881c4b73e11ec4ea5a0cfd48961479ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a881c4b73e11ec4ea5a0cfd48961479ba">getIntersect</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a881c4b73e11ec4ea5a0cfd48961479ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the intersection of this mask and another mask.  <br /></td></tr>
+<tr class="separator:a881c4b73e11ec4ea5a0cfd48961479ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e707a627773bbafb0655e248862a735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a4e707a627773bbafb0655e248862a735">setIntersect</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a4e707a627773bbafb0655e248862a735"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the intersect with this mask using rhs mask.  <br /></td></tr>
+<tr class="separator:a4e707a627773bbafb0655e248862a735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5036f8c29a7fda0904c18be733d6b410"><td class="memItemLeft" align="right" valign="top">boost::dynamic_bitset&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a5036f8c29a7fda0904c18be733d6b410">getBitsetIntersect</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a5036f8c29a7fda0904c18be733d6b410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the bitset of the intersection of this mask and another mask.  <br /></td></tr>
+<tr class="separator:a5036f8c29a7fda0904c18be733d6b410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709b4d698177f7720c98fd01054fc711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a709b4d698177f7720c98fd01054fc711">operator=</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a709b4d698177f7720c98fd01054fc711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>.  <br /></td></tr>
+<tr class="separator:a709b4d698177f7720c98fd01054fc711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c5b847f2f907370e318fefb2597fbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ad8c5b847f2f907370e318fefb2597fbc">operator!=</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:ad8c5b847f2f907370e318fefb2597fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality comparison operator of <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>.  <br /></td></tr>
+<tr class="separator:ad8c5b847f2f907370e318fefb2597fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3b518e25edf610ef6f808e69f4ba14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ada3b518e25edf610ef6f808e69f4ba14">operator==</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:ada3b518e25edf610ef6f808e69f4ba14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator of <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>.  <br /></td></tr>
+<tr class="separator:ada3b518e25edf610ef6f808e69f4ba14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af215b52811cf670238d6ffb7e9d86d68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#af215b52811cf670238d6ffb7e9d86d68">operator&lt;</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:af215b52811cf670238d6ffb7e9d86d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than comparison operator of <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>.  <br /></td></tr>
+<tr class="separator:af215b52811cf670238d6ffb7e9d86d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27124773d645af8bfb8a24f1dca7654a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a27124773d645af8bfb8a24f1dca7654a">resume</a> (const boost::dynamic_bitset&lt; uint8_t &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a27124773d645af8bfb8a24f1dca7654a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a mask with the selected name and data using a bitset.  <br /></td></tr>
+<tr class="separator:a27124773d645af8bfb8a24f1dca7654a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa15baf60747b58469ab2585ca1b608"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a6aa15baf60747b58469ab2585ca1b608">resume</a> (const std::vector&lt; size_t &gt; &amp;indexes) const</td></tr>
+<tr class="memdesc:a6aa15baf60747b58469ab2585ca1b608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a mask with the selected name and data using mask indexes.  <br /></td></tr>
+<tr class="separator:a6aa15baf60747b58469ab2585ca1b608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c5301741ed54024213dca87cfe96d5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#af5c5301741ed54024213dca87cfe96d5">hash</a> () const</td></tr>
+<tr class="memdesc:af5c5301741ed54024213dca87cfe96d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the hash of the mask.  <br /></td></tr>
+<tr class="separator:af5c5301741ed54024213dca87cfe96d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ab3500b893bbe4afe1f077a49f419d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a34ab3500b893bbe4afe1f077a49f419d">getBitsString</a> () const</td></tr>
+<tr class="memdesc:a34ab3500b893bbe4afe1f077a49f419d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the binary representation of the bitset as a string.  <br /></td></tr>
+<tr class="separator:a34ab3500b893bbe4afe1f077a49f419d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93966a96ced38b6ca3824048cd874b38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a93966a96ced38b6ca3824048cd874b38">operator std::string</a> () const</td></tr>
+<tr class="memdesc:a93966a96ced38b6ca3824048cd874b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the mask.  <br /></td></tr>
+<tr class="separator:a93966a96ced38b6ca3824048cd874b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0297beeb36f24730c57c94f2a836b41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ac0297beeb36f24730c57c94f2a836b41">isSubsetOf</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;p_rhs) const</td></tr>
+<tr class="memdesc:ac0297beeb36f24730c57c94f2a836b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this mask is a subset of another mask.  <br /></td></tr>
+<tr class="separator:ac0297beeb36f24730c57c94f2a836b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d39877549a6475489ea4420db248fc"><td class="memItemLeft" align="right" valign="top">const boost::dynamic_bitset&lt; uint8_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#af3d39877549a6475489ea4420db248fc">getBitsetReference</a> () const</td></tr>
+<tr class="memdesc:af3d39877549a6475489ea4420db248fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the bitset data member.  <br /></td></tr>
+<tr class="separator:af3d39877549a6475489ea4420db248fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dabf5d7b88b5d91cd6671e636295959"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a8dabf5d7b88b5d91cd6671e636295959">getStringReference</a> () const</td></tr>
+<tr class="memdesc:a8dabf5d7b88b5d91cd6671e636295959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the name string member.  <br /></td></tr>
+<tr class="separator:a8dabf5d7b88b5d91cd6671e636295959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e6dbadfd57a19bddbc623ea0fe5838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#af4e6dbadfd57a19bddbc623ea0fe5838">reserve</a> (size_t p_size)</td></tr>
+<tr class="memdesc:af4e6dbadfd57a19bddbc623ea0fe5838"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserve memory for the boost dynamicbitset.  <br /></td></tr>
+<tr class="separator:af4e6dbadfd57a19bddbc623ea0fe5838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad011c7d2b2357634f6b45eaa9b4e9f29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ad011c7d2b2357634f6b45eaa9b4e9f29">refine</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;mask, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:ad011c7d2b2357634f6b45eaa9b4e9f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a new mask where the question marks are completed with the attributes of another mask.  <br /></td></tr>
+<tr class="separator:ad011c7d2b2357634f6b45eaa9b4e9f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd88f67d60fd027e38a09f2ecd02281"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a3fd88f67d60fd027e38a09f2ecd02281">getPostSolveMask</a> (const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;mask, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;themes) const</td></tr>
+<tr class="memdesc:a3fd88f67d60fd027e38a09f2ecd02281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off the bits of themes that are still active on a base postsolve mask.  <br /></td></tr>
+<tr class="separator:a3fd88f67d60fd027e38a09f2ecd02281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d168c773ef91bd324ddecb83689dde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a19d168c773ef91bd324ddecb83689dde">preSolve</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;presolvedthemes) const</td></tr>
+<tr class="memdesc:a19d168c773ef91bd324ddecb83689dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a presolved mask with potentially less data using a filter and a subset of the original themes.  <br /></td></tr>
+<tr class="separator:a19d168c773ef91bd324ddecb83689dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7b7edf646e6338f8e329f4e3ee98ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a5c7b7edf646e6338f8e329f4e3ee98ab">preSolveRef</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;p_filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;p_presolvedThemes, bool p_allowReallocation=true)</td></tr>
+<tr class="memdesc:a5c7b7edf646e6338f8e329f4e3ee98ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presolve this mask in place with potentially less data using a filter and a subset of the original themes.  <br /></td></tr>
+<tr class="separator:a5c7b7edf646e6338f8e329f4e3ee98ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f4e2d4582913d615b9f62a318d92ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ab9f4e2d4582913d615b9f62a318d92ec">canPreSolve</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;p_filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;p_presolvedThemes) const</td></tr>
+<tr class="memdesc:ab9f4e2d4582913d615b9f62a318d92ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the mask can be presolved with the given filter and themes.  <br /></td></tr>
+<tr class="separator:ab9f4e2d4582913d615b9f62a318d92ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8768801fbc56e866e0861268439c6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a5d8768801fbc56e866e0861268439c6b">postSolve</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;basethemes) const</td></tr>
+<tr class="memdesc:a5d8768801fbc56e866e0861268439c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a postsolved mask using a filter and the original themes.  <br /></td></tr>
+<tr class="separator:a5d8768801fbc56e866e0861268439c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb8b4b349b6147adbcaac6811a239d1"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:accb8b4b349b6147adbcaac6811a239d1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#accb8b4b349b6147adbcaac6811a239d1">binarizedAppend</a> (const double &amp;element)</td></tr>
+<tr class="separator:accb8b4b349b6147adbcaac6811a239d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:acdd1ce09fad89d992db977abb4f225c5"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#acdd1ce09fad89d992db977abb4f225c5">FMTtheme</a></td></tr>
-<tr class="separator:acdd1ce09fad89d992db977abb4f225c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTmask.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:a9812fc3432b6615b1f9e978c396f68df"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#a9812fc3432b6615b1f9e978c396f68df">FMTTheme</a></td></tr>
+<tr class="separator:a9812fc3432b6615b1f9e978c396f68df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTMask.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memdesc:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>).  <br /></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> class is one of the most important class in FMT. Alot of classes are bases on <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. data is boost:dynamic_bitset where if a bit is set that means that the attribute of a given theme is part of the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. the data member size == the sum of the FMTthemes size. The name data member hold the attribute value as a string. Sometime when the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> is used for union the name might not be set. Also if multiple bits are set for a given <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> it means that the mask contains a aggregate or a ?. </p>
+<div class="textblock"><p><a class="el" href="namespaceCore.html" title="The Core namespace provides classes for simulating stands/strata growth/harvest through time.">Core</a> class holding, as a boost dynamic bitset, which theme attributes are part of a mask. </p>
+<p>A set bit means the attribute of a given theme is part of the mask; the data size equals the sum of the theme sizes. The name member holds the attribute values as a string. Multiple bits set for a theme mean the mask contains an aggregate or a question mark. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="accb91a51248a2c418425c1c89895fa8e" name="accb91a51248a2c418425c1c89895fa8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accb91a51248a2c418425c1c89895fa8e">&#9670;&#160;</a></span>FMTmask() <span class="overload">[1/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Core::FMTmask::FMTmask </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Default constructor for <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
-
-</div>
-</div>
-<a id="a16f02f49e62bca1ada3534266d93a60b" name="a16f02f49e62bca1ada3534266d93a60b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16f02f49e62bca1ada3534266d93a60b">&#9670;&#160;</a></span>FMTmask() <span class="overload">[2/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Core::FMTmask::FMTmask </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> copy constructor. </p>
-
-</div>
-</div>
-<a id="a6ba8628c04362ca050a527ccf212954d" name="a6ba8628c04362ca050a527ccf212954d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ba8628c04362ca050a527ccf212954d">&#9670;&#160;</a></span>~FMTmask()</h2>
+<a id="a36034f0ce740bc3f9908bc28476de2e2" name="a36034f0ce740bc3f9908bc28476de2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36034f0ce740bc3f9908bc28476de2e2">&#9670;&#160;</a></span>FMTMask() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +288,86 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Core::FMTmask::~FMTmask </td>
+          <td class="memname">Core::FMTMask::FMTMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>development to swap </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad1a48c9f16260fb6d7944adb3345856d" name="ad1a48c9f16260fb6d7944adb3345856d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a48c9f16260fb6d7944adb3345856d">&#9670;&#160;</a></span>FMTMask() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::FMTMask::FMTMask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </p>
+
+</div>
+</div>
+<a id="ab46df6388be635df59c4a5885861276e" name="ab46df6388be635df59c4a5885861276e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46df6388be635df59c4a5885861276e">&#9670;&#160;</a></span>FMTMask() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::FMTMask::FMTMask </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c69e5f92faf4740fc0a25bab67d8ac3" name="a6c69e5f92faf4740fc0a25bab67d8ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c69e5f92faf4740fc0a25bab67d8ac3">&#9670;&#160;</a></span>~FMTMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Core::FMTMask::~FMTMask </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -255,37 +379,45 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Default destructor for <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Default virtual destructor for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </p>
 
 </div>
 </div>
-<a id="a0d2c3554def898715a4e931263e12d82" name="a0d2c3554def898715a4e931263e12d82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d2c3554def898715a4e931263e12d82">&#9670;&#160;</a></span>FMTmask() <span class="overload">[3/7]</span></h2>
+<a id="ad8649fa81db322d98c5c001a7b42bf30" name="ad8649fa81db322d98c5c001a7b42bf30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8649fa81db322d98c5c001a7b42bf30">&#9670;&#160;</a></span>FMTMask() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTmask::FMTmask </td>
+          <td class="memname">Core::FMTMask::FMTMask </td>
           <td>(</td>
-          <td class="paramtype">const boost::dynamic_bitset&lt;&gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::dynamic_bitset&lt; uint8_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>bits</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Simple constructor for <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> that only sets the bitsets data member. </p>
+
+<p>Construct a mask setting only the bitset data member. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bits</td><td>the bitset data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a2a00ad2c9758a860bb54d2c7d7a0ba8a" name="a2a00ad2c9758a860bb54d2c7d7a0ba8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a00ad2c9758a860bb54d2c7d7a0ba8a">&#9670;&#160;</a></span>FMTmask() <span class="overload">[4/7]</span></h2>
+<a id="a5de0beaa385f726882f5bb5da13f9217" name="a5de0beaa385f726882f5bb5da13f9217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5de0beaa385f726882f5bb5da13f9217">&#9670;&#160;</a></span>FMTMask() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTmask::FMTmask </td>
+          <td class="memname">Core::FMTMask::FMTMask </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
@@ -293,7 +425,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::dynamic_bitset&lt;&gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::dynamic_bitset&lt; uint8_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>bits</em>&#160;</td>
         </tr>
         <tr>
@@ -303,18 +435,26 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> constructor using a already sets bitset (bits) and a string mask to set as name. </p>
+
+<p>Construct a mask from an already set bitset and a string mask used as name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>the string mask used as name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bits</td><td>the bitset data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a32b25f813e5b778a087b606e87df82c6" name="a32b25f813e5b778a087b606e87df82c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32b25f813e5b778a087b606e87df82c6">&#9670;&#160;</a></span>FMTmask() <span class="overload">[5/7]</span></h2>
+<a id="aaa3848eed176cb1b78fb435f439ef159" name="aaa3848eed176cb1b78fb435f439ef159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3848eed176cb1b78fb435f439ef159">&#9670;&#160;</a></span>FMTMask() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTmask::FMTmask </td>
+          <td class="memname">Core::FMTMask::FMTMask </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
@@ -322,7 +462,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>&#160;</td>
         </tr>
         <tr>
@@ -332,18 +472,26 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> constructor using a string (mask) and sorted themes to generate a complete <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Construct a complete mask from a string and sorted themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>the string mask. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the sorted themes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a2d7ec77a4bf0a814f88fa1555d3790ca" name="a2d7ec77a4bf0a814f88fa1555d3790ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d7ec77a4bf0a814f88fa1555d3790ca">&#9670;&#160;</a></span>FMTmask() <span class="overload">[6/7]</span></h2>
+<a id="adcc94746168687ace9848ee21260febf" name="adcc94746168687ace9848ee21260febf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc94746168687ace9848ee21260febf">&#9670;&#160;</a></span>FMTMask() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTmask::FMTmask </td>
+          <td class="memname">Core::FMTMask::FMTMask </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>values</em>, </td>
@@ -351,7 +499,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>&#160;</td>
         </tr>
         <tr>
@@ -361,51 +509,73 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> constructor using a vector of string for the attributes and a vector of sorted themes to generate a <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Construct a mask from a vector of attribute strings and sorted themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">values</td><td>the attribute strings. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the sorted themes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a16c9420e90cb92d0fd6bff2026a73a16" name="a16c9420e90cb92d0fd6bff2026a73a16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16c9420e90cb92d0fd6bff2026a73a16">&#9670;&#160;</a></span>FMTmask() <span class="overload">[7/7]</span></h2>
+<a id="ad6ec75a03f62e669a6b1d0d8783f0f81" name="ad6ec75a03f62e669a6b1d0d8783f0f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ec75a03f62e669a6b1d0d8783f0f81">&#9670;&#160;</a></span>FMTMask() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTmask::FMTmask </td>
+          <td class="memname">Core::FMTMask::FMTMask </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> constructor using a vector of string for the attributes and a vector of sorted themes to generate a <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Construct an empty mask sized for the given themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the sorted themes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aed70fff3c7e73a635e1ed748ff1e04f0" name="aed70fff3c7e73a635e1ed748ff1e04f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed70fff3c7e73a635e1ed748ff1e04f0">&#9670;&#160;</a></span>append()</h2>
+<a id="a7cf540459117b102081a89b50b6aeaf4" name="a7cf540459117b102081a89b50b6aeaf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf540459117b102081a89b50b6aeaf4">&#9670;&#160;</a></span>append()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTmask::append </td>
+          <td class="memname">void Core::FMTMask::append </td>
           <td>(</td>
-          <td class="paramtype">const boost::dynamic_bitset&lt;&gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::dynamic_bitset&lt; uint8_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>bits</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Append a bitsets to the bitset data member of the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Append a bitset to the bitset data member of the mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bits</td><td>the bitset to append. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="aa2da045081884474c6a884b8de136379" name="aa2da045081884474c6a884b8de136379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2da045081884474c6a884b8de136379">&#9670;&#160;</a></span>binarizedappend() <span class="overload">[1/2]</span></h2>
+<a id="accb8b4b349b6147adbcaac6811a239d1" name="accb8b4b349b6147adbcaac6811a239d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb8b4b349b6147adbcaac6811a239d1">&#9670;&#160;</a></span>binarizedAppend() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +586,7 @@ template&lt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTmask::binarizedappend </td>
+          <td class="memname">void Core::FMTMask::binarizedAppend </td>
           <td>(</td>
           <td class="paramtype">const double &amp;&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
@@ -432,8 +602,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a54c15206a0455ed3b529b42005f0c3f7" name="a54c15206a0455ed3b529b42005f0c3f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54c15206a0455ed3b529b42005f0c3f7">&#9670;&#160;</a></span>binarizedappend() <span class="overload">[2/2]</span></h2>
+<a id="aadc3ffd38c2823c3557f1541d18fef7d" name="aadc3ffd38c2823c3557f1541d18fef7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc3ffd38c2823c3557f1541d18fef7d">&#9670;&#160;</a></span>binarizedAppend() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +614,7 @@ template&lt;class typetobinarize &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTmask::binarizedappend </td>
+          <td class="memname">void Core::FMTMask::binarizedAppend </td>
           <td>(</td>
           <td class="paramtype">const typetobinarize &amp;&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
@@ -457,142 +627,257 @@ template&lt;class typetobinarize &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Binarize any class and append it to the mask. </p>
+
+<p>Binarize an element and append it to the mask. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">typetobinarize</td><td>the type of the element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>the element to binarize and append. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a7cee4c9b5fafed3acf0a1dbacf941ecf" name="a7cee4c9b5fafed3acf0a1dbacf941ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cee4c9b5fafed3acf0a1dbacf941ecf">&#9670;&#160;</a></span>clear()</h2>
+<a id="ab9f4e2d4582913d615b9f62a318d92ec" name="ab9f4e2d4582913d615b9f62a318d92ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f4e2d4582913d615b9f62a318d92ec">&#9670;&#160;</a></span>canPreSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTmask::clear </td>
+          <td class="memname">bool Core::FMTMask::canPreSolve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_presolvedThemes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the mask can be presolved with the given filter and themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_presolvedThemes</td><td>the presolved themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mask can be presolved else false. </dd></dl>
+
+</div>
+</div>
+<a id="a8c4ab8b607fa7fe493b580407caa8131" name="a8c4ab8b607fa7fe493b580407caa8131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4ab8b607fa7fe493b580407caa8131">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::FMTMask::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Clear the data and name members. </p>
 
 </div>
 </div>
-<a id="a9cc12a5f1420037c1ead1fc14ef5b1e9" name="a9cc12a5f1420037c1ead1fc14ef5b1e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cc12a5f1420037c1ead1fc14ef5b1e9">&#9670;&#160;</a></span>count()</h2>
+<a id="a0529498aeaab38d714856f52c955b383" name="a0529498aeaab38d714856f52c955b383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0529498aeaab38d714856f52c955b383">&#9670;&#160;</a></span>count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMTmask::count </td>
+          <td class="memname">size_t Core::FMTMask::count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the number of bits set. </p>
+
+<p>Return the number of bits set. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of bits set. </dd></dl>
 
 </div>
 </div>
-<a id="af8ac62226d230af40c2361467099350c" name="af8ac62226d230af40c2361467099350c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8ac62226d230af40c2361467099350c">&#9670;&#160;</a></span>decompose()</h2>
+<a id="ae173cabf8e728e3704ed996161fe2220" name="ae173cabf8e728e3704ed996161fe2220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae173cabf8e728e3704ed996161fe2220">&#9670;&#160;</a></span>decompose()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &gt; Core::FMTmask::decompose </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &gt; Core::FMTMask::decompose </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;&#160;</td>
           <td class="paramname"><em>theme</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Using a given (theme) this function desaggregate the attribute/aggregate/? of a theme from the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> and returns a vector of each possible attribute as multiple masks. </p>
+
+<p>Disaggregate the attribute of a theme from the mask into a vector of masks, one per possible attribute. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">theme</td><td>the theme to decompose. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of masks, one per possible attribute. </dd></dl>
 
 </div>
 </div>
-<a id="a9f80acad5e5afed17229b8e298bb833b" name="a9f80acad5e5afed17229b8e298bb833b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f80acad5e5afed17229b8e298bb833b">&#9670;&#160;</a></span>empty()</h2>
+<a id="a550dfd39eed40156014d3ae3f912561b" name="a550dfd39eed40156014d3ae3f912561b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550dfd39eed40156014d3ae3f912561b">&#9670;&#160;</a></span>empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTmask::empty </td>
+          <td class="memname">bool Core::FMTMask::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if the data member is empty. </p>
+
+<p>Return true if the data member is empty. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the mask is empty else false. </dd></dl>
 
 </div>
 </div>
-<a id="a2a560b7cf6bc775fbada55623a6091e5" name="a2a560b7cf6bc775fbada55623a6091e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a560b7cf6bc775fbada55623a6091e5">&#9670;&#160;</a></span>get() <span class="overload">[1/2]</span></h2>
+<a id="a38e3079e62bd1791e45022ebdbdbc273" name="a38e3079e62bd1791e45022ebdbdbc273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e3079e62bd1791e45022ebdbdbc273">&#9670;&#160;</a></span>get() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Core::FMTmask::get </td>
+          <td class="memname">std::string Core::FMTMask::get </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;&#160;</td>
           <td class="paramname"><em>theme</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the corresponding attribute of the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> for a given <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a>. </p>
+
+<p>Get the attribute of the mask for a given theme. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">theme</td><td>the theme. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the attribute of the theme. </dd></dl>
 
 </div>
 </div>
-<a id="a14075747ef33856ed522f38966faa092" name="a14075747ef33856ed522f38966faa092"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14075747ef33856ed522f38966faa092">&#9670;&#160;</a></span>get() <span class="overload">[2/2]</span></h2>
+<a id="a422fc01af3e647386b87932f5f5e2836" name="a422fc01af3e647386b87932f5f5e2836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422fc01af3e647386b87932f5f5e2836">&#9670;&#160;</a></span>get() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Core::FMTmask::get </td>
+          <td class="memname">std::string Core::FMTMask::get </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the string mask name of the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> based on the bitset data and the sorted themes. </p>
+
+<p>Get the string mask name based on the bitset data and sorted themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the sorted themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the string mask name. </dd></dl>
 
 </div>
 </div>
-<a id="add07fcff500097bf6b5a43a0f3bf8ec7" name="add07fcff500097bf6b5a43a0f3bf8ec7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add07fcff500097bf6b5a43a0f3bf8ec7">&#9670;&#160;</a></span>getbitsetintersect()</h2>
+<a id="abf2dec75df5037c691cecea25b8a0075" name="abf2dec75df5037c691cecea25b8a0075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2dec75df5037c691cecea25b8a0075">&#9670;&#160;</a></span>getAttribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boost::dynamic_bitset Core::FMTmask::getbitsetintersect </td>
+          <td class="memname">const std::string &amp; Core::FMTMask::getAttribute </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_theme</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When you deal with <a class="el" href="classCore_1_1FMTDevelopment.html" title="Base class of FMTActualDevelopment and FMTFuturDevelopment representing a forest stand.">FMTDevelopment</a> you can directly call this to get a reference to the attribute string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_theme</td><td>the theme we target </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the attribute. </dd></dl>
+
+</div>
+</div>
+<a id="a5036f8c29a7fda0904c18be733d6b410" name="a5036f8c29a7fda0904c18be733d6b410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5036f8c29a7fda0904c18be733d6b410">&#9670;&#160;</a></span>getBitsetIntersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::dynamic_bitset&lt; uint8_t &gt; Core::FMTMask::getBitsetIntersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Do a intersection operation on the dynamic bitset of the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> and the given <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> (rhs) but return the bitset. </p>
+
+<p>Return the bitset of the intersection of this mask and another mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other mask. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the intersection bitset. </dd></dl>
 
 </div>
 </div>
-<a id="a4a87cca2c5ee7b5d7a91257fd4b678a7" name="a4a87cca2c5ee7b5d7a91257fd4b678a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a87cca2c5ee7b5d7a91257fd4b678a7">&#9670;&#160;</a></span>getbitsetreference()</h2>
+<a id="af3d39877549a6475489ea4420db248fc" name="af3d39877549a6475489ea4420db248fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d39877549a6475489ea4420db248fc">&#9670;&#160;</a></span>getBitsetReference()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +886,7 @@ template&lt;class typetobinarize &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const boost::dynamic_bitset &amp; Core::FMTmask::getbitsetreference </td>
+          <td class="memname">const boost::dynamic_bitset&lt; uint8_t &gt; &amp; Core::FMTMask::getBitsetReference </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -613,63 +898,95 @@ template&lt;class typetobinarize &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a const referencer ot the boost::dynamic_bitset data member. </p>
+
+<p>Return a const reference to the bitset data member. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the bitset. </dd></dl>
 
 </div>
 </div>
-<a id="a06dae19c2cb362ba15700517413984b6" name="a06dae19c2cb362ba15700517413984b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06dae19c2cb362ba15700517413984b6">&#9670;&#160;</a></span>getbitsstring()</h2>
+<a id="a34ab3500b893bbe4afe1f077a49f419d" name="a34ab3500b893bbe4afe1f077a49f419d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ab3500b893bbe4afe1f077a49f419d">&#9670;&#160;</a></span>getBitsString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Core::FMTmask::getbitsstring </td>
+          <td class="memname">std::string Core::FMTMask::getBitsString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the binary representation of the dynamic bitset in a simple string. </p>
+
+<p>Return the binary representation of the bitset as a string. </p>
+<dl class="section return"><dt>Returns</dt><dd>the binary representation of the bitset. </dd></dl>
 
 </div>
 </div>
-<a id="a913d8afbc81c57b66f39e1254e2806ad" name="a913d8afbc81c57b66f39e1254e2806ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a913d8afbc81c57b66f39e1254e2806ad">&#9670;&#160;</a></span>getintersect()</h2>
+<a id="a881c4b73e11ec4ea5a0cfd48961479ba" name="a881c4b73e11ec4ea5a0cfd48961479ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881c4b73e11ec4ea5a0cfd48961479ba">&#9670;&#160;</a></span>getIntersect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::getintersect </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::getIntersect </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Do a intersection operation on the dynamic bitset of the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> and the given <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> (rhs). </p>
+
+<p>Return the intersection of this mask and another mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other mask. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the intersection mask. </dd></dl>
 
 </div>
 </div>
-<a id="ace5c7530dfb614710a6f08f3584ca220" name="ace5c7530dfb614710a6f08f3584ca220"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace5c7530dfb614710a6f08f3584ca220">&#9670;&#160;</a></span>getpostsolvemask()</h2>
+<a id="a8a5f20addb0efc4fe78f483f3d3e068d" name="a8a5f20addb0efc4fe78f483f3d3e068d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5f20addb0efc4fe78f483f3d3e068d">&#9670;&#160;</a></span>getNonFullBlocks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::getpostsolvemask </td>
+          <td class="memname">std::vector&lt; size_t &gt; Core::FMTMask::getNonFullBlocks </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the indexes of the blocks that contain a 0. </p>
+<dl class="section return"><dt>Returns</dt><dd>a vector of indexes of the blocks that contain a 0. </dd></dl>
+
+</div>
+</div>
+<a id="a3fd88f67d60fd027e38a09f2ecd02281" name="a3fd88f67d60fd027e38a09f2ecd02281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd88f67d60fd027e38a09f2ecd02281">&#9670;&#160;</a></span>getPostSolveMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::getPostSolveMask </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>&#160;</td>
         </tr>
         <tr>
@@ -679,50 +996,75 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If this is a base postsolve mask it uses mask to turn off bits for themes that are still active. </p>
+
+<p>Turn off the bits of themes that are still active on a base postsolve mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>the mask used to turn off bits. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the postsolve mask. </dd></dl>
 
 </div>
 </div>
-<a id="af12c27f341ae87522bba1cef6f5911e0" name="af12c27f341ae87522bba1cef6f5911e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af12c27f341ae87522bba1cef6f5911e0">&#9670;&#160;</a></span>getselectedthemes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; Core::FMTmask::getselectedthemes </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>themes</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Takes vector of <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> and return a vector of <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> from which theme have any true bits. </p>
-
-</div>
-</div>
-<a id="a039f672ab1b40e1f23b7b1bbec39abf4" name="a039f672ab1b40e1f23b7b1bbec39abf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a039f672ab1b40e1f23b7b1bbec39abf4">&#9670;&#160;</a></span>getstaticthemes()</h2>
+<a id="a33d7c5ecd175d3dfe6e4742ccf3fb576" name="a33d7c5ecd175d3dfe6e4742ccf3fb576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d7c5ecd175d3dfe6e4742ccf3fb576">&#9670;&#160;</a></span>getSelectedThemes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; Core::FMTmask::getstaticthemes </td>
+          <td class="memname">std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> * &gt; Core::FMTMask::getSelectedThemes </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Filter <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> from themes that are only using aggregates or ? for the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Return the themes that have any bit set in the mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes to filter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the selected themes. </dd></dl>
 
 </div>
 </div>
-<a id="a821f43d91adb53332e9b6e2e327b1650" name="a821f43d91adb53332e9b6e2e327b1650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a821f43d91adb53332e9b6e2e327b1650">&#9670;&#160;</a></span>getstringreference()</h2>
+<a id="ade792e90528c15a57d07a0cfd0488455" name="ade792e90528c15a57d07a0cfd0488455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade792e90528c15a57d07a0cfd0488455">&#9670;&#160;</a></span>getStaticThemes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> * &gt; Core::FMTMask::getStaticThemes </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>themes</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the themes that only use aggregates or a question mark for the mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes to filter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the static themes. </dd></dl>
+
+</div>
+</div>
+<a id="a8dabf5d7b88b5d91cd6671e636295959" name="a8dabf5d7b88b5d91cd6671e636295959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dabf5d7b88b5d91cd6671e636295959">&#9670;&#160;</a></span>getStringReference()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -731,7 +1073,7 @@ template&lt;class typetobinarize &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string &amp; Core::FMTmask::getstringreference </td>
+          <td class="memname">const std::string &amp; Core::FMTMask::getStringReference </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -743,50 +1085,68 @@ template&lt;class typetobinarize &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a const referencer ot the std::string data member. </p>
+
+<p>Return a const reference to the name string member. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the name string. </dd></dl>
 
 </div>
 </div>
-<a id="aed211731c4c5bfcfb2b9e8771853e50f" name="aed211731c4c5bfcfb2b9e8771853e50f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed211731c4c5bfcfb2b9e8771853e50f">&#9670;&#160;</a></span>getsubsetcount()</h2>
+<a id="a8f228f9426141c11975b49d239bd70ee" name="a8f228f9426141c11975b49d239bd70ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f228f9426141c11975b49d239bd70ee">&#9670;&#160;</a></span>getSubsetCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMTmask::getsubsetcount </td>
+          <td class="memname">size_t Core::FMTMask::getSubsetCount </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;&#160;</td>
           <td class="paramname"><em>theme</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the number of bits set for the given theme subset. </p>
+
+<p>Return the number of bits set for the given theme subset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">theme</td><td>the theme. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bits set for the theme subset. </dd></dl>
 
 </div>
 </div>
-<a id="a9db4dd6d4bfc73fc9dde77a5a0c81908" name="a9db4dd6d4bfc73fc9dde77a5a0c81908"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9db4dd6d4bfc73fc9dde77a5a0c81908">&#9670;&#160;</a></span>getunion()</h2>
+<a id="a992d74462ee5c8f280029c55f313928c" name="a992d74462ee5c8f280029c55f313928c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992d74462ee5c8f280029c55f313928c">&#9670;&#160;</a></span>getUnion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::getunion </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::getUnion </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Do a union operation on the dynamic bitset of the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> and the given <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> (rhs). </p>
+
+<p>Return the union of this mask and another mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other mask. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the union mask. </dd></dl>
 
 </div>
 </div>
-<a id="af2603d2e3d38e02fb131dff47041554d" name="af2603d2e3d38e02fb131dff47041554d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2603d2e3d38e02fb131dff47041554d">&#9670;&#160;</a></span>hash()</h2>
+<a id="af5c5301741ed54024213dca87cfe96d5" name="af5c5301741ed54024213dca87cfe96d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5c5301741ed54024213dca87cfe96d5">&#9670;&#160;</a></span>hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -795,7 +1155,7 @@ template&lt;class typetobinarize &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMTmask::hash </td>
+          <td class="memname">size_t Core::FMTMask::hash </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -807,26 +1167,28 @@ template&lt;class typetobinarize &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Hash function for the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> class. </p>
+
+<p>Return the hash of the mask. </p>
+<dl class="section return"><dt>Returns</dt><dd>the hash value. </dd></dl>
 
 </div>
 </div>
-<a id="af31adf90e39ae67cc2d524db7b56c104" name="af31adf90e39ae67cc2d524db7b56c104"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af31adf90e39ae67cc2d524db7b56c104">&#9670;&#160;</a></span>isnotthemessubset()</h2>
+<a id="aa7c1d0f5870eff3614221230db8922f8" name="aa7c1d0f5870eff3614221230db8922f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c1d0f5870eff3614221230db8922f8">&#9670;&#160;</a></span>isNotThemesSubset() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTmask::isnotthemessubset </td>
+          <td class="memname">bool Core::FMTMask::isNotThemesSubset </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>&#160;</td>
         </tr>
         <tr>
@@ -836,39 +1198,124 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>By looking at each <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> in the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> return true if *this is not part of rhs base on sorted <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> (themes). </p>
+
+<p>Return true if this mask is not part of rhs based on the sorted themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other mask. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the sorted themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this mask is not a subset of rhs else false. </dd></dl>
 
 </div>
 </div>
-<a id="ab45f813156d4cca94ba20df0bd2a3a5c" name="ab45f813156d4cca94ba20df0bd2a3a5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab45f813156d4cca94ba20df0bd2a3a5c">&#9670;&#160;</a></span>issubsetof() <span class="overload">[1/2]</span></h2>
+<a id="a0f8a43d5864614aa8701ee4d83ec2122" name="a0f8a43d5864614aa8701ee4d83ec2122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8a43d5864614aa8701ee4d83ec2122">&#9670;&#160;</a></span>isNotThemesSubset() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTmask::issubsetof </td>
+          <td class="memname">bool Core::FMTMask::isNotThemesSubset </td>
           <td>(</td>
-          <td class="paramtype">const boost::dynamic_bitset&lt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>themes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if this mask is not part of rhs based on the sorted themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the other mask. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the sorted themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this mask is not a subset of rhs else false. </dd></dl>
+
+</div>
+</div>
+<a id="a630b6e12997cb2ca8296502ffe51178d" name="a630b6e12997cb2ca8296502ffe51178d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630b6e12997cb2ca8296502ffe51178d">&#9670;&#160;</a></span>isSubsetOf() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Core::FMTMask::isSubsetOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_subset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if this mask is a subset of another mask by looking at a block subset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_mask</td><td>the other mask. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_subset</td><td>the block subset. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if all blocks are subset of this else false. </dd></dl>
+
+</div>
+</div>
+<a id="ac0297beeb36f24730c57c94f2a836b41" name="ac0297beeb36f24730c57c94f2a836b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0297beeb36f24730c57c94f2a836b41">&#9670;&#160;</a></span>isSubsetOf() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Core::FMTMask::isSubsetOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Check if the bitset is a subset of the rhs bitset </p>
+
+<p>Check if this mask is a subset of another mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_rhs</td><td>the mask to check against. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this mask is a subset of p_rhs else false. </dd></dl>
 
 </div>
 </div>
-<a id="a3e75dec09870af57764e41ddb8588d7a" name="a3e75dec09870af57764e41ddb8588d7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e75dec09870af57764e41ddb8588d7a">&#9670;&#160;</a></span>issubsetof() <span class="overload">[2/2]</span></h2>
+<a id="a6596c480e270da2f706508d400ea402e" name="a6596c480e270da2f706508d400ea402e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6596c480e270da2f706508d400ea402e">&#9670;&#160;</a></span>operator bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -877,34 +1324,7 @@ template&lt;class typetobinarize &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTmask::issubsetof </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check if the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> is a subset of a <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> (rhs). </p>
-
-</div>
-</div>
-<a id="abe59d5400c944ce0c8a9e913e734f43f" name="abe59d5400c944ce0c8a9e913e734f43f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe59d5400c944ce0c8a9e913e734f43f">&#9670;&#160;</a></span>operator bool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Core::FMTmask::operator bool </td>
+          <td class="memname">Core::FMTMask::operator bool </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -916,12 +1336,14 @@ template&lt;class typetobinarize &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> is not empty by looking at the data bitset. </p>
+
+<p>Return true if the mask is not empty by looking at the data bitset. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the mask is not empty else false. </dd></dl>
 
 </div>
 </div>
-<a id="a817bd2cac5fb7e5f199d5a3c5f53c6d2" name="a817bd2cac5fb7e5f199d5a3c5f53c6d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a817bd2cac5fb7e5f199d5a3c5f53c6d2">&#9670;&#160;</a></span>operator std::string()</h2>
+<a id="a93966a96ced38b6ca3824048cd874b38" name="a93966a96ced38b6ca3824048cd874b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93966a96ced38b6ca3824048cd874b38">&#9670;&#160;</a></span>operator std::string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -930,7 +1352,7 @@ template&lt;class typetobinarize &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTmask::operator std::string </td>
+          <td class="memname">Core::FMTMask::operator std::string </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -942,102 +1364,171 @@ template&lt;class typetobinarize &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the name of the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Return the name of the mask. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the mask. </dd></dl>
 
 </div>
 </div>
-<a id="af0de9d5a0831776fe549d40a676ec643" name="af0de9d5a0831776fe549d40a676ec643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0de9d5a0831776fe549d40a676ec643">&#9670;&#160;</a></span>operator!=()</h2>
+<a id="ad8c5b847f2f907370e318fefb2597fbc" name="ad8c5b847f2f907370e318fefb2597fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c5b847f2f907370e318fefb2597fbc">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTmask::operator!= </td>
+          <td class="memname">bool Core::FMTMask::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> nonequality operator. </p>
+
+<p>Inequality comparison operator of <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the mask to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both masks are different else false. </dd></dl>
 
 </div>
 </div>
-<a id="af7f495efee48229e6b7abec1747b9697" name="af7f495efee48229e6b7abec1747b9697"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7f495efee48229e6b7abec1747b9697">&#9670;&#160;</a></span>operator&lt;()</h2>
+<a id="af215b52811cf670238d6ffb7e9d86d68" name="af215b52811cf670238d6ffb7e9d86d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af215b52811cf670238d6ffb7e9d86d68">&#9670;&#160;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTmask::operator&lt; </td>
+          <td class="memname">bool Core::FMTMask::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Less than operator of <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Less than comparison operator of <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the mask to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this mask is less than rhs else false. </dd></dl>
 
 </div>
 </div>
-<a id="ad40db78d3e4390aa9b023b1fa7f84eed" name="ad40db78d3e4390aa9b023b1fa7f84eed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad40db78d3e4390aa9b023b1fa7f84eed">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a709b4d698177f7720c98fd01054fc711" name="a709b4d698177f7720c98fd01054fc711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709b4d698177f7720c98fd01054fc711">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp; Core::FMTmask::operator= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp; Core::FMTMask::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> copy assignment operator. </p>
+
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the mask to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a8455b13dd90b74fd0e61a9ed4af530ce" name="a8455b13dd90b74fd0e61a9ed4af530ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8455b13dd90b74fd0e61a9ed4af530ce">&#9670;&#160;</a></span>operator==()</h2>
+<a id="a9bf084bc58144db093ffa5654dc79313" name="a9bf084bc58144db093ffa5654dc79313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf084bc58144db093ffa5654dc79313">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp; Core::FMTMask::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment operator for <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the mask to move from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ada3b518e25edf610ef6f808e69f4ba14" name="ada3b518e25edf610ef6f808e69f4ba14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3b518e25edf610ef6f808e69f4ba14">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTmask::operator== </td>
+          <td class="memname">bool Core::FMTMask::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Comparison operator of <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Equality comparison operator of <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the mask to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both masks are equal else false. </dd></dl>
 
 </div>
 </div>
-<a id="af056812998d0871f33464f5d68b9ed62" name="af056812998d0871f33464f5d68b9ed62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af056812998d0871f33464f5d68b9ed62">&#9670;&#160;</a></span>postsolve()</h2>
+<a id="a5d8768801fbc56e866e0861268439c6b" name="a5d8768801fbc56e866e0861268439c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8768801fbc56e866e0861268439c6b">&#9670;&#160;</a></span>postSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::postsolve </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::postSolve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
           <td class="paramname"><em>filter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>basethemes</em>&#160;</td>
         </tr>
         <tr>
@@ -1047,26 +1538,35 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Using aFMTmaskfilter (filter) and the original FMTthemes it returns a postsolved <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Return a postsolved mask using a filter and the original themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">basethemes</td><td>the original themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the postsolved mask. </dd></dl>
 
 </div>
 </div>
-<a id="a4a87eb012715ebae6c92922784656e60" name="a4a87eb012715ebae6c92922784656e60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a87eb012715ebae6c92922784656e60">&#9670;&#160;</a></span>presolve()</h2>
+<a id="a19d168c773ef91bd324ddecb83689dde" name="a19d168c773ef91bd324ddecb83689dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d168c773ef91bd324ddecb83689dde">&#9670;&#160;</a></span>preSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::presolve </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::preSolve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
           <td class="paramname"><em>filter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>presolvedthemes</em>&#160;</td>
         </tr>
         <tr>
@@ -1076,26 +1576,79 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Using a <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> (filter) and a subset of the original FMTthemes used to construct the <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>, it returns a presolved <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> with potentialy less data. </p>
+
+<p>Return a presolved mask with potentially less data using a filter and a subset of the original themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">presolvedthemes</td><td>the presolved themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the presolved mask. </dd></dl>
 
 </div>
 </div>
-<a id="aa042ba631baaf1252de0cc9eca89b928" name="aa042ba631baaf1252de0cc9eca89b928"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa042ba631baaf1252de0cc9eca89b928">&#9670;&#160;</a></span>refine()</h2>
+<a id="a5c7b7edf646e6338f8e329f4e3ee98ab" name="a5c7b7edf646e6338f8e329f4e3ee98ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c7b7edf646e6338f8e329f4e3ee98ab">&#9670;&#160;</a></span>preSolveRef()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::refine </td>
+          <td class="memname">void Core::FMTMask::preSolveRef </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_presolvedThemes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_allowReallocation</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Presolve this mask in place with potentially less data using a filter and a subset of the original themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_presolvedThemes</td><td>the presolved themes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_allowReallocation</td><td>if true allows reallocation of the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad011c7d2b2357634f6b45eaa9b4e9f29" name="ad011c7d2b2357634f6b45eaa9b4e9f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad011c7d2b2357634f6b45eaa9b4e9f29">&#9670;&#160;</a></span>refine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::refine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>&#160;</td>
         </tr>
         <tr>
@@ -1105,20 +1658,29 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>It will return a new <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> where the ? are completed with the attribute for the theme from (mask). If the attribute is not ? for this mask, the attribute will not change. </p>
+
+<p>Return a new mask where the question marks are completed with the attributes of another mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>the mask to refine from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the refined mask. </dd></dl>
 
 </div>
 </div>
-<a id="acd0021955bfe5826dc9277c41bba1d54" name="acd0021955bfe5826dc9277c41bba1d54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd0021955bfe5826dc9277c41bba1d54">&#9670;&#160;</a></span>removeaggregates()</h2>
+<a id="a4a93a66076952609b05a6ab6cb9408c2" name="a4a93a66076952609b05a6ab6cb9408c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a93a66076952609b05a6ab6cb9408c2">&#9670;&#160;</a></span>removeAggregates()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::removeaggregates </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::removeAggregates </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>, </td>
         </tr>
         <tr>
@@ -1134,37 +1696,80 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>For each <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> in (themes) if the attribute is an aggregate or ? will unset all bits of the given aggregate or ? and return a new <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Return a new mask with the bits of aggregates or question marks unset for the given themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">questionmarkonly</td><td>if true only removes question marks. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the mask without aggregates. </dd></dl>
 
 </div>
 </div>
-<a id="a2c6225789e23b967453a549927faa7e7" name="a2c6225789e23b967453a549927faa7e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c6225789e23b967453a549927faa7e7">&#9670;&#160;</a></span>resume() <span class="overload">[1/2]</span></h2>
+<a id="af4e6dbadfd57a19bddbc623ea0fe5838" name="af4e6dbadfd57a19bddbc623ea0fe5838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e6dbadfd57a19bddbc623ea0fe5838">&#9670;&#160;</a></span>reserve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::resume </td>
+          <td class="memname">void Core::FMTMask::reserve </td>
           <td>(</td>
-          <td class="paramtype">const boost::dynamic_bitset&lt;&gt; &amp;&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>p_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reserve memory for the boost dynamicbitset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_size</td><td>number of bits to reserve. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27124773d645af8bfb8a24f1dca7654a" name="a27124773d645af8bfb8a24f1dca7654a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27124773d645af8bfb8a24f1dca7654a">&#9670;&#160;</a></span>resume() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::resume </td>
+          <td>(</td>
+          <td class="paramtype">const boost::dynamic_bitset&lt; uint8_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Using a mask (rhs) fix the corresponding resulting <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> with the selected name and data. </p>
+
+<p>Return a mask with the selected name and data using a bitset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the selection bitset. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resumed mask. </dd></dl>
 
 </div>
 </div>
-<a id="acd0af4796db0034f2dee05d883c2b768" name="acd0af4796db0034f2dee05d883c2b768"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd0af4796db0034f2dee05d883c2b768">&#9670;&#160;</a></span>resume() <span class="overload">[2/2]</span></h2>
+<a id="a6aa15baf60747b58469ab2585ca1b608" name="a6aa15baf60747b58469ab2585ca1b608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa15baf60747b58469ab2585ca1b608">&#9670;&#160;</a></span>resume() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> Core::FMTmask::resume </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> Core::FMTMask::resume </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>indexes</em></td><td>)</td>
@@ -1172,20 +1777,28 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Using a mask indexes (indexes) fix the corresponding resulting <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> with the selected name and data. </p>
+
+<p>Return a mask with the selected name and data using mask indexes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">indexes</td><td>the selection indexes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resumed mask. </dd></dl>
 
 </div>
 </div>
-<a id="a6a02cf6e182a041c7dd3af2070923ecb" name="a6a02cf6e182a041c7dd3af2070923ecb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a02cf6e182a041c7dd3af2070923ecb">&#9670;&#160;</a></span>set() <span class="overload">[1/2]</span></h2>
+<a id="a8e708942d22bf51b1458f63d75d9b14d" name="a8e708942d22bf51b1458f63d75d9b14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e708942d22bf51b1458f63d75d9b14d">&#9670;&#160;</a></span>set() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTmask::set </td>
+          <td class="memname">void Core::FMTMask::set </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;&#160;</td>
           <td class="paramname"><em>theme</em>, </td>
         </tr>
         <tr>
@@ -1201,20 +1814,28 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the bitset data for a given <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> (theme) for a attribute (value). </p>
+
+<p>Set the bitset data for a given theme from an attribute. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">theme</td><td>the theme. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>the attribute. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a42d53367d86c77ede7f8dc908a8dae74" name="a42d53367d86c77ede7f8dc908a8dae74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42d53367d86c77ede7f8dc908a8dae74">&#9670;&#160;</a></span>set() <span class="overload">[2/2]</span></h2>
+<a id="a86d9f4d91f2ca80aa7e0396f91a554c8" name="a86d9f4d91f2ca80aa7e0396f91a554c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d9f4d91f2ca80aa7e0396f91a554c8">&#9670;&#160;</a></span>set() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTmask::set </td>
+          <td class="memname">void Core::FMTMask::set </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>, </td>
         </tr>
         <tr>
@@ -1230,63 +1851,150 @@ template&lt;class typetobinarize &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the bitset data for some FMTthemes (themes) for a mask string (value). </p>
+
+<p>Set the bitset data for some themes from a mask string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>the mask string. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a92f29bfda43aac550175cf3cc450ca7b" name="a92f29bfda43aac550175cf3cc450ca7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92f29bfda43aac550175cf3cc450ca7b">&#9670;&#160;</a></span>size()</h2>
+<a id="a2eedf9e24dffafea23581ff8a8aa6a2e" name="a2eedf9e24dffafea23581ff8a8aa6a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eedf9e24dffafea23581ff8a8aa6a2e">&#9670;&#160;</a></span>setExclusiveBits()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMTmask::size </td>
+          <td class="memname">void Core::FMTMask::setExclusiveBits </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_theme</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flip only the theme subset and clear the mask of the intersection with another mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_mask</td><td>the mask to intersect with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_theme</td><td>the theme to subset on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4e707a627773bbafb0655e248862a735" name="a4e707a627773bbafb0655e248862a735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e707a627773bbafb0655e248862a735">&#9670;&#160;</a></span>setIntersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::FMTMask::setIntersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the intersect with this mask using rhs mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the mask we intersect with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca81026d8e8bb246758725032af14185" name="aca81026d8e8bb246758725032af14185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca81026d8e8bb246758725032af14185">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Core::FMTMask::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the size of the bitsets data member. </p>
+
+<p>Return the size of the bitset data member. </p>
+<dl class="section return"><dt>Returns</dt><dd>the size of the bitset. </dd></dl>
 
 </div>
 </div>
-<a id="a5a609374f7aa89d3bfb97ff260eed954" name="a5a609374f7aa89d3bfb97ff260eed954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a609374f7aa89d3bfb97ff260eed954">&#9670;&#160;</a></span>swap()</h2>
+<a id="a59888e6d5970b63ec63f66c24452b882" name="a59888e6d5970b63ec63f66c24452b882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59888e6d5970b63ec63f66c24452b882">&#9670;&#160;</a></span>swap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTmask::swap </td>
+          <td class="memname">void Core::FMTMask::swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCore_1_1FMTmask.html">FMTmask</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCore_1_1FMTMask.html">FMTMask</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Swap for <a class="el" href="classCore_1_1FMTmask.html">FMTmask</a>. </p>
+
+<p>Swap this mask with another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">rhs</td><td>the mask to swap with. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ab8c985412c9904dcc74b4218f59514a8" name="ab8c985412c9904dcc74b4218f59514a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8c985412c9904dcc74b4218f59514a8">&#9670;&#160;</a></span>update()</h2>
+<a id="a8ae5d544bcb71e2cc99a67caf805179d" name="a8ae5d544bcb71e2cc99a67caf805179d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae5d544bcb71e2cc99a67caf805179d">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTmask::update </td>
+          <td class="memname">void Core::FMTMask::update </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the name data member bass on the dynamic bitset data member with a sorted list of <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> (themes). </p>
+
+<p>Update the name member from the bitset data using a sorted list of themes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the sorted themes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1310,12 +2018,26 @@ template&lt;class typetobinarize &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Serialize function is for serialization, used to do multiprocessing across multiple cpus (pickle in Pyhton) </p>
+
+<p>Serialize the <a class="el" href="classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask.">FMTMask</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>the archive type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ar</td><td>the archive to serialize to or from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>the serialization version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="acdd1ce09fad89d992db977abb4f225c5" name="acdd1ce09fad89d992db977abb4f225c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdd1ce09fad89d992db977abb4f225c5">&#9670;&#160;</a></span>FMTtheme</h2>
+<a id="a9812fc3432b6615b1f9e978c396f68df" name="a9812fc3432b6615b1f9e978c396f68df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9812fc3432b6615b1f9e978c396f68df">&#9670;&#160;</a></span>FMTTheme</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1324,7 +2046,7 @@ template&lt;class typetobinarize &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a></td>
+          <td class="memname">friend class <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a></td>
         </tr>
       </table>
   </td>
@@ -1337,7 +2059,7 @@ template&lt;class typetobinarize &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTmask_8hpp_source.html">FMTmask.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTMask_8h_source.html">FMTMask.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

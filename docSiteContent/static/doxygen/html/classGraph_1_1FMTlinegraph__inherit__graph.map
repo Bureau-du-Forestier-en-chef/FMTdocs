@@ -1,5 +1,4 @@
-<map id="Graph::FMTlinegraph" name="Graph::FMTlinegraph">
-<area shape="rect" id="node1" title=" " alt="" coords="76,171,218,197"/>
-<area shape="rect" id="node2" href="$classGraph_1_1FMTgraph.html" title=" " alt="" coords="5,80,289,123"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="88,5,206,32"/>
+<map id="Graph::FMTLineGraph" name="Graph::FMTLineGraph">
+<area shape="rect" id="node1" title="Simple graph where each action generates a single new vertex (0&#45;—0&#45;—0&#45;—0), used with FMTLayer to simu..." alt="" coords="37,112,186,139"/>
+<area shape="rect" id="node2" href="$classGraph_1_1FMTGraph.html" title=" " alt="" coords="5,5,218,64"/>
 </map>

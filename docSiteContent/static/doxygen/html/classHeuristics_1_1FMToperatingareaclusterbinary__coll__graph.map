@@ -1,6 +1,6 @@
-<map id="Heuristics::FMToperatingareaclusterbinary" name="Heuristics::FMToperatingareaclusterbinary">
-<area shape="rect" id="node1" title=" " alt="" coords="5,279,271,305"/>
-<area shape="rect" id="node2" href="$classHeuristics_1_1FMToperatingarea.html" title=" " alt="" coords="42,203,234,229"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTmask.html" title=" " alt="" coords="81,5,195,32"/>
-<area shape="rect" id="node4" title=" " alt="" coords="177,96,305,139"/>
+<map id="Heuristics::FMTOperatingAreaClusterBinary" name="Heuristics::FMTOperatingAreaClusterBinary">
+<area shape="rect" id="node1" title="Definition of a non clustered operating area, used by the FMTOperatingAreaCluster." alt="" coords="19,279,188,321"/>
+<area shape="rect" id="node2" href="$classHeuristics_1_1FMTOperatingArea.html" title="Operating area giving information about its mask, neighbors and neighbors perimeter." alt="" coords="5,203,202,229"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTMask.html" title="Core class holding, as a boost dynamic bitset, which theme attributes are part of a mask." alt="" coords="46,5,161,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="161,96,289,139"/>
 </map>

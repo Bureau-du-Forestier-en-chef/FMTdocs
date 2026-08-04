@@ -1,6 +1,6 @@
-<map id="Models::FMTnssmodel" name="Models::FMTnssmodel">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,159,256"/>
-<area shape="rect" id="node2" href="$classModels_1_1FMTsrmodel.html" title=" " alt="" coords="10,155,154,181"/>
-<area shape="rect" id="node3" href="$classModels_1_1FMTmodel.html" title=" " alt="" coords="16,80,148,107"/>
-<area shape="rect" id="node4" href="$classCore_1_1FMTobject.html" title=" " alt="" coords="23,5,141,32"/>
+<map id="Models::FMTNssModel" name="Models::FMTNssModel">
+<area shape="rect" id="node1" title="Non spatial simulation model, mainly used to simulate stochastic actions during the local replanning ..." alt="" coords="5,229,161,256"/>
+<area shape="rect" id="node2" href="$classModels_1_1FMTSrModel.html" title="Base class holding the attributes and methods shared between the spatially referenced models (FMTLpMo..." alt="" coords="10,155,156,181"/>
+<area shape="rect" id="node3" href="$classModels_1_1FMTModel.html" title="Base class for the different models in FMT." alt="" coords="17,80,149,107"/>
+<area shape="rect" id="node4" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="23,5,143,32"/>
 </map>

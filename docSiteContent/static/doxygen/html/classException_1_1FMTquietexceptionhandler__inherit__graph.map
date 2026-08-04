@@ -1,4 +1,4 @@
-<map id="Exception::FMTquietexceptionhandler" name="Exception::FMTquietexceptionhandler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,245,107"/>
-<area shape="rect" id="node2" href="$classException_1_1FMTexceptionhandler.html" title=" " alt="" coords="19,5,231,32"/>
+<map id="Exception::FMTQuietExceptionHandler" name="Exception::FMTQuietExceptionHandler">
+<area shape="rect" id="node1" title="Silent exception handler derived from FMTExceptionHandler that throws errors but logs nothing and rai..." alt="" coords="12,80,214,123"/>
+<area shape="rect" id="node2" href="$classException_1_1FMTExceptionHandler.html" title="Base class used to handle errors thrown in FMT." alt="" coords="5,5,221,32"/>
 </map>

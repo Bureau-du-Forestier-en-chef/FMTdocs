@@ -1,4 +1,4 @@
-<map id="Logging::FMTsolverlogger" name="Logging::FMTsolverlogger">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,174,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="17,5,162,32"/>
+<map id="Logging::FMTSolverLogger" name="Logging::FMTSolverLogger">
+<area shape="rect" id="node1" title="Abstract logger used with the OSI solver interface (CoinMessageHandler)." alt="" coords="5,80,180,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="20,5,165,32"/>
 </map>

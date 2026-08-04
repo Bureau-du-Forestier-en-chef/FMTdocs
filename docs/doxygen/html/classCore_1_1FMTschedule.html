@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTschedule Class Reference</title>
+<title>FMT: Core::FMTSchedule Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,248 +79,344 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classCore_1_1FMTschedule-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTschedule Class Reference</div></div>
+<a href="classCore_1_1FMTSchedule-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTSchedule Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTschedule_8hpp_source.html">FMTschedule.hpp</a>&gt;</code></p>
+<p>Spatially referenced schedule describing the area of developments for which an action can be operated, usable by FMTLpModel and FMTSesModel.  
+ <a href="classCore_1_1FMTSchedule.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTSchedule_8h_source.html">FMTSchedule.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Core::FMTschedule:</div>
+Inheritance diagram for Core::FMTSchedule:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTschedule__inherit__graph.svg" width="146" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTSchedule__inherit__graph.svg" width="147" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Core::FMTschedule:</div>
+Collaboration diagram for Core::FMTSchedule:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTschedule__coll__graph.svg" width="100%" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTSchedule__coll__graph.svg" width="100%" height="537"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a69aa00aa322a7a37d1a229fbf29be174"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &gt;::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a69aa00aa322a7a37d1a229fbf29be174">value_type</a></td></tr>
-<tr class="separator:a69aa00aa322a7a37d1a229fbf29be174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae49a2a0266c800cf620bd7a1554f7d35"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#ae49a2a0266c800cf620bd7a1554f7d35">iterator</a></td></tr>
-<tr class="separator:ae49a2a0266c800cf620bd7a1554f7d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96b60abf30f9331e4904db7f0c4ec9bd"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a96b60abf30f9331e4904db7f0c4ec9bd">const_iterator</a></td></tr>
-<tr class="separator:a96b60abf30f9331e4904db7f0c4ec9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6372566dc59023780e293abaf8ae17"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &gt;::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#aca6372566dc59023780e293abaf8ae17">value_type</a></td></tr>
+<tr class="separator:aca6372566dc59023780e293abaf8ae17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b7c09a2180668b6ba47b4001de7008"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a03b7c09a2180668b6ba47b4001de7008">iterator</a></td></tr>
+<tr class="separator:a03b7c09a2180668b6ba47b4001de7008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2c3faebeb58391e5d4d2d2a3894728"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a5c2c3faebeb58391e5d4d2d2a3894728">const_iterator</a></td></tr>
+<tr class="separator:a5c2c3faebeb58391e5d4d2d2a3894728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d0ea0f5fec73f7ea3e9a8a8bc566b47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a9d0ea0f5fec73f7ea3e9a8a8bc566b47">FMTschedule</a> (const int &amp;lperiod, const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;obj, const bool &amp;luselock)</td></tr>
-<tr class="separator:a9d0ea0f5fec73f7ea3e9a8a8bc566b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a13c029f7261842d66cfcfd83a97d06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a8a13c029f7261842d66cfcfd83a97d06">FMTschedule</a> (const int &amp;lperiod, std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &gt; &amp;schedules)</td></tr>
-<tr class="separator:a8a13c029f7261842d66cfcfd83a97d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aeaf98f1a4e59382c2b7364cca5b636"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a3aeaf98f1a4e59382c2b7364cca5b636">FMTschedule</a> (int lperiod, std::map&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &gt; mapping)</td></tr>
-<tr class="separator:a3aeaf98f1a4e59382c2b7364cca5b636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04a384a8ca4a22bced0cc2df59960ac7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a04a384a8ca4a22bced0cc2df59960ac7">FMTschedule</a> (int lperiod, const std::map&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::map&lt; int, double &gt; &gt; &gt; &amp;mapping)</td></tr>
-<tr class="separator:a04a384a8ca4a22bced0cc2df59960ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc1d485634db900533dec46fc6114538"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#afc1d485634db900533dec46fc6114538">FMTschedule</a> ()</td></tr>
-<tr class="separator:afc1d485634db900533dec46fc6114538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227c03ed5c6e1fd071d86802c06dbe29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a227c03ed5c6e1fd071d86802c06dbe29">~FMTschedule</a> ()=default</td></tr>
-<tr class="separator:a227c03ed5c6e1fd071d86802c06dbe29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa69dcadbb38bca4695e917c877d11b46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#aa69dcadbb38bca4695e917c877d11b46">FMTschedule</a> (const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;rhs)</td></tr>
-<tr class="separator:aa69dcadbb38bca4695e917c877d11b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accdf6a64f419972581c32b39cf20e36a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#accdf6a64f419972581c32b39cf20e36a">operator=</a> (const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;rhs)</td></tr>
-<tr class="separator:accdf6a64f419972581c32b39cf20e36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d78c9765454dbe5b74ba4bf9160e5a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a5d78c9765454dbe5b74ba4bf9160e5a4">operator==</a> (const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;rhs) const</td></tr>
-<tr class="separator:a5d78c9765454dbe5b74ba4bf9160e5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25b6b792c2f478da4abfba42679f6814"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a25b6b792c2f478da4abfba42679f6814">operator!=</a> (const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;rhs) const</td></tr>
-<tr class="separator:a25b6b792c2f478da4abfba42679f6814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6186cba36f8019a91a42d8f4ca455239"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a6186cba36f8019a91a42d8f4ca455239">operator+=</a> (const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;rhs)</td></tr>
-<tr class="separator:a6186cba36f8019a91a42d8f4ca455239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a276e9f84c051d12becdd2b07ce9949"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a9a276e9f84c051d12becdd2b07ce9949">operator+</a> (const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;rhs) const</td></tr>
-<tr class="separator:a9a276e9f84c051d12becdd2b07ce9949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6be2533b52197223874ee5b861ead82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#ae6be2533b52197223874ee5b861ead82">operator std::string</a> () const</td></tr>
-<tr class="separator:ae6be2533b52197223874ee5b861ead82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e37ee0b408a1642dfec393967bb2f2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a7e37ee0b408a1642dfec393967bb2f2b">getperiod</a> () const</td></tr>
-<tr class="separator:a7e37ee0b408a1642dfec393967bb2f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b67e096d0d2da052cd9d3c9a6d4433c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a1b67e096d0d2da052cd9d3c9a6d4433c">douselock</a> () const</td></tr>
-<tr class="separator:a1b67e096d0d2da052cd9d3c9a6d4433c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65da705be10abfd0cdf06c5328eeebd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a65da705be10abfd0cdf06c5328eeebd4">setuselock</a> (const bool &amp;lock)</td></tr>
-<tr class="separator:a65da705be10abfd0cdf06c5328eeebd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724ab4af480d68bb27d8cce39eade124"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a724ab4af480d68bb27d8cce39eade124">actionarea</a> (const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;action) const</td></tr>
-<tr class="separator:a724ab4af480d68bb27d8cce39eade124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77cd5ee73904dd9358fcfdff220743e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a77cd5ee73904dd9358fcfdff220743e1">addevent</a> (const <a class="el" href="classCore_1_1FMTdevelopment.html">Core::FMTdevelopment</a> &amp;dev, const double &amp;<a class="el" href="classCore_1_1FMTschedule.html#ae8e0334fc02006aed592a204e5c794dd">area</a>, const <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &amp;action)</td></tr>
-<tr class="separator:a77cd5ee73904dd9358fcfdff220743e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8a89e45a39c122a2b48611f3cd7fc79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#af8a89e45a39c122a2b48611f3cd7fc79">clean</a> ()</td></tr>
-<tr class="separator:af8a89e45a39c122a2b48611f3cd7fc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e0334fc02006aed592a204e5c794dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#ae8e0334fc02006aed592a204e5c794dd">area</a> () const</td></tr>
-<tr class="separator:ae8e0334fc02006aed592a204e5c794dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831af075c952465286519ca1308e9b22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a831af075c952465286519ca1308e9b22">operated</a> (const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;action, const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;developement) const</td></tr>
-<tr class="separator:a831af075c952465286519ca1308e9b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16458b0710545a74a2c8943a49e8514f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::unordered_set&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a16458b0710545a74a2c8943a49e8514f">getoperabilities</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;actions) const</td></tr>
-<tr class="separator:a16458b0710545a74a2c8943a49e8514f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b4c789f6c33a324f27542323e85e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a59b4c789f6c33a324f27542323e85e30">sort</a> ()</td></tr>
-<tr class="separator:a59b4c789f6c33a324f27542323e85e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38071f9a6bd083df3613b7a9dfc90446"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a38071f9a6bd083df3613b7a9dfc90446">empty</a> () const</td></tr>
-<tr class="separator:a38071f9a6bd083df3613b7a9dfc90446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5eb41f1e7abb70926c47988d4fbd74a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#ad5eb41f1e7abb70926c47988d4fbd74a">size</a> () const</td></tr>
-<tr class="separator:ad5eb41f1e7abb70926c47988d4fbd74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa143d393776a2f5bc410c5b309701127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#aa143d393776a2f5bc410c5b309701127">presolve</a> (const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;newthemes, const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;presolvedaction) const</td></tr>
-<tr class="separator:aa143d393776a2f5bc410c5b309701127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f11c83ff54ef892eea2fef07bf6160d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a8f11c83ff54ef892eea2fef07bf6160d">postsolve</a> (const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;originalbasethemes, const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;originalbasebaseactions) const</td></tr>
-<tr class="separator:a8f11c83ff54ef892eea2fef07bf6160d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4055275830794dcc46ce946d8747aa33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a4055275830794dcc46ce946d8747aa33">setperiod</a> (const int &amp;newperiod)</td></tr>
-<tr class="separator:a4055275830794dcc46ce946d8747aa33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9371bebdc914aa8f7e80e55e09569d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#af9371bebdc914aa8f7e80e55e09569d4">getnewschedule</a> (const double &amp;factor) const</td></tr>
-<tr class="separator:af9371bebdc914aa8f7e80e55e09569d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a37915134451026c6e1f8b3e7c5918"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#ac2a37915134451026c6e1f8b3e7c5918">isfuturconstraints</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTconstraint.html">Core::FMTconstraint</a> &gt; &amp;constraints) const</td></tr>
-<tr class="separator:ac2a37915134451026c6e1f8b3e7c5918"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7878aa475f5302feb80d29538a5d897"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#ac7878aa475f5302feb80d29538a5d897">operator[]</a> (const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;action)</td></tr>
-<tr class="separator:ac7878aa475f5302feb80d29538a5d897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54e1d960bdd4ef7e59b6aaac8427c070"><td class="memItemLeft" align="right" valign="top">const std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a54e1d960bdd4ef7e59b6aaac8427c070">at</a> (const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;action) const</td></tr>
-<tr class="separator:a54e1d960bdd4ef7e59b6aaac8427c070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aeab5d82a976bc4596566fdd39d8ce6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html#ae49a2a0266c800cf620bd7a1554f7d35">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a6aeab5d82a976bc4596566fdd39d8ce6">find</a> (const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;actionkey)</td></tr>
-<tr class="separator:a6aeab5d82a976bc4596566fdd39d8ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1356a091b36117df854e8443147c5d6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html#a96b60abf30f9331e4904db7f0c4ec9bd">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a1356a091b36117df854e8443147c5d6b">find</a> (const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;actionkey) const</td></tr>
-<tr class="separator:a1356a091b36117df854e8443147c5d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba7b2e5cd2fa5a9885f22206dd6cc7c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html#ae49a2a0266c800cf620bd7a1554f7d35">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#aba7b2e5cd2fa5a9885f22206dd6cc7c4">begin</a> ()</td></tr>
-<tr class="separator:aba7b2e5cd2fa5a9885f22206dd6cc7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96337025307af06d117658ac3d38a345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html#a96b60abf30f9331e4904db7f0c4ec9bd">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a96337025307af06d117658ac3d38a345">begin</a> () const</td></tr>
-<tr class="separator:a96337025307af06d117658ac3d38a345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4614ff1cc0317b2c795edfe738fa403d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html#ae49a2a0266c800cf620bd7a1554f7d35">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a4614ff1cc0317b2c795edfe738fa403d">end</a> ()</td></tr>
-<tr class="separator:a4614ff1cc0317b2c795edfe738fa403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cbcbb62f550ee669fa9219b677974a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTschedule.html#a96b60abf30f9331e4904db7f0c4ec9bd">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#a9cbcbb62f550ee669fa9219b677974a8">end</a> () const</td></tr>
-<tr class="separator:a9cbcbb62f550ee669fa9219b677974a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a892247268d4fed1aad568ef726b2bf1a">FMTobject</a> ()</td></tr>
-<tr class="separator:a892247268d4fed1aad568ef726b2bf1a inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aabbeb37f9454aaae7725341a4fc6b871">~FMTobject</a> ()</td></tr>
-<tr class="separator:aabbeb37f9454aaae7725341a4fc6b871 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6f0d241beec60204ed8d14740a026058">FMTobject</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; exhandler)</td></tr>
-<tr class="separator:a6f0d241beec60204ed8d14740a026058 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acc66512952f3c5563d317d40f5d0bd5d">FMTobject</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
-<tr class="separator:acc66512952f3c5563d317d40f5d0bd5d inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43beb96c44fa008bbcd475d367a67ab1 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a43beb96c44fa008bbcd475d367a67ab1">operator=</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
-<tr class="separator:a43beb96c44fa008bbcd475d367a67ab1 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36054757252bb5f8d1275789271c3e0 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af36054757252bb5f8d1275789271c3e0">passinlogger</a> (const std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt; &amp;logger)</td></tr>
-<tr class="separator:af36054757252bb5f8d1275789271c3e0 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ac96f87dd870a03c329ec7dd91c57e0f3">passinexceptionhandler</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; &amp;exhandler)</td></tr>
-<tr class="separator:ac96f87dd870a03c329ec7dd91c57e0f3 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a45a5a60a8bed1b2c7fc3852a5140947f">redirectlogtofile</a> (const std::string &amp;location)</td></tr>
-<tr class="separator:a45a5a60a8bed1b2c7fc3852a5140947f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acb289903aad7488bb9d58a555325dbc6">setdefaultlogger</a> ()</td></tr>
-<tr class="separator:acb289903aad7488bb9d58a555325dbc6 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a07f7d55431bdd4c885f84c70436dfeb8">setquietlogger</a> ()</td></tr>
-<tr class="separator:a07f7d55431bdd4c885f84c70436dfeb8 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6929adf1131bc31e51798859cb3b26f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af6929adf1131bc31e51798859cb3b26f">settasklogger</a> ()</td></tr>
-<tr class="separator:af6929adf1131bc31e51798859cb3b26f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af84f403de5cbb9676e5da79c8a1f0d74">setdebuglogger</a> ()</td></tr>
-<tr class="separator:af84f403de5cbb9676e5da79c8a1f0d74 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#adb70eea83ae75752e107358d7c47d775">setdefaultexceptionhandler</a> ()</td></tr>
-<tr class="separator:adb70eea83ae75752e107358d7c47d775 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab718aa354a7b395471a15d29f244477 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aab718aa354a7b395471a15d29f244477">setquietexceptionhandler</a> ()</td></tr>
-<tr class="separator:aab718aa354a7b395471a15d29f244477 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742cafbb0d8d5984e101f2cb2bd2c07e inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a742cafbb0d8d5984e101f2cb2bd2c07e">setdebugexceptionhandler</a> ()</td></tr>
-<tr class="separator:a742cafbb0d8d5984e101f2cb2bd2c07e inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add57ec6ca8cf94e10c56346054ab75d6 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#add57ec6ca8cf94e10c56346054ab75d6">setfreeexceptionhandler</a> ()</td></tr>
-<tr class="separator:add57ec6ca8cf94e10c56346054ab75d6 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6340513d0ff7a846c35165c2f9f67b8f inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6340513d0ff7a846c35165c2f9f67b8f">disablenestedexceptions</a> ()</td></tr>
-<tr class="separator:a6340513d0ff7a846c35165c2f9f67b8f inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f62b116025059f09987b35324fccd06 inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a3f62b116025059f09987b35324fccd06">enablenestedexceptions</a> ()</td></tr>
-<tr class="separator:a3f62b116025059f09987b35324fccd06 inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8388f4cbb465e0e0a4bc4369340f4d inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a1c8388f4cbb465e0e0a4bc4369340f4d">seterrorstowarnings</a> (const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;errors)</td></tr>
-<tr class="separator:a1c8388f4cbb465e0e0a4bc4369340f4d inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ce9242830521f5d6cca21c179f4db5a inherit pub_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a5ce9242830521f5d6cca21c179f4db5a">setmaxwarningsbeforesilenced</a> (const size_t &amp;maxwarningcount)</td></tr>
-<tr class="separator:a5ce9242830521f5d6cca21c179f4db5a inherit pub_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaad68e239915fb8a215d3456bfaabf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#acaad68e239915fb8a215d3456bfaabf6">FMTSchedule</a> (const int &amp;lperiod, const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;obj, const bool &amp;luselock)</td></tr>
+<tr class="memdesc:acaad68e239915fb8a215d3456bfaabf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty schedule at a given period.  <br /></td></tr>
+<tr class="separator:acaad68e239915fb8a215d3456bfaabf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c84185f4630edbe7e0725d88bd0c8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#aa1c84185f4630edbe7e0725d88bd0c8b">FMTSchedule</a> (const int &amp;lperiod, std::vector&lt; <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &gt; &amp;schedules)</td></tr>
+<tr class="memdesc:aa1c84185f4630edbe7e0725d88bd0c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a schedule from multiple schedules at a given period.  <br /></td></tr>
+<tr class="separator:aa1c84185f4630edbe7e0725d88bd0c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90cfa5e9a6829b3796bd78ff11e5cb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#af90cfa5e9a6829b3796bd78ff11e5cb1">FMTSchedule</a> (int lperiod, std::map&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &gt; mapping)</td></tr>
+<tr class="memdesc:af90cfa5e9a6829b3796bd78ff11e5cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a complete schedule from a period and a mapping.  <br /></td></tr>
+<tr class="separator:af90cfa5e9a6829b3796bd78ff11e5cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee088f1704c16cfbf95170ee4a698551"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#aee088f1704c16cfbf95170ee4a698551">FMTSchedule</a> (int lperiod, const std::map&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::map&lt; int, double &gt; &gt; &gt; &amp;mapping)</td></tr>
+<tr class="memdesc:aee088f1704c16cfbf95170ee4a698551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a schedule from a period and a lock based mapping, when a schedule is parsed.  <br /></td></tr>
+<tr class="separator:aee088f1704c16cfbf95170ee4a698551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd4f5a32f8bcfcfb51eddee6d5e4e62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a8bd4f5a32f8bcfcfb51eddee6d5e4e62">FMTSchedule</a> ()</td></tr>
+<tr class="memdesc:a8bd4f5a32f8bcfcfb51eddee6d5e4e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>.  <br /></td></tr>
+<tr class="separator:a8bd4f5a32f8bcfcfb51eddee6d5e4e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83576da572c1782a8b22f6cdda20ca18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a83576da572c1782a8b22f6cdda20ca18">~FMTSchedule</a> ()=default</td></tr>
+<tr class="memdesc:a83576da572c1782a8b22f6cdda20ca18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor for <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>.  <br /></td></tr>
+<tr class="separator:a83576da572c1782a8b22f6cdda20ca18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa303c2dfecbc13a604c8c89cfd6c84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a6fa303c2dfecbc13a604c8c89cfd6c84">FMTSchedule</a> (const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a6fa303c2dfecbc13a604c8c89cfd6c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>.  <br /></td></tr>
+<tr class="separator:a6fa303c2dfecbc13a604c8c89cfd6c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcb5dce0672889f9f6bec8584371929"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a2fcb5dce0672889f9f6bec8584371929">operator=</a> (const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a2fcb5dce0672889f9f6bec8584371929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>.  <br /></td></tr>
+<tr class="separator:a2fcb5dce0672889f9f6bec8584371929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc3d963ec3d5ef0520c1630b2d4b185"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a1fc3d963ec3d5ef0520c1630b2d4b185">operator==</a> (const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a1fc3d963ec3d5ef0520c1630b2d4b185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison operator of <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>.  <br /></td></tr>
+<tr class="separator:a1fc3d963ec3d5ef0520c1630b2d4b185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9abb2ed5dd0e9d57db7d541831c3914d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a9abb2ed5dd0e9d57db7d541831c3914d">operator!=</a> (const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a9abb2ed5dd0e9d57db7d541831c3914d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality comparison operator of <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>.  <br /></td></tr>
+<tr class="separator:a9abb2ed5dd0e9d57db7d541831c3914d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cfc68e7488d787616246522a3d68a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a03cfc68e7488d787616246522a3d68a7">operator+=</a> (const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a03cfc68e7488d787616246522a3d68a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append another schedule to this schedule.  <br /></td></tr>
+<tr class="separator:a03cfc68e7488d787616246522a3d68a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3749d96ea698578344a044a64ce9e00b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a3749d96ea698578344a044a64ce9e00b">operator+</a> (const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a3749d96ea698578344a044a64ce9e00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append another schedule to this schedule and return a new one.  <br /></td></tr>
+<tr class="separator:a3749d96ea698578344a044a64ce9e00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c55960ee2dbbd5dd7436d253db7f6c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a9c55960ee2dbbd5dd7436d253db7f6c1">operator std::string</a> () const</td></tr>
+<tr class="memdesc:a9c55960ee2dbbd5dd7436d253db7f6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the schedule to a string as in a regular schedule file.  <br /></td></tr>
+<tr class="separator:a9c55960ee2dbbd5dd7436d253db7f6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af336c244396b48eec55e2aa340a0ad3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#af336c244396b48eec55e2aa340a0ad3a">getPeriod</a> () const</td></tr>
+<tr class="memdesc:af336c244396b48eec55e2aa340a0ad3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the period of the schedule.  <br /></td></tr>
+<tr class="separator:af336c244396b48eec55e2aa340a0ad3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23fc7d85640a0ed84ed0c1396928a7c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a23fc7d85640a0ed84ed0c1396928a7c8">doUseLock</a> () const</td></tr>
+<tr class="memdesc:a23fc7d85640a0ed84ed0c1396928a7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the schedule can contain locked developments.  <br /></td></tr>
+<tr class="separator:a23fc7d85640a0ed84ed0c1396928a7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d373c6072497724c8ff77fc4c6a1c20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a6d373c6072497724c8ff77fc4c6a1c20">setUseLock</a> (const bool &amp;lock)</td></tr>
+<tr class="memdesc:a6d373c6072497724c8ff77fc4c6a1c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the schedule as able to contain locked developments.  <br /></td></tr>
+<tr class="separator:a6d373c6072497724c8ff77fc4c6a1c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63f953c2a4612938e128edcb0d2ccbb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#aa63f953c2a4612938e128edcb0d2ccbb">actionArea</a> (const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;action) const</td></tr>
+<tr class="memdesc:aa63f953c2a4612938e128edcb0d2ccbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total harvested area of an action in the schedule.  <br /></td></tr>
+<tr class="separator:aa63f953c2a4612938e128edcb0d2ccbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc38238f6e8f761642a3f89a697891bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#abc38238f6e8f761642a3f89a697891bb">addEvent</a> (const <a class="el" href="classCore_1_1FMTDevelopment.html">Core::FMTDevelopment</a> &amp;dev, const double &amp;<a class="el" href="classCore_1_1FMTSchedule.html#ada01dcd1252cdb35d3c5013236194433">area</a>, const <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &amp;action)</td></tr>
+<tr class="memdesc:abc38238f6e8f761642a3f89a697891bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new event to the schedule from a development, an area and an action.  <br /></td></tr>
+<tr class="separator:abc38238f6e8f761642a3f89a697891bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a8bd6689572f88ae5f6dd65ba4ff85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ae6a8bd6689572f88ae5f6dd65ba4ff85">clean</a> ()</td></tr>
+<tr class="memdesc:ae6a8bd6689572f88ae5f6dd65ba4ff85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean the schedule of empty areas after multiple addEvent calls, to be called before using it.  <br /></td></tr>
+<tr class="separator:ae6a8bd6689572f88ae5f6dd65ba4ff85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada01dcd1252cdb35d3c5013236194433"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ada01dcd1252cdb35d3c5013236194433">area</a> () const</td></tr>
+<tr class="memdesc:ada01dcd1252cdb35d3c5013236194433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total area of the schedule operated by all actions.  <br /></td></tr>
+<tr class="separator:ada01dcd1252cdb35d3c5013236194433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393aad4a8ae7f9aef3422a51f3a6bf68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a393aad4a8ae7f9aef3422a51f3a6bf68">operated</a> (const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;action, const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;development) const</td></tr>
+<tr class="memdesc:a393aad4a8ae7f9aef3422a51f3a6bf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a development has been operated by an action in the schedule.  <br /></td></tr>
+<tr class="separator:a393aad4a8ae7f9aef3422a51f3a6bf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efa81365dab0fc602617393bc7cd036"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::unordered_set&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a9efa81365dab0fc602617393bc7cd036">getOperabilities</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;actions) const</td></tr>
+<tr class="memdesc:a9efa81365dab0fc602617393bc7cd036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all operabilities of the schedule in a hash table.  <br /></td></tr>
+<tr class="separator:a9efa81365dab0fc602617393bc7cd036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2070640df37868e56e110fdb0e293674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a2070640df37868e56e110fdb0e293674">sort</a> ()</td></tr>
+<tr class="memdesc:a2070640df37868e56e110fdb0e293674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the vector of lock level per area of the schedule.  <br /></td></tr>
+<tr class="separator:a2070640df37868e56e110fdb0e293674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae333be55da8f74f809c7bba7395f7ebb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ae333be55da8f74f809c7bba7395f7ebb">empty</a> () const</td></tr>
+<tr class="memdesc:ae333be55da8f74f809c7bba7395f7ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the schedule is empty.  <br /></td></tr>
+<tr class="separator:ae333be55da8f74f809c7bba7395f7ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60db4452b76e967e1661e3da6ddbb984"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a60db4452b76e967e1661e3da6ddbb984">size</a> () const</td></tr>
+<tr class="memdesc:a60db4452b76e967e1661e3da6ddbb984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the schedule.  <br /></td></tr>
+<tr class="separator:a60db4452b76e967e1661e3da6ddbb984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7864fca4d06a0ce0a316f6bc257849d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ab7864fca4d06a0ce0a316f6bc257849d">preSolve</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;newthemes, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;presolvedaction) const</td></tr>
+<tr class="memdesc:ab7864fca4d06a0ce0a316f6bc257849d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presolve the schedule, potentially returning an empty schedule.  <br /></td></tr>
+<tr class="separator:ab7864fca4d06a0ce0a316f6bc257849d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82a30ebada05aaad0071e0331d193c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ae82a30ebada05aaad0071e0331d193c6">postSolve</a> (const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;filter, const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;originalbasethemes, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;originalbasebaseactions) const</td></tr>
+<tr class="memdesc:ae82a30ebada05aaad0071e0331d193c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Postsolve the schedule using the original themes and actions.  <br /></td></tr>
+<tr class="separator:ae82a30ebada05aaad0071e0331d193c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f463abc2396e75aa3d6d855ec29b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ad3f463abc2396e75aa3d6d855ec29b51">setPeriod</a> (const int &amp;newPeriod)</td></tr>
+<tr class="memdesc:ad3f463abc2396e75aa3d6d855ec29b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the period of the schedule and of its developments.  <br /></td></tr>
+<tr class="separator:ad3f463abc2396e75aa3d6d855ec29b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a4ac89b0a891862657d174f114f5ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ae8a4ac89b0a891862657d174f114f5ee">getNewSchedule</a> (const double &amp;factor) const</td></tr>
+<tr class="memdesc:ae8a4ac89b0a891862657d174f114f5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply this schedule by a factor and return it.  <br /></td></tr>
+<tr class="separator:ae8a4ac89b0a891862657d174f114f5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9e68c29172d935de055701a00660f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a9b9e68c29172d935de055701a00660f8">isFuturConstraints</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTConstraint.html">Core::FMTConstraint</a> &gt; &amp;constraints) const</td></tr>
+<tr class="memdesc:a9b9e68c29172d935de055701a00660f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the schedule period will be bounded by new constraints.  <br /></td></tr>
+<tr class="separator:a9b9e68c29172d935de055701a00660f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c4bfab11e4755f65f621e23b9a740f"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ad2c4bfab11e4755f65f621e23b9a740f">operator[]</a> (const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;action)</td></tr>
+<tr class="memdesc:ad2c4bfab11e4755f65f621e23b9a740f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the developments and areas for a given action.  <br /></td></tr>
+<tr class="separator:ad2c4bfab11e4755f65f621e23b9a740f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1f5f5f1e10e477c212ccbe8fb20f81"><td class="memItemLeft" align="right" valign="top">const std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a4b1f5f5f1e10e477c212ccbe8fb20f81">at</a> (const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;action) const</td></tr>
+<tr class="memdesc:a4b1f5f5f1e10e477c212ccbe8fb20f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the developments and areas for a given action.  <br /></td></tr>
+<tr class="separator:a4b1f5f5f1e10e477c212ccbe8fb20f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183a58536c54dd465b9e74503a386ea0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html#a03b7c09a2180668b6ba47b4001de7008">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a183a58536c54dd465b9e74503a386ea0">find</a> (const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;actionkey)</td></tr>
+<tr class="memdesc:a183a58536c54dd465b9e74503a386ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an iterator to the given action.  <br /></td></tr>
+<tr class="separator:a183a58536c54dd465b9e74503a386ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb73935d9c63790d0bc4b02e84c7ba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html#a5c2c3faebeb58391e5d4d2d2a3894728">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a3bb73935d9c63790d0bc4b02e84c7ba2">find</a> (const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;actionkey) const</td></tr>
+<tr class="memdesc:a3bb73935d9c63790d0bc4b02e84c7ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const iterator to the given action.  <br /></td></tr>
+<tr class="separator:a3bb73935d9c63790d0bc4b02e84c7ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67fbc37c8d81dd0b8547d70391c03125"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html#a03b7c09a2180668b6ba47b4001de7008">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a67fbc37c8d81dd0b8547d70391c03125">begin</a> ()</td></tr>
+<tr class="memdesc:a67fbc37c8d81dd0b8547d70391c03125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an iterator to the beginning of the schedule.  <br /></td></tr>
+<tr class="separator:a67fbc37c8d81dd0b8547d70391c03125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa519e765d5237ae1c35e4ddbf574fa68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html#a5c2c3faebeb58391e5d4d2d2a3894728">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#aa519e765d5237ae1c35e4ddbf574fa68">begin</a> () const</td></tr>
+<tr class="memdesc:aa519e765d5237ae1c35e4ddbf574fa68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const iterator to the beginning of the schedule.  <br /></td></tr>
+<tr class="separator:aa519e765d5237ae1c35e4ddbf574fa68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b95ea802983d4e401fdb5a9022c9f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html#a03b7c09a2180668b6ba47b4001de7008">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#a43b95ea802983d4e401fdb5a9022c9f3">end</a> ()</td></tr>
+<tr class="memdesc:a43b95ea802983d4e401fdb5a9022c9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an iterator to the end of the schedule.  <br /></td></tr>
+<tr class="separator:a43b95ea802983d4e401fdb5a9022c9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a10324cd8ffa04a8e30a3e6dc74e62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTSchedule.html#a5c2c3faebeb58391e5d4d2d2a3894728">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ac9a10324cd8ffa04a8e30a3e6dc74e62">end</a> () const</td></tr>
+<tr class="memdesc:ac9a10324cd8ffa04a8e30a3e6dc74e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const iterator to the end of the schedule.  <br /></td></tr>
+<tr class="separator:ac9a10324cd8ffa04a8e30a3e6dc74e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a5989964c8bdbc4650e238ceba3415f4b inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5989964c8bdbc4650e238ceba3415f4b">FMTObject</a> ()</td></tr>
+<tr class="memdesc:a5989964c8bdbc4650e238ceba3415f4b inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a5989964c8bdbc4650e238ceba3415f4b inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab955c1638c5971685437e031dface505 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ab955c1638c5971685437e031dface505">~FMTObject</a> ()</td></tr>
+<tr class="memdesc:ab955c1638c5971685437e031dface505 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default virtual destructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ab955c1638c5971685437e031dface505 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8697555450e32d14ac2aca96c970e1e1 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8697555450e32d14ac2aca96c970e1e1">FMTObject</a> (const std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt; exhandler)</td></tr>
+<tr class="memdesc:a8697555450e32d14ac2aca96c970e1e1 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> passing in the exception handler of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a8697555450e32d14ac2aca96c970e1e1 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e850d7a3cc1b15284cae261cb795807 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6e850d7a3cc1b15284cae261cb795807">FMTObject</a> (const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a6e850d7a3cc1b15284cae261cb795807 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a6e850d7a3cc1b15284cae261cb795807 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce285348228339cd64ee518af1f1a79 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a2ce285348228339cd64ee518af1f1a79">operator=</a> (const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a2ce285348228339cd64ee518af1f1a79 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a2ce285348228339cd64ee518af1f1a79 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40cb486c0035d4378f9f8292990bc3a inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae40cb486c0035d4378f9f8292990bc3a">passInLogger</a> (const std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> &gt; &amp;logger)</td></tr>
+<tr class="memdesc:ae40cb486c0035d4378f9f8292990bc3a inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in the logger of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ae40cb486c0035d4378f9f8292990bc3a inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a87b73d1ec28b2c15ad3534fa116d6a inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a4a87b73d1ec28b2c15ad3534fa116d6a">passInExceptionHandler</a> (const std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt; &amp;exhandler)</td></tr>
+<tr class="memdesc:a4a87b73d1ec28b2c15ad3534fa116d6a inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in the exception handler of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a4a87b73d1ec28b2c15ad3534fa116d6a inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66db881eed723c434a95abb7a2229c6b inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a66db881eed723c434a95abb7a2229c6b">redirectLogToFile</a> (const std::string &amp;location)</td></tr>
+<tr class="memdesc:a66db881eed723c434a95abb7a2229c6b inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect the log to a specific file, appending to it.  <br /></td></tr>
+<tr class="separator:a66db881eed723c434a95abb7a2229c6b inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dca4d93c27fc39d0cb69ad1706bb810 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5dca4d93c27fc39d0cb69ad1706bb810">setDefaultLogger</a> ()</td></tr>
+<tr class="memdesc:a5dca4d93c27fc39d0cb69ad1706bb810 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a default logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a5dca4d93c27fc39d0cb69ad1706bb810 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae177a4815e2cc6ee213c33a84b232341 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae177a4815e2cc6ee213c33a84b232341">setQuietLogger</a> ()</td></tr>
+<tr class="memdesc:ae177a4815e2cc6ee213c33a84b232341 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a quiet logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ae177a4815e2cc6ee213c33a84b232341 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce57b52ae4dad4e732828865eef9fc0 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6ce57b52ae4dad4e732828865eef9fc0">setTaskLogger</a> ()</td></tr>
+<tr class="memdesc:a6ce57b52ae4dad4e732828865eef9fc0 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a task logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a6ce57b52ae4dad4e732828865eef9fc0 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250d795d6a207b8908e66469d4d40d2d inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a250d795d6a207b8908e66469d4d40d2d">setDebugLogger</a> ()</td></tr>
+<tr class="memdesc:a250d795d6a207b8908e66469d4d40d2d inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a debug logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a250d795d6a207b8908e66469d4d40d2d inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e828d3cce573889111b5a8807be8420 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a9e828d3cce573889111b5a8807be8420">setDefaultExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a9e828d3cce573889111b5a8807be8420 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a default exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a9e828d3cce573889111b5a8807be8420 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0645f42b4e16e0129a255502c619e763 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a0645f42b4e16e0129a255502c619e763">setQuietExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a0645f42b4e16e0129a255502c619e763 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a quiet exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a0645f42b4e16e0129a255502c619e763 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef2e1a565e81d4801dad5aa755a0331 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#afef2e1a565e81d4801dad5aa755a0331">setDebugExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:afef2e1a565e81d4801dad5aa755a0331 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a debug exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:afef2e1a565e81d4801dad5aa755a0331 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541d8bc7ad3b4daf0c3bd940ab3657fb inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a541d8bc7ad3b4daf0c3bd940ab3657fb">setFreeExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a541d8bc7ad3b4daf0c3bd940ab3657fb inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a free exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a541d8bc7ad3b4daf0c3bd940ab3657fb inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2556e9eb9800e31966c291c5e58c3d8 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae2556e9eb9800e31966c291c5e58c3d8">disableNestedExceptions</a> ()</td></tr>
+<tr class="memdesc:ae2556e9eb9800e31966c291c5e58c3d8 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the nested exception throw of the exception handler.  <br /></td></tr>
+<tr class="separator:ae2556e9eb9800e31966c291c5e58c3d8 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5666a3ee1b26fd5adffa35cead4ec98e inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5666a3ee1b26fd5adffa35cead4ec98e">enableNestedExceptions</a> ()</td></tr>
+<tr class="memdesc:a5666a3ee1b26fd5adffa35cead4ec98e inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the nested exception throw of the exception handler.  <br /></td></tr>
+<tr class="separator:a5666a3ee1b26fd5adffa35cead4ec98e inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42040b7eee6eeb90bb8ae2d4c8eb8fc inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ad42040b7eee6eeb90bb8ae2d4c8eb8fc">setErrorsToWarnings</a> (const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;errors)</td></tr>
+<tr class="memdesc:ad42040b7eee6eeb90bb8ae2d4c8eb8fc inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a list of errors to be cast to warnings on the exception handler.  <br /></td></tr>
+<tr class="separator:ad42040b7eee6eeb90bb8ae2d4c8eb8fc inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33a4b0a35f673fbf5b36767d2309359 inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#af33a4b0a35f673fbf5b36767d2309359">setMaxWarningsBeforeSilenced</a> (const size_t &amp;maxwarningcount)</td></tr>
+<tr class="memdesc:af33a4b0a35f673fbf5b36767d2309359 inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of warnings raised before being silenced.  <br /></td></tr>
+<tr class="separator:af33a4b0a35f673fbf5b36767d2309359 inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3976d191c15cdf6d244041617b9e5c inherit pub_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:aba3976d191c15cdf6d244041617b9e5c inherit pub_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#aba3976d191c15cdf6d244041617b9e5c">serialize</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="separator:aba3976d191c15cdf6d244041617b9e5c inherit pub_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTschedule.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTSchedule.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memdesc:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a> through its base <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>).  <br /></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a41e9c6a09ec5a8776a1783f50cd685c3">getruntimelocation</a> ()</td></tr>
-<tr class="separator:a41e9c6a09ec5a8776a1783f50cd685c3 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a9e8ae1c63c33235ce7eec85e29f5b871">getavailablememory</a> ()</td></tr>
-<tr class="separator:a9e8ae1c63c33235ce7eec85e29f5b871 inherit pub_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
-<tr class="memitem:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a055e793199bfade8b06bc4850068b9a1">forcesave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
-<tr class="separator:a055e793199bfade8b06bc4850068b9a1 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
-<tr class="memitem:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae956a19b19717b32398b7f9964078a78">forceload</a> (Archive &amp;ar, const unsigned int version)</td></tr>
-<tr class="separator:ae956a19b19717b32398b7f9964078a78 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63052f0f74d5884e111d7dd9e8f0cc7d inherit pro_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a63052f0f74d5884e111d7dd9e8f0cc7d">checksignals</a> () const</td></tr>
-<tr class="separator:a63052f0f74d5884e111d7dd9e8f0cc7d inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6f90ea44d4007946cc7bf0e145f7b5 inherit pro_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#abf6f90ea44d4007946cc7bf0e145f7b5">setCPLhandler</a> ()</td></tr>
-<tr class="separator:abf6f90ea44d4007946cc7bf0e145f7b5 inherit pro_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ab87002d0212cf0b244771760a6ec56d1">getclock</a> ()</td></tr>
-<tr class="separator:ab87002d0212cf0b244771760a6ec56d1 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
-<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a4df7cf79433c24ff1f98a4521c02e155">getduration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
-<tr class="separator:a4df7cf79433c24ff1f98a4521c02e155 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af08563fdef482c39ad0cbf3a5018bfa0">getdurationinseconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
-<tr class="separator:af08563fdef482c39ad0cbf3a5018bfa0 inherit pro_static_methods_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_classCore_1_1FMTobject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classCore_1_1FMTobject')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classCore_1_1FMTobject.html">Core::FMTobject</a></td></tr>
-<tr class="memitem:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae67617ff7aedd99989a071bcf11206f2">_exhandler</a></td></tr>
-<tr class="memdesc:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <br /></td></tr>
-<tr class="separator:ae67617ff7aedd99989a071bcf11206f2 inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a52f73fe80b34fae5f277ec5135d1d22d">_logger</a></td></tr>
-<tr class="memdesc:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <br /></td></tr>
-<tr class="separator:a52f73fe80b34fae5f277ec5135d1d22d inherit pro_static_attribs_classCore_1_1FMTobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a1093d2ceaa87c08bc17c3d8f9df16f91 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a1093d2ceaa87c08bc17c3d8f9df16f91">getLogger</a> ()</td></tr>
+<tr class="memdesc:a1093d2ceaa87c08bc17c3d8f9df16f91 inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to the actual logger.  <br /></td></tr>
+<tr class="separator:a1093d2ceaa87c08bc17c3d8f9df16f91 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c4fc499c4a6ca29d12d3631a27a85f inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a24c4fc499c4a6ca29d12d3631a27a85f">getExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a24c4fc499c4a6ca29d12d3631a27a85f inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to the actual exception handler.  <br /></td></tr>
+<tr class="separator:a24c4fc499c4a6ca29d12d3631a27a85f inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820b103f83923fe3868af1addd493a07 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a820b103f83923fe3868af1addd493a07">getRuntimeLocation</a> ()</td></tr>
+<tr class="memdesc:a820b103f83923fe3868af1addd493a07 inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the location of the FMT shared library.  <br /></td></tr>
+<tr class="separator:a820b103f83923fe3868af1addd493a07 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8594b45558117e221cddcc22d5b391b4 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8594b45558117e221cddcc22d5b391b4">getAvailableMemory</a> ()</td></tr>
+<tr class="memdesc:a8594b45558117e221cddcc22d5b391b4 inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the available memory in bytes.  <br /></td></tr>
+<tr class="separator:a8594b45558117e221cddcc22d5b391b4 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12becc87d9673dbed45fede598e1159 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#af12becc87d9673dbed45fede598e1159">setTerminateStack</a> ()</td></tr>
+<tr class="memdesc:af12becc87d9673dbed45fede598e1159 inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">will write the stack in the log when terminate called and raise a function failed.  <br /></td></tr>
+<tr class="separator:af12becc87d9673dbed45fede598e1159 inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3459117ab05b91a388d9038861612ef inherit pub_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ac3459117ab05b91a388d9038861612ef">setAbortStack</a> ()</td></tr>
+<tr class="memdesc:ac3459117ab05b91a388d9038861612ef inherit pub_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">will write the stack in the log when abort called with SIGABRT and raise a function failed.  <br /></td></tr>
+<tr class="separator:ac3459117ab05b91a388d9038861612ef inherit pub_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a18b765e433d09e77e6ba0b71b878aa17">forceSave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
+<tr class="memdesc:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the serialization to save useful information, which the default <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> serialization does not.  <br /></td></tr>
+<tr class="separator:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f86594af021e33785e50f02d9e0dc2d inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:a2f86594af021e33785e50f02d9e0dc2d inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a2f86594af021e33785e50f02d9e0dc2d">forceLoad</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="memdesc:a2f86594af021e33785e50f02d9e0dc2d inherit pro_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the serialization to load useful information, which the default <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> serialization does not.  <br /></td></tr>
+<tr class="separator:a2f86594af021e33785e50f02d9e0dc2d inherit pro_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715adec36e069e8da16e6b654036c1d3 inherit pro_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a715adec36e069e8da16e6b654036c1d3">checkSignals</a> () const</td></tr>
+<tr class="memdesc:a715adec36e069e8da16e6b654036c1d3 inherit pro_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the user has sent a ctrl-c signal using boost::python to FMT.  <br /></td></tr>
+<tr class="separator:a715adec36e069e8da16e6b654036c1d3 inherit pro_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfd3485fef202f7761386c5da8616dd inherit pro_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a4bfd3485fef202f7761386c5da8616dd">setCplHandler</a> ()</td></tr>
+<tr class="memdesc:a4bfd3485fef202f7761386c5da8616dd inherit pro_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the FMT exception handler to the GDAL exception handler (GDAL only).  <br /></td></tr>
+<tr class="separator:a4bfd3485fef202f7761386c5da8616dd inherit pro_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a6af49a6bea8633e43e507b22af0058bd inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6af49a6bea8633e43e507b22af0058bd">getClock</a> ()</td></tr>
+<tr class="memdesc:a6af49a6bea8633e43e507b22af0058bd inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a clock of the current time.  <br /></td></tr>
+<tr class="separator:a6af49a6bea8633e43e507b22af0058bd inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8346ffb6063935898bf385f9c045922c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
+<tr class="memitem:a8346ffb6063935898bf385f9c045922c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8346ffb6063935898bf385f9c045922c">getDuration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="memdesc:a8346ffb6063935898bf385f9c045922c inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time elapsed since a start clock as a double.  <br /></td></tr>
+<tr class="separator:a8346ffb6063935898bf385f9c045922c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00269b861be5d6f63d9063d3b0f9dc53 inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a00269b861be5d6f63d9063d3b0f9dc53">getDurationInSeconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="memdesc:a00269b861be5d6f63d9063d3b0f9dc53 inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time elapsed since a start clock in seconds as a string.  <br /></td></tr>
+<tr class="separator:a00269b861be5d6f63d9063d3b0f9dc53 inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadaa40fdf3ad161e50ffde0da75b45a inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#abadaa40fdf3ad161e50ffde0da75b45a">_logStack</a> ()</td></tr>
+<tr class="memdesc:abadaa40fdf3ad161e50ffde0da75b45a inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the stack trace...  <br /></td></tr>
+<tr class="separator:abadaa40fdf3ad161e50ffde0da75b45a inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa580ed0261751bf0c893fa624ad9477c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#aa580ed0261751bf0c893fa624ad9477c">_terminate</a> ()</td></tr>
+<tr class="memdesc:aa580ed0261751bf0c893fa624ad9477c inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise an error with the boost stacktrace.  <br /></td></tr>
+<tr class="separator:aa580ed0261751bf0c893fa624ad9477c inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad585fe664920bb6246fe453242e4cd3d inherit pro_static_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ad585fe664920bb6246fe453242e4cd3d">_abort</a> (int p_signal)</td></tr>
+<tr class="memdesc:ad585fe664920bb6246fe453242e4cd3d inherit pro_static_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise an error with the boost stacktrace on abort.  <br /></td></tr>
+<tr class="separator:ad585fe664920bb6246fe453242e4cd3d inherit pro_static_methods_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
+<tr class="memitem:a540a432760681024cf9a5e15956613a2 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a540a432760681024cf9a5e15956613a2">_exhandler</a></td></tr>
+<tr class="memdesc:a540a432760681024cf9a5e15956613a2 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <br /></td></tr>
+<tr class="separator:a540a432760681024cf9a5e15956613a2 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c5f2112616efab38c81ad16f93a364 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a44c5f2112616efab38c81ad16f93a364">_logger</a></td></tr>
+<tr class="memdesc:a44c5f2112616efab38c81ad16f93a364 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <br /></td></tr>
+<tr class="separator:a44c5f2112616efab38c81ad16f93a364 inherit pro_static_attribs_classCore_1_1FMTObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> is the representation of a spatialy referenced schedule. It can be used by the FMTlpmodel and the FMTsesmodel. It describes the area of a given developements for which an <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> can be operated (key). The vector is a reprensentation of lock level at position 0 in the vector the lock level = 0 (if lock level 0 exist in the graph , at position 1 lock level = 1. </p>
+<div class="textblock"><p>Spatially referenced schedule describing the area of developments for which an action can be operated, usable by FMTLpModel and FMTSesModel. </p>
+<p>The vector represents the lock level: position 0 is lock level 0, position 1 is lock level 1, and so on. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a96b60abf30f9331e4904db7f0c4ec9bd" name="a96b60abf30f9331e4904db7f0c4ec9bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96b60abf30f9331e4904db7f0c4ec9bd">&#9670;&#160;</a></span>const_iterator</h2>
+<a id="a5c2c3faebeb58391e5d4d2d2a3894728" name="a5c2c3faebeb58391e5d4d2d2a3894728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2c3faebeb58391e5d4d2d2a3894728">&#9670;&#160;</a></span>const_iterator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>,std::map&lt;<a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>,std::vector&lt;double&gt;&gt;&gt;::const_iterator <a class="el" href="classCore_1_1FMTschedule.html#a96b60abf30f9331e4904db7f0c4ec9bd">Core::FMTschedule::const_iterator</a></td>
+          <td class="memname">typedef std::map&lt;<a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>,std::map&lt;<a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>,std::vector&lt;double&gt;&gt;&gt;::const_iterator <a class="el" href="classCore_1_1FMTSchedule.html#a5c2c3faebeb58391e5d4d2d2a3894728">Core::FMTSchedule::const_iterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae49a2a0266c800cf620bd7a1554f7d35" name="ae49a2a0266c800cf620bd7a1554f7d35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae49a2a0266c800cf620bd7a1554f7d35">&#9670;&#160;</a></span>iterator</h2>
+<a id="a03b7c09a2180668b6ba47b4001de7008" name="a03b7c09a2180668b6ba47b4001de7008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b7c09a2180668b6ba47b4001de7008">&#9670;&#160;</a></span>iterator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>,std::map&lt;<a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>,std::vector&lt;double&gt;&gt;&gt;::iterator <a class="el" href="classCore_1_1FMTschedule.html#ae49a2a0266c800cf620bd7a1554f7d35">Core::FMTschedule::iterator</a></td>
+          <td class="memname">typedef std::map&lt;<a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>,std::map&lt;<a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>,std::vector&lt;double&gt;&gt;&gt;::iterator <a class="el" href="classCore_1_1FMTSchedule.html#a03b7c09a2180668b6ba47b4001de7008">Core::FMTSchedule::iterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a69aa00aa322a7a37d1a229fbf29be174" name="a69aa00aa322a7a37d1a229fbf29be174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69aa00aa322a7a37d1a229fbf29be174">&#9670;&#160;</a></span>value_type</h2>
+<a id="aca6372566dc59023780e293abaf8ae17" name="aca6372566dc59023780e293abaf8ae17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6372566dc59023780e293abaf8ae17">&#9670;&#160;</a></span>value_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>,std::map&lt;<a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>,std::vector&lt;double&gt;&gt;&gt;::value_type <a class="el" href="classCore_1_1FMTschedule.html#a69aa00aa322a7a37d1a229fbf29be174">Core::FMTschedule::value_type</a></td>
+          <td class="memname">typedef std::map&lt;<a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>,std::map&lt;<a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>,std::vector&lt;double&gt;&gt;&gt;::value_type <a class="el" href="classCore_1_1FMTSchedule.html#aca6372566dc59023780e293abaf8ae17">Core::FMTSchedule::value_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Functions that make sure the <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> acts like a std c++ container </p>
+<p>Functions that make sure the <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a> acts like a std c++ container </p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9d0ea0f5fec73f7ea3e9a8a8bc566b47" name="a9d0ea0f5fec73f7ea3e9a8a8bc566b47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d0ea0f5fec73f7ea3e9a8a8bc566b47">&#9670;&#160;</a></span>FMTschedule() <span class="overload">[1/6]</span></h2>
+<a id="acaad68e239915fb8a215d3456bfaabf6" name="acaad68e239915fb8a215d3456bfaabf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaad68e239915fb8a215d3456bfaabf6">&#9670;&#160;</a></span>FMTSchedule() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTschedule::FMTschedule </td>
+          <td class="memname">Core::FMTSchedule::FMTSchedule </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>lperiod</em>, </td>
@@ -328,7 +424,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;&#160;</td>
           <td class="paramname"><em>obj</em>, </td>
         </tr>
         <tr>
@@ -344,18 +440,27 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> constructor for an empty schedule at given period </p>
+
+<p>Construct an empty schedule at a given period. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lperiod</td><td>the period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>the object to copy the handlers from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">luselock</td><td>if true the schedule can contain locked developments. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a8a13c029f7261842d66cfcfd83a97d06" name="a8a13c029f7261842d66cfcfd83a97d06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a13c029f7261842d66cfcfd83a97d06">&#9670;&#160;</a></span>FMTschedule() <span class="overload">[2/6]</span></h2>
+<a id="aa1c84185f4630edbe7e0725d88bd0c8b" name="aa1c84185f4630edbe7e0725d88bd0c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c84185f4630edbe7e0725d88bd0c8b">&#9670;&#160;</a></span>FMTSchedule() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTschedule::FMTschedule </td>
+          <td class="memname">Core::FMTSchedule::FMTSchedule </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>lperiod</em>, </td>
@@ -363,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>schedules</em>&#160;</td>
         </tr>
         <tr>
@@ -373,18 +478,26 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> constructor for a complete construction of <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> with multiple <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> </p>
+
+<p>Construct a schedule from multiple schedules at a given period. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lperiod</td><td>the period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">schedules</td><td>the schedules to combine. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a3aeaf98f1a4e59382c2b7364cca5b636" name="a3aeaf98f1a4e59382c2b7364cca5b636"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aeaf98f1a4e59382c2b7364cca5b636">&#9670;&#160;</a></span>FMTschedule() <span class="overload">[3/6]</span></h2>
+<a id="af90cfa5e9a6829b3796bd78ff11e5cb1" name="af90cfa5e9a6829b3796bd78ff11e5cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90cfa5e9a6829b3796bd78ff11e5cb1">&#9670;&#160;</a></span>FMTSchedule() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTschedule::FMTschedule </td>
+          <td class="memname">Core::FMTSchedule::FMTSchedule </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>lperiod</em>, </td>
@@ -392,7 +505,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &gt;&#160;</td>
+          <td class="paramtype">std::map&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &gt;&#160;</td>
           <td class="paramname"><em>mapping</em>&#160;</td>
         </tr>
         <tr>
@@ -402,18 +515,26 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> constructor for a complete construction of <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> </p>
+
+<p>Construct a complete schedule from a period and a mapping. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lperiod</td><td>the period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mapping</td><td>the mapping of actions to developments and areas. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a04a384a8ca4a22bced0cc2df59960ac7" name="a04a384a8ca4a22bced0cc2df59960ac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04a384a8ca4a22bced0cc2df59960ac7">&#9670;&#160;</a></span>FMTschedule() <span class="overload">[4/6]</span></h2>
+<a id="aee088f1704c16cfbf95170ee4a698551" name="aee088f1704c16cfbf95170ee4a698551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee088f1704c16cfbf95170ee4a698551">&#9670;&#160;</a></span>FMTSchedule() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTschedule::FMTschedule </td>
+          <td class="memname">Core::FMTSchedule::FMTSchedule </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>lperiod</em>, </td>
@@ -421,7 +542,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::map&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::map&lt; int, double &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a>, std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::map&lt; int, double &gt; &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>mapping</em>&#160;</td>
         </tr>
         <tr>
@@ -431,30 +552,39 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> constructor _lock based mapping (When a schedule is parsed). </p>
+
+<p>Construct a schedule from a period and a lock based mapping, when a schedule is parsed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lperiod</td><td>the period. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mapping</td><td>the lock based mapping. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="afc1d485634db900533dec46fc6114538" name="afc1d485634db900533dec46fc6114538"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc1d485634db900533dec46fc6114538">&#9670;&#160;</a></span>FMTschedule() <span class="overload">[5/6]</span></h2>
+<a id="a8bd4f5a32f8bcfcfb51eddee6d5e4e62" name="a8bd4f5a32f8bcfcfb51eddee6d5e4e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd4f5a32f8bcfcfb51eddee6d5e4e62">&#9670;&#160;</a></span>FMTSchedule() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTschedule::FMTschedule </td>
+          <td class="memname">Core::FMTSchedule::FMTSchedule </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> constructor. </p>
+
+<p>Default constructor for <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>. </p>
 
 </div>
 </div>
-<a id="a227c03ed5c6e1fd071d86802c06dbe29" name="a227c03ed5c6e1fd071d86802c06dbe29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a227c03ed5c6e1fd071d86802c06dbe29">&#9670;&#160;</a></span>~FMTschedule()</h2>
+<a id="a83576da572c1782a8b22f6cdda20ca18" name="a83576da572c1782a8b22f6cdda20ca18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83576da572c1782a8b22f6cdda20ca18">&#9670;&#160;</a></span>~FMTSchedule()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,7 +593,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTschedule::~FMTschedule </td>
+          <td class="memname">Core::FMTSchedule::~FMTSchedule </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -475,59 +605,75 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Default ~FMTschedule constructor. </p>
+
+<p>Default destructor for <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>. </p>
 
 </div>
 </div>
-<a id="aa69dcadbb38bca4695e917c877d11b46" name="aa69dcadbb38bca4695e917c877d11b46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa69dcadbb38bca4695e917c877d11b46">&#9670;&#160;</a></span>FMTschedule() <span class="overload">[6/6]</span></h2>
+<a id="a6fa303c2dfecbc13a604c8c89cfd6c84" name="a6fa303c2dfecbc13a604c8c89cfd6c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa303c2dfecbc13a604c8c89cfd6c84">&#9670;&#160;</a></span>FMTSchedule() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTschedule::FMTschedule </td>
+          <td class="memname">Core::FMTSchedule::FMTSchedule </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> copy constructor. </p>
+
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a724ab4af480d68bb27d8cce39eade124" name="a724ab4af480d68bb27d8cce39eade124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724ab4af480d68bb27d8cce39eade124">&#9670;&#160;</a></span>actionarea()</h2>
+<a id="aa63f953c2a4612938e128edcb0d2ccbb" name="aa63f953c2a4612938e128edcb0d2ccbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63f953c2a4612938e128edcb0d2ccbb">&#9670;&#160;</a></span>actionArea()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Core::FMTschedule::actionarea </td>
+          <td class="memname">double Core::FMTSchedule::actionArea </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>action</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the total harvested area of a <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> present in the <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>. </p>
+
+<p>Return the total harvested area of an action in the schedule. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the total harvested area of the action. </dd></dl>
 
 </div>
 </div>
-<a id="a77cd5ee73904dd9358fcfdff220743e1" name="a77cd5ee73904dd9358fcfdff220743e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77cd5ee73904dd9358fcfdff220743e1">&#9670;&#160;</a></span>addevent()</h2>
+<a id="abc38238f6e8f761642a3f89a697891bb" name="abc38238f6e8f761642a3f89a697891bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc38238f6e8f761642a3f89a697891bb">&#9670;&#160;</a></span>addEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTschedule::addevent </td>
+          <td class="memname">void Core::FMTSchedule::addEvent </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTdevelopment.html">Core::FMTdevelopment</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTDevelopment.html">Core::FMTDevelopment</a> &amp;&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
@@ -539,7 +685,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">Core::FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>action</em>&#160;</td>
         </tr>
         <tr>
@@ -549,54 +695,74 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new event to the shedule based on the developement,action and area. See clean function also. </p>
+
+<p>Add a new event to the schedule from a development, an area and an action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>the development. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">area</td><td>the area. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>the action. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ae8e0334fc02006aed592a204e5c794dd" name="ae8e0334fc02006aed592a204e5c794dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e0334fc02006aed592a204e5c794dd">&#9670;&#160;</a></span>area()</h2>
+<a id="ada01dcd1252cdb35d3c5013236194433" name="ada01dcd1252cdb35d3c5013236194433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada01dcd1252cdb35d3c5013236194433">&#9670;&#160;</a></span>area()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Core::FMTschedule::area </td>
+          <td class="memname">double Core::FMTSchedule::area </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the total area of the schedule operated by all schedule actions. </p>
+
+<p>Return the total area of the schedule operated by all actions. </p>
+<dl class="section return"><dt>Returns</dt><dd>the total area of the schedule. </dd></dl>
 
 </div>
 </div>
-<a id="a54e1d960bdd4ef7e59b6aaac8427c070" name="a54e1d960bdd4ef7e59b6aaac8427c070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e1d960bdd4ef7e59b6aaac8427c070">&#9670;&#160;</a></span>at()</h2>
+<a id="a4b1f5f5f1e10e477c212ccbe8fb20f81" name="a4b1f5f5f1e10e477c212ccbe8fb20f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1f5f5f1e10e477c212ccbe8fb20f81">&#9670;&#160;</a></span>at()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &amp; Core::FMTschedule::at </td>
+          <td class="memname">const std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &amp; Core::FMTSchedule::at </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>action</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a const reference to the developments and areas for a given action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the map of developments to areas. </dd></dl>
+
 </div>
 </div>
-<a id="aba7b2e5cd2fa5a9885f22206dd6cc7c4" name="aba7b2e5cd2fa5a9885f22206dd6cc7c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba7b2e5cd2fa5a9885f22206dd6cc7c4">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
+<a id="a67fbc37c8d81dd0b8547d70391c03125" name="a67fbc37c8d81dd0b8547d70391c03125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67fbc37c8d81dd0b8547d70391c03125">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html#ae49a2a0266c800cf620bd7a1554f7d35">iterator</a> Core::FMTschedule::begin </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html#a03b7c09a2180668b6ba47b4001de7008">iterator</a> Core::FMTSchedule::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -604,16 +770,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return an iterator to the beginning of the schedule. </p>
+<dl class="section return"><dt>Returns</dt><dd>an iterator to the beginning. </dd></dl>
+
 </div>
 </div>
-<a id="a96337025307af06d117658ac3d38a345" name="a96337025307af06d117658ac3d38a345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96337025307af06d117658ac3d38a345">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
+<a id="aa519e765d5237ae1c35e4ddbf574fa68" name="aa519e765d5237ae1c35e4ddbf574fa68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa519e765d5237ae1c35e4ddbf574fa68">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html#a96b60abf30f9331e4904db7f0c4ec9bd">const_iterator</a> Core::FMTschedule::begin </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html#a5c2c3faebeb58391e5d4d2d2a3894728">const_iterator</a> Core::FMTSchedule::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -621,28 +790,32 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a const iterator to the beginning of the schedule. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const iterator to the beginning. </dd></dl>
+
 </div>
 </div>
-<a id="af8a89e45a39c122a2b48611f3cd7fc79" name="af8a89e45a39c122a2b48611f3cd7fc79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8a89e45a39c122a2b48611f3cd7fc79">&#9670;&#160;</a></span>clean()</h2>
+<a id="ae6a8bd6689572f88ae5f6dd65ba4ff85" name="ae6a8bd6689572f88ae5f6dd65ba4ff85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a8bd6689572f88ae5f6dd65ba4ff85">&#9670;&#160;</a></span>clean()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTschedule::clean </td>
+          <td class="memname">void Core::FMTSchedule::clean </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>After calling multiple time addevent the schedule will end up with empty area if uselock == false. So you need to call this function to clean the schedule before using it. </p>
+
+<p>Clean the schedule of empty areas after multiple addEvent calls, to be called before using it. </p>
 
 </div>
 </div>
-<a id="a1b67e096d0d2da052cd9d3c9a6d4433c" name="a1b67e096d0d2da052cd9d3c9a6d4433c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b67e096d0d2da052cd9d3c9a6d4433c">&#9670;&#160;</a></span>douselock()</h2>
+<a id="a23fc7d85640a0ed84ed0c1396928a7c8" name="a23fc7d85640a0ed84ed0c1396928a7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23fc7d85640a0ed84ed0c1396928a7c8">&#9670;&#160;</a></span>doUseLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -651,7 +824,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTschedule::douselock </td>
+          <td class="memname">bool Core::FMTSchedule::doUseLock </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -663,36 +836,40 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return true if the schedule can contains locked developement. </p>
+
+<p>Return true if the schedule can contain locked developments. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the schedule uses lock else false. </dd></dl>
 
 </div>
 </div>
-<a id="a38071f9a6bd083df3613b7a9dfc90446" name="a38071f9a6bd083df3613b7a9dfc90446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38071f9a6bd083df3613b7a9dfc90446">&#9670;&#160;</a></span>empty()</h2>
+<a id="ae333be55da8f74f809c7bba7395f7ebb" name="ae333be55da8f74f809c7bba7395f7ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae333be55da8f74f809c7bba7395f7ebb">&#9670;&#160;</a></span>empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTschedule::empty </td>
+          <td class="memname">bool Core::FMTSchedule::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true is the <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> is not empty. </p>
+
+<p>Return true if the schedule is empty. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the schedule is empty else false. </dd></dl>
 
 </div>
 </div>
-<a id="a4614ff1cc0317b2c795edfe738fa403d" name="a4614ff1cc0317b2c795edfe738fa403d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4614ff1cc0317b2c795edfe738fa403d">&#9670;&#160;</a></span>end() <span class="overload">[1/2]</span></h2>
+<a id="a43b95ea802983d4e401fdb5a9022c9f3" name="a43b95ea802983d4e401fdb5a9022c9f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b95ea802983d4e401fdb5a9022c9f3">&#9670;&#160;</a></span>end() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html#ae49a2a0266c800cf620bd7a1554f7d35">iterator</a> Core::FMTschedule::end </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html#a03b7c09a2180668b6ba47b4001de7008">iterator</a> Core::FMTSchedule::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -700,16 +877,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return an iterator to the end of the schedule. </p>
+<dl class="section return"><dt>Returns</dt><dd>an iterator to the end. </dd></dl>
+
 </div>
 </div>
-<a id="a9cbcbb62f550ee669fa9219b677974a8" name="a9cbcbb62f550ee669fa9219b677974a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cbcbb62f550ee669fa9219b677974a8">&#9670;&#160;</a></span>end() <span class="overload">[2/2]</span></h2>
+<a id="ac9a10324cd8ffa04a8e30a3e6dc74e62" name="ac9a10324cd8ffa04a8e30a3e6dc74e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a10324cd8ffa04a8e30a3e6dc74e62">&#9670;&#160;</a></span>end() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html#a96b60abf30f9331e4904db7f0c4ec9bd">const_iterator</a> Core::FMTschedule::end </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html#a5c2c3faebeb58391e5d4d2d2a3894728">const_iterator</a> Core::FMTSchedule::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -717,52 +897,73 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a const iterator to the end of the schedule. </p>
+<dl class="section return"><dt>Returns</dt><dd>a const iterator to the end. </dd></dl>
+
 </div>
 </div>
-<a id="a6aeab5d82a976bc4596566fdd39d8ce6" name="a6aeab5d82a976bc4596566fdd39d8ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6aeab5d82a976bc4596566fdd39d8ce6">&#9670;&#160;</a></span>find() <span class="overload">[1/2]</span></h2>
+<a id="a183a58536c54dd465b9e74503a386ea0" name="a183a58536c54dd465b9e74503a386ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183a58536c54dd465b9e74503a386ea0">&#9670;&#160;</a></span>find() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html#ae49a2a0266c800cf620bd7a1554f7d35">iterator</a> Core::FMTschedule::find </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html#a03b7c09a2180668b6ba47b4001de7008">iterator</a> Core::FMTSchedule::find </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>actionkey</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return an iterator to the given action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">actionkey</td><td>the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an iterator to the action. </dd></dl>
+
 </div>
 </div>
-<a id="a1356a091b36117df854e8443147c5d6b" name="a1356a091b36117df854e8443147c5d6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1356a091b36117df854e8443147c5d6b">&#9670;&#160;</a></span>find() <span class="overload">[2/2]</span></h2>
+<a id="a3bb73935d9c63790d0bc4b02e84c7ba2" name="a3bb73935d9c63790d0bc4b02e84c7ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb73935d9c63790d0bc4b02e84c7ba2">&#9670;&#160;</a></span>find() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html#a96b60abf30f9331e4904db7f0c4ec9bd">const_iterator</a> Core::FMTschedule::find </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html#a5c2c3faebeb58391e5d4d2d2a3894728">const_iterator</a> Core::FMTSchedule::find </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>actionkey</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a const iterator to the given action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">actionkey</td><td>the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a const iterator to the action. </dd></dl>
+
 </div>
 </div>
-<a id="af9371bebdc914aa8f7e80e55e09569d4" name="af9371bebdc914aa8f7e80e55e09569d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9371bebdc914aa8f7e80e55e09569d4">&#9670;&#160;</a></span>getnewschedule()</h2>
+<a id="ae8a4ac89b0a891862657d174f114f5ee" name="ae8a4ac89b0a891862657d174f114f5ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a4ac89b0a891862657d174f114f5ee">&#9670;&#160;</a></span>getNewSchedule()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> Core::FMTschedule::getnewschedule </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> Core::FMTSchedule::getNewSchedule </td>
           <td>(</td>
           <td class="paramtype">const double &amp;&#160;</td>
           <td class="paramname"><em>factor</em></td><td>)</td>
@@ -770,31 +971,47 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Multiply this schedule with a factor and return it </p>
+
+<p>Multiply this schedule by a factor and return it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">factor</td><td>the factor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the multiplied schedule. </dd></dl>
 
 </div>
 </div>
-<a id="a16458b0710545a74a2c8943a49e8514f" name="a16458b0710545a74a2c8943a49e8514f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16458b0710545a74a2c8943a49e8514f">&#9670;&#160;</a></span>getoperabilities()</h2>
+<a id="a9efa81365dab0fc602617393bc7cd036" name="a9efa81365dab0fc602617393bc7cd036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efa81365dab0fc602617393bc7cd036">&#9670;&#160;</a></span>getOperabilities()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; boost::unordered_set&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &gt; &gt; Core::FMTschedule::getoperabilities </td>
+          <td class="memname">std::vector&lt; boost::unordered_set&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &gt; &gt; Core::FMTSchedule::getOperabilities </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>actions</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get all operabilities of the schedules in an hash table. </p>
+
+<p>Return all operabilities of the schedule in a hash table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the operabilities of the schedule. </dd></dl>
 
 </div>
 </div>
-<a id="a7e37ee0b408a1642dfec393967bb2f2b" name="a7e37ee0b408a1642dfec393967bb2f2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e37ee0b408a1642dfec393967bb2f2b">&#9670;&#160;</a></span>getperiod()</h2>
+<a id="af336c244396b48eec55e2aa340a0ad3a" name="af336c244396b48eec55e2aa340a0ad3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af336c244396b48eec55e2aa340a0ad3a">&#9670;&#160;</a></span>getPeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -803,7 +1020,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Core::FMTschedule::getperiod </td>
+          <td class="memname">int Core::FMTSchedule::getPeriod </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -815,46 +1032,56 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Getter for the schedule period. </p>
+
+<p>Return the period of the schedule. </p>
+<dl class="section return"><dt>Returns</dt><dd>the period of the schedule. </dd></dl>
 
 </div>
 </div>
-<a id="ac2a37915134451026c6e1f8b3e7c5918" name="ac2a37915134451026c6e1f8b3e7c5918"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2a37915134451026c6e1f8b3e7c5918">&#9670;&#160;</a></span>isfuturconstraints()</h2>
+<a id="a9b9e68c29172d935de055701a00660f8" name="a9b9e68c29172d935de055701a00660f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b9e68c29172d935de055701a00660f8">&#9670;&#160;</a></span>isFuturConstraints()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTschedule::isfuturconstraints </td>
+          <td class="memname">bool Core::FMTSchedule::isFuturConstraints </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTconstraint.html">Core::FMTconstraint</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTConstraint.html">Core::FMTConstraint</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>constraints</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Check if the schedule period will be bounded by new constraints. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">constraints</td><td>the constraints. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the schedule has future constraints else false. </dd></dl>
 
 </div>
 </div>
-<a id="a831af075c952465286519ca1308e9b22" name="a831af075c952465286519ca1308e9b22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a831af075c952465286519ca1308e9b22">&#9670;&#160;</a></span>operated()</h2>
+<a id="a393aad4a8ae7f9aef3422a51f3a6bf68" name="a393aad4a8ae7f9aef3422a51f3a6bf68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a393aad4a8ae7f9aef3422a51f3a6bf68">&#9670;&#160;</a></span>operated()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTschedule::operated </td>
+          <td class="memname">bool Core::FMTSchedule::operated </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>action</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> &amp;&#160;</td>
-          <td class="paramname"><em>developement</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a> &amp;&#160;</td>
+          <td class="paramname"><em>development</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -863,163 +1090,223 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if a given <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a> has been actioned for the this <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>. </p>
+
+<p>Check if a development has been operated by an action in the schedule. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>the action. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">development</td><td>the development. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the development has been operated else false. </dd></dl>
 
 </div>
 </div>
-<a id="ae6be2533b52197223874ee5b861ead82" name="ae6be2533b52197223874ee5b861ead82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6be2533b52197223874ee5b861ead82">&#9670;&#160;</a></span>operator std::string()</h2>
+<a id="a9c55960ee2dbbd5dd7436d253db7f6c1" name="a9c55960ee2dbbd5dd7436d253db7f6c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c55960ee2dbbd5dd7436d253db7f6c1">&#9670;&#160;</a></span>operator std::string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTschedule::operator std::string </td>
+          <td class="memname">Core::FMTSchedule::operator std::string </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Convert the <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> to a string like seen in a regular scedule file. </p>
+
+<p>Convert the schedule to a string as in a regular schedule file. </p>
+<dl class="section return"><dt>Returns</dt><dd>the string representation of the schedule. </dd></dl>
 
 </div>
 </div>
-<a id="a25b6b792c2f478da4abfba42679f6814" name="a25b6b792c2f478da4abfba42679f6814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25b6b792c2f478da4abfba42679f6814">&#9670;&#160;</a></span>operator!=()</h2>
+<a id="a9abb2ed5dd0e9d57db7d541831c3914d" name="a9abb2ed5dd0e9d57db7d541831c3914d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9abb2ed5dd0e9d57db7d541831c3914d">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTschedule::operator!= </td>
+          <td class="memname">bool Core::FMTSchedule::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> nonequality operator. </p>
+
+<p>Inequality comparison operator of <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the schedule to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both schedules are different else false. </dd></dl>
 
 </div>
 </div>
-<a id="a9a276e9f84c051d12becdd2b07ce9949" name="a9a276e9f84c051d12becdd2b07ce9949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a276e9f84c051d12becdd2b07ce9949">&#9670;&#160;</a></span>operator+()</h2>
+<a id="a3749d96ea698578344a044a64ce9e00b" name="a3749d96ea698578344a044a64ce9e00b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3749d96ea698578344a044a64ce9e00b">&#9670;&#160;</a></span>operator+()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> Core::FMTschedule::operator+ </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> Core::FMTSchedule::operator+ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function append an <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> to an other <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> and return a new one. </p>
+
+<p>Append another schedule to this schedule and return a new one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the schedule to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting schedule. </dd></dl>
 
 </div>
 </div>
-<a id="a6186cba36f8019a91a42d8f4ca455239" name="a6186cba36f8019a91a42d8f4ca455239"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6186cba36f8019a91a42d8f4ca455239">&#9670;&#160;</a></span>operator+=()</h2>
+<a id="a03cfc68e7488d787616246522a3d68a7" name="a03cfc68e7488d787616246522a3d68a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03cfc68e7488d787616246522a3d68a7">&#9670;&#160;</a></span>operator+=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp; Core::FMTschedule::operator+= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp; Core::FMTSchedule::operator+= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function append an <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> to an other <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>. </p>
+
+<p>Append another schedule to this schedule. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the schedule to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>. </dd></dl>
 
 </div>
 </div>
-<a id="accdf6a64f419972581c32b39cf20e36a" name="accdf6a64f419972581c32b39cf20e36a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accdf6a64f419972581c32b39cf20e36a">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a2fcb5dce0672889f9f6bec8584371929" name="a2fcb5dce0672889f9f6bec8584371929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcb5dce0672889f9f6bec8584371929">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp; Core::FMTschedule::operator= </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp; Core::FMTSchedule::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> copy assignment. </p>
+
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a5d78c9765454dbe5b74ba4bf9160e5a4" name="a5d78c9765454dbe5b74ba4bf9160e5a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d78c9765454dbe5b74ba4bf9160e5a4">&#9670;&#160;</a></span>operator==()</h2>
+<a id="a1fc3d963ec3d5ef0520c1630b2d4b185" name="a1fc3d963ec3d5ef0520c1630b2d4b185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc3d963ec3d5ef0520c1630b2d4b185">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Core::FMTschedule::operator== </td>
+          <td class="memname">bool Core::FMTSchedule::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> equality operator. </p>
+
+<p>Equality comparison operator of <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the schedule to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both schedules are equal else false. </dd></dl>
 
 </div>
 </div>
-<a id="ac7878aa475f5302feb80d29538a5d897" name="ac7878aa475f5302feb80d29538a5d897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7878aa475f5302feb80d29538a5d897">&#9670;&#160;</a></span>operator[]()</h2>
+<a id="ad2c4bfab11e4755f65f621e23b9a740f" name="ad2c4bfab11e4755f65f621e23b9a740f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c4bfab11e4755f65f621e23b9a740f">&#9670;&#160;</a></span>operator[]()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; <a class="el" href="classCore_1_1FMTdevelopment.html">FMTdevelopment</a>, std::vector&lt; double &gt; &gt; &amp; Core::FMTschedule::operator[] </td>
+          <td class="memname">std::map&lt; <a class="el" href="classCore_1_1FMTDevelopment.html">FMTDevelopment</a>, std::vector&lt; double &gt; &gt; &amp; Core::FMTSchedule::operator[] </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &amp;&#160;</td>
           <td class="paramname"><em>action</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a reference to the developments and areas for a given action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the map of developments to areas. </dd></dl>
+
 </div>
 </div>
-<a id="a8f11c83ff54ef892eea2fef07bf6160d" name="a8f11c83ff54ef892eea2fef07bf6160d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f11c83ff54ef892eea2fef07bf6160d">&#9670;&#160;</a></span>postsolve()</h2>
+<a id="ae82a30ebada05aaad0071e0331d193c6" name="ae82a30ebada05aaad0071e0331d193c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82a30ebada05aaad0071e0331d193c6">&#9670;&#160;</a></span>postSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> Core::FMTschedule::postsolve </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> Core::FMTSchedule::postSolve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
           <td class="paramname"><em>filter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>originalbasethemes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>originalbasebaseactions</em>&#160;</td>
         </tr>
         <tr>
@@ -1029,32 +1316,42 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Postsolve all masks base on a basemask and the original themes and actions. </p>
+
+<p>Postsolve the schedule using the original themes and actions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">originalbasethemes</td><td>the original themes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">originalbasebaseactions</td><td>the original actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the postsolved schedule. </dd></dl>
 
 </div>
 </div>
-<a id="aa143d393776a2f5bc410c5b309701127" name="aa143d393776a2f5bc410c5b309701127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa143d393776a2f5bc410c5b309701127">&#9670;&#160;</a></span>presolve()</h2>
+<a id="ab7864fca4d06a0ce0a316f6bc257849d" name="ab7864fca4d06a0ce0a316f6bc257849d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7864fca4d06a0ce0a316f6bc257849d">&#9670;&#160;</a></span>preSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a> Core::FMTschedule::presolve </td>
+          <td class="memname"><a class="el" href="classCore_1_1FMTSchedule.html">FMTSchedule</a> Core::FMTSchedule::preSolve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTmaskfilter.html">FMTmaskfilter</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTMaskFilter.html">FMTMaskFilter</a> &amp;&#160;</td>
           <td class="paramname"><em>filter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTtheme.html">FMTtheme</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>newthemes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTaction.html">FMTaction</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">FMTAction</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>presolvedaction</em>&#160;</td>
         </tr>
         <tr>
@@ -1064,37 +1361,54 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Presolve all masks base on a basemask a preolved mask and presolved themes and presolved actions list. The returned schedule can also be empty. </p>
+
+<p>Presolve the schedule, potentially returning an empty schedule. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>the mask filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newthemes</td><td>the presolved themes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">presolvedaction</td><td>the presolved actions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the presolved schedule. </dd></dl>
 
 </div>
 </div>
-<a id="a4055275830794dcc46ce946d8747aa33" name="a4055275830794dcc46ce946d8747aa33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4055275830794dcc46ce946d8747aa33">&#9670;&#160;</a></span>setperiod()</h2>
+<a id="ad3f463abc2396e75aa3d6d855ec29b51" name="ad3f463abc2396e75aa3d6d855ec29b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f463abc2396e75aa3d6d855ec29b51">&#9670;&#160;</a></span>setPeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTschedule::setperiod </td>
+          <td class="memname">void Core::FMTSchedule::setPeriod </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>newperiod</em></td><td>)</td>
+          <td class="paramname"><em>newPeriod</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Setter for the period of the Schedule and the period developements of the schedule. </p>
+
+<p>Set the period of the schedule and of its developments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newPeriod</td><td>the period to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a65da705be10abfd0cdf06c5328eeebd4" name="a65da705be10abfd0cdf06c5328eeebd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65da705be10abfd0cdf06c5328eeebd4">&#9670;&#160;</a></span>setuselock()</h2>
+<a id="a6d373c6072497724c8ff77fc4c6a1c20" name="a6d373c6072497724c8ff77fc4c6a1c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d373c6072497724c8ff77fc4c6a1c20">&#9670;&#160;</a></span>setUseLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTschedule::setuselock </td>
+          <td class="memname">void Core::FMTSchedule::setUseLock </td>
           <td>(</td>
           <td class="paramtype">const bool &amp;&#160;</td>
           <td class="paramname"><em>lock</em></td><td>)</td>
@@ -1102,43 +1416,53 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark the schedule has can contains locked developement. </p>
+
+<p>Mark the schedule as able to contain locked developments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lock</td><td>if true the schedule can contain locked developments. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ad5eb41f1e7abb70926c47988d4fbd74a" name="ad5eb41f1e7abb70926c47988d4fbd74a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5eb41f1e7abb70926c47988d4fbd74a">&#9670;&#160;</a></span>size()</h2>
+<a id="a60db4452b76e967e1661e3da6ddbb984" name="a60db4452b76e967e1661e3da6ddbb984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60db4452b76e967e1661e3da6ddbb984">&#9670;&#160;</a></span>size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMTschedule::size </td>
+          <td class="memname">size_t Core::FMTSchedule::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the size of the <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>. </p>
+
+<p>Return the size of the schedule. </p>
+<dl class="section return"><dt>Returns</dt><dd>the size of the schedule. </dd></dl>
 
 </div>
 </div>
-<a id="a59b4c789f6c33a324f27542323e85e30" name="a59b4c789f6c33a324f27542323e85e30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59b4c789f6c33a324f27542323e85e30">&#9670;&#160;</a></span>sort()</h2>
+<a id="a2070640df37868e56e110fdb0e293674" name="a2070640df37868e56e110fdb0e293674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2070640df37868e56e110fdb0e293674">&#9670;&#160;</a></span>sort()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTschedule::sort </td>
+          <td class="memname">void Core::FMTSchedule::sort </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sort the vector of double of the lock level per area for the <a class="el" href="classCore_1_1FMTschedule.html">FMTschedule</a>. </p>
+
+<p>Sort the vector of lock level per area of the schedule. </p>
 
 </div>
 </div>
@@ -1162,12 +1486,26 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>serialize function is for serialization, used to do multiprocessing across multiple cpus (pickle in Pyhton) </p>
+
+<p>Serialize the <a class="el" href="classCore_1_1FMTSchedule.html" title="Spatially referenced schedule describing the area of developments for which an action can be operated...">FMTSchedule</a> through its base <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>the archive type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ar</td><td>the archive to serialize to or from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>the serialization version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTschedule_8hpp_source.html">FMTschedule.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTSchedule_8h_source.html">FMTSchedule.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMToutputnodehasher Class Reference</title>
+<title>FMT: Core::FMTOutputNodeHasher Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,45 +71,60 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMToutputnodehasher.html">FMToutputnodehasher</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTOutputNodeHasher.html">FMTOutputNodeHasher</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classCore_1_1FMToutputnodehasher-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMToutputnodehasher Class Reference</div></div>
+<a href="classCore_1_1FMTOutputNodeHasher-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTOutputNodeHasher Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMToutputnode_8hpp_source.html">FMToutputnode.hpp</a>&gt;</code></p>
+<p>Hasher for output nodes.  
+ <a href="classCore_1_1FMTOutputNodeHasher.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTOutputNode_8h_source.html">FMTOutputNode.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cfb8055f533683560519c20f2853ff8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMToutputnodehasher.html#a4cfb8055f533683560519c20f2853ff8">operator()</a> (const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;node) const</td></tr>
-<tr class="separator:a4cfb8055f533683560519c20f2853ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd1ac547c5d2c4af7ceb820216c0616"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTOutputNodeHasher.html#a6fd1ac547c5d2c4af7ceb820216c0616">operator()</a> (const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;node) const</td></tr>
+<tr class="memdesc:a6fd1ac547c5d2c4af7ceb820216c0616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the hash of an output node.  <br /></td></tr>
+<tr class="separator:a6fd1ac547c5d2c4af7ceb820216c0616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4cfb8055f533683560519c20f2853ff8" name="a4cfb8055f533683560519c20f2853ff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cfb8055f533683560519c20f2853ff8">&#9670;&#160;</a></span>operator()()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Hasher for output nodes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6fd1ac547c5d2c4af7ceb820216c0616" name="a6fd1ac547c5d2c4af7ceb820216c0616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd1ac547c5d2c4af7ceb820216c0616">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Core::FMToutputnodehasher::operator() </td>
+          <td class="memname">size_t Core::FMTOutputNodeHasher::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMToutputnode.html">FMToutputnode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTOutputNode.html">FMTOutputNode</a> &amp;&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return the hash of an output node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">node</td><td>the output node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the hash value. </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMToutputnode_8hpp_source.html">FMToutputnode.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTOutputNode_8h_source.html">FMTOutputNode.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

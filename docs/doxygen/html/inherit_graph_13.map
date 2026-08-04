@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,150,32"/>
-<area shape="rect" id="node2" href="$classLogging_1_1FMTsolverlogger.html" title=" " alt="" coords="198,5,366,32"/>
+<area shape="rect" id="node2" href="$classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler)." alt="" coords="198,5,372,32"/>
 </map>

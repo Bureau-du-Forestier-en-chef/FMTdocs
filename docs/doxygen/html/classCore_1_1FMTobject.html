@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FMT: Core::FMTobject Class Reference</title>
+<title>FMT: Core::FMTObject Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;0.9.8</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCore.html">Core</a></li><li class="navelem"><a class="el" href="classCore_1_1FMTObject.html">FMTObject</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -82,135 +82,194 @@ $(function() {
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classCore_1_1FMTobject-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Core::FMTobject Class Reference</div></div>
+<a href="classCore_1_1FMTObject-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Core::FMTObject Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="FMTobject_8hpp_source.html">FMTobject.hpp</a>&gt;</code></p>
+<p>Base class of multiple FMT classes holding a shared exception handler pointer and logger.  
+ <a href="classCore_1_1FMTObject.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FMTObject_8h_source.html">FMTObject.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Core::FMTobject:</div>
+Inheritance diagram for Core::FMTObject:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTobject__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTObject__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Core::FMTobject:</div>
+Collaboration diagram for Core::FMTObject:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTobject__coll__graph.svg" width="100%" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCore_1_1FMTObject__coll__graph.svg" width="100%" height="537"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a892247268d4fed1aad568ef726b2bf1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a892247268d4fed1aad568ef726b2bf1a">FMTobject</a> ()</td></tr>
-<tr class="separator:a892247268d4fed1aad568ef726b2bf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabbeb37f9454aaae7725341a4fc6b871"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aabbeb37f9454aaae7725341a4fc6b871">~FMTobject</a> ()</td></tr>
-<tr class="separator:aabbeb37f9454aaae7725341a4fc6b871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0d241beec60204ed8d14740a026058"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6f0d241beec60204ed8d14740a026058">FMTobject</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; exhandler)</td></tr>
-<tr class="separator:a6f0d241beec60204ed8d14740a026058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc66512952f3c5563d317d40f5d0bd5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acc66512952f3c5563d317d40f5d0bd5d">FMTobject</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
-<tr class="separator:acc66512952f3c5563d317d40f5d0bd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43beb96c44fa008bbcd475d367a67ab1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a43beb96c44fa008bbcd475d367a67ab1">operator=</a> (const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;rhs)</td></tr>
-<tr class="separator:a43beb96c44fa008bbcd475d367a67ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36054757252bb5f8d1275789271c3e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af36054757252bb5f8d1275789271c3e0">passinlogger</a> (const std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt; &amp;logger)</td></tr>
-<tr class="separator:af36054757252bb5f8d1275789271c3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96f87dd870a03c329ec7dd91c57e0f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ac96f87dd870a03c329ec7dd91c57e0f3">passinexceptionhandler</a> (const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; &amp;exhandler)</td></tr>
-<tr class="separator:ac96f87dd870a03c329ec7dd91c57e0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45a5a60a8bed1b2c7fc3852a5140947f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a45a5a60a8bed1b2c7fc3852a5140947f">redirectlogtofile</a> (const std::string &amp;location)</td></tr>
-<tr class="separator:a45a5a60a8bed1b2c7fc3852a5140947f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb289903aad7488bb9d58a555325dbc6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#acb289903aad7488bb9d58a555325dbc6">setdefaultlogger</a> ()</td></tr>
-<tr class="separator:acb289903aad7488bb9d58a555325dbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f7d55431bdd4c885f84c70436dfeb8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a07f7d55431bdd4c885f84c70436dfeb8">setquietlogger</a> ()</td></tr>
-<tr class="separator:a07f7d55431bdd4c885f84c70436dfeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6929adf1131bc31e51798859cb3b26f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af6929adf1131bc31e51798859cb3b26f">settasklogger</a> ()</td></tr>
-<tr class="separator:af6929adf1131bc31e51798859cb3b26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af84f403de5cbb9676e5da79c8a1f0d74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af84f403de5cbb9676e5da79c8a1f0d74">setdebuglogger</a> ()</td></tr>
-<tr class="separator:af84f403de5cbb9676e5da79c8a1f0d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb70eea83ae75752e107358d7c47d775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#adb70eea83ae75752e107358d7c47d775">setdefaultexceptionhandler</a> ()</td></tr>
-<tr class="separator:adb70eea83ae75752e107358d7c47d775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab718aa354a7b395471a15d29f244477"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#aab718aa354a7b395471a15d29f244477">setquietexceptionhandler</a> ()</td></tr>
-<tr class="separator:aab718aa354a7b395471a15d29f244477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742cafbb0d8d5984e101f2cb2bd2c07e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a742cafbb0d8d5984e101f2cb2bd2c07e">setdebugexceptionhandler</a> ()</td></tr>
-<tr class="separator:a742cafbb0d8d5984e101f2cb2bd2c07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add57ec6ca8cf94e10c56346054ab75d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#add57ec6ca8cf94e10c56346054ab75d6">setfreeexceptionhandler</a> ()</td></tr>
-<tr class="separator:add57ec6ca8cf94e10c56346054ab75d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6340513d0ff7a846c35165c2f9f67b8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a6340513d0ff7a846c35165c2f9f67b8f">disablenestedexceptions</a> ()</td></tr>
-<tr class="separator:a6340513d0ff7a846c35165c2f9f67b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f62b116025059f09987b35324fccd06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a3f62b116025059f09987b35324fccd06">enablenestedexceptions</a> ()</td></tr>
-<tr class="separator:a3f62b116025059f09987b35324fccd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8388f4cbb465e0e0a4bc4369340f4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a1c8388f4cbb465e0e0a4bc4369340f4d">seterrorstowarnings</a> (const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;errors)</td></tr>
-<tr class="separator:a1c8388f4cbb465e0e0a4bc4369340f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ce9242830521f5d6cca21c179f4db5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a5ce9242830521f5d6cca21c179f4db5a">setmaxwarningsbeforesilenced</a> (const size_t &amp;maxwarningcount)</td></tr>
-<tr class="separator:a5ce9242830521f5d6cca21c179f4db5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5989964c8bdbc4650e238ceba3415f4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5989964c8bdbc4650e238ceba3415f4b">FMTObject</a> ()</td></tr>
+<tr class="memdesc:a5989964c8bdbc4650e238ceba3415f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a5989964c8bdbc4650e238ceba3415f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab955c1638c5971685437e031dface505"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ab955c1638c5971685437e031dface505">~FMTObject</a> ()</td></tr>
+<tr class="memdesc:ab955c1638c5971685437e031dface505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default virtual destructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ab955c1638c5971685437e031dface505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8697555450e32d14ac2aca96c970e1e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8697555450e32d14ac2aca96c970e1e1">FMTObject</a> (const std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt; exhandler)</td></tr>
+<tr class="memdesc:a8697555450e32d14ac2aca96c970e1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> passing in the exception handler of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a8697555450e32d14ac2aca96c970e1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e850d7a3cc1b15284cae261cb795807"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6e850d7a3cc1b15284cae261cb795807">FMTObject</a> (const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a6e850d7a3cc1b15284cae261cb795807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a6e850d7a3cc1b15284cae261cb795807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce285348228339cd64ee518af1f1a79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a2ce285348228339cd64ee518af1f1a79">operator=</a> (const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a2ce285348228339cd64ee518af1f1a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a2ce285348228339cd64ee518af1f1a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40cb486c0035d4378f9f8292990bc3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae40cb486c0035d4378f9f8292990bc3a">passInLogger</a> (const std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> &gt; &amp;logger)</td></tr>
+<tr class="memdesc:ae40cb486c0035d4378f9f8292990bc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in the logger of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ae40cb486c0035d4378f9f8292990bc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a87b73d1ec28b2c15ad3534fa116d6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a4a87b73d1ec28b2c15ad3534fa116d6a">passInExceptionHandler</a> (const std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt; &amp;exhandler)</td></tr>
+<tr class="memdesc:a4a87b73d1ec28b2c15ad3534fa116d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in the exception handler of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a4a87b73d1ec28b2c15ad3534fa116d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66db881eed723c434a95abb7a2229c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a66db881eed723c434a95abb7a2229c6b">redirectLogToFile</a> (const std::string &amp;location)</td></tr>
+<tr class="memdesc:a66db881eed723c434a95abb7a2229c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect the log to a specific file, appending to it.  <br /></td></tr>
+<tr class="separator:a66db881eed723c434a95abb7a2229c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dca4d93c27fc39d0cb69ad1706bb810"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5dca4d93c27fc39d0cb69ad1706bb810">setDefaultLogger</a> ()</td></tr>
+<tr class="memdesc:a5dca4d93c27fc39d0cb69ad1706bb810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a default logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a5dca4d93c27fc39d0cb69ad1706bb810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae177a4815e2cc6ee213c33a84b232341"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae177a4815e2cc6ee213c33a84b232341">setQuietLogger</a> ()</td></tr>
+<tr class="memdesc:ae177a4815e2cc6ee213c33a84b232341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a quiet logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:ae177a4815e2cc6ee213c33a84b232341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce57b52ae4dad4e732828865eef9fc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6ce57b52ae4dad4e732828865eef9fc0">setTaskLogger</a> ()</td></tr>
+<tr class="memdesc:a6ce57b52ae4dad4e732828865eef9fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a task logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a6ce57b52ae4dad4e732828865eef9fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250d795d6a207b8908e66469d4d40d2d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a250d795d6a207b8908e66469d4d40d2d">setDebugLogger</a> ()</td></tr>
+<tr class="memdesc:a250d795d6a207b8908e66469d4d40d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a debug logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a250d795d6a207b8908e66469d4d40d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e828d3cce573889111b5a8807be8420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a9e828d3cce573889111b5a8807be8420">setDefaultExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a9e828d3cce573889111b5a8807be8420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a default exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a9e828d3cce573889111b5a8807be8420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0645f42b4e16e0129a255502c619e763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a0645f42b4e16e0129a255502c619e763">setQuietExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a0645f42b4e16e0129a255502c619e763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a quiet exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a0645f42b4e16e0129a255502c619e763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef2e1a565e81d4801dad5aa755a0331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#afef2e1a565e81d4801dad5aa755a0331">setDebugExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:afef2e1a565e81d4801dad5aa755a0331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a debug exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:afef2e1a565e81d4801dad5aa755a0331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541d8bc7ad3b4daf0c3bd940ab3657fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a541d8bc7ad3b4daf0c3bd940ab3657fb">setFreeExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a541d8bc7ad3b4daf0c3bd940ab3657fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and set a free exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
+<tr class="separator:a541d8bc7ad3b4daf0c3bd940ab3657fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2556e9eb9800e31966c291c5e58c3d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ae2556e9eb9800e31966c291c5e58c3d8">disableNestedExceptions</a> ()</td></tr>
+<tr class="memdesc:ae2556e9eb9800e31966c291c5e58c3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the nested exception throw of the exception handler.  <br /></td></tr>
+<tr class="separator:ae2556e9eb9800e31966c291c5e58c3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5666a3ee1b26fd5adffa35cead4ec98e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5666a3ee1b26fd5adffa35cead4ec98e">enableNestedExceptions</a> ()</td></tr>
+<tr class="memdesc:a5666a3ee1b26fd5adffa35cead4ec98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the nested exception throw of the exception handler.  <br /></td></tr>
+<tr class="separator:a5666a3ee1b26fd5adffa35cead4ec98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42040b7eee6eeb90bb8ae2d4c8eb8fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ad42040b7eee6eeb90bb8ae2d4c8eb8fc">setErrorsToWarnings</a> (const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;errors)</td></tr>
+<tr class="memdesc:ad42040b7eee6eeb90bb8ae2d4c8eb8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a list of errors to be cast to warnings on the exception handler.  <br /></td></tr>
+<tr class="separator:ad42040b7eee6eeb90bb8ae2d4c8eb8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33a4b0a35f673fbf5b36767d2309359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#af33a4b0a35f673fbf5b36767d2309359">setMaxWarningsBeforeSilenced</a> (const size_t &amp;maxwarningcount)</td></tr>
+<tr class="memdesc:af33a4b0a35f673fbf5b36767d2309359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of warnings raised before being silenced.  <br /></td></tr>
+<tr class="separator:af33a4b0a35f673fbf5b36767d2309359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3976d191c15cdf6d244041617b9e5c"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:aba3976d191c15cdf6d244041617b9e5c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#aba3976d191c15cdf6d244041617b9e5c">serialize</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="separator:aba3976d191c15cdf6d244041617b9e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a41e9c6a09ec5a8776a1783f50cd685c3"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a41e9c6a09ec5a8776a1783f50cd685c3">getruntimelocation</a> ()</td></tr>
-<tr class="separator:a41e9c6a09ec5a8776a1783f50cd685c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e8ae1c63c33235ce7eec85e29f5b871"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a9e8ae1c63c33235ce7eec85e29f5b871">getavailablememory</a> ()</td></tr>
-<tr class="separator:a9e8ae1c63c33235ce7eec85e29f5b871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1093d2ceaa87c08bc17c3d8f9df16f91"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a1093d2ceaa87c08bc17c3d8f9df16f91">getLogger</a> ()</td></tr>
+<tr class="memdesc:a1093d2ceaa87c08bc17c3d8f9df16f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to the actual logger.  <br /></td></tr>
+<tr class="separator:a1093d2ceaa87c08bc17c3d8f9df16f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c4fc499c4a6ca29d12d3631a27a85f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a24c4fc499c4a6ca29d12d3631a27a85f">getExceptionHandler</a> ()</td></tr>
+<tr class="memdesc:a24c4fc499c4a6ca29d12d3631a27a85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a pointer to the actual exception handler.  <br /></td></tr>
+<tr class="separator:a24c4fc499c4a6ca29d12d3631a27a85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820b103f83923fe3868af1addd493a07"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a820b103f83923fe3868af1addd493a07">getRuntimeLocation</a> ()</td></tr>
+<tr class="memdesc:a820b103f83923fe3868af1addd493a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the location of the FMT shared library.  <br /></td></tr>
+<tr class="separator:a820b103f83923fe3868af1addd493a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8594b45558117e221cddcc22d5b391b4"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8594b45558117e221cddcc22d5b391b4">getAvailableMemory</a> ()</td></tr>
+<tr class="memdesc:a8594b45558117e221cddcc22d5b391b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the available memory in bytes.  <br /></td></tr>
+<tr class="separator:a8594b45558117e221cddcc22d5b391b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12becc87d9673dbed45fede598e1159"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#af12becc87d9673dbed45fede598e1159">setTerminateStack</a> ()</td></tr>
+<tr class="memdesc:af12becc87d9673dbed45fede598e1159"><td class="mdescLeft">&#160;</td><td class="mdescRight">will write the stack in the log when terminate called and raise a function failed.  <br /></td></tr>
+<tr class="separator:af12becc87d9673dbed45fede598e1159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3459117ab05b91a388d9038861612ef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ac3459117ab05b91a388d9038861612ef">setAbortStack</a> ()</td></tr>
+<tr class="memdesc:ac3459117ab05b91a388d9038861612ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">will write the stack in the log when abort called with SIGABRT and raise a function failed.  <br /></td></tr>
+<tr class="separator:ac3459117ab05b91a388d9038861612ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a055e793199bfade8b06bc4850068b9a1"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
-<tr class="memitem:a055e793199bfade8b06bc4850068b9a1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a055e793199bfade8b06bc4850068b9a1">forcesave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
-<tr class="separator:a055e793199bfade8b06bc4850068b9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae956a19b19717b32398b7f9964078a78"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
-<tr class="memitem:ae956a19b19717b32398b7f9964078a78"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae956a19b19717b32398b7f9964078a78">forceload</a> (Archive &amp;ar, const unsigned int version)</td></tr>
-<tr class="separator:ae956a19b19717b32398b7f9964078a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63052f0f74d5884e111d7dd9e8f0cc7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a63052f0f74d5884e111d7dd9e8f0cc7d">checksignals</a> () const</td></tr>
-<tr class="separator:a63052f0f74d5884e111d7dd9e8f0cc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6f90ea44d4007946cc7bf0e145f7b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#abf6f90ea44d4007946cc7bf0e145f7b5">setCPLhandler</a> ()</td></tr>
-<tr class="separator:abf6f90ea44d4007946cc7bf0e145f7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b765e433d09e77e6ba0b71b878aa17"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:a18b765e433d09e77e6ba0b71b878aa17"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a18b765e433d09e77e6ba0b71b878aa17">forceSave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
+<tr class="memdesc:a18b765e433d09e77e6ba0b71b878aa17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the serialization to save useful information, which the default <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> serialization does not.  <br /></td></tr>
+<tr class="separator:a18b765e433d09e77e6ba0b71b878aa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f86594af021e33785e50f02d9e0dc2d"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:a2f86594af021e33785e50f02d9e0dc2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a2f86594af021e33785e50f02d9e0dc2d">forceLoad</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr class="memdesc:a2f86594af021e33785e50f02d9e0dc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the serialization to load useful information, which the default <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> serialization does not.  <br /></td></tr>
+<tr class="separator:a2f86594af021e33785e50f02d9e0dc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715adec36e069e8da16e6b654036c1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a715adec36e069e8da16e6b654036c1d3">checkSignals</a> () const</td></tr>
+<tr class="memdesc:a715adec36e069e8da16e6b654036c1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the user has sent a ctrl-c signal using boost::python to FMT.  <br /></td></tr>
+<tr class="separator:a715adec36e069e8da16e6b654036c1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfd3485fef202f7761386c5da8616dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a4bfd3485fef202f7761386c5da8616dd">setCplHandler</a> ()</td></tr>
+<tr class="memdesc:a4bfd3485fef202f7761386c5da8616dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the FMT exception handler to the GDAL exception handler (GDAL only).  <br /></td></tr>
+<tr class="separator:a4bfd3485fef202f7761386c5da8616dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab87002d0212cf0b244771760a6ec56d1"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ab87002d0212cf0b244771760a6ec56d1">getclock</a> ()</td></tr>
-<tr class="separator:ab87002d0212cf0b244771760a6ec56d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
-<tr class="memitem:a4df7cf79433c24ff1f98a4521c02e155"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a4df7cf79433c24ff1f98a4521c02e155">getduration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
-<tr class="separator:a4df7cf79433c24ff1f98a4521c02e155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af08563fdef482c39ad0cbf3a5018bfa0"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#af08563fdef482c39ad0cbf3a5018bfa0">getdurationinseconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
-<tr class="separator:af08563fdef482c39ad0cbf3a5018bfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af49a6bea8633e43e507b22af0058bd"><td class="memItemLeft" align="right" valign="top">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a6af49a6bea8633e43e507b22af0058bd">getClock</a> ()</td></tr>
+<tr class="memdesc:a6af49a6bea8633e43e507b22af0058bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a clock of the current time.  <br /></td></tr>
+<tr class="separator:a6af49a6bea8633e43e507b22af0058bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8346ffb6063935898bf385f9c045922c"><td class="memTemplParams" colspan="2">template&lt;class chrono &gt; </td></tr>
+<tr class="memitem:a8346ffb6063935898bf385f9c045922c"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a8346ffb6063935898bf385f9c045922c">getDuration</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="memdesc:a8346ffb6063935898bf385f9c045922c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time elapsed since a start clock as a double.  <br /></td></tr>
+<tr class="separator:a8346ffb6063935898bf385f9c045922c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00269b861be5d6f63d9063d3b0f9dc53"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a00269b861be5d6f63d9063d3b0f9dc53">getDurationInSeconds</a> (const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;startclock)</td></tr>
+<tr class="memdesc:a00269b861be5d6f63d9063d3b0f9dc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time elapsed since a start clock in seconds as a string.  <br /></td></tr>
+<tr class="separator:a00269b861be5d6f63d9063d3b0f9dc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadaa40fdf3ad161e50ffde0da75b45a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#abadaa40fdf3ad161e50ffde0da75b45a">_logStack</a> ()</td></tr>
+<tr class="memdesc:abadaa40fdf3ad161e50ffde0da75b45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the stack trace...  <br /></td></tr>
+<tr class="separator:abadaa40fdf3ad161e50ffde0da75b45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa580ed0261751bf0c893fa624ad9477c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#aa580ed0261751bf0c893fa624ad9477c">_terminate</a> ()</td></tr>
+<tr class="memdesc:aa580ed0261751bf0c893fa624ad9477c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise an error with the boost stacktrace.  <br /></td></tr>
+<tr class="separator:aa580ed0261751bf0c893fa624ad9477c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad585fe664920bb6246fe453242e4cd3d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ad585fe664920bb6246fe453242e4cd3d">_abort</a> (int p_signal)</td></tr>
+<tr class="memdesc:ad585fe664920bb6246fe453242e4cd3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise an error with the boost stacktrace on abort.  <br /></td></tr>
+<tr class="separator:ad585fe664920bb6246fe453242e4cd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:ae67617ff7aedd99989a071bcf11206f2"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ae67617ff7aedd99989a071bcf11206f2">_exhandler</a></td></tr>
-<tr class="memdesc:ae67617ff7aedd99989a071bcf11206f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <br /></td></tr>
-<tr class="separator:ae67617ff7aedd99989a071bcf11206f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f73fe80b34fae5f277ec5135d1d22d"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#a52f73fe80b34fae5f277ec5135d1d22d">_logger</a></td></tr>
-<tr class="memdesc:a52f73fe80b34fae5f277ec5135d1d22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <br /></td></tr>
-<tr class="separator:a52f73fe80b34fae5f277ec5135d1d22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540a432760681024cf9a5e15956613a2"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a540a432760681024cf9a5e15956613a2">_exhandler</a></td></tr>
+<tr class="memdesc:a540a432760681024cf9a5e15956613a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the exception handler.  <br /></td></tr>
+<tr class="separator:a540a432760681024cf9a5e15956613a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c5f2112616efab38c81ad16f93a364"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a44c5f2112616efab38c81ad16f93a364">_logger</a></td></tr>
+<tr class="memdesc:a44c5f2112616efab38c81ad16f93a364"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the logger.  <br /></td></tr>
+<tr class="separator:a44c5f2112616efab38c81ad16f93a364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTobject.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
+<tr class="memdesc:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>).  <br /></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> is the base class of multiple class it hold a shared exception handler pointer and logger. <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> plays a big role into exception handling and for ctrl-c signals for boost python. It also contains some usefull functions for mask validation and runtimelocation etc... </p>
+<div class="textblock"><p>Base class of multiple FMT classes holding a shared exception handler pointer and logger. </p>
+<p>Plays a major role in exception handling and ctrl-c signals for boost::python, and provides utility functions for mask validation and runtime location. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a892247268d4fed1aad568ef726b2bf1a" name="a892247268d4fed1aad568ef726b2bf1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892247268d4fed1aad568ef726b2bf1a">&#9670;&#160;</a></span>FMTobject() <span class="overload">[1/3]</span></h2>
+<a id="a5989964c8bdbc4650e238ceba3415f4b" name="a5989964c8bdbc4650e238ceba3415f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5989964c8bdbc4650e238ceba3415f4b">&#9670;&#160;</a></span>FMTObject() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTobject::FMTobject </td>
+          <td class="memname">Core::FMTObject::FMTObject </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> default constructor. </p>
+
+<p>Default constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="aabbeb37f9454aaae7725341a4fc6b871" name="aabbeb37f9454aaae7725341a4fc6b871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabbeb37f9454aaae7725341a4fc6b871">&#9670;&#160;</a></span>~FMTobject()</h2>
+<a id="ab955c1638c5971685437e031dface505" name="ab955c1638c5971685437e031dface505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab955c1638c5971685437e031dface505">&#9670;&#160;</a></span>~FMTObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +278,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Core::FMTobject::~FMTobject </td>
+          <td class="memname">virtual Core::FMTObject::~FMTObject </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -231,51 +290,66 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> default virutal destructor. </p>
+
+<p>Default virtual destructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="a6f0d241beec60204ed8d14740a026058" name="a6f0d241beec60204ed8d14740a026058"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f0d241beec60204ed8d14740a026058">&#9670;&#160;</a></span>FMTobject() <span class="overload">[2/3]</span></h2>
+<a id="a8697555450e32d14ac2aca96c970e1e1" name="a8697555450e32d14ac2aca96c970e1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8697555450e32d14ac2aca96c970e1e1">&#9670;&#160;</a></span>FMTObject() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTobject::FMTobject </td>
+          <td class="memname">Core::FMTObject::FMTObject </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt;&#160;</td>
+          <td class="paramtype">const std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt;&#160;</td>
           <td class="paramname"><em>exhandler</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>When constructing a new <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> it's sometime usefull to passin the exception handler of an other <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Construct a <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> passing in the exception handler of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">exhandler</td><td>the exception handler to pass in. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="acc66512952f3c5563d317d40f5d0bd5d" name="acc66512952f3c5563d317d40f5d0bd5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc66512952f3c5563d317d40f5d0bd5d">&#9670;&#160;</a></span>FMTobject() <span class="overload">[3/3]</span></h2>
+<a id="a6e850d7a3cc1b15284cae261cb795807" name="a6e850d7a3cc1b15284cae261cb795807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e850d7a3cc1b15284cae261cb795807">&#9670;&#160;</a></span>FMTObject() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Core::FMTobject::FMTobject </td>
+          <td class="memname">Core::FMTObject::FMTObject </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> default copy constructor. </p>
+
+<p>Copy constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a63052f0f74d5884e111d7dd9e8f0cc7d" name="a63052f0f74d5884e111d7dd9e8f0cc7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63052f0f74d5884e111d7dd9e8f0cc7d">&#9670;&#160;</a></span>checksignals()</h2>
+<a id="ad585fe664920bb6246fe453242e4cd3d" name="ad585fe664920bb6246fe453242e4cd3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad585fe664920bb6246fe453242e4cd3d">&#9670;&#160;</a></span>_abort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +358,95 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::checksignals </td>
+          <td class="memname">static void Core::FMTObject::_abort </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p_signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Raise an error with the boost stacktrace on abort. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_signal</td><td>the signal for abort. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abadaa40fdf3ad161e50ffde0da75b45a" name="abadaa40fdf3ad161e50ffde0da75b45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abadaa40fdf3ad161e50ffde0da75b45a">&#9670;&#160;</a></span>_logStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Core::FMTObject::_logStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Log the stack trace... </p>
+
+</div>
+</div>
+<a id="aa580ed0261751bf0c893fa624ad9477c" name="aa580ed0261751bf0c893fa624ad9477c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa580ed0261751bf0c893fa624ad9477c">&#9670;&#160;</a></span>_terminate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Core::FMTObject::_terminate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Raise an error with the boost stacktrace. </p>
+
+</div>
+</div>
+<a id="a715adec36e069e8da16e6b654036c1d3" name="a715adec36e069e8da16e6b654036c1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715adec36e069e8da16e6b654036c1d3">&#9670;&#160;</a></span>checkSignals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::FMTObject::checkSignals </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -296,48 +458,51 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function only check if the user has sent a ctrl-c signal using boost::python to FMT. </p>
+
+<p>Check if the user has sent a ctrl-c signal using boost::python to FMT. </p>
 
 </div>
 </div>
-<a id="a6340513d0ff7a846c35165c2f9f67b8f" name="a6340513d0ff7a846c35165c2f9f67b8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6340513d0ff7a846c35165c2f9f67b8f">&#9670;&#160;</a></span>disablenestedexceptions()</h2>
+<a id="ae2556e9eb9800e31966c291c5e58c3d8" name="ae2556e9eb9800e31966c291c5e58c3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2556e9eb9800e31966c291c5e58c3d8">&#9670;&#160;</a></span>disableNestedExceptions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::disablenestedexceptions </td>
+          <td class="memname">void Core::FMTObject::disableNestedExceptions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Disable nested exception throw of the Exceptionhandler by default all handlers do nested exception throw. </p>
+
+<p>Disable the nested exception throw of the exception handler. </p>
 
 </div>
 </div>
-<a id="a3f62b116025059f09987b35324fccd06" name="a3f62b116025059f09987b35324fccd06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f62b116025059f09987b35324fccd06">&#9670;&#160;</a></span>enablenestedexceptions()</h2>
+<a id="a5666a3ee1b26fd5adffa35cead4ec98e" name="a5666a3ee1b26fd5adffa35cead4ec98e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5666a3ee1b26fd5adffa35cead4ec98e">&#9670;&#160;</a></span>enableNestedExceptions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::enablenestedexceptions </td>
+          <td class="memname">void Core::FMTObject::enableNestedExceptions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enable nested exception throw of the Exceptionhandler by default all handlers do nested exception throw. </p>
+
+<p>Enable the nested exception throw of the exception handler. </p>
 
 </div>
 </div>
-<a id="ae956a19b19717b32398b7f9964078a78" name="ae956a19b19717b32398b7f9964078a78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae956a19b19717b32398b7f9964078a78">&#9670;&#160;</a></span>forceload()</h2>
+<a id="a2f86594af021e33785e50f02d9e0dc2d" name="a2f86594af021e33785e50f02d9e0dc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f86594af021e33785e50f02d9e0dc2d">&#9670;&#160;</a></span>forceLoad()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +513,7 @@ template&lt;class Archive &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::forceload </td>
+          <td class="memname">void Core::FMTObject::forceLoad </td>
           <td>(</td>
           <td class="paramtype">Archive &amp;&#160;</td>
           <td class="paramname"><em>ar</em>, </td>
@@ -371,12 +536,26 @@ template&lt;class Archive &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>By Default the serialization of a <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> does nothing if you want to get some usefull information use this function. </p>
+
+<p>Force the serialization to load useful information, which the default <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> serialization does not. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>the archive type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ar</td><td>the archive to load from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>the serialization version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a055e793199bfade8b06bc4850068b9a1" name="a055e793199bfade8b06bc4850068b9a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a055e793199bfade8b06bc4850068b9a1">&#9670;&#160;</a></span>forcesave()</h2>
+<a id="a18b765e433d09e77e6ba0b71b878aa17" name="a18b765e433d09e77e6ba0b71b878aa17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b765e433d09e77e6ba0b71b878aa17">&#9670;&#160;</a></span>forceSave()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,7 +566,7 @@ template&lt;class Archive &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::forcesave </td>
+          <td class="memname">void Core::FMTObject::forceSave </td>
           <td>(</td>
           <td class="paramtype">Archive &amp;&#160;</td>
           <td class="paramname"><em>ar</em>, </td>
@@ -410,12 +589,26 @@ template&lt;class Archive &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>By Default the serialization of a <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> does nothing if you want to get some usefull information use this function. </p>
+
+<p>Force the serialization to save useful information, which the default <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> serialization does not. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>the archive type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ar</td><td>the archive to save to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>the serialization version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a9e8ae1c63c33235ce7eec85e29f5b871" name="a9e8ae1c63c33235ce7eec85e29f5b871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e8ae1c63c33235ce7eec85e29f5b871">&#9670;&#160;</a></span>getavailablememory()</h2>
+<a id="a8594b45558117e221cddcc22d5b391b4" name="a8594b45558117e221cddcc22d5b391b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8594b45558117e221cddcc22d5b391b4">&#9670;&#160;</a></span>getAvailableMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,7 +617,7 @@ template&lt;class Archive &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static unsigned long long Core::FMTobject::getavailablememory </td>
+          <td class="memname">static unsigned long long Core::FMTObject::getAvailableMemory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -436,12 +629,14 @@ template&lt;class Archive &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the available memory in bytes </p>
+
+<p>Return the available memory in bytes. </p>
+<dl class="section return"><dt>Returns</dt><dd>the available memory in bytes. </dd></dl>
 
 </div>
 </div>
-<a id="ab87002d0212cf0b244771760a6ec56d1" name="ab87002d0212cf0b244771760a6ec56d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab87002d0212cf0b244771760a6ec56d1">&#9670;&#160;</a></span>getclock()</h2>
+<a id="a6af49a6bea8633e43e507b22af0058bd" name="a6af49a6bea8633e43e507b22af0058bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af49a6bea8633e43e507b22af0058bd">&#9670;&#160;</a></span>getClock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,7 +645,7 @@ template&lt;class Archive &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; Core::FMTobject::getclock </td>
+          <td class="memname">static std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; Core::FMTObject::getClock </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -462,12 +657,14 @@ template&lt;class Archive &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Will return a clock of "now" time. </p>
+
+<p>Return a clock of the current time. </p>
+<dl class="section return"><dt>Returns</dt><dd>a clock of the current time. </dd></dl>
 
 </div>
 </div>
-<a id="a4df7cf79433c24ff1f98a4521c02e155" name="a4df7cf79433c24ff1f98a4521c02e155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4df7cf79433c24ff1f98a4521c02e155">&#9670;&#160;</a></span>getduration()</h2>
+<a id="a8346ffb6063935898bf385f9c045922c" name="a8346ffb6063935898bf385f9c045922c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8346ffb6063935898bf385f9c045922c">&#9670;&#160;</a></span>getDuration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,7 +675,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static double Core::FMTobject::getduration </td>
+          <td class="memname">static double Core::FMTObject::getDuration </td>
           <td>(</td>
           <td class="paramtype">const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;&#160;</td>
           <td class="paramname"><em>startclock</em></td><td>)</td>
@@ -491,12 +688,26 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>With the high resolution clock you can get the time it took has a double. </p>
+
+<p>Return the time elapsed since a start clock as a double. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">chrono</td><td>the duration type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">startclock</td><td>the start clock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the elapsed time. </dd></dl>
 
 </div>
 </div>
-<a id="af08563fdef482c39ad0cbf3a5018bfa0" name="af08563fdef482c39ad0cbf3a5018bfa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af08563fdef482c39ad0cbf3a5018bfa0">&#9670;&#160;</a></span>getdurationinseconds()</h2>
+<a id="a00269b861be5d6f63d9063d3b0f9dc53" name="a00269b861be5d6f63d9063d3b0f9dc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00269b861be5d6f63d9063d3b0f9dc53">&#9670;&#160;</a></span>getDurationInSeconds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,7 +716,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::string Core::FMTobject::getdurationinseconds </td>
+          <td class="memname">static std::string Core::FMTObject::getDurationInSeconds </td>
           <td>(</td>
           <td class="paramtype">const std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; &amp;&#160;</td>
           <td class="paramname"><em>startclock</em></td><td>)</td>
@@ -518,12 +729,20 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>With the clock time calculate time spent in second and return a string. </p>
+
+<p>Return the time elapsed since a start clock in seconds as a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">startclock</td><td>the start clock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the elapsed time in seconds. </dd></dl>
 
 </div>
 </div>
-<a id="a41e9c6a09ec5a8776a1783f50cd685c3" name="a41e9c6a09ec5a8776a1783f50cd685c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41e9c6a09ec5a8776a1783f50cd685c3">&#9670;&#160;</a></span>getruntimelocation()</h2>
+<a id="a24c4fc499c4a6ca29d12d3631a27a85f" name="a24c4fc499c4a6ca29d12d3631a27a85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c4fc499c4a6ca29d12d3631a27a85f">&#9670;&#160;</a></span>getExceptionHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +751,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::string Core::FMTobject::getruntimelocation </td>
+          <td class="memname">static <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> * Core::FMTObject::getExceptionHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -544,50 +763,14 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function return the location of the FMT shared library location. </p>
+
+<p>get a pointer to the actual exception handler. </p>
+<dl class="section return"><dt>Returns</dt><dd>the valid FMTExceptionHandler; </dd></dl>
 
 </div>
 </div>
-<a id="a43beb96c44fa008bbcd475d367a67ab1" name="a43beb96c44fa008bbcd475d367a67ab1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43beb96c44fa008bbcd475d367a67ab1">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp; Core::FMTobject::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="classCore_1_1FMTobject.html">FMTobject</a> default copy assignment. </p>
-
-</div>
-</div>
-<a id="ac96f87dd870a03c329ec7dd91c57e0f3" name="ac96f87dd870a03c329ec7dd91c57e0f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac96f87dd870a03c329ec7dd91c57e0f3">&#9670;&#160;</a></span>passinexceptionhandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Core::FMTobject::passinexceptionhandler </td>
-          <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>exhandler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>It's sometime usefull to pass in the exception handler of an other <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
-
-</div>
-</div>
-<a id="af36054757252bb5f8d1275789271c3e0" name="af36054757252bb5f8d1275789271c3e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af36054757252bb5f8d1275789271c3e0">&#9670;&#160;</a></span>passinlogger()</h2>
+<a id="a1093d2ceaa87c08bc17c3d8f9df16f91" name="a1093d2ceaa87c08bc17c3d8f9df16f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1093d2ceaa87c08bc17c3d8f9df16f91">&#9670;&#160;</a></span>getLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -596,9 +779,118 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Core::FMTobject::passinlogger </td>
+          <td class="memname">static <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> * Core::FMTObject::getLogger </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a> &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get a pointer to the actual logger. </p>
+<dl class="section return"><dt>Returns</dt><dd>the valid FMTLogger </dd></dl>
+
+</div>
+</div>
+<a id="a820b103f83923fe3868af1addd493a07" name="a820b103f83923fe3868af1addd493a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a820b103f83923fe3868af1addd493a07">&#9670;&#160;</a></span>getRuntimeLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string Core::FMTObject::getRuntimeLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the location of the FMT shared library. </p>
+<dl class="section return"><dt>Returns</dt><dd>the runtime location of the FMT shared library. </dd></dl>
+
+</div>
+</div>
+<a id="a2ce285348228339cd64ee518af1f1a79" name="a2ce285348228339cd64ee518af1f1a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce285348228339cd64ee518af1f1a79">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp; Core::FMTObject::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTObject.html">FMTObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy assignment operator for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4a87b73d1ec28b2c15ad3534fa116d6a" name="a4a87b73d1ec28b2c15ad3534fa116d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a87b73d1ec28b2c15ad3534fa116d6a">&#9670;&#160;</a></span>passInExceptionHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::FMTObject::passInExceptionHandler </td>
+          <td>(</td>
+          <td class="paramtype">const std::unique_ptr&lt; <a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>exhandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pass in the exception handler of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">exhandler</td><td>the exception handler to pass in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae40cb486c0035d4378f9f8292990bc3a" name="ae40cb486c0035d4378f9f8292990bc3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40cb486c0035d4378f9f8292990bc3a">&#9670;&#160;</a></span>passInLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Core::FMTObject::passInLogger </td>
+          <td>(</td>
+          <td class="paramtype">const std::unique_ptr&lt; <a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>logger</em></td><td>)</td>
           <td></td>
         </tr>
@@ -609,20 +901,27 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>It's sometime usefull to pass in the logger of an other <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
 
-<p>Reimplemented in <a class="el" href="classModels_1_1FMTlpsolver.html#a2dbcf6ebeab21fbaf1d4d28b9333b374">Models::FMTlpsolver</a>, <a class="el" href="classParallel_1_1FMTopareaschedulertask.html#a4f549d7426b0cffbb45e793358ba8aa8">Parallel::FMTopareaschedulertask</a>, <a class="el" href="classParallel_1_1FMTplanningtask.html#a2131b29c0cd433ed9152929da7aa36be">Parallel::FMTplanningtask</a>, <a class="el" href="classParallel_1_1FMTreplanningtask.html#aba072e8d97f5f84d79161ff605b91a25">Parallel::FMTreplanningtask</a>, <a class="el" href="classModels_1_1FMTsrmodel.html#aa6e380e034a938b0b6993b742ed29540">Models::FMTsrmodel</a>, and <a class="el" href="classParallel_1_1FMTtaskhandler.html#a7ab43845add69f9f3513937d7b0e0234">Parallel::FMTtaskhandler</a>.</p>
+<p>Pass in the logger of another <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">logger</td><td>the logger to pass in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classModels_1_1FMTLpSolver.html#af9f4bc2d69e69ecd37e7f4c4934af270">Models::FMTLpSolver</a>, <a class="el" href="classParallel_1_1FMTOpAreaSchedulerTask.html#a174218a2857cf3df7282bea8f827243a">Parallel::FMTOpAreaSchedulerTask</a>, <a class="el" href="classParallel_1_1FMTPlanningTask.html#a38db0c7fabef2e0789c634d9861f3f7d">Parallel::FMTPlanningTask</a>, <a class="el" href="classParallel_1_1FMTReplanningTask.html#a8805ea14b08ad0a653b641a5e1f404a5">Parallel::FMTReplanningTask</a>, <a class="el" href="classModels_1_1FMTSrModel.html#a13fc62d7109bc36a3c3cd6ff3649865b">Models::FMTSrModel</a>, and <a class="el" href="classParallel_1_1FMTTaskHandler.html#a384db24e1b5d27999aad42c2c9a9a30b">Parallel::FMTTaskHandler</a>.</p>
 
 </div>
 </div>
-<a id="a45a5a60a8bed1b2c7fc3852a5140947f" name="a45a5a60a8bed1b2c7fc3852a5140947f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45a5a60a8bed1b2c7fc3852a5140947f">&#9670;&#160;</a></span>redirectlogtofile()</h2>
+<a id="a66db881eed723c434a95abb7a2229c6b" name="a66db881eed723c434a95abb7a2229c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66db881eed723c434a95abb7a2229c6b">&#9670;&#160;</a></span>redirectLogToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::redirectlogtofile </td>
+          <td class="memname">void Core::FMTObject::redirectLogToFile </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>location</em></td><td>)</td>
@@ -630,12 +929,57 @@ template&lt;class chrono &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>redict the log to a specific file (will append to it) </p>
+
+<p>Redirect the log to a specific file, appending to it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">location</td><td>the file to redirect the log to. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="abf6f90ea44d4007946cc7bf0e145f7b5" name="abf6f90ea44d4007946cc7bf0e145f7b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf6f90ea44d4007946cc7bf0e145f7b5">&#9670;&#160;</a></span>setCPLhandler()</h2>
+<a id="aba3976d191c15cdf6d244041617b9e5c" name="aba3976d191c15cdf6d244041617b9e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba3976d191c15cdf6d244041617b9e5c">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Archive &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::FMTObject::serialize </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em>ar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3459117ab05b91a388d9038861612ef" name="ac3459117ab05b91a388d9038861612ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3459117ab05b91a388d9038861612ef">&#9670;&#160;</a></span>setAbortStack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -644,7 +988,34 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::setCPLhandler </td>
+          <td class="memname">static void Core::FMTObject::setAbortStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>will write the stack in the log when abort called with SIGABRT and raise a function failed. </p>
+
+</div>
+</div>
+<a id="a4bfd3485fef202f7761386c5da8616dd" name="a4bfd3485fef202f7761386c5da8616dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bfd3485fef202f7761386c5da8616dd">&#9670;&#160;</a></span>setCplHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::FMTObject::setCplHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -656,30 +1027,32 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is for gdal only it pass the FMT exception handler to gdal exception handler. </p>
+
+<p>Pass the FMT exception handler to the GDAL exception handler (GDAL only). </p>
 
 </div>
 </div>
-<a id="a742cafbb0d8d5984e101f2cb2bd2c07e" name="a742cafbb0d8d5984e101f2cb2bd2c07e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a742cafbb0d8d5984e101f2cb2bd2c07e">&#9670;&#160;</a></span>setdebugexceptionhandler()</h2>
+<a id="afef2e1a565e81d4801dad5aa755a0331" name="afef2e1a565e81d4801dad5aa755a0331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef2e1a565e81d4801dad5aa755a0331">&#9670;&#160;</a></span>setDebugExceptionHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::setdebugexceptionhandler </td>
+          <td class="memname">void Core::FMTObject::setDebugExceptionHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create and set a debug exception handler to the <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Create and set a debug exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="af84f403de5cbb9676e5da79c8a1f0d74" name="af84f403de5cbb9676e5da79c8a1f0d74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af84f403de5cbb9676e5da79c8a1f0d74">&#9670;&#160;</a></span>setdebuglogger()</h2>
+<a id="a250d795d6a207b8908e66469d4d40d2d" name="a250d795d6a207b8908e66469d4d40d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a250d795d6a207b8908e66469d4d40d2d">&#9670;&#160;</a></span>setDebugLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -688,7 +1061,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Core::FMTobject::setdebuglogger </td>
+          <td class="memname">virtual void Core::FMTObject::setDebugLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -700,30 +1073,32 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create and set a debug logger to the <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Create and set a debug logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="adb70eea83ae75752e107358d7c47d775" name="adb70eea83ae75752e107358d7c47d775"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb70eea83ae75752e107358d7c47d775">&#9670;&#160;</a></span>setdefaultexceptionhandler()</h2>
+<a id="a9e828d3cce573889111b5a8807be8420" name="a9e828d3cce573889111b5a8807be8420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e828d3cce573889111b5a8807be8420">&#9670;&#160;</a></span>setDefaultExceptionHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::setdefaultexceptionhandler </td>
+          <td class="memname">void Core::FMTObject::setDefaultExceptionHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create and set a default exception handler to the <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Create and set a default exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="acb289903aad7488bb9d58a555325dbc6" name="acb289903aad7488bb9d58a555325dbc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb289903aad7488bb9d58a555325dbc6">&#9670;&#160;</a></span>setdefaultlogger()</h2>
+<a id="a5dca4d93c27fc39d0cb69ad1706bb810" name="a5dca4d93c27fc39d0cb69ad1706bb810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dca4d93c27fc39d0cb69ad1706bb810">&#9670;&#160;</a></span>setDefaultLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -732,7 +1107,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Core::FMTobject::setdefaultlogger </td>
+          <td class="memname">virtual void Core::FMTObject::setDefaultLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -744,18 +1119,19 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create and set a default logger to the <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Create and set a default logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="a1c8388f4cbb465e0e0a4bc4369340f4d" name="a1c8388f4cbb465e0e0a4bc4369340f4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c8388f4cbb465e0e0a4bc4369340f4d">&#9670;&#160;</a></span>seterrorstowarnings()</h2>
+<a id="ad42040b7eee6eeb90bb8ae2d4c8eb8fc" name="ad42040b7eee6eeb90bb8ae2d4c8eb8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42040b7eee6eeb90bb8ae2d4c8eb8fc">&#9670;&#160;</a></span>setErrorsToWarnings()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::seterrorstowarnings </td>
+          <td class="memname">void Core::FMTObject::setErrorsToWarnings </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">Exception::FMTexc</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>errors</em></td><td>)</td>
@@ -763,36 +1139,44 @@ template&lt;class chrono &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Very hazardous function if you want to live dangerously you can set a vector of error to be cast to warnings to the exception handler... </p>
+
+<p>Set a list of errors to be cast to warnings on the exception handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">errors</td><td>the errors to treat as warnings. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="add57ec6ca8cf94e10c56346054ab75d6" name="add57ec6ca8cf94e10c56346054ab75d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add57ec6ca8cf94e10c56346054ab75d6">&#9670;&#160;</a></span>setfreeexceptionhandler()</h2>
+<a id="a541d8bc7ad3b4daf0c3bd940ab3657fb" name="a541d8bc7ad3b4daf0c3bd940ab3657fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541d8bc7ad3b4daf0c3bd940ab3657fb">&#9670;&#160;</a></span>setFreeExceptionHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::setfreeexceptionhandler </td>
+          <td class="memname">void Core::FMTObject::setFreeExceptionHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create and set a free exception handler to the <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Create and set a free exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="a5ce9242830521f5d6cca21c179f4db5a" name="a5ce9242830521f5d6cca21c179f4db5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ce9242830521f5d6cca21c179f4db5a">&#9670;&#160;</a></span>setmaxwarningsbeforesilenced()</h2>
+<a id="af33a4b0a35f673fbf5b36767d2309359" name="af33a4b0a35f673fbf5b36767d2309359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33a4b0a35f673fbf5b36767d2309359">&#9670;&#160;</a></span>setMaxWarningsBeforeSilenced()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::setmaxwarningsbeforesilenced </td>
+          <td class="memname">void Core::FMTObject::setMaxWarningsBeforeSilenced </td>
           <td>(</td>
           <td class="paramtype">const size_t &amp;&#160;</td>
           <td class="paramname"><em>maxwarningcount</em></td><td>)</td>
@@ -800,30 +1184,38 @@ template&lt;class chrono &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change the number of warning raise before silenced. </p>
+
+<p>Set the number of warnings raised before being silenced. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxwarningcount</td><td>the maximum warning count. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="aab718aa354a7b395471a15d29f244477" name="aab718aa354a7b395471a15d29f244477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab718aa354a7b395471a15d29f244477">&#9670;&#160;</a></span>setquietexceptionhandler()</h2>
+<a id="a0645f42b4e16e0129a255502c619e763" name="a0645f42b4e16e0129a255502c619e763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0645f42b4e16e0129a255502c619e763">&#9670;&#160;</a></span>setQuietExceptionHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Core::FMTobject::setquietexceptionhandler </td>
+          <td class="memname">void Core::FMTObject::setQuietExceptionHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create and set a quiet exception handler to the <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Create and set a quiet exception handler to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="a07f7d55431bdd4c885f84c70436dfeb8" name="a07f7d55431bdd4c885f84c70436dfeb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f7d55431bdd4c885f84c70436dfeb8">&#9670;&#160;</a></span>setquietlogger()</h2>
+<a id="ae177a4815e2cc6ee213c33a84b232341" name="ae177a4815e2cc6ee213c33a84b232341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae177a4815e2cc6ee213c33a84b232341">&#9670;&#160;</a></span>setQuietLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,7 +1224,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Core::FMTobject::setquietlogger </td>
+          <td class="memname">virtual void Core::FMTObject::setQuietLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -844,12 +1236,13 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create and set a quiet logger to the <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Create and set a quiet logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
 
 </div>
 </div>
-<a id="af6929adf1131bc31e51798859cb3b26f" name="af6929adf1131bc31e51798859cb3b26f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6929adf1131bc31e51798859cb3b26f">&#9670;&#160;</a></span>settasklogger()</h2>
+<a id="a6ce57b52ae4dad4e732828865eef9fc0" name="a6ce57b52ae4dad4e732828865eef9fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce57b52ae4dad4e732828865eef9fc0">&#9670;&#160;</a></span>setTaskLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -858,7 +1251,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Core::FMTobject::settasklogger </td>
+          <td class="memname">virtual void Core::FMTObject::setTaskLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -870,7 +1263,35 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create and set a quiet logger to the <a class="el" href="classCore_1_1FMTobject.html">FMTobject</a>. </p>
+
+<p>Create and set a task logger to the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>. </p>
+
+</div>
+</div>
+<a id="af12becc87d9673dbed45fede598e1159" name="af12becc87d9673dbed45fede598e1159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12becc87d9673dbed45fede598e1159">&#9670;&#160;</a></span>setTerminateStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Core::FMTObject::setTerminateStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>will write the stack in the log when terminate called and raise a function failed. </p>
 
 </div>
 </div>
@@ -894,13 +1315,27 @@ template&lt;class chrono &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Serialize function is for serialization, used to do multiprocessing across multiple cpus (pickle in Pyhton) </p>
+
+<p>Serialize the <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a> for multiprocessing across multiple cpus (pickle in <a class="el" href="namespacePython.html">Python</a>). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>the archive type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ar</td><td>the archive to serialize to or from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>the serialization version. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae67617ff7aedd99989a071bcf11206f2" name="ae67617ff7aedd99989a071bcf11206f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae67617ff7aedd99989a071bcf11206f2">&#9670;&#160;</a></span>_exhandler</h2>
+<a id="a540a432760681024cf9a5e15956613a2" name="a540a432760681024cf9a5e15956613a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a540a432760681024cf9a5e15956613a2">&#9670;&#160;</a></span>_exhandler</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,7 +1344,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classException_1_1FMTexceptionhandler.html">Exception::FMTexceptionhandler</a>&gt; Core::FMTobject::_exhandler</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classException_1_1FMTExceptionHandler.html">Exception::FMTExceptionHandler</a>&gt; Core::FMTObject::_exhandler</td>
         </tr>
       </table>
   </td>
@@ -923,8 +1358,8 @@ template&lt;class chrono &gt; </div>
 
 </div>
 </div>
-<a id="a52f73fe80b34fae5f277ec5135d1d22d" name="a52f73fe80b34fae5f277ec5135d1d22d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52f73fe80b34fae5f277ec5135d1d22d">&#9670;&#160;</a></span>_logger</h2>
+<a id="a44c5f2112616efab38c81ad16f93a364" name="a44c5f2112616efab38c81ad16f93a364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c5f2112616efab38c81ad16f93a364">&#9670;&#160;</a></span>_logger</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -933,7 +1368,7 @@ template&lt;class chrono &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classLogging_1_1FMTlogger.html">Logging::FMTlogger</a>&gt; Core::FMTobject::_logger</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classLogging_1_1FMTLogger.html">Logging::FMTLogger</a>&gt; Core::FMTObject::_logger</td>
         </tr>
       </table>
   </td>
@@ -948,7 +1383,7 @@ template&lt;class chrono &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/FMT/Include/<a class="el" href="FMTobject_8hpp_source.html">FMTobject.hpp</a></li>
+<li>D:/FMT/Include/<a class="el" href="FMTObject_8h_source.html">FMTObject.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,4 @@
-<map id="Exception::FMTdefaultexceptionhandler" name="Exception::FMTdefaultexceptionhandler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,255,107"/>
-<area shape="rect" id="node2" href="$classException_1_1FMTexceptionhandler.html" title=" " alt="" coords="24,5,236,32"/>
+<map id="Exception::FMTDefaultExceptionHandler" name="Exception::FMTDefaultExceptionHandler">
+<area shape="rect" id="node1" title="Default exception handler used in FMT, derived from FMTExceptionHandler." alt="" coords="7,80,219,123"/>
+<area shape="rect" id="node2" href="$classException_1_1FMTExceptionHandler.html" title="Base class used to handle errors thrown in FMT." alt="" coords="5,5,221,32"/>
 </map>

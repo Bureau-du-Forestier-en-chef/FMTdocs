@@ -1,6 +1,6 @@
-<map id="Spatial::FMTexponentialschedule" name="Spatial::FMTexponentialschedule">
-<area shape="rect" id="node1" title=" " alt="" coords="5,264,219,291"/>
-<area shape="rect" id="node2" href="$classSpatial_1_1FMTsaschedule.html" title=" " alt="" coords="31,188,193,215"/>
-<area shape="rect" id="node3" title=" " alt="" coords="72,97,152,124"/>
-<area shape="rect" id="node4" title=" " alt="" coords="49,5,175,48"/>
+<map id="Spatial::FMTExponentialSchedule" name="Spatial::FMTExponentialSchedule">
+<area shape="rect" id="node1" title="Exponential cooling schedule for simulated annealing, reducing the temperature by a constant annealin..." alt="" coords="5,264,223,291"/>
+<area shape="rect" id="node2" href="$classSpatial_1_1FMTSaSchedule.html" title="Abstract class for a simulated annealing cooling schedule." alt="" coords="31,188,197,215"/>
+<area shape="rect" id="node3" title=" " alt="" coords="74,97,154,124"/>
+<area shape="rect" id="node4" title=" " alt="" coords="51,5,177,48"/>
 </map>
