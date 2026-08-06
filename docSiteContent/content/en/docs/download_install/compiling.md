@@ -15,10 +15,17 @@ Now that everything is ready, it is time to get into the compiling step proper.
 
 3. Use `cd ./FMT` to navigate into the FMT folder downloaded from the repository of FMT.
 
-4. Copy/paste the following commands **in the Windows notepad**, and then replace the `-DMOSEK_DIR` parameter with the location of Mosek on your computer:
+4. Copy/paste the following commands **in the Windows notepad**, and then replace the `MOSEK_DIR`,`CMAKE_TOOLCHAIN_FILE` and `PathTovcvars64` with the location of Mosek, vcpkg.cmake in vcpkg and vcvars64 on your computer:
 
 ```bash
-cmake CMakeLists.txt -B build/release -G "Visual Studio 16 2019" -DBUILD_TYPE=Release -DVCPKG_TARGET_TRIPLET=x64-windows -DCMAKE_TOOLCHAIN_FILE="../vcpkg/scripts/buildsystems/vcpkg.cmake" -DBOOST_DIR="../vcpkg/installed/x64-windows/" -DCMAKE_BUILD_TYPE=Release -DGDAL_DIR="../vcpkg/installed/x64-windows/" -DGEOS_DIR="../vcpkg/installed/x64-windows/" -DOSI_DIR="../vcpkg/installed/x64-windows/" -DPYTHON_DIR="../vcpkg/packages/python3_x64-windows/" -DMOSEK_DIR="C:/PROGRA~1/Mosek/"
+call "PathTovcvars64\vcvars64.bat"
+set MOSEK_DIR=MyPathToMosek
+set MODULE_PATH=%cd%/Modules
+set "MODULE_PATH=%MODULE_PATH:\=/%"
+set VCPKG_KEEP_ENV_VARS=MOSEK_DIR;MODULE_PATH
+
+cmake CMakeLists.txt -B build/release -G "Visual Studio 17 2022" -DBUILD_TYPE=Release -T v143,version=14.36.17.6 -DPARALLEL_TESTS=8 -DCMAKE_TOOLCHAIN_FILE="MyPathTovcpkg.cmake" -DVCPKG_TARGET_TRIPLET=x64-windows -DVCPKG_MANIFEST_MODE=ON
+
 cmake --build build/release --config Release
 cmake --install build/release --config Release
 ```
@@ -30,7 +37,7 @@ Thus, if you installed Mosek in `C:\Program Files\Mosek`, you can keep `C:/PROGR
 {{% /callout %}}
 
 {{% callout note %}}
-If you installed a version of Visual Studio anterior to 2019, you'll have to edit the part of the commands incating the version of Visual Studio. 
+If you installed a version of Visual Studio anterior to 2022, you'll have to edit the part of the commands incating the version of Visual Studio. 
 {{% /callout %}}
 
 5. Copy/paste all of the commands that are ready in the notepad into the command prompt to start the compilation. Press enter to activate them.

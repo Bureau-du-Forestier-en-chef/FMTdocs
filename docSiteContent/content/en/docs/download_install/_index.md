@@ -29,7 +29,7 @@ You use binaries every day, without even thinking about it; for example, a **`.e
 To compile [FMT](https://github.com/gcyr/FMT), your computer will need :
 
 - The source code of FMT
-- All of the libraries of functions that FMT use
+- vcpkg
 - A compiler
 
 The documentation will guide you for all of these steps.
@@ -39,7 +39,7 @@ Preparing everything takes around half an hour, but the download and compiling t
 {{% /callout %}}
 
 {{% callout warning %}}
-Currently, this documentation for compiling FMT only covers installing FMT for Windows 8-10, and for use under Python.
+Currently, this documentation for compiling FMT only covers installing FMT for Windows 8-11, and for use under Python.
 
 If you're a Mac or Linux user, or if you want to use FMT in `R`, please warn us in the [issue section of the FMT repository](https://github.com/gcyr/FMT/issues).
 {{% /callout %}}

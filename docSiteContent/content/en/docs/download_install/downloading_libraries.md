@@ -15,7 +15,7 @@ Git is a free and open-source software used to help organise the way that people
 Here, git will help you download the code used to make the `vcpkg` software function, which will download all of the librairies that FMT needs for us.
 {{% /callout %}}
 
-2. Use `git clone https://github.com/microsoft/vcpkg.git` in the command prompt to download [vcpkg](https://github.com/microsoft/vcpkg). 
+2. Use vcpkg that comes with Visual Studio or use `git clone https://github.com/microsoft/vcpkg.git` in the command prompt to download [vcpkg](https://github.com/microsoft/vcpkg). 
 
 {{% callout note %}}
 If you have closed the command prompt, or if you don't remember how to open it, see [the previous page](/docs/download_install/prerequisits).
@@ -23,21 +23,6 @@ If you have closed the command prompt, or if you don't remember how to open it, 
 
 3. Use `cd ./vcpkg` in the command prompt to navigate into the vcpkg folder.
 
-{{% callout note %}}
-If you don't remember how to use `cd`, see [the previous page](/docs/download_install/prerequisits).
-{{% /callout %}}
-
-4. Copy/paste the following command in the command prompt to install the dependencies necessary to compile FMT : 
-
-``` bash
-vcpkg install boost:x64-windows boost-dll:x64-windows boost-icl:x64-windows boost-python:x64-windows gdal:x64-windows geos:x64-windows pthreads:x64-windows clp:x64-windows
-```
-
-{{% callout warning %}}
-This will take time, and will use some space on your computer (around 10Gb).
-
-Just leave the command prompt open so that `vcpkg` does its work.
-{{% /callout %}}
 
 * * *
 

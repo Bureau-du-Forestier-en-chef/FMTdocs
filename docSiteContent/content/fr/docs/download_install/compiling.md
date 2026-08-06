@@ -15,10 +15,17 @@ Maintenant que tout est prêt, il est temps de passer à l'étape de compilation
 
 3. Utilisez `cd ./FMT` pour naviguer dans le dossier FMT téléchargé depuis le *repository* de FMT.
 
-4. Copiez/collez les commandes suivantes **dans le bloc-notes de Windows**, puis remplacez le paramètre `-DMOSEK_DIR` par l'emplacement de Mosek sur votre ordinateur :
+4. Copiez/collez les commandes suivantes **dans le bloc-notes de Windows**, puis remplacez les paramètres `MOSEK_DIR`,`CMAKE_TOOLCHAIN_FILE` and `CheminAvcvars64` par l'emplacement de Mosek, vcpkg.cmake et vcvars64 sur votre ordinateur :
 
 ```bash
-cmake CMakeLists.txt -B build/release -G "Visual Studio 16 2019" -DBUILD_TYPE=Release -DVCPKG_TARGET_TRIPLET=x64-windows -DCMAKE_TOOLCHAIN_FILE="../vcpkg/scripts/buildsystems/vcpkg.cmake" -DBOOST_DIR="../vcpkg/installed/x64-windows/" -DCMAKE_BUILD_TYPE=Release -DGDAL_DIR="../vcpkg/installed/x64-windows/" -DGEOS_DIR="../vcpkg/installed/x64-windows/" -DOSI_DIR="../vcpkg/installed/x64-windows/" -DPYTHON_DIR="../vcpkg/packages/python3_x64-windows/" -DMOSEK_DIR="C:/PROGRA~1/Mosek/"
+call "CheminAvcvars64\vcvars64.bat"
+set MOSEK_DIR=CheminAMosek
+set MODULE_PATH=%cd%/Modules
+set "MODULE_PATH=%MODULE_PATH:\=/%"
+set VCPKG_KEEP_ENV_VARS=MOSEK_DIR;MODULE_PATH
+
+cmake CMakeLists.txt -B build/release -G "Visual Studio 17 2022" -DBUILD_TYPE=Release -T v143,version=14.36.17.6 -DPARALLEL_TESTS=8 -DCMAKE_TOOLCHAIN_FILE="CheminAvcpkg.cmake" -DVCPKG_TARGET_TRIPLET=x64-windows -DVCPKG_MANIFEST_MODE=ON
+
 cmake --build build/release --config Release
 cmake --install build/release --config Release
 ```
@@ -30,7 +37,7 @@ Ainsi, si vous avez installé Mosek dans `C:\Program Files\Mosek`, vous pouvez c
 {{% /callout %}}
 
 {{% callout note %}}
-Si vous avez installé une version antérieure de Visual Studio à celle de 2019, il vous faudra changer la partie indiquant la version de Visual Studio.
+Si vous avez installé une version antérieure de Visual Studio à celle de 2022, il vous faudra changer la partie indiquant la version de Visual Studio.
 {{% /callout %}}
 
 5. Copiez/collez toutes les commandes qui sont prêtes dans le bloc-notes vers l'invite de commande pour lancer la compilation. Appuyez sur la touche Entrée pour les activer.

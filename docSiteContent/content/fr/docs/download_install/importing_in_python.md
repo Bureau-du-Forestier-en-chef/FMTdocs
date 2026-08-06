@@ -13,29 +13,7 @@ Pour importer FMT que vous venez de compiler dans Python, vous devez avoir insta
 Si Python n'est pas installé sur votre ordinateur, nous vous recommandons d'installer [Miniconda](https://docs.conda.io/en/latest/miniconda.html), la version "légère" de la célèbre distribution Python [Anaconda](https://www.anaconda.com/). Miniconda contient Python, pip et de nombreux autres modules qui sont utiles pour utiliser FMT.
 {{% /callout %}}
 
-Il existe deux façons d'importer FMT dans Python :
-
-1. **En utilisant `sys.path.append`**.
-
-`sys.path.append` vous permet d'indiquer à Python où trouver les bibliothèques de fonction de FMT.
-
-Si vous l'utilisez, le début de vos scripts Python ressemblera à ceci :
-
-```python
-import sys
-sys.path.append(r"<Chemin vers le dossier FMT>/")
-sys.path.append(r"<Chemin vers le dossier FMT>/Release/")
-from FMT import Models
-from FMT import Parser
-from FMT import Core
-from FMT import Version
-```
-
-dans lequel `<Chemin vers le dossier FMT>` sera remplacé par l'emplacement du dossier où se trouvent les fichiers FMT que vous avez téléchargés depuis GitHub (et où se trouvent aussi les bibliothèques de fonction compilées de FMT, à présent).
-
-Cela peut cependant devenir redondant, ce qui rend la deuxième option - l'installation avec pip - plus intéressante.
-
-2. **En utilisant pip et la *Python wheel* que vous avez compilée**.
+**En utilisant pip et la *Python wheel* que vous avez compilée**.
 
 Les *Python wheels* sont des fichiers qui contiennent tout ce qui est nécessaire pour qu'un module Python soit installé dans votre environnement Python avec la commande `pip`. Une fois installé de cette manière, le module peut être activé plus rapidement dans vos scripts Python.
 
