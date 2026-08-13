@@ -25,9 +25,9 @@ We can distinguish 3 ways that space can be taken into account in a model :
 
 `FMTlpmodel`, `FMTgraph` and `FMTdevelopment` are three classes that are important to understand how a linear programming model is represented in FMT, and how to solve it.
 
-`FMTlpmodel` is a [type III linear programming forest planning model](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf), which is spatially referenced. 
+`FMTlpmodel` is a [type II linear programming forest planning model](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf), which is spatially referenced. 
 
-It can solve a type III forest planning model, and get an optimal harvest schedule using constraints and objectives defined by the user.
+It can solve a type II or III forest planning model, and get an optimal harvest schedule using constraints and objectives defined by the user.
 
 {{% callout note %}}
 The notion of type I, II and III of forest planning models correspond to a particular taxonomy relating to their mathematical structure, and to the way that they can be solved. Type III forest planning models are currently the most advanced type, and can be solved for large landscapes with a lot of forest area. You can learn more about them by reading [this article](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf).

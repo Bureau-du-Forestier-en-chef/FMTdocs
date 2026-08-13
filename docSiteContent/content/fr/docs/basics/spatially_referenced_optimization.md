@@ -25,9 +25,9 @@ On peut distinguer 3 façons de prendre en compte l'espace dans un modèle :
 
 `FMTlpmodel`, `FMTgraph` et `FMTdevelopment` sont trois classes qui sont importantes pour comprendre comment un modèle de programmation linéaire est représenté dans FMT, et comment le résoudre.
 
-`FMTlpmodel` est un [modèle de planification forestière à programmation linéaire de type III](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf), qui est spatialement référencé. 
+`FMTlpmodel` est un [modèle de planification forestière à programmation linéaire de type II](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf), qui est spatialement référencé. 
 
-Il peut résoudre un modèle de planification forestière de type III, et obtenir un calendrier de récolte optimal en utilisant les contraintes et les objectifs définis par l'utilisateur.
+Il peut résoudre un modèle de planification forestière de type II ou III, et obtenir un calendrier de récolte optimal en utilisant les contraintes et les objectifs définis par l'utilisateur.
 
 {{% callout note %}}
 La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant [cet article](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf).

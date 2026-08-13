@@ -21,8 +21,9 @@ cta:
 
 [FMT](https://github.com/Bureau-du-Forestier-en-chef/FMT) (**F**orest **M**anagement **T**ool) is an open source forest management library that makes forest planning easier.
 
-Want to learn more about [FMT](https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/master/README.md), and how to use it ? You're at the right place !
-
+<p style="text-align: justify;">
+Want to learn more about <a href=https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/master/README.md>FMT</a>,<br> and how to use it? You're at the right place!
+</p>
 <img src="https://img.shields.io/github/last-commit/Bureau-du-Forestier-en-chef/FMT"/>
 
 <a class="github-button" href="https://github.com/Bureau-du-Forestier-en-chef/FMT" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star FMT on GitHub">Star FMT on GitHub</a><br><script async defer src="https://buttons.github.io/buttons.js"></script>
