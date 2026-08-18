@@ -7,9 +7,9 @@ date: "2019-05-05T00:00:00+01:00"
 weight: 3
 ---
 
-Dans la section précédente, nous avons vu comment lire un modèle Woodstock et le charger dans un objet `FMTlpmodel`.
+Dans la section précédente, nous avons vu comment lire un modèle Woodstock et le charger dans un objet `FMTLpModel`.
 
-`FMTlpmodel` vous permettra de résoudre un modèle de programmation linéaire à spatialement référencé, ce qui vous donnera un calendrier (*schedule*) optimisé d'opérations forestières en fonction d'un objectif et d'un ensemble de contraintes.
+`FMTLpModel` vous permettra de résoudre un modèle de programmation linéaire à spatialement référencé, ce qui vous donnera un calendrier (*schedule*) optimisé d'opérations forestières en fonction d'un objectif et d'un ensemble de contraintes.
 
 Ici, nous allons voir comment réaliser cette optimisation en pratique.
 
@@ -21,11 +21,11 @@ On peut distinguer 3 façons de prendre en compte l'espace dans un modèle :
 - Dans un modèle **spatialement référencé**, les entités sont associées à des régions de l'espace, mais pas à une position précise dans ces régions ; ces régions peuvent être non-continues. Les modèles de Woodstock sont par nature spatialement référencés, car ils considèrent des *strates* qui correspondent à des forêts de même composition et de même âge, qui peuvent être dispersées en de nombreux endroits du paysage.
 - Dans un modèle **spatialement explicite**, les entités sont associées à des coordonnées précises dans l'espace, comme dans les pixels d'une carte matricielle.
 
-## La structure du `FMTlpmodel` : `FMTgraph` et `FMTdevelopment`
+## La structure du `FMTLpModel` : `FMTGraph` et `FMTDevelopment`
 
-`FMTlpmodel`, `FMTgraph` et `FMTdevelopment` sont trois classes qui sont importantes pour comprendre comment un modèle de programmation linéaire est représenté dans FMT, et comment le résoudre.
+`FMTLpModel`, `FMTGraph` et `FMTDevelopment` sont trois classes qui sont importantes pour comprendre comment un modèle de programmation linéaire est représenté dans FMT, et comment le résoudre.
 
-`FMTlpmodel` est un [modèle de planification forestière à programmation linéaire de type II](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf), qui est spatialement référencé. 
+`FMTLpModel` est un [modèle de planification forestière à programmation linéaire de type II](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf), qui est spatialement référencé. 
 
 Il peut résoudre un modèle de planification forestière de type II ou III, et obtenir un calendrier de récolte optimal en utilisant les contraintes et les objectifs définis par l'utilisateur.
 
@@ -33,37 +33,37 @@ Il peut résoudre un modèle de planification forestière de type II ou III, et 
 La notion de type I, II et III des modèles de planification forestière correspond à une taxonomie particulière relative à leur structure mathématique, et à la manière dont ils peuvent être résolus. Les modèles de planification forestière de type III sont actuellement les plus avancés, et peuvent être résolus pour de grands paysages avec beaucoup de surface forestière. Vous pouvez en apprendre davantage à leur sujet en lisant [cet article](https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf).
 {{% /callout %}}
 
-Le `FMTlpmodel` contient un objet appelé `FMTgraph`, qui contient le *graphe* du modèle. Le graphe est un ensemble de noeuds reliés entre eux par des liens. Chaque noeud correspond à un état possible pour une strate particulière (qui sont des groupes de peuplements forestiers référencés dans l'espace avec les mêmes caractéristiques), et chaque lien représente une façon particulière dont elle peut évoluer vers un autre état dans la même période de temps et entre les périodes.
+Le `FMTLpModel` contient un objet appelé `FMTGraph`, qui contient le *graphe* du modèle. Le graphe est un ensemble de noeuds reliés entre eux par des liens. Chaque noeud correspond à un état possible pour une strate particulière (qui sont des groupes de peuplements forestiers référencés dans l'espace avec les mêmes caractéristiques), et chaque lien représente une façon particulière dont elle peut évoluer vers un autre état dans la même période de temps et entre les périodes.
 
-Voici une représentation visuelle d'un `FMTgraph` simple, dans lequel une strate particulière peut évoluer à partir de différents états (objets `FMTdevelopment`) avec différentes transitions causées par différentes actions à travers la même période de temps. L'évolution des strates se fait entre les périodes et consiste à augmenter l'âge de ces dernières de 1 :
+Voici une représentation visuelle d'un `FMTGraph` simple, dans lequel une strate particulière peut évoluer à partir de différents états (objets `FMTDevelopment`) avec différentes transitions causées par différentes actions à travers la même période de temps. L'évolution des strates se fait entre les périodes et consiste à augmenter l'âge de ces dernières de 1 :
 
 {{< figure src="docs/FMTgraph_visual_FR.png" >}}
 
-Un `FMTdevelopment` est une classe importante de FMT. Elle représente une strate particulière, c'est-à-dire un peuplement forestier particulier qui a une composition et un âge donnés, et qui existe à une période donnée.
+Un `FMTDevelopment` est une classe importante de FMT. Elle représente une strate particulière, c'est-à-dire un peuplement forestier particulier qui a une composition et un âge donnés, et qui existe à une période donnée.
 
-Par conséquent, l'objet `FMTdevelopment` est associé à un objet `FMTmask`, qui décrit l'ensemble des attributs (`FMTtheme`) qui définit le `FMTdevelopment`. Ceci est illustré sur le visuel suivant :
+Par conséquent, l'objet `FMTDevelopment` est associé à un objet `FMTMask`, qui décrit l'ensemble des attributs (`FMTTheme`) qui définit le `FMTDevelopment`. Ceci est illustré sur le visuel suivant :
 
 {{< figure src="docs/FMTdevelopment_explain_FR.png" >}}
 
-`FMTdevelopment` est la classe parente de deux classes, `FMTactualdevelopment` et `FMTfuturdevelopment`. Un `FMTactualdevelopment` représente toujours une strate en début d'horizon de planification et contient donc l'information de la superficie de la strate. Les `FMTfuturdevelopment` sont les futurs possibles et donc aucune superficie ne leur est attribuée au départ. C'est le résultat de l'optimisation qui nous informe sur la répartitions future des superficies au travers du `FMTgraph`.
+`FMTDevelopment` est la classe parente de deux classes, `FMTActualDevelopment` et `FMTFuturDevelopment`. Un `FMTActualDevelopment` représente toujours une strate en début d'horizon de planification et contient donc l'information de la superficie de la strate. Les `FMTFuturDevelopment` sont les futurs possibles et donc aucune superficie ne leur est attribuée au départ. C'est le résultat de l'optimisation qui nous informe sur la répartitions future des superficies au travers du `FMTGraph`.
 
 {{< figure src="docs/FMTgraph_extended_FR.png" >}}
 
-Voici ici quelques fonctions de la classe `FMTdevelopment` qui peuvent être importantes pour manipuler le modèle à différente fins :
+Voici ici quelques fonctions de la classe FMTDevelopment` qui peuvent être importantes pour manipuler le modèle à différente fins :
 
-- `FMTdevelopment.grow()` peut faire grandir le peuplement pour voir ce qu'il va devenir. Renvoie un `FMTfuturdevelopment` identique au `FMTdevelopment` à partir duquel la fonction est appelée mais avec un âge augmenté de 1
-- `FMTdevelopment.operable()` peut tester si une action donnée peut être appliquée à ce développement, sur la base d'une section de *yield*(une variable particulière, par exemple)
-- `FMTdevelopment.operate()` peut faire différentes actions sur la strate, et retourner un vecteur de `FMTdevelopmentpath`.
+- `FMTDevelopment.grow()` peut faire grandir le peuplement pour voir ce qu'il va devenir. Renvoie un `FMTFuturDevelopment` identique au `FMTDevelopment` à partir duquel la fonction est appelée mais avec un âge augmenté de 1
+- `FMTDevelopment.operable()` peut tester si une action donnée peut être appliquée à ce développement, sur la base d'une section de *yield*(une variable particulière, par exemple)
+- `FMTDevelopment.operate()` peut faire différentes actions sur la strate, et retourner un vecteur de `FMTDevelopmentPath`.
 
-Maintenant, nous pouvons regarder comment construire le "graphe complet" du modèle, qui est nécessaire pour résoudre le `FMTlpmodel`.
+Maintenant, nous pouvons regarder comment construire le "graphe complet" du modèle, qui est nécessaire pour résoudre le `FMTLpModel`.
 
 ## Construire le graphe complet du modèle
 
-Le graphe complet du modèle peut être construit via une répétition de la fonction `FMTlpmodel.buildperiod()`. Ceci est essentiel pour résoudre le modèle, car FMT va naviguer dans ce graphe pour trouver la solution optimale en fonction de l'objectif et des contraintes que nous allons fixer (voir section suivante).
+Le graphe complet du modèle peut être construit via une répétition de la fonction `FMTLpModel.buildPeriod()`. Ceci est essentiel pour résoudre le modèle, car FMT va naviguer dans ce graphe pour trouver la solution optimale en fonction de l'objectif et des contraintes que nous allons fixer (voir section suivante).
 
 Cette fonction nécessite trois paramètres :
 
-- Un planning d'actions, sous la forme d'un objet `FMTschedule` (il peut être vide pour obtenir le graphe complet du modèle, contenant toutes les possibilités).
+- Un planning d'actions, sous la forme d'un objet `FMTSchedule` (il peut être vide pour obtenir le graphe complet du modèle, contenant toutes les possibilités).
 - Une option pour forcer une construction partielle du graphe (que nous ne verrons pas pour l'instant)
 - Un autre paramètre pour l'opérabilité de la classe (que nous ne verrons pas non plus pour l'instant, et juste mis à 1)
 
@@ -195,7 +195,7 @@ if (new(FMTversion)$hasfeature("OSI")) # Vérifie si FMT a été compilé avec O
 }
 ```
 
-L'équivalent en code Python est le suivant (remarquez qu'ici, nous allons juste "sortir" la fonction objectif de la liste des contraintes retournée par `FMTlpmodel.getconstraints()` avec la fonction `list.pop()`, ce qui nous permet de boucler directement sur la liste restante pour les contraintes) :
+L'équivalent en code Python est le suivant (remarquez qu'ici, nous allons juste "sortir" la fonction objectif de la liste des contraintes retournée par `FMTLpModel.getConstraints()` avec la fonction `list.pop()`, ce qui nous permet de boucler directement sur la liste restante pour les contraintes) :
 
 ```python
 import sys
@@ -229,21 +229,21 @@ if __name__ == "__main__":
 		print("FMT needs to be compiled with OSI") # Si le modèle n'as pas été compilé avec OSI, on affiche une erreur
 ```
 
-## Résoudre le `FMTlpmodel`
+## Résoudre le `FMTLpModel`
 
-Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le `FMTlpmodel` peut être résolu en utilisant la fonction `FMTlpmodel.initialsolve()`. La fonction renvoie une valeur `true` ou `false` selon que le modèle a été résolu avec succès. Si la résolution s'est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différentes manières (un exemple est présenté plus bas). 
+Une fois que le graphe complet est construit, et que les contraintes et les objectifs sont fixés, le `FMTLpModel` peut être résolu en utilisant la fonction `FMTLpModel.initialSolve()`. La fonction renvoie une valeur `true` ou `false` selon que le modèle a été résolu avec succès. Si la résolution s'est bien passée, le modèle conserve la solution et cette dernière peut être interroger de différentes manières (un exemple est présenté plus bas). 
 
 ## Construire le graphe avec une solution existante (construction partielle)
 
 Parfois, on peut vouloir obtenir des résultats d'une solution/planification que l'on a déjà déjà (voir la section suivante) sans résoudre le modèle à nouveau, puisqu'il a déjà été résolu précédemment.
 
-Dans ce cas, il est possible de lire une solution qui a été trouvée précédemment, et de construire le `FMTgraph` du modèle en générant seulement les noeuds et les liens utilisés par la solution.
+Dans ce cas, il est possible de lire une solution qui a été trouvée précédemment, et de construire le `FMTGraph` du modèle en générant seulement les noeuds et les liens utilisés par la solution.
 
 Pour cela, trois choses doivent être faites :
 
-- Lire le fichier de calendrier du scénario, et le passer à la fonction `FMTlpmodel.buildperiod()`.
-- Définir la solution pour chaque période avec la fonction `FMTlpmodel.setsolution()`.
-	- Si le modèle contient plusieurs actions `_LOCKEXEMPT`, l'utilisation de `FMTlpmodel.setsolution()` peut provoquer des erreurs, car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction `FMTlpmodel.setsolutionbylp()`.
+- Lire le fichier de calendrier du scénario, et le passer à la fonction `FMTLpModel.buildPeriod()`.
+- Définir la solution pour chaque période avec la fonction `FMTLpModel.setSolution()`.
+	- Si le modèle contient plusieurs actions `_LOCKEXEMPT`, l'utilisation de `FMTLpModel.setSolution()` peut provoquer des erreurs, car les verrous ne font pas partie de la solution. Dans ce cas, vous devez utiliser la fonction `FMTLpModel.setSolutionByLp()`.
 
 Cela donnera le code suivant, dans R :
 
@@ -381,7 +381,7 @@ Solution set at period   20
 
 Il existe plusieurs façons de lire les différentes sorties du modèle.
 
-En R, il existe une fonction particulière (**seulement disponible en R**) appelée `getoutsdataframe()` ; mais pour R, Python et C++, il est possible d'utiliser la fonction `FMTmodel.getoutputs()` pour obtenir une liste des sorties (*outputs*) disponibles pour un modèle donné.
+En R, il existe une fonction particulière (**seulement disponible en R**) appelée `getoutsdataframe()` ; mais pour R, Python et C++, il est possible d'utiliser la fonction `FMTModel.getOutputs()` pour obtenir une liste des sorties (*outputs*) disponibles pour un modèle donné.
 
 Il est possible de sélectionner un `FMToutputlevel` différent afin d'obtenir une sortie à différentes échelles dans le modèle.
 
@@ -389,11 +389,11 @@ Pour un exemple, voir [exercice 1](../exercice_1/).
 
 ## Exportation du calendrier d'un modèle résolu
 
-L'exportation du calendrier d'un modèle résolu se fait via l'objet `FMTscheduleparser` que nous avons utilisé lors de la construction du graphe partiel (voir sections précédentes).
+L'exportation du calendrier d'un modèle résolu se fait via l'objet `FMTScheduleParser` que nous avons utilisé lors de la construction du graphe partiel (voir sections précédentes).
 
-La solution d'un modèle peut être mise dans une liste en utilisant la fonction `FMTlpmodel.getsolution()` pour chacune des périodes d'intérêt.
+La solution d'un modèle peut être mise dans une liste en utilisant la fonction `FMTLpModel.getSolution()` pour chacune des périodes d'intérêt.
 
-Ensuite, la liste des solutions pour chaque période doit être transformée en un vecteur, qui peut ensuite être écrit dans un fichier `.txt` en utilisant la fonction `FMTscheduleparser.write()`.
+Ensuite, la liste des solutions pour chaque période doit être transformée en un vecteur, qui peut ensuite être écrit dans un fichier `.txt` en utilisant la fonction `FMTScheduleParser.write()`.
 
 Pour un exemple, voir [exercice 1](../exercice_1/).
 
@@ -401,7 +401,7 @@ Pour un exemple, voir [exercice 1](../exercice_1/).
 
 Certains modèles peuvent être difficiles à résoudre, à cause de leur nombre élevé d'actions, de strates, et ainsi de suite.
 
-Dans ce cas, la fonction `FMTmodel.basepresolve()` peut être utilisée pour présolutioner le modèle.
+Dans ce cas, la fonction `FMTModel.basePresolve()` peut être utilisée pour présolutioner le modèle.
 
 Cette fonction retourne un modèle avec moins de thèmes, d'actions, de transitions, de sorties et de contraintes que le modèle original, mais avec la même quantité d'informations. Cela le rend plus facile à résoudre, tout en donnant la même réponse à la fin.
 

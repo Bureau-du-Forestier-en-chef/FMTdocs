@@ -70,8 +70,8 @@ Ensuite, le script devra :
 	- La liste des outputs voulus
 	- Le dossier où les outputs seront mis
 	- Le format des outputs (ici, `.csv`)
-	- [Tous les autres arguments nécéssaires à la fonction](../../../../doxygen/html/classParallel_1_1FMTreplanningtask.html)
-- Lancer la tâche de replanning par le biais de la fonction `Parallel.FMTtaskhandler()`
+	- [Tous les autres arguments nécéssaires à la fonction](../../../../doxygen/html/classParallel_1_1FMTReplanningTask.html)
+- Lancer la tâche de replanning par le biais de la fonction `Parallel.FMTTaskHandler()`
 
 Lorsque vous avez terminé, ou si vous êtes bloqué.e, **vous pouvez afficher la correction de cet exercice pour du code Python en cliquant sur le bouton "Révéler la correction" ci-dessous**.
 

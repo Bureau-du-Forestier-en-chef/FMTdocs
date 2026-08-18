@@ -50,56 +50,50 @@ Dans FMT, les différents *espaces de noms* sont :
 - **`Version`**: Contient des informations sur la version actuelle de FMT, et les fonctions qu'elle contient (ce qui dépend de la façon dont il a été compilée)
 
 {{% callout note %}}
-Si vous regardez l'[importation de FMT dans Python](../../download_install/importing_in_python /), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
+Si vous regardez [Importer FMT dans Python](../../download_install/importing_in_python/), vous verrez que nous importons les principaux espaces de noms dont vous aurez besoin en Python.
 {{% /callout %}}
 
 ## Classes importantes de l'espace de noms `Parser`
 
 L'espace de noms `Parser` contient deux classes importantes pour la lecture des modèles :
 
-- `FMTareaparser` : Permet la lecture et l'écriture des fichiers raster et vectoriels utilisés dans les opérations spatiales de FMT
+- `FMTAreaParser` : Permet la lecture et l'écriture des fichiers raster et vectoriels utilisés dans les opérations spatiales de FMT
 	- Certaines de ses fonctions vous permettent de transformer des données entre le format vectoriel et le format raster.
-- `FMTmodelparser` : Permet de lire les fichiers d'un modèle Woodstock avec la fonction `read project()`, ou de l'enregistrer avec la fonction `write()` après l'avoir modifié.
+- `FMTModelParser` : Permet de lire les fichiers d'un modèle Woodstock avec la fonction `readProject()`, ou de l'enregistrer avec la fonction `write()` après l'avoir modifié.
 	- La classe utilise également d'autres classes faites pour lire les fichiers Woodstock.
 
-## La classe `FMTmodel`
+## La classe `FMTModel`
 
-La classe `FMTmodel` est la base de FMT.
+La classe `FMTModel` est la base de FMT.
 
-Elle contient des informations provenant des fichiers des modèles au format Woodstock. Cela peut être vu en [regardant les propriétés du `FMTmodel`](../../../../doxygen/html/classModels_1_1FMTmodel.html#pro-attribs) :
+Elle contient des informations provenant des fichiers des modèles au format Woodstock. Cela peut être vu en [regardant les propriétés du `FMTModel`](../../../../doxygen/html/classModels_1_1FMTModel.html#pro-attribs) :
 
-{{< figure src="docs/FMTmodel_attributes.png" >}}
+Cependant, ces attributs sont "protégés" afin qu'ils ne soient pas modifiés de manière incorrecte. Si vous souhaitez les lire lors de l'utilisation de FMT, vous devrez utiliser [les fonctions *getter*](../../../../doxygen/html/classModels_1_1FMTModel.html#pub-methods) qui les obtiendront pour vous :
 
-Cependant, ces attributs sont "protégés" afin qu'ils ne soient pas modifiés de manière incorrecte. Si vous souhaitez les lire lors de l'utilisation de FMT, vous devrez utiliser [les fonctions *getter*](../../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods) qui les obtiendront pour vous :
+De plus, vous pouvez les modifier de la bonne manière en utilisant [les fonctions *setter*](../../../../doxygen/html/classModels_1_1FMTModel.html#pub-methods). Cela vous permet d'éditer différentes parties du modèle.
 
-{{< figure src="docs/FMTmodel_getter.png" >}}
-
-De plus, vous pouvez les modifier de la bonne manière en utilisant [les fonctions *setter*](../../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods). Cela vous permet d'éditer différentes parties du modèle.
-
-{{< figure src="docs/FMTmodel_setters.png" >}}
-
-En fin de compte, le `FMTModel` est ce que nous appelons une *classe parent* pour toutes les différentes classes de modèles utilisées par FMT, telles que `FMTlpmodel` (modèle de programmation linéaire) et `FMTsesmodel` (modèle spatialement explicite) selon le diagramme suivant :
+En fin de compte, le `FMTModel` est ce que nous appelons une *classe parent* pour toutes les différentes classes de modèles utilisées par FMT, telles que `FMTLpModel` (modèle de programmation linéaire) et `FMTSesModel` (modèle spatialement explicite) selon le diagramme suivant :
 
 ```mermaid
 classDiagram
-FMTobject <|-- FMTmodel
-FMTmodel <|-- FMTsemodel
-FMTsemodel <|-- FMTsamodel
-FMTsemodel <|-- FMTsesmodel
-FMTmodel <|-- FMTsrmodel
-FMTsrmodel <|-- FMTlpmodel
-FMTsrmodel <|-- FMTnssmodel
+FMTObject <|-- FMTModel
+FMTModel <|-- FMTSeModel
+FMTSeModel <|-- FMTSaModel
+FMTSeModel <|-- FMTSesModel
+FMTModel <|-- FMTSrModel
+FMTSrModel <|-- FMTLpModel
+FMTSrModel <|-- FMTNssModel
 ```
 
-Observez que toutes ces classes héritent finalement de la classe `FMTobject`. C'est le cas pour chaque objet de FMT, car `FMTobject` contient des fonctions et des propriétés utiles pour déboguer FMT.
+Observez que toutes ces classes héritent finalement de la classe `FMTObject`. C'est le cas pour chaque objet de FMT, car `FMTObject` contient des fonctions et des propriétés utiles pour déboguer FMT.
 
-Les modèles `FMTnssmodel` et `FMTlpmodel` sont des modèles référencés spatialement `FMTsrmodel`. Le `FMTlpmodel` est utilisé pour **l'optimisation**, tandis que `FMTnssmodel` est utilisé pour la **simulation**.
+Les modèles `FMTNssModel` et `FMTLpModel` sont des modèles référencés spatialement `FMTSrModel`. Le `FMTLpModel` est utilisé pour **l'optimisation**, tandis que `FMTnssmodel` est utilisé pour la **simulation**.
 
-En contraste, les modèles `FMTsesmodel` et `FMTsamodel` sont des modèles spatialement explicites `FMTsemodel`. De la même manière, `FMTsamodel` est utilisé pour **l'optimisation**, tandis que `FMTsesmodel` est utilisé pour la **simulation**.
+En contraste, les modèles `FMTSesModel` et `FMTSaModel` sont des modèles spatialement explicites `FMTSeModel`. De la même manière, `FMTSaModel` est utilisé pour **l'optimisation**, tandis que `FMTSesModel` est utilisé pour la **simulation**.
 
-**Nous examinerons de plus près les différents types de modèles plus tard. Pour l'instant, nous n'utiliserons que le modèle le plus simple qui correspond le plus à une structure de modèle de Woodstock, le `FMTlpmodel`.**
+**Nous examinerons de plus près les différents types de modèles plus tard. Pour l'instant, nous n'utiliserons que le modèle le plus simple qui correspond le plus à une structure de modèle de Woodstock, le `FMTLpModel`.**
 
-## Lire un simple `FMTlpmodel`
+## Lire un simple `FMTLpModel`
 
 Voici un exemple qui permet de lire un modèle de programmation linéaire (au format Woodstock) avec FMT.
 
@@ -166,17 +160,17 @@ L'espace de nom `Core` contient les éléments utilisés par FMT "sous le capot"
 
 Par exemple, il contient les objets :
 
-- `FMTaction` : Classe qui définit l'opérabilité de plusieurs strates pour une perturbation donnée.
-- `FMTtransition` : Classe qui définit les transitions de strates multiples pour une perturbation donnée.
-- `FMTyields` : Classe qui définit les valeurs de croissance et de rendement pour chaque strate.
-- `FMToutputs` : Classe qui définit les sorties dans le modèle (inventaire ou action), mais pas les sorties *du* modèle (par exemple, les fichiers de sortie ou autres).
+- `FMTAction` : Classe qui définit l'opérabilité de plusieurs strates pour une perturbation donnée.
+- `FMTTransition` : Classe qui définit les transitions de strates multiples pour une perturbation donnée.
+- `FMTYields` : Classe qui définit les valeurs de croissance et de rendement pour chaque strate.
+- `FMTOutputs` : Classe qui définit les sorties dans le modèle (inventaire ou action), mais pas les sorties *du* modèle (par exemple, les fichiers de sortie ou autres).
 - `FMTconstraints` : Classe qui définit les contraintes globales et l'objectif du modèle (par exemple, la variable à optimiser).
 
-Ces différents objets peuvent être appelés depuis un objet `FMTmodel` avec les différentes fonctions *getter*.
+Ces différents objets peuvent être appelés depuis un objet `FMTModel` avec les différentes fonctions *getter*.
 
-Par exemple, pour voir la liste des objets `FMTaction` associés à un `FMTmodel` particulier, vous pouvez utiliser la fonction `FMTModel.getactions()` (ou `FMTModel$getactions()` en R), et utiliser une boucle `for` pour afficher toutes les actions dans le modèle. **Les actions affichées de cette manière correspondront aux actions présentes dans le fichier `.act` des fichiers Woodstock pour le modèle**.
+Par exemple, pour voir la liste des objets `FMTAction` associés à un `FMTModel` particulier, vous pouvez utiliser la fonction `FMTModel.getActions()` (ou `FMTModel$getactions()` en R), et utiliser une boucle `for` pour afficher toutes les actions dans le modèle. **Les actions affichées de cette manière correspondront aux actions présentes dans le fichier `.act` des fichiers Woodstock pour le modèle**.
 
-Voici un exemple qui affiche les actions et les transitions d'un `FMTmodel` en code R :
+Voici un exemple qui affiche les actions et les transitions d'un `FMTModel` en code R :
 
 ```R
 library(FMT) # Charge FMT dans R
@@ -319,17 +313,17 @@ _DEATH
 
 ## Comparer des éléments dans FMT
 
-Une opération courante à faire dans vos scripts sera de comparer des éléments : par exemple, comparer le nom d'un objet `FMTaction` avec le nom de l'action que vous voulez sélectionner, etc.
+Une opération courante à faire dans vos scripts sera de comparer des éléments : par exemple, comparer le nom d'un objet `FMTAction` avec le nom de l'action que vous voulez sélectionner, etc.
 
 Dans de tels cas, rappelez-vous que **toutes les chaînes de caractères lues par FMT sont automatiquement mises en majuscules**. Par conséquent, **si vous voulez comparer le nom des éléments dans FMT, assurez-vous que les lettres sont en majuscules**.
 
-Par exemple, si vous avez une action nommée `Clearcut` ou `clearcut` que vous voulez sélectionner, vous devrez comparer le nom des `FMTactions` des modèles avec le mot `CLEARCUT`, tout en majuscules.
+Par exemple, si vous avez une action nommée `Clearcut` ou `clearcut` que vous voulez sélectionner, vous devrez comparer le nom des `FMTActions` des modèles avec le mot `CLEARCUT`, tout en majuscules.
 
 ## Conversion des erreurs en avertissements
 
-Toutes les classes FMT héritent de la classe `FMTobject`, et partagent donc les mêmes objets `FMTexceptionhandler` et `FMTlogger`.
+Toutes les classes FMT héritent de la classe `FMTObject`, et partagent donc les mêmes objets `FMTExceptionHandler` et `FMTLogger`.
 
-Si l'utilisateur veut ignorer certaines erreurs, il peut utiliser la fonction `seterrorstowarnings` de n'importe quelle classe FMT et passer un vecteur d'erreurs que le gestionnaire d'erreurs doit considérer comme des avertissements. Cette fonction est hazardeuse et peux mener a des erreurs. Il est recommandé d'investiguer les messages d'erreur de FMT et de corriger les modèles conséquement. 
+Si l'utilisateur veut ignorer certaines erreurs, il peut utiliser la fonction `setErrorsToWarnings` de n'importe quelle classe FMT et passer un vecteur d'erreurs que le gestionnaire d'erreurs doit considérer comme des avertissements. Cette fonction est hazardeuse et peux mener a des erreurs. Il est recommandé d'investiguer les messages d'erreur de FMT et de corriger les modèles conséquement. 
 
 * * *
 

@@ -24,16 +24,16 @@ Utilisez FMT pour :
 2. Résolvez le modèle en
 	- Construisant son graphe complet pour 10 périodes
 	- Définissant l'objectif et les contraintes du modèle
-	- Utilisant la fonction `FMTmodel.initialsolve()` pour le résoudre.
+	- Utilisant la fonction `FMTModel.initialSolve()` pour le résoudre.
 3. Lire les valeurs de la sortie `OSUPREC` du modèle en
-	- Obtenant une liste des sorties du modèle avec la fonction `FMTmodel.getouputs()`.
-	- Effectuant une boucle `for` pour sélectionner la bonne sortie avec la fonction `FMToutput.getname()`.
-	- Imprimer les valeurs de la sortie avec la fonction `FMTmodel.getvariabilities(FMToutput)`.
+	- Obtenant une liste des sorties du modèle avec la fonction `FMTModel.getOuputs()`.
+	- Effectuant une boucle `for` pour sélectionner la bonne sortie avec la fonction `FMToutput.getName()`.
+	- Imprimer les valeurs de la sortie avec la fonction `FMTModel.getVariabilities(FMToutput)`.
 4. Exportez le calendrier optimisé du modèle dans un fichier `.txt` en
-	- Créant un nouvel objet `FMTscheduleparser`.
-	- Récupérant la solution du modèle à chaque période avec une liste en utilisant `LPModel.getsolution(period)`.
+	- Créant un nouvel objet `FMTScheduleParser.`.
+	- Récupérant la solution du modèle à chaque période avec une liste en utilisant `LPModel.getSolution(period)`.
 	- Transformant la liste en un vecteur
-	- Écriture du vecteur dans un fichier `.txt` avec `FMTscheduleparser.write()`.
+	- Écriture du vecteur dans un fichier `.txt` avec `FMTScheduleParser.write()`.
 
 **Vous pouvez utiliser les informations des pages précédentes de la documentation pour vous aider.**
 

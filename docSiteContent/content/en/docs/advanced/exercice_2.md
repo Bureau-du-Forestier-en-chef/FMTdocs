@@ -70,7 +70,7 @@ Next, the script will need to:
     - The list of desired outputs
     - The folder where the outputs will be put
     - The format of the outputs (here, `.csv`)
-    - [All other arguments needed for the function](../../../doxygen/html/classParallel_1_1FMTreplanningtask.html)
+    - [All other arguments needed for the function](../../../doxygen/html/classParallel_1_1FMTReplanningTask.html)
 - Run the rescheduling task through the `Parallel.FMTtaskhandler()` function
 
 When you are done, or if you are stuck, **you can view the correction of this exercise for Python code by clicking on the "Reveal correction" button below**.

@@ -15,102 +15,102 @@ We can distinguish 3 ways that space can be taken into account in a model :
 - In a **spatially referenced model**, entities are associated to regions in space, but not to a precise position in those regions; those regions can be non-continuous. Woodstock models are spatially referenced in nature, as they consider *strata* that correspond to forests with the same composition and age, which can be dispersed in many places in the landscape.
 - In a **spatially explicit model**, entities are associated to precise coordinates in space, like in the pixels of a raster map.
 
-## The `FMTsesmodel`
+## The `FMTSesModel`
 
-`FMTsesmodel` is a particular model that gives the user the opportunity to **spatialize** solutions coming from any `FMTsrmodel` class, which are the spatially referenced models (see [objects, model parsing and interrogation](../objects_parsing_interrogation) and [spatially referenced optimization](../spatially_referenced_optimization)).
+`FMTSesModel` is a particular model that gives the user the opportunity to **spatialize** solutions coming from any `FMTSrModel` class, which are the spatially referenced models (see [objects, model parsing and interrogation](../objects_parsing_interrogation) and [spatially referenced optimization](../spatially_referenced_optimization)).
 
-Note that **we are not talking about optimizing a spatially explicit model**; this is quite a complex task that is still on the roadmap of FMT (and which is the goal of the `FMTsamodel` class).
+Note that **we are not talking about optimizing a spatially explicit model**; this is quite a complex task that is still on the roadmap of FMT (and which is the goal of the `FMTSaModel` class).
 
 ```mermaid
 classDiagram
-FMTmodel <|-- FMTsemodel
-FMTsemodel <|-- FMTsamodel
-FMTsemodel <|-- FMTsesmodel
-FMTmodel <|-- FMTsrmodel
-FMTsrmodel <|-- FMTlpmodel
-FMTsrmodel <|-- FMTnssmodel
+FMTModel <|-- FMTSeModel
+FMTSeModel <|-- FMTSaModel
+FMTSeModel <|-- FMTSesModel
+FMTModel <|-- FMTSrModel
+FMTSrModel <|-- FMTLpModel
+FMTSrModel <|-- FMTNssModel
 ```
 
-Instead, the `FMTsesmodel` will try to spatialize the schedule of a `FMTsrmodel` by placing cut blocks on a map, by doing multiple iterations of simulating the placement of these blocks, and by selecting the best solution that is found.
+Instead, the `FMTSesModel` will try to spatialize the schedule of a `FMTSrModel` by placing cut blocks on a map, by doing multiple iterations of simulating the placement of these blocks, and by selecting the best solution that is found.
 
 To use a metaphor, this would be like trying to find a winning position at chess if you don't find yourself capable of finding it by thinking carefully about the placement of your chess pieces : you could try to place your pieces randomly many, many times, and asking each time if you have won, or if you are closer to victory, and if the position of the chess pieces respect the rules of the game.
 
-Here, `FMTsesmodel` will try to place cut blocks according to the solution of a `FMTsrmodel` (which is a schedule of forest operations applied to spatially referenced *strata*). Its goal will be to find the best positioning possible, by accommodating to the constraints that are set in their placement as best as possible, and by maximizing the objective value (e.g. maximizing the harvested wood).
+Here, `FMTSesModel` will try to place cut blocks according to the solution of a `FMTSrModel` (which is a schedule of forest operations applied to spatially referenced *strata*). Its goal will be to find the best positioning possible, by accommodating to the constraints that are set in their placement as best as possible, and by maximizing the objective value (e.g. maximizing the harvested wood).
 
 However, this method have a low chance of finding the **optimal placement**, if one exists; instead, the more iterations it does in trying to place them, there higher the chance to find a solution that is as close as possible as an optimal placement of the cut blocks in space. This is why this process represents what we call a [heuristic](https://en.wikipedia.org/wiki/Heuristic).
 
 ## The spatial framework inside FMT
 
-FMT uses `FMTlayers` to represent any spatially explicit solution.
+FMT uses `FMTLayers` to represent any spatially explicit solution.
 
-A `FMTlayer` can be compared to a regular raster file in which pixels can contain pretty much any type or class of forest stand.
+A `FMTLayer` can be compared to a regular raster file in which pixels can contain pretty much any type or class of forest stand.
 
-In the `FMTsesmodel`, we use the `FMTspatialschedule` class to represent a spatially explicit solution, which itself is a `FMTlayer` of `FMTlinegraph`.
+In the `FMTSesModel`, we use the `FMTSpatialSchedule` class to represent a spatially explicit solution, which itself is a `FMTLayer` of `FMTLineGraph`.
 
-Each `FMTlinegraph` is a linear version of the `FMTgraph` described in [spatially referenced optimization](../spatially_referenced_optimization). What that means is that they show the evolution of the `FMTdevelopment` inside the pixel from the beginning to end of the periods that we want to take into account.
+Each `FMTLineGraph` is a linear version of the `FMTGraph` described in [spatially referenced optimization](../spatially_referenced_optimization). What that means is that they show the evolution of the `FMTDevelopment` inside the pixel from the beginning to end of the periods that we want to take into account.
 
-## The `FMTspatialschedule` class
+## The `FMTSpatialSchedule` class
 
-The `FMTspatialschedule` class contains a spatially explicit solution under the form of a `FMTlayer`. 
+The `FMTSpatialSchedule` class contains a spatially explicit solution under the form of a `FMTLayer`. 
 
-It contains an important function, `FMTspatialschedule.getsolutionstatus()`, which prints important information about how much the solution contained in the `FMTspatialschedule` achieves the objective function of the model.
+It contains an important function, `FMTSpatialSchedule.getsolutionstatus()`, which prints important information about how much the solution contained in the `FMTSpatialSchedule` achieves the objective function of the model.
 
 This function also gives a value of the *primal infeasibility*, which gives an idea of how much the current solution does not respect all of the constraints of the model at once.
 
-Note that unlike the `FMTschedule` object which only concern one periods of time (which is why the code shown in the section about [spatially referenced optimization](../spatially_referenced_optimization) contained a `for` loop around the number of period of interest when dealing with the `FMTschedule` class), `FMTspatialschedule` contains a solution for multiple periods of time at once.
+Note that unlike the `FMTSchedule` object which only concern one periods of time (which is why the code shown in the section about [spatially referenced optimization](../spatially_referenced_optimization) contained a `for` loop around the number of period of interest when dealing with the `FMTSchedule` class), `FMTSpatialSchedule` contains a solution for multiple periods of time at once.
 
-## The `FMTlinegraph`
+## The `FMTLineGraph`
 
-As said earlier, the spatial structure of a `FMTsesmodel` is like a raster map made of pixels, with each pixels being a `FMTlinegraph`.
+As said earlier, the spatial structure of a `FMTSesModel` is like a raster map made of pixels, with each pixels being a `FMTLineGraph`.
 
-In a `FMTlinegraph`, each node stands for the state of the strata inside the pixel and each edge stands for an action (e.g. cleartcut) or natural growth, as shown of this image :
+In a `FMTLineGraph`, each node stands for the state of the strata inside the pixel and each edge stands for an action (e.g. cleartcut) or natural growth, as shown of this image :
 
 {{< figure src="docs/FMTlinegraph_visual.png" >}}
 
-However, on the contrary of the `FMTgraph` object described in the section about [spatially referenced optimization](../spatially_referenced_optimization), the `FMTlinegraph` does not contain a complete enumeration of all possible actions and states possible for the strata in the pixel : instead, it only contains one solution, or one evolution possible for the strata.
+However, on the contrary of the `FMTGraph` object described in the section about [spatially referenced optimization](../spatially_referenced_optimization), the `FMTLineGraph` does not contain a complete enumeration of all possible actions and states possible for the strata in the pixel : instead, it only contains one solution, or one evolution possible for the strata.
 
 ## Making transitions with single outputs
 
-A limitation of the `FMTlinegraph` class is that one cannot use multiple output transitions, meaning transitions that results in two different strata or other outputs, as illustrated below :
+A limitation of the `FMTLineGraph` class is that one cannot use multiple output transitions, meaning transitions that results in two different strata or other outputs, as illustrated below :
 
 {{< figure src="docs/single_transitions.png" >}}
 
-Therefore, **you will need to modify the transitions of an `FMTmodel` to be able to use them in a `FMTsesmodel`**.
+Therefore, **you will need to modify the transitions of an `FMTModel` to be able to use them in a `FMTSesModel`**.
 
-To that end, you can use the `FMTtransition.single()` function, which automatically transforms multiple outputs transitions into single output transitions.
+To that end, you can use the `FMTTransition.single()` function, which automatically transforms multiple outputs transitions into single output transitions.
 
-Once that the transitions have been transformed as single transitions, you can use the `FMTsesmodel.settransitions()` function to set the new generated transitions into the `FMTsesmodel`.
+Once that the transitions have been transformed as single transitions, you can use the `FMTSesModel.setTransitions()` function to set the new generated transitions into the `FMTSesModel`.
 
 ## Spatial events
 
-The `FMTspatialschedule` also keeps tracks of the areas affected by particular actions under the form of space time events with the class `FMTevent`, as is shown here :
+The `FMTSpatialSchedule` also keeps tracks of the areas affected by particular actions under the form of space time events with the class `FMTEvent`, as is shown here :
 
 {{< figure src="docs/FMTevent_visual.png" >}}
 
-`FMTevent` can represent any kind of spatially explicit disturbance (cut, fire, etc.). It is associated with the time period of the event, and the coordinates of the spatial event.
+`FMTEvent` can represent any kind of spatially explicit disturbance (cut, fire, etc.). It is associated with the time period of the event, and the coordinates of the spatial event.
 
 {{< figure src="docs/FMTevent_visual2.png" >}}
 
 ## The initial forest map
 
-As a spatially explicit model, the `FMTsesmodel` requires spatially explicit informations about the forests in the landscape at the beginning of the planning horizon.
+As a spatially explicit model, the `FMTSesModel` requires spatially explicit informations about the forests in the landscape at the beginning of the planning horizon.
 
-To get this information from a Woodstock model (that might have served to create a `FMTlpmodel` that you optimized; see [spatially referenced optimization](../spatially_referenced_optimization)), you will need to retrieve this information from the vector file that serves as the Woodstock model's map. This vector file contains information about the *theme*, *age* and *lock* attributes for each strata which will need to be transferred into multiple spatially explicit rasters.
+To get this information from a Woodstock model (that might have served to create a `FMTLpModel` that you optimized; see [spatially referenced optimization](../spatially_referenced_optimization)), you will need to retrieve this information from the vector file that serves as the Woodstock model's map. This vector file contains information about the *theme*, *age* and *lock* attributes for each strata which will need to be transferred into multiple spatially explicit rasters.
 
-All of this information will be contained in the `FMTforest` object, which is the equivalent of the model's map, but that is based on a `FMTlayer`. Each pixel of a `FMTforest` object contains a `FMTactualdevelopment` object.
+All of this information will be contained in the `FMTForest` object, which is the equivalent of the model's map, but that is based on a `FMTLayer`. Each pixel of a `FMTForest` object contains a `FMTActualDevelopment` object.
 
-The `FMTareaparser` class can be used to generate the `FMTforest` needed for the `FMTsesmodel`, as it contains functions to read vectorial or raster maps from a Woodstock model.
+The `FMTAreaParser` class can be used to generate the `FMTForest` needed for the `FMTSesModel`, as it contains functions to read vectorial or raster maps from a Woodstock model.
 
-- `FMTareaparser.vectormaptoFMTforest()` allows you to read an existing vector (shapefile) map
-- `FMTareaparser.readrasters()` allows you to read existing rasters maps
+- `FMTAreaParser.vectorMapToFMTForest()` allows you to read an existing vector (shapefile) map
+- `FMTAreaParser.readRasters()` allows you to read existing rasters maps
 
-Both functions require several parameters to properly identify the themes that are needed, and specify several spatial characteristics of the `FMTforest` class that you will create.
+Both functions require several parameters to properly identify the themes that are needed, and specify several spatial characteristics of the `FMTForest` class that you will create.
 
-Once that the `FMTforest` is created, it needs to be given to the `FMTsesmodel` by using the `FMTsesmodel.setinitialmapping()` function.
+Once that the `FMTForest` is created, it needs to be given to the `FMTSesModel` by using the `FMTSesModel.setInitialMapping()` function.
 
 ## Using new keywords in Woodstock files for spatial constraints
 
-In a usual Woodstock model, spatial constraints are not taken into account. However, you will certainly need to use some for a spatial simulation with the `FMTsesmodel` to place the cut blocks of the optimized schedule.
+In a usual Woodstock model, spatial constraints are not taken into account. However, you will certainly need to use some for a spatial simulation with the `FMTSesModel` to place the cut blocks of the optimized schedule.
 
 To that end, FMT can read two new keywords in the *optimize* section of a Woodstock model that do not exist in the original Woodstock syntax.
 
@@ -141,15 +141,15 @@ With :
 {{< figure src="docs/adjacencyDistance.png" >}}
 - `GREENUP` correspond to the number of time periods for which we consider two events to be neighbours. For example, if `GREENUP` is equal to 3, two spatial blocks of actions that are under the maximal distance indicated by `DISTANCE` but which are separated temporally by 4 periods will not be considered spatially adjacent; however, if they were separated by 3, 2 or 1 period, or are in the same period, they will be considered spatially adjacent.
 
-## Making the simulation with `FMTsesmodel.Greedyreferencebuild()`
+## Making the simulation with `FMTSesModel.Greedyreferencebuild()`
 
-Once that you have a spatially-referenced solution/schedule (see [spatially referenced optimization](../spatially_referenced_optimization)) and that you have set the initial landscape for the `FMTsesmodel` (see previous sections), you can use `FMTsesmodel.Greedyreferencebuild()` to make the simulation proper, and obtain a spatially-explicit schedule based on the spatially-referenced schedule.
+Once that you have a spatially-referenced solution/schedule (see [spatially referenced optimization](../spatially_referenced_optimization)) and that you have set the initial landscape for the `FMTSesModel` (see previous sections), you can use `FMTSesModel.Greedyreferencebuild()` to make the simulation proper, and obtain a spatially-explicit schedule based on the spatially-referenced schedule.
 
-`FMTsesmodel.Greedyreferencebuild()` needs a the spatially-referenced solution of a `FMTlpmodel` (or a `FMTnssmodel`), in the form of a `FMTschedule` object. This solution describes which development (or strata) get harvested for one period, with which action, and at which surface/area.
+`FMTSesModel.Greedyreferencebuild()` needs a the spatially-referenced solution of a `FMTLpModel` (or a `FMTNssModel`), in the form of a `FMTSchedule` object. This solution describes which development (or strata) get harvested for one period, with which action, and at which surface/area.
 
-The `FMTschedule` from a solutioned `FMTlpmodel` or `FMTnssmodel` can be retrieved using their function `getsolution()`. However, the function will retrieve the solution for one period; we will have to loop around the periods to get the solutions for every period of interest, and to indicate if we want the solution to take into account locked developments.
+The `FMTSchedule` from a solutioned `FMTLpModel` or `FMTNssModel` can be retrieved using their function `getSolution()`. However, the function will retrieve the solution for one period; we will have to loop around the periods to get the solutions for every period of interest, and to indicate if we want the solution to take into account locked developments.
 
-`FMTsesmodel.Greedyreferencebuild()` will build a spatially explicit solution from a spatially-referenced one for a given period. Along with the `FMTschedule` for the period, the function will need a `randomiterations` argument which is the maximal number of iterations done by the algorithm before it stops when no increase in the objective function value (maximization) or decrease in the primal infeasibility value was found. This is because the simulation consist of iterations where the model will try to place cutblocks in space according to the spatially-referenced schedule in order to increase the objective function of the model (e.g., volume harvested) while respecting the linear and spatial constraints that was given (whose deviation from is represented by the primal infeasibility value).
+`FMTSesModel.Greedyreferencebuild()` will build a spatially explicit solution from a spatially-referenced one for a given period. Along with the `FMTSchedule` for the period, the function will need a `randomiterations` argument which is the maximal number of iterations done by the algorithm before it stops when no increase in the objective function value (maximization) or decrease in the primal infeasibility value was found. This is because the simulation consist of iterations where the model will try to place cutblocks in space according to the spatially-referenced schedule in order to increase the objective function of the model (e.g., volume harvested) while respecting the linear and spatial constraints that was given (whose deviation from is represented by the primal infeasibility value).
 
 A last input is a seed number that will be used to generate random numbers used for creating the cut blocks at each iteration. This system of seed allows FMT to use random numbers that are "replicable"; that means, if you keep the same seed, FMT will get the same random numbers, and will do the exact same simulations.
 
@@ -157,7 +157,7 @@ Here is a representation of how the simulation algorithm functions in practice :
 
 {{< figure src="docs/greedySimulationAlgorithm.png" >}}
 
-In R, the code to use `FMTsesmodel.Greedyreferencebuild()` will look like this :
+In R, the code to use `FMTSesModel.Greedyreferencebuild()` will look like this :
 
 ```R
 library(FMT) # Loads FMT into R
@@ -380,11 +380,11 @@ Stalled after 14 iterations Skipping
 {'ACARIBOU': 10491.125109295706, 'COUPETOTALE': 0.3982872281191633, 'Objective': 27667.040000000005, 'PLANTATION': 1.0028031096555103, 'Primalinfeasibility': 77340.64000000012, 'Total': 0.8163283360740083}
 ```
 
-## Analysing the outputs of `FMTsesmodel.Greedyreferencebuild()`
+## Analysing the outputs of `FMTSesModel.Greedyreferencebuild()`
 
-`FMTsesmodel.Greedyreferencebuild()` returns information on the best solution that have been found; which means the best spatial placement of cutblocks that the algorithm was capable of finding by optimizing the objective function, while respecting the linear and spatial constraints that were given by the user.
+`FMTSesModel.Greedyreferencebuild()` returns information on the best solution that have been found; which means the best spatial placement of cutblocks that the algorithm was capable of finding by optimizing the objective function, while respecting the linear and spatial constraints that were given by the user.
 
-In particular, `FMTsesmodel.Greedyreferencebuild()` indicates 4 important information :
+In particular, `FMTSesModel.Greedyreferencebuild()` indicates 4 important information :
 
 | Word | Description |
 | :--: | :---------- |
@@ -522,7 +522,7 @@ The process then repeats for the 9 other periods. Each time, FMT starts with a f
 Note that **stalled** and **stuck** have two different meaning :
 
 - **Stalled** means that the algorithm have generated the same exact solutions (the same placement of the cuts in space) as its 3 last iterations, implying that it cannot generate any new solution. This can happen when the constraints makes it so that the number of potential solutions are limited, which means that the algorithm will quickly have tried them all.
-- **Stuck** means that the algorithm was able to generate different solutions; but that all of these new solutions have an objective function value that is not higher than the previous ones, or that these new solutions cannot reduce the primal infeasibility. After a number of iterations corresponding to the `randomiterations` arguments provided to `FMTsesmodel.Greedyreferencebuild()` without any improvements, the algorithm will stop.
+- **Stuck** means that the algorithm was able to generate different solutions; but that all of these new solutions have an objective function value that is not higher than the previous ones, or that these new solutions cannot reduce the primal infeasibility. After a number of iterations corresponding to the `randomiterations` arguments provided to `FMTSesModel.GreedyReferenceBuild()` without any improvements, the algorithm will stop.
 
 For the second period, we can see :
 
@@ -548,4 +548,4 @@ And so on until the 10th period.
 
 * * *
 
-You should now know enough to start using FMT by yourself. If you have any remaining questions, please contact [Guillaume Cyr](mailto:Guillaume.Cyr@fec.gouv.qc.ca) or [Bruno Forest](mailto:Bruno.Forest@fec.gouv.qc.ca) from the BFEC. You can also install FMT on your computer by following the [Downloading and installing section](../../download_install/).
+You should now know enough to start using FMT by yourself. If you have any remaining questions, please contact [Guillaume Cyr](mailto:Guillaume.Cyr@fec.gouv.qc.ca) from the BFEC. You can also install FMT on your computer by following the [Downloading and installing section](../../download_install/).

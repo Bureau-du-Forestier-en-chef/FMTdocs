@@ -15,102 +15,102 @@ On peut distinguer trois façons de prendre en compte l'espace dans un modèle :
 - Dans un modèle **spatialement référencé**, les entités sont associées à des régions de l'espace, mais pas à une position précise dans ces régions ; ces régions peuvent être non-continues. Les modèles de Woodstock sont par nature spatialement référencés, car ils considèrent des *strates* qui correspondent à des forêts de même composition et de même âge, qui peuvent être dispersées en de nombreux endroits du paysage.
 - Dans un modèle **spatialement explicite**, les entités sont associées à des coordonnées précises dans l'espace, comme dans les pixels d'une carte matricielle.
 
-## Le `FMTsesmodel`
+## Le `FMTSesModel`
 
-`FMTsesmodel` est un modèle particulier qui donne à l'utilisateur la possibilité de **spatialiser** les solutions provenant de n'importe quelle classe `FMTsrmodel`, qui sont les modèles spatialement référencés (voir [objets, lecture et interrogation de modèles](../objects_parsing_interrogation) et [Optimisation spatialement référencée](../spatially_referenced_optimization)).
+`FMTSesModel` est un modèle particulier qui donne à l'utilisateur la possibilité de **spatialiser** les solutions provenant de n'importe quelle classe `FMTsrmodel`, qui sont les modèles spatialement référencés (voir [objets, lecture et interrogation de modèles](../objects_parsing_interrogation) et [Optimisation spatialement référencée](../spatially_referenced_optimization)).
 
-Notez que **nous ne parlons pas de l'optimisation d'un modèle spatialement explicite** ; c'est une tâche assez complexe qui est encore sur le plan de route de FMT (et qui est le but de la classe `FMTsamodel`).
+Notez que **nous ne parlons pas de l'optimisation d'un modèle spatialement explicite** ; c'est une tâche assez complexe qui est encore sur le plan de route de FMT (et qui est le but de la classe `FMTSaModel`).
 
 ```mermaid
 classDiagram
-FMTmodel <|-- FMTsemodel
-FMTsemodel <|-- FMTsamodel
-FMTsemodel <|-- FMTsesmodel
-FMTmodel <|-- FMTsrmodel
-FMTsrmodel <|-- FMTlpmodel
-FMTsrmodel <|-- FMTnssmodel
+FMTModel <|-- FMTSeModel
+FMTSeModel <|-- FMTSaModel
+FMTSeModel <|-- FMTSesModel
+FMTModel <|-- FMTSrModel
+FMTSrModel <|-- FMTLpModel
+FMTSrModel <|-- FMTNssModel
 ```
 
-Au lieu de ça, le `FMTsesmodel` va essayer de spatialiser le calendrier d'un `FMTsrmodel` en plaçant des blocs de coupe sur une carte. Il fait cela en faisant des itérations dans lesquelles il simule le placement de ces blocs, et en sélectionnant la meilleure solution trouvée.
+Au lieu de ça, le `FMTSesModel` va essayer de spatialiser le calendrier d'un `FMTSrModel` en plaçant des blocs de coupe sur une carte. Il fait cela en faisant des itérations dans lesquelles il simule le placement de ces blocs, et en sélectionnant la meilleure solution trouvée.
 
 Pour utiliser une métaphore, cela revient à essayer de trouver une position gagnante aux échecs si vous n'êtes pas capable de la trouver en réfléchissant bien au placement de vos pièces d'échecs : vous pourriez essayer de placer vos pièces au hasard de nombreuses, nombreuses fois, et vous demander à chaque fois si vous avez gagné, ou si vous êtes plus proche de la victoire, et si la position des pièces d'échecs respecte les règles du jeu.
 
-Ici, `FMTsesmodel` essaiera de placer les blocs de coupes selon la solution d'un `FMTsrmodel` (qui est un calendrier d'opérations forestières appliqué à des *strates* spatialement référencées). Son but sera de trouver le meilleur positionnement possible, en s'accommodant au mieux des contraintes linéaires et spatiales qui sont données pour leur placement, et en maximisant la valeur objective (par exemple, en maximisant le bois récolté).
+Ici, `FMTSesModel` essaiera de placer les blocs de coupes selon la solution d'un `FMTSrModel` (qui est un calendrier d'opérations forestières appliqué à des *strates* spatialement référencées). Son but sera de trouver le meilleur positionnement possible, en s'accommodant au mieux des contraintes linéaires et spatiales qui sont données pour leur placement, et en maximisant la valeur objective (par exemple, en maximisant le bois récolté).
 
 Cependant, cette méthode a peu de chance de trouver le **placement optimal**, s'il existe ; à la place, plus il y a d'itérations pour essayer de les placer, plus il y a de chance de trouver une solution qui se rapproche le plus possible d'un placement optimal des blocs coupés dans l'espace. C'est pourquoi ce processus représente ce que nous appelons une [heuristique](https://en.wikipedia.org/wiki/Heuristic).
 
 ## L'espace dans FMT
 
-FMT utilise des `FMTlayers` pour représenter toute solution spatialement explicite.
+FMT utilise des `FMTLayers` pour représenter toute solution spatialement explicite.
 
-Un `FMTlayer` peut être comparé à un fichier raster ordinaire dans lequel les pixels peuvent contenir à peu près n'importe quel type ou classe de peuplement forestier.
+Un `FMTLayer` peut être comparé à un fichier raster ordinaire dans lequel les pixels peuvent contenir à peu près n'importe quel type ou classe de peuplement forestier.
 
-Dans le `FMTsesmodel`, nous utilisons la classe `FMTspatialschedule` pour représenter une solution spatialement explicite, qui est elle-même une `FMTlayer` de `FMTlinegraph`.
+Dans le `FMTSesModel`, nous utilisons la classe `FMTSpatialSchedule` pour représenter une solution spatialement explicite, qui est elle-même une `FMTLayer` de `FMTLineGraph`.
 
-Chaque `FMTlinegraph` est une version linéaire du `FMTgraph` décrit dans [Optimisation spatialement référencée](../spatially_referenced_optimization). Cela signifie qu'ils montrent l'évolution du `FMTdevelopment` à l'intérieur du pixel du début à la fin des périodes que nous voulons prendre en compte.
+Chaque `FMTLineGraph` est une version linéaire du `FMTGraph` décrit dans [Optimisation spatialement référencée](../spatially_referenced_optimization). Cela signifie qu'ils montrent l'évolution du `FMTDevelopment` à l'intérieur du pixel du début à la fin des périodes que nous voulons prendre en compte.
 
-## La classe `FMTspatialschedule`.
+## La classe `FMTSpatialSchedule`.
 
-La classe `FMTspatialschedule` contient une solution spatialement explicite sous la forme d'un `FMTlayer`. 
+La classe `FMTSpatialSchedule` contient une solution spatialement explicite sous la forme d'un `FMTLayer`. 
 
-Elle contient une fonction importante, `FMTspatialschedule.getsolutionstatus()`, qui imprime des informations importantes sur la façon dont la solution contenue dans le `FMTspatialschedule` atteint l'objectif du modèle.
+Elle contient une fonction importante, `FMTSpatialSchedule.getSolutionStatus()`, qui imprime des informations importantes sur la façon dont la solution contenue dans le `FMTSpatialSchedule` atteint l'objectif du modèle.
 
 Cette fonction donne également une valeur de l'*infaisabilité primaire*, qui donne une idée de la mesure dans laquelle la solution actuelle ne respecte pas toutes les contraintes linéaires et spatiales du modèle.
 
-Notez que contrairement à l'objet `FMTschedule` qui ne concerne qu'une seule période de temps (c'est pourquoi le code montré dans la section sur [l'optimisation spatialement référencée](../spatially_referenced_optimization) contenait une boucle `for` autour du nombre de périodes d'intérêt lorsqu'il s'agissait de la classe `FMTschedule`), `FMTspatialschedule` contient une solution pour plusieurs périodes de temps à la fois.
+Notez que contrairement à l'objet `FMTSchedule` qui ne concerne qu'une seule période de temps (c'est pourquoi le code montré dans la section sur [l'optimisation spatialement référencée](../spatially_referenced_optimization) contenait une boucle `for` autour du nombre de périodes d'intérêt lorsqu'il s'agissait de la classe `FMTSchedule`), `FMTSpatialSchedule` contient une solution pour plusieurs périodes de temps à la fois.
 
-## Le `FMTlinegraph`
+## Le `FMTLineGraph`
 
-Comme dit précédemment, la structure spatiale d'un `FMTsesmodel` est comme une carte raster faite de pixels, chaque pixel étant un `FMTlinegraph`.
+Comme dit précédemment, la structure spatiale d'un `FMTSesModel` est comme une carte raster faite de pixels, chaque pixel étant un `FMTLineGraph`.
 
-Dans un `FMTlinegraph`, chaque noeud représente l'état des strates à l'intérieur du pixel et chaque lien représente une action (par exemple une coupe totale) ou une croissance naturelle, comme le montre l'image suivante :
+Dans un `FMTLineGraph`, chaque noeud représente l'état des strates à l'intérieur du pixel et chaque lien représente une action (par exemple une coupe totale) ou une croissance naturelle, comme le montre l'image suivante :
 
 {{< figure src="docs/FMTlinegraph_visual.png" >}}
 
-Cependant, contrairement à l'objet `FMTgraph` décrit dans la section sur [l'optimisation spatialement référencée](../spatially_referenced_optimization), le `FMTlinegraph` ne contient pas une énumération complète de toutes les actions et états possibles pour les strates dans le pixel : au lieu de cela, il ne contient qu'une solution, ou une évolution possible pour les strates.
+Cependant, contrairement à l'objet `FMTGraph` décrit dans la section sur [l'optimisation spatialement référencée](../spatially_referenced_optimization), le `FMTLineGraph ne contient pas une énumération complète de toutes les actions et états possibles pour les strates dans le pixel : au lieu de cela, il ne contient qu'une solution, ou une évolution possible pour les strates.
 
 ## Faire des transitions avec des sorties uniques
 
-Une limitation de la classe `FMTlinegraph` est que l'on ne peut pas utiliser de transitions à sorties multiples, c'est-à-dire des transitions qui aboutissent à deux strates ou d'autres sorties, comme illustré ci-dessous :
+Une limitation de la classe `FMTLineGraph` est que l'on ne peut pas utiliser de transitions à sorties multiples, c'est-à-dire des transitions qui aboutissent à deux strates ou d'autres sorties, comme illustré ci-dessous :
 
 {{< figure src="docs/single_transitions.png" >}}
 
-Par conséquent, **vous devrez modifier les transitions d'un `FMTmodel` pour pouvoir les utiliser dans un `FMTsesmodel`**.
+Par conséquent, **vous devrez modifier les transitions d'un `FMTModel` pour pouvoir les utiliser dans un `FMTSesModel`**.
 
-À cette fin, vous pouvez utiliser la fonction `FMTtransition.single()`, qui transforme automatiquement les transitions à sorties multiples en transitions à sortie unique.
+À cette fin, vous pouvez utiliser la fonction `FMTTransition.single()`, qui transforme automatiquement les transitions à sorties multiples en transitions à sortie unique.
 
-Une fois que les transitions ont été transformées en transitions uniques, vous pouvez utiliser la fonction `FMTsesmodel.settransitions()` pour intégrer les nouvelles transitions générées dans le `FMTsesmodel`.
+Une fois que les transitions ont été transformées en transitions uniques, vous pouvez utiliser la fonction `FMTSesModel.setTransitions()` pour intégrer les nouvelles transitions générées dans le `FMTSesModel`.
 
 ## Événements spatiaux
 
-Le `FMTspatialschedule` garde également la trace des zones affectées par des actions particulières sous la forme d'événements spatiaux avec la classe `FMTevent`, comme illustré ici :
+Le `FMTSpatialSchedule` garde également la trace des zones affectées par des actions particulières sous la forme d'événements spatiaux avec la classe `FMTEvent`, comme illustré ici :
 
 {{< figure src="docs/FMTevent_visual.png" >}}
 
-`FMTevent` peut représenter tout type de perturbation spatialement explicite (coupe, feu, etc.). Il est associé à la période de temps de l'événement, et aux coordonnées de l'événement spatial.
+`FMTEvent` peut représenter tout type de perturbation spatialement explicite (coupe, feu, etc.). Il est associé à la période de temps de l'événement, et aux coordonnées de l'événement spatial.
 
 {{< figure src="docs/FMTevent_visual2.png" >}}
 
 ## La carte forestière initiale
 
-En tant que modèle spatialement explicite, le `FMTsesmodel` nécessite des informations spatialement explicites sur les forêts du paysage au début de l'horizon de planification.
+En tant que modèle spatialement explicite, le `FMTSesModel` nécessite des informations spatialement explicites sur les forêts du paysage au début de l'horizon de planification.
 
-Pour obtenir ces informations à partir d'un modèle Woodstock (qui peut avoir servi à créer un `FMTlpmodel` que vous avez optimisé ; voir [optimisation spatialement référencée](../spatially_referenced_optimization)), vous devrez récupérer ces informations à partir du fichier vectoriel qui sert de carte au modèle Woodstock. Ce fichier vectoriel contient des informations sur les attributs *theme*, *age* et *lock* pour chaque strate qui devront être transférées dans plusieurs rasters spatialement explicites.
+Pour obtenir ces informations à partir d'un modèle Woodstock (qui peut avoir servi à créer un `FMTLpModel` que vous avez optimisé ; voir [optimisation spatialement référencée](../spatially_referenced_optimization)), vous devrez récupérer ces informations à partir du fichier vectoriel qui sert de carte au modèle Woodstock. Ce fichier vectoriel contient des informations sur les attributs *theme*, *age* et *lock* pour chaque strate qui devront être transférées dans plusieurs rasters spatialement explicites.
 
-Toutes ces informations seront contenues dans l'objet `FMTforest`, qui est l'équivalent de la carte du modèle, mais qui est basé sur un `FMTlayer`. Chaque pixel d'un objet `FMTforest` contient un objet `FMTactualdevelopment`.
+Toutes ces informations seront contenues dans l'objet `FMTForest`, qui est l'équivalent de la carte du modèle, mais qui est basé sur un `FMTLayer`. Chaque pixel d'un objet `FMTForest` contient un objet `FMTActualDevelopment`.
 
-La classe `FMTareaparser` peut être utilisée pour générer le `FMTforest` nécessaire au `FMTsesmodel`, car elle contient des fonctions pour lire les cartes vectorielles ou matricielles d'un modèle Woodstock.
+La classe `FMTAreaParser` peut être utilisée pour générer le `FMTForest` nécessaire au `FMTSesModel`, car elle contient des fonctions pour lire les cartes vectorielles ou matricielles d'un modèle Woodstock.
 
-- `FMTareaparser.vectormaptoFMTforest()` vous permet de lire une carte vectorielle (shapefile) existante
-- `FMTareaparser.readrasters()` vous permet de lire des cartes raster existantes
+- `FMTareaparser.vectorMapToFMTForest()` vous permet de lire une carte vectorielle (shapefile) existante
+- `FMTareaparser.readRasters()` vous permet de lire des cartes raster existantes
 
-Ces deux fonctions requièrent plusieurs paramètres pour identifier correctement les thèmes nécessaires, et pour spécifier plusieurs caractéristiques spatiales de la classe `FMTforest` que vous allez créer.
+Ces deux fonctions requièrent plusieurs paramètres pour identifier correctement les thèmes nécessaires, et pour spécifier plusieurs caractéristiques spatiales de la classe `FMTForest` que vous allez créer.
 
-Une fois que la `FMTforest` est créée, elle doit être fournie au `FMTsesmodel` en utilisant la fonction `FMTsesmodel.setinitialmapping()`.
+Une fois que la `FMTForest` est créée, elle doit être fournie au `FFMTSesModel` en utilisant la fonction `FMTSesModel.setInitialMapping()`.
 
 ## Utilisation de nouveaux mots-clés dans les fichiers Woodstock pour les contraintes spatiales
 
-Dans un modèle Woodstock habituel, les contraintes spatiales ne sont pas prises en compte. Cependant, vous aurez certainement besoin d'en utiliser pour une simulation spatiale avec le `FMTsesmodel`, afin de placer les blocs de coupes du planning optimisé.
+Dans un modèle Woodstock habituel, les contraintes spatiales ne sont pas prises en compte. Cependant, vous aurez certainement besoin d'en utiliser pour une simulation spatiale avec le `FMTSesModel`, afin de placer les blocs de coupes du planning optimisé.
 
 À cette fin, FMT peut lire deux nouveaux mots-clés dans la section *optimize* d'un modèle Woodstock qui n'existent pas dans la syntaxe originale de Woodstock.
 
@@ -141,15 +141,15 @@ Avec :
 {{< figure src="docs/adjacencyDistance.png" >}}
 - Les `GREENUP` correspondent au nombre de périodes de temps pour lesquelles nous considérons que deux événements sont voisins. Par exemple, si `GREENUP` est égal à 3, deux blocs spatiaux d'actions qui sont sous la distance maximale indiquée par `DISTANCE` mais qui sont séparés temporellement par 4 périodes ne seront pas considérés comme spatialement adjacents ; cependant, s'ils étaient séparés par 3, 2 ou 1 période, ou sont dans la même période, ils seront considérés comme spatialement adjacents.
 
-## Faire la simulation avec `FMTsesmodel.Greedyreferencebuild()`
+## Faire la simulation avec `FMTSesModel.GreedyreferenceBuild()`
 
-Une fois que vous avez une solution/ un calendrier spatialement référencé (voir [optimisation spatialement référencé](../spatially_referenced_optimization)) et que vous avez défini le paysage initial pour le `FMTsesmodel` (voir les sections précédentes), vous pouvez utiliser `FMTsesmodel.Greedyreferencebuild()` pour faire la simulation proprement dite, et obtenir un calendrier d'opérations spatialement explicite basé sur le calendrier d'opérations spatialement référencé.
+Une fois que vous avez une solution/ un calendrier spatialement référencé (voir [optimisation spatialement référencé](../spatially_referenced_optimization)) et que vous avez défini le paysage initial pour le `FMTSesModel` (voir les sections précédentes), vous pouvez utiliser `FMTSesModel.GreedyreferenceBuild()` pour faire la simulation proprement dite, et obtenir un calendrier d'opérations spatialement explicite basé sur le calendrier d'opérations spatialement référencé.
 
-`FMTsesmodel.Greedyreferencebuild()` a besoin de la solution spatialement référencée d'un `FMTlpmodel` (ou d'un `FMTnssmodel`), sous la forme d'un objet `FMTschedule`. Cette solution décrit quel développement (ou strates) est récolté pour une période donnée, avec quelle action, et sur quelle surface/zone.
+`FMTSesModel.GreedyreferenceBuild()` a besoin de la solution spatialement référencée d'un `FMTLpModel` (ou d'un `FMTNssModel`), sous la forme d'un objet `FMTSchedule`. Cette solution décrit quel développement (ou strates) est récolté pour une période donnée, avec quelle action, et sur quelle surface/zone.
 
-Le `FMTschedule` d'un `FMTlpmodel` ou `FMTnssmodel` solutionné peut être récupéré en utilisant leur fonction `getsolution()`. Cependant, la fonction récupérera la solution pour une période ; vous devrez boucler autour des périodes pour obtenir les solutions pour chaque période d'intérêt, et pour indiquer si vous voulez que la solution prenne en compte les développements bloqués (*locked*).
+Le `FMTSchedule` d'un `FMTLpModel` ou `FMTNssModel` solutionné peut être récupéré en utilisant leur fonction `getSolution()`. Cependant, la fonction récupérera la solution pour une période ; vous devrez boucler autour des périodes pour obtenir les solutions pour chaque période d'intérêt, et pour indiquer si vous voulez que la solution prenne en compte les développements bloqués (*locked*).
 
-`FMTsesmodel.Greedyreferencebuild()` construira une solution spatialement explicite à partir d'une solution spatialement référencée pour une période donnée. Avec le `FMTschedule` pour la période, la fonction aura besoin d'un argument `randomiterations` qui est le nombre maximal d'itérations faites par l'algorithme avant qu'il ne s'arrête quand aucune augmentation de la valeur de la fonction d'objectif (maximisation de l'objectif) ou diminution de la valeur d'infaisabilité primaire n'a été trouvée. Cela s'explique par le fait que la simulation est constituée d'itérations au cours desquelles le modèle tente de placer les blocs de coupes dans l'espace conformément au calendrier d'opérations spatialement référencées afin d'augmenter la fonction d'objectif du modèle (par exemple, le volume récolté) tout en respectant les contraintes linéaires et spatiales données (dont la déviation aux contraintes est représentée par la valeur d'infaisabilité primaire).
+`FMTSesModel.GreedyreferenceBuild()` construira une solution spatialement explicite à partir d'une solution spatialement référencée pour une période donnée. Avec le `FMTSchedule` pour la période, la fonction aura besoin d'un argument `randomiterations` qui est le nombre maximal d'itérations faites par l'algorithme avant qu'il ne s'arrête quand aucune augmentation de la valeur de la fonction d'objectif (maximisation de l'objectif) ou diminution de la valeur d'infaisabilité primaire n'a été trouvée. Cela s'explique par le fait que la simulation est constituée d'itérations au cours desquelles le modèle tente de placer les blocs de coupes dans l'espace conformément au calendrier d'opérations spatialement référencées afin d'augmenter la fonction d'objectif du modèle (par exemple, le volume récolté) tout en respectant les contraintes linéaires et spatiales données (dont la déviation aux contraintes est représentée par la valeur d'infaisabilité primaire).
 
 Une dernière entrée est un numéro de graine aléatoire (*seed*) qui sera utilisé pour générer des nombres aléatoires utilisés pour créer les blocs de coupes à chaque itération. Ce système de graine permet à FMT d'utiliser des nombres aléatoires qui sont "réplicables" ; c'est-à-dire que si vous gardez la même graine, FMT obtiendra les mêmes nombres aléatoires, et fera exactement les mêmes simulations.
 
@@ -157,7 +157,7 @@ Voici une représentation du fonctionnement de l'algorithme de simulation en pra
 
 {{< figure src="docs/greedySimulationAlgorithm.png" >}}
 
-En R, le code pour utiliser `FMTsesmodel.Greedyreferencebuild()` ressemblera à ceci :
+En R, le code pour utiliser `FMTSesModel.GreedyReferenceBuild()` ressemblera à ceci :
 
 ```R
 library(FMT) # Charge FMT dans R
@@ -382,11 +382,11 @@ Stalled after 14 iterations Skipping
 {'ACARIBOU': 10491.125109295706, 'COUPETOTALE': 0.3982872281191633, 'Objective': 27667.040000000005, 'PLANTATION': 1.0028031096555103, 'Primalinfeasibility': 77340.64000000012, 'Total': 0.8163283360740083}
 ```
 
-## Analyser les sorties de `FMTsesmodel.Greedyreferencebuild()`
+## Analyser les sorties de `FMTSesModel.GreedyReferenceBuild()`
 
-`FMTsesmodel.Greedyreferencebuild()` retourne des informations sur la meilleure solution qui a été trouvée ; c'est-à-dire le meilleur placement spatial des blocs de coupes que l'algorithme a été capable de trouver en optimisant la fonction d'objectif, tout en respectant les contraintes linéaires et spatiales qui ont été données par l'utilisateur.
+`FMTSesModel.GreedyReferenceBuild()` retourne des informations sur la meilleure solution qui a été trouvée ; c'est-à-dire le meilleur placement spatial des blocs de coupes que l'algorithme a été capable de trouver en optimisant la fonction d'objectif, tout en respectant les contraintes linéaires et spatiales qui ont été données par l'utilisateur.
 
-En particulier, `FMTsesmodel.Greedyreferencebuild()` indique 4 informations importantes :
+En particulier, `FMTSesModel.GreedyReferenceBuild()` indique 4 informations importantes :
 
 | Mot | Description |
 | :--: | :----------: |
@@ -524,7 +524,7 @@ Le processus se répète ensuite pour les 9 autres périodes. À chaque fois, FM
 Notez que **stalled** et **stuck** ont deux significations différentes :
 
 - **Stalled** signifie que l'algorithme a généré exactement les mêmes solutions (le même placement des coupes dans l'espace) que ses 3 dernières itérations, ce qui implique qu'il ne peut générer aucune nouvelle solution. Cela peut se produire lorsque les contraintes font que le nombre de solutions potentielles est limité, ce qui signifie que l'algorithme les aura rapidement toutes essayées.
-- **Stuck** signifie que l'algorithme a pu générer différentes solutions, mais que toutes ces nouvelles solutions ont une valeur de fonction d'objectif qui n'est pas supérieure aux précédentes, ou bien que ces nouvelles solutions ne peuvent pas réduire l'infaisabilité primaire. Après un nombre d'itérations correspondant aux arguments `randomiterations` fournis à `FMTsesmodel.Greedyreferencebuild()` sans aucune amélioration, l'algorithme s'arrête.
+- **Stuck** signifie que l'algorithme a pu générer différentes solutions, mais que toutes ces nouvelles solutions ont une valeur de fonction d'objectif qui n'est pas supérieure aux précédentes, ou bien que ces nouvelles solutions ne peuvent pas réduire l'infaisabilité primaire. Après un nombre d'itérations correspondant aux arguments `randomiterations` fournis à `FMTSesModel.GreedyReferenceBuild` sans aucune amélioration, l'algorithme s'arrête.
 
 Pour la deuxième période, nous pouvons voir :
 

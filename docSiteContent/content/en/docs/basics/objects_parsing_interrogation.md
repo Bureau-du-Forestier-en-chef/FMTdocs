@@ -57,49 +57,45 @@ If you look at the [importation of FMT in Python](../../download_install/importi
 
 The `Parser` namespace contains two important class for reading models :
 
-- `FMTareaparser` : Allows the reading and writing of the raster and vector files used in the spatial operations of FMT.
+- `FMTAreaParser` : Allows the reading and writing of the raster and vector files used in the spatial operations of FMT.
 	- Some of its functions allows you to transform data between vector and raster format.
-- `FMTmodelparser` : Allows the reading of a model across all of the Woodstock model files with the `readproject()` function, or to save it with the `write()` function after modifying it.
+- `FMTModelParser` : Allows the reading of a model across all of the Woodstock model files with the `readproject()` function, or to save it with the `write()` function after modifying it.
 	- The class also use other classes made to read Woodstock files.
 
-## The `FMTmodel` class
+## The `FMTModel` class
 
-The `FMTmodel` class is the basis of FMT.
+The `FMTModel` class is the basis of FMT.
 
-It contains informations coming from the files of the models, in Woodstock format. This can be seen by [looking at the properties of the `FMTmodel`](../../../doxygen/html/classModels_1_1FMTmodel.html#pro-attribs) :
+It contains informations coming from the files of the models, in Woodstock format. This can be seen by [looking at the properties of the `FMTModel`](../../../doxygen/html/classModels_1_1FMTModel.html#pro-attribs).
 
-{{< figure src="docs/FMTmodel_attributes.png" >}}
+However, these attributes are "protected" so that they are not edited in the wrong way. If you want to read them when using FMT, you will have to use [the *getter* functions](../../../doxygen/html/classModels_1_1FMTModel.html#pub-methods) that will get them for you.
 
-However, these attributes are "protected" so that they are not edited in the wrong way. If you want to read them when using FMT, you will have to use [the *getter* functions](../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods) that will get them for you :
 
-{{< figure src="docs/FMTmodel_getter.png" >}}
+Additionally, you can edit them in the right way by using [the *setter* functions](../../../doxygen/html/classModels_1_1FMTModel.html#pub-methods). This allows you to edit different parts of the model.
 
-Additionally, you can edit them in the right way by using [the *setter* functions](../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods). This allows you to edit different parts of the model.
 
-{{< figure src="docs/FMTmodel_setters.png" >}}
-
-In the end, the `FMTModel` is what we call a *parent class* for all of the different class of models that FMT uses, such as `FMTlpmodel` (linear programming model), and `FMTsesmodel` (spatialy explicit model) according to the following diagram :
+In the end, the `FMTModel` is what we call a *parent class* for all of the different class of models that FMT uses, such as `FMTLpModel` (linear programming model), and `FMTSesModel` (spatialy explicit model) according to the following diagram :
 
 ```mermaid
 classDiagram
-FMTobject <|-- FMTmodel
-FMTmodel <|-- FMTsemodel
-FMTsemodel <|-- FMTsamodel
-FMTsemodel <|-- FMTsesmodel
-FMTmodel <|-- FMTsrmodel
-FMTsrmodel <|-- FMTlpmodel
-FMTsrmodel <|-- FMTnssmodel
+FMTObject <|-- FMTModel
+FMTModel <|-- FMTSeModel
+FMTSeModel <|-- FMTSaModel
+FMTSeModel <|-- FMTSesModel
+FMTModel <|-- FMTSrModel
+FMTSrModel <|-- FMTLpModel
+FMTSrModel <|-- FMTNssModel
 ```
 
-Observe that all of these classes ultimately inherit from the `FMTobject` class. This is the case for every object in FMT, as `FMTobject` contains useful functions and properties for debugging FMT.
+Observe that all of these classes ultimately inherit from the `FMTObject` class. This is the case for every object in FMT, as `FMTObject` contains useful functions and properties for debugging FMT.
 
-The `FMTnssmodel` and `FMTlpmodel` are spatially referenced models `FMTsrmodel`. The `FMTlpmodel` is used for **optimization**, while `FMTnssmodel` is used for **simulation**.
+The `FMTNssModel` and `FMTLpModel` are spatially referenced models `FMTSrModel`. The `FMTLpModel` is used for **optimization**, while `FMTNssModel` is used for **simulation**.
 
-Meanwhile, the `FMTsesmodel` and `FMTsamodel` are spatially explicit models `FMTsemodel`. In the same way, `FMTsamodel` is used for **optimization**, while `FMTsesmodel` is used for **simulation**.
+Meanwhile, the `FMTSesModel` and `FMTSaModel` are spatially explicit models `FMTSeModel`. In the same way, `FMTSaModel` is used for **optimization**, while `FMTSesModel` is used for **simulation**.
 
-**We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the `FMTlpmodel`.**
+**We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the `FMTLpModel`.**
 
-## Loading a simple `FMTlpmodel`
+## Loading a simple `FMTLpModel`
 
 Here is an example of how it looks like to read a linear programming model (in Woodstock format) with FMT.
 
@@ -164,17 +160,17 @@ The `Core` namespace contains elements used by FMT "under the hood" to make the 
 
 For example, it contains the objects :
 
-- `FMTaction` : Class that defines the operability of multiple strata for a given disturbance.
-- `FMTtransition` : Class that defines the transitions of multiple strata for a given disturbance.
-- `FMTyields` : Class that defines the growth and yields values for every strata.
-- `FMToutputs` : Class that defines the outputs in the model (inventory or action based), but not the outputs *of* the model (e.g., output files or others)
-- `FMTconstraints` : Class that defines the global constraints and the objective of the model (e.g., variable to optimize).
+- `FMTAction` : Class that defines the operability of multiple strata for a given disturbance.
+- `FMTTransition` : Class that defines the transitions of multiple strata for a given disturbance.
+- `FMTYields` : Class that defines the growth and yields values for every strata.
+- `FMTOutputs` : Class that defines the outputs in the model (inventory or action based), but not the outputs *of* the model (e.g., output files or others)
+- `FMTConstraints` : Class that defines the global constraints and the objective of the model (e.g., variable to optimize).
 
-These different objects can be called from a `FMTmodel` object with the different *getter* functions.
+These different objects can be called from a `FMTModel` object with the different *getter* functions.
 
-For example, to see the list of `FMTaction` objects associated with a particular `FMTmodel`, you can use the `FMTModel.getactions()` (or `FMTModel$getactions()` in R) function, and use a `for` loop to display every action other it. **The actions displayed in such way will correspond to the actions present in the `.act` file of the Woodstock files for the model**.
+For example, to see the list of `FMTAction` objects associated with a particular `FMTModel`, you can use the `FMTModel.getActions()` (or `FMTModel$getactions()` in R) function, and use a `for` loop to display every action other it. **The actions displayed in such way will correspond to the actions present in the `.act` file of the Woodstock files for the model**.
 
-Here is an example of displaying the actions and the transitions of a `FMTmodel` in R code :
+Here is an example of displaying the actions and the transitions of a `FMTModel` in R code :
 
 ```R
 library(FMT) # Loads FMT into R
@@ -315,17 +311,17 @@ _DEATH
 
 ## Comparing elements in FMT
 
-A common operation to do in your scripts will be to compare elements : for example, to compare the name of a `FMTaction` object with the name of the action that you want to select, etc.
+A common operation to do in your scripts will be to compare elements : for example, to compare the name of a `FMTAction` object with the name of the action that you want to select, etc.
 
 In such cases, remember that **all strings read by FMT are automatically set to upper case strings**. Therefore, **if you want to compare elements name in FMT make sure the string is in uppercase**.
 
-For example, if you have an action named `Clearcut` or `clearcut` that you want to select, you will need to compare the name of the `FMTactions` of the models with the string `CLEARCUT`, all in upper case.
+For example, if you have an action named `Clearcut` or `clearcut` that you want to select, you will need to compare the name of the `FMTActions` of the models with the string `CLEARCUT`, all in upper case.
 
 ## Conversion of errors to warnings
 
-All FMT classes inherit from the class `FMTobject`, and thus share the same `FMTexceptionhandler` and `FMTlogger`.
+All FMT classes inherit from the class `FMTObject`, and thus share the same `FMTExceptionHandler` and `FMTLogger`.
 
-If the user want to ignore some error, he can use the function `seterrorstowarnings` of any FMT class and pass a vector of errors that the handler needs to consider warnings. This function is risky and can lead to errors. It is recommended that you investigate FMT error messages and correct the model accordingly.
+If the user want to ignore some error, he can use the function `setErrorsToWarnings` of any FMT class and pass a vector of errors that the handler needs to consider warnings. This function is risky and can lead to errors. It is recommended that you investigate FMT error messages and correct the model accordingly.
 
 * * *
 

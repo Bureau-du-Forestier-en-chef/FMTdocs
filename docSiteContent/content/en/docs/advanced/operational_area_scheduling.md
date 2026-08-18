@@ -68,9 +68,9 @@ Thus, **in order to use the following functions, the SOC must have already been 
 
 ### Creating SOC within a linear programming model in FMT
 
-In FMT, once a linear model has been created based on woodstock files (see [FMT basics](../../basics/spatially_referenced_optimization/)), it is possible to create the structure of SOCs within the model (see previous sections) through the `Heuristics.FMToperatingareascheme()` function.
+In FMT, once a linear model has been created based on woodstock files (see [FMT basics](../../basics/spatially_referenced_optimization/)), it is possible to create the structure of SOCs within the model (see previous sections) through the `Heuristics.FMTOperatingAreaScheme()` function.
 
-The function `Heuristics.FMToperatingareascheme()` is used to build a single SOC within the model, and therefore must be repeated for each SOC that is to be created. It requires different parameters. These parameters are used to give constraints on how and when a SOC can be opened in the calendar.
+The function `Heuristics.FMTOperatingAreaScheme()` is used to build a single SOC within the model, and therefore must be repeated for each SOC that is to be created. It requires different parameters. These parameters are used to give constraints on how and when a SOC can be opened in the calendar.
 
 You will find an example of this creation in the [next section](#example-script).
 
@@ -78,14 +78,14 @@ You will find an example of this creation in the [next section](#example-script)
 The timing of the opening and closing of SOCs that FMT can subsequently create is very sensitive to these different parameters. If these are incorrectly specified, FMT may be unable to find a feasible solution to the model.
 {{% /callout %}}
 
-- The first parameter contains the SOC to create itself. It can be constructed using the function `Heuristics.FMToperatingarea()`, which itself takes two parameters: the first is the mask that will describe which stands will be contained in this SOC, and the second is the `neihgbors perimeter`. This second parameter describes the ratio of the perimeter of the SOC that it must have in common with another SOC for both to be considered neighbors. For example, if the neighbor perimeter is 0.5, then 50% of the SOC perimeter must be shared with another SOC for them to be considered neighbors.
+- The first parameter contains the SOC to create itself. It can be constructed using the function `Heuristics.FMTOperatingArea()`, which itself takes two parameters: the first is the mask that will describe which stands will be contained in this SOC, and the second is the `neihgbors perimeter`. This second parameter describes the ratio of the perimeter of the SOC that it must have in common with another SOC for both to be considered neighbors. For example, if the neighbor perimeter is 0.5, then 50% of the SOC perimeter must be shared with another SOC for them to be considered neighbors.
 - The second parameter is the `opening time`. It defines how long the SOC should remain open when it is open for a period of time. For example, if the opening time is 5, then the SOC will always be open for 5 periods at a time.
 - The third parameter is the `return time`. This is the number of periods of time that must be met before the SOC is reopened in the future. For example, if the return time is 5, then there must be at least 5 time periods between two openings of the SOC.
 - The fourth parameter is the `repetition pattern`, or the repetition of the harvest pattern. It is greater than or equal to 1, and it will effectively force the SOC to follow a pattern of openings/closures several times in time that corresponds to an alternation between its opening and closing time. For example, for an opening time of 2, a closing time of 3 and a harvest pattern repetition value of 2, once the SOC is opened, it will automatically follow the "open, open, closed, closed, open, closed, closed" schedule, which corresponds to 2 repetitions of its opening and closing parameters.
 - The fifth parameter is the `green up period`. It corresponds to the time the SOC has to wait to be opened again if a neighboring SOC is harvested. Neighboring SOC are in turn found through the perimeter of the neighbors given earlier.
 - The sixth parameter is the `starting period`. It corresponds to the period from which the SOC can start to be opened in the model.
 
-All SOC created by the function `Heuristics.FMToperatingareascheme()` should ideally be put into a list, which will be given as parameter to another function later.
+All SOC created by the function `Heuristics.FMTOperatingAreaScheme()` should ideally be put into a list, which will be given as parameter to another function later.
 
 ### Determining neighboring SOCs to use advanced spatial constraints
 
@@ -99,9 +99,9 @@ To use the following functions, **the first attributes present in the shapefile/
 The shapefile or vector file may contain other attributes afterward; but without these first attributes matching the themes in the Woodstock files, the FMT functions will not be able to recognize which polygon corresponds to which SOC, and they will not work.
 {{% /callout %}}
 
-This can be done by using the `getschemeneighbors()` function of a previously created `FMTareaparser` object, and providing it with the list of SOC created through `Heuristics.FMToperatingareascheme()` (see [previous section](#creating-soc-within-a-linear-programming-model-in-fmt)) as well as the shapefile (or other type of vector file) that contains the SOC. Then you just have to indicate which fields of the shapefile contain the information related to the age of the SOC and their area. It is possible to use optional parameters in order not to consider SOC with too small areas.
+This can be done by using the `getSchemeNeighbors()` function of a previously created `FMTAreaParser` object, and providing it with the list of SOC created through `Heuristics.FMTOperatingAreaScheme()` (see [previous section](#creating-soc-within-a-linear-programming-model-in-fmt)) as well as the shapefile (or other type of vector file) that contains the SOC. Then you just have to indicate which fields of the shapefile contain the information related to the age of the SOC and their area. It is possible to use optional parameters in order not to consider SOC with too small areas.
 
-In doing so, the `getschemeneighbors()` function will return a list of SOCs similar to that created by `Heuristics.FMToperatingareascheme()`; however, for each of the SOCs, the vector indicating the list of their spatial neighbors will be filled in.
+In doing so, the `getSchemeNeighbors()` function will return a list of SOCs similar to that created by `Heuristics.FMTOperatingAreaScheme()`; however, for each of the SOCs, the vector indicating the list of their spatial neighbors will be filled in.
 
 This should take the following form:
 
@@ -110,23 +110,23 @@ This should take the following form:
 areap = Parser.FMTareaparser()
 # We indicate the location of the shapefile
 shapefileLocation = "./spatialCompartments.shp"
-# We use the function on a list of SOC already created with Heuristics.FMToperatingareascheme() before, operaeas
+# We use the function on a list of SOC already created with Heuristics.FMTOperatingAreaScheme() before, operaeas
 # The "modelthemes" object contains the themes of the model
 # The list will be updated with SOC that contain their neighbors vector filled according to their position in space described in the vector file spatialCompartments.shp given as argument
 opeareas = areap.getschemeneighbors(opeareas,modelthemes,shapefileLocation,"AGE","SUPERFICIE")
 ```
 
-For more information, see the [doxygen page of `FMTareaparser` and the section on `getschemeneighbors`](../../../../doxygen/html/classParser_1_1FMTareaparser.html#a000283e41dfb73733984a4292b6dfa4a)
+For more information, see the [doxygen page of `FMTAreaParser` and the section on `getSchemeNeighbors`](../../../../doxygen/html/classParser_1_1FMTAreaParser.html#a000283e41dfb73733984a4292b6dfa4a)
 
 ### Creation of an *output node* related to actions influenced by the SOC schedule.
 
-In order to start optimizing the SOC schedule (see [next section](#launching-the-greedy-algorithm-and-retrieving-the-optimized-calendar)), we need to provide FMT with different information when it comes to the actions and stands that will be affected by the SOC. To do this, FMT needs a `FMToutputnode` object related to the actions that will be targeted by the SOC openings and closings (e.g., a type of cutting that cannot be done too close to each other). These objects are only used because they are the most useful for this step, not because they are the only ones that can give this information to FMT.
+In order to start optimizing the SOC schedule (see [next section](#launching-the-greedy-algorithm-and-retrieving-the-optimized-calendar)), we need to provide FMT with different information when it comes to the actions and stands that will be affected by the SOC. To do this, FMT needs a `FMTOutputNode` object related to the actions that will be targeted by the SOC openings and closings (e.g., a type of cutting that cannot be done too close to each other). These objects are only used because they are the most useful for this step, not because they are the only ones that can give this information to FMT.
 
-The `FMToutputnode` objects contain the *output nodes* of the linear model. These are composed of 4 elements: a mask (to define the stands considered by the *output node*), an action, a yield, and a parameter that can be used to modify the yield. For example, an *output node* can concern 80% of the gross volume harvested by total cuts in all stands via the statement `? ? ? coupetotale volumebrut * 0.88`. The *output nodes* are indicated in the `.out` file of the Woodstock formulation. Several *output nodes* can then be combined to give a single output.
+The `FMTOutputNode` objects contain the *output nodes* of the linear model. These are composed of 4 elements: a mask (to define the stands considered by the *output node*), an action, a yield, and a parameter that can be used to modify the yield. For example, an *output node* can concern 80% of the gross volume harvested by total cuts in all stands via the statement `? ? ? coupetotale volumebrut * 0.88`. The *output nodes* are indicated in the `.out` file of the Woodstock formulation. Several *output nodes* can then be combined to give a single output.
 
-In order to provide these `FMToutputnode` to FMT, two methods are available:
-1. It is possible to create a new `FMToutputnode` object that will contain all the actions targeted by the SOC by making an aggregate of these actions. To do this, you just have to give an aggregate name to all the actions via the `push_aggregate()` function associated to the `FMTaction` objects; then, to give this aggregate name to the `FMToutputnode` constructor. If these actions concern all possible stands, then the constructor to take the form `FMToutputnode(Core.FMTmask("? "*len(themes))[:-1],themes),Agg_name)`, with `Agg_name` containing the name of the aggregate of actions targeted by the SOC.
-2. It is also possible to retrieve an `FMToutputnode` that is contained in one of the `FMToutput` of the model directly via the `getnodes()` function associated with the `FMToutput` objects.
+In order to provide these `FMTOutputNode` to FMT, two methods are available:
+1. It is possible to create a new `FMTOutputNode` object that will contain all the actions targeted by the SOC by making an aggregate of these actions. To do this, you just have to give an aggregate name to all the actions via the `push_aggregate()` function associated to the `FMTAction` objects; then, to give this aggregate name to the `FMTOutputNode` constructor. If these actions concern all possible stands, then the constructor to take the form `FMTOutputNode(Core.FMTmask("? "*len(themes))[:-1],themes),Agg_name)`, with `Agg_name` containing the name of the aggregate of actions targeted by the SOC.
+2. It is also possible to retrieve an `FMTOutputNode` that is contained in one of the `FMToutput` of the model directly via the `getNodes()` function associated with the `FMTOutput` objects.
 
 An example of the second method is shown in [sample script](#example-script) below.
 
@@ -136,9 +136,9 @@ The last step is to launch the *greedy algorithm* to create an optimized calenda
 
 To do this, you just have to create an object that will contain the greedy algorithm's "task", and to give this task to a function of FMT that will launch the parallel tasks. These two steps are essential, because the *greedy algorithm* of FMT uses parallel tasks in order to perform the different iterations of the algorithm as quickly as possible.
 
-The creation of the object containing the algorithm's task is done via the function `Parallel.FMTopareaschedulertask()`. The function requires 7 parameters:
+The creation of the object containing the algorithm's task is done via the function `Parallel.FMTOpareaSchedulerTask()`. The function requires 7 parameters:
 
-- The `FMTlpmodel` which contains the linear model for which we want to do the SOC schedule
+- The `FMTLpModel` which contains the linear model for which we want to do the SOC schedule
 - An object containing the list of SOC (see [previous section](#creating-soc-within-a-linear-programming-model-in-fmt))
 - The *output node* created in the [previous section](#creation-of-an-output-node-related-to-actions-influenced-by-the-soc-schedule)
 - A string (*string*) that indicates where the files created by the function (that contain information about the final optimized calendar) will be copied
@@ -146,9 +146,9 @@ The creation of the object containing the algorithm's task is done via the funct
 - A number indicating the maximum number of iterations the *greedy algorithm* can perform before stopping (see previous sections)
 - A number indicating the maximum time (in seconds) the *greedy algorithm* can take before stopping; the algorithm will stop if this time or the maximum number of iterations is reached 
 
-Once the object containing the task is created with this function, it must be passed to the function `Parallel.FMTtaskhandler()`. This function can accept a second parameter that specifies the number of cores in the computer's processor that the function will use to perform the parallel operations. The function will return an `FMTtaskhandler` object, which can then run the algorithm in earnest using the object's `concurentrun()` function.
+Once the object containing the task is created with this function, it must be passed to the function `Parallel.FMTTaskHandler()`. This function can accept a second parameter that specifies the number of cores in the computer's processor that the function will use to perform the parallel operations. The function will return an `FMTTaskHandler` object, which can then run the algorithm in earnest using the object's `concurentRun()` function.
 
-It is also possible not to run the *greedy algorithm*, but simply to obtain a first non-optimized and "feasible" schedule. To do this, one just has to use the `getoperatingareaschedulerheuristics()` function of an `FMTlpmodel` object by providing it with an object containing the list of SOC and an *output node*, as well as the number of non-optimized schedules one wants to obtain. An example is shown in [this script](https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/bb5aedacd33178f479769ea77d000307e134e3f3/Examples/Python/Operatingareascheduling.py) on lines 34-35.
+It is also possible not to run the *greedy algorithm*, but simply to obtain a first non-optimized and "feasible" schedule. To do this, one just has to use the `getOperatingAreaSchedulerHeuristics()` function of an `FMTLpModel` object by providing it with an object containing the list of SOC and an *output node*, as well as the number of non-optimized schedules one wants to obtain. An example is shown in [this script](https://github.com/Bureau-du-Forestier-en-chef/FMT/blob/bb5aedacd33178f479769ea77d000307e134e3f3/Examples/Python/Operatingareascheduling.py) on lines 34-35.
 
 
 ## Example script

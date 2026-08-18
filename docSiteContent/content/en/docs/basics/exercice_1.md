@@ -24,16 +24,16 @@ Use FMT to :
 2. Solve the model by
 	- Constructing its full graph for 10 periods
 	- Setting the objective and constraints of the model
-	- Using the `FMTmodel.initialsolve()` function to solve it.
+	- Using the `FMTModel.initialSolve()` function to solve it.
 3. Read the values of the output `OSUPREC` of the model by
-	- Getting a list of the outputs of the model with the function `FMTmodel.getouputs()`
-	- Doing a `for` loop to select the right output with the `FMToutput.getname()` function
-	- Printing the output values using the function `FMTmodel.getvariabilities(FMToutput)`
+	- Getting a list of the outputs of the model with the function `FMTModel.getOuputs()`
+	- Doing a `for` loop to select the right output with the `FMTOutput.getName()` function
+	- Printing the output values using the function `FMTModel.getvariabilities(FMTOutput)`
 4. Write the optimized schedule of the model in a `.txt` file by
-	- Creating a new `FMTscheduleparser` object
+	- Creating a new `FMTScheduleParser` object
 	- Getting the solution of the model at each period with a list using `LPModel.getsolution(period)`
 	- Transforming the list into a vector
-	- Writing the vector into a `.txt` file with `FMTscheduleparser.write()`
+	- Writing the vector into a `.txt` file with `FMTScheduleParser.write()`
 
 **You can use the information from the previous pages of documentation to help you.**
 

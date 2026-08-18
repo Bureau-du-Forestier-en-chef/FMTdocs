@@ -92,7 +92,7 @@ Note that **this whole process is only one iteration of re-planning**. In order 
 
 ### The strategic model
 
-- It is a linear programming optimization model (`FMTlpmodel`).
+- It is a linear programming optimization model (`FMTLpModel`).
 	- It does not take into account natural disturbances or stochastic events.
 - Normally, it has a long planning horizon for long-term optimization (e.g. 100 to 150 years).
 - It dictates the path to take to the tactical model by sharing informations with it.
@@ -100,7 +100,7 @@ Note that **this whole process is only one iteration of re-planning**. In order 
 
 ### The stochastic model
 
-- It is a non-spatial simulation model (`FMTnssmodel`).
+- It is a non-spatial simulation model (`FMTNssModel`).
 	- It simulates natural disturbances or stochastic events.
 - It may have a long simulation horizon; but it simulates only one period at a time.
 - Its role is to affect the territory used by the [tactical model](./#the-tactical-model), and thus to blur the lines between the [strategic model](./#the-strategic-model) and the [tactical model](./#the-tactical-model).
@@ -112,7 +112,7 @@ Note that **this whole process is only one iteration of re-planning**. In order 
 
 ### The tactical model
 
-- It is a linear programming optimization model (`FMTlpmodel`), like the [strategic model](./#the-strategic-model).
+- It is a linear programming optimization model (`FMTLpModel`), like the [strategic model](./#the-strategic-model).
 - Its planning horizon is only one period.
 	- Because at the tactical level, we only take into account the short-term, and not the long-term.
 - Its initial state is that of the current period, given by the [stochastic-model](./#the-stochastic-model).
