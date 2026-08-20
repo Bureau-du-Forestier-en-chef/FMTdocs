@@ -845,7 +845,7 @@
   </div>
 </div>
 <ol start="2">
-<li>Use <code>git clone https://github.com/microsoft/vcpkg.git</code> in the command prompt to download <a href="https://github.com/microsoft/vcpkg" target="_blank" rel="noopener">vcpkg</a>.</li>
+<li>Use vcpkg that comes with Visual Studio or use <code>git clone https://github.com/microsoft/vcpkg.git</code> in the command prompt to download <a href="https://github.com/microsoft/vcpkg" target="_blank" rel="noopener">vcpkg</a>.</li>
 </ol>
 <div class="alert alert-note">
   <div>
@@ -855,22 +855,6 @@
 <ol start="3">
 <li>Use <code>cd ./vcpkg</code> in the command prompt to navigate into the vcpkg folder.</li>
 </ol>
-<div class="alert alert-note">
-  <div>
-    If you don&rsquo;t remember how to use <code>cd</code>, see <a href="/docs/download_install/prerequisits">the previous page</a>.
-  </div>
-</div>
-<ol start="4">
-<li>Copy/paste the following command in the command prompt to install the dependencies necessary to compile FMT :</li>
-</ol>
-<pre><code class="language-bash">vcpkg install boost:x64-windows boost-dll:x64-windows boost-icl:x64-windows boost-python:x64-windows gdal:x64-windows geos:x64-windows pthreads:x64-windows clp:x64-windows
-</code></pre>
-<div class="alert alert-warning">
-  <div>
-    <p>This will take time, and will use some space on your computer (around 10Gb).</p>
-<p>Just leave the command prompt open so that <code>vcpkg</code> does its work.</p>
-  </div>
-</div>
 <hr>
 <p>Once <code>vcpkg</code> is done, go to the next page.</p>
 

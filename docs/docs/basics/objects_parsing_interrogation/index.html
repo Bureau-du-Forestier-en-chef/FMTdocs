@@ -781,8 +781,8 @@
     <li><a href="#what-are-objects-">What are objects ?</a></li>
     <li><a href="#the-namespaces-of-fmt">The namespaces of FMT</a></li>
     <li><a href="#important-classes-of-the-parser-namespace">Important classes of the <code>Parser</code> namespace</a></li>
-    <li><a href="#the-fmtmodel-class">The <code>FMTmodel</code> class</a></li>
-    <li><a href="#loading-a-simple-fmtlpmodel">Loading a simple <code>FMTlpmodel</code></a></li>
+    <li><a href="#the-fmtmodel-class">The <code>FMTModel</code> class</a></li>
+    <li><a href="#loading-a-simple-fmtlpmodel">Loading a simple <code>FMTLpModel</code></a></li>
     <li><a href="#the-core-namespace">The <code>Core</code> namespace</a></li>
     <li><a href="#comparing-elements-in-fmt">Comparing elements in FMT</a></li>
     <li><a href="#conversion-of-errors-to-warnings">Conversion of errors to warnings</a></li>
@@ -882,112 +882,37 @@
 <h2 id="important-classes-of-the-parser-namespace">Important classes of the <code>Parser</code> namespace</h2>
 <p>The <code>Parser</code> namespace contains two important class for reading models :</p>
 <ul>
-<li><code>FMTareaparser</code> : Allows the reading and writing of the raster and vector files used in the spatial operations of FMT.
+<li><code>FMTAreaParser</code> : Allows the reading and writing of the raster and vector files used in the spatial operations of FMT.
 <ul>
 <li>Some of its functions allows you to transform data between vector and raster format.</li>
 </ul>
 </li>
-<li><code>FMTmodelparser</code> : Allows the reading of a model across all of the Woodstock model files with the <code>readproject()</code> function, or to save it with the <code>write()</code> function after modifying it.
+<li><code>FMTModelParser</code> : Allows the reading of a model across all of the Woodstock model files with the <code>readproject()</code> function, or to save it with the <code>write()</code> function after modifying it.
 <ul>
 <li>The class also use other classes made to read Woodstock files.</li>
 </ul>
 </li>
 </ul>
-<h2 id="the-fmtmodel-class">The <code>FMTmodel</code> class</h2>
-<p>The <code>FMTmodel</code> class is the basis of FMT.</p>
-<p>It contains informations coming from the files of the models, in Woodstock format. This can be seen by <a href="../../../doxygen/html/classModels_1_1FMTmodel.html#pro-attribs">looking at the properties of the <code>FMTmodel</code></a> :</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img alt="" srcset="
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp 400w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_c655a1895cf5415363db3a5bb4ce2ec4.webp 760w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-               src="/FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp"
-               width="760"
-               height="443"
-               loading="eager" data-zoomable /></div>
-  </div></figure>
-<p>However, these attributes are &ldquo;protected&rdquo; so that they are not edited in the wrong way. If you want to read them when using FMT, you will have to use <a href="../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods">the <em>getter</em> functions</a> that will get them for you :</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img alt="" srcset="
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp 400w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_80bc211b0ac010dce4d16d7358c69540.webp 760w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-               src="/FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp"
-               width="743"
-               height="361"
-               loading="eager" data-zoomable /></div>
-  </div></figure>
-<p>Additionally, you can edit them in the right way by using <a href="../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods">the <em>setter</em> functions</a>. This allows you to edit different parts of the model.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img alt="" srcset="
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp 400w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_657efddb0952cf79e3d41bdb97290a3e.webp 760w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-               src="/FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp"
-               width="640"
-               height="266"
-               loading="eager" data-zoomable /></div>
-  </div></figure>
-<p>In the end, the <code>FMTModel</code> is what we call a <em>parent class</em> for all of the different class of models that FMT uses, such as <code>FMTlpmodel</code> (linear programming model), and <code>FMTsesmodel</code> (spatialy explicit model) according to the following diagram :</p>
+<h2 id="the-fmtmodel-class">The <code>FMTModel</code> class</h2>
+<p>The <code>FMTModel</code> class is the basis of FMT.</p>
+<p>It contains informations coming from the files of the models, in Woodstock format. This can be seen by <a href="../../../doxygen/html/classModels_1_1FMTModel.html#pro-attribs">looking at the properties of the <code>FMTModel</code></a>.</p>
+<p>However, these attributes are &ldquo;protected&rdquo; so that they are not edited in the wrong way. If you want to read them when using FMT, you will have to use <a href="../../../doxygen/html/classModels_1_1FMTModel.html#pub-methods">the <em>getter</em> functions</a> that will get them for you.</p>
+<p>Additionally, you can edit them in the right way by using <a href="../../../doxygen/html/classModels_1_1FMTModel.html#pub-methods">the <em>setter</em> functions</a>. This allows you to edit different parts of the model.</p>
+<p>In the end, the <code>FMTModel</code> is what we call a <em>parent class</em> for all of the different class of models that FMT uses, such as <code>FMTLpModel</code> (linear programming model), and <code>FMTSesModel</code> (spatialy explicit model) according to the following diagram :</p>
 <pre><code class="language-mermaid">classDiagram
-FMTobject &lt;|-- FMTmodel
-FMTmodel &lt;|-- FMTsemodel
-FMTsemodel &lt;|-- FMTsamodel
-FMTsemodel &lt;|-- FMTsesmodel
-FMTmodel &lt;|-- FMTsrmodel
-FMTsrmodel &lt;|-- FMTlpmodel
-FMTsrmodel &lt;|-- FMTnssmodel
+FMTObject &lt;|-- FMTModel
+FMTModel &lt;|-- FMTSeModel
+FMTSeModel &lt;|-- FMTSaModel
+FMTSeModel &lt;|-- FMTSesModel
+FMTModel &lt;|-- FMTSrModel
+FMTSrModel &lt;|-- FMTLpModel
+FMTSrModel &lt;|-- FMTNssModel
 </code></pre>
-<p>Observe that all of these classes ultimately inherit from the <code>FMTobject</code> class. This is the case for every object in FMT, as <code>FMTobject</code> contains useful functions and properties for debugging FMT.</p>
-<p>The <code>FMTnssmodel</code> and <code>FMTlpmodel</code> are spatially referenced models <code>FMTsrmodel</code>. The <code>FMTlpmodel</code> is used for <strong>optimization</strong>, while <code>FMTnssmodel</code> is used for <strong>simulation</strong>.</p>
-<p>Meanwhile, the <code>FMTsesmodel</code> and <code>FMTsamodel</code> are spatially explicit models <code>FMTsemodel</code>. In the same way, <code>FMTsamodel</code> is used for <strong>optimization</strong>, while <code>FMTsesmodel</code> is used for <strong>simulation</strong>.</p>
-<p><strong>We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the <code>FMTlpmodel</code>.</strong></p>
-<h2 id="loading-a-simple-fmtlpmodel">Loading a simple <code>FMTlpmodel</code></h2>
+<p>Observe that all of these classes ultimately inherit from the <code>FMTObject</code> class. This is the case for every object in FMT, as <code>FMTObject</code> contains useful functions and properties for debugging FMT.</p>
+<p>The <code>FMTNssModel</code> and <code>FMTLpModel</code> are spatially referenced models <code>FMTSrModel</code>. The <code>FMTLpModel</code> is used for <strong>optimization</strong>, while <code>FMTNssModel</code> is used for <strong>simulation</strong>.</p>
+<p>Meanwhile, the <code>FMTSesModel</code> and <code>FMTSaModel</code> are spatially explicit models <code>FMTSeModel</code>. In the same way, <code>FMTSaModel</code> is used for <strong>optimization</strong>, while <code>FMTSesModel</code> is used for <strong>simulation</strong>.</p>
+<p><strong>We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the <code>FMTLpModel</code>.</strong></p>
+<h2 id="loading-a-simple-fmtlpmodel">Loading a simple <code>FMTLpModel</code></h2>
 <p>Here is an example of how it looks like to read a linear programming model (in Woodstock format) with FMT.</p>
 <p>In R, the code to use it would be :</p>
 <pre><code class="language-R">library(FMT) # Loads FMT into R
@@ -1038,15 +963,15 @@ Done reading Tue Oct 05 10:59:57 2021
 <p>The <code>Core</code> namespace contains elements used by FMT &ldquo;under the hood&rdquo; to make the <code>FMTModel</code> object function.</p>
 <p>For example, it contains the objects :</p>
 <ul>
-<li><code>FMTaction</code> : Class that defines the operability of multiple strata for a given disturbance.</li>
-<li><code>FMTtransition</code> : Class that defines the transitions of multiple strata for a given disturbance.</li>
-<li><code>FMTyields</code> : Class that defines the growth and yields values for every strata.</li>
-<li><code>FMToutputs</code> : Class that defines the outputs in the model (inventory or action based), but not the outputs <em>of</em> the model (e.g., output files or others)</li>
-<li><code>FMTconstraints</code> : Class that defines the global constraints and the objective of the model (e.g., variable to optimize).</li>
+<li><code>FMTAction</code> : Class that defines the operability of multiple strata for a given disturbance.</li>
+<li><code>FMTTransition</code> : Class that defines the transitions of multiple strata for a given disturbance.</li>
+<li><code>FMTYields</code> : Class that defines the growth and yields values for every strata.</li>
+<li><code>FMTOutputs</code> : Class that defines the outputs in the model (inventory or action based), but not the outputs <em>of</em> the model (e.g., output files or others)</li>
+<li><code>FMTConstraints</code> : Class that defines the global constraints and the objective of the model (e.g., variable to optimize).</li>
 </ul>
-<p>These different objects can be called from a <code>FMTmodel</code> object with the different <em>getter</em> functions.</p>
-<p>For example, to see the list of <code>FMTaction</code> objects associated with a particular <code>FMTmodel</code>, you can use the <code>FMTModel.getactions()</code> (or <code>FMTModel$getactions()</code> in R) function, and use a <code>for</code> loop to display every action other it. <strong>The actions displayed in such way will correspond to the actions present in the <code>.act</code> file of the Woodstock files for the model</strong>.</p>
-<p>Here is an example of displaying the actions and the transitions of a <code>FMTmodel</code> in R code :</p>
+<p>These different objects can be called from a <code>FMTModel</code> object with the different <em>getter</em> functions.</p>
+<p>For example, to see the list of <code>FMTAction</code> objects associated with a particular <code>FMTModel</code>, you can use the <code>FMTModel.getActions()</code> (or <code>FMTModel$getactions()</code> in R) function, and use a <code>for</code> loop to display every action other it. <strong>The actions displayed in such way will correspond to the actions present in the <code>.act</code> file of the Woodstock files for the model</strong>.</p>
+<p>Here is an example of displaying the actions and the transitions of a <code>FMTModel</code> in R code :</p>
 <pre><code class="language-R">library(FMT) # Loads FMT into R
 if (new(FMTversion)$hasfeature(&quot;OSI&quot;)) # Checks if FMT has been compiled with OSI by creating a new FMTversion object, and using the function hasfeature().
 {
@@ -1174,12 +1099,12 @@ ARECUP
 _DEATH
 </code></pre>
 <h2 id="comparing-elements-in-fmt">Comparing elements in FMT</h2>
-<p>A common operation to do in your scripts will be to compare elements : for example, to compare the name of a <code>FMTaction</code> object with the name of the action that you want to select, etc.</p>
+<p>A common operation to do in your scripts will be to compare elements : for example, to compare the name of a <code>FMTAction</code> object with the name of the action that you want to select, etc.</p>
 <p>In such cases, remember that <strong>all strings read by FMT are automatically set to upper case strings</strong>. Therefore, <strong>if you want to compare elements name in FMT make sure the string is in uppercase</strong>.</p>
-<p>For example, if you have an action named <code>Clearcut</code> or <code>clearcut</code> that you want to select, you will need to compare the name of the <code>FMTactions</code> of the models with the string <code>CLEARCUT</code>, all in upper case.</p>
+<p>For example, if you have an action named <code>Clearcut</code> or <code>clearcut</code> that you want to select, you will need to compare the name of the <code>FMTActions</code> of the models with the string <code>CLEARCUT</code>, all in upper case.</p>
 <h2 id="conversion-of-errors-to-warnings">Conversion of errors to warnings</h2>
-<p>All FMT classes inherit from the class <code>FMTobject</code>, and thus share the same <code>FMTexceptionhandler</code> and <code>FMTlogger</code>.</p>
-<p>If the user want to ignore some error, he can use the function <code>seterrorstowarnings</code> of any FMT class and pass a vector of errors that the handler needs to consider warnings. This function is risky and can lead to errors. It is recommended that you investigate FMT error messages and correct the model accordingly.</p>
+<p>All FMT classes inherit from the class <code>FMTObject</code>, and thus share the same <code>FMTExceptionHandler</code> and <code>FMTLogger</code>.</p>
+<p>If the user want to ignore some error, he can use the function <code>setErrorsToWarnings</code> of any FMT class and pass a vector of errors that the handler needs to consider warnings. This function is risky and can lead to errors. It is recommended that you investigate FMT error messages and correct the model accordingly.</p>
 <hr>
 <p>Now that you know everything about the structure of FMT and its basic elements, we will take a look at how to do spatially referenced optimization with it, which is one of the main functions of FMT.</p>
 

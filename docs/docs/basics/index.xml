@@ -53,112 +53,37 @@
 &lt;h2 id=&#34;important-classes-of-the-parser-namespace&#34;&gt;Important classes of the &lt;code&gt;Parser&lt;/code&gt; namespace&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;Parser&lt;/code&gt; namespace contains two important class for reading models :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;FMTareaparser&lt;/code&gt; : Allows the reading and writing of the raster and vector files used in the spatial operations of FMT.
+&lt;li&gt;&lt;code&gt;FMTAreaParser&lt;/code&gt; : Allows the reading and writing of the raster and vector files used in the spatial operations of FMT.
 &lt;ul&gt;
 &lt;li&gt;Some of its functions allows you to transform data between vector and raster format.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FMTmodelparser&lt;/code&gt; : Allows the reading of a model across all of the Woodstock model files with the &lt;code&gt;readproject()&lt;/code&gt; function, or to save it with the &lt;code&gt;write()&lt;/code&gt; function after modifying it.
+&lt;li&gt;&lt;code&gt;FMTModelParser&lt;/code&gt; : Allows the reading of a model across all of the Woodstock model files with the &lt;code&gt;readproject()&lt;/code&gt; function, or to save it with the &lt;code&gt;write()&lt;/code&gt; function after modifying it.
 &lt;ul&gt;
 &lt;li&gt;The class also use other classes made to read Woodstock files.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;the-fmtmodel-class&#34;&gt;The &lt;code&gt;FMTmodel&lt;/code&gt; class&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;FMTmodel&lt;/code&gt; class is the basis of FMT.&lt;/p&gt;
-&lt;p&gt;It contains informations coming from the files of the models, in Woodstock format. This can be seen by &lt;a href=&#34;../../../doxygen/html/classModels_1_1FMTmodel.html#pro-attribs&#34;&gt;looking at the properties of the &lt;code&gt;FMTmodel&lt;/code&gt;&lt;/a&gt; :&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp 400w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_c655a1895cf5415363db3a5bb4ce2ec4.webp 760w,
-               /FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_attributes_hu96941bf8bb3d4d9f259261d019ba2699_90381_1eb66550c123efea94f8bb22be64f7f1.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;443&#34;
-               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;However, these attributes are &amp;ldquo;protected&amp;rdquo; so that they are not edited in the wrong way. If you want to read them when using FMT, you will have to use &lt;a href=&#34;../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods&#34;&gt;the &lt;em&gt;getter&lt;/em&gt; functions&lt;/a&gt; that will get them for you :&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp 400w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_80bc211b0ac010dce4d16d7358c69540.webp 760w,
-               /FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_getter_hu559ae670a6befbc339a532835e3ef48a_177601_ec1af7ccf26d07ef3f3015b023e5660f.webp&#34;
-               width=&#34;743&#34;
-               height=&#34;361&#34;
-               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;Additionally, you can edit them in the right way by using &lt;a href=&#34;../../../doxygen/html/classModels_1_1FMTmodel.html#pub-methods&#34;&gt;the &lt;em&gt;setter&lt;/em&gt; functions&lt;/a&gt;. This allows you to edit different parts of the model.&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp 400w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_657efddb0952cf79e3d41bdb97290a3e.webp 760w,
-               /FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://bureau-du-forestier-en-chef.github.io/FMTdocs/FMTdocs/media/docs/FMTmodel_setters_hu4c256a7577c1e3dbb7b5711a61f3bd3e_55329_ac14a2106fa03815f89c5ad8319bec26.webp&#34;
-               width=&#34;640&#34;
-               height=&#34;266&#34;
-               loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;In the end, the &lt;code&gt;FMTModel&lt;/code&gt; is what we call a &lt;em&gt;parent class&lt;/em&gt; for all of the different class of models that FMT uses, such as &lt;code&gt;FMTlpmodel&lt;/code&gt; (linear programming model), and &lt;code&gt;FMTsesmodel&lt;/code&gt; (spatialy explicit model) according to the following diagram :&lt;/p&gt;
+&lt;h2 id=&#34;the-fmtmodel-class&#34;&gt;The &lt;code&gt;FMTModel&lt;/code&gt; class&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;FMTModel&lt;/code&gt; class is the basis of FMT.&lt;/p&gt;
+&lt;p&gt;It contains informations coming from the files of the models, in Woodstock format. This can be seen by &lt;a href=&#34;../../../doxygen/html/classModels_1_1FMTModel.html#pro-attribs&#34;&gt;looking at the properties of the &lt;code&gt;FMTModel&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, these attributes are &amp;ldquo;protected&amp;rdquo; so that they are not edited in the wrong way. If you want to read them when using FMT, you will have to use &lt;a href=&#34;../../../doxygen/html/classModels_1_1FMTModel.html#pub-methods&#34;&gt;the &lt;em&gt;getter&lt;/em&gt; functions&lt;/a&gt; that will get them for you.&lt;/p&gt;
+&lt;p&gt;Additionally, you can edit them in the right way by using &lt;a href=&#34;../../../doxygen/html/classModels_1_1FMTModel.html#pub-methods&#34;&gt;the &lt;em&gt;setter&lt;/em&gt; functions&lt;/a&gt;. This allows you to edit different parts of the model.&lt;/p&gt;
+&lt;p&gt;In the end, the &lt;code&gt;FMTModel&lt;/code&gt; is what we call a &lt;em&gt;parent class&lt;/em&gt; for all of the different class of models that FMT uses, such as &lt;code&gt;FMTLpModel&lt;/code&gt; (linear programming model), and &lt;code&gt;FMTSesModel&lt;/code&gt; (spatialy explicit model) according to the following diagram :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
-FMTobject &amp;lt;|-- FMTmodel
-FMTmodel &amp;lt;|-- FMTsemodel
-FMTsemodel &amp;lt;|-- FMTsamodel
-FMTsemodel &amp;lt;|-- FMTsesmodel
-FMTmodel &amp;lt;|-- FMTsrmodel
-FMTsrmodel &amp;lt;|-- FMTlpmodel
-FMTsrmodel &amp;lt;|-- FMTnssmodel
+FMTObject &amp;lt;|-- FMTModel
+FMTModel &amp;lt;|-- FMTSeModel
+FMTSeModel &amp;lt;|-- FMTSaModel
+FMTSeModel &amp;lt;|-- FMTSesModel
+FMTModel &amp;lt;|-- FMTSrModel
+FMTSrModel &amp;lt;|-- FMTLpModel
+FMTSrModel &amp;lt;|-- FMTNssModel
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Observe that all of these classes ultimately inherit from the &lt;code&gt;FMTobject&lt;/code&gt; class. This is the case for every object in FMT, as &lt;code&gt;FMTobject&lt;/code&gt; contains useful functions and properties for debugging FMT.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;FMTnssmodel&lt;/code&gt; and &lt;code&gt;FMTlpmodel&lt;/code&gt; are spatially referenced models &lt;code&gt;FMTsrmodel&lt;/code&gt;. The &lt;code&gt;FMTlpmodel&lt;/code&gt; is used for &lt;strong&gt;optimization&lt;/strong&gt;, while &lt;code&gt;FMTnssmodel&lt;/code&gt; is used for &lt;strong&gt;simulation&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Meanwhile, the &lt;code&gt;FMTsesmodel&lt;/code&gt; and &lt;code&gt;FMTsamodel&lt;/code&gt; are spatially explicit models &lt;code&gt;FMTsemodel&lt;/code&gt;. In the same way, &lt;code&gt;FMTsamodel&lt;/code&gt; is used for &lt;strong&gt;optimization&lt;/strong&gt;, while &lt;code&gt;FMTsesmodel&lt;/code&gt; is used for &lt;strong&gt;simulation&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the &lt;code&gt;FMTlpmodel&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;loading-a-simple-fmtlpmodel&#34;&gt;Loading a simple &lt;code&gt;FMTlpmodel&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Observe that all of these classes ultimately inherit from the &lt;code&gt;FMTObject&lt;/code&gt; class. This is the case for every object in FMT, as &lt;code&gt;FMTObject&lt;/code&gt; contains useful functions and properties for debugging FMT.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;FMTNssModel&lt;/code&gt; and &lt;code&gt;FMTLpModel&lt;/code&gt; are spatially referenced models &lt;code&gt;FMTSrModel&lt;/code&gt;. The &lt;code&gt;FMTLpModel&lt;/code&gt; is used for &lt;strong&gt;optimization&lt;/strong&gt;, while &lt;code&gt;FMTNssModel&lt;/code&gt; is used for &lt;strong&gt;simulation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the &lt;code&gt;FMTSesModel&lt;/code&gt; and &lt;code&gt;FMTSaModel&lt;/code&gt; are spatially explicit models &lt;code&gt;FMTSeModel&lt;/code&gt;. In the same way, &lt;code&gt;FMTSaModel&lt;/code&gt; is used for &lt;strong&gt;optimization&lt;/strong&gt;, while &lt;code&gt;FMTSesModel&lt;/code&gt; is used for &lt;strong&gt;simulation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We will take a closer look at the different types of models later. For now, we will only use the simplest model that correspond to a Woodstock model structure, the &lt;code&gt;FMTLpModel&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;loading-a-simple-fmtlpmodel&#34;&gt;Loading a simple &lt;code&gt;FMTLpModel&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Here is an example of how it looks like to read a linear programming model (in Woodstock format) with FMT.&lt;/p&gt;
 &lt;p&gt;In R, the code to use it would be :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(FMT) # Loads FMT into R
@@ -209,15 +134,15 @@ Done reading Tue Oct 05 10:59:57 2021
 &lt;p&gt;The &lt;code&gt;Core&lt;/code&gt; namespace contains elements used by FMT &amp;ldquo;under the hood&amp;rdquo; to make the &lt;code&gt;FMTModel&lt;/code&gt; object function.&lt;/p&gt;
 &lt;p&gt;For example, it contains the objects :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;FMTaction&lt;/code&gt; : Class that defines the operability of multiple strata for a given disturbance.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FMTtransition&lt;/code&gt; : Class that defines the transitions of multiple strata for a given disturbance.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FMTyields&lt;/code&gt; : Class that defines the growth and yields values for every strata.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FMToutputs&lt;/code&gt; : Class that defines the outputs in the model (inventory or action based), but not the outputs &lt;em&gt;of&lt;/em&gt; the model (e.g., output files or others)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FMTconstraints&lt;/code&gt; : Class that defines the global constraints and the objective of the model (e.g., variable to optimize).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTAction&lt;/code&gt; : Class that defines the operability of multiple strata for a given disturbance.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTTransition&lt;/code&gt; : Class that defines the transitions of multiple strata for a given disturbance.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTYields&lt;/code&gt; : Class that defines the growth and yields values for every strata.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTOutputs&lt;/code&gt; : Class that defines the outputs in the model (inventory or action based), but not the outputs &lt;em&gt;of&lt;/em&gt; the model (e.g., output files or others)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTConstraints&lt;/code&gt; : Class that defines the global constraints and the objective of the model (e.g., variable to optimize).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;These different objects can be called from a &lt;code&gt;FMTmodel&lt;/code&gt; object with the different &lt;em&gt;getter&lt;/em&gt; functions.&lt;/p&gt;
-&lt;p&gt;For example, to see the list of &lt;code&gt;FMTaction&lt;/code&gt; objects associated with a particular &lt;code&gt;FMTmodel&lt;/code&gt;, you can use the &lt;code&gt;FMTModel.getactions()&lt;/code&gt; (or &lt;code&gt;FMTModel$getactions()&lt;/code&gt; in R) function, and use a &lt;code&gt;for&lt;/code&gt; loop to display every action other it. &lt;strong&gt;The actions displayed in such way will correspond to the actions present in the &lt;code&gt;.act&lt;/code&gt; file of the Woodstock files for the model&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Here is an example of displaying the actions and the transitions of a &lt;code&gt;FMTmodel&lt;/code&gt; in R code :&lt;/p&gt;
+&lt;p&gt;These different objects can be called from a &lt;code&gt;FMTModel&lt;/code&gt; object with the different &lt;em&gt;getter&lt;/em&gt; functions.&lt;/p&gt;
+&lt;p&gt;For example, to see the list of &lt;code&gt;FMTAction&lt;/code&gt; objects associated with a particular &lt;code&gt;FMTModel&lt;/code&gt;, you can use the &lt;code&gt;FMTModel.getActions()&lt;/code&gt; (or &lt;code&gt;FMTModel$getactions()&lt;/code&gt; in R) function, and use a &lt;code&gt;for&lt;/code&gt; loop to display every action other it. &lt;strong&gt;The actions displayed in such way will correspond to the actions present in the &lt;code&gt;.act&lt;/code&gt; file of the Woodstock files for the model&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Here is an example of displaying the actions and the transitions of a &lt;code&gt;FMTModel&lt;/code&gt; in R code :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(FMT) # Loads FMT into R
 if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Checks if FMT has been compiled with OSI by creating a new FMTversion object, and using the function hasfeature().
 {
@@ -345,12 +270,12 @@ ARECUP
 _DEATH
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;comparing-elements-in-fmt&#34;&gt;Comparing elements in FMT&lt;/h2&gt;
-&lt;p&gt;A common operation to do in your scripts will be to compare elements : for example, to compare the name of a &lt;code&gt;FMTaction&lt;/code&gt; object with the name of the action that you want to select, etc.&lt;/p&gt;
+&lt;p&gt;A common operation to do in your scripts will be to compare elements : for example, to compare the name of a &lt;code&gt;FMTAction&lt;/code&gt; object with the name of the action that you want to select, etc.&lt;/p&gt;
 &lt;p&gt;In such cases, remember that &lt;strong&gt;all strings read by FMT are automatically set to upper case strings&lt;/strong&gt;. Therefore, &lt;strong&gt;if you want to compare elements name in FMT make sure the string is in uppercase&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;For example, if you have an action named &lt;code&gt;Clearcut&lt;/code&gt; or &lt;code&gt;clearcut&lt;/code&gt; that you want to select, you will need to compare the name of the &lt;code&gt;FMTactions&lt;/code&gt; of the models with the string &lt;code&gt;CLEARCUT&lt;/code&gt;, all in upper case.&lt;/p&gt;
+&lt;p&gt;For example, if you have an action named &lt;code&gt;Clearcut&lt;/code&gt; or &lt;code&gt;clearcut&lt;/code&gt; that you want to select, you will need to compare the name of the &lt;code&gt;FMTActions&lt;/code&gt; of the models with the string &lt;code&gt;CLEARCUT&lt;/code&gt;, all in upper case.&lt;/p&gt;
 &lt;h2 id=&#34;conversion-of-errors-to-warnings&#34;&gt;Conversion of errors to warnings&lt;/h2&gt;
-&lt;p&gt;All FMT classes inherit from the class &lt;code&gt;FMTobject&lt;/code&gt;, and thus share the same &lt;code&gt;FMTexceptionhandler&lt;/code&gt; and &lt;code&gt;FMTlogger&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;If the user want to ignore some error, he can use the function &lt;code&gt;seterrorstowarnings&lt;/code&gt; of any FMT class and pass a vector of errors that the handler needs to consider warnings. This function is risky and can lead to errors. It is recommended that you investigate FMT error messages and correct the model accordingly.&lt;/p&gt;
+&lt;p&gt;All FMT classes inherit from the class &lt;code&gt;FMTObject&lt;/code&gt;, and thus share the same &lt;code&gt;FMTExceptionHandler&lt;/code&gt; and &lt;code&gt;FMTLogger&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If the user want to ignore some error, he can use the function &lt;code&gt;setErrorsToWarnings&lt;/code&gt; of any FMT class and pass a vector of errors that the handler needs to consider warnings. This function is risky and can lead to errors. It is recommended that you investigate FMT error messages and correct the model accordingly.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Now that you know everything about the structure of FMT and its basic elements, we will take a look at how to do spatially referenced optimization with it, which is one of the main functions of FMT.&lt;/p&gt;
 </description>
@@ -361,8 +286,8 @@ _DEATH
       <link>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/basics/spatially_referenced_optimization/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>https://bureau-du-forestier-en-chef.github.io/FMTdocs/docs/basics/spatially_referenced_optimization/</guid>
-      <description>&lt;p&gt;In the previous section, we&amp;rsquo;ve seen how to read a Woodstock model and load it into a &lt;code&gt;FMTlpmodel&lt;/code&gt; object.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;FMTlpmodel&lt;/code&gt; will allow you to solve a spatially referenced linear programming model, giving you an optimized schedule of forest operations according to a goal and a set of constraints.&lt;/p&gt;
+      <description>&lt;p&gt;In the previous section, we&amp;rsquo;ve seen how to read a Woodstock model and load it into a &lt;code&gt;FMTLpModel&lt;/code&gt; object.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTLpModel&lt;/code&gt; will allow you to solve a spatially referenced linear programming model, giving you an optimized schedule of forest operations according to a goal and a set of constraints.&lt;/p&gt;
 &lt;p&gt;Here, we will see how to do this optimization in practice.&lt;/p&gt;
 &lt;h2 id=&#34;a-quick-reminder-of-the-meaning-of-spatially-referenced&#34;&gt;A quick reminder of the meaning of &amp;ldquo;spatially referenced&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;We can distinguish 3 ways that space can be taken into account in a model :&lt;/p&gt;
@@ -371,17 +296,17 @@ _DEATH
 &lt;li&gt;In a &lt;strong&gt;spatially referenced model&lt;/strong&gt;, entities are associated to regions in space, but not to a precise position in those regions; those regions can be non-continuous. Woodstock models are spatially referenced in nature, as they consider &lt;em&gt;strata&lt;/em&gt; that correspond to forests with the same composition and age, which can be dispersed in many places in the landscape.&lt;/li&gt;
 &lt;li&gt;In a &lt;strong&gt;spatially explicit model&lt;/strong&gt;, entities are associated to precise coordinates in space, like in the pixels of a raster map.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;the-structure-of-the-fmtlpmodel--fmtgraph-and-fmtdevelopment&#34;&gt;The structure of the &lt;code&gt;FMTlpmodel&lt;/code&gt; : &lt;code&gt;FMTgraph&lt;/code&gt; and &lt;code&gt;FMTdevelopment&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;FMTlpmodel&lt;/code&gt;, &lt;code&gt;FMTgraph&lt;/code&gt; and &lt;code&gt;FMTdevelopment&lt;/code&gt; are three classes that are important to understand how a linear programming model is represented in FMT, and how to solve it.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;FMTlpmodel&lt;/code&gt; is a &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;type III linear programming forest planning model&lt;/a&gt;, which is spatially referenced.&lt;/p&gt;
-&lt;p&gt;It can solve a type III forest planning model, and get an optimal harvest schedule using constraints and objectives defined by the user.&lt;/p&gt;
+&lt;h2 id=&#34;the-structure-of-the-fmtlpmodel--fmtgraph-and-fmtdevelopment&#34;&gt;The structure of the &lt;code&gt;FMTLpModel&lt;/code&gt; : &lt;code&gt;FMTGraph&lt;/code&gt; and &lt;code&gt;FMTDevelopment&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;FMTLpModel&lt;/code&gt;, &lt;code&gt;FMTGraph&lt;/code&gt; and &lt;code&gt;FMTDevelopment&lt;/code&gt; are three classes that are important to understand how a linear programming model is represented in FMT, and how to solve it.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTLpModel&lt;/code&gt; is a &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;type II linear programming forest planning model&lt;/a&gt;, which is spatially referenced.&lt;/p&gt;
+&lt;p&gt;It can solve a type II or III forest planning model, and get an optimal harvest schedule using constraints and objectives defined by the user.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     The notion of type I, II and III of forest planning models correspond to a particular taxonomy relating to their mathematical structure, and to the way that they can be solved. Type III forest planning models are currently the most advanced type, and can be solved for large landscapes with a lot of forest area. You can learn more about them by reading &lt;a href=&#34;https://faculty.washington.edu/toths/Publications/McDill_etal_M2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this article&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;The &lt;code&gt;FMTlpmodel&lt;/code&gt; contains an object called the &lt;code&gt;FMTgraph&lt;/code&gt;, which contains the &lt;em&gt;graph&lt;/em&gt; of the model. The graph is an ensemble of nodes linked together with vertices. Each node correspond to a possible state for a particular strata (which are spatially referenced groups of forest forest stands with the same characteristics), with each vertex representing a particular way that it can evolve to another state in the same period of time and between periods.&lt;/p&gt;
-&lt;p&gt;Here is a visual representation of a simple &lt;code&gt;FMTgraph&lt;/code&gt;, in which a particular strata can evolve from different states (&lt;code&gt;FMTdevelopment&lt;/code&gt; objects) with different transitions caused by different actions through the sme period of time. The evolution of the stands takes place between the periods and consists in increasing the age by 1 :&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;FMTLpModel&lt;/code&gt; contains an object called the &lt;code&gt;FMTGraph&lt;/code&gt;, which contains the &lt;em&gt;graph&lt;/em&gt; of the model. The graph is an ensemble of nodes linked together with vertices. Each node correspond to a possible state for a particular strata (which are spatially referenced groups of forest forest stands with the same characteristics), with each vertex representing a particular way that it can evolve to another state in the same period of time and between periods.&lt;/p&gt;
+&lt;p&gt;Here is a visual representation of a simple &lt;code&gt;FMTGraph&lt;/code&gt;, in which a particular strata can evolve from different states (&lt;code&gt;FMTDevelopment&lt;/code&gt; objects) with different transitions caused by different actions through the sme period of time. The evolution of the stands takes place between the periods and consists in increasing the age by 1 :&lt;/p&gt;
 
 
 
@@ -407,8 +332,8 @@ _DEATH
                height=&#34;396&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;A &lt;code&gt;FMTdevelopment&lt;/code&gt; is an important class of FMT. It represents a particular strata, which means a particular forest stand that has a given composition, age, and that exists at a particular time period.&lt;/p&gt;
-&lt;p&gt;Therefore, the &lt;code&gt;FMTdevelopment&lt;/code&gt; object is associated with a &lt;code&gt;FMTmask&lt;/code&gt; object, which described the set of attributes (&lt;code&gt;FMTtheme&lt;/code&gt;) that defines the &lt;code&gt;FMTdevelopment&lt;/code&gt;. This is shown on the following visual :&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;FMTDevelopment&lt;/code&gt; is an important class of FMT. It represents a particular strata, which means a particular forest stand that has a given composition, age, and that exists at a particular time period.&lt;/p&gt;
+&lt;p&gt;Therefore, the &lt;code&gt;FMTDevelopment&lt;/code&gt; object is associated with a &lt;code&gt;FMTMask&lt;/code&gt; object, which described the set of attributes (&lt;code&gt;FMTTheme&lt;/code&gt;) that defines the &lt;code&gt;FMTDevelopment&lt;/code&gt;. This is shown on the following visual :&lt;/p&gt;
 
 
 
@@ -434,7 +359,7 @@ _DEATH
                height=&#34;473&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;FMTdevelopment&lt;/code&gt; is the parent class of two classes, &lt;code&gt;FMTactualdevelopment&lt;/code&gt; and &lt;code&gt;FMTfuturdevelopment&lt;/code&gt;. An &lt;code&gt;FMTactualdevelopment&lt;/code&gt; always represents a strata at the beginning of the planning horizon and therefore contains information about the area. The &lt;code&gt;FMTfuturdevelopment&lt;/code&gt; are the possible futures and therefore no area is allocated to them when the &lt;code&gt;FMTgraph&lt;/code&gt; is built. This is the result of the optimization that informs us about the future distribution of the area through the &lt;code&gt;FMTgraph&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTDevelopment&lt;/code&gt; is the parent class of two classes, &lt;code&gt;FMTActualDevelopment&lt;/code&gt; and &lt;code&gt;FMTFuturDevelopment&lt;/code&gt;. An &lt;code&gt;FMTActualDevelopment&lt;/code&gt; always represents a strata at the beginning of the planning horizon and therefore contains information about the area. The &lt;code&gt;FMTFuturDevelopment&lt;/code&gt; are the possible futures and therefore no area is allocated to them when the &lt;code&gt;FMTGraph&lt;/code&gt; is built. This is the result of the optimization that informs us about the future distribution of the area through the &lt;code&gt;FMTGraph&lt;/code&gt;.&lt;/p&gt;
 
 
 
@@ -460,18 +385,18 @@ _DEATH
                height=&#34;359&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;Here are some functions of the &lt;code&gt;FMTdevelopment&lt;/code&gt; class that can be important for manipulating the model for different purposes :&lt;/p&gt;
+&lt;p&gt;Here are some functions of the &lt;code&gt;FMTDevelopment&lt;/code&gt; class that can be important for manipulating the model for different purposes :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;FMTdevelopment.grow()&lt;/code&gt; can make the stand grow to see what it will become. Returns an &lt;code&gt;FMTfuturdevelopment&lt;/code&gt; identical to the &lt;code&gt;FMTdevelopment&lt;/code&gt; from which the function is called but with an increased age of 1&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FMTdevelopment.operable()&lt;/code&gt; can test if a given action can be applied to this development, based on a yield section (e.g. a particular variable)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FMTdevelopment.operate()&lt;/code&gt; can operate the stand, and return a vector of &lt;code&gt;FMTdevelopmentpath&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTDevelopment.grow()&lt;/code&gt; can make the stand grow to see what it will become. Returns an &lt;code&gt;FMTFuturDevelopment&lt;/code&gt; identical to the &lt;code&gt;FMTDevelopment&lt;/code&gt; from which the function is called but with an increased age of 1&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTDevelopment.operable()&lt;/code&gt; can test if a given action can be applied to this development, based on a yield section (e.g. a particular variable)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTDevelopment.operate()&lt;/code&gt; can operate the stand, and return a vector of &lt;code&gt;FMTDevelopmentPath&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Now, we can take a look at how to build the &amp;ldquo;full graph&amp;rdquo; of the model, which is necessary to solve the &lt;code&gt;FMTlpmodel&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now, we can take a look at how to build the &amp;ldquo;full graph&amp;rdquo; of the model, which is necessary to solve the &lt;code&gt;FMTLpModel&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;building-the-full-graph-of-the-model&#34;&gt;Building the full graph of the model&lt;/h2&gt;
-&lt;p&gt;The full graph of the model can be built via a repetition of the function &lt;code&gt;FMTlpmodel.buildperiod()&lt;/code&gt;. This is essential to solve the model, as FMT will navigate this graph to find the optimal solution according to the objective and the constraints that we will set (see next section).&lt;/p&gt;
+&lt;p&gt;The full graph of the model can be built via a repetition of the function &lt;code&gt;FMTLpModel.buildPeriod()&lt;/code&gt;. This is essential to solve the model, as FMT will navigate this graph to find the optimal solution according to the objective and the constraints that we will set (see next section).&lt;/p&gt;
 &lt;p&gt;This function requires three parameters :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A schedule of actions, on the form of a &lt;code&gt;FMTschedule&lt;/code&gt; object (it can be empty to obtain the full graph for the model, containing every possibilities)&lt;/li&gt;
+&lt;li&gt;A schedule of actions, on the form of a &lt;code&gt;FMTSchedule&lt;/code&gt; object (it can be empty to obtain the full graph for the model, containing every possibilities)&lt;/li&gt;
 &lt;li&gt;An option to force a partial build (which we will not see right now)&lt;/li&gt;
 &lt;li&gt;Another parameter for class operability (that we will not see either right now, and just set to 1)&lt;/li&gt;
 &lt;/ul&gt;
@@ -539,16 +464,16 @@ Columns: 1762 Rows: 819 Vertices: 982 Edges: 1762 Transfer Rows: 819 Output Rows
 Columns: 2177 Rows: 1015 Vertices: 1196 Edges: 2177 Transfer Rows: 1015 Output Rows: 0 Output Columns: 0
 Columns: 2660 Rows: 1244 Vertices: 1443 Edges: 2660 Transfer Rows: 1244 Output Rows: 0 Output Columns: 0
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As we can see, the prompt shows us the evolutions of the characteristics of the &lt;code&gt;FMTgraph&lt;/code&gt; as it gets built (increasing number of columns, vertices, etc.).&lt;/p&gt;
+&lt;p&gt;As we can see, the prompt shows us the evolutions of the characteristics of the &lt;code&gt;FMTGraph&lt;/code&gt; as it gets built (increasing number of columns, vertices, etc.).&lt;/p&gt;
 &lt;h2 id=&#34;constraints-and-objective&#34;&gt;Constraints and objective&lt;/h2&gt;
 &lt;p&gt;Linear programming models come with constraints and objectives, for which we want an optimized solution.&lt;/p&gt;
-&lt;p&gt;Hence, to solve a &lt;code&gt;FMTlpmodel&lt;/code&gt;, we need to set these constraints and objectives into the model before attempting to solve it.&lt;/p&gt;
-&lt;p&gt;These constraints and objectives can be set manually via the &lt;code&gt;FMTlpmodel.setobjective()&lt;/code&gt; and the &lt;code&gt;FMTlpmodel.setconstraints()&lt;/code&gt; functions.&lt;/p&gt;
+&lt;p&gt;Hence, to solve a &lt;code&gt;FMTLpModel&lt;/code&gt;, we need to set these constraints and objectives into the model before attempting to solve it.&lt;/p&gt;
+&lt;p&gt;These constraints and objectives can be set manually via the &lt;code&gt;FMTLpModel.setObjective()&lt;/code&gt; and the &lt;code&gt;FMTLpModel.setConstraints()&lt;/code&gt; functions.&lt;/p&gt;
 &lt;p&gt;Most of the time, you might end up doing the following :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Getting the constraints that are already in the Woodstock files formulation of the model using the &lt;code&gt;FMTmodel.getconstraint()&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Taking out the first constraint out of the list of constraints that &lt;code&gt;FMTmodel.getconstraint()&lt;/code&gt; returns, because &lt;strong&gt;the first constraint of this list is actually the objective function of the model&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Then, inserting this objective function and the constraints into the &lt;code&gt;FMTlpmodel&lt;/code&gt; in order to solve it, by using the &lt;code&gt;FMTlpmodel.setobjective()&lt;/code&gt; and &lt;code&gt;FMTlpmodel.setconstraint()&lt;/code&gt; functions.&lt;/li&gt;
+&lt;li&gt;Getting the constraints that are already in the Woodstock files formulation of the model using the &lt;code&gt;FMTModel.getConstraint()&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Taking out the first constraint out of the list of constraints that &lt;code&gt;FMTModel.getConstraint()&lt;/code&gt; returns, because &lt;strong&gt;the first constraint of this list is actually the objective function of the model&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Then, inserting this objective function and the constraints into the &lt;code&gt;FMTLpModel&lt;/code&gt; in order to solve it, by using the &lt;code&gt;FMTLpModel.setObjective()&lt;/code&gt; and &lt;code&gt;FMTLpModel.setConstraint()&lt;/code&gt; functions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This will result in the following code, in R :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(FMT) # Loads FMT into R
@@ -586,7 +511,7 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Checks if FMT has bee
 	print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;)
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The equivalent in Python code is the following (notice that here, we will just &amp;ldquo;take out&amp;rdquo; the objective function out of the list of constraints returned by &lt;code&gt;FMTlpmodel.getconstraints()&lt;/code&gt; with the function &lt;code&gt;list.pop()&lt;/code&gt;, which we allow us to directly loop around the remaining list for the constraints) :&lt;/p&gt;
+&lt;p&gt;The equivalent in Python code is the following (notice that here, we will just &amp;ldquo;take out&amp;rdquo; the objective function out of the list of constraints returned by &lt;code&gt;FMTLpModel.getConstraints()&lt;/code&gt; with the function &lt;code&gt;list.pop()&lt;/code&gt;, which we allow us to directly loop around the remaining list for the constraints) :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import sys
 from FMT import Models
 from FMT import Parser
@@ -617,17 +542,17 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 	else:
 		print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;solving-the-fmtlpmodel&#34;&gt;Solving the &lt;code&gt;FMTlpmodel&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Once that the full graph is built, and that the constraints and objectives are set, the &lt;code&gt;FMTlpmodel&lt;/code&gt; can be solved by using the &lt;code&gt;FMTlpmodel.initialsolve()&lt;/code&gt; function. The function returns &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; depending on whether the model was successfully resolved. If the resolution went well, the model retains the solution and the solution can be queried in different ways (an example is shown below).&lt;/p&gt;
+&lt;h2 id=&#34;solving-the-fmtlpmodel&#34;&gt;Solving the &lt;code&gt;FMTLpModel&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Once that the full graph is built, and that the constraints and objectives are set, the &lt;code&gt;FMTLpModel&lt;/code&gt; can be solved by using the &lt;code&gt;FMTLpModel.initialSolve()&lt;/code&gt; function. The function returns &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; depending on whether the model was successfully resolved. If the resolution went well, the model retains the solution and the solution can be queried in different ways (an example is shown below).&lt;/p&gt;
 &lt;h2 id=&#34;building-the-graph-with-an-existing-solution-partial-build&#34;&gt;Building the graph with an existing solution (partial build)&lt;/h2&gt;
 &lt;p&gt;Sometime, we might want to get some outputs of a solution/schedule that we already have (see next section) without solving the model all over again, as it was already solved previously.&lt;/p&gt;
-&lt;p&gt;In that case, it is possible to read a solution that was previously found, and to build the &lt;code&gt;FMTgraph&lt;/code&gt; of the model by generating only the edges and vertices used by the solution.&lt;/p&gt;
+&lt;p&gt;In that case, it is possible to read a solution that was previously found, and to build the &lt;code&gt;FMTGraph&lt;/code&gt; of the model by generating only the edges and vertices used by the solution.&lt;/p&gt;
 &lt;p&gt;To that end, three things must be done :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Reading the schedule file of the scenario, and passing it to the &lt;code&gt;FMTlpmodel.buildperiod()&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Setting the solution for each period with the &lt;code&gt;FMTlpmodel.setsolution()&lt;/code&gt; function
+&lt;li&gt;Reading the schedule file of the scenario, and passing it to the &lt;code&gt;FMTLpModel.buildPeriod()&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Setting the solution for each period with the &lt;code&gt;FMTLpModel.setSolution()&lt;/code&gt; function
 &lt;ul&gt;
-&lt;li&gt;If the model contains multiple &lt;code&gt;_LOCKEXEMPT&lt;/code&gt; actions, then using &lt;code&gt;FMTlpmodel.setsolution()&lt;/code&gt; can throw errors as locks specifications are not part of the solution. In such a case, you should use the &lt;code&gt;FMTlpmodel.setsolutionbylp()&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;If the model contains multiple &lt;code&gt;_LOCKEXEMPT&lt;/code&gt; actions, then using &lt;code&gt;FMTLpModel.setSolution()&lt;/code&gt; can throw errors as locks specifications are not part of the solution. In such a case, you should use the &lt;code&gt;FMTLpModel.setSolutionByLp()&lt;/code&gt; function.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -666,7 +591,7 @@ if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Checks if FMT has bee
 	print(&amp;quot;FMT needs to be compiled with OSI&amp;quot;)
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Notice that here, we have a second parameter &lt;code&gt;TRUE&lt;/code&gt; to &lt;code&gt;lpmodel$buildperiod()&lt;/code&gt; to indicate that we needed to force a partial build, as indicated &lt;a href=&#34;../../../doxygen/html/classModels_1_1FMTsrmodel.html#a1931d5db29f364d3d48c887873be04fa&#34;&gt;in the documentation of the function&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;Notice that here, we have a second parameter &lt;code&gt;TRUE&lt;/code&gt; to &lt;code&gt;lpmodel$builderiod()&lt;/code&gt; to indicate that we needed to force a partial build, as indicated &lt;a href=&#34;../../../doxygen/html/classModels_1_1FMTsrmodel.html#a1931d5db29f364d3d48c887873be04fa&#34;&gt;in the documentation of the function&lt;/a&gt; :&lt;/p&gt;
 
 
 
@@ -799,17 +724,17 @@ Solution set at period   20
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;getting-output-values-from-the-model&#34;&gt;Getting output values from the model&lt;/h2&gt;
 &lt;p&gt;There are multiple ways to read different outputs from the model.&lt;/p&gt;
-&lt;p&gt;In R, there is a particular function (&lt;strong&gt;only available in R&lt;/strong&gt;) called &lt;code&gt;getoutsdataframe()&lt;/code&gt;; but for R, Python and C++, it is possible to use the &lt;code&gt;FMTmodel.getoutputs()&lt;/code&gt; to get a list of the available outputs for a given model.&lt;/p&gt;
+&lt;p&gt;In R, there is a particular function (&lt;strong&gt;only available in R&lt;/strong&gt;) called &lt;code&gt;getoutsdataframe()&lt;/code&gt;; but for R, Python and C++, it is possible to use the &lt;code&gt;FMTModel.getOutputs()&lt;/code&gt; to get a list of the available outputs for a given model.&lt;/p&gt;
 &lt;p&gt;It is possible to select a different &lt;code&gt;FMToutputlevel&lt;/code&gt; in order to obtain an output at different scales in the model.&lt;/p&gt;
 &lt;p&gt;For an example of this, see &lt;a href=&#34;../exercice_1/&#34;&gt;exercise 1&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;exporting-the-schedule-of-a-solved-model&#34;&gt;Exporting the schedule of a solved model&lt;/h2&gt;
-&lt;p&gt;Exporting the schedule of a solved model is done via the &lt;code&gt;FMTscheduleparser&lt;/code&gt; object that we used when building the partial graph (see previous sections).&lt;/p&gt;
-&lt;p&gt;The solution of a model can be put into a list by using the &lt;code&gt;FMTlpmodel.getsolution()&lt;/code&gt; function for each of the period of interest.&lt;/p&gt;
-&lt;p&gt;Then, the list of solution for each period must be transformed into a vector, which can then be written in a &lt;code&gt;.txt&lt;/code&gt; file using the &lt;code&gt;FMTscheduleparser.write()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;Exporting the schedule of a solved model is done via the &lt;code&gt;FMTScheduleParser&lt;/code&gt; object that we used when building the partial graph (see previous sections).&lt;/p&gt;
+&lt;p&gt;The solution of a model can be put into a list by using the &lt;code&gt;FMTLpModel.getSolution()&lt;/code&gt; function for each of the period of interest.&lt;/p&gt;
+&lt;p&gt;Then, the list of solution for each period must be transformed into a vector, which can then be written in a &lt;code&gt;.txt&lt;/code&gt; file using the &lt;code&gt;FMTScheduleParser.write()&lt;/code&gt; function.&lt;/p&gt;
 &lt;p&gt;For an example, see &lt;a href=&#34;../exercice_1/&#34;&gt;exercise 1&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;pre-solving-a-model&#34;&gt;Pre-solving a model&lt;/h2&gt;
 &lt;p&gt;Some models can be hard to solve, because of their high number of actions, strata, and so on.&lt;/p&gt;
-&lt;p&gt;In such case, the &lt;code&gt;FMTmodel.basepresolve()&lt;/code&gt; function can be used to pre-solve the model.&lt;/p&gt;
+&lt;p&gt;In such case, the &lt;code&gt;FMTModel.basePresolve()&lt;/code&gt; function can be used to pre-solve the model.&lt;/p&gt;
 &lt;p&gt;What this function does is to return a model with less themes, actions, transitions, outputs and constraints compare to the original model, but with the same amount of information. This makes it easier to solve, while giving the same answer in the end.&lt;/p&gt;
 &lt;p&gt;In some situations, FMT will pre-solve the model automatically.&lt;/p&gt;
 &lt;hr&gt;
@@ -854,22 +779,22 @@ Solution set at period   20
 &lt;ul&gt;
 &lt;li&gt;Constructing its full graph for 10 periods&lt;/li&gt;
 &lt;li&gt;Setting the objective and constraints of the model&lt;/li&gt;
-&lt;li&gt;Using the &lt;code&gt;FMTmodel.initialsolve()&lt;/code&gt; function to solve it.&lt;/li&gt;
+&lt;li&gt;Using the &lt;code&gt;FMTModel.initialSolve()&lt;/code&gt; function to solve it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Read the values of the output &lt;code&gt;OSUPREC&lt;/code&gt; of the model by
 &lt;ul&gt;
-&lt;li&gt;Getting a list of the outputs of the model with the function &lt;code&gt;FMTmodel.getouputs()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Doing a &lt;code&gt;for&lt;/code&gt; loop to select the right output with the &lt;code&gt;FMToutput.getname()&lt;/code&gt; function&lt;/li&gt;
-&lt;li&gt;Printing the output values using the function &lt;code&gt;FMTmodel.getvariabilities(FMToutput)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Getting a list of the outputs of the model with the function &lt;code&gt;FMTModel.getOuputs()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Doing a &lt;code&gt;for&lt;/code&gt; loop to select the right output with the &lt;code&gt;FMTOutput.getName()&lt;/code&gt; function&lt;/li&gt;
+&lt;li&gt;Printing the output values using the function &lt;code&gt;FMTModel.getvariabilities(FMTOutput)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Write the optimized schedule of the model in a &lt;code&gt;.txt&lt;/code&gt; file by
 &lt;ul&gt;
-&lt;li&gt;Creating a new &lt;code&gt;FMTscheduleparser&lt;/code&gt; object&lt;/li&gt;
+&lt;li&gt;Creating a new &lt;code&gt;FMTScheduleParser&lt;/code&gt; object&lt;/li&gt;
 &lt;li&gt;Getting the solution of the model at each period with a list using &lt;code&gt;LPModel.getsolution(period)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Transforming the list into a vector&lt;/li&gt;
-&lt;li&gt;Writing the vector into a &lt;code&gt;.txt&lt;/code&gt; file with &lt;code&gt;FMTscheduleparser.write()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Writing the vector into a &lt;code&gt;.txt&lt;/code&gt; file with &lt;code&gt;FMTScheduleParser.write()&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -988,34 +913,34 @@ scheduleParser.write(modelSolution, r&amp;quot;D:/TempCode/FMT/FMT/Examples/prog
 &lt;li&gt;In a &lt;strong&gt;spatially referenced model&lt;/strong&gt;, entities are associated to regions in space, but not to a precise position in those regions; those regions can be non-continuous. Woodstock models are spatially referenced in nature, as they consider &lt;em&gt;strata&lt;/em&gt; that correspond to forests with the same composition and age, which can be dispersed in many places in the landscape.&lt;/li&gt;
 &lt;li&gt;In a &lt;strong&gt;spatially explicit model&lt;/strong&gt;, entities are associated to precise coordinates in space, like in the pixels of a raster map.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;the-fmtsesmodel&#34;&gt;The &lt;code&gt;FMTsesmodel&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel&lt;/code&gt; is a particular model that gives the user the opportunity to &lt;strong&gt;spatialize&lt;/strong&gt; solutions coming from any &lt;code&gt;FMTsrmodel&lt;/code&gt; class, which are the spatially referenced models (see &lt;a href=&#34;../objects_parsing_interrogation&#34;&gt;objects, model parsing and interrogation&lt;/a&gt; and &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Note that &lt;strong&gt;we are not talking about optimizing a spatially explicit model&lt;/strong&gt;; this is quite a complex task that is still on the roadmap of FMT (and which is the goal of the &lt;code&gt;FMTsamodel&lt;/code&gt; class).&lt;/p&gt;
+&lt;h2 id=&#34;the-fmtsesmodel&#34;&gt;The &lt;code&gt;FMTSesModel&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;FMTSesModel&lt;/code&gt; is a particular model that gives the user the opportunity to &lt;strong&gt;spatialize&lt;/strong&gt; solutions coming from any &lt;code&gt;FMTSrModel&lt;/code&gt; class, which are the spatially referenced models (see &lt;a href=&#34;../objects_parsing_interrogation&#34;&gt;objects, model parsing and interrogation&lt;/a&gt; and &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Note that &lt;strong&gt;we are not talking about optimizing a spatially explicit model&lt;/strong&gt;; this is quite a complex task that is still on the roadmap of FMT (and which is the goal of the &lt;code&gt;FMTSaModel&lt;/code&gt; class).&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
-FMTmodel &amp;lt;|-- FMTsemodel
-FMTsemodel &amp;lt;|-- FMTsamodel
-FMTsemodel &amp;lt;|-- FMTsesmodel
-FMTmodel &amp;lt;|-- FMTsrmodel
-FMTsrmodel &amp;lt;|-- FMTlpmodel
-FMTsrmodel &amp;lt;|-- FMTnssmodel
+FMTModel &amp;lt;|-- FMTSeModel
+FMTSeModel &amp;lt;|-- FMTSaModel
+FMTSeModel &amp;lt;|-- FMTSesModel
+FMTModel &amp;lt;|-- FMTSrModel
+FMTSrModel &amp;lt;|-- FMTLpModel
+FMTSrModel &amp;lt;|-- FMTNssModel
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Instead, the &lt;code&gt;FMTsesmodel&lt;/code&gt; will try to spatialize the schedule of a &lt;code&gt;FMTsrmodel&lt;/code&gt; by placing cut blocks on a map, by doing multiple iterations of simulating the placement of these blocks, and by selecting the best solution that is found.&lt;/p&gt;
+&lt;p&gt;Instead, the &lt;code&gt;FMTSesModel&lt;/code&gt; will try to spatialize the schedule of a &lt;code&gt;FMTSrModel&lt;/code&gt; by placing cut blocks on a map, by doing multiple iterations of simulating the placement of these blocks, and by selecting the best solution that is found.&lt;/p&gt;
 &lt;p&gt;To use a metaphor, this would be like trying to find a winning position at chess if you don&amp;rsquo;t find yourself capable of finding it by thinking carefully about the placement of your chess pieces : you could try to place your pieces randomly many, many times, and asking each time if you have won, or if you are closer to victory, and if the position of the chess pieces respect the rules of the game.&lt;/p&gt;
-&lt;p&gt;Here, &lt;code&gt;FMTsesmodel&lt;/code&gt; will try to place cut blocks according to the solution of a &lt;code&gt;FMTsrmodel&lt;/code&gt; (which is a schedule of forest operations applied to spatially referenced &lt;em&gt;strata&lt;/em&gt;). Its goal will be to find the best positioning possible, by accommodating to the constraints that are set in their placement as best as possible, and by maximizing the objective value (e.g. maximizing the harvested wood).&lt;/p&gt;
+&lt;p&gt;Here, &lt;code&gt;FMTSesModel&lt;/code&gt; will try to place cut blocks according to the solution of a &lt;code&gt;FMTSrModel&lt;/code&gt; (which is a schedule of forest operations applied to spatially referenced &lt;em&gt;strata&lt;/em&gt;). Its goal will be to find the best positioning possible, by accommodating to the constraints that are set in their placement as best as possible, and by maximizing the objective value (e.g. maximizing the harvested wood).&lt;/p&gt;
 &lt;p&gt;However, this method have a low chance of finding the &lt;strong&gt;optimal placement&lt;/strong&gt;, if one exists; instead, the more iterations it does in trying to place them, there higher the chance to find a solution that is as close as possible as an optimal placement of the cut blocks in space. This is why this process represents what we call a &lt;a href=&#34;https://en.wikipedia.org/wiki/Heuristic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;heuristic&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;the-spatial-framework-inside-fmt&#34;&gt;The spatial framework inside FMT&lt;/h2&gt;
-&lt;p&gt;FMT uses &lt;code&gt;FMTlayers&lt;/code&gt; to represent any spatially explicit solution.&lt;/p&gt;
-&lt;p&gt;A &lt;code&gt;FMTlayer&lt;/code&gt; can be compared to a regular raster file in which pixels can contain pretty much any type or class of forest stand.&lt;/p&gt;
-&lt;p&gt;In the &lt;code&gt;FMTsesmodel&lt;/code&gt;, we use the &lt;code&gt;FMTspatialschedule&lt;/code&gt; class to represent a spatially explicit solution, which itself is a &lt;code&gt;FMTlayer&lt;/code&gt; of &lt;code&gt;FMTlinegraph&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Each &lt;code&gt;FMTlinegraph&lt;/code&gt; is a linear version of the &lt;code&gt;FMTgraph&lt;/code&gt; described in &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;. What that means is that they show the evolution of the &lt;code&gt;FMTdevelopment&lt;/code&gt; inside the pixel from the beginning to end of the periods that we want to take into account.&lt;/p&gt;
-&lt;h2 id=&#34;the-fmtspatialschedule-class&#34;&gt;The &lt;code&gt;FMTspatialschedule&lt;/code&gt; class&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;FMTspatialschedule&lt;/code&gt; class contains a spatially explicit solution under the form of a &lt;code&gt;FMTlayer&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;It contains an important function, &lt;code&gt;FMTspatialschedule.getsolutionstatus()&lt;/code&gt;, which prints important information about how much the solution contained in the &lt;code&gt;FMTspatialschedule&lt;/code&gt; achieves the objective function of the model.&lt;/p&gt;
+&lt;p&gt;FMT uses &lt;code&gt;FMTLayers&lt;/code&gt; to represent any spatially explicit solution.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;FMTLayer&lt;/code&gt; can be compared to a regular raster file in which pixels can contain pretty much any type or class of forest stand.&lt;/p&gt;
+&lt;p&gt;In the &lt;code&gt;FMTSesModel&lt;/code&gt;, we use the &lt;code&gt;FMTSpatialSchedule&lt;/code&gt; class to represent a spatially explicit solution, which itself is a &lt;code&gt;FMTLayer&lt;/code&gt; of &lt;code&gt;FMTLineGraph&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each &lt;code&gt;FMTLineGraph&lt;/code&gt; is a linear version of the &lt;code&gt;FMTGraph&lt;/code&gt; described in &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;. What that means is that they show the evolution of the &lt;code&gt;FMTDevelopment&lt;/code&gt; inside the pixel from the beginning to end of the periods that we want to take into account.&lt;/p&gt;
+&lt;h2 id=&#34;the-fmtspatialschedule-class&#34;&gt;The &lt;code&gt;FMTSpatialSchedule&lt;/code&gt; class&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;FMTSpatialSchedule&lt;/code&gt; class contains a spatially explicit solution under the form of a &lt;code&gt;FMTLayer&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It contains an important function, &lt;code&gt;FMTSpatialSchedule.getsolutionstatus()&lt;/code&gt;, which prints important information about how much the solution contained in the &lt;code&gt;FMTSpatialSchedule&lt;/code&gt; achieves the objective function of the model.&lt;/p&gt;
 &lt;p&gt;This function also gives a value of the &lt;em&gt;primal infeasibility&lt;/em&gt;, which gives an idea of how much the current solution does not respect all of the constraints of the model at once.&lt;/p&gt;
-&lt;p&gt;Note that unlike the &lt;code&gt;FMTschedule&lt;/code&gt; object which only concern one periods of time (which is why the code shown in the section about &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt; contained a &lt;code&gt;for&lt;/code&gt; loop around the number of period of interest when dealing with the &lt;code&gt;FMTschedule&lt;/code&gt; class), &lt;code&gt;FMTspatialschedule&lt;/code&gt; contains a solution for multiple periods of time at once.&lt;/p&gt;
-&lt;h2 id=&#34;the-fmtlinegraph&#34;&gt;The &lt;code&gt;FMTlinegraph&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;As said earlier, the spatial structure of a &lt;code&gt;FMTsesmodel&lt;/code&gt; is like a raster map made of pixels, with each pixels being a &lt;code&gt;FMTlinegraph&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;In a &lt;code&gt;FMTlinegraph&lt;/code&gt;, each node stands for the state of the strata inside the pixel and each edge stands for an action (e.g. cleartcut) or natural growth, as shown of this image :&lt;/p&gt;
+&lt;p&gt;Note that unlike the &lt;code&gt;FMTSchedule&lt;/code&gt; object which only concern one periods of time (which is why the code shown in the section about &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt; contained a &lt;code&gt;for&lt;/code&gt; loop around the number of period of interest when dealing with the &lt;code&gt;FMTSchedule&lt;/code&gt; class), &lt;code&gt;FMTSpatialSchedule&lt;/code&gt; contains a solution for multiple periods of time at once.&lt;/p&gt;
+&lt;h2 id=&#34;the-fmtlinegraph&#34;&gt;The &lt;code&gt;FMTLineGraph&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;As said earlier, the spatial structure of a &lt;code&gt;FMTSesModel&lt;/code&gt; is like a raster map made of pixels, with each pixels being a &lt;code&gt;FMTLineGraph&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In a &lt;code&gt;FMTLineGraph&lt;/code&gt;, each node stands for the state of the strata inside the pixel and each edge stands for an action (e.g. cleartcut) or natural growth, as shown of this image :&lt;/p&gt;
 
 
 
@@ -1041,9 +966,9 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
                height=&#34;106&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;However, on the contrary of the &lt;code&gt;FMTgraph&lt;/code&gt; object described in the section about &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;, the &lt;code&gt;FMTlinegraph&lt;/code&gt; does not contain a complete enumeration of all possible actions and states possible for the strata in the pixel : instead, it only contains one solution, or one evolution possible for the strata.&lt;/p&gt;
+&lt;p&gt;However, on the contrary of the &lt;code&gt;FMTGraph&lt;/code&gt; object described in the section about &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;, the &lt;code&gt;FMTLineGraph&lt;/code&gt; does not contain a complete enumeration of all possible actions and states possible for the strata in the pixel : instead, it only contains one solution, or one evolution possible for the strata.&lt;/p&gt;
 &lt;h2 id=&#34;making-transitions-with-single-outputs&#34;&gt;Making transitions with single outputs&lt;/h2&gt;
-&lt;p&gt;A limitation of the &lt;code&gt;FMTlinegraph&lt;/code&gt; class is that one cannot use multiple output transitions, meaning transitions that results in two different strata or other outputs, as illustrated below :&lt;/p&gt;
+&lt;p&gt;A limitation of the &lt;code&gt;FMTLineGraph&lt;/code&gt; class is that one cannot use multiple output transitions, meaning transitions that results in two different strata or other outputs, as illustrated below :&lt;/p&gt;
 
 
 
@@ -1069,11 +994,11 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
                height=&#34;204&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;Therefore, &lt;strong&gt;you will need to modify the transitions of an &lt;code&gt;FMTmodel&lt;/code&gt; to be able to use them in a &lt;code&gt;FMTsesmodel&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;To that end, you can use the &lt;code&gt;FMTtransition.single()&lt;/code&gt; function, which automatically transforms multiple outputs transitions into single output transitions.&lt;/p&gt;
-&lt;p&gt;Once that the transitions have been transformed as single transitions, you can use the &lt;code&gt;FMTsesmodel.settransitions()&lt;/code&gt; function to set the new generated transitions into the &lt;code&gt;FMTsesmodel&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Therefore, &lt;strong&gt;you will need to modify the transitions of an &lt;code&gt;FMTModel&lt;/code&gt; to be able to use them in a &lt;code&gt;FMTSesModel&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To that end, you can use the &lt;code&gt;FMTTransition.single()&lt;/code&gt; function, which automatically transforms multiple outputs transitions into single output transitions.&lt;/p&gt;
+&lt;p&gt;Once that the transitions have been transformed as single transitions, you can use the &lt;code&gt;FMTSesModel.setTransitions()&lt;/code&gt; function to set the new generated transitions into the &lt;code&gt;FMTSesModel&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;spatial-events&#34;&gt;Spatial events&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;FMTspatialschedule&lt;/code&gt; also keeps tracks of the areas affected by particular actions under the form of space time events with the class &lt;code&gt;FMTevent&lt;/code&gt;, as is shown here :&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;FMTSpatialSchedule&lt;/code&gt; also keeps tracks of the areas affected by particular actions under the form of space time events with the class &lt;code&gt;FMTEvent&lt;/code&gt;, as is shown here :&lt;/p&gt;
 
 
 
@@ -1099,7 +1024,7 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
                height=&#34;290&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;FMTevent&lt;/code&gt; can represent any kind of spatially explicit disturbance (cut, fire, etc.). It is associated with the time period of the event, and the coordinates of the spatial event.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTEvent&lt;/code&gt; can represent any kind of spatially explicit disturbance (cut, fire, etc.). It is associated with the time period of the event, and the coordinates of the spatial event.&lt;/p&gt;
 
 
 
@@ -1126,18 +1051,18 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;the-initial-forest-map&#34;&gt;The initial forest map&lt;/h2&gt;
-&lt;p&gt;As a spatially explicit model, the &lt;code&gt;FMTsesmodel&lt;/code&gt; requires spatially explicit informations about the forests in the landscape at the beginning of the planning horizon.&lt;/p&gt;
-&lt;p&gt;To get this information from a Woodstock model (that might have served to create a &lt;code&gt;FMTlpmodel&lt;/code&gt; that you optimized; see &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;), you will need to retrieve this information from the vector file that serves as the Woodstock model&amp;rsquo;s map. This vector file contains information about the &lt;em&gt;theme&lt;/em&gt;, &lt;em&gt;age&lt;/em&gt; and &lt;em&gt;lock&lt;/em&gt; attributes for each strata which will need to be transferred into multiple spatially explicit rasters.&lt;/p&gt;
-&lt;p&gt;All of this information will be contained in the &lt;code&gt;FMTforest&lt;/code&gt; object, which is the equivalent of the model&amp;rsquo;s map, but that is based on a &lt;code&gt;FMTlayer&lt;/code&gt;. Each pixel of a &lt;code&gt;FMTforest&lt;/code&gt; object contains a &lt;code&gt;FMTactualdevelopment&lt;/code&gt; object.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;FMTareaparser&lt;/code&gt; class can be used to generate the &lt;code&gt;FMTforest&lt;/code&gt; needed for the &lt;code&gt;FMTsesmodel&lt;/code&gt;, as it contains functions to read vectorial or raster maps from a Woodstock model.&lt;/p&gt;
+&lt;p&gt;As a spatially explicit model, the &lt;code&gt;FMTSesModel&lt;/code&gt; requires spatially explicit informations about the forests in the landscape at the beginning of the planning horizon.&lt;/p&gt;
+&lt;p&gt;To get this information from a Woodstock model (that might have served to create a &lt;code&gt;FMTLpModel&lt;/code&gt; that you optimized; see &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;), you will need to retrieve this information from the vector file that serves as the Woodstock model&amp;rsquo;s map. This vector file contains information about the &lt;em&gt;theme&lt;/em&gt;, &lt;em&gt;age&lt;/em&gt; and &lt;em&gt;lock&lt;/em&gt; attributes for each strata which will need to be transferred into multiple spatially explicit rasters.&lt;/p&gt;
+&lt;p&gt;All of this information will be contained in the &lt;code&gt;FMTForest&lt;/code&gt; object, which is the equivalent of the model&amp;rsquo;s map, but that is based on a &lt;code&gt;FMTLayer&lt;/code&gt;. Each pixel of a &lt;code&gt;FMTForest&lt;/code&gt; object contains a &lt;code&gt;FMTActualDevelopment&lt;/code&gt; object.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;FMTAreaParser&lt;/code&gt; class can be used to generate the &lt;code&gt;FMTForest&lt;/code&gt; needed for the &lt;code&gt;FMTSesModel&lt;/code&gt;, as it contains functions to read vectorial or raster maps from a Woodstock model.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;FMTareaparser.vectormaptoFMTforest()&lt;/code&gt; allows you to read an existing vector (shapefile) map&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;FMTareaparser.readrasters()&lt;/code&gt; allows you to read existing rasters maps&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTAreaParser.vectorMapToFMTForest()&lt;/code&gt; allows you to read an existing vector (shapefile) map&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FMTAreaParser.readRasters()&lt;/code&gt; allows you to read existing rasters maps&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Both functions require several parameters to properly identify the themes that are needed, and specify several spatial characteristics of the &lt;code&gt;FMTforest&lt;/code&gt; class that you will create.&lt;/p&gt;
-&lt;p&gt;Once that the &lt;code&gt;FMTforest&lt;/code&gt; is created, it needs to be given to the &lt;code&gt;FMTsesmodel&lt;/code&gt; by using the &lt;code&gt;FMTsesmodel.setinitialmapping()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;Both functions require several parameters to properly identify the themes that are needed, and specify several spatial characteristics of the &lt;code&gt;FMTForest&lt;/code&gt; class that you will create.&lt;/p&gt;
+&lt;p&gt;Once that the &lt;code&gt;FMTForest&lt;/code&gt; is created, it needs to be given to the &lt;code&gt;FMTSesModel&lt;/code&gt; by using the &lt;code&gt;FMTSesModel.setInitialMapping()&lt;/code&gt; function.&lt;/p&gt;
 &lt;h2 id=&#34;using-new-keywords-in-woodstock-files-for-spatial-constraints&#34;&gt;Using new keywords in Woodstock files for spatial constraints&lt;/h2&gt;
-&lt;p&gt;In a usual Woodstock model, spatial constraints are not taken into account. However, you will certainly need to use some for a spatial simulation with the &lt;code&gt;FMTsesmodel&lt;/code&gt; to place the cut blocks of the optimized schedule.&lt;/p&gt;
+&lt;p&gt;In a usual Woodstock model, spatial constraints are not taken into account. However, you will certainly need to use some for a spatial simulation with the &lt;code&gt;FMTSesModel&lt;/code&gt; to place the cut blocks of the optimized schedule.&lt;/p&gt;
 &lt;p&gt;To that end, FMT can read two new keywords in the &lt;em&gt;optimize&lt;/em&gt; section of a Woodstock model that do not exist in the original Woodstock syntax.&lt;/p&gt;
 &lt;p&gt;These keywords are &lt;code&gt;_SIZE&lt;/code&gt; and &lt;code&gt;_ADJACENCY&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_SIZE&lt;/code&gt; is to be used with the following syntax in the &lt;em&gt;optimize&lt;/em&gt; section of a Woodstock model :&lt;/p&gt;
@@ -1208,11 +1133,11 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
   &lt;/div&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;GREENUP&lt;/code&gt; correspond to the number of time periods for which we consider two events to be neighbours. For example, if &lt;code&gt;GREENUP&lt;/code&gt; is equal to 3, two spatial blocks of actions that are under the maximal distance indicated by &lt;code&gt;DISTANCE&lt;/code&gt; but which are separated temporally by 4 periods will not be considered spatially adjacent; however, if they were separated by 3, 2 or 1 period, or are in the same period, they will be considered spatially adjacent.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;making-the-simulation-with-fmtsesmodelgreedyreferencebuild&#34;&gt;Making the simulation with &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Once that you have a spatially-referenced solution/schedule (see &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;) and that you have set the initial landscape for the &lt;code&gt;FMTsesmodel&lt;/code&gt; (see previous sections), you can use &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; to make the simulation proper, and obtain a spatially-explicit schedule based on the spatially-referenced schedule.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; needs a the spatially-referenced solution of a &lt;code&gt;FMTlpmodel&lt;/code&gt; (or a &lt;code&gt;FMTnssmodel&lt;/code&gt;), in the form of a &lt;code&gt;FMTschedule&lt;/code&gt; object. This solution describes which development (or strata) get harvested for one period, with which action, and at which surface/area.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;FMTschedule&lt;/code&gt; from a solutioned &lt;code&gt;FMTlpmodel&lt;/code&gt; or &lt;code&gt;FMTnssmodel&lt;/code&gt; can be retrieved using their function &lt;code&gt;getsolution()&lt;/code&gt;. However, the function will retrieve the solution for one period; we will have to loop around the periods to get the solutions for every period of interest, and to indicate if we want the solution to take into account locked developments.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; will build a spatially explicit solution from a spatially-referenced one for a given period. Along with the &lt;code&gt;FMTschedule&lt;/code&gt; for the period, the function will need a &lt;code&gt;randomiterations&lt;/code&gt; argument which is the maximal number of iterations done by the algorithm before it stops when no increase in the objective function value (maximization) or decrease in the primal infeasibility value was found. This is because the simulation consist of iterations where the model will try to place cutblocks in space according to the spatially-referenced schedule in order to increase the objective function of the model (e.g., volume harvested) while respecting the linear and spatial constraints that was given (whose deviation from is represented by the primal infeasibility value).&lt;/p&gt;
+&lt;h2 id=&#34;making-the-simulation-with-fmtsesmodelgreedyreferencebuild&#34;&gt;Making the simulation with &lt;code&gt;FMTSesModel.Greedyreferencebuild()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Once that you have a spatially-referenced solution/schedule (see &lt;a href=&#34;../spatially_referenced_optimization&#34;&gt;spatially referenced optimization&lt;/a&gt;) and that you have set the initial landscape for the &lt;code&gt;FMTSesModel&lt;/code&gt; (see previous sections), you can use &lt;code&gt;FMTSesModel.Greedyreferencebuild()&lt;/code&gt; to make the simulation proper, and obtain a spatially-explicit schedule based on the spatially-referenced schedule.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTSesModel.Greedyreferencebuild()&lt;/code&gt; needs a the spatially-referenced solution of a &lt;code&gt;FMTLpModel&lt;/code&gt; (or a &lt;code&gt;FMTNssModel&lt;/code&gt;), in the form of a &lt;code&gt;FMTSchedule&lt;/code&gt; object. This solution describes which development (or strata) get harvested for one period, with which action, and at which surface/area.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;FMTSchedule&lt;/code&gt; from a solutioned &lt;code&gt;FMTLpModel&lt;/code&gt; or &lt;code&gt;FMTNssModel&lt;/code&gt; can be retrieved using their function &lt;code&gt;getSolution()&lt;/code&gt;. However, the function will retrieve the solution for one period; we will have to loop around the periods to get the solutions for every period of interest, and to indicate if we want the solution to take into account locked developments.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FMTSesModel.Greedyreferencebuild()&lt;/code&gt; will build a spatially explicit solution from a spatially-referenced one for a given period. Along with the &lt;code&gt;FMTSchedule&lt;/code&gt; for the period, the function will need a &lt;code&gt;randomiterations&lt;/code&gt; argument which is the maximal number of iterations done by the algorithm before it stops when no increase in the objective function value (maximization) or decrease in the primal infeasibility value was found. This is because the simulation consist of iterations where the model will try to place cutblocks in space according to the spatially-referenced schedule in order to increase the objective function of the model (e.g., volume harvested) while respecting the linear and spatial constraints that was given (whose deviation from is represented by the primal infeasibility value).&lt;/p&gt;
 &lt;p&gt;A last input is a seed number that will be used to generate random numbers used for creating the cut blocks at each iteration. This system of seed allows FMT to use random numbers that are &amp;ldquo;replicable&amp;rdquo;; that means, if you keep the same seed, FMT will get the same random numbers, and will do the exact same simulations.&lt;/p&gt;
 &lt;p&gt;Here is a representation of how the simulation algorithm functions in practice :&lt;/p&gt;
 
@@ -1240,7 +1165,7 @@ FMTsrmodel &amp;lt;|-- FMTnssmodel
                height=&#34;383&#34;
                loading=&#34;eager&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;In R, the code to use &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; will look like this :&lt;/p&gt;
+&lt;p&gt;In R, the code to use &lt;code&gt;FMTSesModel.Greedyreferencebuild()&lt;/code&gt; will look like this :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(FMT) # Loads FMT into R
 if (new(FMTversion)$hasfeature(&amp;quot;OSI&amp;quot;)) # Checks if FMT has been compiled with OSI by creating a new FMTversion object, and using the function hasfeature().
 {
@@ -1454,9 +1379,9 @@ Iteration 10 Primal Inf(77340.640000) Obj(27667.040000)
 Stalled after 14 iterations Skipping
 {&#39;ACARIBOU&#39;: 10491.125109295706, &#39;COUPETOTALE&#39;: 0.3982872281191633, &#39;Objective&#39;: 27667.040000000005, &#39;PLANTATION&#39;: 1.0028031096555103, &#39;Primalinfeasibility&#39;: 77340.64000000012, &#39;Total&#39;: 0.8163283360740083}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;analysing-the-outputs-of-fmtsesmodelgreedyreferencebuild&#34;&gt;Analysing the outputs of &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; returns information on the best solution that have been found; which means the best spatial placement of cutblocks that the algorithm was capable of finding by optimizing the objective function, while respecting the linear and spatial constraints that were given by the user.&lt;/p&gt;
-&lt;p&gt;In particular, &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; indicates 4 important information :&lt;/p&gt;
+&lt;h2 id=&#34;analysing-the-outputs-of-fmtsesmodelgreedyreferencebuild&#34;&gt;Analysing the outputs of &lt;code&gt;FMTSesModel.Greedyreferencebuild()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;FMTSesModel.Greedyreferencebuild()&lt;/code&gt; returns information on the best solution that have been found; which means the best spatial placement of cutblocks that the algorithm was capable of finding by optimizing the objective function, while respecting the linear and spatial constraints that were given by the user.&lt;/p&gt;
+&lt;p&gt;In particular, &lt;code&gt;FMTSesModel.Greedyreferencebuild()&lt;/code&gt; indicates 4 important information :&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1594,7 +1519,7 @@ Stalled after 14 iterations Skipping
 &lt;p&gt;Note that &lt;strong&gt;stalled&lt;/strong&gt; and &lt;strong&gt;stuck&lt;/strong&gt; have two different meaning :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Stalled&lt;/strong&gt; means that the algorithm have generated the same exact solutions (the same placement of the cuts in space) as its 3 last iterations, implying that it cannot generate any new solution. This can happen when the constraints makes it so that the number of potential solutions are limited, which means that the algorithm will quickly have tried them all.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stuck&lt;/strong&gt; means that the algorithm was able to generate different solutions; but that all of these new solutions have an objective function value that is not higher than the previous ones, or that these new solutions cannot reduce the primal infeasibility. After a number of iterations corresponding to the &lt;code&gt;randomiterations&lt;/code&gt; arguments provided to &lt;code&gt;FMTsesmodel.Greedyreferencebuild()&lt;/code&gt; without any improvements, the algorithm will stop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stuck&lt;/strong&gt; means that the algorithm was able to generate different solutions; but that all of these new solutions have an objective function value that is not higher than the previous ones, or that these new solutions cannot reduce the primal infeasibility. After a number of iterations corresponding to the &lt;code&gt;randomiterations&lt;/code&gt; arguments provided to &lt;code&gt;FMTSesModel.GreedyReferenceBuild()&lt;/code&gt; without any improvements, the algorithm will stop.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For the second period, we can see :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Iteration 0 Primal Inf(2310.400000) Obj(40143.200000)
@@ -1612,7 +1537,7 @@ Solution stuck after 27 iterations Skipping
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;And so on until the 10th period.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;You should now know enough to start using FMT by yourself. If you have any remaining questions, please contact &lt;a href=&#34;mailto:Guillaume.Cyr@fec.gouv.qc.ca&#34;&gt;Guillaume Cyr&lt;/a&gt; or &lt;a href=&#34;mailto:Bruno.Forest@fec.gouv.qc.ca&#34;&gt;Bruno Forest&lt;/a&gt; from the BFEC. You can also install FMT on your computer by following the &lt;a href=&#34;../../download_install/&#34;&gt;Downloading and installing section&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You should now know enough to start using FMT by yourself. If you have any remaining questions, please contact &lt;a href=&#34;mailto:Guillaume.Cyr@fec.gouv.qc.ca&#34;&gt;Guillaume Cyr&lt;/a&gt; from the BFEC. You can also install FMT on your computer by following the &lt;a href=&#34;../../download_install/&#34;&gt;Downloading and installing section&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

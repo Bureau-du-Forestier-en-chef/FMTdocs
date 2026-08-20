@@ -863,25 +863,7 @@ Si Python n&rsquo;est pas installé sur votre ordinateur, nous vous recommandons
     Si Python n&rsquo;est pas installé sur votre ordinateur, nous vous recommandons d&rsquo;installer <a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank" rel="noopener">Miniconda</a>, la version &ldquo;légère&rdquo; de la célèbre distribution Python <a href="https://www.anaconda.com/" target="_blank" rel="noopener">Anaconda</a>. Miniconda contient Python, pip et de nombreux autres modules qui sont utiles pour utiliser FMT.
   </div>
 </div>
-<p>Il existe deux façons d&rsquo;importer FMT dans Python :</p>
-<ol>
-<li><strong>En utilisant <code>sys.path.append</code></strong>.</li>
-</ol>
-<p><code>sys.path.append</code> vous permet d&rsquo;indiquer à Python où trouver les bibliothèques de fonction de FMT.</p>
-<p>Si vous l&rsquo;utilisez, le début de vos scripts Python ressemblera à ceci :</p>
-<pre><code class="language-python">import sys
-sys.path.append(r&quot;&lt;Chemin vers le dossier FMT&gt;/&quot;)
-sys.path.append(r&quot;&lt;Chemin vers le dossier FMT&gt;/Release/&quot;)
-from FMT import Models
-from FMT import Parser
-from FMT import Core
-from FMT import Version
-</code></pre>
-<p>dans lequel <code>&lt;Chemin vers le dossier FMT&gt;</code> sera remplacé par l&rsquo;emplacement du dossier où se trouvent les fichiers FMT que vous avez téléchargés depuis GitHub (et où se trouvent aussi les bibliothèques de fonction compilées de FMT, à présent).</p>
-<p>Cela peut cependant devenir redondant, ce qui rend la deuxième option - l&rsquo;installation avec pip - plus intéressante.</p>
-<ol start="2">
-<li><strong>En utilisant pip et la <em>Python wheel</em> que vous avez compilée</strong>.</li>
-</ol>
+<p><strong>En utilisant pip et la <em>Python wheel</em> que vous avez compilée</strong>.</p>
 <p>Les <em>Python wheels</em> sont des fichiers qui contiennent tout ce qui est nécessaire pour qu&rsquo;un module Python soit installé dans votre environnement Python avec la commande <code>pip</code>. Une fois installé de cette manière, le module peut être activé plus rapidement dans vos scripts Python.</p>
 <p>Pour installer la <em>Python wheel</em> que vous avez compilée, utilisez la commande suivante dans une invite de commande (si vous avez installé Python et pip indépendamment d&rsquo;Anaconda ou Miniconda), ou dans une invite de commande Anaconda :</p>
 <pre><code class="language-bash">pip install &quot;&lt;chemin vers le dossier FMT&gt;\build\release\bin\Release/FMT-0.9.1-py3-none-any.whl&quot;

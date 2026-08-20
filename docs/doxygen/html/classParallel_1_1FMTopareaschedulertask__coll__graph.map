@@ -1,23 +1,22 @@
 <map id="Parallel::FMTOpAreaSchedulerTask" name="Parallel::FMTOpAreaSchedulerTask">
-<area shape="rect" id="node1" title="Task to find a suboptimal schedule for the operating areas of a FMTLpModel." alt="" coords="2523,96,2751,123"/>
-<area shape="rect" id="node2" href="$classParallel_1_1FMTTask.html" title="Task for parallel jobs." alt="" coords="2347,96,2474,123"/>
-<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="2178,127,2298,153"/>
-<area shape="rect" id="node4" title=" " alt="" coords="1885,140,2063,183"/>
-<area shape="rect" id="node5" href="$classException_1_1FMTExceptionHandler.html" title="Base class used to handle errors thrown in FMT." alt="" coords="1603,148,1818,175"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1279,129,1416,172"/>
-<area shape="rect" id="node7" href="$classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT." alt="" coords="1278,72,1417,99"/>
-<area shape="rect" id="node21" title=" " alt="" coords="1892,57,2056,100"/>
-<area shape="rect" id="node8" title=" " alt="" coords="973,5,1138,48"/>
-<area shape="rect" id="node9" href="$classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler)." alt="" coords="732,13,906,40"/>
-<area shape="rect" id="node10" title=" " alt="" coords="538,13,683,40"/>
-<area shape="rect" id="node11" title=" " alt="" coords="1016,72,1095,99"/>
-<area shape="rect" id="node12" title=" " alt="" coords="757,64,882,107"/>
-<area shape="rect" id="node13" title=" " alt="" coords="987,123,1124,165"/>
-<area shape="rect" id="node14" title=" " alt="" coords="771,131,868,157"/>
-<area shape="rect" id="node15" title=" " alt="" coords="543,123,678,165"/>
-<area shape="rect" id="node16" title=" " alt="" coords="357,123,489,165"/>
-<area shape="rect" id="node17" title=" " alt="" coords="154,131,307,157"/>
-<area shape="rect" id="node18" title=" " alt="" coords="5,131,105,157"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1272,263,1423,305"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1271,196,1424,239"/>
+<area shape="rect" id="node1" title="Task to find a suboptimal schedule for the operating areas of a FMTLpModel." alt="" coords="2521,91,2749,117"/>
+<area shape="rect" id="node2" href="$classParallel_1_1FMTTask.html" title="Task for parallel jobs." alt="" coords="2345,91,2472,117"/>
+<area shape="rect" id="node3" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="2176,121,2296,148"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1883,135,2061,177"/>
+<area shape="rect" id="node5" href="$classException_1_1FMTExceptionHandler.html" title="Base class used to handle errors thrown in FMT." alt="" coords="1601,143,1816,169"/>
+<area shape="rect" id="node6" href="$classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT." alt="" coords="1278,72,1417,99"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1890,52,2054,95"/>
+<area shape="rect" id="node7" title=" " alt="" coords="973,5,1138,48"/>
+<area shape="rect" id="node8" href="$classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler)." alt="" coords="732,13,906,40"/>
+<area shape="rect" id="node9" title=" " alt="" coords="538,13,683,40"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1016,72,1095,99"/>
+<area shape="rect" id="node11" title=" " alt="" coords="757,64,882,107"/>
+<area shape="rect" id="node12" title=" " alt="" coords="987,123,1124,165"/>
+<area shape="rect" id="node13" title=" " alt="" coords="771,131,868,157"/>
+<area shape="rect" id="node14" title=" " alt="" coords="543,123,678,165"/>
+<area shape="rect" id="node15" title=" " alt="" coords="357,123,489,165"/>
+<area shape="rect" id="node16" title=" " alt="" coords="154,131,307,157"/>
+<area shape="rect" id="node17" title=" " alt="" coords="5,131,105,157"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1272,135,1423,177"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1271,201,1424,244"/>
 </map>

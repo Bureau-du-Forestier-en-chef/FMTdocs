@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -89,14 +89,12 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for Parallel::FMTReplanningTask:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classParallel_1_1FMTReplanningTask__inherit__graph.svg" width="202" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classParallel_1_1FMTReplanningTask__inherit__graph.svg" width="202" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Parallel::FMTReplanningTask:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classParallel_1_1FMTReplanningTask__coll__graph.svg" width="100%" height="533"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classParallel_1_1FMTReplanningTask__coll__graph.svg" width="100%" height="487"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -149,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab536cc752c7580c46719a4faccc6000d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel_1_1FMTReplanningTask.html#ab536cc752c7580c46719a4faccc6000d">setWriteSchedule</a> (const bool p_write)</td></tr>
 <tr class="memdesc:ab536cc752c7580c46719a4faccc6000d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a replanning schedule is written for each replicate.  <br /></td></tr>
 <tr class="separator:ab536cc752c7580c46719a4faccc6000d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678c18d2402f2c69b992910aaed2a959"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel_1_1FMTReplanningTask.html#a678c18d2402f2c69b992910aaed2a959">SupportsMultiThreading</a> () const override</td></tr>
+<tr class="memdesc:a678c18d2402f2c69b992910aaed2a959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the task support multithreading.  <br /></td></tr>
+<tr class="separator:a678c18d2402f2c69b992910aaed2a959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classParallel_1_1FMTTask"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classParallel_1_1FMTTask')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classParallel_1_1FMTTask.html">Parallel::FMTTask</a></td></tr>
 <tr class="memitem:a44d28df6a1013e303d2a361f0a44b6c3 inherit pub_methods_classParallel_1_1FMTTask"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel_1_1FMTTask.html#a44d28df6a1013e303d2a361f0a44b6c3">FMTTask</a> ()</td></tr>
 <tr class="memdesc:a44d28df6a1013e303d2a361f0a44b6c3 inherit pub_methods_classParallel_1_1FMTTask"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classParallel_1_1FMTTask.html" title="Task for parallel jobs.">FMTTask</a>.  <br /></td></tr>
@@ -180,6 +181,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab45d0b21df7eccdec2ce700f45f42318 inherit pub_methods_classParallel_1_1FMTTask"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel_1_1FMTTask.html#ab45d0b21df7eccdec2ce700f45f42318">finalize</a> ()</td></tr>
 <tr class="memdesc:ab45d0b21df7eccdec2ce700f45f42318 inherit pub_methods_classParallel_1_1FMTTask"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called right after the last task is done, when overridden.  <br /></td></tr>
 <tr class="separator:ab45d0b21df7eccdec2ce700f45f42318 inherit pub_methods_classParallel_1_1FMTTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54599c5237cb86c6249ee0da75cb0348 inherit pub_methods_classParallel_1_1FMTTask"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel_1_1FMTTask.html#a54599c5237cb86c6249ee0da75cb0348">SupportsMultiThreading</a> () const</td></tr>
+<tr class="memdesc:a54599c5237cb86c6249ee0da75cb0348 inherit pub_methods_classParallel_1_1FMTTask"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the task support multithreading.  <br /></td></tr>
+<tr class="separator:a54599c5237cb86c6249ee0da75cb0348 inherit pub_methods_classParallel_1_1FMTTask"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
 <tr class="memitem:a5989964c8bdbc4650e238ceba3415f4b inherit pub_methods_classCore_1_1FMTObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a5989964c8bdbc4650e238ceba3415f4b">FMTObject</a> ()</td></tr>
 <tr class="memdesc:a5989964c8bdbc4650e238ceba3415f4b inherit pub_methods_classCore_1_1FMTObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger.">FMTObject</a>.  <br /></td></tr>
@@ -921,6 +925,36 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the split tasks. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classParallel_1_1FMTTask.html#adfd7ec5745323612dc92f83b109598cd">Parallel::FMTTask</a>.</p>
+
+</div>
+</div>
+<a id="a678c18d2402f2c69b992910aaed2a959" name="a678c18d2402f2c69b992910aaed2a959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678c18d2402f2c69b992910aaed2a959">&#9670;&#160;</a></span>SupportsMultiThreading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Parallel::FMTReplanningTask::SupportsMultiThreading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the task support multithreading. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if it support </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classParallel_1_1FMTTask.html#a54599c5237cb86c6249ee0da75cb0348">Parallel::FMTTask</a>.</p>
 
 </div>
 </div>

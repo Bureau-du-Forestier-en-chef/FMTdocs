@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -77,8 +77,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -94,14 +95,12 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for Exception::FMTExceptionHandler:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classException_1_1FMTExceptionHandler__inherit__graph.svg" width="486" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classException_1_1FMTExceptionHandler__inherit__graph.svg" width="486" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Exception::FMTExceptionHandler:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classException_1_1FMTExceptionHandler__coll__graph.svg" width="100%" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classException_1_1FMTExceptionHandler__coll__graph.svg" width="100%" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -167,17 +166,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad1fc8bccef954e42149954e60e800cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">clone the <a class="el" href="classException_1_1FMTExceptionHandler.html" title="Base class used to handle errors thrown in FMT.">FMTExceptionHandler</a>  <br /></td></tr>
 <tr class="separator:ad1fc8bccef954e42149954e60e800cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a40d4169f53c73bcc67aca84e86d95b73"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#a40d4169f53c73bcc67aca84e86d95b73">_specificwarningcount</a></td></tr>
-<tr class="memdesc:a40d4169f53c73bcc67aca84e86d95b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps count of the number of each type of warning thrown.  <br /></td></tr>
-<tr class="separator:a40d4169f53c73bcc67aca84e86d95b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9e35ab773283c71684bfee2f0002089e"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#a9e35ab773283c71684bfee2f0002089e">getErrorDescription</a> (bool p_french, <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a> p_type)</td></tr>
+<tr class="memdesc:a9e35ab773283c71684bfee2f0002089e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get descriptions of the potential errors  <br /></td></tr>
+<tr class="separator:a9e35ab773283c71684bfee2f0002089e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d55c058d4d39b4756f02886be6bb75a"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#a4d55c058d4d39b4756f02886be6bb75a">getErrorsToIgnore</a> ()</td></tr>
+<tr class="memdesc:a4d55c058d4d39b4756f02886be6bb75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">gives you a vector of error you can safely turn into warning using setErrorsToWarning return a vector of FMTexc  <br /></td></tr>
+<tr class="separator:a4d55c058d4d39b4756f02886be6bb75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab9e986b140731c98c10ef3aa772c6999"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#ab9e986b140731c98c10ef3aa772c6999">_updateStatus</a> (const <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a> lexception, const std::string message)</td></tr>
-<tr class="memdesc:ab9e986b140731c98c10ef3aa772c6999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the status of the handler, adding to the warning or error counts based on the exception type.  <br /></td></tr>
-<tr class="separator:ab9e986b140731c98c10ef3aa772c6999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00533f6be9111d4468f8abf4084c195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#af00533f6be9111d4468f8abf4084c195">_updateStatus</a> (std::unique_ptr&lt; <a class="el" href="classException_1_1FMTException.html">FMTException</a> &gt; &amp;p_exception)</td></tr>
+<tr class="memdesc:af00533f6be9111d4468f8abf4084c195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the status of the handler of the last exception type thrown and modify if it as to be ignored.  <br /></td></tr>
+<tr class="separator:af00533f6be9111d4468f8abf4084c195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca2caaa3e3825e568a5c47f31eac01fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#aca2caaa3e3825e568a5c47f31eac01fe">_needToRethrow</a> () const</td></tr>
 <tr class="memdesc:aca2caaa3e3825e568a5c47f31eac01fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if nested exceptions are used and the exception is a function error that must be rethrown.  <br /></td></tr>
 <tr class="separator:aca2caaa3e3825e568a5c47f31eac01fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,9 +204,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a766b57f4edebcbaf5a039e4db7886b14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#a766b57f4edebcbaf5a039e4db7886b14">_gutsOfExceptionLog</a> (const std::exception &amp;texception, const int &amp;level)</td></tr>
 <tr class="memdesc:a766b57f4edebcbaf5a039e4db7886b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The guts of logging exceptions.  <br /></td></tr>
 <tr class="separator:a766b57f4edebcbaf5a039e4db7886b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62a70e69957166bb0d68c556f9b0635b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceException.html#a228b33350572a22f4557e757a68c98e2">FMTlev</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#a62a70e69957166bb0d68c556f9b0635b">_getLevel</a> (const <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a> p_exception) const</td></tr>
-<tr class="memdesc:a62a70e69957166bb0d68c556f9b0635b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the level of an exception.  <br /></td></tr>
-<tr class="separator:a62a70e69957166bb0d68c556f9b0635b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954de86edf48f59c9e8c00dc355489d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#a954de86edf48f59c9e8c00dc355489d5">_updateWarningCount</a> (const <a class="el" href="classException_1_1FMTException.html">FMTException</a> &amp;p_warning)</td></tr>
+<tr class="memdesc:a954de86edf48f59c9e8c00dc355489d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the warning count and print if max not reached  <br /></td></tr>
+<tr class="separator:a954de86edf48f59c9e8c00dc355489d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:aeab406d6ada5c9c6fb15aba479c3103f"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classException_1_1FMTException.html">FMTException</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException_1_1FMTExceptionHandler.html#aeab406d6ada5c9c6fb15aba479c3103f">_createException</a> (<a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a> p_exception, <a class="el" href="namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417">Core::FMTsection</a> p_section, const std::string &amp;p_message, const std::string &amp;p_method, const std::string &amp;p_file, int p_line)</td></tr>
+<tr class="memdesc:aeab406d6ada5c9c6fb15aba479c3103f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classException_1_1FMTException.html" title="Base exception class for FMT holding the type, section and message of a given exception.">FMTException</a> from an exception type, a section, a message and the location where it occurred.  <br /></td></tr>
+<tr class="separator:aeab406d6ada5c9c6fb15aba479c3103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -354,8 +362,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a62a70e69957166bb0d68c556f9b0635b" name="a62a70e69957166bb0d68c556f9b0635b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62a70e69957166bb0d68c556f9b0635b">&#9670;&#160;</a></span>_getLevel()</h2>
+<a id="aeab406d6ada5c9c6fb15aba479c3103f" name="aeab406d6ada5c9c6fb15aba479c3103f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab406d6ada5c9c6fb15aba479c3103f">&#9670;&#160;</a></span>_createException()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,28 +372,66 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceException.html#a228b33350572a22f4557e757a68c98e2">FMTlev</a> Exception::FMTExceptionHandler::_getLevel </td>
+          <td class="memname">static std::unique_ptr&lt; <a class="el" href="classException_1_1FMTException.html">FMTException</a> &gt; Exception::FMTExceptionHandler::_createException </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a>&#160;</td>
-          <td class="paramname"><em>p_exception</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a>&#160;</td>
+          <td class="paramname"><em>p_exception</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceCore.html#a2cfcd34e219ce21019be6b0f74ee6417">Core::FMTsection</a>&#160;</td>
+          <td class="paramname"><em>p_section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p_line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the level of an exception. </p>
+<p>Construct a <a class="el" href="classException_1_1FMTException.html" title="Base exception class for FMT holding the type, section and message of a given exception.">FMTException</a> from an exception type, a section, a message and the location where it occurred. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_exception</td><td>the exception enum. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_exception</td><td>the exception type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_section</td><td>the section in which the exception occurred. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_message</td><td>the message of the exception. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_method</td><td>the method where the exception occurred. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_file</td><td>the file where the exception occurred. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_line</td><td>the line where the exception occurred. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the exception level. </dd></dl>
 
 </div>
 </div>
@@ -681,8 +727,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ab9e986b140731c98c10ef3aa772c6999" name="ab9e986b140731c98c10ef3aa772c6999"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9e986b140731c98c10ef3aa772c6999">&#9670;&#160;</a></span>_updateStatus()</h2>
+<a id="af00533f6be9111d4468f8abf4084c195" name="af00533f6be9111d4468f8abf4084c195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00533f6be9111d4468f8abf4084c195">&#9670;&#160;</a></span>_updateStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,21 +737,11 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Exception::FMTExceptionHandler::_updateStatus </td>
+          <td class="memname">void Exception::FMTExceptionHandler::_updateStatus </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a>&#160;</td>
-          <td class="paramname"><em>lexception</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classException_1_1FMTException.html">FMTException</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_exception</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>message</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -715,15 +751,47 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Update the status of the handler, adding to the warning or error counts based on the exception type. </p>
+<p>Update the status of the handler of the last exception type thrown and modify if it as to be ignored. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lexception</td><td>the exception type. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>the message of the exception. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_exception</td><td>the new exception </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the updated status message. </dd></dl>
+
+</div>
+</div>
+<a id="a954de86edf48f59c9e8c00dc355489d5" name="a954de86edf48f59c9e8c00dc355489d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954de86edf48f59c9e8c00dc355489d5">&#9670;&#160;</a></span>_updateWarningCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Exception::FMTExceptionHandler::_updateWarningCount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classException_1_1FMTException.html">FMTException</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_warning</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>update the warning count and print if max not reached </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_warning</td><td>the famous warning </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -841,6 +909,78 @@ Friends</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the exception handler. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classException_1_1FMTDebugExceptionHandler.html#ae04295e5012cf5c38c697e073c3a4809">Exception::FMTDebugExceptionHandler</a>, <a class="el" href="classException_1_1FMTDefaultExceptionHandler.html#a10b3870747f9de4d72be36340a3b6b27">Exception::FMTDefaultExceptionHandler</a>, <a class="el" href="classException_1_1FMTFreeExceptionHandler.html#a24a8f3f266c49428633aeb34425d9d2a">Exception::FMTFreeExceptionHandler</a>, and <a class="el" href="classException_1_1FMTQuietExceptionHandler.html#a9dea1675130938bdc30a0921b9fdb469">Exception::FMTQuietExceptionHandler</a>.</p>
+
+</div>
+</div>
+<a id="a9e35ab773283c71684bfee2f0002089e" name="a9e35ab773283c71684bfee2f0002089e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e35ab773283c71684bfee2f0002089e">&#9670;&#160;</a></span>getErrorDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string Exception::FMTExceptionHandler::getErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_french</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a>&#160;</td>
+          <td class="paramname"><em>p_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get descriptions of the potential errors </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_french</td><td>true you get it in french </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_exception</td><td>excpetion type return string description </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d55c058d4d39b4756f02886be6bb75a" name="a4d55c058d4d39b4756f02886be6bb75a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d55c058d4d39b4756f02886be6bb75a">&#9670;&#160;</a></span>getErrorsToIgnore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt; <a class="el" href="namespaceException.html#a0e532608ca3600202652be03db952d35">FMTexc</a> &gt; Exception::FMTExceptionHandler::getErrorsToIgnore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gives you a vector of error you can safely turn into warning using setErrorsToWarning return a vector of FMTexc </p>
 
 </div>
 </div>
@@ -1448,22 +1588,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>pointer to the logger used to print the warning / error. </p>
-
-</div>
-</div>
-<a id="a40d4169f53c73bcc67aca84e86d95b73" name="a40d4169f53c73bcc67aca84e86d95b73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40d4169f53c73bcc67aca84e86d95b73">&#9670;&#160;</a></span>_specificwarningcount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt;int, size_t&gt; Exception::FMTExceptionHandler::_specificwarningcount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Keeps count of the number of each type of warning thrown. </p>
 
 </div>
 </div>

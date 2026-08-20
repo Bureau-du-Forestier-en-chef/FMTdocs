@@ -871,10 +871,17 @@ Clonez le repository de FMT en utilisant git clone https://github." /><meta prop
 <p>Utilisez <code>cd ./FMT</code> pour naviguer dans le dossier FMT téléchargé depuis le <em>repository</em> de FMT.</p>
 </li>
 <li>
-<p>Copiez/collez les commandes suivantes <strong>dans le bloc-notes de Windows</strong>, puis remplacez le paramètre <code>-DMOSEK_DIR</code> par l&rsquo;emplacement de Mosek sur votre ordinateur :</p>
+<p>Copiez/collez les commandes suivantes <strong>dans le bloc-notes de Windows</strong>, puis remplacez les paramètres <code>MOSEK_DIR</code>,<code>CMAKE_TOOLCHAIN_FILE</code> and <code>CheminAvcvars64</code> par l&rsquo;emplacement de Mosek, vcpkg.cmake et vcvars64 sur votre ordinateur :</p>
 </li>
 </ol>
-<pre><code class="language-bash">cmake CMakeLists.txt -B build/release -G &quot;Visual Studio 16 2019&quot; -DBUILD_TYPE=Release -DVCPKG_TARGET_TRIPLET=x64-windows -DCMAKE_TOOLCHAIN_FILE=&quot;../vcpkg/scripts/buildsystems/vcpkg.cmake&quot; -DBOOST_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DCMAKE_BUILD_TYPE=Release -DGDAL_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DGEOS_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DOSI_DIR=&quot;../vcpkg/installed/x64-windows/&quot; -DPYTHON_DIR=&quot;../vcpkg/packages/python3_x64-windows/&quot; -DMOSEK_DIR=&quot;C:/PROGRA~1/Mosek/&quot;
+<pre><code class="language-bash">call &quot;CheminAvcvars64\vcvars64.bat&quot;
+set MOSEK_DIR=CheminAMosek
+set MODULE_PATH=%cd%/Modules
+set &quot;MODULE_PATH=%MODULE_PATH:\=/%&quot;
+set VCPKG_KEEP_ENV_VARS=MOSEK_DIR;MODULE_PATH
+
+cmake CMakeLists.txt -B build/release -G &quot;Visual Studio 17 2022&quot; -DBUILD_TYPE=Release -T v143,version=14.36.17.6 -DPARALLEL_TESTS=8 -DCMAKE_TOOLCHAIN_FILE=&quot;CheminAvcpkg.cmake&quot; -DVCPKG_TARGET_TRIPLET=x64-windows -DVCPKG_MANIFEST_MODE=ON
+
 cmake --build build/release --config Release
 cmake --install build/release --config Release
 </code></pre>
@@ -886,7 +893,7 @@ cmake --install build/release --config Release
 </div>
 <div class="alert alert-note">
   <div>
-    Si vous avez installé une version antérieure de Visual Studio à celle de 2019, il vous faudra changer la partie indiquant la version de Visual Studio.
+    Si vous avez installé une version antérieure de Visual Studio à celle de 2022, il vous faudra changer la partie indiquant la version de Visual Studio.
   </div>
 </div>
 <ol start="5">

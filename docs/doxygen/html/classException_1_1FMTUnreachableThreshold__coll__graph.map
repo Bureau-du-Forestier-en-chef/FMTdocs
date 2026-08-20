@@ -1,0 +1,6 @@
+<map id="Exception::FMTUnreachableThreshold" name="Exception::FMTUnreachableThreshold">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,191,272"/>
+<area shape="rect" id="node2" href="$classException_1_1FMTWarning.html" title="Exception class derived from FMTException for warnings in FMT." alt="" coords="17,155,179,181"/>
+<area shape="rect" id="node3" href="$classException_1_1FMTException.html" title="Base exception class for FMT holding the type, section and message of a given exception." alt="" coords="12,80,184,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="46,5,150,32"/>
+</map>

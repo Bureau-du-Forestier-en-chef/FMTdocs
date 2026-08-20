@@ -874,22 +874,22 @@ In order to do the exercise, you will need to have FMT installed on your compute
 <ul>
 <li>Constructing its full graph for 10 periods</li>
 <li>Setting the objective and constraints of the model</li>
-<li>Using the <code>FMTmodel.initialsolve()</code> function to solve it.</li>
+<li>Using the <code>FMTModel.initialSolve()</code> function to solve it.</li>
 </ul>
 </li>
 <li>Read the values of the output <code>OSUPREC</code> of the model by
 <ul>
-<li>Getting a list of the outputs of the model with the function <code>FMTmodel.getouputs()</code></li>
-<li>Doing a <code>for</code> loop to select the right output with the <code>FMToutput.getname()</code> function</li>
-<li>Printing the output values using the function <code>FMTmodel.getvariabilities(FMToutput)</code></li>
+<li>Getting a list of the outputs of the model with the function <code>FMTModel.getOuputs()</code></li>
+<li>Doing a <code>for</code> loop to select the right output with the <code>FMTOutput.getName()</code> function</li>
+<li>Printing the output values using the function <code>FMTModel.getvariabilities(FMTOutput)</code></li>
 </ul>
 </li>
 <li>Write the optimized schedule of the model in a <code>.txt</code> file by
 <ul>
-<li>Creating a new <code>FMTscheduleparser</code> object</li>
+<li>Creating a new <code>FMTScheduleParser</code> object</li>
 <li>Getting the solution of the model at each period with a list using <code>LPModel.getsolution(period)</code></li>
 <li>Transforming the list into a vector</li>
-<li>Writing the vector into a <code>.txt</code> file with <code>FMTscheduleparser.write()</code></li>
+<li>Writing the vector into a <code>.txt</code> file with <code>FMTScheduleParser.write()</code></li>
 </ul>
 </li>
 </ol>

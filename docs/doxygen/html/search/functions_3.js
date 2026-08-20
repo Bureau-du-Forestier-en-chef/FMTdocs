@@ -46,11 +46,15 @@ var searchData=
   ['containslevel_43',['containsLevel',['../classCore_1_1FMTOutput.html#a43c848c06e731b882dde60478173ca83',1,'Core::FMTOutput']]],
   ['containsyield_44',['containsYield',['../classCore_1_1FMTAgeYieldHandler.html#a88bb7ebd739e90547d88aea2cc20920e',1,'Core::FMTAgeYieldHandler::containsYield()'],['../classCore_1_1FMTComplexYieldHandler.html#a95ac71c1bd7f895513e388d68bca507e',1,'Core::FMTComplexYieldHandler::containsYield()'],['../classCore_1_1FMTModelYieldHandler.html#a4f185e6706e66112dad2fd000cd2d345',1,'Core::FMTModelYieldHandler::containsYield()'],['../classCore_1_1FMTTimeYieldHandler.html#a4ae1661415cff4db289ddc3bb62f9312',1,'Core::FMTTimeYieldHandler::containsYield()'],['../classCore_1_1FMTYieldHandler.html#ad41e495b31581a742b09345b0c5996c1',1,'Core::FMTYieldHandler::containsYield()']]],
   ['copyfrompartial_45',['copyFromPartial',['../classSpatial_1_1FMTSpatialSchedule.html#aa9d4936b60f299700ef1c8e9d3b86d0d',1,'Spatial::FMTSpatialSchedule::copyFromPartial(const FMTSpatialSchedule &amp;rhs)'],['../classSpatial_1_1FMTSpatialSchedule.html#aa7216171a09d9caceb1b84a18d16171d',1,'Spatial::FMTSpatialSchedule::copyFromPartial(FMTSpatialSchedule &amp;rhs)']]],
-  ['copysolverinterface_46',['copySolverInterface',['../classModels_1_1FMTLpSolver.html#a051e80bb563b50c0b5b7f7442a8daa3f',1,'Models::FMTLpSolver']]],
+  ['copysolverinterface_46',['copySolverInterface',['../classModels_1_1FMTLpSolver.html#af106adeacc35553500148c63ac49ee96',1,'Models::FMTLpSolver']]],
   ['count_47',['count',['../classCore_1_1FMTMask.html#a0529498aeaab38d714856f52c955b383',1,'Core::FMTMask']]],
-  ['createdriftlayer_48',['createDriftLayer',['../classParser_1_1FMTModelParser.html#a0c75d9e2d2512681d70dbcdf4d4bc213',1,'Parser::FMTModelParser']]],
-  ['createlayer_49',['createLayer',['../classParser_1_1FMTParser.html#aa9715628c74e25903db28ad94ebd7124',1,'Parser::FMTParser']]],
-  ['createogrdataset_50',['createOGRDataset',['../classParser_1_1FMTParser.html#ae0e7a51864adfec203a3d48578708bc7',1,'Parser::FMTParser']]],
-  ['createresultslayer_51',['createResultsLayer',['../classParser_1_1FMTModelParser.html#a99fd848377be3372e1ec5631893666f6',1,'Parser::FMTModelParser']]],
-  ['createsubdirectory_52',['createSubDirectory',['../classParser_1_1FMTParser.html#a86726d873ad6f8a750d9b67a35737b5f',1,'Parser::FMTParser']]]
+  ['create_48',['create',['../classException_1_1FMTExceptionFactory.html#a2722ee08b86d9454c3e53ce954c0214d',1,'Exception::FMTExceptionFactory']]],
+  ['createboostgraphexception_49',['createBoostGraphException',['../classException_1_1FMTExceptionFactory.html#aaf59e021dea778e5f0b509b51c6bfe71',1,'Exception::FMTExceptionFactory']]],
+  ['createcoinexception_50',['createCoinException',['../classException_1_1FMTExceptionFactory.html#a1bf8b490f2f8a8ecb38d13be48b27af5',1,'Exception::FMTExceptionFactory']]],
+  ['createdriftlayer_51',['createDriftLayer',['../classParser_1_1FMTModelParser.html#a0c75d9e2d2512681d70dbcdf4d4bc213',1,'Parser::FMTModelParser']]],
+  ['createlayer_52',['createLayer',['../classParser_1_1FMTParser.html#aa9715628c74e25903db28ad94ebd7124',1,'Parser::FMTParser']]],
+  ['createogrdataset_53',['createOGRDataset',['../classParser_1_1FMTParser.html#ae0e7a51864adfec203a3d48578708bc7',1,'Parser::FMTParser']]],
+  ['createresultslayer_54',['createResultsLayer',['../classParser_1_1FMTModelParser.html#a99fd848377be3372e1ec5631893666f6',1,'Parser::FMTModelParser']]],
+  ['createsubdirectory_55',['createSubDirectory',['../classParser_1_1FMTParser.html#a86726d873ad6f8a750d9b67a35737b5f',1,'Parser::FMTParser']]],
+  ['createunhandledexception_56',['createUnhandledException',['../classException_1_1FMTExceptionFactory.html#a2aefc1a3c5de07a8990e8e574c064a33',1,'Exception::FMTExceptionFactory']]]
 ];

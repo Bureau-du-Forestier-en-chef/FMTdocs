@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSpatial_1_1FMTLayer.html" title=" " alt="" coords="5,5,165,48"/>
-<area shape="rect" id="node2" href="$classSpatial_1_1FMTSpatialSchedule.html" title="Map containing a line graph for each cell, representing the stand, the action and the transition at e..." alt="" coords="213,13,402,40"/>
+<area shape="rect" id="node1" href="$classSpatial_1_1FMTLayer.html" title=" " alt="" coords="5,5,178,48"/>
+<area shape="rect" id="node2" href="$classSpatial_1_1FMTForest.html" title="Spatially referenced layer of Core::FMTDevelopment representing the forest." alt="" coords="226,13,358,40"/>
 </map>

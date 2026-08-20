@@ -894,22 +894,22 @@ Pour faire cet exercice, vous devez avoir installé FMT sur votre ordinateur et 
 <ul>
 <li>Construisant son graphe complet pour 10 périodes</li>
 <li>Définissant l&rsquo;objectif et les contraintes du modèle</li>
-<li>Utilisant la fonction <code>FMTmodel.initialsolve()</code> pour le résoudre.</li>
+<li>Utilisant la fonction <code>FMTModel.initialSolve()</code> pour le résoudre.</li>
 </ul>
 </li>
 <li>Lire les valeurs de la sortie <code>OSUPREC</code> du modèle en
 <ul>
-<li>Obtenant une liste des sorties du modèle avec la fonction <code>FMTmodel.getouputs()</code>.</li>
-<li>Effectuant une boucle <code>for</code> pour sélectionner la bonne sortie avec la fonction <code>FMToutput.getname()</code>.</li>
-<li>Imprimer les valeurs de la sortie avec la fonction <code>FMTmodel.getvariabilities(FMToutput)</code>.</li>
+<li>Obtenant une liste des sorties du modèle avec la fonction <code>FMTModel.getOuputs()</code>.</li>
+<li>Effectuant une boucle <code>for</code> pour sélectionner la bonne sortie avec la fonction <code>FMToutput.getName()</code>.</li>
+<li>Imprimer les valeurs de la sortie avec la fonction <code>FMTModel.getVariabilities(FMToutput)</code>.</li>
 </ul>
 </li>
 <li>Exportez le calendrier optimisé du modèle dans un fichier <code>.txt</code> en
 <ul>
-<li>Créant un nouvel objet <code>FMTscheduleparser</code>.</li>
-<li>Récupérant la solution du modèle à chaque période avec une liste en utilisant <code>LPModel.getsolution(period)</code>.</li>
+<li>Créant un nouvel objet <code>FMTScheduleParser.</code>.</li>
+<li>Récupérant la solution du modèle à chaque période avec une liste en utilisant <code>LPModel.getSolution(period)</code>.</li>
 <li>Transformant la liste en un vecteur</li>
-<li>Écriture du vecteur dans un fichier <code>.txt</code> avec <code>FMTscheduleparser.write()</code>.</li>
+<li>Écriture du vecteur dans un fichier <code>.txt</code> avec <code>FMTScheduleParser.write()</code>.</li>
 </ul>
 </li>
 </ol>

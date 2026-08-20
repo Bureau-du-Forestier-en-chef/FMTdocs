@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -167,65 +167,67 @@ $(function() {
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classParallel_1_1FMTReplanningTask.html#a8805ea14b08ad0a653b641a5e1f404a5">  170</a></span><span class="comment"></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classParallel_1_1FMTReplanningTask.html#a8805ea14b08ad0a653b641a5e1f404a5">passInLogger</a>(<span class="keyword">const</span> std::unique_ptr&lt;Logging::FMTLogger&gt;&amp; logger) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="comment">// DocString: FMTReplanningTask::setWriteSchedule</span></div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classParallel_1_1FMTReplanningTask.html#ab536cc752c7580c46719a4faccc6000d">  176</a></span><span class="comment"></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classParallel_1_1FMTReplanningTask.html#ab536cc752c7580c46719a4faccc6000d">setWriteSchedule</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> p_write);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="comment">// DocString: FMTReplanningTask::m_resultswriter</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"></span>        std::shared_ptr&lt;FMTParallelWriter&gt;m_resultswriter;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <span class="comment">// DocString: FMTReplanningTask::m_baseschedule</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment"></span>        std::shared_ptr&lt;Core::FMTSchedule&gt;m_baseschedule;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="comment">// DocString: FMTReplanningTask::global</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"></span>        std::shared_ptr&lt;Models::FMTModel&gt;global;<span class="comment">//base area is in here.</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="comment">// DocString: FMTReplanningTask::m_stochastic</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"></span>        std::shared_ptr&lt;Models::FMTModel&gt;m_stochastic;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="comment">// DocString: FMTReplanningTask::m_local</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"></span>        std::shared_ptr&lt;Models::FMTModel&gt;m_local;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="comment">// DocString: FMTReplanningTask::m_replicateids</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"></span>        std::queue&lt;int&gt;m_replicateids;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="comment">// DocString: FMTReplanningTask::m_dynamicarea</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"></span>        std::vector&lt;Core::FMTActualDevelopment&gt;m_dynamicarea;</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="comment">// DocString: FMTReplanningTask::m_iterationglobalschedule</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment"></span>        <a class="code hl_class" href="classCore_1_1FMTSchedule.html">Core::FMTSchedule</a> m_iterationglobalschedule;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="comment">// DocString: FMTReplanningTask::m_dynamicconstraints</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"></span>        std::vector&lt;Core::FMTConstraint&gt;m_dynamicconstraints;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="comment">// DocString: FMTReplanningTask::m_replanningperiods</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment"></span>        <span class="keywordtype">int</span> m_replanningperiods;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="comment">// DocString: FMTReplanningTask::appendSchedule</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment"></span>        <span class="keywordtype">bool</span> m_writeSchedule;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        std::string m_outputlocation;</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="comment">// DocString: FMTReplanningTask::_copySharedModel</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment"></span>        std::unique_ptr&lt;Models::FMTModel&gt;_copySharedModel(<span class="keyword">const</span> std::shared_ptr&lt;Models::FMTModel&gt;model);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="comment">// DocString: FMTReplanningTask::_doModelPlanning</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment"></span>        std::unique_ptr&lt;Models::FMTModel&gt;_doModelPlanning(</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <span class="keyword">const</span> std::shared_ptr&lt;Models::FMTModel&gt;model,</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; replanningperiod,</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="keywordtype">bool</span> getsolutionandlocal = <span class="keyword">false</span>,</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            <span class="keywordtype">bool</span> applyscheduleweight = <span class="keyword">false</span>,</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            <span class="keywordtype">bool</span> setdynamicconstraints = <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="comment">// DocString: FMTReplanningTask::_writeResults</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment"></span>        <span class="keywordtype">void</span> _writeResults(<span class="keyword">const</span> std::string&amp; modelname, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; modellength,</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keyword">const</span> std::unique_ptr&lt;Models::FMTModel&gt;&amp; modelptr, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; replanningperiod, <span class="keywordtype">bool</span> onlyfirstperiod = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="comment">// DocString: FMTReplanningTask::_writeSchedule</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment"></span>        <span class="keywordtype">void</span> _writeSchedule(<span class="keyword">const</span> std::unique_ptr&lt;Models::FMTModel&gt;&amp; p_model,</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                            <span class="keywordtype">int</span> p_ReportingPeriod, <span class="keywordtype">int</span> p_ModelPeriod) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="comment">// DocString: FMTReplanningTask::_getIteration</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment"></span>        <span class="keyword">const</span> <span class="keywordtype">int</span> _getIteration() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="comment">// DocString: FMTReplanningTask::_setReIgnore</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment"></span>        <span class="keywordtype">void</span> _setReIgnore(std::unique_ptr&lt;Models::FMTModel&gt;&amp; modelcpy, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; replanningperiod) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="comment">// DocString: FMTReplanningTask::_setReplicate</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment"></span>        <span class="keywordtype">void</span> _setReplicate(std::unique_ptr&lt;Models::FMTModel&gt;&amp; modelcpy, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; replanningperiod) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="comment">// DocString: FMTReplanningTask::m_primaryName</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment"></span>        std::string m_primaryName;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    };</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>}</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="comment">// DocString: FMTReplanningTask::SupportsMultiThreading()</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="classParallel_1_1FMTReplanningTask.html#a678c18d2402f2c69b992910aaed2a959">  182</a></span><span class="comment"></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classParallel_1_1FMTReplanningTask.html#a678c18d2402f2c69b992910aaed2a959">SupportsMultiThreading</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="comment">// DocString: FMTReplanningTask::m_resultswriter</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"></span>        std::shared_ptr&lt;FMTParallelWriter&gt;m_resultswriter;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="comment">// DocString: FMTReplanningTask::m_baseschedule</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"></span>        std::shared_ptr&lt;Core::FMTSchedule&gt;m_baseschedule;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="comment">// DocString: FMTReplanningTask::global</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"></span>        std::shared_ptr&lt;Models::FMTModel&gt;global;<span class="comment">//base area is in here.</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="comment">// DocString: FMTReplanningTask::m_stochastic</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"></span>        std::shared_ptr&lt;Models::FMTModel&gt;m_stochastic;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="comment">// DocString: FMTReplanningTask::m_local</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"></span>        std::shared_ptr&lt;Models::FMTModel&gt;m_local;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="comment">// DocString: FMTReplanningTask::m_replicateids</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment"></span>        std::queue&lt;int&gt;m_replicateids;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="comment">// DocString: FMTReplanningTask::m_dynamicarea</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"></span>        std::vector&lt;Core::FMTActualDevelopment&gt;m_dynamicarea;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="comment">// DocString: FMTReplanningTask::m_iterationglobalschedule</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment"></span>        <a class="code hl_class" href="classCore_1_1FMTSchedule.html">Core::FMTSchedule</a> m_iterationglobalschedule;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="comment">// DocString: FMTReplanningTask::m_dynamicconstraints</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment"></span>        std::vector&lt;Core::FMTConstraint&gt;m_dynamicconstraints;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="comment">// DocString: FMTReplanningTask::m_replanningperiods</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment"></span>        <span class="keywordtype">int</span> m_replanningperiods;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="comment">// DocString: FMTReplanningTask::appendSchedule</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment"></span>        <span class="keywordtype">bool</span> m_writeSchedule;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        std::string m_outputlocation;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="comment">// DocString: FMTReplanningTask::_copySharedModel</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment"></span>        std::unique_ptr&lt;Models::FMTModel&gt;_copySharedModel(<span class="keyword">const</span> std::shared_ptr&lt;Models::FMTModel&gt;model);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="comment">// DocString: FMTReplanningTask::_doModelPlanning</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment"></span>        std::unique_ptr&lt;Models::FMTModel&gt;_doModelPlanning(</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            <span class="keyword">const</span> std::shared_ptr&lt;Models::FMTModel&gt;model,</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; replanningperiod,</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="keywordtype">bool</span> getsolutionandlocal = <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordtype">bool</span> applyscheduleweight = <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordtype">bool</span> setdynamicconstraints = <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="comment">// DocString: FMTReplanningTask::_writeResults</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment"></span>        <span class="keywordtype">void</span> _writeResults(<span class="keyword">const</span> std::string&amp; modelname, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; modellength,</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="keyword">const</span> std::unique_ptr&lt;Models::FMTModel&gt;&amp; modelptr, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; replanningperiod, <span class="keywordtype">bool</span> onlyfirstperiod = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        <span class="comment">// DocString: FMTReplanningTask::_writeSchedule</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment"></span>        <span class="keywordtype">void</span> _writeSchedule(<span class="keyword">const</span> std::unique_ptr&lt;Models::FMTModel&gt;&amp; p_model,</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                            <span class="keywordtype">int</span> p_ReportingPeriod, <span class="keywordtype">int</span> p_ModelPeriod) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="comment">// DocString: FMTReplanningTask::_getIteration</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment"></span>        <span class="keyword">const</span> <span class="keywordtype">int</span> _getIteration() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="comment">// DocString: FMTReplanningTask::_setReIgnore</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment"></span>        <span class="keywordtype">void</span> _setReIgnore(std::unique_ptr&lt;Models::FMTModel&gt;&amp; modelcpy, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; replanningperiod) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="comment">// DocString: FMTReplanningTask::_setReplicate</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment"></span>        <span class="keywordtype">void</span> _setReplicate(std::unique_ptr&lt;Models::FMTModel&gt;&amp; modelcpy, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; replanningperiod) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="comment">// DocString: FMTReplanningTask::m_primaryName</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment"></span>        std::string m_primaryName;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    };</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aFMTActualDevelopment_8h_html"><div class="ttname"><a href="FMTActualDevelopment_8h.html">FMTActualDevelopment.h</a></div></div>
 <div class="ttc" id="aFMTSchedule_8h_html"><div class="ttname"><a href="FMTSchedule_8h.html">FMTSchedule.h</a></div></div>
 <div class="ttc" id="aFMTTask_8h_html"><div class="ttname"><a href="FMTTask_8h.html">FMTTask.h</a></div></div>
 <div class="ttc" id="aFMTutility_8h_html"><div class="ttname"><a href="FMTutility_8h.html">FMTutility.h</a></div></div>
-<div class="ttc" id="aFMTutility_8h_html_afaa839e5ab3981464e893c359c215fa1"><div class="ttname"><a href="FMTutility_8h.html#afaa839e5ab3981464e893c359c215fa1">FMTEXPORT</a></div><div class="ttdeci">#define FMTEXPORT</div><div class="ttdef"><b>Definition:</b> FMTutility.h:123</div></div>
+<div class="ttc" id="aFMTutility_8h_html_afaa839e5ab3981464e893c359c215fa1"><div class="ttname"><a href="FMTutility_8h.html#afaa839e5ab3981464e893c359c215fa1">FMTEXPORT</a></div><div class="ttdeci">#define FMTEXPORT</div><div class="ttdef"><b>Definition:</b> FMTutility.h:125</div></div>
 <div class="ttc" id="aclassCore_1_1FMTSchedule_html"><div class="ttname"><a href="classCore_1_1FMTSchedule.html">Core::FMTSchedule</a></div><div class="ttdoc">Spatially referenced schedule describing the area of developments for which an action can be operated...</div><div class="ttdef"><b>Definition:</b> FMTSchedule.h:29</div></div>
 <div class="ttc" id="aclassModels_1_1FMTModel_html"><div class="ttname"><a href="classModels_1_1FMTModel.html">Models::FMTModel</a></div><div class="ttdoc">Base class for the different models in FMT.</div><div class="ttdef"><b>Definition:</b> FMTModel.h:62</div></div>
 <div class="ttc" id="aclassParallel_1_1FMTReplanningTask_html"><div class="ttname"><a href="classParallel_1_1FMTReplanningTask.html">Parallel::FMTReplanningTask</a></div><div class="ttdoc">Replanning task using global, stochastic and local abstract models to simulate natural disturbances o...</div><div class="ttdef"><b>Definition:</b> FMTReplanningTask.h:43</div></div>
@@ -234,6 +236,7 @@ $(function() {
 <div class="ttc" id="aclassParallel_1_1FMTReplanningTask_html_a31367080fd9720a9147ddbcc087beca7"><div class="ttname"><a href="classParallel_1_1FMTReplanningTask.html#a31367080fd9720a9147ddbcc087beca7">Parallel::FMTReplanningTask::setReplicates</a></div><div class="ttdeci">void setReplicates(const int &amp;replicatesnumber)</div><div class="ttdoc">Set the number of replicates to use.</div></div>
 <div class="ttc" id="aclassParallel_1_1FMTReplanningTask_html_a372c08b2f56c918ecd3db29ffd540874"><div class="ttname"><a href="classParallel_1_1FMTReplanningTask.html#a372c08b2f56c918ecd3db29ffd540874">Parallel::FMTReplanningTask::FMTReplanningTask</a></div><div class="ttdeci">FMTReplanningTask(const Models::FMTModel &amp;globalm, const Models::FMTModel &amp;stochasticm, const Models::FMTModel &amp;localm, const std::string &amp;outputlocation, const std::string &amp;gdaldriver, const std::vector&lt; std::string &gt; &amp;creationoptions, Core::FMToutputlevel outputlevel)</div><div class="ttdoc">Short constructor for the replanning task using the outputs of the global model and 0....</div></div>
 <div class="ttc" id="aclassParallel_1_1FMTReplanningTask_html_a66e317fce9bee1784796bed39f67abdf"><div class="ttname"><a href="classParallel_1_1FMTReplanningTask.html#a66e317fce9bee1784796bed39f67abdf">Parallel::FMTReplanningTask::FMTReplanningTask</a></div><div class="ttdeci">FMTReplanningTask(const FMTReplanningTask &amp;rhs)=default</div><div class="ttdoc">Default copy constructor for FMTReplanningTask.</div></div>
+<div class="ttc" id="aclassParallel_1_1FMTReplanningTask_html_a678c18d2402f2c69b992910aaed2a959"><div class="ttname"><a href="classParallel_1_1FMTReplanningTask.html#a678c18d2402f2c69b992910aaed2a959">Parallel::FMTReplanningTask::SupportsMultiThreading</a></div><div class="ttdeci">bool SupportsMultiThreading() const override</div><div class="ttdoc">Check if the task support multithreading.</div></div>
 <div class="ttc" id="aclassParallel_1_1FMTReplanningTask_html_a75e0c32abb2c26685e94a6c6eb2b24d4"><div class="ttname"><a href="classParallel_1_1FMTReplanningTask.html#a75e0c32abb2c26685e94a6c6eb2b24d4">Parallel::FMTReplanningTask::work</a></div><div class="ttdeci">virtual void work()</div><div class="ttdoc">Main function doing the replanning task.</div></div>
 <div class="ttc" id="aclassParallel_1_1FMTReplanningTask_html_a807e7b9b054019b84d2142b28fa0d166"><div class="ttname"><a href="classParallel_1_1FMTReplanningTask.html#a807e7b9b054019b84d2142b28fa0d166">Parallel::FMTReplanningTask::setReplicates</a></div><div class="ttdeci">void setReplicates(const int &amp;replicatesnumbermin, const int &amp;replicatesnumbermax)</div><div class="ttdoc">Set the range of replicates to use.</div></div>
 <div class="ttc" id="aclassParallel_1_1FMTReplanningTask_html_a8805ea14b08ad0a653b641a5e1f404a5"><div class="ttname"><a href="classParallel_1_1FMTReplanningTask.html#a8805ea14b08ad0a653b641a5e1f404a5">Parallel::FMTReplanningTask::passInLogger</a></div><div class="ttdeci">void passInLogger(const std::unique_ptr&lt; Logging::FMTLogger &gt; &amp;logger) override</div><div class="ttdoc">Pass in the logger.</div></div>

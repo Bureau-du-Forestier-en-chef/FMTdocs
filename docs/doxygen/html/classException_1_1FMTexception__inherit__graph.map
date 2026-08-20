@@ -1,6 +1,51 @@
 <map id="Exception::FMTException" name="Exception::FMTException">
-<area shape="rect" id="node1" title="Base exception class for FMT holding the type, section and message of a given exception." alt="" coords="78,80,250,107"/>
-<area shape="rect" id="node3" href="$classException_1_1FMTError.html" title="Exception class derived from FMTException for errors thrown in FMT." alt="" coords="5,155,147,181"/>
-<area shape="rect" id="node4" href="$classException_1_1FMTWarning.html" title="Exception class derived from FMTException for warnings in FMT." alt="" coords="171,155,333,181"/>
-<area shape="rect" id="node2" title=" " alt="" coords="112,5,216,32"/>
+<area shape="rect" id="node1" title="Base exception class for FMT holding the type, section and message of a given exception." alt="" coords="157,1193,328,1220"/>
+<area shape="rect" id="node3" href="$classException_1_1FMTError.html" title="Exception class derived from FMTException for errors thrown in FMT." alt="" coords="386,1168,527,1195"/>
+<area shape="rect" id="node49" href="$classException_1_1FMTWarning.html" title="Exception class derived from FMTException for warnings in FMT." alt="" coords="376,1219,537,1245"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,1193,109,1220"/>
+<area shape="rect" id="node4" href="$classException_1_1FMTBoostGraphError.html" title=" " alt="" coords="611,5,794,48"/>
+<area shape="rect" id="node5" href="$classException_1_1FMTCoinError.html" title=" " alt="" coords="619,72,786,99"/>
+<area shape="rect" id="node6" href="$classException_1_1FMTDeathWithLock.html" title=" " alt="" coords="601,123,804,149"/>
+<area shape="rect" id="node7" href="$classException_1_1FMTEmptyOA.html" title=" " alt="" coords="617,173,788,200"/>
+<area shape="rect" id="node8" href="$classException_1_1FMTEmptySchedules.html" title=" " alt="" coords="596,224,809,251"/>
+<area shape="rect" id="node9" href="$classException_1_1FMTEmptyTheme.html" title=" " alt="" coords="607,275,798,301"/>
+<area shape="rect" id="node10" href="$classException_1_1FMTFunctionFailed.html" title=" " alt="" coords="603,325,802,352"/>
+<area shape="rect" id="node11" href="$classException_1_1FMTGDALConstructorError.html" title=" " alt="" coords="595,376,810,419"/>
+<area shape="rect" id="node12" href="$classException_1_1FMTGDALError.html" title=" " alt="" coords="614,443,791,469"/>
+<area shape="rect" id="node13" href="$classException_1_1FMTInfeasibleConstraint.html" title=" " alt="" coords="619,493,786,536"/>
+<area shape="rect" id="node14" href="$classException_1_1FMTInvalidAandT.html" title=" " alt="" coords="610,560,795,587"/>
+<area shape="rect" id="node15" href="$classException_1_1FMTInvalidAction.html" title=" " alt="" coords="610,611,795,637"/>
+<area shape="rect" id="node16" href="$classException_1_1FMTInvalidAggregate.html" title=" " alt="" coords="599,661,806,688"/>
+<area shape="rect" id="node17" href="$classException_1_1FMTInvalidBand.html" title=" " alt="" coords="613,712,792,739"/>
+<area shape="rect" id="node18" href="$classException_1_1FMTInvalidConstraint.html" title=" " alt="" coords="599,763,806,789"/>
+<area shape="rect" id="node19" href="$classException_1_1FMTInvalidDataset.html" title=" " alt="" coords="606,813,799,840"/>
+<area shape="rect" id="node20" href="$classException_1_1FMTInvalidDriver.html" title=" " alt="" coords="612,864,793,891"/>
+<area shape="rect" id="node21" href="$classException_1_1FMTInvalidGeometry.html" title=" " alt="" coords="600,915,805,941"/>
+<area shape="rect" id="node22" href="$classException_1_1FMTInvalidLayer.html" title=" " alt="" coords="612,965,793,992"/>
+<area shape="rect" id="node23" href="$classException_1_1FMTInvalidMaskrange.html" title=" " alt="" coords="596,1016,809,1043"/>
+<area shape="rect" id="node24" href="$classException_1_1FMTInvalidNumber.html" title=" " alt="" coords="606,1067,799,1093"/>
+<area shape="rect" id="node25" href="$classException_1_1FMTInvalidOverview.html" title=" " alt="" coords="603,1117,802,1144"/>
+<area shape="rect" id="node26" href="$classException_1_1FMTInvalidPath.html" title=" " alt="" coords="615,1168,790,1195"/>
+<area shape="rect" id="node27" href="$classException_1_1FMTInvalidRasterBlock.html" title=" " alt="" coords="609,1219,796,1261"/>
+<area shape="rect" id="node28" href="$classException_1_1FMTInvalidTheme.html" title=" " alt="" coords="609,1285,796,1312"/>
+<area shape="rect" id="node29" href="$classException_1_1FMTInvalidTransition.html" title=" " alt="" coords="600,1336,805,1363"/>
+<area shape="rect" id="node30" href="$classException_1_1FMTInvalidTransitionCase.html" title=" " alt="" coords="585,1387,820,1413"/>
+<area shape="rect" id="node31" href="$classException_1_1FMTInvalidYield.html" title=" " alt="" coords="614,1437,791,1464"/>
+<area shape="rect" id="node32" href="$classException_1_1FMTInvalidYieldNumber.html" title=" " alt="" coords="614,1488,791,1531"/>
+<area shape="rect" id="node33" href="$classException_1_1FMTLeakingTransition.html" title=" " alt="" coords="595,1555,810,1581"/>
+<area shape="rect" id="node34" href="$classException_1_1FMTMSKError.html" title=" " alt="" coords="617,1605,788,1632"/>
+<area shape="rect" id="node35" href="$classException_1_1FMTMissingDevelopment.html" title=" " alt="" coords="586,1656,819,1683"/>
+<area shape="rect" id="node36" href="$classException_1_1FMTMissingField.html" title=" " alt="" coords="609,1707,796,1733"/>
+<area shape="rect" id="node37" href="$classException_1_1FMTMissingLicense.html" title=" " alt="" coords="601,1757,804,1784"/>
+<area shape="rect" id="node38" href="$classException_1_1FMTMissingObjective.html" title=" " alt="" coords="597,1808,808,1835"/>
+<area shape="rect" id="node39" href="$classException_1_1FMTMissingParameter.html" title=" " alt="" coords="593,1859,812,1885"/>
+<area shape="rect" id="node40" href="$classException_1_1FMTMissingScenarios.html" title=" " alt="" coords="594,1909,811,1936"/>
+<area shape="rect" id="node41" href="$classException_1_1FMTMissingYield.html" title=" " alt="" coords="609,1960,796,1987"/>
+<area shape="rect" id="node42" href="$classException_1_1FMTNotLineGraph.html" title=" " alt="" coords="606,2011,799,2037"/>
+<area shape="rect" id="node43" href="$classException_1_1FMTOutOfRangeYield.html" title=" " alt="" coords="610,2061,795,2104"/>
+<area shape="rect" id="node44" href="$classException_1_1FMTOutputMissingOperator.html" title=" " alt="" coords="604,2128,801,2171"/>
+<area shape="rect" id="node45" href="$classException_1_1FMTOutputTooMuchOperator.html" title=" " alt="" coords="600,2195,805,2237"/>
+<area shape="rect" id="node46" href="$classException_1_1FMTOveridedYield.html" title=" " alt="" coords="606,2261,799,2288"/>
+<area shape="rect" id="node47" href="$classException_1_1FMTRangeError.html" title=" " alt="" coords="613,2312,792,2339"/>
+<area shape="rect" id="node48" href="$classException_1_1FMTSameTransitionTargets.html" title=" " alt="" coords="601,2363,804,2405"/>
 </map>

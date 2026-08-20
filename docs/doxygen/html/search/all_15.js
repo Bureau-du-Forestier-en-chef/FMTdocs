@@ -2,7 +2,7 @@ var searchData=
 [
   ['warm_5fup_5fiterations_0',['WARM_UP_ITERATIONS',['../namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045fa83ba276842f9dd52b9053a726591dfb7',1,'Models']]],
   ['warn_1',['warn',['../classException_1_1FMTWarning.html#a819d95ccd55cdef7674d230575ff5bfb',1,'Exception::FMTWarning']]],
-  ['what_2',['what',['../classException_1_1FMTException.html#af80c77da28e08598d3b9de116bb07ab9',1,'Exception::FMTException']]],
+  ['what_2',['what',['../classException_1_1FMTException.html#af0d27a703c499174277963ea8a1b42dd',1,'Exception::FMTException']]],
   ['width_3',['width',['../classSpatial_1_1FMTEvent.html#aea79ddb591d6f33cd6670e44a351d720',1,'Spatial::FMTEvent']]],
   ['willsplitevent_4',['willSplitEvent',['../classSpatial_1_1FMTEvent.html#add6629a8e89ab4c1626bf0a3834d69c7',1,'Spatial::FMTEvent']]],
   ['within_5',['within',['../classSpatial_1_1FMTCoordinate.html#a30674ea733dc72719b27002b66417b99',1,'Spatial::FMTCoordinate::within()'],['../classSpatial_1_1FMTEvent.html#a57c80475ae90612f63e8d18b6ce38cec',1,'Spatial::FMTEvent::within(const T &amp;dist, const FMTEvent &amp;rhs) const'],['../classSpatial_1_1FMTEvent.html#a3778e51381a968d7a047b5cc993820c4',1,'Spatial::FMTEvent::within(const T &amp;dist, const FMTCoordinate &amp;location) const']]],

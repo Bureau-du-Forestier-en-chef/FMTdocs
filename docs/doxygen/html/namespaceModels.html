@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -198,13 +198,18 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a8d93a01517c01d7f3653e867df30a93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerator of the string parameters of a FMTModel.  <a href="namespaceModels.html#a8d93a01517c01d7f3653e867df30a93e">More...</a><br /></td></tr>
 <tr class="separator:a8d93a01517c01d7f3653e867df30a93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb34022e5912d190199b4eef0418eea1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">FMTsolverinterface</a> { <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a5a8d0cfaadd7efd6c44c000085157da7">CLP</a> = 1
-, <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1aca5ed147be6de2596762b72c374ed0d5">MOSEK</a> = 2
-, <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a8666e2b0660c6fba6898d2c2f6303362">CPLEX</a> = 3
-, <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804">GUROBI</a> = 4
+<tr class="memitem:a5d40207edbdb72c50a8354076467ec50"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50">FMTSolverInterface</a> { <br />
+&#160;&#160;<a class="el" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a5a8d0cfaadd7efd6c44c000085157da7">CLP</a> = 1
+, <a class="el" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50aca5ed147be6de2596762b72c374ed0d5">MOSEK</a> = 2
+, <a class="el" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a1c9d9d423f6512c5352bb552793bbc6a">GLPK</a> = 3
+, <a class="el" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a8666e2b0660c6fba6898d2c2f6303362">CPLEX</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a8c01e66017b29ee197f9c2ada4450804">GUROBI</a> = 5
+, <a class="el" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a4905ac9d6a22bdfc1ae096094ce6248d">COUNT</a> = 6
+<br />
  }</td></tr>
-<tr class="memdesc:abb34022e5912d190199b4eef0418eea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerator used to specify the solver to use when solving the FMTLpModel.  <a href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">More...</a><br /></td></tr>
-<tr class="separator:abb34022e5912d190199b4eef0418eea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a5d40207edbdb72c50a8354076467ec50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerator used to specify the solver to use when solving the FMTLpModel.  <a href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50">More...</a><br /></td></tr>
+<tr class="separator:a5d40207edbdb72c50a8354076467ec50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Namespace containing all enumerator and classes used to construct or manipulate the different type of model in FMT. </p>
@@ -347,8 +352,8 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="abb34022e5912d190199b4eef0418eea1" name="abb34022e5912d190199b4eef0418eea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb34022e5912d190199b4eef0418eea1">&#9670;&#160;</a></span>FMTsolverinterface</h2>
+<a id="a5d40207edbdb72c50a8354076467ec50" name="a5d40207edbdb72c50a8354076467ec50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d40207edbdb72c50a8354076467ec50">&#9670;&#160;</a></span>FMTSolverInterface</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +362,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">Models::FMTsolverinterface</a></td>
+          <td class="memname">enum class <a class="el" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50">Models::FMTSolverInterface</a></td>
         </tr>
       </table>
   </td>
@@ -369,14 +374,16 @@ Enumerations</h2></td></tr>
 
 <p>Enumerator used to specify the solver to use when solving the <a class="el" href="classModels_1_1FMTLpModel.html" title="Type III LP forest planning model, with the graph divided per period.">FMTLpModel</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abb34022e5912d190199b4eef0418eea1a5a8d0cfaadd7efd6c44c000085157da7" name="abb34022e5912d190199b4eef0418eea1a5a8d0cfaadd7efd6c44c000085157da7"></a>CLP&#160;</td><td class="fielddoc"><p>Coin-or linear programming solver : <a href="https://github.com/coin-or/Clp">https://github.com/coin-or/Clp</a> </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d40207edbdb72c50a8354076467ec50a5a8d0cfaadd7efd6c44c000085157da7" name="a5d40207edbdb72c50a8354076467ec50a5a8d0cfaadd7efd6c44c000085157da7"></a>CLP&#160;</td><td class="fielddoc"><p>Coin-or linear programming solver : <a href="https://github.com/coin-or/Clp">https://github.com/coin-or/Clp</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abb34022e5912d190199b4eef0418eea1aca5ed147be6de2596762b72c374ed0d5" name="abb34022e5912d190199b4eef0418eea1aca5ed147be6de2596762b72c374ed0d5"></a>MOSEK&#160;</td><td class="fielddoc"><p>MOSEK optimization software : <a href="https://www.mosek.com">https://www.mosek.com</a> </p>
+<tr><td class="fieldname"><a id="a5d40207edbdb72c50a8354076467ec50aca5ed147be6de2596762b72c374ed0d5" name="a5d40207edbdb72c50a8354076467ec50aca5ed147be6de2596762b72c374ed0d5"></a>MOSEK&#160;</td><td class="fielddoc"><p>MOSEK optimization software : <a href="https://www.mosek.com">https://www.mosek.com</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abb34022e5912d190199b4eef0418eea1a8666e2b0660c6fba6898d2c2f6303362" name="abb34022e5912d190199b4eef0418eea1a8666e2b0660c6fba6898d2c2f6303362"></a>CPLEX&#160;</td><td class="fielddoc"><p>IBM CPLEX Optimizer : <a href="https://www.ibm.com/analytics/cplex-optimizer">https://www.ibm.com/analytics/cplex-optimizer</a> </p>
+<tr><td class="fieldname"><a id="a5d40207edbdb72c50a8354076467ec50a1c9d9d423f6512c5352bb552793bbc6a" name="a5d40207edbdb72c50a8354076467ec50a1c9d9d423f6512c5352bb552793bbc6a"></a>GLPK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d40207edbdb72c50a8354076467ec50a8666e2b0660c6fba6898d2c2f6303362" name="a5d40207edbdb72c50a8354076467ec50a8666e2b0660c6fba6898d2c2f6303362"></a>CPLEX&#160;</td><td class="fielddoc"><p>IBM CPLEX Optimizer : <a href="https://www.ibm.com/analytics/cplex-optimizer">https://www.ibm.com/analytics/cplex-optimizer</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804" name="abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804"></a>GUROBI&#160;</td><td class="fielddoc"><p>Gurobi optimizer : <a href="https://www.gurobi.com/">https://www.gurobi.com/</a> </p>
+<tr><td class="fieldname"><a id="a5d40207edbdb72c50a8354076467ec50a8c01e66017b29ee197f9c2ada4450804" name="a5d40207edbdb72c50a8354076467ec50a8c01e66017b29ee197f9c2ada4450804"></a>GUROBI&#160;</td><td class="fielddoc"><p>Gurobi optimizer : <a href="https://www.gurobi.com/">https://www.gurobi.com/</a> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a5d40207edbdb72c50a8354076467ec50a4905ac9d6a22bdfc1ae096094ce6248d" name="a5d40207edbdb72c50a8354076467ec50a4905ac9d6a22bdfc1ae096094ce6248d"></a>COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
