@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['none_0',['None',['../namespaceException.html#a0e532608ca3600202652be03db952d35a4d786adbf3614c8ba71c91d75cefee80',1,'Exception']]],
-  ['none_1',['none',['../namespaceParser.html#a3b979ae5f73f20cde81759cd160c6b95aa4d51302354a3a127e4fd00ae34a88bc',1,'Parser']]],
+  ['none_0',['none',['../namespaceParser.html#a3b979ae5f73f20cde81759cd160c6b95aa4d51302354a3a127e4fd00ae34a88bc',1,'Parser']]],
+  ['none_1',['None',['../namespaceException.html#a0e532608ca3600202652be03db952d35a4d786adbf3614c8ba71c91d75cefee80',1,'Exception']]],
   ['notvalid_2',['notvalid',['../namespaceCore.html#a29c6f17cd24fe69830f6f3c8d780663aaa85bf7da9f74a3b5185570db78460971',1,'Core::notvalid()'],['../namespaceCore.html#aad8f02b5faae95d2108b6381934edadbaa85bf7da9f74a3b5185570db78460971',1,'Core::notvalid()']]],
   ['nr_5fitems_3',['nr_items',['../namespaceModels.html#a63cd248953aed1fe122438a30226cf5aa038729ec5857e1537cd21bfdd69b1201',1,'Models']]],
   ['number_5fof_5fiterations_4',['NUMBER_OF_ITERATIONS',['../namespaceModels.html#ade10874e4877f1cb1bd6b8701fa2045faff3e04cd0f63fc43ca854d08ec7ccc5e',1,'Models']]],

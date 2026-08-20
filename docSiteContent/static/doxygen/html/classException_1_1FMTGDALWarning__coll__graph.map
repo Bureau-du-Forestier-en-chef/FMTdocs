@@ -1,0 +1,6 @@
+<map id="Exception::FMTGDALWarning" name="Exception::FMTGDALWarning">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,202,256"/>
+<area shape="rect" id="node2" href="$classException_1_1FMTWarning.html" title="Exception class derived from FMTException for warnings in FMT." alt="" coords="23,155,184,181"/>
+<area shape="rect" id="node3" href="$classException_1_1FMTException.html" title="Base exception class for FMT holding the type, section and message of a given exception." alt="" coords="18,80,189,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="52,5,155,32"/>
+</map>

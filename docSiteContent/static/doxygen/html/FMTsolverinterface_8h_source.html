@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -85,23 +85,23 @@ $(function() {
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">License-Filename: LICENSES/EN/LiLiQ-R11unicode.txt</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef FMTsolverinterface_H</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define FMTsolverinterface_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef FMTSOLVERINTERFACE</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define FMTSOLVERINTERFACE</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifdef FMTWITHOSI</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceModels.html">Models</a></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{ </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// DocString: FMTsolverinterface</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">   20</a></span><span class="comment"></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">FMTsolverinterface</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// DocString: FMTSolverInterface</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50">   20</a></span><span class="comment"></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50">FMTSolverInterface</a></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_enumvalue" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a5a8d0cfaadd7efd6c44c000085157da7">CLP</a> = 1,</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="comment">//#ifdef  FMTWITHMOSEK</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_enumvalue" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1aca5ed147be6de2596762b72c374ed0d5">MOSEK</a> = 2,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="comment">//#endif</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_enumvalue" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a8666e2b0660c6fba6898d2c2f6303362">CPLEX</a> = 3,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804">GUROBI</a> = 4</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_enumvalue" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a5a8d0cfaadd7efd6c44c000085157da7">CLP</a> = 1,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_enumvalue" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50aca5ed147be6de2596762b72c374ed0d5">MOSEK</a> = 2,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_enumvalue" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a1c9d9d423f6512c5352bb552793bbc6a">GLPK</a> = 3,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_enumvalue" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a8666e2b0660c6fba6898d2c2f6303362">CPLEX</a> = 4,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_enumvalue" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a8c01e66017b29ee197f9c2ada4450804">GUROBI</a> = 5,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a4905ac9d6a22bdfc1ae096094ce6248d">COUNT</a> = 6</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    };</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
@@ -109,11 +109,13 @@ $(function() {
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif </span></div>
 <div class="ttc" id="anamespaceModels_html"><div class="ttname"><a href="namespaceModels.html">Models</a></div><div class="ttdoc">Namespace containing all enumerator and classes used to construct or manipulate the different type of...</div><div class="ttdef"><b>Definition:</b> FMTAreaParser.h:54</div></div>
-<div class="ttc" id="anamespaceModels_html_abb34022e5912d190199b4eef0418eea1"><div class="ttname"><a href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1">Models::FMTsolverinterface</a></div><div class="ttdeci">FMTsolverinterface</div><div class="ttdoc">Enumerator used to specify the solver to use when solving the FMTLpModel.</div><div class="ttdef"><b>Definition:</b> FMTsolverinterface.h:21</div></div>
-<div class="ttc" id="anamespaceModels_html_abb34022e5912d190199b4eef0418eea1a5a8d0cfaadd7efd6c44c000085157da7"><div class="ttname"><a href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a5a8d0cfaadd7efd6c44c000085157da7">Models::FMTsolverinterface::CLP</a></div><div class="ttdeci">@ CLP</div></div>
-<div class="ttc" id="anamespaceModels_html_abb34022e5912d190199b4eef0418eea1a8666e2b0660c6fba6898d2c2f6303362"><div class="ttname"><a href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a8666e2b0660c6fba6898d2c2f6303362">Models::FMTsolverinterface::CPLEX</a></div><div class="ttdeci">@ CPLEX</div></div>
-<div class="ttc" id="anamespaceModels_html_abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804"><div class="ttname"><a href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1a8c01e66017b29ee197f9c2ada4450804">Models::FMTsolverinterface::GUROBI</a></div><div class="ttdeci">@ GUROBI</div></div>
-<div class="ttc" id="anamespaceModels_html_abb34022e5912d190199b4eef0418eea1aca5ed147be6de2596762b72c374ed0d5"><div class="ttname"><a href="namespaceModels.html#abb34022e5912d190199b4eef0418eea1aca5ed147be6de2596762b72c374ed0d5">Models::FMTsolverinterface::MOSEK</a></div><div class="ttdeci">@ MOSEK</div></div>
+<div class="ttc" id="anamespaceModels_html_a5d40207edbdb72c50a8354076467ec50"><div class="ttname"><a href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50">Models::FMTSolverInterface</a></div><div class="ttdeci">FMTSolverInterface</div><div class="ttdoc">Enumerator used to specify the solver to use when solving the FMTLpModel.</div><div class="ttdef"><b>Definition:</b> FMTsolverinterface.h:21</div></div>
+<div class="ttc" id="anamespaceModels_html_a5d40207edbdb72c50a8354076467ec50a1c9d9d423f6512c5352bb552793bbc6a"><div class="ttname"><a href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a1c9d9d423f6512c5352bb552793bbc6a">Models::FMTSolverInterface::GLPK</a></div><div class="ttdeci">@ GLPK</div></div>
+<div class="ttc" id="anamespaceModels_html_a5d40207edbdb72c50a8354076467ec50a4905ac9d6a22bdfc1ae096094ce6248d"><div class="ttname"><a href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a4905ac9d6a22bdfc1ae096094ce6248d">Models::FMTSolverInterface::COUNT</a></div><div class="ttdeci">@ COUNT</div></div>
+<div class="ttc" id="anamespaceModels_html_a5d40207edbdb72c50a8354076467ec50a5a8d0cfaadd7efd6c44c000085157da7"><div class="ttname"><a href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a5a8d0cfaadd7efd6c44c000085157da7">Models::FMTSolverInterface::CLP</a></div><div class="ttdeci">@ CLP</div></div>
+<div class="ttc" id="anamespaceModels_html_a5d40207edbdb72c50a8354076467ec50a8666e2b0660c6fba6898d2c2f6303362"><div class="ttname"><a href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a8666e2b0660c6fba6898d2c2f6303362">Models::FMTSolverInterface::CPLEX</a></div><div class="ttdeci">@ CPLEX</div></div>
+<div class="ttc" id="anamespaceModels_html_a5d40207edbdb72c50a8354076467ec50a8c01e66017b29ee197f9c2ada4450804"><div class="ttname"><a href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50a8c01e66017b29ee197f9c2ada4450804">Models::FMTSolverInterface::GUROBI</a></div><div class="ttdeci">@ GUROBI</div></div>
+<div class="ttc" id="anamespaceModels_html_a5d40207edbdb72c50a8354076467ec50aca5ed147be6de2596762b72c374ed0d5"><div class="ttname"><a href="namespaceModels.html#a5d40207edbdb72c50a8354076467ec50aca5ed147be6de2596762b72c374ed0d5">Models::FMTSolverInterface::MOSEK</a></div><div class="ttdeci">@ MOSEK</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

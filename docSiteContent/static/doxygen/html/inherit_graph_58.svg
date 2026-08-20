@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classHeuristics_1_1FMTOperatingAreaSchemeComparator.html" target="_top" xlink:title="Comparator to find a FMTOperatingAreaScheme with std::find_if when operating area schemes are in an s...">
+<g id="a_node1"><a xlink:href="classHeuristics_1_1FMTOperatingAreaComparator.html" target="_top" xlink:title="Comparator to find a FMTOperatingArea with std::find_if when operating areas are in an stl container.">
 <polygon fill="white" stroke="#666666" points="127,-32 0,-32 0,0 127,0 127,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Heuristics::FMTOperating</text>
-<text text-anchor="middle" x="63.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AreaSchemeComparator</text>
+<text text-anchor="middle" x="63.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AreaComparator</text>
 </a>
 </g>
 </g>

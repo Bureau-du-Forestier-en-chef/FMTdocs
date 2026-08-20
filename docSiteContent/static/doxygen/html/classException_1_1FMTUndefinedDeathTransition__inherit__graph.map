@@ -1,0 +1,6 @@
+<map id="Exception::FMTUndefinedDeathTransition" name="Exception::FMTUndefinedDeathTransition">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,210,272"/>
+<area shape="rect" id="node2" href="$classException_1_1FMTWarning.html" title="Exception class derived from FMTException for warnings in FMT." alt="" coords="27,155,188,181"/>
+<area shape="rect" id="node3" href="$classException_1_1FMTException.html" title="Base exception class for FMT holding the type, section and message of a given exception." alt="" coords="22,80,193,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="56,5,159,32"/>
+</map>

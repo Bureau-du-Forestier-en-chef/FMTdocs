@@ -5,21 +5,20 @@
 <area shape="rect" id="node4" href="$classCore_1_1FMTObject.html" title="Base class of multiple FMT classes holding a shared exception handler pointer and logger." alt="" coords="236,885,357,912"/>
 <area shape="rect" id="node5" title=" " alt="" coords="345,779,523,821"/>
 <area shape="rect" id="node6" href="$classException_1_1FMTExceptionHandler.html" title="Base class used to handle errors thrown in FMT." alt="" coords="328,661,543,688"/>
-<area shape="rect" id="node7" title=" " alt="" coords="712,555,849,597"/>
-<area shape="rect" id="node8" href="$classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT." alt="" coords="196,563,336,589"/>
-<area shape="rect" id="node22" title=" " alt="" coords="188,712,352,755"/>
-<area shape="rect" id="node9" title=" " alt="" coords="32,448,196,491"/>
-<area shape="rect" id="node10" href="$classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler)." alt="" coords="5,349,180,376"/>
-<area shape="rect" id="node11" title=" " alt="" coords="20,257,165,284"/>
-<area shape="rect" id="node12" title=" " alt="" coords="226,456,306,483"/>
-<area shape="rect" id="node13" title=" " alt="" coords="203,341,329,384"/>
-<area shape="rect" id="node14" title=" " alt="" coords="331,448,468,491"/>
-<area shape="rect" id="node15" title=" " alt="" coords="353,349,451,376"/>
-<area shape="rect" id="node16" title=" " alt="" coords="334,249,470,292"/>
-<area shape="rect" id="node17" title=" " alt="" coords="336,157,468,200"/>
-<area shape="rect" id="node18" title=" " alt="" coords="325,81,479,108"/>
-<area shape="rect" id="node19" title=" " alt="" coords="352,5,452,32"/>
-<area shape="rect" id="node20" title=" " alt="" coords="360,555,511,597"/>
-<area shape="rect" id="node21" title=" " alt="" coords="535,555,688,597"/>
-<area shape="rect" id="node23" href="$classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency." alt="" coords="381,885,543,912"/>
+<area shape="rect" id="node7" href="$classLogging_1_1FMTLogger.html" title="Base class handling the level of information printed by FMT." alt="" coords="196,563,336,589"/>
+<area shape="rect" id="node21" title=" " alt="" coords="188,712,352,755"/>
+<area shape="rect" id="node8" title=" " alt="" coords="32,448,196,491"/>
+<area shape="rect" id="node9" href="$classLogging_1_1FMTSolverLogger.html" title="Abstract logger used with the OSI solver interface (CoinMessageHandler)." alt="" coords="5,349,180,376"/>
+<area shape="rect" id="node10" title=" " alt="" coords="20,257,165,284"/>
+<area shape="rect" id="node11" title=" " alt="" coords="226,456,306,483"/>
+<area shape="rect" id="node12" title=" " alt="" coords="203,341,329,384"/>
+<area shape="rect" id="node13" title=" " alt="" coords="331,448,468,491"/>
+<area shape="rect" id="node14" title=" " alt="" coords="353,349,451,376"/>
+<area shape="rect" id="node15" title=" " alt="" coords="334,249,470,292"/>
+<area shape="rect" id="node16" title=" " alt="" coords="336,157,468,200"/>
+<area shape="rect" id="node17" title=" " alt="" coords="325,81,479,108"/>
+<area shape="rect" id="node18" title=" " alt="" coords="352,5,452,32"/>
+<area shape="rect" id="node19" title=" " alt="" coords="360,555,511,597"/>
+<area shape="rect" id="node20" title=" " alt="" coords="535,555,688,597"/>
+<area shape="rect" id="node22" href="$classModels_1_1FMTMatrixBuild.html" title="Helper caching rows and columns to add to a solver matrix in batch for efficiency." alt="" coords="381,885,543,912"/>
 </map>

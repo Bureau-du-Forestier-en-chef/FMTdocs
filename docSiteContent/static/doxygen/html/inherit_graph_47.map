@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classGraph_1_1FMTBaseVertexProperties.html" title=" " alt="" coords="5,5,223,32"/>
-<area shape="rect" id="node2" href="$classGraph_1_1FMTVertexProperties.html" title="Vertex properties of a FMTGraph, extending the base vertex properties with a constraint id." alt="" coords="271,5,458,32"/>
+<area shape="rect" id="node1" href="$classGraph_1_1FMTBaseEdgeProperties.html" title="Base edge properties of a FMTGraph, holding the action of the edge." alt="" coords="5,5,215,32"/>
+<area shape="rect" id="node2" href="$classGraph_1_1FMTEdgeProperties.html" title="Edge properties of a FMTGraph, extending the base edge properties with a variable id and a proportion..." alt="" coords="263,5,442,32"/>
 </map>

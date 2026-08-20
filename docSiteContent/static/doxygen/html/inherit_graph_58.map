@@ -1,3 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classHeuristics_1_1FMTOperatingAreaSchemeComparator.html" title="Comparator to find a FMTOperatingAreaScheme with std::find_if when operating area schemes are in an s..." alt="" coords="5,5,175,48"/>
+<area shape="rect" id="node1" href="$classHeuristics_1_1FMTOperatingAreaComparator.html" title="Comparator to find a FMTOperatingArea with std::find_if when operating areas are in an stl container." alt="" coords="5,5,175,48"/>
 </map>

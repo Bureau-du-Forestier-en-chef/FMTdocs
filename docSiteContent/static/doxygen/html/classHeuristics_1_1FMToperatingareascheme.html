@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.1.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -90,14 +90,12 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for Heuristics::FMTOperatingAreaScheme:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classHeuristics_1_1FMTOperatingAreaScheme__inherit__graph.svg" width="352" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classHeuristics_1_1FMTOperatingAreaScheme__inherit__graph.svg" width="352" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Heuristics::FMTOperatingAreaScheme:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classHeuristics_1_1FMTOperatingAreaScheme__coll__graph.svg" width="100%" height="565"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classHeuristics_1_1FMTOperatingAreaScheme__coll__graph.svg" width="100%" height="523"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -165,12 +163,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0acb2fccf62d0f20e2505c86159f443"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html#ac0acb2fccf62d0f20e2505c86159f443">isDualBounded</a> (const double *upperbounds) const</td></tr>
 <tr class="memdesc:ac0acb2fccf62d0f20e2505c86159f443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if any constraint upper bound is set to 0.  <br /></td></tr>
 <tr class="separator:ac0acb2fccf62d0f20e2505c86159f443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a81e418c1936566bc4550e816151ac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html#a72a81e418c1936566bc4550e816151ac">getPotentialPrimalSchemes</a> (const double *primalsolution, const double *lowerbounds, const double *upperbounds, const std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html">FMTOperatingAreaScheme</a> &gt; &amp;<a class="el" href="classHeuristics_1_1FMTOperatingArea.html#a0f9a4c50483fb2adde8d41ee77a275d7">m_neighbors</a>) const</td></tr>
-<tr class="memdesc:a72a81e418c1936566bc4550e816151ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the potential scheme indexes from the primal solution, its bounds and the neighboring operating areas, ordered from the most to the least area used but greater than 0.  <br /></td></tr>
-<tr class="separator:a72a81e418c1936566bc4550e816151ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac41dcfd45316d5abd6663532f6b79c00"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html#ac41dcfd45316d5abd6663532f6b79c00">getPotentialDualSchemes</a> (const double *dualsolution, const double *upperbound, const std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html">FMTOperatingAreaScheme</a> &gt; &amp;<a class="el" href="classHeuristics_1_1FMTOperatingArea.html#a0f9a4c50483fb2adde8d41ee77a275d7">m_neighbors</a>) const</td></tr>
-<tr class="memdesc:ac41dcfd45316d5abd6663532f6b79c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the potential scheme indexes from the dual solution, the rows upper bounds and the neighboring operating areas, ordered from the most to the least area used but greater than 0.  <br /></td></tr>
-<tr class="separator:ac41dcfd45316d5abd6663532f6b79c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa898916745c36aabd5531086b0f43b1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html#aaa898916745c36aabd5531086b0f43b1">getPotentialPrimalSchemes</a> (const double *p_primalsolution, const double *p_lowerbounds, const double *p_upperbounds, const std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html">FMTOperatingAreaScheme</a> &gt; &amp;p_neighbors) const</td></tr>
+<tr class="memdesc:aaa898916745c36aabd5531086b0f43b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the potential scheme indexes from the primal solution, its bounds and the neighboring operating areas, ordered from the most to the least area used but greater than 0.  <br /></td></tr>
+<tr class="separator:aaa898916745c36aabd5531086b0f43b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98c71be6891ccb8be2cdaaed9842b6d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html#af98c71be6891ccb8be2cdaaed9842b6d">getPotentialDualSchemes</a> (const double *p_dualsolution, const double *p_upperbound, const std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html">FMTOperatingAreaScheme</a> &gt; &amp;p_neighbors) const</td></tr>
+<tr class="memdesc:af98c71be6891ccb8be2cdaaed9842b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the potential scheme indexes from the dual solution, the rows upper bounds and the neighboring operating areas, ordered from the most to the least area used but greater than 0.  <br /></td></tr>
+<tr class="separator:af98c71be6891ccb8be2cdaaed9842b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f84f544fd6db9328cc76ab6418ec2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html#aa1f84f544fd6db9328cc76ab6418ec2f">getRessourcesToDelete</a> (std::vector&lt; int &gt; &amp;colstodelete, std::vector&lt; int &gt; &amp;rowstodelete) const</td></tr>
 <tr class="memdesc:aa1f84f544fd6db9328cc76ab6418ec2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push all the variables and constraints of the operating area into the columns and rows to delete vectors.  <br /></td></tr>
 <tr class="separator:aa1f84f544fd6db9328cc76ab6418ec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1210,8 +1208,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac41dcfd45316d5abd6663532f6b79c00" name="ac41dcfd45316d5abd6663532f6b79c00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac41dcfd45316d5abd6663532f6b79c00">&#9670;&#160;</a></span>getPotentialDualSchemes()</h2>
+<a id="af98c71be6891ccb8be2cdaaed9842b6d" name="af98c71be6891ccb8be2cdaaed9842b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98c71be6891ccb8be2cdaaed9842b6d">&#9670;&#160;</a></span>getPotentialDualSchemes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1220,19 +1218,19 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">std::vector&lt; size_t &gt; Heuristics::FMTOperatingAreaScheme::getPotentialDualSchemes </td>
           <td>(</td>
           <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>dualsolution</em>, </td>
+          <td class="paramname"><em>p_dualsolution</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>upperbound</em>, </td>
+          <td class="paramname"><em>p_upperbound</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html">FMTOperatingAreaScheme</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>m_neighbors</em>&#160;</td>
+          <td class="paramname"><em>p_neighbors</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1245,9 +1243,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Return the potential scheme indexes from the dual solution, the rows upper bounds and the neighboring operating areas, ordered from the most to the least area used but greater than 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dualsolution</td><td>the dual solution. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">upperbound</td><td>the rows upper bounds. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">neighbors</td><td>the neighboring operating areas. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_dualsolution</td><td>the dual solution. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_upperbound</td><td>the rows upper bounds. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_neighbors</td><td>the neighboring operating areas. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1255,8 +1253,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a72a81e418c1936566bc4550e816151ac" name="a72a81e418c1936566bc4550e816151ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72a81e418c1936566bc4550e816151ac">&#9670;&#160;</a></span>getPotentialPrimalSchemes()</h2>
+<a id="aaa898916745c36aabd5531086b0f43b1" name="aaa898916745c36aabd5531086b0f43b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa898916745c36aabd5531086b0f43b1">&#9670;&#160;</a></span>getPotentialPrimalSchemes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1265,25 +1263,25 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">std::vector&lt; size_t &gt; Heuristics::FMTOperatingAreaScheme::getPotentialPrimalSchemes </td>
           <td>(</td>
           <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>primalsolution</em>, </td>
+          <td class="paramname"><em>p_primalsolution</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>lowerbounds</em>, </td>
+          <td class="paramname"><em>p_lowerbounds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>upperbounds</em>, </td>
+          <td class="paramname"><em>p_upperbounds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="classHeuristics_1_1FMTOperatingAreaScheme.html">FMTOperatingAreaScheme</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>m_neighbors</em>&#160;</td>
+          <td class="paramname"><em>p_neighbors</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1296,10 +1294,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Return the potential scheme indexes from the primal solution, its bounds and the neighboring operating areas, ordered from the most to the least area used but greater than 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">primalsolution</td><td>the primal solution. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lowerbounds</td><td>the lower bounds. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">upperbounds</td><td>the upper bounds. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">neighbors</td><td>the neighboring operating areas. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_primalsolution</td><td>the primal solution. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_lowerbounds</td><td>the lower bounds. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_upperbounds</td><td>the upper bounds. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_neighbors</td><td>the neighboring operating areas. </td></tr>
   </table>
   </dd>
 </dl>
