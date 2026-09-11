@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.3.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a422a2b5c6be243dbf9b4226a2658e77e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParser_1_1FMTScheduleParser.html">FMTScheduleParser</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTScheduleParser.html#a422a2b5c6be243dbf9b4226a2658e77e">operator=</a> (const <a class="el" href="classParser_1_1FMTScheduleParser.html">FMTScheduleParser</a> &amp;rhs)</td></tr>
 <tr class="memdesc:a422a2b5c6be243dbf9b4226a2658e77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for <a class="el" href="classParser_1_1FMTScheduleParser.html" title="Parser reading and writing vectors of schedules, also used by the model parser.">FMTScheduleParser</a>.  <br /></td></tr>
 <tr class="separator:a422a2b5c6be243dbf9b4226a2658e77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d91a49ca4e6d8a7de0aec8c28befa58"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTSchedule.html">Core::FMTSchedule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTScheduleParser.html#a0d91a49ca4e6d8a7de0aec8c28befa58">read</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;themes, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;actions, const std::string &amp;location, double tolerance=<a class="el" href="FMTutility_8h.html#ad2850622a76ace795b2447524059f37f">FMT_DBL_TOLERANCE</a>)</td></tr>
-<tr class="memdesc:a0d91a49ca4e6d8a7de0aec8c28befa58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a schedule section and turn it into a vector of schedules.  <br /></td></tr>
-<tr class="separator:a0d91a49ca4e6d8a7de0aec8c28befa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37b33a9efc0fe8659fde0a46a34c588"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classCore_1_1FMTSchedule.html">Core::FMTSchedule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTScheduleParser.html#ae37b33a9efc0fe8659fde0a46a34c588">read</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;themes, const <a class="el" href="classCore_1_1FMTConstants.html">Core::FMTConstants</a> &amp;p_constants, const std::vector&lt; <a class="el" href="classCore_1_1FMTAction.html">Core::FMTAction</a> &gt; &amp;actions, const std::string &amp;location, double tolerance=<a class="el" href="FMTutility_8h.html#ad2850622a76ace795b2447524059f37f">FMT_DBL_TOLERANCE</a>)</td></tr>
+<tr class="memdesc:ae37b33a9efc0fe8659fde0a46a34c588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a schedule section and turn it into a vector of schedules.  <br /></td></tr>
+<tr class="separator:ae37b33a9efc0fe8659fde0a46a34c588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ecfcb8710ea2167b93bbfc56b1f668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTScheduleParser.html#a06ecfcb8710ea2167b93bbfc56b1f668">write</a> (const std::vector&lt; <a class="el" href="classCore_1_1FMTSchedule.html">Core::FMTSchedule</a> &gt; &amp;schedules, const std::string &amp;location, bool append=false) const</td></tr>
 <tr class="memdesc:a06ecfcb8710ea2167b93bbfc56b1f668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a vector of schedules to a schedule file.  <br /></td></tr>
 <tr class="separator:a06ecfcb8710ea2167b93bbfc56b1f668"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,9 +412,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:af2743abb9b1fad52787fbca91d37a128 inherit pro_methods_classParser_1_1FMTParser"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTParser.html#af2743abb9b1fad52787fbca91d37a128">_isForLoopsEnd</a> (const std::string &amp;p_line) const</td></tr>
 <tr class="memdesc:af2743abb9b1fad52787fbca91d37a128 inherit pro_methods_classParser_1_1FMTParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if a line is the end of a for loop.  <br /></td></tr>
 <tr class="separator:af2743abb9b1fad52787fbca91d37a128 inherit pro_methods_classParser_1_1FMTParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae47efebe80a4ed0214f681574fb0b8b3 inherit pro_methods_classParser_1_1FMTParser"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTParser.html#ae47efebe80a4ed0214f681574fb0b8b3">_getLine</a> (std::queue&lt; <a class="el" href="classParser_1_1FMTParser_1_1FMTLineInfo.html">FMTLineInfo</a> &gt; &amp;p_Lines) const</td></tr>
-<tr class="memdesc:ae47efebe80a4ed0214f681574fb0b8b3 inherit pro_methods_classParser_1_1FMTParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get and pop the front line of a queue.  <br /></td></tr>
-<tr class="separator:ae47efebe80a4ed0214f681574fb0b8b3 inherit pro_methods_classParser_1_1FMTParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45445f5e43c38a9d07fe125947d5f261 inherit pro_methods_classParser_1_1FMTParser"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTParser.html#a45445f5e43c38a9d07fe125947d5f261">_getLine</a> (std::queue&lt; <a class="el" href="classParser_1_1FMTParser_1_1FMTLineInfo.html">FMTLineInfo</a> &gt; &amp;p_Lines, bool p_ToCapital=true) const</td></tr>
+<tr class="memdesc:a45445f5e43c38a9d07fe125947d5f261 inherit pro_methods_classParser_1_1FMTParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get and pop the front line of a queue.  <br /></td></tr>
+<tr class="separator:a45445f5e43c38a9d07fe125947d5f261 inherit pro_methods_classParser_1_1FMTParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classCore_1_1FMTObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCore_1_1FMTObject')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classCore_1_1FMTObject.html">Core::FMTObject</a></td></tr>
 <tr class="memitem:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
 <tr class="memitem:a18b765e433d09e77e6ba0b71b878aa17 inherit pro_methods_classCore_1_1FMTObject"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTObject.html#a18b765e433d09e77e6ba0b71b878aa17">forceSave</a> (Archive &amp;ar, const unsigned int version) const</td></tr>
@@ -643,8 +643,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d91a49ca4e6d8a7de0aec8c28befa58" name="a0d91a49ca4e6d8a7de0aec8c28befa58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d91a49ca4e6d8a7de0aec8c28befa58">&#9670;&#160;</a></span>read()</h2>
+<a id="ae37b33a9efc0fe8659fde0a46a34c588" name="ae37b33a9efc0fe8659fde0a46a34c588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37b33a9efc0fe8659fde0a46a34c588">&#9670;&#160;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -654,6 +654,12 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="classCore_1_1FMTTheme.html">Core::FMTTheme</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>themes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTConstants.html">Core::FMTConstants</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_constants</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -686,6 +692,7 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">themes</td><td>the themes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">actions</td><td>the actions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_constants</td><td>the constants. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">location</td><td>the file location. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>the area tolerance below which a development is not selected. </td></tr>
   </table>

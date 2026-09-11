@@ -1,5 +1,5 @@
 <map id="Parser::FMTParser::FMTLineInfo" name="Parser::FMTParser::FMTLineInfo">
-<area shape="rect" id="node1" title="Helper holding a line value, its number and its file, used during parsing." alt="" coords="5,204,145,247"/>
+<area shape="rect" id="node1" title="Helper holding a line value, its number and its file, used during parsing." alt="" coords="5,220,145,263"/>
 <area shape="rect" id="node2" title=" " alt="" coords="35,97,115,124"/>
 <area shape="rect" id="node3" title=" " alt="" coords="12,5,138,48"/>
 </map>

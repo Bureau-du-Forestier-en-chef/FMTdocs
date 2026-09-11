@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.3.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -107,6 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1abd9eef13e2e50973b144e0fb329399"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldsCache.html#a1abd9eef13e2e50973b144e0fb329399">get</a> (const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;p_request, const std::string &amp;p_yield) const</td></tr>
 <tr class="memdesc:a1abd9eef13e2e50973b144e0fb329399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cached value for a request and yield.  <br /></td></tr>
 <tr class="separator:a1abd9eef13e2e50973b144e0fb329399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd905ed182e747f731944d371c8c72c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldsCache.html#a8cd905ed182e747f731944d371c8c72c">tryToGet</a> (double &amp;p_value, const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;p_request, const std::string &amp;p_yield) const</td></tr>
+<tr class="memdesc:a8cd905ed182e747f731944d371c8c72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cached value for a request and yield return false if not found.  <br /></td></tr>
+<tr class="separator:a8cd905ed182e747f731944d371c8c72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e44222acfef5f40b965caebf88245d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCore_1_1FMTYieldsCache.html#a0e44222acfef5f40b965caebf88245d9">set</a> (double p_value, const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;p_request, const std::string &amp;p_yield)</td></tr>
 <tr class="memdesc:a0e44222acfef5f40b965caebf88245d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache a value for a request and yield.  <br /></td></tr>
 <tr class="separator:a0e44222acfef5f40b965caebf88245d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -384,6 +387,51 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8cd905ed182e747f731944d371c8c72c" name="a8cd905ed182e747f731944d371c8c72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd905ed182e747f731944d371c8c72c">&#9670;&#160;</a></span>tryToGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Core::FMTYieldsCache::tryToGet </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>p_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCore_1_1FMTYieldRequest.html">FMTYieldRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_yield</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the cached value for a request and yield return false if not found. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p_value</td><td>the value reached </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_request</td><td>the yield request. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_yield</td><td>the yield name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if found </dd></dl>
 
 </div>
 </div>

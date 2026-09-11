@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="FMTlogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">FMT<span id="projectnumber">&#160;1.2.0</span>
+   <div id="projectname">FMT<span id="projectnumber">&#160;1.3.0</span>
    </div>
    <div id="projectbrief">Forest management tools for forest planning</div>
   </td>
@@ -90,14 +90,15 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for Parser::FMTParser::FMTLineInfo:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classParser_1_1FMTParser_1_1FMTLineInfo__coll__graph.svg" width="152" height="252"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classParser_1_1FMTParser_1_1FMTLineInfo__coll__graph.svg" width="156" height="268"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab5b95dff2b269516fe89fa1779ce7a29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTParser_1_1FMTLineInfo.html#ab5b95dff2b269516fe89fa1779ce7a29">FMTLineInfo</a> (const std::string p_line, int p_number, const std::string &amp;p_file)</td></tr>
-<tr class="memdesc:ab5b95dff2b269516fe89fa1779ce7a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a line info from a line, its number and its file.  <br /></td></tr>
-<tr class="separator:ab5b95dff2b269516fe89fa1779ce7a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd92fdbe4d472179695b50a2d50cd694"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTParser_1_1FMTLineInfo.html#abd92fdbe4d472179695b50a2d50cd694">FMTLineInfo</a> (const std::string p_line, int p_number, const std::string &amp;p_file, const std::string &amp;p_comment)</td></tr>
+<tr class="memdesc:abd92fdbe4d472179695b50a2d50cd694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a line info from a line, its number and its file.  <br /></td></tr>
+<tr class="separator:abd92fdbe4d472179695b50a2d50cd694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -107,12 +108,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2f4b68fd3a7fb6d2c899d21a2322392b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc35370f6c6d9d8ee25409fe5003700"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTParser_1_1FMTLineInfo.html#a7bc35370f6c6d9d8ee25409fe5003700">m_file</a></td></tr>
 <tr class="separator:a7bc35370f6c6d9d8ee25409fe5003700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f809636fbaf3f8b85369417e7e57c69"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser_1_1FMTParser_1_1FMTLineInfo.html#a7f809636fbaf3f8b85369417e7e57c69">m_comment</a></td></tr>
+<tr class="separator:a7f809636fbaf3f8b85369417e7e57c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper holding a line value, its number and its file, used during parsing. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab5b95dff2b269516fe89fa1779ce7a29" name="ab5b95dff2b269516fe89fa1779ce7a29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5b95dff2b269516fe89fa1779ce7a29">&#9670;&#160;</a></span>FMTLineInfo()</h2>
+<a id="abd92fdbe4d472179695b50a2d50cd694" name="abd92fdbe4d472179695b50a2d50cd694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd92fdbe4d472179695b50a2d50cd694">&#9670;&#160;</a></span>FMTLineInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +136,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>p_file</em>&#160;</td>
+          <td class="paramname"><em>p_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>p_comment</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -156,6 +165,20 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7f809636fbaf3f8b85369417e7e57c69" name="a7f809636fbaf3f8b85369417e7e57c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f809636fbaf3f8b85369417e7e57c69">&#9670;&#160;</a></span>m_comment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Parser::FMTParser::FMTLineInfo::m_comment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7bc35370f6c6d9d8ee25409fe5003700" name="a7bc35370f6c6d9d8ee25409fe5003700"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7bc35370f6c6d9d8ee25409fe5003700">&#9670;&#160;</a></span>m_file</h2>
 
